@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+         
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>JIT Reading</title>
+        
+        <style>
+
+    html body {
+        font-family: 'Raleway', sans-serif;
+        background-color: white;
+    }
+
+    :root {
+        --accent: red;
+        --border-width:  5px ;
+    }
+
+</style>
+
+
+<link rel="stylesheet" href="https://an1lam.github.io/css/main.css">
+
+
+
+
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+
+
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/solarized-dark.min.css"> 
+
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+ 
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/go.min.js"></script>  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/haskell.min.js"></script>  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/kotlin.min.js"></script>  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/scala.min.js"></script>  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/swift.min.js"></script> 
+
+    <script>hljs.initHighlightingOnLoad();</script>
+
+
+
+
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+
+<script>$(document).on('click', function() { $('.collapse').collapse('hide'); })</script>
+ <meta name="generator" content="Hugo 0.40.1" />
+        
+
+        
+    </head>
+
+    
+    
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+          processEscapes: true
+        }
+      });
+    </script>
+    <script type="text/javascript" async
+      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+    </script>
+    
+
+    <body>
+         
+        <nav class="navbar navbar-default navbar-fixed-top">
+
+            <div class="container">
+
+                <div class="navbar-header">
+
+                    <a class="navbar-brand visible-xs" href="#">JIT Reading</a>
+
+                    <button class="navbar-toggle" data-target=".navbar-collapse" data-toggle="collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+
+                </div>
+
+                <div class="collapse navbar-collapse">
+
+                    
+                        <ul class="nav navbar-nav">
+                            
+                                <li><a href="/">Home</a></li>
+                            
+                                <li><a href="/post/">Posts</a></li>
+                            
+                                <li><a href="/project/">Projects</a></li>
+                            
+                                <li><a href="/progress">The State of My Mind</a></li>
+                            
+                        </ul>
+                    
+
+                    
+                        <ul class="nav navbar-nav navbar-right">
+                            
+                                <li class="navbar-icon"><a href="mailto:stephenmalina@gmail.com"><i class="fa fa-envelope-o"></i></a></li>
+                            
+                                <li class="navbar-icon"><a href="https://github.com/an1lam"><i class="fa fa-github"></i></a></li>
+                            
+                                <li class="navbar-icon"><a href="https://www.linkedin.com/in/stephen.malina/"><i class="fa fa-linkedin"></i></a></li>
+                            
+                                <li class="navbar-icon"><a href="https://stackoverflow.com/users/1631855/an1lam"><i class="fa fa-stack-overflow"></i></a></li>
+                            
+                        </ul>
+                    
+
+                </div>
+
+            </div>
+
+        </nav>
+
+
+<main>
+
+    <div class="item">
+
+    
+    
+    
+
+    
+    
+
+    <h4><a href="/post/2018-02-24-jit-reading/">JIT Reading</a></h4>
+    <h5>February 24, 2018</h5>
+    
+
+</div>
+
+
+    <br> <div class="text-justify">
+
+<p>Seibel, James Hague and others have all tried to justify why code reading is so uncommon, and they
+make good points. But perhaps the conversation is led astray by use of the word read. I wonder if
+Abelson and the others would have had more examples if Seibel had asked them what code they had
+learned about for fun. Perhaps the word &ldquo;read&rdquo; put them in a passive frame of mind, caused them to
+filter out programs they&rsquo;d hacked on?</p>
+
+<p>We all read code already; it&rsquo;s just that we usually read when we want to edit. And the
+comprehension that questions about reading really focus on comes from both reading and writing,
+interleaved in complex ways. (Outside of programming, Cal Newport has called this the <a href="http://calnewport.com/blog/2012/08/10/you-know-what-you-write-the-textbook-method-for-ultra-learning">&ldquo;make your
+own textbook&rdquo;
+method</a>.)</p>
+
+<p>That hacking produces better comprehension than passive, linear reading fits with what we know
+about learning. <a href="http://nautil.us/issue/40/learning/how-i-rewired-my-brain-to-become-fluent-in-math-rp">Barbara
+Oakley</a>,
+<a href="http://158.132.155.107/posh97/private/learning/learning-Simon.htm">Herbert Simon</a>, Cal Newport,
+and <a href="http://projects.ict.usc.edu/itw/gel/EricssonDeliberatePracticePR93.PDF">Anders Ericsson</a> all
+describe how solid understanding emerges from active exploration, critical examination, repetition,
+and synthesis. Hacking beats passive reading on three out of four of these criteria:
+* Active exploration: When you hack, you want to eventually produce a change in the codebase. This
+  desire guides your path through the code. When you read passively you let the code&rsquo;s linear flow
+  guide you.
+* Critical examination: When you hack, you evaluate existing code in light of the change you want
+  to make. Deciding what to use, remove, and keeps you from accepting the existing system as canon.
+  When you read linearly, you lack a goal against which you can critically examine the existing
+  code.
+* Synthesis: To change the program as you desire, you synthesize existing code with new code.
+* Repetition: Neither hacking nor linear reading involve useful repetition, unless you treat your
+  change to make like a kata and mindfully re-implement it multiple times.</p>
+
+<p>Learning through hacking also leverages the natural structure of a codebase. Good books guide their
+readers through series of questions and their answers, whereas codebases distribute answers to
+external questions throughout their structure. In its non-linearity, a codebase resembles a map.
+You can ask an infinite number of questions of a map. How far is it from A to B? Which is the
+nearest town to C? But you can&rsquo;t expect a map to tell you what questions to ask, and it makes no
+sense to read a map linearly from top to bottom, left to right. Yet we still tell people to read
+codebases linearly even though we would never tell them to do this for maps.</p>
+
+<p>Future solutions and recommendations for code comprehension should focus on providing good
+questions and changes to guide exploration, making it easier for readers to answer their own
+questions about codebases, and encourage active engagement over passive reading. While I&rsquo;m much
+less sure of how to do this than I am that it&rsquo;s a good idea, here are a few preliminary thoughts:
+* Let newcomers learn your codebase by suggesting they try and implement already made changes as
+  katas. Start them at the Git commit that preceded the change, give them hints where necessary,
+  and link them to the actual change plus others&rsquo; attempts at producing it.
+* Rather than treating documentation as something that explains individual modules, focus on
+  providing maps (like <a href="http://fabiensanglard.net/git_code_review/index.php">Fabien Sanglard&rsquo;s for
+  Git</a>) that help future hackers understand
+  the big picture enough to change things within it.
+At the very least, don&rsquo;t fault people who want to contribute to your codebase for not reading your
+code line-by-line.</p>
+
+<h1 id="afterword">Afterword</h1>
+
+<p>It turns out others have explored similar ideas that I explore here from different
+angles:</p>
+
+<ul>
+<li>&ldquo;<a href="http://www.catb.org/esr/faqs/hacker-howto.html"><em>How To Be A Hacker</em></a>&ldquo;: Eric Raymond discusses what he calls the “the incremental-hacking cycle”, a
+process by which someone gradually expands their understanding of a codebase by making bigger and
+bigger changes to it.</li>
+<li>&ldquo;<a href="https://www.drmaciver.com/2016/05/how-to-read-a-mathematics-textbook/"><em>How to read math textbooks</em></a>&ldquo;: David Maciver describes a problem- and theorem-driven approach for
+learning math, which you could adapt to reading programs.</li>
+</ul>
+</div>
+
+    
+    
+
+    
+
+    
+
+        <h4 class="page-header">Comments</h4>
+
+        <div id="disqus_thread"></div>
+<script>
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "an1lam-github-io" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+    
+
+</main>
+
+        <footer>
+
+            <p class="copyright text-muted">&copy; All rights reserved. Powered by <a href="https://gohugo.io">Hugo</a> and <a href="https://github.com/calintat/minimal">Minimal</a></p>
+
+        </footer>
+       
+    </body>
+
+</html>
+
