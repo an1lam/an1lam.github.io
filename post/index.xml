@@ -6,10 +6,20 @@
     <description>Recent content in Posts on Stephen Malina</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 30 Mar 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 31 Mar 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://an1lam.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Linear Algebra Done Right - Chapter 4</title>
+      <link>https://an1lam.github.io/post/2019-03-31-linear-algebra-done-right-ch4-notes/</link>
+      <pubDate>Sun, 31 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://an1lam.github.io/post/2019-03-31-linear-algebra-done-right-ch4-notes/</guid>
+      <description>Selected Exercises 4. Suppose $m$ and $n$ are positive integers with $ m \leq n $, and suppose $ \lambda_1, \dots, \lambda_m \in F $. Prove that there exists a polynomial $ p \in \mathcal P(\mathbf{F}) $ with $ \deg p = n $ such that $ 0 = p(\lambda_1) = \cdots = p(\lambda_m) $ and such that $ p $ has no other zeros.
+First, we can show that the polynomial $p&amp;rsquo;(z) = (z - \lambda_1) \cdots (z-\lambda_m) $ with $ \deg p&amp;rsquo; = m $ has $ 0 = p&amp;rsquo;(\lambda_1) = \cdots = p&amp;rsquo;(\lambda_m) $ and no other zeros.</description>
+    </item>
     
     <item>
       <title>Linear Algebra Done Right - Chapter 3</title>
