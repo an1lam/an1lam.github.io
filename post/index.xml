@@ -6,21 +6,10 @@
     <description>Recent content in Posts on Stephen Malina</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 20 May 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 18 May 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://an1lam.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>Linear Algebra Done Right - Chapter 6</title>
-      <link>https://an1lam.github.io/post/2019-05-20-linear-algebra-done-right-ch6-notes/</link>
-      <pubDate>Mon, 20 May 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://an1lam.github.io/post/2019-05-20-linear-algebra-done-right-ch6-notes/</guid>
-      <description>Selected Exercises 6.B 1. (a) Suppose $ \theta \in \mathbf{R} $. Show that $ (\cos \theta, \sin \theta), (-\sin \theta, \cos \theta) $ and $ (\cos \theta, \sin \theta), (\sin \theta, -\cos \theta) $ are orthonormal bases of $ \mathbf{R}^2 $.
-(b) Show that each orthonormal basis of $ \mathbf{R}^2 $ is of the form given by one of the two possibilities of part (a).
-(a) First, we show that both lists of vectors are orthonormal (using the Euclidean inner product), i.</description>
-    </item>
     
     <item>
       <title>Current Thoughts on Stoicism</title>
@@ -34,40 +23,6 @@ Peter Thiel recently talked about (in German) why he&amp;rsquo;s not a Stoic,
     </item>
     
     <item>
-      <title>Linear Algebra Done Right - Chapter 5</title>
-      <link>https://an1lam.github.io/post/2019-04-01-linear-algebra-done-right-ch5-notes/</link>
-      <pubDate>Mon, 01 Apr 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://an1lam.github.io/post/2019-04-01-linear-algebra-done-right-ch5-notes/</guid>
-      <description>Selected Exercises 5.A 12. Define $ T \in \mathcal L(\mathcal P_4(\mathbf{R})) $ by
-$$ (Tp)(x) = xp&amp;rsquo;(x) $$
-for all $ x \in \mathbf{R} $. Find all eigenvalues and eigenvectors of $ T $.
-Observe that, if $ p = a_0 + a_1 x + a_2 x^2 + a_3 x^3 + a_4 x^4 $, then $$ x p&amp;rsquo;(x) = a_1 x + 2 a_2 x^2 + 3 a_3 x^3 + 4 a_4 x^4.</description>
-    </item>
-    
-    <item>
-      <title>Linear Algebra Done Right - Chapter 4</title>
-      <link>https://an1lam.github.io/post/2019-03-31-linear-algebra-done-right-ch4-notes/</link>
-      <pubDate>Sun, 31 Mar 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://an1lam.github.io/post/2019-03-31-linear-algebra-done-right-ch4-notes/</guid>
-      <description>Selected Exercises 4. Suppose $m$ and $n$ are positive integers with $ m \leq n $, and suppose $ \lambda_1, \dots, \lambda_m \in F $. Prove that there exists a polynomial $ p \in \mathcal P(\mathbf{F}) $ with $ \deg p = n $ such that $ 0 = p(\lambda_1) = \cdots = p(\lambda_m) $ and such that $ p $ has no other zeros.
-First, we can show that the polynomial $p&amp;rsquo;(z) = (z - \lambda_1) \cdots (z-\lambda_m) $ with $ \deg p&amp;rsquo; = m $ has $ 0 = p&amp;rsquo;(\lambda_1) = \cdots = p&amp;rsquo;(\lambda_m) $ and no other zeros.</description>
-    </item>
-    
-    <item>
-      <title>Linear Algebra Done Right - Chapter 3</title>
-      <link>https://an1lam.github.io/post/2019-03-30-linear-algebra-done-right-ch3-notes/</link>
-      <pubDate>Sat, 30 Mar 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://an1lam.github.io/post/2019-03-30-linear-algebra-done-right-ch3-notes/</guid>
-      <description>Selected Exercises 3.D 7. Suppose $ V $ &amp;amp; $ W $ are finite-dimensional. Let $ v \in V $. Let $$ E = \{ T \in \mathcal L(V, W): T(v) = 0 \}. $$
-(a) Show that $ E $ is a subspace of $ \mathcal L(V, W) $.
-(b) Suppose $ v \neq 0 $. What is $\dim E$?
-For (a), to show $ E $ is a subspace of $ \mathcal L(V, W) $, we need to show that $ E $ contains zero and is closed under both addition and multiplication.</description>
-    </item>
-    
-    <item>
       <title>Better Project Planning With Prediction Markets</title>
       <link>https://an1lam.github.io/post/2019-03-22-internal-prediction-markets-for-better-institutions/</link>
       <pubDate>Fri, 22 Mar 2019 00:00:00 +0000</pubDate>
@@ -75,16 +30,6 @@ For (a), to show $ E $ is a subspace of $ \mathcal L(V, W) $, we need to show th
       <guid>https://an1lam.github.io/post/2019-03-22-internal-prediction-markets-for-better-institutions/</guid>
       <description>As I understand it, much of Coase&amp;rsquo;s work focuses on why companies&amp;rsquo; internal structures don&amp;rsquo;t resemble markets all that much. Instead, most firms have feudal-ish structures. The CEO has, at the discretion of the board, final decision making power on nearly all decisions, and then their power trickles down recursively to their subordinates for decisions in which they&amp;rsquo;re not involved.
 While I&amp;rsquo;m willing to swallow the bitter pill that feudal-ish structures are actually more efficient for many company functions than democratic ones would be, in my own experience, I&amp;rsquo;ve observed a few places where I think market-based decision making systems could improve both company efficiency and employee satisfaction.</description>
-    </item>
-    
-    <item>
-      <title>Linear Algebra Done Right - Chapter 2</title>
-      <link>https://an1lam.github.io/post/2018-12-24-linear-algebra-done-right-ch2-notes/</link>
-      <pubDate>Mon, 24 Dec 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://an1lam.github.io/post/2018-12-24-linear-algebra-done-right-ch2-notes/</guid>
-      <description>Intro I&amp;rsquo;ve recently been making my way through Axler&amp;rsquo;s Linear Algebra Done Right and, as a way to motivate myself to continue, have decided to blog my notes and solutions for exercises as I go.
-Insights Section 2.A You can convert any linearly dependent list to a linearly independent list with the same span. By the linear dependence lemma, if you have a list that&amp;rsquo;s linearly dependenty, then you can remove one item without changing the list&amp;rsquo;s span.</description>
     </item>
     
     <item>
