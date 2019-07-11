@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Logs on Stephen Malina</title>
+    <link>https://an1lam.github.io/log/</link>
+    <description>Recent content in Logs on Stephen Malina</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 10 Jul 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://an1lam.github.io/log/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Daily - 2019-07-10</title>
+      <link>https://an1lam.github.io/log/2019-07-10/</link>
+      <pubDate>Wed, 10 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://an1lam.github.io/log/2019-07-10/</guid>
+      <description>Not nearly as productive as yesterday. Spent a bunch of time reading about synthetic biology in the morning rather than doing Calculus.
+Had a good session learning about probability. Was referred to Terry Tao&amp;rsquo;s notes on rigorous probability theory as a supplement to the book I&amp;rsquo;m reading. Feeling excited about diving into them.
+Got around half-way through Calculus Problem Set #2, hoping to finish tomorrow and maybe get in 1-2 lectures.</description>
+    </item>
+    
+    <item>
+      <title>Daily - 2019-07-11</title>
+      <link>https://an1lam.github.io/log/2019-07-11/</link>
+      <pubDate>Wed, 10 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://an1lam.github.io/log/2019-07-11/</guid>
+      <description>Post-Lunch So far, much more productive than yesterday, finished Problem Set #2 and went through the Exam 1 review lecture for Calculus. Currently debating whether I should take the exam today or wait until tomorrow. I&amp;rsquo;d like to do some probability, but also want to make sure I&amp;rsquo;m making adequate progress, in particular while my motivation&amp;rsquo;s still relatively high.
+In the afternoon, I&amp;rsquo;m going to try to finish the probability exercises from Section 1.</description>
+    </item>
+    
+  </channel>
+</rss>
