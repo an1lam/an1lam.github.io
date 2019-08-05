@@ -6,10 +6,30 @@
     <description>Recent content on Stephen Malina</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 16 Jul 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 26 Jul 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://an1lam.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Paper Review - DeepBind</title>
+      <link>https://an1lam.github.io/post/2019-07-26/</link>
+      <pubDate>Fri, 26 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://an1lam.github.io/post/2019-07-26/</guid>
+      <description>In which I record my thoughts on DeepBind.
+What is this paper about? The authors of this paper designed a conv net model to predict how well different proteins will bind to sequences of DNA or RNA. They train one model per protein for many different sequences and show that these models can predict binding affinities for sequences well enough to produce insights regarding the impact of single nucleotide mutations.</description>
+    </item>
+    
+    <item>
+      <title>Daily - 2019-07-17</title>
+      <link>https://an1lam.github.io/log/2019-07-17/</link>
+      <pubDate>Wed, 17 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://an1lam.github.io/log/2019-07-17/</guid>
+      <description>Did well with Calculus in the morning but I&amp;rsquo;m experiencing a lot of internal resistance to working on probability and procrastinated a bunch as a result. I wonder if it&amp;rsquo;s because I don&amp;rsquo;t like the book I&amp;rsquo;m using that much.
+I&amp;rsquo;m going to try reading Terry Tao&amp;rsquo;s notes to see if reading something I find more interesting helps to get me started.</description>
+    </item>
     
     <item>
       <title>Daily - 2019-07-16</title>
