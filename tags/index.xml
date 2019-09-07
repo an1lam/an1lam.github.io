@@ -6,15 +6,42 @@
     <description>Recent content in Tags on Stephen Malina</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 05 Aug 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 13 Aug 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://an1lam.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
+      <title>Math</title>
+      <link>https://an1lam.github.io/tags/math/</link>
+      <pubDate>Tue, 13 Aug 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://an1lam.github.io/tags/math/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>linear-algebra</title>
+      <link>https://an1lam.github.io/tags/linear-algebra/</link>
+      <pubDate>Tue, 13 Aug 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://an1lam.github.io/tags/linear-algebra/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>machine-learning</title>
+      <link>https://an1lam.github.io/tags/machine-learning/</link>
+      <pubDate>Tue, 13 Aug 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://an1lam.github.io/tags/machine-learning/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Notes</title>
       <link>https://an1lam.github.io/tags/notes/</link>
-      <pubDate>Mon, 05 Aug 2019 00:00:00 +0000</pubDate>
+      <pubDate>Thu, 08 Aug 2019 00:00:00 +0000</pubDate>
       
       <guid>https://an1lam.github.io/tags/notes/</guid>
       <description></description>
@@ -23,25 +50,16 @@
     <item>
       <title>genomics</title>
       <link>https://an1lam.github.io/tags/genomics/</link>
-      <pubDate>Mon, 05 Aug 2019 00:00:00 +0000</pubDate>
+      <pubDate>Thu, 08 Aug 2019 00:00:00 +0000</pubDate>
       
       <guid>https://an1lam.github.io/tags/genomics/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>machine-learning</title>
-      <link>https://an1lam.github.io/tags/machine-learning/</link>
-      <pubDate>Mon, 05 Aug 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://an1lam.github.io/tags/machine-learning/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>paper</title>
       <link>https://an1lam.github.io/tags/paper/</link>
-      <pubDate>Mon, 05 Aug 2019 00:00:00 +0000</pubDate>
+      <pubDate>Thu, 08 Aug 2019 00:00:00 +0000</pubDate>
       
       <guid>https://an1lam.github.io/tags/paper/</guid>
       <description></description>
@@ -50,7 +68,7 @@
     <item>
       <title>review</title>
       <link>https://an1lam.github.io/tags/review/</link>
-      <pubDate>Mon, 05 Aug 2019 00:00:00 +0000</pubDate>
+      <pubDate>Thu, 08 Aug 2019 00:00:00 +0000</pubDate>
       
       <guid>https://an1lam.github.io/tags/review/</guid>
       <description></description>
@@ -62,15 +80,6 @@
       <pubDate>Mon, 20 May 2019 00:00:00 +0000</pubDate>
       
       <guid>https://an1lam.github.io/tags/linear-algebra-done-right/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Math</title>
-      <link>https://an1lam.github.io/tags/math/</link>
-      <pubDate>Mon, 20 May 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://an1lam.github.io/tags/math/</guid>
       <description></description>
     </item>
     

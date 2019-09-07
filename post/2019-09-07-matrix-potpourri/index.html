@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+         
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Matrix Potpourri</title>
+        
+        <style>
+
+    html body {
+        font-family: 'Raleway', sans-serif;
+        background-color: white;
+    }
+
+    :root {
+        --accent: red;
+        --border-width:  5px ;
+    }
+
+</style>
+
+
+<link rel="stylesheet" href="https://an1lam.github.io/css/main.css">
+
+
+
+
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+
+
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/solarized-dark.min.css"> 
+
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+ 
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/go.min.js"></script>  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/haskell.min.js"></script>  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/kotlin.min.js"></script>  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/scala.min.js"></script>  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/swift.min.js"></script> 
+
+    <script>hljs.initHighlightingOnLoad();</script>
+
+
+
+
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+
+<script>$(document).on('click', function() { $('.collapse').collapse('hide'); })</script>
+ <meta name="generator" content="Hugo 0.55.6" />
+        
+
+        
+    </head>
+
+    
+    
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+          processEscapes: true
+        }
+      });
+    </script>
+    <script type="text/javascript" async
+      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+    </script>
+    
+
+    <body>
+         
+        <nav class="navbar navbar-default navbar-fixed-top">
+
+            <div class="container">
+
+                <div class="navbar-header">
+
+                    <a class="navbar-brand visible-xs" href="#">Matrix Potpourri</a>
+
+                    <button class="navbar-toggle" data-target=".navbar-collapse" data-toggle="collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+
+                </div>
+
+                <div class="collapse navbar-collapse">
+
+                    
+                        <ul class="nav navbar-nav">
+                            
+                                <li><a href="/">Home</a></li>
+                            
+                                <li><a href="/log/">Daily Log</a></li>
+                            
+                                <li><a href="/learning/">Learning</a></li>
+                            
+                                <li><a href="/post/">Posts</a></li>
+                            
+                                <li><a href="/progress">The State of My Mind</a></li>
+                            
+                        </ul>
+                    
+
+                    
+                        <ul class="nav navbar-nav navbar-right">
+                            
+                                <li class="navbar-icon"><a href="mailto:stephenmalina@gmail.com"><i class="fa fa-envelope-o"></i></a></li>
+                            
+                                <li class="navbar-icon"><a href="https://github.com/an1lam"><i class="fa fa-github"></i></a></li>
+                            
+                                <li class="navbar-icon"><a href="https://www.linkedin.com/in/stephen.malina/"><i class="fa fa-linkedin"></i></a></li>
+                            
+                                <li class="navbar-icon"><a href="https://stackoverflow.com/users/1631855/an1lam"><i class="fa fa-stack-overflow"></i></a></li>
+                            
+                        </ul>
+                    
+
+                </div>
+
+            </div>
+
+        </nav>
+
+
+<main>
+
+    <div class="item">
+
+    
+    
+    
+
+    
+    
+
+    <h4><a href="/post/2019-09-07-matrix-potpourri/">Matrix Potpourri</a></h4>
+    <h5>August 13, 2019</h5>
+    
+    <a href="https://an1lam.github.io/tags/math"><kbd class="item-tag">math</kbd></a>
+    
+    <a href="https://an1lam.github.io/tags/linear-algebra"><kbd class="item-tag">linear-algebra</kbd></a>
+    
+    <a href="https://an1lam.github.io/tags/machine-learning"><kbd class="item-tag">machine-learning</kbd></a>
+    
+
+</div>
+
+
+    <br> <div class="text-justify">
+
+<h1 id="matrix-potpourri">Matrix Potpourri</h1>
+
+<p>As part of reviewing Linear Algebra for my Machine Learning class, I&rsquo;ve noticed there&rsquo;s a bunch of matrix terminology that I didn&rsquo;t encounter during my proof-based self-study of LA from <a href="https://www.amazon.com/Programmers-Introduction-Mathematics-Dr-Jeremy/dp/1727125452/ref=asc_df_1727125452/?tag=hyprod-20&amp;linkCode=df0&amp;hvadid=312168166316&amp;hvpos=1o1&amp;hvnetw=g&amp;hvrand=8153319341318076586&amp;hvpone=&amp;hvptwo=&amp;hvqmt=&amp;hvdev=c&amp;hvdvcmdl=&amp;hvlocint=&amp;hvlocphy=9067609&amp;hvtargid=aud-801381245258:pla-582015251962&amp;psc=1"><em>Linear Algebra Done Right</em></a>. This post is mostly intended to consolidate my own understanding and to act as a reference to future me, but if it also helps others in a similar position, that&rsquo;s even better!</p>
+
+<p><em>Note</em>: I list all the sources from which I drew while writing this post under the &ldquo;Sources&rdquo; heading at the bottom of this post.</p>
+
+<p>The general form of this post&rsquo;s sections will be that I&rsquo;ll describe an axis along which we can categorize matrices, discuss how the categorization relates to properties of linear maps, and state any interesting facts about matrices/linear maps in the category under discussion. Note that this entire discussion assumes we only care about matrices over real-valued vector spaces.</p>
+
+<h1 id="relationship-between-matrices-and-linear-maps">Relationship between Matrices and Linear Maps</h1>
+
+<p>In order to discuss how specific types of matrices relate to linear maps, we need to first understand how matrices relate to linear maps in general! Axler covers this in more detail so I recommend referring to LADR, chapter 3 in particular, for a fuller treatment. This section assumes the reader knows what matrices and linear maps are.</p>
+
+<p>For the rest of this section, assume that we have linear maps, $S$ and $T$ both with domain $V$ and range $W$. Assume $\text{dim}(V) = n$ and $\text{dim}(W) = m$ and that $v_1, v_2, \dots, v_n$ is a basis of $V$ and $w_1, w_2, \dots, w_n$ is a basis of $W$. There&rsquo;s a bijection, which we&rsquo;ll refer to as $M$, between matrices and linear maps, i.e. every linear map has a corresponding matrix and vice versa. A more computational way to think of this is that matrices encode linear maps&rsquo; mappings of bases in the domain to bases in the range as a 2D arrays. Using our notation, column $i$ of $ \mathcal{M}(T)$ encodes the scalar coefficients of $v_1, v_2, \dots, v_n$ that give us $Tu_i$. Further, $M(S+T) = M(S) + M(T)$ and, if we have scalar $c$, then $ \mathcal{M}(cT) = c \mathcal{M}(T) $. Thus, $\mathcal{M}$ is itself a linear map from $ \mathcal{L}(V, W) $ to $ \mathcal{F}^{n \times m} $. Last, we define matrix multiplication in the typical way and it turns out that $ \mathcal{M}(ST) = \mathcal{M}(S) \cdot \mathcal{M}(T) $.</p>
+
+<p>As we know, we also want to multiply matrices by vectors. But we haven&rsquo;t defined vectors as we usually think of them yet. Let&rsquo;s do that now. We define $n \times 1$ vectors similar to matrices. The elements of $ \mathcal{M}(v) $ for some $v \in V$ are just the coefficiencts of the linear combination of $v_1, v_2, \dots, v_n$ that give us $v$. As a result of this, it turns out that applying a linear map is &ldquo;the same&rdquo; as matrix multiplication, i.e. $ \mathcal{M}(Tv) = \mathcal{M}(T) \cdot \mathcal{M}(v) $.</p>
+
+<p>That&rsquo;s a very brief overview of the relationship between matrices and linear maps. We&rsquo;ll discuss other relationships in the following sections. For the rest of this post, I also assume the reader knows what eigenvectors and eigenvalues are.</p>
+
+<h1 id="dimensionality">Dimensionality</h1>
+
+<h2 id="square-matrices">Square Matrices</h2>
+
+<p>A square matrix is a matrix with the same number of rows and columns. We often prefer to work with square matrices because they have nice properties (many of which we&rsquo;ll discuss in the following sections). Technically, any linear map between two isomorphic vector spaces will have a square matrix. In practice, we typically assume that square matrices correspond to operators, i.e. linear maps over single vector spaces.</p>
+
+<h2 id="row-and-column-rank">Row and Column Rank</h2>
+
+<p>The row/column rank of a matrix is the number of linearly independent rows/columns. It <a href="https://en.wikipedia.org/wiki/Rank_(linear_algebra)">turns out</a> that these values are always equal, so I&rsquo;ll just use the term rank to refer to both from here on out. The rank of a matrix will always equal the dimension of the range of the linear map to which the matrix corresponds. Matrix rank and dimension of a linear map&rsquo;s range can be shown to be the same via the linear dependence lemma.</p>
+
+<p>We refer to a matrix as &ldquo;full rank&rdquo; if all of its columns (and rows) are linearly independent. Since the rank of a matrix equals the dimension of its linear map&rsquo;s range, by the Fundamental Theorem of Linear Maps, if matrix $M \in \mathcal{R}^{m \times n}$ is surjective if it has rank $n$ and injective if it has rank $m$. Because column and row rank are always equal, rank will always be at most $\text{min}(m, n)$. This is analogous to the fact that linear maps from smaller to larger vector spaces can never be surjective and that linear maps from larger to smaller vector spaces can never be injective.</p>
+
+<h1 id="invertible-and-singular">Invertible and Singular</h1>
+
+<p>Invertibility is probably the easiest concept to translate between matrix land and linear map land. A matrix is invertible if there exists some other matrix by which we can multiply it to give us the identity matrix. A linear map is invertible if there exists some other linear map which composes with it to produce the identity map. It turns that only surjective and injective linear maps invertible. Combined with the fact that surjectivity/injectivity are synonymous with full rank, this means that only full rank square matrices can have an inverse. Since non-square matrices are never invertible, we don&rsquo;t have a special term for them, but we call non-invertible square matrices singular.</p>
+
+<h1 id="symmetric">Symmetric</h1>
+
+<p>A square matrix, $A$, is symmetric if $A = A^{T}$. For linear maps, we introduce the concept of an adjoint. Briefly, the adjoint of a linear map, $T \in \mathcal{L}(V, W)$, is the linear map, $T^{*}$ for which the inner product, $ \langle Tv, w \rangle = \langle v, T^{*}w$. An operator, $T \in \mathcal{L}(V)$ is self-adjoint if $ \langle Tu, v \rangle = \langle u, Tv \rangle $ for all $u, v \in V$. In applied linear algebra, the adjoint of a linear map&rsquo;s matrix with respect to two orthonormal bases will be its transpose (technically, <em>conjugate</em> transpose, but this only matters for complex vector spaces). As a result, all self-adjoint operators are symmetric.</p>
+
+<p>This has important ramifications due to something called the Spectral Theorem. For real vector spaces, the Spectral Theorem tells us that every self-adjoint operator has some orthonormal basis, $e$, of $V$ composed of orthonormal eigenvectors of $V$ and that $T$ has a diagonal matrix with respect to this basis. Its diagonal matrix will have eigenvalues that correspond to the orthonormal eigenvectors along its diagonal because $Te_i = \lambda_i e_i$, for all $i \in 1, \dots, n$.  The Spectral Theorem also tells us the converse, that any operator with an orthonormal basis of eigenvectors is self-adjoint.</p>
+
+<p>In matrix terms, the Spectral Theorem tells us that all symmetric matrices are diagonalizable. From a computational perspective, this means any symmetric matrix can be converted into a diagonal matrix via a change of basis.</p>
+
+<h1 id="orthogonal">Orthogonal</h1>
+
+<p>An orthogonal matrix is a square matrix with mutually orthonormal columns/rows. Operators with orthogonal matrices are always isometries. An isometry is an operator that preserves norms, i.e. for $S \in \mathcal{L}(V)$, $\lVert Sv \rVert = \lVert v \rVert $. All isometries are normal and their adjoints are their inverses, i.e. $ SS^{*} = S^{*}S = I $.</p>
+
+<p>As a result, the inverse of an orthogonal matrix is just its transpose. In addition, because normal operators&rsquo; eigenvectors are always mutually orthonormal, we can easily do an eigendecomposition of any symmetric matric by breaking it down into an orthogonal matrix with eigenvectors as columns and a diagonal matrix with the corresponding eigenvalues along the diagonal (there&rsquo;s an analogous version of this claim for normal matrices over complex vector spaces).</p>
+
+<h1 id="positive-and-definite">Positive and Definite</h1>
+
+<p>A symmetric matrix, $A$ is positive semidefinite, if, for all $x \in \mathcal{R}^n$, $x^T A x \geq 0$. A self-adjoint operator, $ T \in \mathcal{L} $, is positive if $ \langle Tv, v \rangle \geq 0 $ for all $ v \in V $. Positive definite matrices are matrices where the same expression is always strictly greater than 0. Negative definiteness is defined as expected.</p>
+
+<p>As far as I know, the most important thing to remember about positive (semi-)definite matrices is that they have positive eigenvalues and are always invertible.</p>
+
+<h1 id="potential-future-work">Potential Future Work</h1>
+
+<p>I mostly focused on matrix to linear map property mappings and only glossed over stuff about eigenvalues and eigenvectors. I&rsquo;m considering focusing more on eigenvalues, eigenvectors, and the SVD in a future post.</p>
+
+<h1 id="conclusion">Conclusion</h1>
+
+<p>Hopefully this post proves helpful for future me and potentially someone else. From a mathematician&rsquo;s perspective, I&rsquo;m sure the fact that I barely proved any of my statements would be horrifying, but thankfully my blog isn&rsquo;t exactly widely trafficked by mathematicians. That said, I also am interested in going back and making all of these connections more formal when I have more time.</p>
+
+<h1 id="sources">Sources</h1>
+
+<ul>
+<li><a href="https://www.amazon.com/Linear-Algebra-Right-Undergraduate-Mathematics/dp/3319110799/ref=asc_df_3319110799/?tag=hyprod-20&amp;linkCode=df0&amp;hvadid=266025184973&amp;hvpos=1o1&amp;hvnetw=g&amp;hvrand=8455688887761414797&amp;hvpone=&amp;hvptwo=&amp;hvqmt=&amp;hvdev=c&amp;hvdvcmdl=&amp;hvlocint=&amp;hvlocphy=9067609&amp;hvtargid=aud-801381245258:pla-435436051835&amp;psc=1"><em>Linear Algebra Done Right</em></a>: this was the primary text from which I drew results from proof-based LA for this post.</li>
+<li><a href="https://www.amazon.com/Programmers-Introduction-Mathematics-Dr-Jeremy/dp/1727125452/ref=asc_df_1727125452/?tag=hyprod-20&amp;linkCode=df0&amp;hvadid=312168166316&amp;hvpos=1o1&amp;hvnetw=g&amp;hvrand=8153319341318076586&amp;hvpone=&amp;hvptwo=&amp;hvqmt=&amp;hvdev=c&amp;hvdvcmdl=&amp;hvlocint=&amp;hvlocphy=9067609&amp;hvtargid=aud-801381245258:pla-582015251962&amp;psc=1"><em>A Programmer&rsquo;s Introduction to Mathematics</em></a> by <a href="https://jeremykun.com">Jeremy Kun</a>: The only thing in this post that directly draws from this book is the brief mention of thinking of matrices as change of bases. That said, I definitely owe a lot to Jeremy&rsquo;s treatment of Linear Algebra in that book in terms of giving me a better bridge to connect my understanding of matrix stuff to linear map stuff. Also, <a href="jeremykun.com">Jeremy&rsquo;s blog</a> is my favorite math+programming blog on the internet.</li>
+<li><a href="http://cs229.stanford.edu/section/cs229-linalg.pdf">Stanford&rsquo;s CS 229 Linear Algebra Review</a>: This was the primary source from which I drew most of the matrix category names and definitions that I discuss in this post. I found this review more helpful than the one from the <a href="http://deeplearningbook.org">Deep Learning book</a>.</li>
+<li>Wikipedia: Honestly, what blog post doesn&rsquo;t use Wikipedia in some form these days&hellip;</li>
+</ul>
+</div>
+
+    
+    
+
+    
+
+        <h4 class="page-header">Related</h4>
+
+         <div class="item">
+
+    
+    
+    
+
+    
+    
+
+    <h4><a href="/post/2019-08-08-deepsea/">Paper Review - DeepSEA</a></h4>
+    <h5>August 8, 2019</h5>
+    
+    <a href="https://an1lam.github.io/tags/review"><kbd class="item-tag">review</kbd></a>
+    
+    <a href="https://an1lam.github.io/tags/machine-learning"><kbd class="item-tag">machine-learning</kbd></a>
+    
+    <a href="https://an1lam.github.io/tags/genomics"><kbd class="item-tag">genomics</kbd></a>
+    
+    <a href="https://an1lam.github.io/tags/paper"><kbd class="item-tag">paper</kbd></a>
+    
+    <a href="https://an1lam.github.io/tags/notes"><kbd class="item-tag">notes</kbd></a>
+    
+
+</div>
+  <div class="item">
+
+    
+    
+    
+
+    
+    
+
+    <h4><a href="/post/2019-08-05-basset/">Paper Review - Basset</a></h4>
+    <h5>August 5, 2019</h5>
+    
+    <a href="https://an1lam.github.io/tags/review"><kbd class="item-tag">review</kbd></a>
+    
+    <a href="https://an1lam.github.io/tags/machine-learning"><kbd class="item-tag">machine-learning</kbd></a>
+    
+    <a href="https://an1lam.github.io/tags/genomics"><kbd class="item-tag">genomics</kbd></a>
+    
+    <a href="https://an1lam.github.io/tags/paper"><kbd class="item-tag">paper</kbd></a>
+    
+    <a href="https://an1lam.github.io/tags/notes"><kbd class="item-tag">notes</kbd></a>
+    
+
+</div>
+  <div class="item">
+
+    
+    
+    
+
+    
+    
+
+    <h4><a href="/post/2019-07-26-deepbind/">Paper Review - DeepBind</a></h4>
+    <h5>July 26, 2019</h5>
+    
+    <a href="https://an1lam.github.io/tags/review"><kbd class="item-tag">review</kbd></a>
+    
+    <a href="https://an1lam.github.io/tags/machine-learning"><kbd class="item-tag">machine-learning</kbd></a>
+    
+    <a href="https://an1lam.github.io/tags/genomics"><kbd class="item-tag">genomics</kbd></a>
+    
+    <a href="https://an1lam.github.io/tags/paper"><kbd class="item-tag">paper</kbd></a>
+    
+    <a href="https://an1lam.github.io/tags/notes"><kbd class="item-tag">notes</kbd></a>
+    
+
+</div>
+ 
+
+    
+
+    
+
+        <h4 class="page-header">Comments</h4>
+
+        <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "an1lam-github-io" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+    
+
+</main>
+
+        <footer>
+
+            <p class="copyright text-muted">&copy; All rights reserved. Powered by <a href="https://gohugo.io">Hugo</a> and <a href="https://github.com/calintat/minimal">Minimal</a></p>
+
+        </footer>
+       
+    </body>
+
+</html>
+

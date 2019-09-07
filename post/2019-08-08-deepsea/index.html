@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+         
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Paper Review - DeepSEA</title>
+        
+        <style>
+
+    html body {
+        font-family: 'Raleway', sans-serif;
+        background-color: white;
+    }
+
+    :root {
+        --accent: red;
+        --border-width:  5px ;
+    }
+
+</style>
+
+
+<link rel="stylesheet" href="https://an1lam.github.io/css/main.css">
+
+
+
+
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+
+
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/solarized-dark.min.css"> 
+
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+ 
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/go.min.js"></script>  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/haskell.min.js"></script>  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/kotlin.min.js"></script>  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/scala.min.js"></script>  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/swift.min.js"></script> 
+
+    <script>hljs.initHighlightingOnLoad();</script>
+
+
+
+
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+
+<script>$(document).on('click', function() { $('.collapse').collapse('hide'); })</script>
+ <meta name="generator" content="Hugo 0.55.6" />
+        
+
+        
+    </head>
+
+    
+    
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+          processEscapes: true
+        }
+      });
+    </script>
+    <script type="text/javascript" async
+      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+    </script>
+    
+
+    <body>
+         
+        <nav class="navbar navbar-default navbar-fixed-top">
+
+            <div class="container">
+
+                <div class="navbar-header">
+
+                    <a class="navbar-brand visible-xs" href="#">Paper Review - DeepSEA</a>
+
+                    <button class="navbar-toggle" data-target=".navbar-collapse" data-toggle="collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+
+                </div>
+
+                <div class="collapse navbar-collapse">
+
+                    
+                        <ul class="nav navbar-nav">
+                            
+                                <li><a href="/">Home</a></li>
+                            
+                                <li><a href="/log/">Daily Log</a></li>
+                            
+                                <li><a href="/learning/">Learning</a></li>
+                            
+                                <li><a href="/post/">Posts</a></li>
+                            
+                                <li><a href="/progress">The State of My Mind</a></li>
+                            
+                        </ul>
+                    
+
+                    
+                        <ul class="nav navbar-nav navbar-right">
+                            
+                                <li class="navbar-icon"><a href="mailto:stephenmalina@gmail.com"><i class="fa fa-envelope-o"></i></a></li>
+                            
+                                <li class="navbar-icon"><a href="https://github.com/an1lam"><i class="fa fa-github"></i></a></li>
+                            
+                                <li class="navbar-icon"><a href="https://www.linkedin.com/in/stephen.malina/"><i class="fa fa-linkedin"></i></a></li>
+                            
+                                <li class="navbar-icon"><a href="https://stackoverflow.com/users/1631855/an1lam"><i class="fa fa-stack-overflow"></i></a></li>
+                            
+                        </ul>
+                    
+
+                </div>
+
+            </div>
+
+        </nav>
+
+
+<main>
+
+    <div class="item">
+
+    
+    
+    
+
+    
+    
+
+    <h4><a href="/post/2019-08-08-deepsea/">Paper Review - DeepSEA</a></h4>
+    <h5>August 8, 2019</h5>
+    
+    <a href="https://an1lam.github.io/tags/review"><kbd class="item-tag">review</kbd></a>
+    
+    <a href="https://an1lam.github.io/tags/machine-learning"><kbd class="item-tag">machine-learning</kbd></a>
+    
+    <a href="https://an1lam.github.io/tags/genomics"><kbd class="item-tag">genomics</kbd></a>
+    
+    <a href="https://an1lam.github.io/tags/paper"><kbd class="item-tag">paper</kbd></a>
+    
+    <a href="https://an1lam.github.io/tags/notes"><kbd class="item-tag">notes</kbd></a>
+    
+
+</div>
+
+
+    <br> <div class="text-justify">
+
+<p>In which I record my thoughts on <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4768299/pdf/nihms757739.pdf">DeepSEA</a>.</p>
+
+<h2 id="terminology">Terminology</h2>
+
+<ul>
+<li>ChIP-seq (Chromatin Immunoprecipitation Sequencing):</li>
+<li>Expression Quantitative Trait Locis (eQTLs)</li>
+<li>Cofactor Binding Sequences</li>
+<li>Histone Marks: modifications to histone proteins in the nucleosome that impact the shape of chromatin.</li>
+<li>gkm-SVMs: The gkm-SVM is the previous SOTA model for predicting transcription factor binding based on ChIP-seq data.</li>
+<li>Allele: variants of a gene at the same position on a chromosome.</li>
+</ul>
+
+<h2 id="what-is-this-paper-about">What is this paper about?</h2>
+
+<p>This paper trains a CNN to predict the presence of 919 &ldquo;chromatin features&rdquo;&ndash;different TF binding sites, DHSs, and histone marks&ndash;from 1000bp DNA sequences. It then tests this model by using a functional significance score based on its output to train a logistic regression classifier to predict whether SNPs will be present in a few different catalog of SNPs known to impact different biological functions, e.g. a GWAS catalog of disease-related SNPs.</p>
+
+<h2 id="technical-methods">Technical Methods</h2>
+
+<h2 id="why-is-this-important">Why is this important?</h2>
+
+<h2 id="meta">Meta</h2>
+
+<p>This is the clearest of the three papers I&rsquo;ve read so far, but that may be because I&rsquo;m slowly internalizing the language of the domain.</p>
+
+<h2 id="questions">Questions</h2>
+
+<ul>
+<li><p>What does this mean? I guess this paper precedes DeepBind so maybe this was just the first of its kind&hellip;</p>
+
+<blockquote>
+<p>Such approaches are valuable for prioritizing sequence variants;
+however, current methods except for a parallel work have not been able to extract and
+utilize regulatory sequence information de novo for noncoding-variant function prediction,
+which requires precise allele-specific prediction with single-nucleotide sensitivity. In fact,
+no previous approach predicts functional effects of noncoding variants from only genomic
+sequence, and no method has been demonstrated to predict with single-nucleotide sensitivity
+the effects of noncoding variants on transcription factor (TF) binding, DNA accessibility and
+histone marks of sequences.</p>
+</blockquote></li>
+
+<li><p>What&rsquo;s the difference between &ldquo;motifs&rdquo; and &ldquo;evolutionary features and chromatin annotations&rdquo;?</p></li>
+
+<li><p>When they trained the logistic regression classifiers, what aspects of the original model were they using? I think I understand, you can use the output of the NN model as the input to the classifier and train the classifier to predict based on it (predicted impact on chromatin shape).</p></li>
+
+<li><p>What do the probability predictions in the output represent? Are they continuous or purely for classification? Is the impact on a chromatin feature binary? Yes, the outputs are probabilities but the actual thing we care about is a binary classification (either will the factor bind or will there be a histone mark).</p></li>
+
+<li><p>Is the histone mark on the nucleosome being predicted by the DNA sequence or is the DNA sequence content causing the histone mark? It&rsquo;s believed to be the latter although there&rsquo;s apparently some work claiming that the former can also happen.</p></li>
+</ul>
+</div>
+
+    
+    
+
+    
+
+        <h4 class="page-header">Related</h4>
+
+         <div class="item">
+
+    
+    
+    
+
+    
+    
+
+    <h4><a href="/post/2019-09-07-matrix-potpourri/">Matrix Potpourri</a></h4>
+    <h5>August 13, 2019</h5>
+    
+    <a href="https://an1lam.github.io/tags/math"><kbd class="item-tag">math</kbd></a>
+    
+    <a href="https://an1lam.github.io/tags/linear-algebra"><kbd class="item-tag">linear-algebra</kbd></a>
+    
+    <a href="https://an1lam.github.io/tags/machine-learning"><kbd class="item-tag">machine-learning</kbd></a>
+    
+
+</div>
+  <div class="item">
+
+    
+    
+    
+
+    
+    
+
+    <h4><a href="/post/2019-08-05-basset/">Paper Review - Basset</a></h4>
+    <h5>August 5, 2019</h5>
+    
+    <a href="https://an1lam.github.io/tags/review"><kbd class="item-tag">review</kbd></a>
+    
+    <a href="https://an1lam.github.io/tags/machine-learning"><kbd class="item-tag">machine-learning</kbd></a>
+    
+    <a href="https://an1lam.github.io/tags/genomics"><kbd class="item-tag">genomics</kbd></a>
+    
+    <a href="https://an1lam.github.io/tags/paper"><kbd class="item-tag">paper</kbd></a>
+    
+    <a href="https://an1lam.github.io/tags/notes"><kbd class="item-tag">notes</kbd></a>
+    
+
+</div>
+  <div class="item">
+
+    
+    
+    
+
+    
+    
+
+    <h4><a href="/post/2019-07-26-deepbind/">Paper Review - DeepBind</a></h4>
+    <h5>July 26, 2019</h5>
+    
+    <a href="https://an1lam.github.io/tags/review"><kbd class="item-tag">review</kbd></a>
+    
+    <a href="https://an1lam.github.io/tags/machine-learning"><kbd class="item-tag">machine-learning</kbd></a>
+    
+    <a href="https://an1lam.github.io/tags/genomics"><kbd class="item-tag">genomics</kbd></a>
+    
+    <a href="https://an1lam.github.io/tags/paper"><kbd class="item-tag">paper</kbd></a>
+    
+    <a href="https://an1lam.github.io/tags/notes"><kbd class="item-tag">notes</kbd></a>
+    
+
+</div>
+ 
+
+    
+
+    
+
+        <h4 class="page-header">Comments</h4>
+
+        <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "an1lam-github-io" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+    
+
+</main>
+
+        <footer>
+
+            <p class="copyright text-muted">&copy; All rights reserved. Powered by <a href="https://gohugo.io">Hugo</a> and <a href="https://github.com/calintat/minimal">Minimal</a></p>
+
+        </footer>
+       
+    </body>
+
+</html>
+

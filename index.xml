@@ -6,10 +6,30 @@
     <description>Recent content on Stephen Malina</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 05 Aug 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 13 Aug 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://an1lam.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Matrix Potpourri</title>
+      <link>https://an1lam.github.io/post/2019-09-07-matrix-potpourri/</link>
+      <pubDate>Tue, 13 Aug 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://an1lam.github.io/post/2019-09-07-matrix-potpourri/</guid>
+      <description>Matrix Potpourri As part of reviewing Linear Algebra for my Machine Learning class, I&amp;rsquo;ve noticed there&amp;rsquo;s a bunch of matrix terminology that I didn&amp;rsquo;t encounter during my proof-based self-study of LA from Linear Algebra Done Right. This post is mostly intended to consolidate my own understanding and to act as a reference to future me, but if it also helps others in a similar position, that&amp;rsquo;s even better!
+Note: I list all the sources from which I drew while writing this post under the &amp;ldquo;Sources&amp;rdquo; heading at the bottom of this post.</description>
+    </item>
+    
+    <item>
+      <title>Paper Review - DeepSEA</title>
+      <link>https://an1lam.github.io/post/2019-08-08-deepsea/</link>
+      <pubDate>Thu, 08 Aug 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://an1lam.github.io/post/2019-08-08-deepsea/</guid>
+      <description>In which I record my thoughts on DeepSEA.
+Terminology  ChIP-seq (Chromatin Immunoprecipitation Sequencing): Expression Quantitative Trait Locis (eQTLs) Cofactor Binding Sequences Histone Marks: modifications to histone proteins in the nucleosome that impact the shape of chromatin. gkm-SVMs: The gkm-SVM is the previous SOTA model for predicting transcription factor binding based on ChIP-seq data. Allele: variants of a gene at the same position on a chromosome.  What is this paper about?</description>
+    </item>
     
     <item>
       <title>Paper Review - Basset</title>

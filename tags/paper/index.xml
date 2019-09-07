@@ -6,10 +6,20 @@
     <description>Recent content in paper on Stephen Malina</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 05 Aug 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 08 Aug 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://an1lam.github.io/tags/paper/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Paper Review - DeepSEA</title>
+      <link>https://an1lam.github.io/post/2019-08-08-deepsea/</link>
+      <pubDate>Thu, 08 Aug 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://an1lam.github.io/post/2019-08-08-deepsea/</guid>
+      <description>In which I record my thoughts on DeepSEA.
+Terminology  ChIP-seq (Chromatin Immunoprecipitation Sequencing): Expression Quantitative Trait Locis (eQTLs) Cofactor Binding Sequences Histone Marks: modifications to histone proteins in the nucleosome that impact the shape of chromatin. gkm-SVMs: The gkm-SVM is the previous SOTA model for predicting transcription factor binding based on ChIP-seq data. Allele: variants of a gene at the same position on a chromosome.  What is this paper about?</description>
+    </item>
     
     <item>
       <title>Paper Review - Basset</title>
