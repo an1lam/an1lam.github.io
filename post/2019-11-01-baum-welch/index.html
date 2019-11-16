@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+         
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Let&#39;s Derive - Expectation Maximization</title>
+        
+        <style>
+
+    html body {
+        font-family: 'Merriweather', sans-serif;
+        background-color: white;
+    }
+
+    :root {
+        --accent: red;
+        --border-width:  5px ;
+    }
+
+</style>
+
+
+<link rel="stylesheet" href="https://an1lam.github.io/css/main.css">
+
+
+
+
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merriweather">
+
+
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/solarized-dark.min.css"> 
+
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+ 
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/go.min.js"></script>  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/haskell.min.js"></script>  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/kotlin.min.js"></script>  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/scala.min.js"></script>  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/swift.min.js"></script> 
+
+    <script>hljs.initHighlightingOnLoad();</script>
+
+
+
+
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+
+<script>$(document).on('click', function() { $('.collapse').collapse('hide'); })</script>
+ <meta name="generator" content="Hugo 0.55.6" />
+        
+
+        
+    </head>
+
+    
+    
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+          processEscapes: true
+        }
+      });
+    </script>
+    <script type="text/javascript" async
+      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+    </script>
+    
+
+    <body>
+         
+        <nav class="navbar navbar-default navbar-fixed-top">
+
+            <div class="container">
+
+                <div class="navbar-header">
+
+                    <a class="navbar-brand visible-xs" href="#">Let&#39;s Derive - Expectation Maximization</a>
+
+                    <button class="navbar-toggle" data-target=".navbar-collapse" data-toggle="collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+
+                </div>
+
+                <div class="collapse navbar-collapse">
+
+                    
+                        <ul class="nav navbar-nav">
+                            
+                                <li><a href="/">Home</a></li>
+                            
+                                <li><a href="/learning/">Learning</a></li>
+                            
+                                <li><a href="/post/">Posts</a></li>
+                            
+                                <li><a href="/progress">The State of My Mind</a></li>
+                            
+                        </ul>
+                    
+
+                    
+                        <ul class="nav navbar-nav navbar-right">
+                            
+                                <li class="navbar-icon"><a href="mailto:stephenmalina@gmail.com"><i class="fa fa-envelope-o"></i></a></li>
+                            
+                                <li class="navbar-icon"><a href="https://github.com/an1lam"><i class="fa fa-github"></i></a></li>
+                            
+                                <li class="navbar-icon"><a href="https://www.linkedin.com/in/stephen.malina/"><i class="fa fa-linkedin"></i></a></li>
+                            
+                                <li class="navbar-icon"><a href="https://stackoverflow.com/users/1631855/an1lam"><i class="fa fa-stack-overflow"></i></a></li>
+                            
+                        </ul>
+                    
+
+                </div>
+
+            </div>
+
+        </nav>
+
+
+<main>
+
+    <div class="item">
+
+    
+    
+    
+
+    
+    
+
+    <h4><a href="/post/2019-11-01-baum-welch/">Let&#39;s Derive - Expectation Maximization</a></h4>
+    <h5>November 1, 2019</h5>
+    
+    <a href="https://an1lam.github.io/tags/math"><kbd class="item-tag">math</kbd></a>
+    
+    <a href="https://an1lam.github.io/tags/probability"><kbd class="item-tag">probability</kbd></a>
+    
+    <a href="https://an1lam.github.io/tags/machine-learning"><kbd class="item-tag">machine-learning</kbd></a>
+    
+    <a href="https://an1lam.github.io/tags/comp-bio"><kbd class="item-tag">comp-bio</kbd></a>
+    
+
+</div>
+
+
+    <br> <div class="text-justify">
+
+<p>I&rsquo;ve gotten so tired of reading other people&rsquo;s descriptions of Expectation Maximization that don&rsquo;t seem to help me understand it better so I&rsquo;ve decided to write my own. Hopefully, this makes it so that I never have to read anyone else&rsquo;s description again.</p>
+
+<h1 id="reader-assumptions">Reader Assumptions</h1>
+
+<p>Since I&rsquo;m writing this for myself, I&rsquo;m going to assume a lot of knowledge. This is intended to be a prelude to a follow-up post in which I&rsquo;d like to derive the Baum-Welch algorithm for learning Hidden Markov Model (HMM) parameters from data. While none of the math in this post goes beyond an undergrad probability course (since I don&rsquo;t know graduate level probability theory), understanding why we care about any of this most likely requires having been exposed to some probabilistic machine learning models such as HMMs, Gaussian Mixture Models, etc.</p>
+
+<h1 id="notation">Notation</h1>
+
+<p>In what follows, we assume that we&rsquo;re learning from dataset \( X \) with (unobserved) latent variables \( Z \), both drawn from some sort of distribution parameterized by \( \theta \). I first learned about this in the context of HMMs, so I tend to keep the example of \( \theta \) as transition and emission probability matrices, \( Z \) as the hidden states that generated our observations, and \( X \) as our observed emissions in mind when thinking about this but I don&rsquo;t think anything that follows is specific to HMMs.</p>
+
+<h1 id="problem-statement">Problem Statement</h1>
+
+<p>At a high level, we want to derive an algorithm for learning the parameters of a probabilistic model given some data. In particular, we&rsquo;re interested in the case where we have a lot of unobserved latent variables that we need to sum over in order to find a good estimate for our parameters. In order to do that, let&rsquo;s digress briefly to look at what it means to use an HMM as a generative model.</p>
+
+<h2 id="formalizing-the-problem">Formalizing the Problem</h2>
+
+<p>We&rsquo;ve been given dataset \( X \), which we think of as having been generated by our model via some generative process. Our problem is finding parameters \( \theta  \) which maximize the <em>likelihood</em> of our data,
+\[ \mathcal{L}(\theta \mid X) = P(X \mid \theta). \]
+We also assume that while the easiest way to do this is by summing over the joint distribution of \( X \) and latent variables \( Z \), summing over the latent variables directly is intractable for some reason or another.</p>
+
+<p>Before I go on, I should note that there&rsquo;s a Bayesian version of this where we have a prior on elements of \( \theta \) that I&rsquo;m not going to talk about it here.</p>
+
+<h1 id="derivation">Derivation</h1>
+
+<p>Spoiler alert: there&rsquo;s no closed form solution for the parameters that maximize the likelihood of our data. As you might guess, we&rsquo;re going to insteadcome up with some way to iteratively update our estimates.</p>
+
+<h2 id="naive-approach">Naive Approach</h2>
+
+<p>Even though I spoiled things, let&rsquo;s try Maximum Likelihood Estimation to see if we can find a closed form solution to this problem. By algebra and basic rules of \( \log \) we have,
+\[
+\begin{align}
+\mathop{\mathrm{arg\ max}}_\theta P(X \mid \theta) &amp;= \mathop{\mathrm{arg\ max}}_\theta \log P(X \mid \theta) \\<br />
+&amp;= \mathop{\mathrm{arg\ max}}_\theta \log \prod_{i=1}^m P(X_i \mid \theta) \\<br />
+&amp;= \mathop{\mathrm{arg\ max}}_\theta \sum_{i=1}^m \log P(X_i \mid \theta).
+\end{align}
+\]</p>
+
+<p>And&hellip; why&rsquo;d I stop?</p>
+
+<p>Say we try to compute \( \log P(x \mid \theta) \) for some \( x \in X \). The clearest way to do this would be by summing over all possible latent variable sequences. If we do this, we get
+\[ \log P(x \mid \theta) = \log \sum_{\pi} P(x, \pi \mid \theta). \]
+Unfortunately, for a single emission sequence, there&rsquo;s \( K^T \) possible state sequences, so computing all these joint probabilities won&rsquo;t be computationally tractable in practice. Another thing to note here that is discussed in Murphy but I haven&rsquo;t verified myself is that</p>
+
+<p>But, we did make some good progress by figuring out that the obstacle we need to overcome is: find a tractable way to at least estimate ( \log P(x \mid \theta) ) without iterating over all possible hidden state sequences. This also helps us understand better why we shouldn&rsquo;t expect to find a computationally tractable closed-form solution for this problem.</p>
+
+<h2 id="savvy-approach">Savvy Approach</h2>
+
+<h3 id="commentary">Commentary</h3>
+
+<p>This problem we&rsquo;re encountering seems to be fairly common in probabilistic machine learning. We want to get an estimate of some values and we have a formula for it, but computing that formula in practice requires summing over all possible values of some random variable which can take on <strong>a lot</strong> of values or is just hard to optimize. So instead, we find a proxy for the thing we actually want that&rsquo;s faster to compute and/or easier to optimize, but relates to our actual target in such a way that optimizing the proxy will optimize the target. While we&rsquo;re talking about Expectation Maximization in this post, Variational Inference involves a lot of similar ideas.</p>
+
+<p>The approach we take here will be of that flavor. We&rsquo;ll derive a formula that allows us to use an existing estimate of our parameters to find a new estimate that&rsquo;s guaranteed to increase the likelihood of our data relative to the current one. This is a form of expectation maximization, so named because we&rsquo;re going to find a formula for the expectation of the likelihood with respect to a computable proxy and then maximize it.</p>
+
+<h3 id="deriving-the-proxy">Deriving the Proxy</h3>
+
+<p>Recall that we want to derive a proxy for our \( \log \) likelihood that we can optimize directly and be confident we&rsquo;re also pushing the value of our true likelihood in the right direction. We&rsquo;re going to accomplish that by deriving a proxy that we can guarantee is \( \leq \) to our true likelihood, and we&rsquo;d also like it to have clear conditions for when equality holds.</p>
+
+<p>I found this part really confusing when I first saw it, but bear with me and I&rsquo;ll try to make it as motivated as possible. Looking at our likelihood equation for the joint likelihood of our data and latent variables (with the matrix of all latent variables denoted as \( Z \)),
+\[
+\begin{equation} \label{eq:1}
+\log P(X, Z \mid \theta),
+\end{equation}
+\]
+we see that for any <strong>distribution</strong> function \( q(Z) \),
+\[
+\begin{equation} \label{eq:2}
+\log P(X, Z \mid \theta) = q(Z) \frac{\log P(X, Z \mid \theta)}{q(Z)},
+\end{equation}
+\]</p>
+</div>
+
+    
+    
+
+    
+
+        <h4 class="page-header">Related</h4>
+
+         <div class="item">
+
+    
+    
+    
+
+    
+    
+
+    <h4><a href="/post/2019-09-07-matrix-potpourri/">Matrix Potpourri</a></h4>
+    <h5>August 13, 2019</h5>
+    
+    <a href="https://an1lam.github.io/tags/math"><kbd class="item-tag">math</kbd></a>
+    
+    <a href="https://an1lam.github.io/tags/linear-algebra"><kbd class="item-tag">linear-algebra</kbd></a>
+    
+    <a href="https://an1lam.github.io/tags/machine-learning"><kbd class="item-tag">machine-learning</kbd></a>
+    
+
+</div>
+  <div class="item">
+
+    
+    
+    
+
+    
+    
+
+    <h4><a href="/post/2019-08-08-deepsea/">Paper Review - DeepSEA</a></h4>
+    <h5>August 8, 2019</h5>
+    
+    <a href="https://an1lam.github.io/tags/review"><kbd class="item-tag">review</kbd></a>
+    
+    <a href="https://an1lam.github.io/tags/machine-learning"><kbd class="item-tag">machine-learning</kbd></a>
+    
+    <a href="https://an1lam.github.io/tags/genomics"><kbd class="item-tag">genomics</kbd></a>
+    
+    <a href="https://an1lam.github.io/tags/paper"><kbd class="item-tag">paper</kbd></a>
+    
+    <a href="https://an1lam.github.io/tags/notes"><kbd class="item-tag">notes</kbd></a>
+    
+
+</div>
+  <div class="item">
+
+    
+    
+    
+
+    
+    
+
+    <h4><a href="/post/2019-08-05-basset/">Paper Review - Basset</a></h4>
+    <h5>August 5, 2019</h5>
+    
+    <a href="https://an1lam.github.io/tags/review"><kbd class="item-tag">review</kbd></a>
+    
+    <a href="https://an1lam.github.io/tags/machine-learning"><kbd class="item-tag">machine-learning</kbd></a>
+    
+    <a href="https://an1lam.github.io/tags/genomics"><kbd class="item-tag">genomics</kbd></a>
+    
+    <a href="https://an1lam.github.io/tags/paper"><kbd class="item-tag">paper</kbd></a>
+    
+    <a href="https://an1lam.github.io/tags/notes"><kbd class="item-tag">notes</kbd></a>
+    
+
+</div>
+ 
+
+    
+
+    
+
+        <h4 class="page-header">Comments</h4>
+
+        <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "an1lam-github-io" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+    
+
+</main>
+
+        <footer>
+
+            <p class="copyright text-muted">&copy; All rights reserved. Powered by <a href="https://gohugo.io">Hugo</a> and <a href="https://github.com/calintat/minimal">Minimal</a></p>
+
+        </footer>
+       
+    </body>
+
+</html>
+

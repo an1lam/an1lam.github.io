@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>comp-bio on Stephen Malina</title>
+    <link>https://an1lam.github.io/tags/comp-bio/</link>
+    <description>Recent content in comp-bio on Stephen Malina</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 01 Nov 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://an1lam.github.io/tags/comp-bio/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Let&#39;s Derive - Expectation Maximization</title>
+      <link>https://an1lam.github.io/post/2019-11-01-baum-welch/</link>
+      <pubDate>Fri, 01 Nov 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://an1lam.github.io/post/2019-11-01-baum-welch/</guid>
+      <description>I&amp;rsquo;ve gotten so tired of reading other people&amp;rsquo;s descriptions of Expectation Maximization that don&amp;rsquo;t seem to help me understand it better so I&amp;rsquo;ve decided to write my own. Hopefully, this makes it so that I never have to read anyone else&amp;rsquo;s description again.
+Reader Assumptions Since I&amp;rsquo;m writing this for myself, I&amp;rsquo;m going to assume a lot of knowledge. This is intended to be a prelude to a follow-up post in which I&amp;rsquo;d like to derive the Baum-Welch algorithm for learning Hidden Markov Model (HMM) parameters from data.</description>
+    </item>
+    
+  </channel>
+</rss>
