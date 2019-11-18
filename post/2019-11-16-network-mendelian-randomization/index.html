@@ -4,7 +4,7 @@
          
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>paper</title>
+        <title>Paper Review - Network Mendelian Randomization</title>
         
         <style>
 
@@ -61,9 +61,6 @@
 <script>$(document).on('click', function() { $('.collapse').collapse('hide'); })</script>
  <meta name="generator" content="Hugo 0.55.6" />
         
-        <link href="/tags/paper/index.xml" rel="alternate" type="application/rss&#43;xml" title="Stephen Malina" />
-        <link href="/tags/paper/index.xml" rel="feed" type="application/rss&#43;xml" title="Stephen Malina" />
-        
 
         
     </head>
@@ -91,7 +88,7 @@
 
                 <div class="navbar-header">
 
-                    <a class="navbar-brand visible-xs" href="#">paper</a>
+                    <a class="navbar-brand visible-xs" href="#">Paper Review - Network Mendelian Randomization</a>
 
                     <button class="navbar-toggle" data-target=".navbar-collapse" data-toggle="collapse">
                         <span class="icon-bar"></span>
@@ -140,9 +137,7 @@
 
 <main>
 
-    <h2>paper</h2>
-
-     <div class="item">
+    <div class="item">
 
     
     
@@ -163,6 +158,68 @@
     <a href="https://an1lam.github.io/tags/paper"><kbd class="item-tag">paper</kbd></a>
     
     <a href="https://an1lam.github.io/tags/notes"><kbd class="item-tag">notes</kbd></a>
+    
+
+</div>
+
+
+    <br> <div class="text-justify">
+
+<p>In which I record my thoughts on <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4469795/">Network Mendelian Randomization</a> by Burgess et al.</p>
+
+<h2 id="what-is-this-paper-about">What is this paper about?</h2>
+
+<p>This paper describes a method for doing Mendelian Randomization (MR) in the presence of a potential mediating variable. In the typical MR setting, we have an instrumental variable which &ldquo;instruments&rdquo; an exposure that we believe causally influences the outcome we care about. True mediators &ldquo;mediate&rdquo; the causal influence of exposures on outcomes. In other words, if we&rsquo;re trying to understand the causal influence of some factor on another factor, it&rsquo;s possible there&rsquo;s a factor (mediator) that the exposure influences that then influences the outcome.</p>
+
+<p>This paper presents two methods&ndash;one regression-based, one SEM-based&ndash;for estimating the &ldquo;direct&rdquo; and &ldquo;indirect&rdquo; effects of an exposure on the outcome assuming we have instrumental variables for both the exposure and the mediator. Like basically all of the MR papers I&rsquo;ve read, this paper requires assuming linear effects between variables and homogenous effects across individuals. While I understand why the linear effects assumption makes computing the values we care about much easier, I&rsquo;m still a bit confused about why everyone else seems to feel so comfortable with it from a philosophical perspective. That said, it&rsquo;s ubiquitous, so I can&rsquo;t fault the authors for keeping it.</p>
+
+<p>One limitation of this paper is that, with the exception of the IV, the authors assume all variables are continuous, so this method applies more to measuring the effect of levels of different measurements than presence/absence (binary/categorical variables). They claim extension to binary variables isn&rsquo;t hard, but I&rsquo;m always wary of &ldquo;it&rsquo;s trivial&rdquo; claims. In fairness, I also haven&rsquo;t looked to see if they have a follow-up paper discussing how to extend this to binary variables.</p>
+
+<h2 id="technical-methods">Technical Methods</h2>
+
+<p>The regression-based method the authors describe for estimating direct/indirect effects looks very similar to the standard MR method. In standard MR, we typically regress both the exposure and the outcome on the IV and then take the latter over the former to estimate the causal effect. Their version of this method just extends this to the mediator setting. Concretely, to estimate the (natural) direct effect of \( X \) (exposure) on \( Y \) (outcome) with mediator \( Z \), they derive the following formula,
+\[ \hat{\beta}<em>{X \Rightarrow Y} = \hat{\beta}</em>{X \rightarrow Y} - \hat{\beta}<em>{X \rightarrow Z} \hat{\beta}</em>{Z \rightarrow Y}. \]
+To estimate the individual \( \hat{\beta} \)s, they just use the normal formula I mentioned above. Intuitively, this just says that the direct effect of the exposure on the outcome is the standard causal effect of the exposure on the outcome minus the part of the effect contributed by \( X \) affecting \( Z \) affecting \( Y \). They also note that an alternate, very similar, way to estimate these effects is two-stage least squares regression, which is where you would e.g. regress the outcome on the fitted value of the exposure rather than on the IV. In their study, this approach produces similar results to the simpler approach, but they mention that [another paper]() motivates the two-stage least squares starting with a Pearl-ian causal model, so it&rsquo;s potentially more principles.</p>
+
+<h2 id="why-is-this-important">Why is this important?</h2>
+
+<p>We can imagine a lot of situations in which effects of exposures we&rsquo;re interested in are mediated by intermediate factors. To do real science, we want to understand which attributes of an exposure&rsquo;s effect operates by changing intermediate factors vs. by directly changing the outcome.</p>
+
+<p>Also, this paper does a good job of explaining their method from two different perspectives: the more statistical parametric one and the Pearl-ian non-parametric structural causal model one.</p>
+
+<h2 id="questions">Questions</h2>
+
+<ul>
+<li>If we condition on \( Z \) in a graph like the following, won&rsquo;t we unblock the path between \( X \) and \( Y \)? <img src="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4469795/bin/dyu176f2p.jpg" alt="this one" /></li>
+<li>What changes would we need to make to deal with continuous exposures but binary outcomes?</li>
+<li>What&rsquo;s the difference between the DAGs they show when discussing the regression-based approach and the SEM approach? Is it the presence of the undirected edge error terms in the DAG? I think it&rsquo;s just that the Pearl framework is non-parametric.</li>
+</ul>
+</div>
+
+    
+    
+
+    
+
+        <h4 class="page-header">Related</h4>
+
+         <div class="item">
+
+    
+    
+    
+
+    
+    
+
+    <h4><a href="/post/2019-09-07-matrix-potpourri/">Matrix Potpourri</a></h4>
+    <h5>August 13, 2019</h5>
+    
+    <a href="https://an1lam.github.io/tags/math"><kbd class="item-tag">math</kbd></a>
+    
+    <a href="https://an1lam.github.io/tags/linear-algebra"><kbd class="item-tag">linear-algebra</kbd></a>
+    
+    <a href="https://an1lam.github.io/tags/machine-learning"><kbd class="item-tag">machine-learning</kbd></a>
     
 
 </div>
@@ -214,35 +271,38 @@
     
 
 </div>
-  <div class="item">
-
-    
-    
-    
-
-    
-    
-
-    <h4><a href="/post/2019-07-26-deepbind/">Paper Review - DeepBind</a></h4>
-    <h5>July 26, 2019</h5>
-    
-    <a href="https://an1lam.github.io/tags/review"><kbd class="item-tag">review</kbd></a>
-    
-    <a href="https://an1lam.github.io/tags/machine-learning"><kbd class="item-tag">machine-learning</kbd></a>
-    
-    <a href="https://an1lam.github.io/tags/genomics"><kbd class="item-tag">genomics</kbd></a>
-    
-    <a href="https://an1lam.github.io/tags/paper"><kbd class="item-tag">paper</kbd></a>
-    
-    <a href="https://an1lam.github.io/tags/notes"><kbd class="item-tag">notes</kbd></a>
-    
-
-</div>
  
 
+    
+
+    
+
+        <h4 class="page-header">Comments</h4>
+
+        <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "an1lam-github-io" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+    
+
 </main>
-
-
 
         <footer>
 
