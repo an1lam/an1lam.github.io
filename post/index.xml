@@ -6,10 +6,19 @@
     <description>Recent content in Posts on Stephen Malina</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 16 Nov 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 13 Dec 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://an1lam.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Yet another Simpson&#39;s Paradox post</title>
+      <link>https://an1lam.github.io/post/2019-12-13-alternative-explanation-of-simpsons-paradox/</link>
+      <pubDate>Fri, 13 Dec 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://an1lam.github.io/post/2019-12-13-alternative-explanation-of-simpsons-paradox/</guid>
+      <description>Intro Simpson&#39;s paradox is a phenomenon in statistics where a choice or treatment performs better in all sub-populations but worse in the overall population. Since first learning of Simpson&#39;s Paradox, I&#39;ve struggled to develop a gut-level understanding that lets me easily detect cases of it and clearly explain its cause. This is even after reading Michael Nielsen&#39;s wonderful post that provides a number of different ways of thinking about it and Judea Pearl&#39;s fascinating analysis of it from a causality perspective.</description>
+    </item>
     
     <item>
       <title>Paper Review - Network Mendelian Randomization</title>

@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+         
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Yet another Simpson&#39;s Paradox post</title>
+        
+        <style>
+
+    html body {
+        font-family: 'Merriweather', sans-serif;
+        background-color: white;
+    }
+
+    :root {
+        --accent: red;
+        --border-width:  5px ;
+    }
+
+</style>
+
+
+<link rel="stylesheet" href="https://an1lam.github.io/css/main.css">
+
+
+
+
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merriweather">
+
+
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/solarized-dark.min.css"> 
+
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+ 
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/go.min.js"></script>  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/haskell.min.js"></script>  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/kotlin.min.js"></script>  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/scala.min.js"></script>  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/swift.min.js"></script> 
+
+    <script>hljs.initHighlightingOnLoad();</script>
+
+
+
+
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+
+<script>$(document).on('click', function() { $('.collapse').collapse('hide'); })</script>
+ <meta name="generator" content="Hugo 0.55.6" />
+        
+
+        
+    </head>
+
+    
+    
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+          processEscapes: true
+        }
+      });
+    </script>
+    <script type="text/javascript" async
+      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+    </script>
+    
+
+    <body>
+         
+        <nav class="navbar navbar-default navbar-fixed-top">
+
+            <div class="container">
+
+                <div class="navbar-header">
+
+                    <a class="navbar-brand visible-xs" href="#">Yet another Simpson&#39;s Paradox post</a>
+
+                    <button class="navbar-toggle" data-target=".navbar-collapse" data-toggle="collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+
+                </div>
+
+                <div class="collapse navbar-collapse">
+
+                    
+                        <ul class="nav navbar-nav">
+                            
+                                <li><a href="/">Home</a></li>
+                            
+                                <li><a href="/learning/">Learning</a></li>
+                            
+                                <li><a href="/post/">Posts</a></li>
+                            
+                                <li><a href="/progress">The State of My Mind</a></li>
+                            
+                        </ul>
+                    
+
+                    
+                        <ul class="nav navbar-nav navbar-right">
+                            
+                                <li class="navbar-icon"><a href="mailto:stephenmalina@gmail.com"><i class="fa fa-envelope-o"></i></a></li>
+                            
+                                <li class="navbar-icon"><a href="https://github.com/an1lam"><i class="fa fa-github"></i></a></li>
+                            
+                                <li class="navbar-icon"><a href="https://www.linkedin.com/in/stephen.malina/"><i class="fa fa-linkedin"></i></a></li>
+                            
+                                <li class="navbar-icon"><a href="https://stackoverflow.com/users/1631855/an1lam"><i class="fa fa-stack-overflow"></i></a></li>
+                            
+                        </ul>
+                    
+
+                </div>
+
+            </div>
+
+        </nav>
+
+
+<main>
+
+    <div class="item">
+
+    
+    
+    
+
+    
+    
+
+    <h4><a href="/post/2019-12-13-alternative-explanation-of-simpsons-paradox/">Yet another Simpson&#39;s Paradox post</a></h4>
+    <h5>December 13, 2019</h5>
+    
+
+</div>
+
+
+    <br> <div class="text-justify"><h2 id="intro">Intro</h2>
+
+<p>Simpson's paradox is a phenomenon in statistics where a choice or treatment performs better in all sub-populations but worse in the overall population. Since first learning of Simpson's Paradox, I've struggled to develop a gut-level understanding that lets me easily detect cases of it and clearly explain its cause. This is even after reading <a href="http://michaelnielsen.org/reinventing_explanation/index.html">Michael Nielsen's wonderful post</a> that provides a number of different ways of thinking about it and Judea Pearl's <a href="https://ftp.cs.ucla.edu/pub/stat_ser/r414.pdf">fascinating analysis of it</a> from a causality perspective. In this post, I describe an example and intuitions that finally led to me (seemingly) grokking Simpson's paradox.</p>
+
+<h2 id="the-parable-of-murderball-and-tea-party">The Parable of Murderball and Tea Party</h2>
+
+<p>Imagine we learn of a hypothetical world in which there are two countries named Gentlantis and Rageopolis. Both countries have populations of 1,000,000 people. Further, in both countries, every single individual plays one of two sports (exclusively): Murderball or Tea party. Rageopolis's residents love Murderball so 99.99% ($ 999,900 / 1,000,000 $) prefer it to Tea Party. On the other hand, the Genglantians love Tea Party and don't care for Murderball's complex rule system and drawn out games, so 99% (990,000/1,000,000) play Tea Party.</p>
+
+<p>From the name, you might guess that Murderball has a much higher injury rate than Tea Party - every year, 99% of people who play Murderball get injured, compared to only 2% of annual Tea Party players. As a result, we can summarize the sports injury numbers and rates in the respective countries as follows.</p>
+
+<table class="table">
+<thead>
+<tr>
+<th align="center">Country</th>
+<th align="center">Murderball Players / Injuries</th>
+<th align="center">Tea Party Players / Injuries</th>
+<th align="center">Overall Injuries and Rate</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td align="center">Rageopolis</td>
+<td align="center">999,900 / 989,901</td>
+<td align="center">2 / 100</td>
+<td align="center">989,902 / 99%</td>
+</tr>
+
+<tr>
+<td align="center">Gentlantis</td>
+<td align="center">10000 / 9900</td>
+<td align="center">990,000 / 19,800</td>
+<td align="center">19,800 / 3%</td>
+</tr>
+</tbody>
+</table>
+
+<p>As you can see, Rageopolis has a sports injury epidemic. Around 999,000 Rageopolans get hurt every year playing sports. This makes Rageopolis's politicians look bad when the UN compares their injury rate to Gentlantis's approximately 3%.</p>
+
+<p>Technically, this is not yet an instance of Simpson's paradox since the two games have the same injury rate in both countries. But now, say Rageopolis's government decides they're tired of looking bad compared to Gentlantis and enacts a strict law that required anyone playing either sport to wear a helmet. Lo and behold, the law succeeds beyond anyone's wildest expectation, the Murderball and Tea Party injury rates halve in Rageopolis dropping from 99.99% and 2% to 49.99% and 1% respectively. The UN releases their report for the year and it contains the following numbers.</p>
+
+<table class="table">
+<thead>
+<tr>
+<th align="center">Country</th>
+<th align="center">Murderball Players / Injuries</th>
+<th align="center">Tea Party Players / Injuries</th>
+<th align="center">Overall Injuries and Rate</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td align="center">Rageopolis</td>
+<td align="center">999,900 / 485100</td>
+<td align="center">1 / 100</td>
+<td align="center">989,902 / 49%</td>
+</tr>
+
+<tr>
+<td align="center">Gentlantis</td>
+<td align="center">10000 / 9900</td>
+<td align="center">990,000 / 19,800</td>
+<td align="center">19,800 / 2%</td>
+</tr>
+</tbody>
+</table>
+
+<p>Observe that even though both games are much safer in Rageopolis than Gentlantis, Rageopolis still has an order-of-magnitude more sports injuries. Although it may not feel like it since it seems obvious when presented this way, this is an example of Simpson's paradox. Rageopolis residents who play both sports get hurt at much lower rates than Gentlantians yet Rageopolans get hurt playing sports at a much higher rate overall.</p>
+
+<h2 id="hypothesis-about-intuitiveness">Hypothesis about intuitiveness</h2>
+
+<p>When I initially came up with this example, it immediately felt much more obvious to me why it was true than other examples of Simpson's paradox I've seen. I suspect this results from two major features of the example:</p>
+
+<ol>
+<li><p>It can be described qualitatively in a way that fits with my (and presumably others' intuition). More specifically, I claim that if I describe the above hypothetical without any numbers as follows,</p>
+
+<blockquote>
+<p>There are two countries, Rageopolis and Gentlantis. The same number of people play sports in both but in Rageopolis the vast majority of people play a super dangerous game, whereas the vast majority of people in Gentlantis play a super safe game. Naturally, Rageopolis has a much higher sports injury rate. If Rageopolis makes both games somewhat but not an order-of-magnitude safer, which country will have a lower injury rate?</p>
+</blockquote>
+
+<p>most people would still give the right answer (Rageopolis).</p></li>
+
+<li><p>Using big numbers and extreme class imbalances makes the difference between overall rate and per-class rates obvious in a way it's not when the differences are relatively small. It's hard for me to even describe, but for whatever reason, past some certain threshold of class imbalance (satisfied by the example above), Simpson's Paradox goes from feeling like a paradox to an obvious fact.</p></li>
+</ol>
+
+<h2 id="unit-testing-intuition">Unit testing intuition</h2>
+
+<p>To verify that the above example actually helps make sense of Simpson's Paradox in other examples, let's see if it can help us grok the first example from Nielsen's post.</p>
+
+<p>The first example Nielsen's describes is a situation in which there are two treatments for kidney stones, A and B, and treatment B works better on patients with large and small kidney stones but worse overall. Copying over his table, the hypothetical data is as follows.</p>
+
+<table class="table">
+<thead>
+<tr>
+<th align="left">Group</th>
+<th align="left">Treatment A helps</th>
+<th align="left">Treatment B helps</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td align="left">Large kidney stones</td>
+<td align="left">69% (55 / 80)</td>
+<td align="left">73% (192 / 263)</td>
+</tr>
+
+<tr>
+<td align="left">Small kidney stones</td>
+<td align="left">87% (234 / 270)</td>
+<td align="left">93% (81 / 87)</td>
+</tr>
+
+<tr>
+<td align="left">All patients</td>
+<td align="left">83% (289 / 350)</td>
+<td align="left">78% (273 / 350)</td>
+</tr>
+</tbody>
+</table>
+
+<p>(I'm embarrassed to admit that, before coming up with the Rageopolis / Gentlantis example, and even after reading Nielsen's post twice, I still had to spend a good amount of time reminding myself how the above combination was possible.)</p>
+
+<p>The puzzle here is figuring out how one treatment can be better for both groups individually but worse overall and, ideally which treatment would be better to accept as a patient. As a starting point, let's analogize this example to the Murder Ball one. There are two divisions in this example, treatment group and kidney stone size. We want to relate these to the two divisions from our above example, nationality and preferred sport. Rates were measured by treatment group, so it seems like treatment groups are analogous to countries in our example. This means that kidney stone size should be analogous to preferred sport.</p>
+
+<p>Following our above example, the next step that comes to mind is to see whether things become more obvious when we increase the imbalance between the two kidney stone size groups. Looking at the table, large kidney stone people seem to have worse outcomes overall, similar to Murderball players. So, let's imagine that instead of having 80 vs. 263 large kidney stone people receiving treatments A and B respectively we have 10 and 340. Let's also imagine that treatment A helps 10% of large kidney stone people and treatment B helps 20% of large kidney stone people. Then, we should also adjust the small kidney stone groups accordingly to contain 340 and 10 people with help rates of 45% and 90% respectively. The following table summarizes the results with these updated numbers.</p>
+
+<table class="table">
+<thead>
+<tr>
+<th align="left">Group</th>
+<th align="left">Treatment A helps</th>
+<th align="left">Treatment B helps</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td align="left">Large kidney stones</td>
+<td align="left">10% (1 / 10)</td>
+<td align="left">20% (68 / 340)</td>
+</tr>
+
+<tr>
+<td align="left">Small kidney stones</td>
+<td align="left">45% (153 / 340)</td>
+<td align="left">90% (9 / 10)</td>
+</tr>
+
+<tr>
+<td align="left">All patients</td>
+<td align="left">44% (154 / 340)</td>
+<td align="left">.22% (77 / 350)</td>
+</tr>
+</tbody>
+</table>
+
+<p>Looking at this table, I'm again left feeling feeling like the paradox has mostly dissolved. From the information we have, it seems like large kidney stone people just have much worse outcomes overall and that the treatment B group's overall help rate reflects that. Related to that, it seems like treatment B works better than treatment A, although we should probably be somewhat suspicious of these results given that the selection process produced such imbalanced classes in the first place.</p>
+
+<h2 id="conclusion">Conclusion</h2>
+
+<p>Part of the reason learning technical material is hard is because different ways of explaining things work for different people (note that I'm not claiming anything like &quot;learning styles&quot; or &quot;multiple intelligences&quot;, since my impression is that both of those hypotheses have mostly failed to replicate). Beyond clarifying my own intuition, I hope that perhaps this post can help at least one person who is as confused about Simpson's Paradox as I was become less confused.</p>
+</div>
+
+    
+    
+
+    
+
+    
+
+        <h4 class="page-header">Comments</h4>
+
+        <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "an1lam-github-io" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+    
+
+</main>
+
+        <footer>
+
+            <p class="copyright text-muted">&copy; All rights reserved. Powered by <a href="https://gohugo.io">Hugo</a> and <a href="https://github.com/calintat/minimal">Minimal</a></p>
+
+        </footer>
+       
+    </body>
+
+</html>
+
