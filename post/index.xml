@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on Stephen Malina</title>
@@ -36,7 +36,7 @@ What is this paper about? This paper describes a method for doing Mendelian Rand
       <pubDate>Tue, 13 Aug 2019 00:00:00 +0000</pubDate>
       
       <guid>https://an1lam.github.io/post/2019-09-07-matrix-potpourri/</guid>
-      <description>Matrix Potpourri As part of reviewing Linear Algebra for my Machine Learning class, I&amp;rsquo;ve noticed there&amp;rsquo;s a bunch of matrix terminology that I didn&amp;rsquo;t encounter during my proof-based self-study of LA from Linear Algebra Done Right. This post is mostly intended to consolidate my own understanding and to act as a reference to future me, but if it also helps others in a similar position, that&amp;rsquo;s even better!
+      <description>Matrix Potpourri As part of reviewing Linear Algebra for my Machine Learning class, I&#39;ve noticed there&#39;s a bunch of matrix terminology that I didn&#39;t encounter during my proof-based self-study of LA from Linear Algebra Done Right. This post is mostly intended to consolidate my own understanding and to act as a reference to future me, but if it also helps others in a similar position, that&#39;s even better!
 Note: I list all the sources from which I drew while writing this post under the &amp;ldquo;Sources&amp;rdquo; heading at the bottom of this post.</description>
     </item>
     
@@ -57,7 +57,7 @@ Terminology  ChIP-seq (Chromatin Immunoprecipitation Sequencing): Expression Qua
       
       <guid>https://an1lam.github.io/post/2019-08-05-basset/</guid>
       <description>In which I record my thoughts on Basset.
-Bio Background The genome consists of (broadly) two types of genes, coding genes and noncoding genes. Coding genes get translated into proteins (as laid down by the Central Dogma) and are what most of us learned about in bio class. Non-coding genes&amp;hellip; don&amp;rsquo;t. As I understand it, noncoding genes can do a bunch of different things, but part of their function is to regulate coding gene activity through a number of mechanisms.</description>
+Bio Background The genome consists of (broadly) two types of genes, coding genes and noncoding genes. Coding genes get translated into proteins (as laid down by the Central Dogma) and are what most of us learned about in bio class. Non-coding genes&amp;hellip; don&#39;t. As I understand it, noncoding genes can do a bunch of different things, but part of their function is to regulate coding gene activity through a number of mechanisms.</description>
     </item>
     
     <item>
@@ -67,7 +67,7 @@ Bio Background The genome consists of (broadly) two types of genes, coding genes
       
       <guid>https://an1lam.github.io/post/2019-07-26-deepbind/</guid>
       <description>In which I record my thoughts on DeepBind.
-What is this paper about? The authors of this paper designed a conv net model to predict how well different proteins will bind to sequences of DNA or RNA. They train one model per protein for many different sequences and show that these models can predict binding affinities for sequences well enough to produce insights regarding the impact of single nucleotide mutations.</description>
+What is this paper about? The authors of this paper designed a conv net model to predict how well different proteins will bind to sequences of DNA or RNA. They train one model per protein for many different sequences and show that these models can predict binding affinities for sequences well enough to produce insights regarding the impact of single nucleotide mutations. They then discuss different datasets and areas in which they tested their model and how it performed (often SOTA [as of 2015]).</description>
     </item>
     
     <item>
@@ -77,7 +77,7 @@ What is this paper about? The authors of this paper designed a conv net model to
       
       <guid>https://an1lam.github.io/post/2019-05-18-thoughts-on-stoicism/</guid>
       <description>Meta: While I originally set out to write this essay about why I no longer &amp;ldquo;endorse&amp;rdquo; Stoicism as an operating framework, re-reading a bunch of Stoic stuff led me to realize that I still agree with ~90% of Stoic principles.
-Peter Thiel recently talked about (in German) why he&amp;rsquo;s not a Stoic,
+Peter Thiel recently talked about (in German) why he&#39;s not a Stoic,
  Stoics, for example, are obsessed with death. However, I am the opposite of a stoic, I loathe the peace and have no sense in the countryside to live and meditate on the environment.</description>
     </item>
     
@@ -87,8 +87,8 @@ Peter Thiel recently talked about (in German) why he&amp;rsquo;s not a Stoic,
       <pubDate>Fri, 22 Mar 2019 00:00:00 +0000</pubDate>
       
       <guid>https://an1lam.github.io/post/2019-03-22-internal-prediction-markets-for-better-institutions/</guid>
-      <description>As I understand it, much of Coase&amp;rsquo;s work focuses on why companies&amp;rsquo; internal structures don&amp;rsquo;t resemble markets all that much. Instead, most firms have feudal-ish structures. The CEO has, at the discretion of the board, final decision making power on nearly all decisions, and then their power trickles down recursively to their subordinates for decisions in which they&amp;rsquo;re not involved.
-While I&amp;rsquo;m willing to swallow the bitter pill that feudal-ish structures are actually more efficient for many company functions than democratic ones would be, in my own experience, I&amp;rsquo;ve observed a few places where I think market-based decision making systems could improve both company efficiency and employee satisfaction.</description>
+      <description>As I understand it, much of Coase&#39;s work focuses on why companies&amp;rsquo; internal structures don&#39;t resemble markets all that much. Instead, most firms have feudal-ish structures. The CEO has, at the discretion of the board, final decision making power on nearly all decisions, and then their power trickles down recursively to their subordinates for decisions in which they&#39;re not involved.
+While I&#39;m willing to swallow the bitter pill that feudal-ish structures are actually more efficient for many company functions than democratic ones would be, in my own experience, I&#39;ve observed a few places where I think market-based decision making systems could improve both company efficiency and employee satisfaction.</description>
     </item>
     
     <item>
@@ -108,7 +108,7 @@ While I&amp;rsquo;m willing to swallow the bitter pill that feudal-ish structure
       
       <guid>https://an1lam.github.io/post/2018-12-02-movember/</guid>
       <description>(Cross-posted from Facebook.)
-This is the first time I&amp;rsquo;ve posted on Facebook in &amp;hellip; long. However, at the encouragement of a few friends, I&amp;rsquo;ve decided to leverage my no-shave November stunt as an opportunity to urge people to donate to one of the many worthwhile causes out there. Technically, my friends said I should do &amp;ldquo;the Movember thing&amp;rdquo; but this long-winded post is my characteristically difficult, verbose interpretation of that.</description>
+This is the first time I&#39;ve posted on Facebook in &amp;hellip; long. However, at the encouragement of a few friends, I&#39;ve decided to leverage my no-shave November stunt as an opportunity to urge people to donate to one of the many worthwhile causes out there. Technically, my friends said I should do &amp;ldquo;the Movember thing&amp;rdquo; but this long-winded post is my characteristically difficult, verbose interpretation of that.</description>
     </item>
     
     <item>
@@ -117,7 +117,7 @@ This is the first time I&amp;rsquo;ve posted on Facebook in &amp;hellip; long. H
       <pubDate>Tue, 12 Jun 2018 00:00:00 +0000</pubDate>
       
       <guid>https://an1lam.github.io/post/2018-06-12-statistical-models-ch-2/</guid>
-      <description>Questions  What does the regression equation mean? Is the idea that we get bigger $ r $ values when $ x $ and $ y $ deviate together? What does it mean for a function to be convex beyond $ f((x + y) / 2)) \leq (f(x) + f(y)) / 2 $? Put another way, why is this the proof of convexity?  $$ h\_{son} = slope * h\_{father} + yint = 70.</description>
+      <description>Questions  What does the regression equation mean? Is the idea that we get bigger $ r $ values when $ x $ and $ y $ deviate together?   What does it mean for a function to be convex beyond $ f((x + y) / 2)) \leq (f(x) + f(y)) / 2 $? Put another way, why is this the proof of convexity?  $$ h\{son} = slope * h\{father} + yint = 70.</description>
     </item>
     
     <item>
@@ -136,7 +136,7 @@ We learn about the difference between randomized controlled experiments and obse
       <pubDate>Sat, 24 Feb 2018 00:00:00 +0000</pubDate>
       
       <guid>https://an1lam.github.io/post/2018-02-24-jit-reading/</guid>
-      <description>Seibel, James Hague and others have all tried to justify why code reading is so uncommon, and they make good points. But perhaps the conversation is led astray by use of the word read. I wonder if Abelson and the others would have had more examples if Seibel had asked them what code they had learned about for fun. Perhaps the word &amp;ldquo;read&amp;rdquo; put them in a passive frame of mind, caused them to filter out programs they&amp;rsquo;d hacked on?</description>
+      <description>Seibel, James Hague and others have all tried to justify why code reading is so uncommon, and they make good points. But perhaps the conversation is led astray by use of the word read. I wonder if Abelson and the others would have had more examples if Seibel had asked them what code they had learned about for fun. Perhaps the word &amp;ldquo;read&amp;rdquo; put them in a passive frame of mind, caused them to filter out programs they&#39;d hacked on?</description>
     </item>
     
     <item>
@@ -146,7 +146,7 @@ We learn about the difference between randomized controlled experiments and obse
       
       <guid>https://an1lam.github.io/post/2015-12-06-nl12062016/</guid>
       <description>Links Physics What is Spacetime, Really?
-Stephen Wolfram talks about the difficulty inherent to coming up with a universal theory about spacetime. In the same way Einstein&amp;rsquo;s theories brought Wolfram to awe, Wolfram&amp;rsquo;s ideas consistently bring me to awe. After reading Rudy Rucker&amp;rsquo;s The Lifebox, The Seashell, and The Soul, I&amp;rsquo;m increasingly drawn to computationalist theories of the universe, but reading this article has solidified my decision to read A New Kind of Science.</description>
+Stephen Wolfram talks about the difficulty inherent to coming up with a universal theory about spacetime. In the same way Einstein&#39;s theories brought Wolfram to awe, Wolfram&#39;s ideas consistently bring me to awe. After reading Rudy Rucker&#39;s The Lifebox, The Seashell, and The Soul, I&#39;m increasingly drawn to computationalist theories of the universe, but reading this article has solidified my decision to read A New Kind of Science.</description>
     </item>
     
     <item>
@@ -155,7 +155,7 @@ Stephen Wolfram talks about the difficulty inherent to coming up with a universa
       <pubDate>Sun, 29 Nov 2015 00:00:00 +0000</pubDate>
       
       <guid>https://an1lam.github.io/post/2015-11-29-nl1/</guid>
-      <description>This week, I&amp;rsquo;m going to try something a little different with the newsletter. I&amp;rsquo;m going to add 3 new categories to the newsletter: Books I&amp;rsquo;m Reading, Quotes I&amp;rsquo;ve Enjoyed, and People I&amp;rsquo;m Following. In case you&amp;rsquo;re worried about these polluting your newsletter experience, don&amp;rsquo;t worry. I&amp;rsquo;m putting these sections at the bottom after the normal newsletter content.
+      <description>This week, I&#39;m going to try something a little different with the newsletter. I&#39;m going to add 3 new categories to the newsletter: Books I&#39;m Reading, Quotes I&#39;ve Enjoyed, and People I&#39;m Following. In case you&#39;re worried about these polluting your newsletter experience, don&#39;t worry. I&#39;m putting these sections at the bottom after the normal newsletter content.
 Links Climate Change What Can A Technologist Do About Climate Change?
 Bret Victor, a world-class designer, uses his technical and design skills to create a compelling argument.</description>
     </item>
@@ -166,8 +166,7 @@ Bret Victor, a world-class designer, uses his technical and design skills to cre
       <pubDate>Wed, 25 Nov 2015 00:00:00 +0000</pubDate>
       
       <guid>https://an1lam.github.io/post/2015-11-25-tdd-by-example/</guid>
-      <description>Value Objects  Avoid aliasing, where changes to mutable objects cascade to connected objects. All value objects must return new objects Should implement an equals method  Triangulation  Only generalize code when we have two or more examples (enough to triangulate for a radio signal) Ignore duplication until our tests require us to generalize Useful when you want to think about the &amp;ldquo;axis of variability&amp;rdquo;
-Decouple Make the tests use an interface that is decoupled from the underlying implementation.</description>
+      <description>Value Objects  Avoid aliasing, where changes to mutable objects cascade to connected objects. All value objects must return new objects Should implement an equals method  Triangulation  Only generalize code when we have two or more examples (enough to triangulate for a radio signal) Ignore duplication until our tests require us to generalize Useful when you want to think about the &amp;ldquo;axis of variability&amp;rdquo;  Decouple  Make the tests use an interface that is decoupled from the underlying implementation.</description>
     </item>
     
     <item>
@@ -177,7 +176,7 @@ Decouple Make the tests use an interface that is decoupled from the underlying i
       
       <guid>https://an1lam.github.io/post/2015-11-22-nl/</guid>
       <description>Education A Radical Way of Unleashing a Generation of Geniuses
-Phenomenal piece that profiles an unconventional teacher in a poor Mexican border town. Uses this to broadly discuss the changing role and viewpoint on education. I&amp;rsquo;m a total convert to the idea that children need to be allowed to explore rather than have information forced down their throats.
+Phenomenal piece that profiles an unconventional teacher in a poor Mexican border town. Uses this to broadly discuss the changing role and viewpoint on education. I&#39;m a total convert to the idea that children need to be allowed to explore rather than have information forced down their throats.
 Business When Software Eats Bio
 The leader of Andreessen Horowitz new bio arm gives a Q&amp;amp;A about the motivations and direction they will take.</description>
     </item>
@@ -197,9 +196,7 @@ The leader of Andreessen Horowitz new bio arm gives a Q&amp;amp;A about the moti
       <pubDate>Sat, 14 Nov 2015 00:00:00 +0000</pubDate>
       
       <guid>https://an1lam.github.io/post/2015-11-14-sicp-1-1/</guid>
-      <description>Key Concepts  Environments, Syntax, Programming Languages v. Natural Languages, Applicative Order of Operations  Environments  Understanding meaning is a matter of combining primitives with context.
-Syntax  Lisp programmers tend to eschew syntactic sugar in favor of building their own syntax. Procedures are noticeably more composable than other languages I&amp;rsquo;ve used previously. There&amp;rsquo;s little difference between user-defined and language-defined procedures
-Comparison between programming and natural languages We can define procedures (verbs) and use variables (pronouns) to build higher-level abstractions.</description>
+      <description>Key Concepts  Environments, Syntax, Programming Languages v. Natural Languages, Applicative Order of Operations  Environments  Understanding meaning is a matter of combining primitives with context.  Syntax  Lisp programmers tend to eschew syntactic sugar in favor of building their own syntax. Procedures are noticeably more composable than other languages I&#39;ve used previously. There&#39;s little difference between user-defined and language-defined procedures  Comparison between programming and natural languages  We can define procedures (verbs) and use variables (pronouns) to build higher-level abstractions.</description>
     </item>
     
     <item>
@@ -208,9 +205,9 @@ Comparison between programming and natural languages We can define procedures (v
       <pubDate>Sun, 08 Nov 2015 00:00:00 +0000</pubDate>
       
       <guid>https://an1lam.github.io/post/2015-11-08-nl11082015/</guid>
-      <description>I&amp;rsquo;ve been reading more technical neuroscience / psychology papers recently, so the newsletter reflects that. I&amp;rsquo;m trying to better understand the variety and universality of mental imagery, and the only way to do that is to dive into the literature.
+      <description>I&#39;ve been reading more technical neuroscience / psychology papers recently, so the newsletter reflects that. I&#39;m trying to better understand the variety and universality of mental imagery, and the only way to do that is to dive into the literature.
 Mental Imagery Representing Exact Numbers Visually
-This journal article discusses mental abacus representations. Be forewarned, the paper is fairly technical and a bit dry. If you just want to get the take-aways of the paper, I recommend reading the Introduction until you feel like you&amp;rsquo;re in over your head and then skipping to page 13.</description>
+This journal article discusses mental abacus representations. Be forewarned, the paper is fairly technical and a bit dry. If you just want to get the take-aways of the paper, I recommend reading the Introduction until you feel like you&#39;re in over your head and then skipping to page 13.</description>
     </item>
     
     <item>
@@ -220,9 +217,9 @@ This journal article discusses mental abacus representations. Be forewarned, the
       
       <guid>https://an1lam.github.io/post/2015-11-01-nl11012015/</guid>
       <description>Journalism The Future of News is not an Article
-A NY Times Labs writer argues that the future of news lies in smaller, contextually-aware primitives called particles. If you&amp;rsquo;ve never explored the NYT Labs website before, I highly recommend it. I particularly enjoy this infographic.
+A NY Times Labs writer argues that the future of news lies in smaller, contextually-aware primitives called particles. If you&#39;ve never explored the NYT Labs website before, I highly recommend it. I particularly enjoy this infographic.
 Biography Genghis John
-Paints a portrait of John Boyd, military theorist and legendary aircraft designer. Boyd&amp;rsquo;s devotion to his ideals and unconventional thinking resonates with me and I definitely intend to read his papers and books.</description>
+Paints a portrait of John Boyd, military theorist and legendary aircraft designer. Boyd&#39;s devotion to his ideals and unconventional thinking resonates with me and I definitely intend to read his papers and books.</description>
     </item>
     
     <item>
@@ -243,7 +240,7 @@ Medicine and Biology Can we end the war on Cancer?</description>
       
       <guid>https://an1lam.github.io/post/2015-10-18-nl10182015/</guid>
       <description>Design UX and the Civilizing Process
-Another piece from the author of last week&amp;rsquo;s 4-part series that took us through the theories of Julian Jaynes. This piece focuses on similarities between User Experience design, which aims to create seamless interactions between humans and products, and etiquette. My super-secret goal for the newsletter has always been to find at least one article my sister will genuinely enjoy and I may actually have a winner with this one.</description>
+Another piece from the author of last week&#39;s 4-part series that took us through the theories of Julian Jaynes. This piece focuses on similarities between User Experience design, which aims to create seamless interactions between humans and products, and etiquette. My super-secret goal for the newsletter has always been to find at least one article my sister will genuinely enjoy and I may actually have a winner with this one.</description>
     </item>
     
     <item>
@@ -252,7 +249,7 @@ Another piece from the author of last week&amp;rsquo;s 4-part series that took u
       <pubDate>Sun, 11 Oct 2015 00:00:00 +0000</pubDate>
       
       <guid>https://an1lam.github.io/post/2015-10-11-nl10112015/</guid>
-      <description>Mind and Brain Below is a series of 4 articles that explore Julian Jaynes&amp;rsquo; theory of consciousness and its relationship to unusual minds. I found this series incredibly fascinating. It reminds me of Blindsight, a creepy sci-fi novel by Peter Watts that explores the relationship between self-awareness and intelligence. If you&amp;rsquo;ve ever questioned the nature of consciousness, you&amp;rsquo;ll enjoy this series. After reading this, I&amp;rsquo;m committing to reading Julian Jaynes&amp;rsquo; Origin of Consciousness in the Breakdown of the Bicaemral Mind.</description>
+      <description>Mind and Brain Below is a series of 4 articles that explore Julian Jaynes&amp;rsquo; theory of consciousness and its relationship to unusual minds. I found this series incredibly fascinating. It reminds me of Blindsight, a creepy sci-fi novel by Peter Watts that explores the relationship between self-awareness and intelligence. If you&#39;ve ever questioned the nature of consciousness, you&#39;ll enjoy this series. After reading this, I&#39;m committing to reading Julian Jaynes&amp;rsquo; Origin of Consciousness in the Breakdown of the Bicaemral Mind.</description>
     </item>
     
     <item>
@@ -264,7 +261,7 @@ Another piece from the author of last week&amp;rsquo;s 4-part series that took u
       <description>Biology and Computation Better Living Through Quantum Mechanics
 Seth Lloyd, the first and only self-proclaimed quantum mechanical engineer from MIT, discusses new discoveries of quantum mechanical phenomena in plants and animals. I included this for the understandable metaphors used to explain quantum processes.
 Linguistics The Whistled Language of Northern Turkey
-Profiles a language that conveys meaning through whistling and clicks. I loved this article. You&amp;rsquo;ll get twice as much out of it if you listen to the samples of the language.</description>
+Profiles a language that conveys meaning through whistling and clicks. I loved this article. You&#39;ll get twice as much out of it if you listen to the samples of the language.</description>
     </item>
     
     <item>
@@ -274,7 +271,7 @@ Profiles a language that conveys meaning through whistling and clicks. I loved t
       
       <guid>https://an1lam.github.io/post/2015-09-27-nl09272015/</guid>
       <description>Neuroscience and Neurotech Hypnosis reaches the parts brain scans and neurosurgery cannot
-A good, succint article about the use of hypnosis in real neuroscience. Makes me hope I&amp;rsquo;m in the 10% of people who are highly suggestible.
+A good, succint article about the use of hypnosis in real neuroscience. Makes me hope I&#39;m in the 10% of people who are highly suggestible.
 Playing 20 Questions with the Mind
 Summarizes a new study in which two individuals in isolation played 20 questions using a brain-to-brain interface. This is a big first step towards more usable brain-to-brain interfaces.</description>
     </item>
@@ -286,7 +283,7 @@ Summarizes a new study in which two individuals in isolation played 20 questions
       
       <guid>https://an1lam.github.io/post/2015-09-20-nl09202015/</guid>
       <description>Cryonics A Dying Young Woman’s Hope in Cryonics and a Future
-Cancer claimed Kim Suozzi at age 23, but she chose to have her brain preserved with the dream that neuroscience might one day revive her mind. I really enjoyed this article. Unlike many of the readers, I&amp;rsquo;ve considered signing up for cryonics and went so far as to ask for it for my birthday (a request which my mother politely denied).</description>
+Cancer claimed Kim Suozzi at age 23, but she chose to have her brain preserved with the dream that neuroscience might one day revive her mind. I really enjoyed this article. Unlike many of the readers, I&#39;ve considered signing up for cryonics and went so far as to ask for it for my birthday (a request which my mother politely denied).</description>
     </item>
     
     <item>
@@ -308,7 +305,7 @@ We’re playing god every day. As the English philosopher Thomas Hobbes said, th
       
       <guid>https://an1lam.github.io/post/2015-09-06-nl09062015/</guid>
       <description>Nutrition and Health Starving Your Way to Vigor (see attached)
-A writer discusses his experience fasting for over a week. He cites scientific and historical sources showing the effectiveness of fasting in treating several ailments. My own understanding of nutrition supports this author’s claims. For a more scientific take on fasting, make your way through some of there (https://scholar.google.com/scholar?q=valter+longo+fasting&amp;amp;hl=en&amp;amp;as_sdt=0&amp;amp;as_vis=1&amp;amp;oi=scholart&amp;amp;sa=X&amp;amp;ved=0CBsQgQMwAGoVChMI1s3smvTjxwIVgZMeCh1FLQ6r) articles. If you&amp;rsquo;re interested in trying out fasting but don&amp;rsquo;t want to commit to a longer fast, I recommend Eat Stop Eat by Brad Pilon.</description>
+A writer discusses his experience fasting for over a week. He cites scientific and historical sources showing the effectiveness of fasting in treating several ailments. My own understanding of nutrition supports this author’s claims. For a more scientific take on fasting, make your way through some of there (https://scholar.google.com/scholar?q=valter+longo+fasting&amp;amp;hl=en&amp;amp;as_sdt=0&amp;amp;as_vis=1&amp;amp;oi=scholart&amp;amp;sa=X&amp;amp;ved=0CBsQgQMwAGoVChMI1s3smvTjxwIVgZMeCh1FLQ6r) articles. If you&#39;re interested in trying out fasting but don&#39;t want to commit to a longer fast, I recommend Eat Stop Eat by Brad Pilon.</description>
     </item>
     
     <item>
@@ -320,7 +317,7 @@ A writer discusses his experience fasting for over a week. He cites scientific a
       <description>Ambition and Achievement Sources of Power
 Argues that college applicants should seek out &amp;ldquo;sources of power&amp;rdquo; which improve their chances of acceptance by orders of magnitude. This article fits with my observations about the college process.
 Alternative Businesses The Cheese Board Collective
-Profiles a cooperative cheese shop where all employees are owners. I&amp;rsquo;ve expressed my enthusiasm for business model experimentation and co-ops in particular before so I&amp;rsquo;ll refrain from doing so again now.</description>
+Profiles a cooperative cheese shop where all employees are owners. I&#39;ve expressed my enthusiasm for business model experimentation and co-ops in particular before so I&#39;ll refrain from doing so again now.</description>
     </item>
     
     <item>
@@ -340,7 +337,7 @@ Reports on a new product that promises to automate the process of hydroponic gar
       
       <guid>https://an1lam.github.io/post/2015-08-02-nl08022015/</guid>
       <description>Plant Genetics How Driscoll’s Is Hacking the Strawberry of the Future
-Profiles Phil Stewart, Driscoll&amp;rsquo;s chief strawberry geneticist. I enjoyed learning about the challenge of breeding an optimal set of characteristics into Driscoll&amp;rsquo;s strawberries.
+Profiles Phil Stewart, Driscoll&#39;s chief strawberry geneticist. I enjoyed learning about the challenge of breeding an optimal set of characteristics into Driscoll&#39;s strawberries.
 Education A College Without Classes
 Explores the recent phenomenon of online, competence-based university programs, which, rather than holding lectures, test their students periodically on competency in course topics. I view competence-based metrics for education as an important alternative to traditional grades.</description>
     </item>
@@ -352,8 +349,8 @@ Explores the recent phenomenon of online, competence-based university programs, 
       
       <guid>https://an1lam.github.io/post/2015-07-26-nl07262015/</guid>
       <description>Linguistics How to Say (Almost) Everything in a Hundred-Word Language
-Explores Toki Pona, the world&amp;rsquo;s smallest language. Describes the linguistic idiosyncrasies that arise from the severely limited vocabulary of the language.
-Nature&amp;rsquo;s Algorithms Decoding the Remarkable Algorithms of Ants
+Explores Toki Pona, the world&#39;s smallest language. Describes the linguistic idiosyncrasies that arise from the severely limited vocabulary of the language.
+Nature&#39;s Algorithms Decoding the Remarkable Algorithms of Ants
 Interviews a scientist studying the swarm behavior of ants in an attempt to translate ant colony behavior into computer algorithms.
 Education A New Look at Apprenticeships as a Path to the Middle Class</description>
     </item>
@@ -369,7 +366,7 @@ Aggregates recent research findings regarding the effect of visualization on ski
 Biotech Your body, the battery: Powering gadgets from human &amp;ldquo;biofuel&amp;rdquo;
 Discusses the various ways in which the human body could be used to power electronics.
 Letters Why Explore Space?
-In this letter, Dr. Ernst Stuhlinger, the past director of science at a NASA facility, responded to a Zambia-based nun&amp;rsquo;s letter questioning the allocation of billions of dollars towards the space program with this letter.</description>
+In this letter, Dr. Ernst Stuhlinger, the past director of science at a NASA facility, responded to a Zambia-based nun&#39;s letter questioning the allocation of billions of dollars towards the space program with this letter.</description>
     </item>
     
     <item>
@@ -378,7 +375,7 @@ In this letter, Dr. Ernst Stuhlinger, the past director of science at a NASA fac
       <pubDate>Sun, 12 Jul 2015 00:00:00 +0000</pubDate>
       
       <guid>https://an1lam.github.io/post/2015-07-12-themythofthearchofjustice/</guid>
-      <description>The past few weeks have seen major shifts in two important areas of American society: race and sexual orientation. Following the Charleston shooting, an increasing number of leaders such as South Carolina Governor Nikki Haley have called for the removal of the Confederate flag from state grounds due to its symbolic association with racism and support for slavery. And on June 26, the Supreme Court ruled in favor of a constitutional right for same-sex marriage.</description>
+      <description></description>
     </item>
     
     <item>
@@ -387,9 +384,9 @@ In this letter, Dr. Ernst Stuhlinger, the past director of science at a NASA fac
       <pubDate>Sun, 12 Jul 2015 00:00:00 +0000</pubDate>
       
       <guid>https://an1lam.github.io/post/2015-07-12-nl07122015/</guid>
-      <description>Evolutionary Biology and Health To Stop Mosquito Bites, Silence Your Skin&amp;rsquo;s Bacteria
+      <description>Evolutionary Biology and Health To Stop Mosquito Bites, Silence Your Skin&#39;s Bacteria
 Discusses a technique which could prevent mosquitoes bites by silencing the communication between bacteria on human skin. Mosquitoes detect this communication on human skin and bite people after detecting it.
-Cognitive Science What&amp;rsquo;s the evidence on using rational arguments to change people&amp;rsquo;s minds?
+Cognitive Science What&#39;s the evidence on using rational arguments to change people&#39;s minds?
 Argues that reason is more powerful than recent cognitive science research might lead us to believe.</description>
     </item>
     
@@ -399,9 +396,9 @@ Argues that reason is more powerful than recent cognitive science research might
       <pubDate>Sun, 14 Jun 2015 00:00:00 +0000</pubDate>
       
       <guid>https://an1lam.github.io/post/2015-06-14-nl06142015/</guid>
-      <description>I apologize for the short newsletter this week. Graduation has limited the amount of time I&amp;rsquo;ve been able to spend on it, and I &amp;rsquo;d rather shorten it than include lower quality articles.
+      <description>I apologize for the short newsletter this week. Graduation has limited the amount of time I&#39;ve been able to spend on it, and I &amp;lsquo;d rather shorten it than include lower quality articles.
 Biology and Physiology Lost Posture: Why Some Indigenous Cultures May Not Have Back Pain
-Discusses a hypothesis for widespread back pain and profiles Esther Gokhale, a woman who has studied indigenous cultures in an attempt to gain insight into why they don&amp;rsquo;t suffer from back pain.</description>
+Discusses a hypothesis for widespread back pain and profiles Esther Gokhale, a woman who has studied indigenous cultures in an attempt to gain insight into why they don&#39;t suffer from back pain.</description>
     </item>
     
     <item>
@@ -411,11 +408,11 @@ Discusses a hypothesis for widespread back pain and profiles Esther Gokhale, a w
       
       <guid>https://an1lam.github.io/post/2015-06-07-nl06072015/</guid>
       <description>Neuroscience Researchers Find Missing Link Between Brain and Immune System
-Discusses a recently discovered vessel that connects the brain and the lymphatic system. Although this article&amp;rsquo;s not great, the discovery itself is a huge deal.
+Discusses a recently discovered vessel that connects the brain and the lymphatic system. Although this article&#39;s not great, the discovery itself is a huge deal.
 Better not look down&amp;hellip;
 A neurosurgeon reflects on his career and the mistakes he made. An introspective piece.
 Droughts and Water Shortage To Save California, Read &amp;ldquo;Dune&amp;rdquo;
-Argues that Frank Herbert&amp;rsquo;s ideas from Dune are becoming a reality in California.</description>
+Argues that Frank Herbert&#39;s ideas from Dune are becoming a reality in California.</description>
     </item>
     
     <item>
@@ -450,7 +447,7 @@ Famous psychologist and author of Willpower, Roy Baumeister, discusses the relat
       <guid>https://an1lam.github.io/post/2015-05-17-nl05172015/</guid>
       <description>Public Health Why an iron fish can make you stronger
 Presents a simple but ingenious way to combat anaemia in Cambodia by giving villagers iron fish to put in their cooking pots.
-Osama Bin Laden Raid Questions I&amp;rsquo;m trying to cover this issue in depth since I think it sits at the intersection of a few key issues: balancing transparency and national security concerns, the efficacy of torture, and the treatment of journalists in the United States.</description>
+Osama Bin Laden Raid Questions I&#39;m trying to cover this issue in depth since I think it sits at the intersection of a few key issues: balancing transparency and national security concerns, the efficacy of torture, and the treatment of journalists in the United States.</description>
     </item>
     
     <item>
@@ -460,11 +457,11 @@ Osama Bin Laden Raid Questions I&amp;rsquo;m trying to cover this issue in depth
       
       <guid>https://an1lam.github.io/post/2015-05-10-nl05102015/</guid>
       <description>Police Brutality Why Cops Like Me Are Quiet
-A former NYPD officer discusses police brutality from an officer&amp;rsquo;s perspective.
+A former NYPD officer discusses police brutality from an officer&#39;s perspective.
 Neuroscience The Science of Craving
-Profiles Dr. Kent Berridge&amp;rsquo;s research into the science of craving. Presents an interesting perspective on the difference between desire and pleasure and discusses meditation, a favorite topic of mine.
+Profiles Dr. Kent Berridge&#39;s research into the science of craving. Presents an interesting perspective on the difference between desire and pleasure and discusses meditation, a favorite topic of mine.
 Medicine Overkill
-Argues that the American health system encourages careless overtreatment of illness. I&amp;rsquo;m sympathetic to this view but wish the author had delved more into alternative payment models since it seems these models contribute to the problem.</description>
+Argues that the American health system encourages careless overtreatment of illness. I&#39;m sympathetic to this view but wish the author had delved more into alternative payment models since it seems these models contribute to the problem.</description>
     </item>
     
     <item>
@@ -473,8 +470,8 @@ Argues that the American health system encourages careless overtreatment of illn
       <pubDate>Sun, 03 May 2015 00:00:00 +0000</pubDate>
       
       <guid>https://an1lam.github.io/post/2015-05-03-nl05032015/</guid>
-      <description>Warning: These next few paragraphs are about the origins and goals of the newsletter. If you don&amp;rsquo;t care about these things skip to here.
-As I mentioned last week, I&amp;rsquo;ve decided to mark this week as the 6 month anniversary of this newsletter. To honor this, I&amp;rsquo;m going to quickly describe why I circulate this newsletter and what criteria I use to determine which articles I include in it. The circulation of the newsletter began on a whim.</description>
+      <description>Warning: These next few paragraphs are about the origins and goals of the newsletter. If you don&#39;t care about these things skip to here.
+As I mentioned last week, I&#39;ve decided to mark this week as the 6 month anniversary of this newsletter. To honor this, I&#39;m going to quickly describe why I circulate this newsletter and what criteria I use to determine which articles I include in it. The circulation of the newsletter began on a whim.</description>
     </item>
     
     <item>
@@ -483,9 +480,9 @@ As I mentioned last week, I&amp;rsquo;ve decided to mark this week as the 6 mont
       <pubDate>Sun, 26 Apr 2015 00:00:00 +0000</pubDate>
       
       <guid>https://an1lam.github.io/post/2015-04-26-nl04262015/</guid>
-      <description>Note: Next week will be the arbitrarily but mostly correctly determined 6th month anniversary of my newsletter. If you have any ideas for interesting things I could do for this, I&amp;rsquo;d love to hear them. So far, I&amp;rsquo;ve considered a &amp;ldquo;Best Of&amp;rdquo; week or piece written by me reflecting on the newsletter and explaining in detail why I put so much time into this.
+      <description>Note: Next week will be the arbitrarily but mostly correctly determined 6th month anniversary of my newsletter. If you have any ideas for interesting things I could do for this, I&#39;d love to hear them. So far, I&#39;ve considered a &amp;ldquo;Best Of&amp;rdquo; week or piece written by me reflecting on the newsletter and explaining in detail why I put so much time into this.
 Languages Utopian for Beginners
-Tells the story of one man&amp;rsquo;s created language and its journey into the world.</description>
+Tells the story of one man&#39;s created language and its journey into the world.</description>
     </item>
     
     <item>
@@ -494,8 +491,8 @@ Tells the story of one man&amp;rsquo;s created language and its journey into the
       <pubDate>Sun, 19 Apr 2015 00:00:00 +0000</pubDate>
       
       <guid>https://an1lam.github.io/post/2015-04-19-nl04192015/</guid>
-      <description>Politics Clinton Begins the 2016 Campaign, And It&amp;rsquo;s a Toss-Up
-Nate Silver, renowned election results predictor and sports statistician, speculates on the likelihood of a Hilary Clinton victory in 2016, taking into account different scenarios and opposing candidates. I really enjoy Nate Silver&amp;rsquo;s logical, data-driven approach to prediction.
+      <description>Politics Clinton Begins the 2016 Campaign, And It&#39;s a Toss-Up
+Nate Silver, renowned election results predictor and sports statistician, speculates on the likelihood of a Hilary Clinton victory in 2016, taking into account different scenarios and opposing candidates. I really enjoy Nate Silver&#39;s logical, data-driven approach to prediction.
 Dolphins Dolphin Intelligence
 The author of Moonwalking with Einstein, Joshua Foer, explores the fascinating world of dolphin intelligence. Foer takes a cautiously optimistic approach to the field, speaking with multiple scientists about the prospects and obstacles of communicating with dolphins.</description>
     </item>
@@ -507,9 +504,9 @@ The author of Moonwalking with Einstein, Joshua Foer, explores the fascinating w
       
       <guid>https://an1lam.github.io/post/2015-04-12-nl04122015/</guid>
       <description>Mystery The Mystery of the Millionaire Metaphysician
-A republishing of an old story, this piece recounts a writer&amp;rsquo;s search for the author of a mysterious metaphysics manuscript. I don&amp;rsquo;t want to spoil the story so you&amp;rsquo;ll have to read it to learn more.
-Psychological Warfare and Foreign Policy Inside the Kremlin&amp;rsquo;s hall of mirrors
-Investigates the Kremlin&amp;rsquo;s disinformation campaign and questions its reach. I thought this article did a phenomenal job of explaining the theory that led to the Kremlin&amp;rsquo;s employment of these tactics.</description>
+A republishing of an old story, this piece recounts a writer&#39;s search for the author of a mysterious metaphysics manuscript. I don&#39;t want to spoil the story so you&#39;ll have to read it to learn more.
+Psychological Warfare and Foreign Policy Inside the Kremlin&#39;s hall of mirrors
+Investigates the Kremlin&#39;s disinformation campaign and questions its reach. I thought this article did a phenomenal job of explaining the theory that led to the Kremlin&#39;s employment of these tactics.</description>
     </item>
     
     <item>
@@ -521,7 +518,7 @@ Investigates the Kremlin&amp;rsquo;s disinformation campaign and questions its r
       <description>Mind and Brain Electrified
 Investigates the promises and perils of tDCS, the electrical stimulation of the brain proponents claim will help treat depression and other neurological disorders.
 Evolution Defending Darwin
-A biology professor at the University of Kentucky discusses his experiencing teaching evolution to a group largely composed of Creationists. This article interests me on two levels: 1) I come from an area where evolution is largely unchallenged. In school, I don&amp;rsquo;t ever recall one of my peers arguing with the teacher about evolution, so it&amp;rsquo;s interesting to read about a place where this is not the case.</description>
+A biology professor at the University of Kentucky discusses his experiencing teaching evolution to a group largely composed of Creationists. This article interests me on two levels: 1) I come from an area where evolution is largely unchallenged. In school, I don&#39;t ever recall one of my peers arguing with the teacher about evolution, so it&#39;s interesting to read about a place where this is not the case.</description>
     </item>
     
     <item>
@@ -533,7 +530,7 @@ A biology professor at the University of Kentucky discusses his experiencing tea
       <description>Books Rapt
 Reviews H is for Hawk, a non-fiction book about grief, hawking, and T.H. White. Discusses grief and the quirkiness of hawks and hawking.
 Memory Memory in the Flesh
-Explores research on the radical idea that memory can exist outside the brain in other parts of the body. This article&amp;rsquo;s interesting because it shows how political science can be. I&amp;rsquo;m always drawn to articles which challenge scientific dogma as I think innovation often arises from these challenges.</description>
+Explores research on the radical idea that memory can exist outside the brain in other parts of the body. This article&#39;s interesting because it shows how political science can be. I&#39;m always drawn to articles which challenge scientific dogma as I think innovation often arises from these challenges.</description>
     </item>
     
     <item>
@@ -543,7 +540,7 @@ Explores research on the radical idea that memory can exist outside the brain in
       
       <guid>https://an1lam.github.io/post/2015-03-22-nl03222015/</guid>
       <description>Evolution Possible Creatures
-A professor of Evolutionary Biology discusses his work mapping &amp;ldquo;nature&amp;rsquo;s library&amp;rdquo; of proteins. He makes tenuous parallels to Platonism, but the work stands on its own whether you take those into account or not.
+A professor of Evolutionary Biology discusses his work mapping &amp;ldquo;nature&#39;s library&amp;rdquo; of proteins. He makes tenuous parallels to Platonism, but the work stands on its own whether you take those into account or not.
 Mind and Brain The Science of Near Death Experiences
 Explores the debate about the mechanism of near-death experiences between scientific materialists and spiritual believers. I surprisingly fall somewhere in the middle on this and other similar issues.</description>
     </item>
@@ -556,7 +553,7 @@ Explores the debate about the mechanism of near-death experiences between scient
       <guid>https://an1lam.github.io/post/2015-03-15-nl03152015/</guid>
       <description>Genocide Interview with a Torturer
 An author and survivor of the Khmer Rouge genocide in Cambodia attempts to come to terms with his experience. At times, this piece was hard to read at times, but I think that quality adds to its power. This quote really resonated with me:
- &amp;ldquo;There’s a contemporary notion that we’re all potential torturers. This fatalism tinged with smugness exercises literature, film, and certain intellectuals.</description>
+ &amp;quot;There’s a contemporary notion that we’re all potential torturers. This fatalism tinged with smugness exercises literature, film, and certain intellectuals. After all what’s more exciting than a great criminal?</description>
     </item>
     
     <item>
@@ -565,9 +562,9 @@ An author and survivor of the Khmer Rouge genocide in Cambodia attempts to come 
       <pubDate>Sun, 08 Mar 2015 00:00:00 +0000</pubDate>
       
       <guid>https://an1lam.github.io/post/2015-03-08-nl03082015/</guid>
-      <description>Mental Health The voices in my head: Eleanor Longden&amp;rsquo;s &amp;lsquo;psychic civil war&amp;rsquo;
-The Guardian interviews Elanor Longden, a woman who started hearing voices while in college. Longden discusses her ordeal and subsequent recovery, shedding light on the nature of her disease. One of the commenters on this article wrote a thoughtful comment, which I&amp;rsquo;ve included
- &amp;ldquo;It makes me wonder that we all have these voices to some degree, but that it&amp;rsquo;s rarer to have them be so articulate, so able to enunciate distinct aspects of our personalities.</description>
+      <description>Mental Health The voices in my head: Eleanor Longden&#39;s &amp;lsquo;psychic civil war&amp;rsquo;
+The Guardian interviews Elanor Longden, a woman who started hearing voices while in college. Longden discusses her ordeal and subsequent recovery, shedding light on the nature of her disease. One of the commenters on this article wrote a thoughtful comment, which I&#39;ve included
+ &amp;quot;It makes me wonder that we all have these voices to some degree, but that it&#39;s rarer to have them be so articulate, so able to enunciate distinct aspects of our personalities.</description>
     </item>
     
     <item>
@@ -591,7 +588,7 @@ Discusses the prospects for transplanting a human head onto another body. Neglec
       <description>Technology How I Taught my Computer to Write its Own Music
 Discusses a successful endeavor to create a computer-based entity that writes music. Mindblowing.
 Digital Reality
-Edge interviews Neil Gershenfeld, head of MIT&amp;rsquo;s Center for Bits and Atoms. He discusses the future of manufacturing and fabrication and its impact on the world economy. This is a long one, but I really enjoyed it.
+Edge interviews Neil Gershenfeld, head of MIT&#39;s Center for Bits and Atoms. He discusses the future of manufacturing and fabrication and its impact on the world economy. This is a long one, but I really enjoyed it.
 Hand of a Superhero
 Profiles E-nable and other groups focused on improving upon the process of creating and distributing prosthetic hands for children.</description>
     </item>
@@ -603,7 +600,7 @@ Profiles E-nable and other groups focused on improving upon the process of creat
       
       <guid>https://an1lam.github.io/post/2015-02-15-nl02152015/</guid>
       <description>Philosophy Do Easy
-The film and source essay (linked to at the bottom of the page) both convey a philosophy rooted in Taoism, but understandable for the modern American. It&amp;rsquo;s important to note that William S. Burroughs (the essay&amp;rsquo;s author and the author of Naked Lunch) struggled with a debilitating heroine addiction for much of his life. Looking at this essay in light of that, I found that many of the ideas took on a dual meaning.</description>
+The film and source essay (linked to at the bottom of the page) both convey a philosophy rooted in Taoism, but understandable for the modern American. It&#39;s important to note that William S. Burroughs (the essay&#39;s author and the author of Naked Lunch) struggled with a debilitating heroine addiction for much of his life. Looking at this essay in light of that, I found that many of the ideas took on a dual meaning.</description>
     </item>
     
     <item>
@@ -638,7 +635,7 @@ Seeds of Doubt</description>
       
       <guid>https://an1lam.github.io/post/2015-01-25-nl01252015/</guid>
       <description>Human Potential Natural Born Heroes
-Sometimes, when I read an article, I think it would be great for the newsletter because it calls into question a widely-held belief or delves deep into an esoteric topic in a profound way. This isn&amp;rsquo;t one of those articles &amp;ndash; this is an article that you read and think &amp;ldquo;this is awesome.&amp;rdquo; The article covers a few different groups reviving or creating new uses of the human form.</description>
+Sometimes, when I read an article, I think it would be great for the newsletter because it calls into question a widely-held belief or delves deep into an esoteric topic in a profound way. This isn&#39;t one of those articles &amp;ndash; this is an article that you read and think &amp;ldquo;this is awesome.&amp;rdquo; The article covers a few different groups reviving or creating new uses of the human form.</description>
     </item>
     
     <item>
@@ -652,7 +649,7 @@ Convincingly argues for charter schools&amp;rsquo; effectiveness at educating un
 Mind and Brain Postcards from the Edge of Consciousness
 Describes the experience of sensory deprivation and the biological mechanisms it activates.
 Muscle Strength is in the Mind
-Summarizes a recent study with results indicating that imagining muscular contractions affects the strength of the muscles involved. I&amp;rsquo;ve skimmed through the original study paper, and the methodology seems sound.</description>
+Summarizes a recent study with results indicating that imagining muscular contractions affects the strength of the muscles involved. I&#39;ve skimmed through the original study paper, and the methodology seems sound.</description>
     </item>
     
     <item>
@@ -675,7 +672,7 @@ Is Saudi Arabia trying to cripple American fracking?</description>
       
       <guid>https://an1lam.github.io/post/2015-01-04-nl01042015/</guid>
       <description>Power of the Mind Secrets of a Mind Gamer
-Narrates how a journalist won the U.S. Memory Championship. Summarizes the techniques used by memory athletes &amp;ndash; individuals who competitively memorize card sequences, digit strings, and poems. I&amp;rsquo;ve been discussing memory with a few newsletter readers, so I thought I&amp;rsquo;d include this piece. If you enjoy this piece, I highly recommend the author&amp;rsquo;s book on this topic, Moonwalking with Einstein: The Art and Science of Remembering Everything.</description>
+Narrates how a journalist won the U.S. Memory Championship. Summarizes the techniques used by memory athletes &amp;ndash; individuals who competitively memorize card sequences, digit strings, and poems. I&#39;ve been discussing memory with a few newsletter readers, so I thought I&#39;d include this piece. If you enjoy this piece, I highly recommend the author&#39;s book on this topic, Moonwalking with Einstein: The Art and Science of Remembering Everything.</description>
     </item>
     
     <item>
@@ -684,8 +681,8 @@ Narrates how a journalist won the U.S. Memory Championship. Summarizes the techn
       <pubDate>Sun, 28 Dec 2014 00:00:00 +0000</pubDate>
       
       <guid>https://an1lam.github.io/post/2014-12-28-nl12282014/</guid>
-      <description>Stoicism Stoicism has been at the forefront of my thoughts this break. I&amp;rsquo;m most of the way through Seneca&amp;rsquo;s Letters from a Stoic: Epistulae Morales AD Lucilium, a primary source for Stoic philosophy and recently finished Ryan Holiday&amp;rsquo;s The Obstacle Is the Way, which presents a simplified version of Stoicism that caters to modern audiences.
-The first article about Stoicism in this newsletter, Indifference is a power, reveals Stoicism&amp;rsquo;s tenets and discusses its application both by its founders during Roman times and in modern cognitive behavioral therapy (the creator of Cognitive Behavioral Therapy struggled as a psychoanalyst until he remembered the teachings of ancient Stoicism, citation.</description>
+      <description>Stoicism Stoicism has been at the forefront of my thoughts this break. I&#39;m most of the way through Seneca&#39;s Letters from a Stoic: Epistulae Morales AD Lucilium, a primary source for Stoic philosophy and recently finished Ryan Holiday&#39;s The Obstacle Is the Way, which presents a simplified version of Stoicism that caters to modern audiences.
+The first article about Stoicism in this newsletter, Indifference is a power, reveals Stoicism&#39;s tenets and discusses its application both by its founders during Roman times and in modern cognitive behavioral therapy (the creator of Cognitive Behavioral Therapy struggled as a psychoanalyst until he remembered the teachings of ancient Stoicism, citation.</description>
     </item>
     
     <item>
@@ -705,9 +702,9 @@ Introduces wu wei, the art of effortless grace. Taoists use wu wei to express th
       
       <guid>https://an1lam.github.io/post/2014-12-14-nl12072014/</guid>
       <description>On Writing Writing with the Master
-Profiles John McPhee, a staff writer for the New Yorker and professor at Princeton. Uses accounts from McPhee&amp;rsquo;s students to illustrate his erudition.
+Profiles John McPhee, a staff writer for the New Yorker and professor at Princeton. Uses accounts from McPhee&#39;s students to illustrate his erudition.
 The Patch by John McPhee
-As a companion to the profile of John McPhee, I&amp;rsquo;ve included this piece of his. In an attempt to understand better the reverence with which his students speak of him, I read three of his past New Yorker articles.</description>
+As a companion to the profile of John McPhee, I&#39;ve included this piece of his. In an attempt to understand better the reverence with which his students speak of him, I read three of his past New Yorker articles.</description>
     </item>
     
     <item>
@@ -716,7 +713,7 @@ As a companion to the profile of John McPhee, I&amp;rsquo;ve included this piece
       <pubDate>Sun, 07 Dec 2014 00:00:00 +0000</pubDate>
       
       <guid>https://an1lam.github.io/post/2014-12-07-nl12072014/</guid>
-      <description>This week, I&amp;rsquo;m experimenting with something new. I&amp;rsquo;ve annotated certain articles I read and shared links to them, in addition to their original versions. Please let me know what you think of this. I don&amp;rsquo;t want to share the annotations if you aren&amp;rsquo;t interested in seeing them. On the other hand, if you like the annotated articles enough, I may start only sending annotated versions of certain articles. Finally, if you are someone who contributes articles (or wish to) and you want to annotate your articles too, I can help you get up and annotating within 10 minutes.</description>
+      <description>This week, I&#39;m experimenting with something new. I&#39;ve annotated certain articles I read and shared links to them, in addition to their original versions. Please let me know what you think of this. I don&#39;t want to share the annotations if you aren&#39;t interested in seeing them. On the other hand, if you like the annotated articles enough, I may start only sending annotated versions of certain articles. Finally, if you are someone who contributes articles (or wish to) and you want to annotate your articles too, I can help you get up and annotating within 10 minutes.</description>
     </item>
     
     <item>
@@ -726,7 +723,7 @@ As a companion to the profile of John McPhee, I&amp;rsquo;ve included this piece
       
       <guid>https://an1lam.github.io/post/2014-11-30-nl11302014/</guid>
       <description>This week, I chose to focus exclusively on Ferguson, and only include Other Contributions outside of articles about Ferguson. I did this because I felt I could not give sufficient attention to Ferguson without including more than 2-3 articles about the topic.
-On an unrelated note, I&amp;rsquo;ve been documenting my Winter Break Reading. While this is mostly for myself, I&amp;rsquo;ve reviewed two of the books I&amp;rsquo;ve read and intend to document my thoughts on the others subsequently.</description>
+On an unrelated note, I&#39;ve been documenting my Winter Break Reading. While this is mostly for myself, I&#39;ve reviewed two of the books I&#39;ve read and intend to document my thoughts on the others subsequently.</description>
     </item>
     
     <item>
@@ -735,7 +732,7 @@ On an unrelated note, I&amp;rsquo;ve been documenting my Winter Break Reading. W
       <pubDate>Wed, 26 Nov 2014 00:00:00 +0000</pubDate>
       
       <guid>https://an1lam.github.io/post/2014-11-26-regenesis-book-review/</guid>
-      <description>Synthetic biology is a burgeoning discipline that stems from a long lineage of genetic meddling. Synthetic biology&amp;rsquo;s ancestral legacy began when man first selected which seeds to plant based on the traits of the plants that birthed them. In Regenesis by George Church, Church takes the reader through this lineage, canvassing the past thousands of years and then focusing in on the past 30.
+      <description>Synthetic biology is a burgeoning discipline that stems from a long lineage of genetic meddling. Synthetic biology&#39;s ancestral legacy began when man first selected which seeds to plant based on the traits of the plants that birthed them. In Regenesis by George Church, Church takes the reader through this lineage, canvassing the past thousands of years and then focusing in on the past 30.
 Church does a good job of balancing technical explanations with interesting anecdotes in the book.</description>
     </item>
     
@@ -745,7 +742,7 @@ Church does a good job of balancing technical explanations with interesting anec
       <pubDate>Tue, 25 Nov 2014 00:00:00 +0000</pubDate>
       
       <guid>https://an1lam.github.io/post/2014-11-25-winter-break-reading/</guid>
-      <description>To keep myself accountable, I&amp;rsquo;ve decided to post the books I plan to read over Winter Break (Nov. 25th, 2014 to Jan. 3rd, 2015) with a rough estimation of the time it will take to read them. My goal is to post short reviews for most or all of these books as I go through them. I expect reviewing these books will allow me to better reflect and remember my thoughts on them and the key messages that they impart.</description>
+      <description>To keep myself accountable, I&#39;ve decided to post the books I plan to read over Winter Break (Nov. 25th, 2014 to Jan. 3rd, 2015) with a rough estimation of the time it will take to read them. My goal is to post short reviews for most or all of these books as I go through them. I expect reviewing these books will allow me to better reflect and remember my thoughts on them and the key messages that they impart.</description>
     </item>
     
     <item>
@@ -754,8 +751,8 @@ Church does a good job of balancing technical explanations with interesting anec
       <pubDate>Sun, 23 Nov 2014 00:00:00 +0000</pubDate>
       
       <guid>https://an1lam.github.io/post/2014-11-23-nl11232014/</guid>
-      <description>Philosophy / History Response to &amp;ldquo;Did Zen create the Kamikaze?&amp;rdquo;
-A regular reader of the newsletter, Will Baird, responds to one of the articles I included in last week&amp;rsquo;s newsletter. If I could pick one article in this newsletter for you to read, it would be this one. Will worked hard on this response, bringing an expert&amp;rsquo;s mind to his critique and pulling knowledge from a wellspring of related sources and scholarly work.</description>
+      <description>Philosophy / History Response to &amp;ldquo;Did Zen create the Kamikaze?&amp;quot;
+A regular reader of the newsletter, Will Baird, responds to one of the articles I included in last week&#39;s newsletter. If I could pick one article in this newsletter for you to read, it would be this one. Will worked hard on this response, bringing an expert&#39;s mind to his critique and pulling knowledge from a wellspring of related sources and scholarly work.</description>
     </item>
     
     <item>
@@ -764,8 +761,8 @@ A regular reader of the newsletter, Will Baird, responds to one of the articles 
       <pubDate>Tue, 18 Nov 2014 00:00:00 +0000</pubDate>
       
       <guid>https://an1lam.github.io/post/2014-11-18-existence-david-brin-review/</guid>
-      <description>Mind-blowing, challenging, and disturbing at times, David Brin&amp;rsquo;s view of the future is more comprehensive and more diverse than any other writer&amp;rsquo;s. The thing I love about this book is that it doesn&amp;rsquo;t shy away from discussing hard truths, like the myriad failure-modes humanity can enter. However, it accompanies this discussion with a constant sense that, if it&amp;rsquo;s possible, humanity will find a way.
-Existence is a sci-fi novel for the Internet Age.</description>
+      <description>Mind-blowing, challenging, and disturbing at times, David Brin&#39;s view of the future is more comprehensive and more diverse than any other writer&#39;s. The thing I love about this book is that it doesn&#39;t shy away from discussing hard truths, like the myriad failure-modes humanity can enter. However, it accompanies this discussion with a constant sense that, if it&#39;s possible, humanity will find a way.
+Existenceis a sci-fi novel for the Internet Age.</description>
     </item>
     
     <item>
@@ -774,8 +771,8 @@ Existence is a sci-fi novel for the Internet Age.</description>
       <pubDate>Mon, 17 Nov 2014 00:00:00 +0000</pubDate>
       
       <guid>https://an1lam.github.io/post/2014-11-17-response-to-nl11162014/</guid>
-      <description>One of my readers, Will Baird, read the &amp;ldquo;Did Zen philosophy create the Kamikaze?&amp;rdquo; article in this past week&amp;rsquo;s newsletter, and, being a History buff, had a strong reaction to the article. Thus, he asked that I make his well though-out and well informed response available for my readers, as I have done below.
-History as Clickbait &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;In his article “Into nothingness” Christopher Harding asks, “Did Zen ideas create the kamikaze?</description>
+      <description>One of my readers, Will Baird, read the &amp;ldquo;Did Zen philosophy create the Kamikaze?&amp;rdquo; article in this past week&#39;s newsletter, and, being a History buff, had a strong reaction to the article. Thus, he asked that I make his well though-out and well informed response available for my readers, as I have done below.
+History as Clickbait  In his article “Into nothingness” Christopher Harding asks, “Did Zen ideas create the kamikaze?</description>
     </item>
     
     <item>
@@ -786,10 +783,10 @@ History as Clickbait &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp
       <guid>https://an1lam.github.io/post/2014-11-16-nl11162014/</guid>
       <description>Philosophy Did Zen philosophy create the Kamikaze?
 Pontificates on the relationship between WWII-era Zen philosophers and Japanese Jingoism.
-A murderer&amp;rsquo;s warped idealism
+A murderer&#39;s warped idealism
 Contrasts previous portrayals of Adolf Eichmann as &amp;ldquo;terrifyingly normal&amp;rdquo; and &amp;ldquo;banal&amp;rdquo; with stories of his devotion to &amp;ldquo;the Final Solution.&amp;rdquo;
 Our Miraculous Biosphere The Termite and the Architect
-Begins by talking about an architect&amp;rsquo;s attempt to mimic the way termites&amp;rsquo; mounds manage air flow, and then uses this example as an example of biomimicry.</description>
+Begins by talking about an architect&#39;s attempt to mimic the way termites&amp;rsquo; mounds manage air flow, and then uses this example as an example of biomimicry.</description>
     </item>
     
     <item>
@@ -798,7 +795,7 @@ Begins by talking about an architect&amp;rsquo;s attempt to mimic the way termit
       <pubDate>Sun, 09 Nov 2014 00:00:00 +0000</pubDate>
       
       <guid>https://an1lam.github.io/post/2014-11-09-nl11092014/</guid>
-      <description>Questions or Comments? Contact me at stephenmalina@gmail.com or on Twitter.
+      <description>Questions or Comments? Contact me at [stephenmalina@gmail.com](mailto: stephenmalina@gmail.com) or on Twitter.
 Philosophy Marathon Monks of Mt. Hiei
 Disclaimer: There is New-Agey-ness within this article. For a more accurate depiction of the Marathon Monks, I recommend this documentary or this book (I intend to consume both over winter break)
 Despite the above disclaimer, I included this because I mentioned the Marathon Monks to a friend yesterday. Upon doing so, I decided that their story is worthwhile to share.</description>
@@ -810,7 +807,7 @@ Despite the above disclaimer, I included this because I mentioned the Marathon M
       <pubDate>Sun, 02 Nov 2014 00:00:00 +0000</pubDate>
       
       <guid>https://an1lam.github.io/post/2014-11-02-nl11022014/</guid>
-      <description>This is a weekly newsletter I publish each week that contains content I enjoyed and hope that you will enjoy. If you have questions or comments, you can find me at stephenmalina@gmail.com or on Twitter.
+      <description>This is a weekly newsletter I publish each week that contains content I enjoyed and hope that you will enjoy. If you have questions or comments, you can find me at [stephenmalina@gmail.com](mailto: stephenmalina@gmail.com) or on Twitter.
 Technology and Human Augmentation A Spreadsheet Way of Knowledge
 A long, in-depth piece on the history of spreadsheet modeling. The two points that stick with me from this piece are the dismissive attitude people initially had towards the spreadsheet and the obsession with modeling people displayed (and continue to display).</description>
     </item>
@@ -821,7 +818,8 @@ A long, in-depth piece on the history of spreadsheet modeling. The two points th
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://an1lam.github.io/post/2018-06-26-surfing-uncertainty-review/</guid>
-      <description>date: 2018-06-26 date: 2018-06-26 - Sheds interesting light on expert performance. - What about cognitive biases? If the brain is a prediction machine, then why do we fall prey to &amp;ldquo;sub-optimal&amp;rdquo; biases? - Evolutionary argument against Plato&amp;rsquo;s cave: prediction is so important for brains that if we were only perceiving the shadows on the wall, some other animal would have eaten us all by seeing the actual fire. - What does this theory predict that others don&amp;rsquo;t?</description>
+      <description>date: 2018-06-26 date: 2018-06-26
+ Sheds interesting light on expert performance. What about cognitive biases? If the brain is a prediction machine, then why do we fall prey to &amp;ldquo;sub-optimal&amp;rdquo; biases? Evolutionary argument against Plato&#39;s cave: prediction is so important for brains that if we were only perceiving the shadows on the wall, some other animal would have eaten us all by seeing the actual fire. What does this theory predict that others don&#39;t?</description>
     </item>
     
     <item>
@@ -830,7 +828,7 @@ A long, in-depth piece on the history of spreadsheet modeling. The two points th
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://an1lam.github.io/post/2018-11-03-deep-learning-goodfellow-ch4-notes/</guid>
-      <description> Chapter 4  What&amp;rsquo;s a multinoulli distribution? Show that softmax function is not affected by taking $ softmax(z) $ where $ z = x - max_i x_i $.  </description>
+      <description>Chapter 4  What&#39;s a multinoulli distribution? Show that softmax function is not affected by taking $ softmax(z) $ where $ z = x - max_i x_i $.  </description>
     </item>
     
   </channel>

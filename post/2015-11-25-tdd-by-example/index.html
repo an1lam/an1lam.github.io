@@ -9,7 +9,7 @@
         <style>
 
     html body {
-        font-family: 'Merriweather', sans-serif;
+        font-family: 'Lato', sans-serif;
         background-color: white;
     }
 
@@ -27,7 +27,7 @@
 
 
 
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merriweather">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 
 
  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/solarized-dark.min.css"> 
@@ -59,7 +59,7 @@
 
 
 <script>$(document).on('click', function() { $('.collapse').collapse('hide'); })</script>
- <meta name="generator" content="Hugo 0.55.6" />
+ <meta name="generator" content="Hugo 0.62.2" />
         
 
         
@@ -153,40 +153,34 @@
 </div>
 
 
-    <br> <div class="text-justify">
-
-<h2 id="value-objects">Value Objects</h2>
-
+    <br> <div class="text-justify"><h2 id="value-objects">Value Objects</h2>
 <ul>
 <li>Avoid <em>aliasing</em>, where changes to mutable objects cascade to connected
 objects.</li>
 <li>All value objects must return new objects</li>
 <li>Should implement an equals method</li>
 </ul>
-
 <h2 id="triangulation">Triangulation</h2>
-
 <ul>
 <li>Only generalize code when we have two or more examples (enough to triangulate
 for a radio signal)</li>
 <li>Ignore duplication until our tests require us to generalize</li>
-
-<li><p>Useful when you want to think about the &ldquo;axis of variability&rdquo;</p>
-
-<h2 id="decouple">Decouple</h2></li>
-
-<li><p>Make the tests use an interface that is decoupled from the underlying
-implementation.</p>
-
+<li>Useful when you want to think about the &ldquo;axis of variability&rdquo;</li>
+</ul>
+<h2 id="decouple">Decouple</h2>
 <ul>
-<li><p>Ex: Money.dollar vs. new Dollar
+<li>Make the tests use an interface that is decoupled from the underlying
+implementation.
+<ul>
+<li>Ex: Money.dollar vs. new Dollar
 Using the 1st one allows us to change the implementation of dollar
-without affecting the test</p>
-
-<h2 id="dedupe">Dedupe</h2></li>
-</ul></li>
-
-<li><p>After the tests pass, try to see where we can dedupe our implementation</p></li>
+without affecting the test</li>
+</ul>
+</li>
+</ul>
+<h2 id="dedupe">Dedupe</h2>
+<ul>
+<li>After the tests pass, try to see where we can dedupe our implementation</li>
 </ul>
 </div>
 
@@ -226,7 +220,7 @@ without affecting the test</p>
 
         <footer>
 
-            <p class="copyright text-muted">&copy; All rights reserved. Powered by <a href="https://gohugo.io">Hugo</a> and <a href="https://github.com/calintat/minimal">Minimal</a></p>
+            <p class="copyright text-muted">© All rights reserved. Powered by <a href="https://gohugo.io">Hugo</a> and <a href="https://github.com/calintat/minimal">Minimal</a></p>
 
         </footer>
        

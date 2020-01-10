@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>genomics on Stephen Malina</title>
@@ -38,7 +38,7 @@ Terminology  ChIP-seq (Chromatin Immunoprecipitation Sequencing): Expression Qua
       
       <guid>https://an1lam.github.io/post/2019-08-05-basset/</guid>
       <description>In which I record my thoughts on Basset.
-Bio Background The genome consists of (broadly) two types of genes, coding genes and noncoding genes. Coding genes get translated into proteins (as laid down by the Central Dogma) and are what most of us learned about in bio class. Non-coding genes&amp;hellip; don&amp;rsquo;t. As I understand it, noncoding genes can do a bunch of different things, but part of their function is to regulate coding gene activity through a number of mechanisms.</description>
+Bio Background The genome consists of (broadly) two types of genes, coding genes and noncoding genes. Coding genes get translated into proteins (as laid down by the Central Dogma) and are what most of us learned about in bio class. Non-coding genes&amp;hellip; don&#39;t. As I understand it, noncoding genes can do a bunch of different things, but part of their function is to regulate coding gene activity through a number of mechanisms.</description>
     </item>
     
     <item>
@@ -48,7 +48,7 @@ Bio Background The genome consists of (broadly) two types of genes, coding genes
       
       <guid>https://an1lam.github.io/post/2019-07-26-deepbind/</guid>
       <description>In which I record my thoughts on DeepBind.
-What is this paper about? The authors of this paper designed a conv net model to predict how well different proteins will bind to sequences of DNA or RNA. They train one model per protein for many different sequences and show that these models can predict binding affinities for sequences well enough to produce insights regarding the impact of single nucleotide mutations.</description>
+What is this paper about? The authors of this paper designed a conv net model to predict how well different proteins will bind to sequences of DNA or RNA. They train one model per protein for many different sequences and show that these models can predict binding affinities for sequences well enough to produce insights regarding the impact of single nucleotide mutations. They then discuss different datasets and areas in which they tested their model and how it performed (often SOTA [as of 2015]).</description>
     </item>
     
   </channel>

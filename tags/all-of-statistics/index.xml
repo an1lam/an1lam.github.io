@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>All of Statistics on Stephen Malina</title>
@@ -18,7 +18,7 @@
       
       <guid>https://an1lam.github.io/learning/2019-12-12-all-of-statistics-ch3-notes/</guid>
       <description>Selected Exercises 1. Suppose we play a game where we start with $ c $ dollars. On each play of the game you either double or halve your money, with equal probability. What is your expected fortune after $ n $ trials?
-I&amp;rsquo;m pretty sure we can use a trick that I&amp;rsquo;ve seen a lot in machine learning to solve this using plain old expectations. If I&amp;rsquo;m right, we let $ X \sim \text{Binomial}(n, \frac{1}{2}) $ and can create a new random variable, $ Z $, where</description>
+I&#39;m pretty sure we can use a trick that I&#39;ve seen a lot in machine learning to solve this using plain old expectations. If I&#39;m right, we let $ X \sim \text{Binomial}(n, \frac{1}{2}) $ and can create a new random variable, $ Z $, where</description>
     </item>
     
   </channel>

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
@@ -11,7 +11,6 @@
   <url>
     <loc>https://an1lam.github.io/post/</loc>
     <lastmod>2019-12-13T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -22,7 +21,6 @@
   <url>
     <loc>https://an1lam.github.io/tags/all-of-statistics/</loc>
     <lastmod>2019-12-12T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -33,19 +31,31 @@
   <url>
     <loc>https://an1lam.github.io/learning/</loc>
     <lastmod>2019-12-12T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://an1lam.github.io/tags/notes/</loc>
     <lastmod>2019-12-12T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://an1lam.github.io/tags/</loc>
     <lastmod>2019-12-12T00:00:00+00:00</lastmod>
-    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://an1lam.github.io/tags/genomics/</loc>
+    <lastmod>2019-11-16T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://an1lam.github.io/tags/machine-learning/</loc>
+    <lastmod>2019-11-16T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://an1lam.github.io/tags/paper/</loc>
+    <lastmod>2019-11-16T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -54,33 +64,13 @@
   </url>
   
   <url>
-    <loc>https://an1lam.github.io/tags/genomics/</loc>
-    <lastmod>2019-11-16T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://an1lam.github.io/tags/machine-learning/</loc>
-    <lastmod>2019-11-16T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://an1lam.github.io/tags/paper/</loc>
-    <lastmod>2019-11-16T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://an1lam.github.io/tags/review/</loc>
     <lastmod>2019-11-16T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://an1lam.github.io/tags/causal-inference/</loc>
     <lastmod>2019-11-15T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -91,7 +81,6 @@
   <url>
     <loc>https://an1lam.github.io/tags/causality/</loc>
     <lastmod>2019-11-15T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -102,24 +91,21 @@
   <url>
     <loc>https://an1lam.github.io/tags/statistics/</loc>
     <lastmod>2019-11-03T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://an1lam.github.io/tags/math/</loc>
-    <lastmod>2019-08-13T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://an1lam.github.io/post/2019-09-07-matrix-potpourri/</loc>
-    <lastmod>2019-08-13T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://an1lam.github.io/tags/linear-algebra/</loc>
     <lastmod>2019-08-13T00:00:00+00:00</lastmod>
-    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://an1lam.github.io/tags/math/</loc>
+    <lastmod>2019-08-13T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://an1lam.github.io/post/2019-09-07-matrix-potpourri/</loc>
+    <lastmod>2019-08-13T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -140,7 +126,6 @@
   <url>
     <loc>https://an1lam.github.io/tags/linear-algebra-done-right/</loc>
     <lastmod>2019-05-20T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -524,12 +509,10 @@
   
   <url>
     <loc>https://an1lam.github.io/categories/</loc>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://an1lam.github.io/page/</loc>
-    <priority>0</priority>
   </url>
   
 </urlset>

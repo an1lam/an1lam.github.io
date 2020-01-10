@@ -9,7 +9,7 @@
         <style>
 
     html body {
-        font-family: 'Merriweather', sans-serif;
+        font-family: 'Lato', sans-serif;
         background-color: white;
     }
 
@@ -27,7 +27,7 @@
 
 
 
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merriweather">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 
 
  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/solarized-dark.min.css"> 
@@ -59,7 +59,7 @@
 
 
 <script>$(document).on('click', function() { $('.collapse').collapse('hide'); })</script>
- <meta name="generator" content="Hugo 0.55.6" />
+ <meta name="generator" content="Hugo 0.62.2" />
         
 
         
@@ -163,12 +163,8 @@
 </div>
 
 
-    <br> <div class="text-justify">
-
-<p>In which I record my thoughts on <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4768299/pdf/nihms757739.pdf">DeepSEA</a>.</p>
-
+    <br> <div class="text-justify"><p>In which I record my thoughts on <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4768299/pdf/nihms757739.pdf">DeepSEA</a>.</p>
 <h2 id="terminology">Terminology</h2>
-
 <ul>
 <li>ChIP-seq (Chromatin Immunoprecipitation Sequencing):</li>
 <li>Expression Quantitative Trait Locis (eQTLs)</li>
@@ -177,24 +173,16 @@
 <li>gkm-SVMs: The gkm-SVM is the previous SOTA model for predicting transcription factor binding based on ChIP-seq data.</li>
 <li>Allele: variants of a gene at the same position on a chromosome.</li>
 </ul>
-
 <h2 id="what-is-this-paper-about">What is this paper about?</h2>
-
 <p>This paper trains a CNN to predict the presence of 919 &ldquo;chromatin features&rdquo;&ndash;different TF binding sites, DHSs, and histone marks&ndash;from 1000bp DNA sequences. It then tests this model by using a functional significance score based on its output to train a logistic regression classifier to predict whether SNPs will be present in a few different catalog of SNPs known to impact different biological functions, e.g. a GWAS catalog of disease-related SNPs.</p>
-
 <h2 id="technical-methods">Technical Methods</h2>
-
 <h2 id="why-is-this-important">Why is this important?</h2>
-
 <h2 id="meta">Meta</h2>
-
-<p>This is the clearest of the three papers I&rsquo;ve read so far, but that may be because I&rsquo;m slowly internalizing the language of the domain.</p>
-
+<p>This is the clearest of the three papers I've read so far, but that may be because I'm slowly internalizing the language of the domain.</p>
 <h2 id="questions">Questions</h2>
-
 <ul>
-<li><p>What does this mean? I guess this paper precedes DeepBind so maybe this was just the first of its kind&hellip;</p>
-
+<li>
+<p>What does this mean? I guess this paper precedes DeepBind so maybe this was just the first of its kind&hellip;</p>
 <blockquote>
 <p>Such approaches are valuable for prioritizing sequence variants;
 however, current methods except for a parallel work have not been able to extract and
@@ -204,15 +192,20 @@ no previous approach predicts functional effects of noncoding variants from only
 sequence, and no method has been demonstrated to predict with single-nucleotide sensitivity
 the effects of noncoding variants on transcription factor (TF) binding, DNA accessibility and
 histone marks of sequences.</p>
-</blockquote></li>
-
-<li><p>What&rsquo;s the difference between &ldquo;motifs&rdquo; and &ldquo;evolutionary features and chromatin annotations&rdquo;?</p></li>
-
-<li><p>When they trained the logistic regression classifiers, what aspects of the original model were they using? I think I understand, you can use the output of the NN model as the input to the classifier and train the classifier to predict based on it (predicted impact on chromatin shape).</p></li>
-
-<li><p>What do the probability predictions in the output represent? Are they continuous or purely for classification? Is the impact on a chromatin feature binary? Yes, the outputs are probabilities but the actual thing we care about is a binary classification (either will the factor bind or will there be a histone mark).</p></li>
-
-<li><p>Is the histone mark on the nucleosome being predicted by the DNA sequence or is the DNA sequence content causing the histone mark? It&rsquo;s believed to be the latter although there&rsquo;s apparently some work claiming that the former can also happen.</p></li>
+</blockquote>
+</li>
+<li>
+<p>What's the difference between &ldquo;motifs&rdquo; and &ldquo;evolutionary features and chromatin annotations&rdquo;?</p>
+</li>
+<li>
+<p>When they trained the logistic regression classifiers, what aspects of the original model were they using? I think I understand, you can use the output of the NN model as the input to the classifier and train the classifier to predict based on it (predicted impact on chromatin shape).</p>
+</li>
+<li>
+<p>What do the probability predictions in the output represent? Are they continuous or purely for classification? Is the impact on a chromatin feature binary? Yes, the outputs are probabilities but the actual thing we care about is a binary classification (either will the factor bind or will there be a histone mark).</p>
+</li>
+<li>
+<p>Is the histone mark on the nucleosome being predicted by the DNA sequence or is the DNA sequence content causing the histone mark? It's believed to be the latter although there's apparently some work claiming that the former can also happen.</p>
+</li>
 </ul>
 </div>
 
@@ -326,7 +319,7 @@ histone marks of sequences.</p>
 
         <footer>
 
-            <p class="copyright text-muted">&copy; All rights reserved. Powered by <a href="https://gohugo.io">Hugo</a> and <a href="https://github.com/calintat/minimal">Minimal</a></p>
+            <p class="copyright text-muted">© All rights reserved. Powered by <a href="https://gohugo.io">Hugo</a> and <a href="https://github.com/calintat/minimal">Minimal</a></p>
 
         </footer>
        

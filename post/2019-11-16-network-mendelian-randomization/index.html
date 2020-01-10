@@ -9,7 +9,7 @@
         <style>
 
     html body {
-        font-family: 'Merriweather', sans-serif;
+        font-family: 'Lato', sans-serif;
         background-color: white;
     }
 
@@ -27,7 +27,7 @@
 
 
 
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merriweather">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 
 
  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/solarized-dark.min.css"> 
@@ -59,7 +59,7 @@
 
 
 <script>$(document).on('click', function() { $('.collapse').collapse('hide'); })</script>
- <meta name="generator" content="Hugo 0.55.6" />
+ <meta name="generator" content="Hugo 0.62.2" />
         
 
         
@@ -163,36 +163,23 @@
 </div>
 
 
-    <br> <div class="text-justify">
-
-<p>In which I record my thoughts on <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4469795/">Network Mendelian Randomization</a> by Burgess et al.</p>
-
+    <br> <div class="text-justify"><p>In which I record my thoughts on <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4469795/">Network Mendelian Randomization</a> by Burgess et al.</p>
 <h2 id="what-is-this-paper-about">What is this paper about?</h2>
-
-<p>This paper describes a method for doing Mendelian Randomization (MR) in the presence of a potential mediating variable. In the typical MR setting, we have an instrumental variable which &ldquo;instruments&rdquo; an exposure that we believe causally influences the outcome we care about. True mediators &ldquo;mediate&rdquo; the causal influence of exposures on outcomes. In other words, if we&rsquo;re trying to understand the causal influence of some factor on another factor, it&rsquo;s possible there&rsquo;s a factor (mediator) that the exposure influences that then influences the outcome.</p>
-
-<p>This paper presents two methods&ndash;one regression-based, one SEM-based&ndash;for estimating the &ldquo;direct&rdquo; and &ldquo;indirect&rdquo; effects of an exposure on the outcome assuming we have instrumental variables for both the exposure and the mediator. Like basically all of the MR papers I&rsquo;ve read, this paper requires assuming linear effects between variables and homogenous effects across individuals. While I understand why the linear effects assumption makes computing the values we care about much easier, I&rsquo;m still a bit confused about why everyone else seems to feel so comfortable with it from a philosophical perspective. That said, it&rsquo;s ubiquitous, so I can&rsquo;t fault the authors for keeping it.</p>
-
-<p>One limitation of this paper is that, with the exception of the IV, the authors assume all variables are continuous, so this method applies more to measuring the effect of levels of different measurements than presence/absence (binary/categorical variables). They claim extension to binary variables isn&rsquo;t hard, but I&rsquo;m always wary of &ldquo;it&rsquo;s trivial&rdquo; claims. In fairness, I also haven&rsquo;t looked to see if they have a follow-up paper discussing how to extend this to binary variables.</p>
-
+<p>This paper describes a method for doing Mendelian Randomization (MR) in the presence of a potential mediating variable. In the typical MR setting, we have an instrumental variable which &ldquo;instruments&rdquo; an exposure that we believe causally influences the outcome we care about. True mediators &ldquo;mediate&rdquo; the causal influence of exposures on outcomes. In other words, if we're trying to understand the causal influence of some factor on another factor, it's possible there's a factor (mediator) that the exposure influences that then influences the outcome.</p>
+<p>This paper presents two methods&ndash;one regression-based, one SEM-based&ndash;for estimating the &ldquo;direct&rdquo; and &ldquo;indirect&rdquo; effects of an exposure on the outcome assuming we have instrumental variables for both the exposure and the mediator. Like basically all of the MR papers I've read, this paper requires assuming linear effects between variables and homogenous effects across individuals. While I understand why the linear effects assumption makes computing the values we care about much easier, I'm still a bit confused about why everyone else seems to feel so comfortable with it from a philosophical perspective. That said, it's ubiquitous, so I can't fault the authors for keeping it.</p>
+<p>One limitation of this paper is that, with the exception of the IV, the authors assume all variables are continuous, so this method applies more to measuring the effect of levels of different measurements than presence/absence (binary/categorical variables). They claim extension to binary variables isn't hard, but I'm always wary of &ldquo;it's trivial&rdquo; claims. In fairness, I also haven't looked to see if they have a follow-up paper discussing how to extend this to binary variables.</p>
 <h2 id="technical-methods">Technical Methods</h2>
-
 <p>The regression-based method the authors describe for estimating direct/indirect effects looks very similar to the standard MR method. In standard MR, we typically regress both the exposure and the outcome on the IV and then take the latter over the former to estimate the causal effect. Their version of this method just extends this to the mediator setting. Concretely, to estimate the (natural) direct effect of \( X \) (exposure) on \( Y \) (outcome) with mediator \( Z \), they derive the following formula,
 \[ \hat{\beta}<em>{X \Rightarrow Y} = \hat{\beta}</em>{X \rightarrow Y} - \hat{\beta}<em>{X \rightarrow Z} \hat{\beta}</em>{Z \rightarrow Y}. \]
-To estimate the individual \( \hat{\beta} \)s, they just use the normal formula I mentioned above. Intuitively, this just says that the direct effect of the exposure on the outcome is the standard causal effect of the exposure on the outcome minus the part of the effect contributed by \( X \) affecting \( Z \) affecting \( Y \). They also note that an alternate, very similar, way to estimate these effects is two-stage least squares regression, which is where you would e.g. regress the outcome on the fitted value of the exposure rather than on the IV. In their study, this approach produces similar results to the simpler approach, but they mention that [another paper]() motivates the two-stage least squares starting with a Pearl-ian causal model, so it&rsquo;s potentially more principles.</p>
-
+To estimate the individual \( \hat{\beta} \)s, they just use the normal formula I mentioned above. Intuitively, this just says that the direct effect of the exposure on the outcome is the standard causal effect of the exposure on the outcome minus the part of the effect contributed by \( X \) affecting \( Z \) affecting \( Y \). They also note that an alternate, very similar, way to estimate these effects is two-stage least squares regression, which is where you would e.g. regress the outcome on the fitted value of the exposure rather than on the IV. In their study, this approach produces similar results to the simpler approach, but they mention that <a href="">another paper</a> motivates the two-stage least squares starting with a Pearl-ian causal model, so it's potentially more principles.</p>
 <h2 id="why-is-this-important">Why is this important?</h2>
-
-<p>We can imagine a lot of situations in which effects of exposures we&rsquo;re interested in are mediated by intermediate factors. To do real science, we want to understand which attributes of an exposure&rsquo;s effect operates by changing intermediate factors vs. by directly changing the outcome.</p>
-
+<p>We can imagine a lot of situations in which effects of exposures we're interested in are mediated by intermediate factors. To do real science, we want to understand which attributes of an exposure's effect operates by changing intermediate factors vs. by directly changing the outcome.</p>
 <p>Also, this paper does a good job of explaining their method from two different perspectives: the more statistical parametric one and the Pearl-ian non-parametric structural causal model one.</p>
-
 <h2 id="questions">Questions</h2>
-
 <ul>
-<li>If we condition on \( Z \) in a graph like the following, won&rsquo;t we unblock the path between \( X \) and \( Y \)? <img src="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4469795/bin/dyu176f2p.jpg" alt="this one" /></li>
+<li>If we condition on \( Z \) in a graph like the following, won't we unblock the path between \( X \) and \( Y \)? <img src="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4469795/bin/dyu176f2p.jpg" alt="this one"></li>
 <li>What changes would we need to make to deal with continuous exposures but binary outcomes?</li>
-<li>What&rsquo;s the difference between the DAGs they show when discussing the regression-based approach and the SEM approach? Is it the presence of the undirected edge error terms in the DAG? I think it&rsquo;s just that the Pearl framework is non-parametric.</li>
+<li>What's the difference between the DAGs they show when discussing the regression-based approach and the SEM approach? Is it the presence of the undirected edge error terms in the DAG? I think it's just that the Pearl framework is non-parametric.</li>
 </ul>
 </div>
 
@@ -306,7 +293,7 @@ To estimate the individual \( \hat{\beta} \)s, they just use the normal formula 
 
         <footer>
 
-            <p class="copyright text-muted">&copy; All rights reserved. Powered by <a href="https://gohugo.io">Hugo</a> and <a href="https://github.com/calintat/minimal">Minimal</a></p>
+            <p class="copyright text-muted">© All rights reserved. Powered by <a href="https://gohugo.io">Hugo</a> and <a href="https://github.com/calintat/minimal">Minimal</a></p>
 
         </footer>
        
