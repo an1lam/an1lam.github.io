@@ -1,278 +1,292 @@
-<!DOCTYPE html>
-<html lang="en-us">
-    <head>
-         
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Posts</title>
-        
-        <style>
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta content='text/html; charset=utf-8' http-equiv='content-type' />
 
-    html body {
-        font-family: 'Lato', sans-serif;
-        background-color: white;
-    }
-
-    :root {
-        --accent: red;
-        --border-width:  5px ;
-    }
-
-</style>
+  <title>Posts - Stephen Malina</title>
+  <meta content='Posts - Stephen Malina' property='title' />
+  <meta content='Posts - Stephen Malina' property='og:title' />
 
 
-<link rel="stylesheet" href="https://an1lam.github.io/css/main.css">
+<meta property="og:description" content="This is my blog. There are many others like it but this one is mine." />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://an1lam.github.io/post/" />
+
+
+<meta property="og:updated_time" content="2019-12-13T00:00:00&#43;00:00"/>
 
 
 
 
 
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 
 
- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/solarized-dark.min.css"> 
+<meta name="generator" content="Hugo 0.62.2" />
+
+<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600" rel="stylesheet">
+<style type="text/css">/*https://coolors.co/afd5aa-f0f2ef-a69f98-3d3d3d-8c6057*/
+:root {
+  --main-color: #8C6056; 
+  --secondary-color: #AFD5AA;
+  --logo-text-color: #fff;
+  --body-text-color: #3d3d3d;
+  --heading-text-color: #383838;
+  --background-color: #fff;
+}</style>
+<link href='/css/tachyons.min.css' rel="stylesheet">
+<link href='/css/styles.css' rel="stylesheet">
 
 
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-
-
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+<link rel="icon" 
  
+  href='/favicon.ico'
 
+type="image/x-icon"/>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
-
-     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/go.min.js"></script>  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/haskell.min.js"></script>  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/kotlin.min.js"></script>  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/scala.min.js"></script>  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/swift.min.js"></script> 
-
-    <script>hljs.initHighlightingOnLoad();</script>
-
-
-
-
-
-
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-
-
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-
-
-<script>$(document).on('click', function() { $('.collapse').collapse('hide'); })</script>
- <meta name="generator" content="Hugo 0.62.2" />
-        
-        <link href="/post/index.xml" rel="alternate" type="application/rss&#43;xml" title="Stephen Malina" />
-        <link href="/post/index.xml" rel="feed" type="application/rss&#43;xml" title="Stephen Malina" />
-        
-
-        
-    </head>
-
+<link href='/feed.xml' rel="alternate" type="application/atom+xml" title="Stephen Malina" />
+</head>
+<body class="global-font">
+  <nav class=" flex-ns justify-between border-box pa3 pl3-l pr2-l mt1 mt0-ns" id="navbar">
+  <div class="flex">
+    <a class="f4 fw6 ttu no-underline dim bg-main-color pv1 ph2 br2" id="site-title" href='/' title="Home">Stephen Malina</a>
+  </div>
+  
+  <div class=" flex-ns mt2 mt0-ns pv1">
     
+      <a class="link dim dark-gray f6 dib mr2 mr3-l ttu tracked" href='/' title="Home">Home</a>
     
-    <script type="text/x-mathjax-config">
-      MathJax.Hub.Config({
-        tex2jax: {
-          inlineMath: [ ['$','$'], ["\\(","\\)"] ],
-          processEscapes: true
-        }
-      });
-    </script>
-    <script type="text/javascript" async
-      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
-    </script>
+      <a class="link dim dark-gray f6 dib mr2 mr3-l ttu tracked" href='/learning/' title="Learning">Learning</a>
     
-
-    <body>
-         
-        <nav class="navbar navbar-default navbar-fixed-top">
-
-            <div class="container">
-
-                <div class="navbar-header">
-
-                    <a class="navbar-brand visible-xs" href="#">Posts</a>
-
-                    <button class="navbar-toggle" data-target=".navbar-collapse" data-toggle="collapse">
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-
-                </div>
-
-                <div class="collapse navbar-collapse">
-
-                    
-                        <ul class="nav navbar-nav">
-                            
-                                <li><a href="/">Home</a></li>
-                            
-                                <li><a href="/learning/">Learning</a></li>
-                            
-                                <li><a href="/post/">Posts</a></li>
-                            
-                                <li><a href="/progress">The State of My Mind</a></li>
-                            
-                        </ul>
-                    
-
-                    
-                        <ul class="nav navbar-nav navbar-right">
-                            
-                                <li class="navbar-icon"><a href="mailto:stephenmalina@gmail.com"><i class="fa fa-envelope-o"></i></a></li>
-                            
-                                <li class="navbar-icon"><a href="https://github.com/an1lam"><i class="fa fa-github"></i></a></li>
-                            
-                                <li class="navbar-icon"><a href="https://www.linkedin.com/in/stephen.malina/"><i class="fa fa-linkedin"></i></a></li>
-                            
-                                <li class="navbar-icon"><a href="https://stackoverflow.com/users/1631855/an1lam"><i class="fa fa-stack-overflow"></i></a></li>
-                            
-                        </ul>
-                    
-
-                </div>
-
-            </div>
-
-        </nav>
-
-
-<main>
-
-    <h2>Posts</h2>
-
-     <div class="item">
-
+      <a class="link dim dark-gray f6 dib mr2 mr3-l ttu tracked" href='/post/' title="Posts">Posts</a>
     
+      <a class="link dim dark-gray f6 dib mr2 mr3-l ttu tracked" href='/progress' title="The State of My Mind">The State of My Mind</a>
     
+  </div>
+  
+</nav>
+  
+<main class="center mv4 content-width ph3">
+  <h1 class="f2 fw6 heading-font">Posts</h1>
+  
+  <ul class="list-pages">
     
-
+      <li class="lh-copy"><a href="/post/2019-12-13-alternative-explanation-of-simpsons-paradox/" class="link f5">Yet another Simpson&#39;s Paradox post</a> - <time>13 Dec 2019</time></li>
     
+      <li class="lh-copy"><a href="/post/2019-11-16-network-mendelian-randomization/" class="link f5">Paper Review - Network Mendelian Randomization</a> - <time>16 Nov 2019</time></li>
     
-
-    <h4><a href="/post/2019-12-13-alternative-explanation-of-simpsons-paradox/">Yet another Simpson&#39;s Paradox post</a></h4>
-    <h5>December 13, 2019</h5>
+      <li class="lh-copy"><a href="/post/2019-09-07-matrix-potpourri/" class="link f5">Matrix Potpourri</a> - <time>13 Aug 2019</time></li>
     
-
-</div>
-  <div class="item">
-
+      <li class="lh-copy"><a href="/post/2019-08-08-deepsea/" class="link f5">Paper Review - DeepSEA</a> - <time>08 Aug 2019</time></li>
     
+      <li class="lh-copy"><a href="/post/2019-08-05-basset/" class="link f5">Paper Review - Basset</a> - <time>05 Aug 2019</time></li>
     
+      <li class="lh-copy"><a href="/post/2019-07-26-deepbind/" class="link f5">Paper Review - DeepBind</a> - <time>26 Jul 2019</time></li>
     
-
+      <li class="lh-copy"><a href="/post/2019-05-18-thoughts-on-stoicism/" class="link f5">Current Thoughts on Stoicism</a> - <time>18 May 2019</time></li>
     
+      <li class="lh-copy"><a href="/post/2019-03-22-internal-prediction-markets-for-better-institutions/" class="link f5">Better Project Planning With Prediction Markets</a> - <time>22 Mar 2019</time></li>
     
-
-    <h4><a href="/post/2019-11-16-network-mendelian-randomization/">Paper Review - Network Mendelian Randomization</a></h4>
-    <h5>November 16, 2019</h5>
+      <li class="lh-copy"><a href="/post/2018-12-16-babble-learning/" class="link f5">Babble, Learning, and the Typical Mind Fallacy</a> - <time>16 Dec 2018</time></li>
     
-    <a href="https://an1lam.github.io/tags/review"><kbd class="item-tag">review</kbd></a>
+      <li class="lh-copy"><a href="/post/2018-12-02-movember/" class="link f5">My Interpretation of Movember</a> - <time>02 Dec 2018</time></li>
     
-    <a href="https://an1lam.github.io/tags/machine-learning"><kbd class="item-tag">machine-learning</kbd></a>
+      <li class="lh-copy"><a href="/post/2018-06-12-statistical-models-ch-2/" class="link f5">Statistical Models - Theory and Practice</a> - <time>12 Jun 2018</time></li>
     
-    <a href="https://an1lam.github.io/tags/genomics"><kbd class="item-tag">genomics</kbd></a>
+      <li class="lh-copy"><a href="/post/2018-06-09-statistical-models-ch-1/" class="link f5">Statistical Models - Theory and Practice</a> - <time>09 Jun 2018</time></li>
     
-    <a href="https://an1lam.github.io/tags/paper"><kbd class="item-tag">paper</kbd></a>
+      <li class="lh-copy"><a href="/post/2018-02-24-jit-reading/" class="link f5">JIT Reading</a> - <time>24 Feb 2018</time></li>
     
-    <a href="https://an1lam.github.io/tags/notes"><kbd class="item-tag">notes</kbd></a>
+      <li class="lh-copy"><a href="/post/2015-12-06-nl12062016/" class="link f5">Weekly Newsletter</a> - <time>06 Dec 2015</time></li>
     
-
-</div>
-  <div class="item">
-
+      <li class="lh-copy"><a href="/post/2015-11-29-nl1/" class="link f5">Weekly Newsletter</a> - <time>29 Nov 2015</time></li>
     
+      <li class="lh-copy"><a href="/post/2015-11-25-tdd-by-example/" class="link f5">Weekly Newsletter</a> - <time>25 Nov 2015</time></li>
     
+      <li class="lh-copy"><a href="/post/2015-11-22-nl/" class="link f5">Weekly Newsletter</a> - <time>22 Nov 2015</time></li>
     
-
+      <li class="lh-copy"><a href="/post/2015-11-15-nl/" class="link f5">Weekly Newsletter</a> - <time>15 Nov 2015</time></li>
     
+      <li class="lh-copy"><a href="/post/2015-11-14-sicp-1-1/" class="link f5">SICP 1.1</a> - <time>14 Nov 2015</time></li>
     
-
-    <h4><a href="/post/2019-09-07-matrix-potpourri/">Matrix Potpourri</a></h4>
-    <h5>August 13, 2019</h5>
+      <li class="lh-copy"><a href="/post/2015-11-08-nl11082015/" class="link f5">Weekly Newsletter</a> - <time>08 Nov 2015</time></li>
     
-    <a href="https://an1lam.github.io/tags/math"><kbd class="item-tag">math</kbd></a>
+      <li class="lh-copy"><a href="/post/2015-11-01-nl11012015/" class="link f5">Weekly Newsletter</a> - <time>01 Nov 2015</time></li>
     
-    <a href="https://an1lam.github.io/tags/linear-algebra"><kbd class="item-tag">linear-algebra</kbd></a>
+      <li class="lh-copy"><a href="/post/2015-10-25-nl10252015/" class="link f5">Weekly Newsletter</a> - <time>25 Oct 2015</time></li>
     
-    <a href="https://an1lam.github.io/tags/machine-learning"><kbd class="item-tag">machine-learning</kbd></a>
+      <li class="lh-copy"><a href="/post/2015-10-18-nl10182015/" class="link f5">Weekly Newsletter</a> - <time>18 Oct 2015</time></li>
     
-
-</div>
-  <div class="item">
-
+      <li class="lh-copy"><a href="/post/2015-10-11-nl10112015/" class="link f5">Weekly Newsletter</a> - <time>11 Oct 2015</time></li>
     
+      <li class="lh-copy"><a href="/post/2015-10-04-nl10042015/" class="link f5">Weekly Newsletter</a> - <time>04 Oct 2015</time></li>
     
+      <li class="lh-copy"><a href="/post/2015-09-27-nl09272015/" class="link f5">Weekly Newsletter</a> - <time>27 Sep 2015</time></li>
     
-
+      <li class="lh-copy"><a href="/post/2015-09-20-nl09202015/" class="link f5">Weekly Newsletter</a> - <time>20 Sep 2015</time></li>
     
+      <li class="lh-copy"><a href="/post/2015-09-13-nl09132015/" class="link f5">Weekly Newsletter</a> - <time>13 Sep 2015</time></li>
     
-
-    <h4><a href="/post/2019-08-08-deepsea/">Paper Review - DeepSEA</a></h4>
-    <h5>August 8, 2019</h5>
+      <li class="lh-copy"><a href="/post/2015-09-06-nl09062015/" class="link f5">Weekly Newsletter</a> - <time>06 Sep 2015</time></li>
     
-    <a href="https://an1lam.github.io/tags/review"><kbd class="item-tag">review</kbd></a>
+      <li class="lh-copy"><a href="/post/2015-08-30-nl08302015/" class="link f5">Weekly Newsletter</a> - <time>30 Aug 2015</time></li>
     
-    <a href="https://an1lam.github.io/tags/machine-learning"><kbd class="item-tag">machine-learning</kbd></a>
+      <li class="lh-copy"><a href="/post/2015-08-09-nl08092015/" class="link f5">Weekly Newsletter</a> - <time>09 Aug 2015</time></li>
     
-    <a href="https://an1lam.github.io/tags/genomics"><kbd class="item-tag">genomics</kbd></a>
+      <li class="lh-copy"><a href="/post/2015-08-02-nl08022015/" class="link f5">Weekly Newsletter</a> - <time>02 Aug 2015</time></li>
     
-    <a href="https://an1lam.github.io/tags/paper"><kbd class="item-tag">paper</kbd></a>
+      <li class="lh-copy"><a href="/post/2015-07-26-nl07262015/" class="link f5">Weekly Newsletter</a> - <time>26 Jul 2015</time></li>
     
-    <a href="https://an1lam.github.io/tags/notes"><kbd class="item-tag">notes</kbd></a>
+      <li class="lh-copy"><a href="/post/2015-07-19-nl07192015/" class="link f5">Weekly Newsletter</a> - <time>19 Jul 2015</time></li>
     
-
-</div>
-  <div class="item">
-
+      <li class="lh-copy"><a href="/post/2015-07-12-themythofthearchofjustice/" class="link f5">The Myth of the Arc of Justice by Will Baird</a> - <time>12 Jul 2015</time></li>
     
+      <li class="lh-copy"><a href="/post/2015-07-12-nl07122015/" class="link f5">Weekly Newsletter</a> - <time>12 Jul 2015</time></li>
     
+      <li class="lh-copy"><a href="/post/2015-06-14-nl06142015/" class="link f5">Weekly Newsletter</a> - <time>14 Jun 2015</time></li>
     
-
+      <li class="lh-copy"><a href="/post/2015-06-07-nl06072015/" class="link f5">Weekly Newsletter</a> - <time>07 Jun 2015</time></li>
     
+      <li class="lh-copy"><a href="/post/2015-05-31-2015-nl05312015/" class="link f5">Weekly Newsletter</a> - <time>31 May 2015</time></li>
     
-
-    <h4><a href="/post/2019-08-05-basset/">Paper Review - Basset</a></h4>
-    <h5>August 5, 2019</h5>
+      <li class="lh-copy"><a href="/post/2015-05-24-nl05242015/" class="link f5">Weekly Newsletter</a> - <time>24 May 2015</time></li>
     
-    <a href="https://an1lam.github.io/tags/review"><kbd class="item-tag">review</kbd></a>
+      <li class="lh-copy"><a href="/post/2015-05-17-nl05172015/" class="link f5">Weekly Newsletter</a> - <time>17 May 2015</time></li>
     
-    <a href="https://an1lam.github.io/tags/machine-learning"><kbd class="item-tag">machine-learning</kbd></a>
+      <li class="lh-copy"><a href="/post/2015-05-10-nl05102015/" class="link f5">Weekly Newsletter</a> - <time>10 May 2015</time></li>
     
-    <a href="https://an1lam.github.io/tags/genomics"><kbd class="item-tag">genomics</kbd></a>
+      <li class="lh-copy"><a href="/post/2015-05-03-nl05032015/" class="link f5">Weekly Newsletter</a> - <time>03 May 2015</time></li>
     
-    <a href="https://an1lam.github.io/tags/paper"><kbd class="item-tag">paper</kbd></a>
+      <li class="lh-copy"><a href="/post/2015-04-26-nl04262015/" class="link f5">Weekly Newsletter</a> - <time>26 Apr 2015</time></li>
     
-    <a href="https://an1lam.github.io/tags/notes"><kbd class="item-tag">notes</kbd></a>
+      <li class="lh-copy"><a href="/post/2015-04-19-nl04192015/" class="link f5">Weekly Newsletter</a> - <time>19 Apr 2015</time></li>
     
-
-</div>
- 
-
+      <li class="lh-copy"><a href="/post/2015-04-12-nl04122015/" class="link f5">Weekly Newsletter</a> - <time>12 Apr 2015</time></li>
+    
+      <li class="lh-copy"><a href="/post/2015-04-05-nl04052015/" class="link f5">Weekly Newsletter</a> - <time>05 Apr 2015</time></li>
+    
+      <li class="lh-copy"><a href="/post/2015-03-29-nl03292015/" class="link f5">Weekly Newsletter</a> - <time>29 Mar 2015</time></li>
+    
+      <li class="lh-copy"><a href="/post/2015-03-22-nl03222015/" class="link f5">Weekly Newsletter</a> - <time>22 Mar 2015</time></li>
+    
+      <li class="lh-copy"><a href="/post/2015-03-15-nl03152015/" class="link f5">Weekly Newsletter</a> - <time>15 Mar 2015</time></li>
+    
+      <li class="lh-copy"><a href="/post/2015-03-08-nl03082015/" class="link f5">Weekly Newsletter</a> - <time>08 Mar 2015</time></li>
+    
+      <li class="lh-copy"><a href="/post/2015-03-01-nl03012015/" class="link f5">Weekly Newsletter</a> - <time>01 Mar 2015</time></li>
+    
+      <li class="lh-copy"><a href="/post/2015-02-22-nl02222015/" class="link f5">Weekly Newsletter</a> - <time>22 Feb 2015</time></li>
+    
+      <li class="lh-copy"><a href="/post/2015-02-15-nl02152015/" class="link f5">Weekly Newsletter</a> - <time>15 Feb 2015</time></li>
+    
+      <li class="lh-copy"><a href="/post/2015-02-08-nl02082015/" class="link f5">Weekly Newsletter</a> - <time>08 Feb 2015</time></li>
+    
+      <li class="lh-copy"><a href="/post/2015-02-01-nl02012015/" class="link f5">Weekly Newsletter</a> - <time>01 Feb 2015</time></li>
+    
+      <li class="lh-copy"><a href="/post/2015-01-25-nl01252015/" class="link f5">Weekly Newsletter</a> - <time>25 Jan 2015</time></li>
+    
+      <li class="lh-copy"><a href="/post/2015-01-18-nl01182015/" class="link f5">Weekly Newsletter</a> - <time>18 Jan 2015</time></li>
+    
+      <li class="lh-copy"><a href="/post/2015-01-11-nl01112015/" class="link f5">Weekly Newsletter</a> - <time>11 Jan 2015</time></li>
+    
+      <li class="lh-copy"><a href="/post/2015-01-04-nl01042015/" class="link f5">Weekly Newsletter</a> - <time>04 Jan 2015</time></li>
+    
+      <li class="lh-copy"><a href="/post/2014-12-28-nl12282014/" class="link f5">Weekly Newsletter</a> - <time>28 Dec 2014</time></li>
+    
+      <li class="lh-copy"><a href="/post/2014-12-21-nl12212014/" class="link f5">Weekly Newsletter</a> - <time>21 Dec 2014</time></li>
+    
+      <li class="lh-copy"><a href="/post/2014-12-14-nl12072014/" class="link f5">Weekly Newsletter</a> - <time>14 Dec 2014</time></li>
+    
+      <li class="lh-copy"><a href="/post/2014-12-07-nl12072014/" class="link f5">Weekly Newsletter (12-07-2014)</a> - <time>07 Dec 2014</time></li>
+    
+      <li class="lh-copy"><a href="/post/2014-11-30-nl11302014/" class="link f5">Weekly Newsletter (11-30-2014)</a> - <time>30 Nov 2014</time></li>
+    
+      <li class="lh-copy"><a href="/post/2014-11-26-regenesis-book-review/" class="link f5">Book Review - Regenesis by George Church</a> - <time>26 Nov 2014</time></li>
+    
+      <li class="lh-copy"><a href="/post/2014-11-25-winter-break-reading/" class="link f5">Winter Break Reading Plans</a> - <time>25 Nov 2014</time></li>
+    
+      <li class="lh-copy"><a href="/post/2014-11-23-nl11232014/" class="link f5">Weekly Newsletter (11-23-2014)</a> - <time>23 Nov 2014</time></li>
+    
+      <li class="lh-copy"><a href="/post/2014-11-18-existence-david-brin-review/" class="link f5">Book Review - Existence by David Brin</a> - <time>18 Nov 2014</time></li>
+    
+      <li class="lh-copy"><a href="/post/2014-11-17-response-to-nl11162014/" class="link f5">Response to &#34;Did Zen philosophy create the Kamikaze?&#34;</a> - <time>17 Nov 2014</time></li>
+    
+      <li class="lh-copy"><a href="/post/2014-11-16-nl11162014/" class="link f5">Weekly Newsletter (11-16-2014)</a> - <time>16 Nov 2014</time></li>
+    
+      <li class="lh-copy"><a href="/post/2014-11-09-nl11092014/" class="link f5">Weekly Newsletter (11-09-2014)</a> - <time>09 Nov 2014</time></li>
+    
+      <li class="lh-copy"><a href="/post/2014-11-02-nl11022014/" class="link f5">Weekly Newsletter (11-02-2014)</a> - <time>02 Nov 2014</time></li>
+    
+      <li class="lh-copy"><a href="/post/2018-06-26-surfing-uncertainty-review/" class="link f5"></a> - <time>01 Jan 0001</time></li>
+    
+      <li class="lh-copy"><a href="/post/2018-11-03-deep-learning-goodfellow-ch4-notes/" class="link f5"></a> - <time>01 Jan 0001</time></li>
+    
+  </ul>
 </main>
+<div class="pagination tc db fixed-l bottom-2-l right-2-l mb3 mb0-l">
 
-
-
-<div class="pages">
-
-     
-    <a class="icon pages-icon" href="/post/page/2/" rel="next">
-        <i class="fa fa-arrow-right"></i>
-    </a>
-    
+<a id="scroll-to-top" class="f6 o-0 link br2 ph2 pv1 mb1 bg-main-color pointer" onclick="topFunction()" style="color: #fff; visibility: hidden; display: none; transition: opacity .5s, visibility .5s;" title="back to top">back to top</a>
 
 </div>
 
+  <footer class="content-width mt0 mt5-l mb4 f6 center ph3 gray tc tl-l">
+  <hr class="dn db-l ml0-l gray w3"><br>
+  Powered by <a href="https://gohugo.io/" target="_blank" class="link gray dim">Hugo</a>, based on the <a href="https://github.com/lingxz/er" target="_blank" class="link gray dim">Er</a> theme. <br>
+  
+</footer>
+  
 
 
-        <footer>
 
-            <p class="copyright text-muted">© All rights reserved. Powered by <a href="https://gohugo.io">Hugo</a> and <a href="https://github.com/calintat/minimal">Minimal</a></p>
 
-        </footer>
-       
-    </body>
 
+
+<script type="text/javascript">
+var prevScrollpos = window.pageYOffset;
+window.onscroll = function() {
+  var currentScrollPos = window.pageYOffset;
+
+  
+  if (document.getElementById("tag-cloud") !== null) { 
+    if (prevScrollpos > currentScrollPos) { 
+      document.getElementById("tag-cloud").style.visibility = "visible";
+      document.getElementById("tag-cloud").style.opacity = "1";
+    } else {
+      document.getElementById("tag-cloud").style.visibility = "hidden";
+      document.getElementById("tag-cloud").style.opacity = "0";
+    }
+  }
+  
+
+  
+  if (document.body.scrollTop > 1000 || document.documentElement.scrollTop > 1000) {
+      document.getElementById("scroll-to-top").style.display = "inline";
+      document.getElementById("scroll-to-top").style.visibility = "visible";
+      document.getElementById("scroll-to-top").style.opacity = "1";
+  } else {
+      document.getElementById("scroll-to-top").style.visibility = "hidden";
+      document.getElementById("scroll-to-top").style.opacity = "0";
+  }
+  
+  prevScrollpos = currentScrollPos;
+}
+
+
+function topFunction() {
+  document.body.scrollTop = 0; 
+  document.documentElement.scrollTop = 0; 
+}
+
+
+
+
+
+
+
+</script>
+
+
+
+
+</body>
 </html>
-
