@@ -9,7 +9,7 @@
   <meta content='Linear Algebra Done Right - Chapter 6 - Stephen Malina' property='og:title' />
 
 
-<meta property="og:description" content="Selected Exercises 6.B 1. (a) Suppose $ \theta \in \mathbf{R} $. Show that $ (\cos \theta, \sin \theta), (-\sin \theta, \cos \theta) $ and $ (\cos \theta, \sin \theta), (\sin \theta, -\cos \theta) $ are orthonormal bases of $ \mathbf{R}^2 $.
+<meta property="og:description" content="Selected Exercises 6.B 1. (a) Suppose \( \theta \in \mathbf{R} \). Show that $ (\cos \theta, \sin \theta), (-\sin \theta, \cos \theta) $ and $ (\cos \theta, \sin \theta), (\sin \theta, -\cos \theta) $ are orthonormal bases of $ \mathbf{R}^2 $.
 (b) Show that each orthonormal basis of $ \mathbf{R}^2 $ is of the form given by one of the two possibilities of part (a).
 (a) First, we show that both lists of vectors are orthonormal (using the Euclidean inner product), i." />
 <meta property="og:type" content="article" />
@@ -49,7 +49,38 @@
 
 type="image/x-icon"/>
 
+
+<script type="text/javascript" async
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+  MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    displayMath: [['$$','$$']],
+    processEscapes: true,
+    processEnvironments: true,
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+    TeX: { equationNumbers: { autoNumber: "AMS" },
+         extensions: ["AMSmath.js", "AMSsymbols.js"] }
+  }
+  });
+  MathJax.Hub.Queue(function() {
+    
+    
+    
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i = 0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';
+    }
+  });
+
+  MathJax.Hub.Config({
+  
+  TeX: { equationNumbers: { autoNumber: "AMS" } }
+  });
+</script>
+
 <link href='/feed.xml' rel="alternate" type="application/atom+xml" title="Stephen Malina" />
+
 </head>
 <body class="global-font">
   <nav class=" flex-ns justify-between border-box pa3 pl3-l pr2-l mt1 mt0-ns" id="navbar">
@@ -83,31 +114,31 @@ type="image/x-icon"/>
   </p>
   <div class="lh-copy post-content"><h1 id="selected-exercises">Selected Exercises</h1>
 <h2 id="6b">6.B</h2>
-<p><strong>1.</strong> (a) Suppose $ \theta \in \mathbf{R} $. Show that $ (\cos \theta, \sin \theta), (-\sin \theta, \cos \theta) $ and $ (\cos \theta, \sin \theta), (\sin \theta, -\cos \theta) $ are orthonormal bases of $ \mathbf{R}^2 $.<br>
+<p><strong>1.</strong> (a) Suppose \( \theta \in \mathbf{R} \). Show that $ (\cos \theta, \sin \theta), (-\sin \theta, \cos \theta) $ and $ (\cos \theta, \sin \theta), (\sin \theta, -\cos \theta) $ are orthonormal bases of $ \mathbf{R}^2 $.<br>
 (b) Show that each orthonormal basis of $ \mathbf{R}^2 $ is of the form given by one of the two possibilities of part (a).</p>
 <p>(a) First, we show that both lists of vectors are orthonormal (using the Euclidean inner product), i.e. that the inner product of the two vectors equals 0 and that the inner product of each with itself equals 1.</p>
-<p>The former,
-$$
-\begin{eqnarray}
-\langle (\cos \theta, \sin \theta), (-\sin \theta, \cos \theta) \rangle &amp; = &amp;
--\cos \theta \sin \theta + \sin \theta \cos \theta &amp; = &amp; 0.
-\end{eqnarray}
+<p>The former,</p>
+<p>$$
+\begin{aligned}
+\langle (\cos \theta, \sin \theta), (-\sin \theta, \cos \theta) \rangle &amp; = &amp; \\<br>
+-\cos \theta \sin \theta + \sin \theta \cos \theta &amp; = &amp; 0. \\<br>
+\end{aligned}
 $$</p>
 <p>The latter for the first list,
 $$
-\begin{eqnarray}
-\langle (\cos \theta, \sin \theta), (\cos \theta, \sin \theta) \rangle &amp; = &amp;
-\cos^2 \theta + \sin^2 \theta &amp; = &amp; 1,
-\end{eqnarray}
+\begin{aligned}
+\langle (\cos \theta, \sin \theta), (\cos \theta, \sin \theta) \rangle &amp; = \\<br>
+\cos^2 \theta + \sin^2 \theta &amp; = 1, \\<br>
+\end{aligned}
 $$
-and the second,
-$$
-\begin{eqnarray}
-\langle (-\sin \theta, \cos \theta), (-\sin \theta, \cos \theta) \rangle &amp; = &amp;
-\sin^2 \theta + \cos^2 \theta &amp; = &amp; 1.
-\end{eqnarray}
+and the second,</p>
+<p>$$
+\begin{aligned}
+\langle (-\sin \theta, \cos \theta), (-\sin \theta, \cos \theta) \rangle &amp; = &amp; \\<br>
+\sin^2 \theta + \cos^2 \theta &amp; = &amp; 1. \\<br>
+\end{aligned}
 $$</p>
-<p>Thus, the two lists are orthonormal. By 6.28, these lists are bases of $\mathbf{R}^2$, since they both have length $2 = \dim \mathbf{R}^2 $.</p>
+<p>Thus, the two lists are orthonormal. By 6.28, these lists are bases of $\mathbf{R}^2$, since they both have length $2 = \dim\ \mathbf{R}^2 $.</p>
 <p>(b) We know that, if $u, v$ are nonzero vectors in $R</p>
 <p><strong>2.</strong> Suppose $ e_1, \dots. e_m $ is an orthonormal list of vectors in $V$. Let $ v \in V $, Prove that
 $$
@@ -286,39 +317,6 @@ if (document.getElementById("contents-list") !== null && document.getElementsByC
 </script>
 
 
-
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.6.0/katex.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/contrib/auto-render.min.js" integrity="sha384-dq1/gEHSxPZQ7DdrM82ID4YVol9BYyU7GbWlIwnwyPzotpoc57wDw/guX8EaYGPx" crossorigin="anonymous"></script>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.6.0/katex.min.css">
-<script>
-  renderMathInElement(document.body,
-    {
-        delimiters: [
-            {left: "$$", right: "$$", display: true},
-            {left: "$", right: "$", display: false},
-        ]
-    }
-  );
-
-  var inlineMathArray = document.querySelectorAll("script[type='math/tex']");
-  for (var i = 0; i < inlineMathArray.length; i++) {
-    var inlineMath = inlineMathArray[i];
-    var tex = inlineMath.innerText || inlineMath.textContent;
-    var replaced = document.createElement("span");
-    replaced.innerHTML = katex.renderToString(tex, {displayMode: false});
-    inlineMath.parentNode.replaceChild(replaced, inlineMath);
-  }
-
-  var displayMathArray = document.querySelectorAll("script[type='math/tex; mode=display']");
-  for (var i = 0; i < displayMathArray.length; i++) {
-    var displayMath = displayMathArray[i];
-    var tex = displayMath.innerHTML;
-    var replaced = document.createElement("span");
-    replaced.innerHTML = katex.renderToString(tex.replace(/%.*/g, ''), {displayMode: true});
-    displayMath.parentNode.replaceChild(replaced, displayMath);
-  }
-</script>
 
 
 </body>
