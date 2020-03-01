@@ -1,246 +1,414 @@
 <!DOCTYPE html>
-<html lang="en-us">
-    <head>
-         
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Posts</title>
+<html lang="en">
+  <head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+  <title>Posts</title>
+  <meta property="og:title" content="Posts" />
+  <meta name="twitter:title" content="Posts" />
+  <meta name="author" content=""/>
+  <meta name="twitter:card" content="summary" />
+  <meta property="og:url" content="https://an1lam.github.io/post/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Stephen Malina" />
+
+  <meta name="generator" content="Hugo 0.57.2" />
+  <link rel="canonical" href="https://an1lam.github.io/post/" />
+  <link rel="alternate" href="https://an1lam.github.io/index.xml" type="application/rss+xml" title="Stephen Malina">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/katex.min.css" integrity="sha384-wITovz90syo1dJWVh32uuETPVEtGigN07tkttEqPv+uR2SE/mbQcG7ATL28aI9H0" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://an1lam.github.io/css/main.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" />
+  <link rel="stylesheet" href="https://an1lam.github.io/css/pygment_highlights.css" />
+  <link rel="stylesheet" href="https://an1lam.github.io/css/highlight.min.css" />
+
+</head>
+
+  <body>
+    <nav class="navbar navbar-default navbar-fixed-top navbar-custom">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="https://an1lam.github.io">Stephen Malina</a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="main-navbar">
+      <ul class="nav navbar-nav navbar-right">
         
-        <style>
-
-    html body {
-        font-family: 'Lato', sans-serif;
-        background-color: white;
-    }
-
-    :root {
-        --accent: red;
-        --border-width:  5px ;
-    }
-
-</style>
-
-
-<link rel="stylesheet" href="https://an1lam.github.io/css/main.css">
-
-
-
-
-
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
-
-
- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/solarized-dark.min.css"> 
-
-
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-
-
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
- 
-
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
-
-     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/go.min.js"></script>  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/haskell.min.js"></script>  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/kotlin.min.js"></script>  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/scala.min.js"></script>  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/swift.min.js"></script> 
-
-    <script>hljs.initHighlightingOnLoad();</script>
-
-
-
-
-
-
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-
-
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-
-
-<script>$(document).on('click', function() { $('.collapse').collapse('hide'); })</script>
- <meta name="generator" content="Hugo 0.62.2" />
+          
+            <li>
+              <a title="Home" href="/">Home</a>
+            </li>
+          
         
-        <link href="/post/index.xml" rel="alternate" type="application/rss&#43;xml" title="Stephen Malina" />
-        <link href="/post/index.xml" rel="feed" type="application/rss&#43;xml" title="Stephen Malina" />
+          
+            <li>
+              <a title="Learning" href="/learning/">Learning</a>
+            </li>
+          
+        
+          
+            <li>
+              <a title="Posts" href="/post/">Posts</a>
+            </li>
+          
+        
+          
+            <li>
+              <a title="The State of My Mind" href="/progress">The State of My Mind</a>
+            </li>
+          
         
 
         
-    </head>
+
+        
+      </ul>
+    </div>
+
+    <div class="avatar-container">
+      <div class="avatar-img-border">
+        
+      </div>
+    </div>
+
+  </div>
+</nav>
+
+
+
 
     
-    
-    <script type="text/x-mathjax-config">
-      MathJax.Hub.Config({
-        tex2jax: {
-          inlineMath: [ ['$','$'], ["\\(","\\)"] ],
-          processEscapes: true
-        }
-      });
-    </script>
-    <script type="text/javascript" async
-      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
-    </script>
-    
-
-    <body>
-         
-        <nav class="navbar navbar-default navbar-fixed-top">
-
-            <div class="container">
-
-                <div class="navbar-header">
-
-                    <a class="navbar-brand visible-xs" href="#">Posts</a>
-
-                    <button class="navbar-toggle" data-target=".navbar-collapse" data-toggle="collapse">
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-
-                </div>
-
-                <div class="collapse navbar-collapse">
-
-                    
-                        <ul class="nav navbar-nav">
-                            
-                                <li><a href="/">Home</a></li>
-                            
-                                <li><a href="/learning/">Learning</a></li>
-                            
-                                <li><a href="/post/">Posts</a></li>
-                            
-                                <li><a href="/progress">The State of My Mind</a></li>
-                            
-                        </ul>
-                    
-
-                    
-                        <ul class="nav navbar-nav navbar-right">
-                            
-                                <li class="navbar-icon"><a href="mailto:stephenmalina@gmail.com"><i class="fa fa-envelope-o"></i></a></li>
-                            
-                                <li class="navbar-icon"><a href="https://github.com/an1lam"><i class="fa fa-github"></i></a></li>
-                            
-                                <li class="navbar-icon"><a href="https://www.linkedin.com/in/stephen.malina/"><i class="fa fa-linkedin"></i></a></li>
-                            
-                                <li class="navbar-icon"><a href="https://stackoverflow.com/users/1631855/an1lam"><i class="fa fa-stack-overflow"></i></a></li>
-                            
-                        </ul>
-                    
-
-                </div>
-
+  <header class="header-section ">
+    <div class="intro-header no-img">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+            <div class="page-heading">
+              <h1>Posts</h1>
+              <hr class="small">
             </div>
-
-        </nav>
-
-
-<main>
-
-    <h2>Posts</h2>
-
-     <div class="item">
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
 
     
+  <div class="container" role="main">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        
+        <div class="posts-list">
+          
+            <article class="post-preview">
+              <a href="https://an1lam.github.io/post/2015-08-30-nl08302015/">
+                <h2 class="post-title">Weekly Newsletter</h2>
     
+                
+              </a>
     
-
+              <p class="post-meta">
+                Posted on August 30, 2015
+              </p>
+              <div class="post-entry">
+                
+                  Ambition and Achievement Sources of Power
+Argues that college applicants should seek out &ldquo;sources of power&rdquo; which improve their chances of acceptance by orders of magnitude. This article fits with my observations about the college process.
+Alternative Businesses The Cheese Board Collective
+Profiles a cooperative cheese shop where all employees are owners. I&rsquo;ve expressed my enthusiasm for business model experimentation and co-ops in particular before so I&rsquo;ll refrain from doing so again now.
+                  <a href="https://an1lam.github.io/post/2015-08-30-nl08302015/" class="post-read-more">[Read More]</a>
+                
+              </div>
     
+              
     
-
-    <h4><a href="/post/2015-11-25-tdd-by-example/">Weekly Newsletter</a></h4>
-    <h5>November 25, 2015</h5>
+            </article>
+          
+            <article class="post-preview">
+              <a href="https://an1lam.github.io/post/2015-08-09-nl08092015/">
+                <h2 class="post-title">Weekly Newsletter</h2>
     
-
-</div>
-  <div class="item">
-
+                
+              </a>
     
+              <p class="post-meta">
+                Posted on August 9, 2015
+              </p>
+              <div class="post-entry">
+                
+                  Future of Food The $200 Hydroponic Greenhouse You Control With a Smartphone
+Reports on a new product that promises to automate the process of hydroponic gardening such that individuals will be able to grow vegetables in their home with minimal effort and maximal control. This type of product, while different from Soylent, illustrates another viable direction for the future of food that focuses more on the decentralization and automation of food production.
+                  <a href="https://an1lam.github.io/post/2015-08-09-nl08092015/" class="post-read-more">[Read More]</a>
+                
+              </div>
     
+              
     
-
+            </article>
+          
+            <article class="post-preview">
+              <a href="https://an1lam.github.io/post/2015-08-02-nl08022015/">
+                <h2 class="post-title">Weekly Newsletter</h2>
     
+                
+              </a>
     
-
-    <h4><a href="/post/2015-11-22-nl/">Weekly Newsletter</a></h4>
-    <h5>November 22, 2015</h5>
+              <p class="post-meta">
+                Posted on August 2, 2015
+              </p>
+              <div class="post-entry">
+                
+                  Plant Genetics How Driscoll’s Is Hacking the Strawberry of the Future
+Profiles Phil Stewart, Driscoll&rsquo;s chief strawberry geneticist. I enjoyed learning about the challenge of breeding an optimal set of characteristics into Driscoll&rsquo;s strawberries.
+Education A College Without Classes
+Explores the recent phenomenon of online, competence-based university programs, which, rather than holding lectures, test their students periodically on competency in course topics. I view competence-based metrics for education as an important alternative to traditional grades.
+                  <a href="https://an1lam.github.io/post/2015-08-02-nl08022015/" class="post-read-more">[Read More]</a>
+                
+              </div>
     
-
-</div>
-  <div class="item">
-
+              
     
+            </article>
+          
+            <article class="post-preview">
+              <a href="https://an1lam.github.io/post/2015-07-26-nl07262015/">
+                <h2 class="post-title">Weekly Newsletter</h2>
     
+                
+              </a>
     
-
+              <p class="post-meta">
+                Posted on July 26, 2015
+              </p>
+              <div class="post-entry">
+                
+                  Linguistics How to Say (Almost) Everything in a Hundred-Word Language
+Explores Toki Pona, the world&rsquo;s smallest language. Describes the linguistic idiosyncrasies that arise from the severely limited vocabulary of the language.
+Nature&rsquo;s Algorithms Decoding the Remarkable Algorithms of Ants
+Interviews a scientist studying the swarm behavior of ants in an attempt to translate ant colony behavior into computer algorithms.
+Education A New Look at Apprenticeships as a Path to the Middle Class
+                  <a href="https://an1lam.github.io/post/2015-07-26-nl07262015/" class="post-read-more">[Read More]</a>
+                
+              </div>
     
+              
     
-
-    <h4><a href="/post/2015-11-15-nl/">Weekly Newsletter</a></h4>
-    <h5>November 15, 2015</h5>
+            </article>
+          
+            <article class="post-preview">
+              <a href="https://an1lam.github.io/post/2015-07-19-nl07192015/">
+                <h2 class="post-title">Weekly Newsletter</h2>
     
-
-</div>
-  <div class="item">
-
+                
+              </a>
     
+              <p class="post-meta">
+                Posted on July 19, 2015
+              </p>
+              <div class="post-entry">
+                
+                  Human Potential The Science of Mental Fitness
+Aggregates recent research findings regarding the effect of visualization on skill learning and physical development.
+Biotech Your body, the battery: Powering gadgets from human &ldquo;biofuel&rdquo;
+Discusses the various ways in which the human body could be used to power electronics.
+Letters Why Explore Space?
+In this letter, Dr. Ernst Stuhlinger, the past director of science at a NASA facility, responded to a Zambia-based nun&rsquo;s letter questioning the allocation of billions of dollars towards the space program with this letter.
+                  <a href="https://an1lam.github.io/post/2015-07-19-nl07192015/" class="post-read-more">[Read More]</a>
+                
+              </div>
     
+              
     
-
+            </article>
+          
+            <article class="post-preview">
+              <a href="https://an1lam.github.io/post/2015-07-12-themythofthearchofjustice/">
+                <h2 class="post-title">The Myth of the Arc of Justice by Will Baird</h2>
     
+                
+              </a>
     
-
-    <h4><a href="/post/2015-11-14-sicp-1-1/">SICP 1.1</a></h4>
-    <h5>November 14, 2015</h5>
+              <p class="post-meta">
+                Posted on July 12, 2015
+              </p>
+              <div class="post-entry">
+                
+                  The past few weeks have seen major shifts in two important areas of American society: race and sexual orientation. Following the Charleston shooting, an increasing number of leaders such as South Carolina Governor Nikki Haley have called for the removal of the Confederate flag from state grounds due to its symbolic association with racism and support for slavery. And on June 26, the Supreme Court ruled in favor of a constitutional right for same-sex marriage.
+                  <a href="https://an1lam.github.io/post/2015-07-12-themythofthearchofjustice/" class="post-read-more">[Read More]</a>
+                
+              </div>
     
-
-</div>
-  <div class="item">
-
+              
     
+            </article>
+          
+            <article class="post-preview">
+              <a href="https://an1lam.github.io/post/2015-07-12-nl07122015/">
+                <h2 class="post-title">Weekly Newsletter</h2>
     
+                
+              </a>
     
-
+              <p class="post-meta">
+                Posted on July 12, 2015
+              </p>
+              <div class="post-entry">
+                
+                  Evolutionary Biology and Health To Stop Mosquito Bites, Silence Your Skin&rsquo;s Bacteria
+Discusses a technique which could prevent mosquitoes bites by silencing the communication between bacteria on human skin. Mosquitoes detect this communication on human skin and bite people after detecting it.
+Cognitive Science What&rsquo;s the evidence on using rational arguments to change people&rsquo;s minds?
+Argues that reason is more powerful than recent cognitive science research might lead us to believe.
+                  <a href="https://an1lam.github.io/post/2015-07-12-nl07122015/" class="post-read-more">[Read More]</a>
+                
+              </div>
     
+              
     
-
-    <h4><a href="/post/2015-11-08-nl11082015/">Weekly Newsletter</a></h4>
-    <h5>November 8, 2015</h5>
+            </article>
+          
+            <article class="post-preview">
+              <a href="https://an1lam.github.io/post/2015-06-14-nl06142015/">
+                <h2 class="post-title">Weekly Newsletter</h2>
     
-
-</div>
- 
-
-</main>
-
-
-
-<div class="pages">
-
+                
+              </a>
     
-    <a class="icon pages-icon" href="/post/page/3/" rel="prev">
-        <i class="fa fa-arrow-left"></i>
-    </a>
-     
-    <a class="icon pages-icon" href="/post/page/5/" rel="next">
-        <i class="fa fa-arrow-right"></i>
-    </a>
+              <p class="post-meta">
+                Posted on June 14, 2015
+              </p>
+              <div class="post-entry">
+                
+                  I apologize for the short newsletter this week. Graduation has limited the amount of time I&rsquo;ve been able to spend on it, and I &rsquo;d rather shorten it than include lower quality articles.
+Biology and Physiology Lost Posture: Why Some Indigenous Cultures May Not Have Back Pain
+Discusses a hypothesis for widespread back pain and profiles Esther Gokhale, a woman who has studied indigenous cultures in an attempt to gain insight into why they don&rsquo;t suffer from back pain.
+                  <a href="https://an1lam.github.io/post/2015-06-14-nl06142015/" class="post-read-more">[Read More]</a>
+                
+              </div>
     
+              
+    
+            </article>
+          
+            <article class="post-preview">
+              <a href="https://an1lam.github.io/post/2015-06-07-nl06072015/">
+                <h2 class="post-title">Weekly Newsletter</h2>
+    
+                
+              </a>
+    
+              <p class="post-meta">
+                Posted on June 7, 2015
+              </p>
+              <div class="post-entry">
+                
+                  Neuroscience Researchers Find Missing Link Between Brain and Immune System
+Discusses a recently discovered vessel that connects the brain and the lymphatic system. Although this article&rsquo;s not great, the discovery itself is a huge deal.
+Better not look down&hellip;
+A neurosurgeon reflects on his career and the mistakes he made. An introspective piece.
+Droughts and Water Shortage To Save California, Read &ldquo;Dune&rdquo;
+Argues that Frank Herbert&rsquo;s ideas from Dune are becoming a reality in California.
+                  <a href="https://an1lam.github.io/post/2015-06-07-nl06072015/" class="post-read-more">[Read More]</a>
+                
+              </div>
+    
+              
+    
+            </article>
+          
+            <article class="post-preview">
+              <a href="https://an1lam.github.io/post/2015-05-31-2015-nl05312015/">
+                <h2 class="post-title">Weekly Newsletter</h2>
+    
+                
+              </a>
+    
+              <p class="post-meta">
+                Posted on May 31, 2015
+              </p>
+              <div class="post-entry">
+                
+                  Learning and Education How I Rewired My Brain to Become Fluent in Math
+An engineering professor recounts how she went from being a language person without a college degree to an engineer with a doctorate. The author provides a unique perspective on the process of learning technical subjects and supplements her own experience with knowledge taken from her subsequent study of learning processes.
+How to learn 30 languages
+Explores the world of hyperpolyglots, individuals who typically speak between 10 and 20 languages fluently.
+                  <a href="https://an1lam.github.io/post/2015-05-31-2015-nl05312015/" class="post-read-more">[Read More]</a>
+                
+              </div>
+    
+              
+    
+            </article>
+          
+        </div>
+        
+          <ul class="pager main-pager">
+            
+              <li class="previous">
+                <a href="/post/page/3">&larr; Newer Posts</a>
+              </li>
+            
+            
+              <li class="next">
+                <a href="/post/page/5">Older Posts &rarr;</a>
+              </li>
+            
+          </ul>
+        
+      </div>
+    </div>
+  </div>
 
-</div>
+    <footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <ul class="list-inline text-center footer-links">
+          
+          
+        </ul>
+        <p class="credits copyright text-muted">
+          
+          &nbsp;&bull;&nbsp;
+          2020
+
+          
+            &nbsp;&bull;&nbsp;
+            <a href="https://an1lam.github.io">Stephen Malina</a>
+          
+        </p>
+        
+        <p class="credits theme-by text-muted">
+          <a href="http://gohugo.io">Hugo v0.57.2</a> powered &nbsp;&bull;&nbsp; Theme by <a href="http://deanattali.com/beautiful-jekyll/">Beautiful Jekyll</a> adapted to <a href="https://github.com/halogenica/beautifulhugo">Beautiful Hugo</a>
+          
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/katex.min.js" integrity="sha384-/y1Nn9+QQAipbNQWU65krzJralCnuOasHncUFXGkdwntGeSvQicrYkiUBwsgUqc1" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/contrib/auto-render.min.js" integrity="sha384-dq1/gEHSxPZQ7DdrM82ID4YVol9BYyU7GbWlIwnwyPzotpoc57wDw/guX8EaYGPx" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="https://an1lam.github.io/js/main.js"></script>
+<script src="https://an1lam.github.io/js/highlight.min.js"></script>
+<script> hljs.initHighlightingOnLoad(); </script>
+<script> renderMathInElement(document.body); </script>
 
 
 
-        <footer>
 
-            <p class="copyright text-muted">© All rights reserved. Powered by <a href="https://gohugo.io">Hugo</a> and <a href="https://github.com/calintat/minimal">Minimal</a></p>
 
-        </footer>
-       
-    </body>
-
+  </body>
 </html>
 

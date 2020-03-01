@@ -1,246 +1,404 @@
 <!DOCTYPE html>
-<html lang="en-us">
-    <head>
-         
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Posts</title>
+<html lang="en">
+  <head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+  <title>Posts</title>
+  <meta property="og:title" content="Posts" />
+  <meta name="twitter:title" content="Posts" />
+  <meta name="author" content=""/>
+  <meta name="twitter:card" content="summary" />
+  <meta property="og:url" content="https://an1lam.github.io/post/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Stephen Malina" />
+
+  <meta name="generator" content="Hugo 0.57.2" />
+  <link rel="canonical" href="https://an1lam.github.io/post/" />
+  <link rel="alternate" href="https://an1lam.github.io/index.xml" type="application/rss+xml" title="Stephen Malina">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/katex.min.css" integrity="sha384-wITovz90syo1dJWVh32uuETPVEtGigN07tkttEqPv+uR2SE/mbQcG7ATL28aI9H0" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://an1lam.github.io/css/main.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" />
+  <link rel="stylesheet" href="https://an1lam.github.io/css/pygment_highlights.css" />
+  <link rel="stylesheet" href="https://an1lam.github.io/css/highlight.min.css" />
+
+</head>
+
+  <body>
+    <nav class="navbar navbar-default navbar-fixed-top navbar-custom">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="https://an1lam.github.io">Stephen Malina</a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="main-navbar">
+      <ul class="nav navbar-nav navbar-right">
         
-        <style>
-
-    html body {
-        font-family: 'Lato', sans-serif;
-        background-color: white;
-    }
-
-    :root {
-        --accent: red;
-        --border-width:  5px ;
-    }
-
-</style>
-
-
-<link rel="stylesheet" href="https://an1lam.github.io/css/main.css">
-
-
-
-
-
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
-
-
- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/solarized-dark.min.css"> 
-
-
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-
-
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
- 
-
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
-
-     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/go.min.js"></script>  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/haskell.min.js"></script>  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/kotlin.min.js"></script>  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/scala.min.js"></script>  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/swift.min.js"></script> 
-
-    <script>hljs.initHighlightingOnLoad();</script>
-
-
-
-
-
-
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-
-
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-
-
-<script>$(document).on('click', function() { $('.collapse').collapse('hide'); })</script>
- <meta name="generator" content="Hugo 0.62.2" />
+          
+            <li>
+              <a title="Home" href="/">Home</a>
+            </li>
+          
         
-        <link href="/post/index.xml" rel="alternate" type="application/rss&#43;xml" title="Stephen Malina" />
-        <link href="/post/index.xml" rel="feed" type="application/rss&#43;xml" title="Stephen Malina" />
+          
+            <li>
+              <a title="Learning" href="/learning/">Learning</a>
+            </li>
+          
+        
+          
+            <li>
+              <a title="Posts" href="/post/">Posts</a>
+            </li>
+          
+        
+          
+            <li>
+              <a title="The State of My Mind" href="/progress">The State of My Mind</a>
+            </li>
+          
         
 
         
-    </head>
+
+        
+      </ul>
+    </div>
+
+    <div class="avatar-container">
+      <div class="avatar-img-border">
+        
+      </div>
+    </div>
+
+  </div>
+</nav>
+
+
+
 
     
-    
-    <script type="text/x-mathjax-config">
-      MathJax.Hub.Config({
-        tex2jax: {
-          inlineMath: [ ['$','$'], ["\\(","\\)"] ],
-          processEscapes: true
-        }
-      });
-    </script>
-    <script type="text/javascript" async
-      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
-    </script>
-    
-
-    <body>
-         
-        <nav class="navbar navbar-default navbar-fixed-top">
-
-            <div class="container">
-
-                <div class="navbar-header">
-
-                    <a class="navbar-brand visible-xs" href="#">Posts</a>
-
-                    <button class="navbar-toggle" data-target=".navbar-collapse" data-toggle="collapse">
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-
-                </div>
-
-                <div class="collapse navbar-collapse">
-
-                    
-                        <ul class="nav navbar-nav">
-                            
-                                <li><a href="/">Home</a></li>
-                            
-                                <li><a href="/learning/">Learning</a></li>
-                            
-                                <li><a href="/post/">Posts</a></li>
-                            
-                                <li><a href="/progress">The State of My Mind</a></li>
-                            
-                        </ul>
-                    
-
-                    
-                        <ul class="nav navbar-nav navbar-right">
-                            
-                                <li class="navbar-icon"><a href="mailto:stephenmalina@gmail.com"><i class="fa fa-envelope-o"></i></a></li>
-                            
-                                <li class="navbar-icon"><a href="https://github.com/an1lam"><i class="fa fa-github"></i></a></li>
-                            
-                                <li class="navbar-icon"><a href="https://www.linkedin.com/in/stephen.malina/"><i class="fa fa-linkedin"></i></a></li>
-                            
-                                <li class="navbar-icon"><a href="https://stackoverflow.com/users/1631855/an1lam"><i class="fa fa-stack-overflow"></i></a></li>
-                            
-                        </ul>
-                    
-
-                </div>
-
+  <header class="header-section ">
+    <div class="intro-header no-img">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+            <div class="page-heading">
+              <h1>Posts</h1>
+              <hr class="small">
             </div>
-
-        </nav>
-
-
-<main>
-
-    <h2>Posts</h2>
-
-     <div class="item">
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
 
     
+  <div class="container" role="main">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        
+        <div class="posts-list">
+          
+            <article class="post-preview">
+              <a href="https://an1lam.github.io/post/2015-11-08-nl11082015/">
+                <h2 class="post-title">Weekly Newsletter</h2>
     
+                
+              </a>
     
-
+              <p class="post-meta">
+                Posted on November 8, 2015
+              </p>
+              <div class="post-entry">
+                
+                  I&rsquo;ve been reading more technical neuroscience / psychology papers recently, so the newsletter reflects that. I&rsquo;m trying to better understand the variety and universality of mental imagery, and the only way to do that is to dive into the literature.
+Mental Imagery Representing Exact Numbers Visually
+This journal article discusses mental abacus representations. Be forewarned, the paper is fairly technical and a bit dry. If you just want to get the take-aways of the paper, I recommend reading the Introduction until you feel like you&rsquo;re in over your head and then skipping to page 13.
+                  <a href="https://an1lam.github.io/post/2015-11-08-nl11082015/" class="post-read-more">[Read More]</a>
+                
+              </div>
     
+              
     
-
-    <h4><a href="/post/2018-06-12-statistical-models-ch-2/">Statistical Models - Theory and Practice</a></h4>
-    <h5>June 12, 2018</h5>
+            </article>
+          
+            <article class="post-preview">
+              <a href="https://an1lam.github.io/post/2015-11-01-nl11012015/">
+                <h2 class="post-title">Weekly Newsletter</h2>
     
-
-</div>
-  <div class="item">
-
+                
+              </a>
     
+              <p class="post-meta">
+                Posted on November 1, 2015
+              </p>
+              <div class="post-entry">
+                
+                  Journalism The Future of News is not an Article
+A NY Times Labs writer argues that the future of news lies in smaller, contextually-aware primitives called particles. If you&rsquo;ve never explored the NYT Labs website before, I highly recommend it. I particularly enjoy this infographic.
+Biography Genghis John
+Paints a portrait of John Boyd, military theorist and legendary aircraft designer. Boyd&rsquo;s devotion to his ideals and unconventional thinking resonates with me and I definitely intend to read his papers and books.
+                  <a href="https://an1lam.github.io/post/2015-11-01-nl11012015/" class="post-read-more">[Read More]</a>
+                
+              </div>
     
+              
     
-
+            </article>
+          
+            <article class="post-preview">
+              <a href="https://an1lam.github.io/post/2015-10-25-nl10252015/">
+                <h2 class="post-title">Weekly Newsletter</h2>
     
+                
+              </a>
     
-
-    <h4><a href="/post/2018-06-09-statistical-models-ch-1/">Statistical Models - Theory and Practice</a></h4>
-    <h5>June 9, 2018</h5>
+              <p class="post-meta">
+                Posted on October 25, 2015
+              </p>
+              <div class="post-entry">
+                
+                  The Blockchain Blockchains in Context
+An easy to understand article about blockchains by a core contributor to Ethereum. Ethereum aims to create an understandable, general-purpose system for creating and enforcing contracts on the web. Potential applications of this system are more varied than you might initially expect. This picture breaks down areas in which Ethereum could prove an effective tool.
+Medicine and Biology Can we end the war on Cancer?
+                  <a href="https://an1lam.github.io/post/2015-10-25-nl10252015/" class="post-read-more">[Read More]</a>
+                
+              </div>
     
-
-</div>
-  <div class="item">
-
+              
     
+            </article>
+          
+            <article class="post-preview">
+              <a href="https://an1lam.github.io/post/2015-10-18-nl10182015/">
+                <h2 class="post-title">Weekly Newsletter</h2>
     
+                
+              </a>
     
-
+              <p class="post-meta">
+                Posted on October 18, 2015
+              </p>
+              <div class="post-entry">
+                
+                  Design UX and the Civilizing Process
+Another piece from the author of last week&rsquo;s 4-part series that took us through the theories of Julian Jaynes. This piece focuses on similarities between User Experience design, which aims to create seamless interactions between humans and products, and etiquette. My super-secret goal for the newsletter has always been to find at least one article my sister will genuinely enjoy and I may actually have a winner with this one.
+                  <a href="https://an1lam.github.io/post/2015-10-18-nl10182015/" class="post-read-more">[Read More]</a>
+                
+              </div>
     
+              
     
-
-    <h4><a href="/post/2018-02-24-jit-reading/">JIT Reading</a></h4>
-    <h5>February 24, 2018</h5>
+            </article>
+          
+            <article class="post-preview">
+              <a href="https://an1lam.github.io/post/2015-10-11-nl10112015/">
+                <h2 class="post-title">Weekly Newsletter</h2>
     
-
-</div>
-  <div class="item">
-
+                
+              </a>
     
+              <p class="post-meta">
+                Posted on October 11, 2015
+              </p>
+              <div class="post-entry">
+                
+                  Mind and Brain Below is a series of 4 articles that explore Julian Jaynes&rsquo; theory of consciousness and its relationship to unusual minds. I found this series incredibly fascinating. It reminds me of Blindsight, a creepy sci-fi novel by Peter Watts that explores the relationship between self-awareness and intelligence. If you&rsquo;ve ever questioned the nature of consciousness, you&rsquo;ll enjoy this series. After reading this, I&rsquo;m committing to reading Julian Jaynes&rsquo; Origin of Consciousness in the Breakdown of the Bicaemral Mind.
+                  <a href="https://an1lam.github.io/post/2015-10-11-nl10112015/" class="post-read-more">[Read More]</a>
+                
+              </div>
     
+              
     
-
+            </article>
+          
+            <article class="post-preview">
+              <a href="https://an1lam.github.io/post/2015-10-04-nl10042015/">
+                <h2 class="post-title">Weekly Newsletter</h2>
     
+                
+              </a>
     
-
-    <h4><a href="/post/2015-12-06-nl12062016/">Weekly Newsletter</a></h4>
-    <h5>December 6, 2015</h5>
+              <p class="post-meta">
+                Posted on October 4, 2015
+              </p>
+              <div class="post-entry">
+                
+                  Biology and Computation Better Living Through Quantum Mechanics
+Seth Lloyd, the first and only self-proclaimed quantum mechanical engineer from MIT, discusses new discoveries of quantum mechanical phenomena in plants and animals. I included this for the understandable metaphors used to explain quantum processes.
+Linguistics The Whistled Language of Northern Turkey
+Profiles a language that conveys meaning through whistling and clicks. I loved this article. You&rsquo;ll get twice as much out of it if you listen to the samples of the language.
+                  <a href="https://an1lam.github.io/post/2015-10-04-nl10042015/" class="post-read-more">[Read More]</a>
+                
+              </div>
     
-
-</div>
-  <div class="item">
-
+              
     
+            </article>
+          
+            <article class="post-preview">
+              <a href="https://an1lam.github.io/post/2015-09-27-nl09272015/">
+                <h2 class="post-title">Weekly Newsletter</h2>
     
+                
+              </a>
     
-
+              <p class="post-meta">
+                Posted on September 27, 2015
+              </p>
+              <div class="post-entry">
+                
+                  Neuroscience and Neurotech Hypnosis reaches the parts brain scans and neurosurgery cannot
+A good, succint article about the use of hypnosis in real neuroscience. Makes me hope I&rsquo;m in the 10% of people who are highly suggestible.
+Playing 20 Questions with the Mind
+Summarizes a new study in which two individuals in isolation played 20 questions using a brain-to-brain interface. This is a big first step towards more usable brain-to-brain interfaces.
+                  <a href="https://an1lam.github.io/post/2015-09-27-nl09272015/" class="post-read-more">[Read More]</a>
+                
+              </div>
     
+              
     
-
-    <h4><a href="/post/2015-11-29-nl1/">Weekly Newsletter</a></h4>
-    <h5>November 29, 2015</h5>
+            </article>
+          
+            <article class="post-preview">
+              <a href="https://an1lam.github.io/post/2015-09-20-nl09202015/">
+                <h2 class="post-title">Weekly Newsletter</h2>
     
-
-</div>
- 
-
-</main>
-
-
-
-<div class="pages">
-
+                
+              </a>
     
-    <a class="icon pages-icon" href="/post/page/2/" rel="prev">
-        <i class="fa fa-arrow-left"></i>
-    </a>
-     
-    <a class="icon pages-icon" href="/post/page/4/" rel="next">
-        <i class="fa fa-arrow-right"></i>
-    </a>
+              <p class="post-meta">
+                Posted on September 20, 2015
+              </p>
+              <div class="post-entry">
+                
+                  Cryonics A Dying Young Woman’s Hope in Cryonics and a Future
+Cancer claimed Kim Suozzi at age 23, but she chose to have her brain preserved with the dream that neuroscience might one day revive her mind. I really enjoyed this article. Unlike many of the readers, I&rsquo;ve considered signing up for cryonics and went so far as to ask for it for my birthday (a request which my mother politely denied).
+                  <a href="https://an1lam.github.io/post/2015-09-20-nl09202015/" class="post-read-more">[Read More]</a>
+                
+              </div>
     
+              
+    
+            </article>
+          
+            <article class="post-preview">
+              <a href="https://an1lam.github.io/post/2015-09-13-nl09132015/">
+                <h2 class="post-title">Weekly Newsletter</h2>
+    
+                
+              </a>
+    
+              <p class="post-meta">
+                Posted on September 13, 2015
+              </p>
+              <div class="post-entry">
+                
+                  Ethics The Philosopher Who Says We Should Play God
+The following quote sums up the article well:
+ So the idea that we could play god and tamper with the laws of nature, creating things that wouldn’t otherwise exist, is a red herring?
+We’re playing god every day. As the English philosopher Thomas Hobbes said, the natural state for human beings is a life that’s nasty, brutish, and short. We play god when we vaccinate.
+                  <a href="https://an1lam.github.io/post/2015-09-13-nl09132015/" class="post-read-more">[Read More]</a>
+                
+              </div>
+    
+              
+    
+            </article>
+          
+            <article class="post-preview">
+              <a href="https://an1lam.github.io/post/2015-09-06-nl09062015/">
+                <h2 class="post-title">Weekly Newsletter</h2>
+    
+                
+              </a>
+    
+              <p class="post-meta">
+                Posted on September 6, 2015
+              </p>
+              <div class="post-entry">
+                
+                  Nutrition and Health Starving Your Way to Vigor (see attached)
+A writer discusses his experience fasting for over a week. He cites scientific and historical sources showing the effectiveness of fasting in treating several ailments. My own understanding of nutrition supports this author’s claims. For a more scientific take on fasting, make your way through some of there (https://scholar.google.com/scholar?q=valter+longo+fasting&amp;hl=en&amp;as_sdt=0&amp;as_vis=1&amp;oi=scholart&amp;sa=X&amp;ved=0CBsQgQMwAGoVChMI1s3smvTjxwIVgZMeCh1FLQ6r) articles. If you&rsquo;re interested in trying out fasting but don&rsquo;t want to commit to a longer fast, I recommend Eat Stop Eat by Brad Pilon.
+                  <a href="https://an1lam.github.io/post/2015-09-06-nl09062015/" class="post-read-more">[Read More]</a>
+                
+              </div>
+    
+              
+    
+            </article>
+          
+        </div>
+        
+          <ul class="pager main-pager">
+            
+              <li class="previous">
+                <a href="/post/page/2">&larr; Newer Posts</a>
+              </li>
+            
+            
+              <li class="next">
+                <a href="/post/page/4">Older Posts &rarr;</a>
+              </li>
+            
+          </ul>
+        
+      </div>
+    </div>
+  </div>
 
-</div>
+    <footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <ul class="list-inline text-center footer-links">
+          
+          
+        </ul>
+        <p class="credits copyright text-muted">
+          
+          &nbsp;&bull;&nbsp;
+          2020
+
+          
+            &nbsp;&bull;&nbsp;
+            <a href="https://an1lam.github.io">Stephen Malina</a>
+          
+        </p>
+        
+        <p class="credits theme-by text-muted">
+          <a href="http://gohugo.io">Hugo v0.57.2</a> powered &nbsp;&bull;&nbsp; Theme by <a href="http://deanattali.com/beautiful-jekyll/">Beautiful Jekyll</a> adapted to <a href="https://github.com/halogenica/beautifulhugo">Beautiful Hugo</a>
+          
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/katex.min.js" integrity="sha384-/y1Nn9+QQAipbNQWU65krzJralCnuOasHncUFXGkdwntGeSvQicrYkiUBwsgUqc1" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/contrib/auto-render.min.js" integrity="sha384-dq1/gEHSxPZQ7DdrM82ID4YVol9BYyU7GbWlIwnwyPzotpoc57wDw/guX8EaYGPx" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="https://an1lam.github.io/js/main.js"></script>
+<script src="https://an1lam.github.io/js/highlight.min.js"></script>
+<script> hljs.initHighlightingOnLoad(); </script>
+<script> renderMathInElement(document.body); </script>
 
 
 
-        <footer>
 
-            <p class="copyright text-muted">© All rights reserved. Powered by <a href="https://gohugo.io">Hugo</a> and <a href="https://github.com/calintat/minimal">Minimal</a></p>
 
-        </footer>
-       
-    </body>
-
+  </body>
 </html>
 

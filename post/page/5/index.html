@@ -1,246 +1,413 @@
 <!DOCTYPE html>
-<html lang="en-us">
-    <head>
-         
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Posts</title>
+<html lang="en">
+  <head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+  <title>Posts</title>
+  <meta property="og:title" content="Posts" />
+  <meta name="twitter:title" content="Posts" />
+  <meta name="author" content=""/>
+  <meta name="twitter:card" content="summary" />
+  <meta property="og:url" content="https://an1lam.github.io/post/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Stephen Malina" />
+
+  <meta name="generator" content="Hugo 0.57.2" />
+  <link rel="canonical" href="https://an1lam.github.io/post/" />
+  <link rel="alternate" href="https://an1lam.github.io/index.xml" type="application/rss+xml" title="Stephen Malina">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/katex.min.css" integrity="sha384-wITovz90syo1dJWVh32uuETPVEtGigN07tkttEqPv+uR2SE/mbQcG7ATL28aI9H0" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://an1lam.github.io/css/main.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" />
+  <link rel="stylesheet" href="https://an1lam.github.io/css/pygment_highlights.css" />
+  <link rel="stylesheet" href="https://an1lam.github.io/css/highlight.min.css" />
+
+</head>
+
+  <body>
+    <nav class="navbar navbar-default navbar-fixed-top navbar-custom">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="https://an1lam.github.io">Stephen Malina</a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="main-navbar">
+      <ul class="nav navbar-nav navbar-right">
         
-        <style>
-
-    html body {
-        font-family: 'Lato', sans-serif;
-        background-color: white;
-    }
-
-    :root {
-        --accent: red;
-        --border-width:  5px ;
-    }
-
-</style>
-
-
-<link rel="stylesheet" href="https://an1lam.github.io/css/main.css">
-
-
-
-
-
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
-
-
- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/solarized-dark.min.css"> 
-
-
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-
-
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
- 
-
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
-
-     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/go.min.js"></script>  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/haskell.min.js"></script>  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/kotlin.min.js"></script>  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/scala.min.js"></script>  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/swift.min.js"></script> 
-
-    <script>hljs.initHighlightingOnLoad();</script>
-
-
-
-
-
-
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-
-
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-
-
-<script>$(document).on('click', function() { $('.collapse').collapse('hide'); })</script>
- <meta name="generator" content="Hugo 0.62.2" />
+          
+            <li>
+              <a title="Home" href="/">Home</a>
+            </li>
+          
         
-        <link href="/post/index.xml" rel="alternate" type="application/rss&#43;xml" title="Stephen Malina" />
-        <link href="/post/index.xml" rel="feed" type="application/rss&#43;xml" title="Stephen Malina" />
+          
+            <li>
+              <a title="Learning" href="/learning/">Learning</a>
+            </li>
+          
+        
+          
+            <li>
+              <a title="Posts" href="/post/">Posts</a>
+            </li>
+          
+        
+          
+            <li>
+              <a title="The State of My Mind" href="/progress">The State of My Mind</a>
+            </li>
+          
         
 
         
-    </head>
+
+        
+      </ul>
+    </div>
+
+    <div class="avatar-container">
+      <div class="avatar-img-border">
+        
+      </div>
+    </div>
+
+  </div>
+</nav>
+
+
+
 
     
-    
-    <script type="text/x-mathjax-config">
-      MathJax.Hub.Config({
-        tex2jax: {
-          inlineMath: [ ['$','$'], ["\\(","\\)"] ],
-          processEscapes: true
-        }
-      });
-    </script>
-    <script type="text/javascript" async
-      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
-    </script>
-    
-
-    <body>
-         
-        <nav class="navbar navbar-default navbar-fixed-top">
-
-            <div class="container">
-
-                <div class="navbar-header">
-
-                    <a class="navbar-brand visible-xs" href="#">Posts</a>
-
-                    <button class="navbar-toggle" data-target=".navbar-collapse" data-toggle="collapse">
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-
-                </div>
-
-                <div class="collapse navbar-collapse">
-
-                    
-                        <ul class="nav navbar-nav">
-                            
-                                <li><a href="/">Home</a></li>
-                            
-                                <li><a href="/learning/">Learning</a></li>
-                            
-                                <li><a href="/post/">Posts</a></li>
-                            
-                                <li><a href="/progress">The State of My Mind</a></li>
-                            
-                        </ul>
-                    
-
-                    
-                        <ul class="nav navbar-nav navbar-right">
-                            
-                                <li class="navbar-icon"><a href="mailto:stephenmalina@gmail.com"><i class="fa fa-envelope-o"></i></a></li>
-                            
-                                <li class="navbar-icon"><a href="https://github.com/an1lam"><i class="fa fa-github"></i></a></li>
-                            
-                                <li class="navbar-icon"><a href="https://www.linkedin.com/in/stephen.malina/"><i class="fa fa-linkedin"></i></a></li>
-                            
-                                <li class="navbar-icon"><a href="https://stackoverflow.com/users/1631855/an1lam"><i class="fa fa-stack-overflow"></i></a></li>
-                            
-                        </ul>
-                    
-
-                </div>
-
+  <header class="header-section ">
+    <div class="intro-header no-img">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+            <div class="page-heading">
+              <h1>Posts</h1>
+              <hr class="small">
             </div>
-
-        </nav>
-
-
-<main>
-
-    <h2>Posts</h2>
-
-     <div class="item">
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
 
     
+  <div class="container" role="main">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        
+        <div class="posts-list">
+          
+            <article class="post-preview">
+              <a href="https://an1lam.github.io/post/2015-05-24-nl05242015/">
+                <h2 class="post-title">Weekly Newsletter</h2>
     
+                
+              </a>
     
-
+              <p class="post-meta">
+                Posted on May 24, 2015
+              </p>
+              <div class="post-entry">
+                
+                  Psychology and Brain Science Is LSD about to return to polite society?
+Profiles the matriarch of the Beckley Foundation, an organization which aims to popularize scientific research focused on psychedelic therapies for addiction. Does a good job of presenting both sides of the issue.
+The meanings of life
+Famous psychologist and author of Willpower, Roy Baumeister, discusses the relationship between feelings of meaningfulness and happiness. Baumeister uses these topics as a jumping off point for a discussion of what factors contribute to individuals&rsquo; feelings of meaning.
+                  <a href="https://an1lam.github.io/post/2015-05-24-nl05242015/" class="post-read-more">[Read More]</a>
+                
+              </div>
     
+              
     
-
-    <h4><a href="/post/2015-11-01-nl11012015/">Weekly Newsletter</a></h4>
-    <h5>November 1, 2015</h5>
+            </article>
+          
+            <article class="post-preview">
+              <a href="https://an1lam.github.io/post/2015-05-17-nl05172015/">
+                <h2 class="post-title">Weekly Newsletter</h2>
     
-
-</div>
-  <div class="item">
-
+                
+              </a>
     
+              <p class="post-meta">
+                Posted on May 17, 2015
+              </p>
+              <div class="post-entry">
+                
+                  Public Health Why an iron fish can make you stronger
+Presents a simple but ingenious way to combat anaemia in Cambodia by giving villagers iron fish to put in their cooking pots.
+Osama Bin Laden Raid Questions I&rsquo;m trying to cover this issue in depth since I think it sits at the intersection of a few key issues: balancing transparency and national security concerns, the efficacy of torture, and the treatment of journalists in the United States.
+                  <a href="https://an1lam.github.io/post/2015-05-17-nl05172015/" class="post-read-more">[Read More]</a>
+                
+              </div>
     
+              
     
-
+            </article>
+          
+            <article class="post-preview">
+              <a href="https://an1lam.github.io/post/2015-05-10-nl05102015/">
+                <h2 class="post-title">Weekly Newsletter</h2>
     
+                
+              </a>
     
-
-    <h4><a href="/post/2015-10-25-nl10252015/">Weekly Newsletter</a></h4>
-    <h5>October 25, 2015</h5>
+              <p class="post-meta">
+                Posted on May 10, 2015
+              </p>
+              <div class="post-entry">
+                
+                  Police Brutality Why Cops Like Me Are Quiet
+A former NYPD officer discusses police brutality from an officer&rsquo;s perspective.
+Neuroscience The Science of Craving
+Profiles Dr. Kent Berridge&rsquo;s research into the science of craving. Presents an interesting perspective on the difference between desire and pleasure and discusses meditation, a favorite topic of mine.
+Medicine Overkill
+Argues that the American health system encourages careless overtreatment of illness. I&rsquo;m sympathetic to this view but wish the author had delved more into alternative payment models since it seems these models contribute to the problem.
+                  <a href="https://an1lam.github.io/post/2015-05-10-nl05102015/" class="post-read-more">[Read More]</a>
+                
+              </div>
     
-
-</div>
-  <div class="item">
-
+              
     
+            </article>
+          
+            <article class="post-preview">
+              <a href="https://an1lam.github.io/post/2015-05-03-nl05032015/">
+                <h2 class="post-title">Weekly Newsletter</h2>
     
+                
+              </a>
     
-
+              <p class="post-meta">
+                Posted on May 3, 2015
+              </p>
+              <div class="post-entry">
+                
+                  Warning: These next few paragraphs are about the origins and goals of the newsletter. If you don&rsquo;t care about these things skip to here.
+As I mentioned last week, I&rsquo;ve decided to mark this week as the 6 month anniversary of this newsletter. To honor this, I&rsquo;m going to quickly describe why I circulate this newsletter and what criteria I use to determine which articles I include in it. The circulation of the newsletter began on a whim.
+                  <a href="https://an1lam.github.io/post/2015-05-03-nl05032015/" class="post-read-more">[Read More]</a>
+                
+              </div>
     
+              
     
-
-    <h4><a href="/post/2015-10-18-nl10182015/">Weekly Newsletter</a></h4>
-    <h5>October 18, 2015</h5>
+            </article>
+          
+            <article class="post-preview">
+              <a href="https://an1lam.github.io/post/2015-04-26-nl04262015/">
+                <h2 class="post-title">Weekly Newsletter</h2>
     
-
-</div>
-  <div class="item">
-
+                
+              </a>
     
+              <p class="post-meta">
+                Posted on April 26, 2015
+              </p>
+              <div class="post-entry">
+                
+                  Note: Next week will be the arbitrarily but mostly correctly determined 6th month anniversary of my newsletter. If you have any ideas for interesting things I could do for this, I&rsquo;d love to hear them. So far, I&rsquo;ve considered a &ldquo;Best Of&rdquo; week or piece written by me reflecting on the newsletter and explaining in detail why I put so much time into this.
+Languages Utopian for Beginners
+Tells the story of one man&rsquo;s created language and its journey into the world.
+                  <a href="https://an1lam.github.io/post/2015-04-26-nl04262015/" class="post-read-more">[Read More]</a>
+                
+              </div>
     
+              
     
-
+            </article>
+          
+            <article class="post-preview">
+              <a href="https://an1lam.github.io/post/2015-04-19-nl04192015/">
+                <h2 class="post-title">Weekly Newsletter</h2>
     
+                
+              </a>
     
-
-    <h4><a href="/post/2015-10-11-nl10112015/">Weekly Newsletter</a></h4>
-    <h5>October 11, 2015</h5>
+              <p class="post-meta">
+                Posted on April 19, 2015
+              </p>
+              <div class="post-entry">
+                
+                  Politics Clinton Begins the 2016 Campaign, And It&rsquo;s a Toss-Up
+Nate Silver, renowned election results predictor and sports statistician, speculates on the likelihood of a Hilary Clinton victory in 2016, taking into account different scenarios and opposing candidates. I really enjoy Nate Silver&rsquo;s logical, data-driven approach to prediction.
+Dolphins Dolphin Intelligence
+The author of Moonwalking with Einstein, Joshua Foer, explores the fascinating world of dolphin intelligence. Foer takes a cautiously optimistic approach to the field, speaking with multiple scientists about the prospects and obstacles of communicating with dolphins.
+                  <a href="https://an1lam.github.io/post/2015-04-19-nl04192015/" class="post-read-more">[Read More]</a>
+                
+              </div>
     
-
-</div>
-  <div class="item">
-
+              
     
+            </article>
+          
+            <article class="post-preview">
+              <a href="https://an1lam.github.io/post/2015-04-12-nl04122015/">
+                <h2 class="post-title">Weekly Newsletter</h2>
     
+                
+              </a>
     
-
+              <p class="post-meta">
+                Posted on April 12, 2015
+              </p>
+              <div class="post-entry">
+                
+                  Mystery The Mystery of the Millionaire Metaphysician
+A republishing of an old story, this piece recounts a writer&rsquo;s search for the author of a mysterious metaphysics manuscript. I don&rsquo;t want to spoil the story so you&rsquo;ll have to read it to learn more.
+Psychological Warfare and Foreign Policy Inside the Kremlin&rsquo;s hall of mirrors
+Investigates the Kremlin&rsquo;s disinformation campaign and questions its reach. I thought this article did a phenomenal job of explaining the theory that led to the Kremlin&rsquo;s employment of these tactics.
+                  <a href="https://an1lam.github.io/post/2015-04-12-nl04122015/" class="post-read-more">[Read More]</a>
+                
+              </div>
     
+              
     
-
-    <h4><a href="/post/2015-10-04-nl10042015/">Weekly Newsletter</a></h4>
-    <h5>October 4, 2015</h5>
+            </article>
+          
+            <article class="post-preview">
+              <a href="https://an1lam.github.io/post/2015-04-05-nl04052015/">
+                <h2 class="post-title">Weekly Newsletter</h2>
     
-
-</div>
- 
-
-</main>
-
-
-
-<div class="pages">
-
+                
+              </a>
     
-    <a class="icon pages-icon" href="/post/page/4/" rel="prev">
-        <i class="fa fa-arrow-left"></i>
-    </a>
-     
-    <a class="icon pages-icon" href="/post/page/6/" rel="next">
-        <i class="fa fa-arrow-right"></i>
-    </a>
+              <p class="post-meta">
+                Posted on April 5, 2015
+              </p>
+              <div class="post-entry">
+                
+                  Mind and Brain Electrified
+Investigates the promises and perils of tDCS, the electrical stimulation of the brain proponents claim will help treat depression and other neurological disorders.
+Evolution Defending Darwin
+A biology professor at the University of Kentucky discusses his experiencing teaching evolution to a group largely composed of Creationists. This article interests me on two levels: 1) I come from an area where evolution is largely unchallenged. In school, I don&rsquo;t ever recall one of my peers arguing with the teacher about evolution, so it&rsquo;s interesting to read about a place where this is not the case.
+                  <a href="https://an1lam.github.io/post/2015-04-05-nl04052015/" class="post-read-more">[Read More]</a>
+                
+              </div>
     
+              
+    
+            </article>
+          
+            <article class="post-preview">
+              <a href="https://an1lam.github.io/post/2015-03-29-nl03292015/">
+                <h2 class="post-title">Weekly Newsletter</h2>
+    
+                
+              </a>
+    
+              <p class="post-meta">
+                Posted on March 29, 2015
+              </p>
+              <div class="post-entry">
+                
+                  Books Rapt
+Reviews H is for Hawk, a non-fiction book about grief, hawking, and T.H. White. Discusses grief and the quirkiness of hawks and hawking.
+Memory Memory in the Flesh
+Explores research on the radical idea that memory can exist outside the brain in other parts of the body. This article&rsquo;s interesting because it shows how political science can be. I&rsquo;m always drawn to articles which challenge scientific dogma as I think innovation often arises from these challenges.
+                  <a href="https://an1lam.github.io/post/2015-03-29-nl03292015/" class="post-read-more">[Read More]</a>
+                
+              </div>
+    
+              
+    
+            </article>
+          
+            <article class="post-preview">
+              <a href="https://an1lam.github.io/post/2015-03-22-nl03222015/">
+                <h2 class="post-title">Weekly Newsletter</h2>
+    
+                
+              </a>
+    
+              <p class="post-meta">
+                Posted on March 22, 2015
+              </p>
+              <div class="post-entry">
+                
+                  Evolution Possible Creatures
+A professor of Evolutionary Biology discusses his work mapping &ldquo;nature&rsquo;s library&rdquo; of proteins. He makes tenuous parallels to Platonism, but the work stands on its own whether you take those into account or not.
+Mind and Brain The Science of Near Death Experiences
+Explores the debate about the mechanism of near-death experiences between scientific materialists and spiritual believers. I surprisingly fall somewhere in the middle on this and other similar issues.
+                  <a href="https://an1lam.github.io/post/2015-03-22-nl03222015/" class="post-read-more">[Read More]</a>
+                
+              </div>
+    
+              
+    
+            </article>
+          
+        </div>
+        
+          <ul class="pager main-pager">
+            
+              <li class="previous">
+                <a href="/post/page/4">&larr; Newer Posts</a>
+              </li>
+            
+            
+              <li class="next">
+                <a href="/post/page/6">Older Posts &rarr;</a>
+              </li>
+            
+          </ul>
+        
+      </div>
+    </div>
+  </div>
 
-</div>
+    <footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <ul class="list-inline text-center footer-links">
+          
+          
+        </ul>
+        <p class="credits copyright text-muted">
+          
+          &nbsp;&bull;&nbsp;
+          2020
+
+          
+            &nbsp;&bull;&nbsp;
+            <a href="https://an1lam.github.io">Stephen Malina</a>
+          
+        </p>
+        
+        <p class="credits theme-by text-muted">
+          <a href="http://gohugo.io">Hugo v0.57.2</a> powered &nbsp;&bull;&nbsp; Theme by <a href="http://deanattali.com/beautiful-jekyll/">Beautiful Jekyll</a> adapted to <a href="https://github.com/halogenica/beautifulhugo">Beautiful Hugo</a>
+          
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/katex.min.js" integrity="sha384-/y1Nn9+QQAipbNQWU65krzJralCnuOasHncUFXGkdwntGeSvQicrYkiUBwsgUqc1" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/contrib/auto-render.min.js" integrity="sha384-dq1/gEHSxPZQ7DdrM82ID4YVol9BYyU7GbWlIwnwyPzotpoc57wDw/guX8EaYGPx" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="https://an1lam.github.io/js/main.js"></script>
+<script src="https://an1lam.github.io/js/highlight.min.js"></script>
+<script> hljs.initHighlightingOnLoad(); </script>
+<script> renderMathInElement(document.body); </script>
 
 
 
-        <footer>
 
-            <p class="copyright text-muted">© All rights reserved. Powered by <a href="https://gohugo.io">Hugo</a> and <a href="https://github.com/calintat/minimal">Minimal</a></p>
 
-        </footer>
-       
-    </body>
-
+  </body>
 </html>
 

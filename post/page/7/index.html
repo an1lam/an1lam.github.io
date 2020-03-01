@@ -1,246 +1,395 @@
 <!DOCTYPE html>
-<html lang="en-us">
-    <head>
-         
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Posts</title>
+<html lang="en">
+  <head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+  <title>Posts</title>
+  <meta property="og:title" content="Posts" />
+  <meta name="twitter:title" content="Posts" />
+  <meta name="author" content=""/>
+  <meta name="twitter:card" content="summary" />
+  <meta property="og:url" content="https://an1lam.github.io/post/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Stephen Malina" />
+
+  <meta name="generator" content="Hugo 0.57.2" />
+  <link rel="canonical" href="https://an1lam.github.io/post/" />
+  <link rel="alternate" href="https://an1lam.github.io/index.xml" type="application/rss+xml" title="Stephen Malina">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/katex.min.css" integrity="sha384-wITovz90syo1dJWVh32uuETPVEtGigN07tkttEqPv+uR2SE/mbQcG7ATL28aI9H0" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://an1lam.github.io/css/main.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" />
+  <link rel="stylesheet" href="https://an1lam.github.io/css/pygment_highlights.css" />
+  <link rel="stylesheet" href="https://an1lam.github.io/css/highlight.min.css" />
+
+</head>
+
+  <body>
+    <nav class="navbar navbar-default navbar-fixed-top navbar-custom">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="https://an1lam.github.io">Stephen Malina</a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="main-navbar">
+      <ul class="nav navbar-nav navbar-right">
         
-        <style>
-
-    html body {
-        font-family: 'Lato', sans-serif;
-        background-color: white;
-    }
-
-    :root {
-        --accent: red;
-        --border-width:  5px ;
-    }
-
-</style>
-
-
-<link rel="stylesheet" href="https://an1lam.github.io/css/main.css">
-
-
-
-
-
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
-
-
- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/solarized-dark.min.css"> 
-
-
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-
-
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
- 
-
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
-
-     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/go.min.js"></script>  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/haskell.min.js"></script>  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/kotlin.min.js"></script>  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/scala.min.js"></script>  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/swift.min.js"></script> 
-
-    <script>hljs.initHighlightingOnLoad();</script>
-
-
-
-
-
-
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-
-
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-
-
-<script>$(document).on('click', function() { $('.collapse').collapse('hide'); })</script>
- <meta name="generator" content="Hugo 0.62.2" />
+          
+            <li>
+              <a title="Home" href="/">Home</a>
+            </li>
+          
         
-        <link href="/post/index.xml" rel="alternate" type="application/rss&#43;xml" title="Stephen Malina" />
-        <link href="/post/index.xml" rel="feed" type="application/rss&#43;xml" title="Stephen Malina" />
+          
+            <li>
+              <a title="Learning" href="/learning/">Learning</a>
+            </li>
+          
+        
+          
+            <li>
+              <a title="Posts" href="/post/">Posts</a>
+            </li>
+          
+        
+          
+            <li>
+              <a title="The State of My Mind" href="/progress">The State of My Mind</a>
+            </li>
+          
         
 
         
-    </head>
+
+        
+      </ul>
+    </div>
+
+    <div class="avatar-container">
+      <div class="avatar-img-border">
+        
+      </div>
+    </div>
+
+  </div>
+</nav>
+
+
+
 
     
-    
-    <script type="text/x-mathjax-config">
-      MathJax.Hub.Config({
-        tex2jax: {
-          inlineMath: [ ['$','$'], ["\\(","\\)"] ],
-          processEscapes: true
-        }
-      });
-    </script>
-    <script type="text/javascript" async
-      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
-    </script>
-    
-
-    <body>
-         
-        <nav class="navbar navbar-default navbar-fixed-top">
-
-            <div class="container">
-
-                <div class="navbar-header">
-
-                    <a class="navbar-brand visible-xs" href="#">Posts</a>
-
-                    <button class="navbar-toggle" data-target=".navbar-collapse" data-toggle="collapse">
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-
-                </div>
-
-                <div class="collapse navbar-collapse">
-
-                    
-                        <ul class="nav navbar-nav">
-                            
-                                <li><a href="/">Home</a></li>
-                            
-                                <li><a href="/learning/">Learning</a></li>
-                            
-                                <li><a href="/post/">Posts</a></li>
-                            
-                                <li><a href="/progress">The State of My Mind</a></li>
-                            
-                        </ul>
-                    
-
-                    
-                        <ul class="nav navbar-nav navbar-right">
-                            
-                                <li class="navbar-icon"><a href="mailto:stephenmalina@gmail.com"><i class="fa fa-envelope-o"></i></a></li>
-                            
-                                <li class="navbar-icon"><a href="https://github.com/an1lam"><i class="fa fa-github"></i></a></li>
-                            
-                                <li class="navbar-icon"><a href="https://www.linkedin.com/in/stephen.malina/"><i class="fa fa-linkedin"></i></a></li>
-                            
-                                <li class="navbar-icon"><a href="https://stackoverflow.com/users/1631855/an1lam"><i class="fa fa-stack-overflow"></i></a></li>
-                            
-                        </ul>
-                    
-
-                </div>
-
+  <header class="header-section ">
+    <div class="intro-header no-img">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+            <div class="page-heading">
+              <h1>Posts</h1>
+              <hr class="small">
             </div>
-
-        </nav>
-
-
-<main>
-
-    <h2>Posts</h2>
-
-     <div class="item">
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
 
     
+  <div class="container" role="main">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        
+        <div class="posts-list">
+          
+            <article class="post-preview">
+              <a href="https://an1lam.github.io/post/2015-01-04-nl01042015/">
+                <h2 class="post-title">Weekly Newsletter</h2>
     
+                
+              </a>
     
-
+              <p class="post-meta">
+                Posted on January 4, 2015
+              </p>
+              <div class="post-entry">
+                
+                  Power of the Mind Secrets of a Mind Gamer
+Narrates how a journalist won the U.S. Memory Championship. Summarizes the techniques used by memory athletes &ndash; individuals who competitively memorize card sequences, digit strings, and poems. I&rsquo;ve been discussing memory with a few newsletter readers, so I thought I&rsquo;d include this piece. If you enjoy this piece, I highly recommend the author&rsquo;s book on this topic, Moonwalking with Einstein: The Art and Science of Remembering Everything.
+                  <a href="https://an1lam.github.io/post/2015-01-04-nl01042015/" class="post-read-more">[Read More]</a>
+                
+              </div>
     
+              
     
-
-    <h4><a href="/post/2015-08-09-nl08092015/">Weekly Newsletter</a></h4>
-    <h5>August 9, 2015</h5>
+            </article>
+          
+            <article class="post-preview">
+              <a href="https://an1lam.github.io/post/2014-12-28-nl12282014/">
+                <h2 class="post-title">Weekly Newsletter</h2>
     
-
-</div>
-  <div class="item">
-
+                
+              </a>
     
+              <p class="post-meta">
+                Posted on December 28, 2014
+              </p>
+              <div class="post-entry">
+                
+                  Stoicism Stoicism has been at the forefront of my thoughts this break. I&rsquo;m most of the way through Seneca&rsquo;s Letters from a Stoic: Epistulae Morales AD Lucilium, a primary source for Stoic philosophy and recently finished Ryan Holiday&rsquo;s The Obstacle Is the Way, which presents a simplified version of Stoicism that caters to modern audiences.
+The first article about Stoicism in this newsletter, Indifference is a power, reveals Stoicism&rsquo;s tenets and discusses its application both by its founders during Roman times and in modern cognitive behavioral therapy (the creator of Cognitive Behavioral Therapy struggled as a psychoanalyst until he remembered the teachings of ancient Stoicism, citation.
+                  <a href="https://an1lam.github.io/post/2014-12-28-nl12282014/" class="post-read-more">[Read More]</a>
+                
+              </div>
     
+              
     
-
+            </article>
+          
+            <article class="post-preview">
+              <a href="https://an1lam.github.io/post/2014-12-21-nl12212014/">
+                <h2 class="post-title">Weekly Newsletter</h2>
     
+                
+              </a>
     
-
-    <h4><a href="/post/2015-08-02-nl08022015/">Weekly Newsletter</a></h4>
-    <h5>August 2, 2015</h5>
+              <p class="post-meta">
+                Posted on December 21, 2014
+              </p>
+              <div class="post-entry">
+                
+                  Psychology and Neuroscience A Meditation on the Art of Not Trying
+Introduces wu wei, the art of effortless grace. Taoists use wu wei to express the Tao (translates to &ldquo;The Way&rdquo;), while Confucians use it to express the grace that results from intense study and practice. Moreover, wu wei also resembles a state of mind which modern psychologists label &ldquo;flow&rdquo;. In addition to defining wu wei, the article offers a compelling hypothesis for why alcohol frequently accompanies business deal dinners, a phenomenon which I had never thought to explain.
+                  <a href="https://an1lam.github.io/post/2014-12-21-nl12212014/" class="post-read-more">[Read More]</a>
+                
+              </div>
     
-
-</div>
-  <div class="item">
-
+              
     
+            </article>
+          
+            <article class="post-preview">
+              <a href="https://an1lam.github.io/post/2014-12-14-nl12072014/">
+                <h2 class="post-title">Weekly Newsletter</h2>
     
+                
+              </a>
     
-
+              <p class="post-meta">
+                Posted on December 14, 2014
+              </p>
+              <div class="post-entry">
+                
+                  On Writing Writing with the Master
+Profiles John McPhee, a staff writer for the New Yorker and professor at Princeton. Uses accounts from McPhee&rsquo;s students to illustrate his erudition.
+The Patch by John McPhee
+As a companion to the profile of John McPhee, I&rsquo;ve included this piece of his. In an attempt to understand better the reverence with which his students speak of him, I read three of his past New Yorker articles.
+                  <a href="https://an1lam.github.io/post/2014-12-14-nl12072014/" class="post-read-more">[Read More]</a>
+                
+              </div>
     
+              
     
-
-    <h4><a href="/post/2015-07-26-nl07262015/">Weekly Newsletter</a></h4>
-    <h5>July 26, 2015</h5>
+            </article>
+          
+            <article class="post-preview">
+              <a href="https://an1lam.github.io/post/2014-12-07-nl12072014/">
+                <h2 class="post-title">Weekly Newsletter (12-07-2014)</h2>
     
-
-</div>
-  <div class="item">
-
+                
+              </a>
     
+              <p class="post-meta">
+                Posted on December 7, 2014
+              </p>
+              <div class="post-entry">
+                
+                  This week, I&rsquo;m experimenting with something new. I&rsquo;ve annotated certain articles I read and shared links to them, in addition to their original versions. Please let me know what you think of this. I don&rsquo;t want to share the annotations if you aren&rsquo;t interested in seeing them. On the other hand, if you like the annotated articles enough, I may start only sending annotated versions of certain articles. Finally, if you are someone who contributes articles (or wish to) and you want to annotate your articles too, I can help you get up and annotating within 10 minutes.
+                  <a href="https://an1lam.github.io/post/2014-12-07-nl12072014/" class="post-read-more">[Read More]</a>
+                
+              </div>
     
+              
     
-
+            </article>
+          
+            <article class="post-preview">
+              <a href="https://an1lam.github.io/post/2014-11-30-nl11302014/">
+                <h2 class="post-title">Weekly Newsletter (11-30-2014)</h2>
     
+                
+              </a>
     
-
-    <h4><a href="/post/2015-07-19-nl07192015/">Weekly Newsletter</a></h4>
-    <h5>July 19, 2015</h5>
+              <p class="post-meta">
+                Posted on November 30, 2014
+              </p>
+              <div class="post-entry">
+                
+                  This week, I chose to focus exclusively on Ferguson, and only include Other Contributions outside of articles about Ferguson. I did this because I felt I could not give sufficient attention to Ferguson without including more than 2-3 articles about the topic.
+On an unrelated note, I&rsquo;ve been documenting my Winter Break Reading. While this is mostly for myself, I&rsquo;ve reviewed two of the books I&rsquo;ve read and intend to document my thoughts on the others subsequently.
+                  <a href="https://an1lam.github.io/post/2014-11-30-nl11302014/" class="post-read-more">[Read More]</a>
+                
+              </div>
     
-
-</div>
-  <div class="item">
-
+              
     
+            </article>
+          
+            <article class="post-preview">
+              <a href="https://an1lam.github.io/post/2014-11-26-regenesis-book-review/">
+                <h2 class="post-title">Book Review - Regenesis by George Church</h2>
     
+                
+              </a>
     
-
+              <p class="post-meta">
+                Posted on November 26, 2014
+              </p>
+              <div class="post-entry">
+                
+                  Synthetic biology is a burgeoning discipline that stems from a long lineage of genetic meddling. Synthetic biology&rsquo;s ancestral legacy began when man first selected which seeds to plant based on the traits of the plants that birthed them. In Regenesis by George Church, Church takes the reader through this lineage, canvassing the past thousands of years and then focusing in on the past 30.
+Church does a good job of balancing technical explanations with interesting anecdotes in the book.
+                  <a href="https://an1lam.github.io/post/2014-11-26-regenesis-book-review/" class="post-read-more">[Read More]</a>
+                
+              </div>
     
+              
     
-
-    <h4><a href="/post/2015-07-12-themythofthearchofjustice/">The Myth of the Arc of Justice by Will Baird</a></h4>
-    <h5>July 12, 2015</h5>
+            </article>
+          
+            <article class="post-preview">
+              <a href="https://an1lam.github.io/post/2014-11-25-winter-break-reading/">
+                <h2 class="post-title">Winter Break Reading Plans</h2>
     
-
-</div>
- 
-
-</main>
-
-
-
-<div class="pages">
-
+                
+              </a>
     
-    <a class="icon pages-icon" href="/post/page/6/" rel="prev">
-        <i class="fa fa-arrow-left"></i>
-    </a>
-     
-    <a class="icon pages-icon" href="/post/page/8/" rel="next">
-        <i class="fa fa-arrow-right"></i>
-    </a>
+              <p class="post-meta">
+                Posted on November 25, 2014
+              </p>
+              <div class="post-entry">
+                
+                  To keep myself accountable, I&rsquo;ve decided to post the books I plan to read over Winter Break (Nov. 25th, 2014 to Jan. 3rd, 2015) with a rough estimation of the time it will take to read them. My goal is to post short reviews for most or all of these books as I go through them. I expect reviewing these books will allow me to better reflect and remember my thoughts on them and the key messages that they impart.
+                  <a href="https://an1lam.github.io/post/2014-11-25-winter-break-reading/" class="post-read-more">[Read More]</a>
+                
+              </div>
     
+              
+    
+            </article>
+          
+            <article class="post-preview">
+              <a href="https://an1lam.github.io/post/2014-11-23-nl11232014/">
+                <h2 class="post-title">Weekly Newsletter (11-23-2014)</h2>
+    
+                
+              </a>
+    
+              <p class="post-meta">
+                Posted on November 23, 2014
+              </p>
+              <div class="post-entry">
+                
+                  Philosophy / History Response to &ldquo;Did Zen create the Kamikaze?&rdquo;
+A regular reader of the newsletter, Will Baird, responds to one of the articles I included in last week&rsquo;s newsletter. If I could pick one article in this newsletter for you to read, it would be this one. Will worked hard on this response, bringing an expert&rsquo;s mind to his critique and pulling knowledge from a wellspring of related sources and scholarly work.
+                  <a href="https://an1lam.github.io/post/2014-11-23-nl11232014/" class="post-read-more">[Read More]</a>
+                
+              </div>
+    
+              
+    
+            </article>
+          
+            <article class="post-preview">
+              <a href="https://an1lam.github.io/post/2014-11-18-existence-david-brin-review/">
+                <h2 class="post-title">Book Review - Existence by David Brin</h2>
+    
+                
+              </a>
+    
+              <p class="post-meta">
+                Posted on November 18, 2014
+              </p>
+              <div class="post-entry">
+                
+                  Mind-blowing, challenging, and disturbing at times, David Brin&rsquo;s view of the future is more comprehensive and more diverse than any other writer&rsquo;s. The thing I love about this book is that it doesn&rsquo;t shy away from discussing hard truths, like the myriad failure-modes humanity can enter. However, it accompanies this discussion with a constant sense that, if it&rsquo;s possible, humanity will find a way.
+Existence is a sci-fi novel for the Internet Age.
+                  <a href="https://an1lam.github.io/post/2014-11-18-existence-david-brin-review/" class="post-read-more">[Read More]</a>
+                
+              </div>
+    
+              
+    
+            </article>
+          
+        </div>
+        
+          <ul class="pager main-pager">
+            
+              <li class="previous">
+                <a href="/post/page/6">&larr; Newer Posts</a>
+              </li>
+            
+            
+              <li class="next">
+                <a href="/post/page/8">Older Posts &rarr;</a>
+              </li>
+            
+          </ul>
+        
+      </div>
+    </div>
+  </div>
 
-</div>
+    <footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <ul class="list-inline text-center footer-links">
+          
+          
+        </ul>
+        <p class="credits copyright text-muted">
+          
+          &nbsp;&bull;&nbsp;
+          2020
+
+          
+            &nbsp;&bull;&nbsp;
+            <a href="https://an1lam.github.io">Stephen Malina</a>
+          
+        </p>
+        
+        <p class="credits theme-by text-muted">
+          <a href="http://gohugo.io">Hugo v0.57.2</a> powered &nbsp;&bull;&nbsp; Theme by <a href="http://deanattali.com/beautiful-jekyll/">Beautiful Jekyll</a> adapted to <a href="https://github.com/halogenica/beautifulhugo">Beautiful Hugo</a>
+          
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/katex.min.js" integrity="sha384-/y1Nn9+QQAipbNQWU65krzJralCnuOasHncUFXGkdwntGeSvQicrYkiUBwsgUqc1" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/contrib/auto-render.min.js" integrity="sha384-dq1/gEHSxPZQ7DdrM82ID4YVol9BYyU7GbWlIwnwyPzotpoc57wDw/guX8EaYGPx" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="https://an1lam.github.io/js/main.js"></script>
+<script src="https://an1lam.github.io/js/highlight.min.js"></script>
+<script> hljs.initHighlightingOnLoad(); </script>
+<script> renderMathInElement(document.body); </script>
 
 
 
-        <footer>
 
-            <p class="copyright text-muted">© All rights reserved. Powered by <a href="https://gohugo.io">Hugo</a> and <a href="https://github.com/calintat/minimal">Minimal</a></p>
 
-        </footer>
-       
-    </body>
-
+  </body>
 </html>
 

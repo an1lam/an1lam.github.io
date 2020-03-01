@@ -1,256 +1,404 @@
 <!DOCTYPE html>
-<html lang="en-us">
-    <head>
-         
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Posts</title>
+<html lang="en">
+  <head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+  <title>Posts</title>
+  <meta property="og:title" content="Posts" />
+  <meta name="twitter:title" content="Posts" />
+  <meta name="author" content=""/>
+  <meta name="twitter:card" content="summary" />
+  <meta property="og:url" content="https://an1lam.github.io/post/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Stephen Malina" />
+
+  <meta name="generator" content="Hugo 0.57.2" />
+  <link rel="canonical" href="https://an1lam.github.io/post/" />
+  <link rel="alternate" href="https://an1lam.github.io/index.xml" type="application/rss+xml" title="Stephen Malina">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/katex.min.css" integrity="sha384-wITovz90syo1dJWVh32uuETPVEtGigN07tkttEqPv+uR2SE/mbQcG7ATL28aI9H0" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://an1lam.github.io/css/main.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" />
+  <link rel="stylesheet" href="https://an1lam.github.io/css/pygment_highlights.css" />
+  <link rel="stylesheet" href="https://an1lam.github.io/css/highlight.min.css" />
+
+</head>
+
+  <body>
+    <nav class="navbar navbar-default navbar-fixed-top navbar-custom">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="https://an1lam.github.io">Stephen Malina</a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="main-navbar">
+      <ul class="nav navbar-nav navbar-right">
         
-        <style>
-
-    html body {
-        font-family: 'Lato', sans-serif;
-        background-color: white;
-    }
-
-    :root {
-        --accent: red;
-        --border-width:  5px ;
-    }
-
-</style>
-
-
-<link rel="stylesheet" href="https://an1lam.github.io/css/main.css">
-
-
-
-
-
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
-
-
- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/solarized-dark.min.css"> 
-
-
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-
-
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
- 
-
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
-
-     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/go.min.js"></script>  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/haskell.min.js"></script>  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/kotlin.min.js"></script>  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/scala.min.js"></script>  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/swift.min.js"></script> 
-
-    <script>hljs.initHighlightingOnLoad();</script>
-
-
-
-
-
-
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-
-
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-
-
-<script>$(document).on('click', function() { $('.collapse').collapse('hide'); })</script>
- <meta name="generator" content="Hugo 0.62.2" />
+          
+            <li>
+              <a title="Home" href="/">Home</a>
+            </li>
+          
         
-        <link href="/post/index.xml" rel="alternate" type="application/rss&#43;xml" title="Stephen Malina" />
-        <link href="/post/index.xml" rel="feed" type="application/rss&#43;xml" title="Stephen Malina" />
+          
+            <li>
+              <a title="Learning" href="/learning/">Learning</a>
+            </li>
+          
+        
+          
+            <li>
+              <a title="Posts" href="/post/">Posts</a>
+            </li>
+          
+        
+          
+            <li>
+              <a title="The State of My Mind" href="/progress">The State of My Mind</a>
+            </li>
+          
         
 
         
-    </head>
+
+        
+      </ul>
+    </div>
+
+    <div class="avatar-container">
+      <div class="avatar-img-border">
+        
+      </div>
+    </div>
+
+  </div>
+</nav>
+
+
+
 
     
-    
-    <script type="text/x-mathjax-config">
-      MathJax.Hub.Config({
-        tex2jax: {
-          inlineMath: [ ['$','$'], ["\\(","\\)"] ],
-          processEscapes: true
-        }
-      });
-    </script>
-    <script type="text/javascript" async
-      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
-    </script>
-    
-
-    <body>
-         
-        <nav class="navbar navbar-default navbar-fixed-top">
-
-            <div class="container">
-
-                <div class="navbar-header">
-
-                    <a class="navbar-brand visible-xs" href="#">Posts</a>
-
-                    <button class="navbar-toggle" data-target=".navbar-collapse" data-toggle="collapse">
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-
-                </div>
-
-                <div class="collapse navbar-collapse">
-
-                    
-                        <ul class="nav navbar-nav">
-                            
-                                <li><a href="/">Home</a></li>
-                            
-                                <li><a href="/learning/">Learning</a></li>
-                            
-                                <li><a href="/post/">Posts</a></li>
-                            
-                                <li><a href="/progress">The State of My Mind</a></li>
-                            
-                        </ul>
-                    
-
-                    
-                        <ul class="nav navbar-nav navbar-right">
-                            
-                                <li class="navbar-icon"><a href="mailto:stephenmalina@gmail.com"><i class="fa fa-envelope-o"></i></a></li>
-                            
-                                <li class="navbar-icon"><a href="https://github.com/an1lam"><i class="fa fa-github"></i></a></li>
-                            
-                                <li class="navbar-icon"><a href="https://www.linkedin.com/in/stephen.malina/"><i class="fa fa-linkedin"></i></a></li>
-                            
-                                <li class="navbar-icon"><a href="https://stackoverflow.com/users/1631855/an1lam"><i class="fa fa-stack-overflow"></i></a></li>
-                            
-                        </ul>
-                    
-
-                </div>
-
+  <header class="header-section ">
+    <div class="intro-header no-img">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+            <div class="page-heading">
+              <h1>Posts</h1>
+              <hr class="small">
             </div>
-
-        </nav>
-
-
-<main>
-
-    <h2>Posts</h2>
-
-     <div class="item">
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
 
     
+  <div class="container" role="main">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        
+        <div class="posts-list">
+          
+            <article class="post-preview">
+              <a href="https://an1lam.github.io/post/2018-12-02-movember/">
+                <h2 class="post-title">My Interpretation of Movember</h2>
     
+                
+              </a>
     
+              <p class="post-meta">
+                Posted on December 2, 2018
+              </p>
+              <div class="post-entry">
+                
+                  (Cross-posted from Facebook.)
+This is the first time I&rsquo;ve posted on Facebook in &hellip; long. However, at the encouragement of a few friends, I&rsquo;ve decided to leverage my no-shave November stunt as an opportunity to urge people to donate to one of the many worthwhile causes out there. Technically, my friends said I should do &ldquo;the Movember thing&rdquo; but this long-winded post is my characteristically difficult, verbose interpretation of that.
+                  <a href="https://an1lam.github.io/post/2018-12-02-movember/" class="post-read-more">[Read More]</a>
+                
+              </div>
+    
+              
+    
+            </article>
+          
+            <article class="post-preview">
+              <a href="https://an1lam.github.io/post/2018-06-12-statistical-models-ch-2/">
+                <h2 class="post-title">Statistical Models - Theory and Practice</h2>
+    
+                
+                  <h3 class="post-subtitle">
+                    Chapter 2 - Observational Studies and Experiments
+                  </h3>
+                
+              </a>
+    
+              <p class="post-meta">
+                Posted on June 12, 2018
+              </p>
+              <div class="post-entry">
+                
+                  Questions  What does the regression equation mean? Is the idea that we get bigger $ r $ values when $ x $ and $ y $ deviate together? What does it mean for a function to be convex beyond $ f((x + y) / 2)) \leq (f(x) + f(y)) / 2 $? Put another way, why is this the proof of convexity?  $$ h\_{son} = slope * h\_{father} + yint = 70.
+                  <a href="https://an1lam.github.io/post/2018-06-12-statistical-models-ch-2/" class="post-read-more">[Read More]</a>
+                
+              </div>
+    
+              
+    
+            </article>
+          
+            <article class="post-preview">
+              <a href="https://an1lam.github.io/post/2018-06-09-statistical-models-ch-1/">
+                <h2 class="post-title">Statistical Models - Theory and Practice</h2>
+    
+                
+                  <h3 class="post-subtitle">
+                    Chapter 1 - Observational Studies and Experiments
+                  </h3>
+                
+              </a>
+    
+              <p class="post-meta">
+                Posted on June 9, 2018
+              </p>
+              <div class="post-entry">
+                
+                  Summary This chapter introduces basic terminology and describes three separate experiments to introduce us to statistical methods in action.
+We learn about the difference between randomized controlled experiments and observational experiments. A randomized controlled experiment is an experiment in which subjects are randomly assigned to two groups: experiment and control. Members of the experimental group receive the &ldquo;treatment&rdquo;, whereas members of the control do not. We expect that randomized controlled experiments minimize confounding &ndash; other factors seeping in to impact our results without us knowing &ndash; because we expect members of the experimental and control group to be on average the same outside of whatever difference the treatment produces.
+                  <a href="https://an1lam.github.io/post/2018-06-09-statistical-models-ch-1/" class="post-read-more">[Read More]</a>
+                
+              </div>
+    
+              
+    
+            </article>
+          
+            <article class="post-preview">
+              <a href="https://an1lam.github.io/post/2018-02-24-jit-reading/">
+                <h2 class="post-title">JIT Reading</h2>
+    
+                
+              </a>
+    
+              <p class="post-meta">
+                Posted on February 24, 2018
+              </p>
+              <div class="post-entry">
+                
+                  Seibel, James Hague and others have all tried to justify why code reading is so uncommon, and they make good points. But perhaps the conversation is led astray by use of the word read. I wonder if Abelson and the others would have had more examples if Seibel had asked them what code they had learned about for fun. Perhaps the word &ldquo;read&rdquo; put them in a passive frame of mind, caused them to filter out programs they&rsquo;d hacked on?
+                  <a href="https://an1lam.github.io/post/2018-02-24-jit-reading/" class="post-read-more">[Read More]</a>
+                
+              </div>
+    
+              
+    
+            </article>
+          
+            <article class="post-preview">
+              <a href="https://an1lam.github.io/post/2015-12-06-nl12062016/">
+                <h2 class="post-title">Weekly Newsletter</h2>
+    
+                
+              </a>
+    
+              <p class="post-meta">
+                Posted on December 6, 2015
+              </p>
+              <div class="post-entry">
+                
+                  Links Physics What is Spacetime, Really?
+Stephen Wolfram talks about the difficulty inherent to coming up with a universal theory about spacetime. In the same way Einstein&rsquo;s theories brought Wolfram to awe, Wolfram&rsquo;s ideas consistently bring me to awe. After reading Rudy Rucker&rsquo;s The Lifebox, The Seashell, and The Soul, I&rsquo;m increasingly drawn to computationalist theories of the universe, but reading this article has solidified my decision to read A New Kind of Science.
+                  <a href="https://an1lam.github.io/post/2015-12-06-nl12062016/" class="post-read-more">[Read More]</a>
+                
+              </div>
+    
+              
+    
+            </article>
+          
+            <article class="post-preview">
+              <a href="https://an1lam.github.io/post/2015-11-29-nl1/">
+                <h2 class="post-title">Weekly Newsletter</h2>
+    
+                
+              </a>
+    
+              <p class="post-meta">
+                Posted on November 29, 2015
+              </p>
+              <div class="post-entry">
+                
+                  This week, I&rsquo;m going to try something a little different with the newsletter. I&rsquo;m going to add 3 new categories to the newsletter: Books I&rsquo;m Reading, Quotes I&rsquo;ve Enjoyed, and People I&rsquo;m Following. In case you&rsquo;re worried about these polluting your newsletter experience, don&rsquo;t worry. I&rsquo;m putting these sections at the bottom after the normal newsletter content.
+Links Climate Change What Can A Technologist Do About Climate Change?
+Bret Victor, a world-class designer, uses his technical and design skills to create a compelling argument.
+                  <a href="https://an1lam.github.io/post/2015-11-29-nl1/" class="post-read-more">[Read More]</a>
+                
+              </div>
+    
+              
+    
+            </article>
+          
+            <article class="post-preview">
+              <a href="https://an1lam.github.io/post/2015-11-25-tdd-by-example/">
+                <h2 class="post-title">Weekly Newsletter</h2>
+    
+                
+              </a>
+    
+              <p class="post-meta">
+                Posted on November 25, 2015
+              </p>
+              <div class="post-entry">
+                
+                  Value Objects  Avoid aliasing, where changes to mutable objects cascade to connected objects. All value objects must return new objects Should implement an equals method  Triangulation  Only generalize code when we have two or more examples (enough to triangulate for a radio signal) Ignore duplication until our tests require us to generalize Useful when you want to think about the &ldquo;axis of variability&rdquo;
+Decouple Make the tests use an interface that is decoupled from the underlying implementation.
+                  <a href="https://an1lam.github.io/post/2015-11-25-tdd-by-example/" class="post-read-more">[Read More]</a>
+                
+              </div>
+    
+              
+    
+            </article>
+          
+            <article class="post-preview">
+              <a href="https://an1lam.github.io/post/2015-11-22-nl/">
+                <h2 class="post-title">Weekly Newsletter</h2>
+    
+                
+              </a>
+    
+              <p class="post-meta">
+                Posted on November 22, 2015
+              </p>
+              <div class="post-entry">
+                
+                  Education A Radical Way of Unleashing a Generation of Geniuses
+Phenomenal piece that profiles an unconventional teacher in a poor Mexican border town. Uses this to broadly discuss the changing role and viewpoint on education. I&rsquo;m a total convert to the idea that children need to be allowed to explore rather than have information forced down their throats.
+Business When Software Eats Bio
+The leader of Andreessen Horowitz new bio arm gives a Q&amp;A about the motivations and direction they will take.
+                  <a href="https://an1lam.github.io/post/2015-11-22-nl/" class="post-read-more">[Read More]</a>
+                
+              </div>
+    
+              
+    
+            </article>
+          
+            <article class="post-preview">
+              <a href="https://an1lam.github.io/post/2015-11-15-nl/">
+                <h2 class="post-title">Weekly Newsletter</h2>
+    
+                
+              </a>
+    
+              <p class="post-meta">
+                Posted on November 15, 2015
+              </p>
+              <div class="post-entry">
+                
+                  Brain Computer Interfaces Meet the Neuroscientist Who Installed an Implant in His Own Brain Profiles the risk-taking neuroscientist Phil Kennedy. Kennedy researches enabling locked-in patients to communicate using implanted electrodes. Kennedy took his research into his own hands after the FDA prevented him from continuing his work. Kennedy had a surgeon from Belize implant a set of electrodes in his head so that he could continue studying neuronal correlates of speech.
+                  <a href="https://an1lam.github.io/post/2015-11-15-nl/" class="post-read-more">[Read More]</a>
+                
+              </div>
+    
+              
+    
+            </article>
+          
+            <article class="post-preview">
+              <a href="https://an1lam.github.io/post/2015-11-14-sicp-1-1/">
+                <h2 class="post-title">SICP 1.1</h2>
+    
+                
+              </a>
+    
+              <p class="post-meta">
+                Posted on November 14, 2015
+              </p>
+              <div class="post-entry">
+                
+                  Key Concepts  Environments, Syntax, Programming Languages v. Natural Languages, Applicative Order of Operations  Environments  Understanding meaning is a matter of combining primitives with context.
+Syntax  Lisp programmers tend to eschew syntactic sugar in favor of building their own syntax. Procedures are noticeably more composable than other languages I&rsquo;ve used previously. There&rsquo;s little difference between user-defined and language-defined procedures
+Comparison between programming and natural languages We can define procedures (verbs) and use variables (pronouns) to build higher-level abstractions.
+                  <a href="https://an1lam.github.io/post/2015-11-14-sicp-1-1/" class="post-read-more">[Read More]</a>
+                
+              </div>
+    
+              
+    
+            </article>
+          
+        </div>
+        
+          <ul class="pager main-pager">
+            
+              <li class="previous">
+                <a href="/post/page/1">&larr; Newer Posts</a>
+              </li>
+            
+            
+              <li class="next">
+                <a href="/post/page/3">Older Posts &rarr;</a>
+              </li>
+            
+          </ul>
+        
+      </div>
+    </div>
+  </div>
 
-    
-    
+    <footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <ul class="list-inline text-center footer-links">
+          
+          
+        </ul>
+        <p class="credits copyright text-muted">
+          
+          &nbsp;&bull;&nbsp;
+          2020
 
-    <h4><a href="/post/2019-07-26-deepbind/">Paper Review - DeepBind</a></h4>
-    <h5>July 26, 2019</h5>
-    
-    <a href="https://an1lam.github.io/tags/review"><kbd class="item-tag">review</kbd></a>
-    
-    <a href="https://an1lam.github.io/tags/machine-learning"><kbd class="item-tag">machine-learning</kbd></a>
-    
-    <a href="https://an1lam.github.io/tags/genomics"><kbd class="item-tag">genomics</kbd></a>
-    
-    <a href="https://an1lam.github.io/tags/paper"><kbd class="item-tag">paper</kbd></a>
-    
-    <a href="https://an1lam.github.io/tags/notes"><kbd class="item-tag">notes</kbd></a>
-    
+          
+            &nbsp;&bull;&nbsp;
+            <a href="https://an1lam.github.io">Stephen Malina</a>
+          
+        </p>
+        
+        <p class="credits theme-by text-muted">
+          <a href="http://gohugo.io">Hugo v0.57.2</a> powered &nbsp;&bull;&nbsp; Theme by <a href="http://deanattali.com/beautiful-jekyll/">Beautiful Jekyll</a> adapted to <a href="https://github.com/halogenica/beautifulhugo">Beautiful Hugo</a>
+          
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>
 
-</div>
-  <div class="item">
-
-    
-    
-    
-
-    
-    
-
-    <h4><a href="/post/2019-05-18-thoughts-on-stoicism/">Current Thoughts on Stoicism</a></h4>
-    <h5>May 18, 2019</h5>
-    
-
-</div>
-  <div class="item">
-
-    
-    
-    
-
-    
-    
-
-    <h4><a href="/post/2019-03-22-internal-prediction-markets-for-better-institutions/">Better Project Planning With Prediction Markets</a></h4>
-    <h5>March 22, 2019</h5>
-    
-
-</div>
-  <div class="item">
-
-    
-    
-    
-
-    
-    
-
-    <h4><a href="/post/2018-12-16-babble-learning/">Babble, Learning, and the Typical Mind Fallacy</a></h4>
-    <h5>December 16, 2018</h5>
-    
-
-</div>
-  <div class="item">
-
-    
-    
-    
-
-    
-    
-
-    <h4><a href="/post/2018-12-02-movember/">My Interpretation of Movember</a></h4>
-    <h5>December 2, 2018</h5>
-    
-
-</div>
- 
-
-</main>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/katex.min.js" integrity="sha384-/y1Nn9+QQAipbNQWU65krzJralCnuOasHncUFXGkdwntGeSvQicrYkiUBwsgUqc1" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/contrib/auto-render.min.js" integrity="sha384-dq1/gEHSxPZQ7DdrM82ID4YVol9BYyU7GbWlIwnwyPzotpoc57wDw/guX8EaYGPx" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="https://an1lam.github.io/js/main.js"></script>
+<script src="https://an1lam.github.io/js/highlight.min.js"></script>
+<script> hljs.initHighlightingOnLoad(); </script>
+<script> renderMathInElement(document.body); </script>
 
 
 
-<div class="pages">
-
-    
-    <a class="icon pages-icon" href="/post/" rel="prev">
-        <i class="fa fa-arrow-left"></i>
-    </a>
-     
-    <a class="icon pages-icon" href="/post/page/3/" rel="next">
-        <i class="fa fa-arrow-right"></i>
-    </a>
-    
-
-</div>
 
 
-
-        <footer>
-
-            <p class="copyright text-muted">© All rights reserved. Powered by <a href="https://gohugo.io">Hugo</a> and <a href="https://github.com/calintat/minimal">Minimal</a></p>
-
-        </footer>
-       
-    </body>
-
+  </body>
 </html>
 

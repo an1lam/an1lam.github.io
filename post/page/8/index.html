@@ -1,246 +1,315 @@
 <!DOCTYPE html>
-<html lang="en-us">
-    <head>
-         
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Posts</title>
+<html lang="en">
+  <head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+  <title>Posts</title>
+  <meta property="og:title" content="Posts" />
+  <meta name="twitter:title" content="Posts" />
+  <meta name="author" content=""/>
+  <meta name="twitter:card" content="summary" />
+  <meta property="og:url" content="https://an1lam.github.io/post/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Stephen Malina" />
+
+  <meta name="generator" content="Hugo 0.57.2" />
+  <link rel="canonical" href="https://an1lam.github.io/post/" />
+  <link rel="alternate" href="https://an1lam.github.io/index.xml" type="application/rss+xml" title="Stephen Malina">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/katex.min.css" integrity="sha384-wITovz90syo1dJWVh32uuETPVEtGigN07tkttEqPv+uR2SE/mbQcG7ATL28aI9H0" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://an1lam.github.io/css/main.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" />
+  <link rel="stylesheet" href="https://an1lam.github.io/css/pygment_highlights.css" />
+  <link rel="stylesheet" href="https://an1lam.github.io/css/highlight.min.css" />
+
+</head>
+
+  <body>
+    <nav class="navbar navbar-default navbar-fixed-top navbar-custom">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="https://an1lam.github.io">Stephen Malina</a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="main-navbar">
+      <ul class="nav navbar-nav navbar-right">
         
-        <style>
-
-    html body {
-        font-family: 'Lato', sans-serif;
-        background-color: white;
-    }
-
-    :root {
-        --accent: red;
-        --border-width:  5px ;
-    }
-
-</style>
-
-
-<link rel="stylesheet" href="https://an1lam.github.io/css/main.css">
-
-
-
-
-
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
-
-
- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/solarized-dark.min.css"> 
-
-
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-
-
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
- 
-
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
-
-     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/go.min.js"></script>  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/haskell.min.js"></script>  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/kotlin.min.js"></script>  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/scala.min.js"></script>  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/swift.min.js"></script> 
-
-    <script>hljs.initHighlightingOnLoad();</script>
-
-
-
-
-
-
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-
-
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-
-
-<script>$(document).on('click', function() { $('.collapse').collapse('hide'); })</script>
- <meta name="generator" content="Hugo 0.62.2" />
+          
+            <li>
+              <a title="Home" href="/">Home</a>
+            </li>
+          
         
-        <link href="/post/index.xml" rel="alternate" type="application/rss&#43;xml" title="Stephen Malina" />
-        <link href="/post/index.xml" rel="feed" type="application/rss&#43;xml" title="Stephen Malina" />
+          
+            <li>
+              <a title="Learning" href="/learning/">Learning</a>
+            </li>
+          
+        
+          
+            <li>
+              <a title="Posts" href="/post/">Posts</a>
+            </li>
+          
+        
+          
+            <li>
+              <a title="The State of My Mind" href="/progress">The State of My Mind</a>
+            </li>
+          
         
 
         
-    </head>
+
+        
+      </ul>
+    </div>
+
+    <div class="avatar-container">
+      <div class="avatar-img-border">
+        
+      </div>
+    </div>
+
+  </div>
+</nav>
+
+
+
 
     
-    
-    <script type="text/x-mathjax-config">
-      MathJax.Hub.Config({
-        tex2jax: {
-          inlineMath: [ ['$','$'], ["\\(","\\)"] ],
-          processEscapes: true
-        }
-      });
-    </script>
-    <script type="text/javascript" async
-      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
-    </script>
-    
-
-    <body>
-         
-        <nav class="navbar navbar-default navbar-fixed-top">
-
-            <div class="container">
-
-                <div class="navbar-header">
-
-                    <a class="navbar-brand visible-xs" href="#">Posts</a>
-
-                    <button class="navbar-toggle" data-target=".navbar-collapse" data-toggle="collapse">
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-
-                </div>
-
-                <div class="collapse navbar-collapse">
-
-                    
-                        <ul class="nav navbar-nav">
-                            
-                                <li><a href="/">Home</a></li>
-                            
-                                <li><a href="/learning/">Learning</a></li>
-                            
-                                <li><a href="/post/">Posts</a></li>
-                            
-                                <li><a href="/progress">The State of My Mind</a></li>
-                            
-                        </ul>
-                    
-
-                    
-                        <ul class="nav navbar-nav navbar-right">
-                            
-                                <li class="navbar-icon"><a href="mailto:stephenmalina@gmail.com"><i class="fa fa-envelope-o"></i></a></li>
-                            
-                                <li class="navbar-icon"><a href="https://github.com/an1lam"><i class="fa fa-github"></i></a></li>
-                            
-                                <li class="navbar-icon"><a href="https://www.linkedin.com/in/stephen.malina/"><i class="fa fa-linkedin"></i></a></li>
-                            
-                                <li class="navbar-icon"><a href="https://stackoverflow.com/users/1631855/an1lam"><i class="fa fa-stack-overflow"></i></a></li>
-                            
-                        </ul>
-                    
-
-                </div>
-
+  <header class="header-section ">
+    <div class="intro-header no-img">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+            <div class="page-heading">
+              <h1>Posts</h1>
+              <hr class="small">
             </div>
-
-        </nav>
-
-
-<main>
-
-    <h2>Posts</h2>
-
-     <div class="item">
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
 
     
+  <div class="container" role="main">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        
+        <div class="posts-list">
+          
+            <article class="post-preview">
+              <a href="https://an1lam.github.io/post/2014-11-17-response-to-nl11162014/">
+                <h2 class="post-title">Response to &#34;Did Zen philosophy create the Kamikaze?&#34;</h2>
     
+                
+              </a>
     
-
+              <p class="post-meta">
+                Posted on November 17, 2014
+              </p>
+              <div class="post-entry">
+                
+                  One of my readers, Will Baird, read the &ldquo;Did Zen philosophy create the Kamikaze?&rdquo; article in this past week&rsquo;s newsletter, and, being a History buff, had a strong reaction to the article. Thus, he asked that I make his well though-out and well informed response available for my readers, as I have done below.
+History as Clickbait &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;In his article “Into nothingness” Christopher Harding asks, “Did Zen ideas create the kamikaze?
+                  <a href="https://an1lam.github.io/post/2014-11-17-response-to-nl11162014/" class="post-read-more">[Read More]</a>
+                
+              </div>
     
+              
     
-
-    <h4><a href="/post/2015-07-12-nl07122015/">Weekly Newsletter</a></h4>
-    <h5>July 12, 2015</h5>
+            </article>
+          
+            <article class="post-preview">
+              <a href="https://an1lam.github.io/post/2014-11-16-nl11162014/">
+                <h2 class="post-title">Weekly Newsletter (11-16-2014)</h2>
     
-
-</div>
-  <div class="item">
-
+                
+              </a>
     
+              <p class="post-meta">
+                Posted on November 16, 2014
+              </p>
+              <div class="post-entry">
+                
+                  Philosophy Did Zen philosophy create the Kamikaze?
+Pontificates on the relationship between WWII-era Zen philosophers and Japanese Jingoism.
+A murderer&rsquo;s warped idealism
+Contrasts previous portrayals of Adolf Eichmann as &ldquo;terrifyingly normal&rdquo; and &ldquo;banal&rdquo; with stories of his devotion to &ldquo;the Final Solution.&rdquo;
+Our Miraculous Biosphere The Termite and the Architect
+Begins by talking about an architect&rsquo;s attempt to mimic the way termites&rsquo; mounds manage air flow, and then uses this example as an example of biomimicry.
+                  <a href="https://an1lam.github.io/post/2014-11-16-nl11162014/" class="post-read-more">[Read More]</a>
+                
+              </div>
     
+              
     
-
+            </article>
+          
+            <article class="post-preview">
+              <a href="https://an1lam.github.io/post/2014-11-09-nl11092014/">
+                <h2 class="post-title">Weekly Newsletter (11-09-2014)</h2>
     
+                
+              </a>
     
-
-    <h4><a href="/post/2015-06-14-nl06142015/">Weekly Newsletter</a></h4>
-    <h5>June 14, 2015</h5>
+              <p class="post-meta">
+                Posted on November 9, 2014
+              </p>
+              <div class="post-entry">
+                
+                  Questions or Comments? Contact me at stephenmalina@gmail.com or on Twitter.
+Philosophy Marathon Monks of Mt. Hiei
+Disclaimer: There is New-Agey-ness within this article. For a more accurate depiction of the Marathon Monks, I recommend this documentary or this book (I intend to consume both over winter break)
+Despite the above disclaimer, I included this because I mentioned the Marathon Monks to a friend yesterday. Upon doing so, I decided that their story is worthwhile to share.
+                  <a href="https://an1lam.github.io/post/2014-11-09-nl11092014/" class="post-read-more">[Read More]</a>
+                
+              </div>
     
-
-</div>
-  <div class="item">
-
+              
     
+            </article>
+          
+            <article class="post-preview">
+              <a href="https://an1lam.github.io/post/2014-11-02-nl11022014/">
+                <h2 class="post-title">Weekly Newsletter (11-02-2014)</h2>
     
+                
+              </a>
     
-
+              <p class="post-meta">
+                Posted on November 2, 2014
+              </p>
+              <div class="post-entry">
+                
+                  This is a weekly newsletter I publish each week that contains content I enjoyed and hope that you will enjoy. If you have questions or comments, you can find me at stephenmalina@gmail.com or on Twitter.
+Technology and Human Augmentation A Spreadsheet Way of Knowledge
+A long, in-depth piece on the history of spreadsheet modeling. The two points that stick with me from this piece are the dismissive attitude people initially had towards the spreadsheet and the obsession with modeling people displayed (and continue to display).
+                  <a href="https://an1lam.github.io/post/2014-11-02-nl11022014/" class="post-read-more">[Read More]</a>
+                
+              </div>
     
+              
     
-
-    <h4><a href="/post/2015-06-07-nl06072015/">Weekly Newsletter</a></h4>
-    <h5>June 7, 2015</h5>
+            </article>
+          
+            <article class="post-preview">
+              <a href="https://an1lam.github.io/post/2018-06-26-surfing-uncertainty-review/">
+                <h2 class="post-title"></h2>
     
-
-</div>
-  <div class="item">
-
+                
+              </a>
     
+              <p class="post-meta">
+                Posted on January 1, 0001
+              </p>
+              <div class="post-entry">
+                
+                  date: 2018-06-26 date: 2018-06-26 - Sheds interesting light on expert performance. - What about cognitive biases? If the brain is a prediction machine, then why do we fall prey to &ldquo;sub-optimal&rdquo; biases? - Evolutionary argument against Plato&rsquo;s cave: prediction is so important for brains that if we were only perceiving the shadows on the wall, some other animal would have eaten us all by seeing the actual fire. - What does this theory predict that others don&rsquo;t?
+                  <a href="https://an1lam.github.io/post/2018-06-26-surfing-uncertainty-review/" class="post-read-more">[Read More]</a>
+                
+              </div>
     
+              
     
-
+            </article>
+          
+            <article class="post-preview">
+              <a href="https://an1lam.github.io/post/2018-11-03-deep-learning-goodfellow-ch4-notes/">
+                <h2 class="post-title"></h2>
     
+                
+              </a>
     
+              <p class="post-meta">
+                Posted on January 1, 0001
+              </p>
+              <div class="post-entry">
+                
+                  
 
-    <h4><a href="/post/2015-05-31-2015-nl05312015/">Weekly Newsletter</a></h4>
-    <h5>May 31, 2015</h5>
+<h2 id="chapter-4">Chapter 4</h2>
+
+<ul>
+<li>What&rsquo;s a multinoulli distribution?</li>
+<li>Show that softmax function is not affected by taking $ softmax(z) $ where $ z = x - max_i x_i $.</li>
+</ul>
+
+                
+              </div>
     
-
-</div>
-  <div class="item">
-
+              
     
-    
-    
+            </article>
+          
+        </div>
+        
+          <ul class="pager main-pager">
+            
+              <li class="previous">
+                <a href="/post/page/7">&larr; Newer Posts</a>
+              </li>
+            
+            
+          </ul>
+        
+      </div>
+    </div>
+  </div>
 
-    
-    
+    <footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <ul class="list-inline text-center footer-links">
+          
+          
+        </ul>
+        <p class="credits copyright text-muted">
+          
+          &nbsp;&bull;&nbsp;
+          2020
 
-    <h4><a href="/post/2015-05-24-nl05242015/">Weekly Newsletter</a></h4>
-    <h5>May 24, 2015</h5>
-    
+          
+            &nbsp;&bull;&nbsp;
+            <a href="https://an1lam.github.io">Stephen Malina</a>
+          
+        </p>
+        
+        <p class="credits theme-by text-muted">
+          <a href="http://gohugo.io">Hugo v0.57.2</a> powered &nbsp;&bull;&nbsp; Theme by <a href="http://deanattali.com/beautiful-jekyll/">Beautiful Jekyll</a> adapted to <a href="https://github.com/halogenica/beautifulhugo">Beautiful Hugo</a>
+          
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>
 
-</div>
- 
-
-</main>
-
-
-
-<div class="pages">
-
-    
-    <a class="icon pages-icon" href="/post/page/7/" rel="prev">
-        <i class="fa fa-arrow-left"></i>
-    </a>
-     
-    <a class="icon pages-icon" href="/post/page/9/" rel="next">
-        <i class="fa fa-arrow-right"></i>
-    </a>
-    
-
-</div>
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/katex.min.js" integrity="sha384-/y1Nn9+QQAipbNQWU65krzJralCnuOasHncUFXGkdwntGeSvQicrYkiUBwsgUqc1" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/contrib/auto-render.min.js" integrity="sha384-dq1/gEHSxPZQ7DdrM82ID4YVol9BYyU7GbWlIwnwyPzotpoc57wDw/guX8EaYGPx" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="https://an1lam.github.io/js/main.js"></script>
+<script src="https://an1lam.github.io/js/highlight.min.js"></script>
+<script> hljs.initHighlightingOnLoad(); </script>
+<script> renderMathInElement(document.body); </script>
 
 
-        <footer>
 
-            <p class="copyright text-muted">© All rights reserved. Powered by <a href="https://gohugo.io">Hugo</a> and <a href="https://github.com/calintat/minimal">Minimal</a></p>
 
-        </footer>
-       
-    </body>
 
+  </body>
 </html>
 
