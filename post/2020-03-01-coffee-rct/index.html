@@ -125,12 +125,16 @@ type="image/x-icon"/>
 
 <h3 id="procedure">Procedure</h3>
 
-<p>Starting tomorrow, for the next 14 days, I&rsquo;ll make my coffee using the grounds from the labeled bags and track a few subjective metrics three times a day (right after having coffee, at 1 PM, and at 6 PM):
-- Alertness (1-5 scale): loosely defined as how tired and sleepy I feel.
-- Sharpness (1-5 scale): the opposite of &lsquo;fogginess&rsquo;.
-- Headache (yes/no): I get headaches if I don&rsquo;t have coffee in the morning, so it will be interesting to see whether I get them on decaf days even when I don&rsquo;t know the coffee is decaf.
-- Regular vs. decaf day (regular/decaf): Given how I feel today, do I think this morning&rsquo;s coffee was regular or decaf.
-I&rsquo;ve also set up a <a href="quantified-mind.com">Quantified Mind</a> (QM) experiment which will give me 8 minutes of cognitive tests each day and record my scores. I&rsquo;ll take these tests immediately upon finishing my coffee in the morning.</p>
+<p>Starting tomorrow, for the next 14 days, I&rsquo;ll make my coffee using the grounds from the labeled bags and track a few subjective metrics three times a day (right after having coffee, at 1 PM, and at 6 PM):</p>
+
+<ul>
+<li>Alertness (1-5 scale): loosely defined as how tired and sleepy I feel.</li>
+<li>Sharpness (1-5 scale): the opposite of &lsquo;fogginess&rsquo;.</li>
+<li>Headache (yes/no): I get headaches if I don&rsquo;t have coffee in the morning, so it will be interesting to see whether I get them on decaf days even when I don&rsquo;t know the coffee is decaf.</li>
+<li>Regular vs. decaf day (regular/decaf): &ldquo;Given how I feel today, do I think this morning&rsquo;s coffee was regular or decaf?&rdquo;</li>
+</ul>
+
+<p>I&rsquo;ve also set up a <a href="quantified-mind.com">Quantified Mind</a> (QM) experiment which will give me 8 minutes of cognitive tests each day and record my scores. I&rsquo;ll take these tests immediately upon finishing my coffee in the morning.</p>
 
 <h3 id="materials">Materials</h3>
 
@@ -155,11 +159,15 @@ That said, if 2 fails and my sleep schedule gets messed up during the experiment
 
 <h3 id="on-not-pre-registering-in-detail">On not pre-registering in detail</h3>
 
-<p>Since I&rsquo;ve been reading Gelman&rsquo;s wonderful <a href="http://www.stat.columbia.edu/~gelman/book/"><strong>Bayesian Data Analysis</strong></a> and also view this study as a good candidate for a Bayesian approach due to the experiment having a small \( n \), I intend to use Bayesian methods for my analysis. In an ideal world, I&rsquo;d pre-register exactly what analyses I intend to do now (as of 03/01), but unfortunately, I&rsquo;m still enough of a noob at this that I need to spend a good chunk of time reading about the right way to set up the analysis. For now, I&rsquo;m recording the questions I want to answer below and will edit to add details of the analysis as I figure them out. I worry less than I normally would about post-hoc changing the analysis to find a significant result because I don&rsquo;t have strong incentives to find one. That is, I&rsquo;m genuinely interested in the &lsquo;true&rsquo; answer to the question and don&rsquo;t have a strong desire for it to be &lsquo;there&rsquo;s a big effect&rsquo; or &lsquo;there&rsquo;s no effect&rsquo;. Being transparent about the results of each stage of analysis should also help keep me honest. (Of course, I could always post-hoc choose not to share intermediate stages but again I don&rsquo;t think my incentives are to do that.)</p>
+<p>Since I&rsquo;ve been reading Gelman&rsquo;s wonderful <a href="http://www.stat.columbia.edu/~gelman/book/"><strong>Bayesian Data Analysis</strong></a> and also view this study as a good candidate for a Bayesian approach due to the experiment having a small \( n \), I intend to use Bayesian methods for my analysis. In an ideal world, I&rsquo;d pre-register exactly what analyses I intend to do now (as of 03/01), but unfortunately, I&rsquo;m still enough of a noob at this that I need to spend a good chunk of time reading about the right way to set up the analysis. For now, I&rsquo;m recording the questions I want to answer below and will edit to add details of the analysis as I figure them out.</p>
+
+<p>I worry less than I normally would about post-hoc changing the analysis to find a significant result because I don&rsquo;t have strong incentives to find one. That is, I&rsquo;m genuinely interested in the &lsquo;true&rsquo; answer to the question and don&rsquo;t have a strong desire for it to be &lsquo;there&rsquo;s a big effect&rsquo; or &lsquo;there&rsquo;s no effect&rsquo;. Being transparent about the results of each stage of analysis should also help keep me honest. (Of course, I could always post-hoc choose not to share intermediate stages but again I don&rsquo;t think my incentives are to do that.)</p>
 
 <h3 id="high-level-plan">High level plan</h3>
 
-<p>At a high level, I want to test the effect of regular vs. decaf coffee on alertness, sharpness, headaches, and my QM results. This is complicated by the fact that my prior is that the response variables I described above only share <strong>some</strong> common causes and that the causal effects of caffeine consumption differ between the response variables. For example, I suspect alertness and QM test scores are both affected by sleep quantity and coffee consumption but that alertness may also be impacted by other confounding variables like mood and plans for the day. To mitigate this, I&rsquo;ll heavily rely on the most objective response variable, the QM results, to determine the magnitude of the &lsquo;true effect&rsquo;. In causal terms, this is equivalent to assuming that sleep is sufficient for blocking all &lsquo;backdoor&rsquo; paths between regular vs. decaf coffee and cognitive ability. I&rsquo;m still measuring the other subjective variables because I&rsquo;m curious to see how correlated they are with my QM results and each other.</p>
+<p>At a high level, I want to test the effect of regular vs. decaf coffee on alertness, sharpness, headaches, and my QM results. This is complicated by the fact that my prior is that the response variables I described above only share <strong>some</strong> common causes and that the causal effects of caffeine consumption differ between the response variables. For example, I suspect alertness and QM test scores are both affected by sleep quantity and coffee consumption but that alertness may also be impacted by other confounding variables like mood and plans for the day.</p>
+
+<p>To mitigate this, I&rsquo;ll heavily rely on the most objective response variable, the QM results, to determine the magnitude of the &lsquo;true effect&rsquo;. In causal terms, this is equivalent to assuming that sleep is sufficient for blocking all &lsquo;backdoor&rsquo; paths between regular vs. decaf coffee and cognitive ability. I&rsquo;m still measuring the other subjective variables because I&rsquo;m curious to see how correlated they are with my QM results and each other and other want to leave open the possibility of doing other analyses that come to mind and seem interesting.</p>
 
 <h2 id="faq">FAQ</h2>
 
@@ -167,9 +175,12 @@ That said, if 2 fails and my sleep schedule gets messed up during the experiment
 
 <h3 id="isn-t-this-too-short">Isn&rsquo;t this too short?</h3>
 
-<p>As I mentioned, 14 days is short enough that even though the regular vs. decaf day assignments are randomized and blinded, the &lsquo;statistical power&rsquo; of my results will be relatively weak. Two responses to this:
-1. From a decision-theoretic perspective, I mostly care about the easier to answer question of was the effect meaningful enough that I could accurately detect whether the coffee I had that day was regular or decaf conditional on what I know about my sleep and other factors.
-2. I&rsquo;m going to use Bayesian methods and will be more than willing to label the results &lsquo;inconclusive&rsquo; if my analysis results in a diffuse posterior.</p>
+<p>As I mentioned, 14 days is short enough that even though the regular vs. decaf day assignments are randomized and blinded, the &lsquo;statistical power&rsquo; of my results will be relatively weak. Two responses to this:</p>
+
+<ol>
+<li>From a decision-theoretic perspective, I mostly care about the easier to answer question of was the effect meaningful enough that I could accurately detect whether the coffee I had that day was regular or decaf conditional on what I know about my sleep and other factors.</li>
+<li>I&rsquo;m going to use Bayesian methods and will be more than willing to label the results &lsquo;inconclusive&rsquo; if my analysis results in a diffuse posterior.</li>
+</ol>
 
 <h3 id="why-99-blinded">Why &lsquo;99%&rsquo; blinded?</h3>
 
