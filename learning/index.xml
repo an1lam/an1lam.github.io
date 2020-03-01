@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Learnings on Stephen Malina</title>
@@ -18,7 +18,7 @@
       
       <guid>https://an1lam.github.io/learning/2019-12-12-all-of-statistics-ch3-notes/</guid>
       <description>Selected Exercises 1. Suppose we play a game where we start with $ c $ dollars. On each play of the game you either double or halve your money, with equal probability. What is your expected fortune after $ n $ trials?
-I&#39;m pretty sure we can use a trick that I&#39;ve seen a lot in machine learning to solve this using plain old expectations. If I&#39;m right, we let $ X \sim \text{Binomial}(n, \frac{1}{2}) $ and can create a new random variable, $ Z $, where</description>
+I&amp;rsquo;m pretty sure we can use a trick that I&amp;rsquo;ve seen a lot in machine learning to solve this using plain old expectations. If I&amp;rsquo;m right, we let $ X \sim \text{Binomial}(n, \frac{1}{2}) $ and can create a new random variable, $ Z $, where</description>
     </item>
     
     <item>
@@ -27,7 +27,7 @@ I&#39;m pretty sure we can use a trick that I&#39;ve seen a lot in machine learn
       <pubDate>Fri, 15 Nov 2019 00:00:00 +0000</pubDate>
       
       <guid>https://an1lam.github.io/learning/2019-11-08-causal-inference/</guid>
-      <description>Causal Inference in Statistics Questions  Why is the causal effect identifiable in an IV DAG when the dependencies are linear (from an SCM perspective)?  I think this may relate to factor models.    Advanced Data Analysis from an Elementary Point of View (Ch. 18-23) Chapter 18 Exercises 18.2. Proof that every path must go through a collider:
+      <description>Causal Inference in Statistics Questions  Why is the causal effect identifiable in an IV DAG when the dependencies are linear (from an SCM perspective)?  I think this may relate to factor models.   Advanced Data Analysis from an Elementary Point of View (Ch. 18-23) Chapter 18 Exercises 18.2. Proof that every path must go through a collider:
 Observe that every path between two exogenous variables starts with variables going in the opposite direction.</description>
     </item>
     
@@ -37,8 +37,7 @@ Observe that every path between two exogenous variables starts with variables go
       <pubDate>Sun, 03 Nov 2019 00:00:00 +0000</pubDate>
       
       <guid>https://an1lam.github.io/learning/2019-11-02-ivs-mendelian-randomization/</guid>
-      <description>Summary Detailed Notes 3 IV Requirements  IV must have a direct influence on the treatment IV must not covary with the unmeasured confounding that impacts the outcome IV must not have a direct influence on the outcome  Relevant considerations for deciding whether to do an IV analysis   Is there any unmeasured confounding?
- If not, is the answer that we can just use a normal regression?    When is unmeasured confounding especially likely?</description>
+      <description>Summary Detailed Notes 3 IV Requirements  IV must have a direct influence on the treatment IV must not covary with the unmeasured confounding that impacts the outcome IV must not have a direct influence on the outcome  Relevant considerations for deciding whether to do an IV analysis  Is there any unmeasured confounding?  If not, is the answer that we can just use a normal regression?  When is unmeasured confounding especially likely?</description>
     </item>
     
     <item>
@@ -92,8 +91,8 @@ For (a), to show $ E $ is a subspace of $ \mathcal L(V, W) $, we need to show th
       <pubDate>Mon, 24 Dec 2018 00:00:00 +0000</pubDate>
       
       <guid>https://an1lam.github.io/learning/2018-12-24-linear-algebra-done-right-ch2-notes/</guid>
-      <description>Intro I&#39;ve recently been making my way through Axler&#39;s Linear Algebra Done Right and, as a way to motivate myself to continue, have decided to blog my notes and solutions for exercises as I go.
-Insights Section 2.A You can convert any linearly dependent list to a linearly independent list with the same span. By the linear dependence lemma, if you have a list that&#39;s linearly dependenty, then you can remove one item without changing the list&#39;s span.</description>
+      <description>Intro I&amp;rsquo;ve recently been making my way through Axler&amp;rsquo;s Linear Algebra Done Right and, as a way to motivate myself to continue, have decided to blog my notes and solutions for exercises as I go.
+Insights Section 2.A You can convert any linearly dependent list to a linearly independent list with the same span. By the linear dependence lemma, if you have a list that&amp;rsquo;s linearly dependenty, then you can remove one item without changing the list&amp;rsquo;s span.</description>
     </item>
     
   </channel>

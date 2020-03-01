@@ -1,0 +1,281 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta content='text/html; charset=utf-8' http-equiv='content-type' />
+
+  <title>Decaf vs. regular coffee blinded experiment - Stephen Malina</title>
+  <meta content='Decaf vs. regular coffee blinded experiment - Stephen Malina' property='title' />
+  <meta content='Decaf vs. regular coffee blinded experiment - Stephen Malina' property='og:title' />
+
+
+<meta property="og:description" content="For a while, I&rsquo;ve been convinced that decaf coffee has roughly the same effect on me as regular coffee. However, I haven&rsquo;t been able to say with certainty because there&rsquo;s huge potential for placebo effects. Starting tomorrow, I&rsquo;ll be conducting a (99%) blinded experiment to test whether drinking regular vs. decaf coffee has a detectable effect on my mood and alertness.
+I intend to record the metrics I describe in the next section under the &lsquo;Data collection&rsquo; heading of this post and will also report results here once the experiment is over." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://an1lam.github.io/post/2020-03-01-coffee-rct/" />
+
+
+<meta property="article:published_time" content="2020-01-10T00:00:00&#43;00:00"/>
+
+<meta property="article:modified_time" content="2020-01-10T00:00:00&#43;00:00"/>
+
+
+
+
+
+
+
+
+<meta name="generator" content="Hugo 0.57.2" />
+
+<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600" rel="stylesheet">
+<style type="text/css">/*https://coolors.co/afd5aa-f0f2ef-a69f98-3d3d3d-8c6057*/
+:root {
+  --main-color: #8C6056; 
+  --secondary-color: #AFD5AA;
+  --logo-text-color: #fff;
+  --body-text-color: #3d3d3d;
+  --heading-text-color: #383838;
+  --background-color: #fff;
+}</style>
+<link href='/css/tachyons.min.css' rel="stylesheet">
+<link href='/css/styles.css' rel="stylesheet">
+
+
+<link rel="icon" 
+ 
+  href='/favicon.ico'
+
+type="image/x-icon"/>
+
+
+<script type="text/javascript" async
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+  MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    displayMath: [['$$','$$']],
+    processEscapes: true,
+    processEnvironments: true,
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+    TeX: { equationNumbers: { autoNumber: "AMS" },
+         extensions: ["AMSmath.js", "AMSsymbols.js"] }
+  }
+  });
+  MathJax.Hub.Queue(function() {
+    
+    
+    
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i = 0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';
+    }
+  });
+
+  MathJax.Hub.Config({
+  
+  TeX: { equationNumbers: { autoNumber: "AMS" } }
+  });
+</script>
+
+<link href='/feed.xml' rel="alternate" type="application/atom+xml" title="Stephen Malina" />
+
+</head>
+<body class="global-font">
+  <nav class=" flex-ns justify-between border-box pa3 pl3-l pr2-l mt1 mt0-ns" id="navbar">
+  <div class="flex">
+    <a class="f4 fw6 ttu no-underline dim bg-main-color pv1 ph2 br2" id="site-title" href='/' title="Home">Stephen Malina</a>
+  </div>
+  
+  <div class=" flex-ns mt2 mt0-ns pv1">
+    
+      <a class="link dim dark-gray f6 dib mr2 mr3-l ttu tracked" href='/' title="Home">Home</a>
+    
+      <a class="link dim dark-gray f6 dib mr2 mr3-l ttu tracked" href='/learning/' title="Learning">Learning</a>
+    
+      <a class="link dim dark-gray f6 dib mr2 mr3-l ttu tracked" href='/post/' title="Posts">Posts</a>
+    
+      <a class="link dim dark-gray f6 dib mr2 mr3-l ttu tracked" href='/progress' title="The State of My Mind">The State of My Mind</a>
+    
+  </div>
+  
+</nav>
+  
+<main class="center mv4 content-width ph3">
+  <div class="f3 fw6 heading-color heading-font post-title">Decaf vs. regular coffee blinded experiment</div>
+  <p class="silver f6 mt1 mb4 post-meta">
+    <time>10 Jan 2020</time> 
+    
+    
+    
+  </p>
+  <div class="lh-copy post-content">
+
+<p>For a while, I&rsquo;ve been convinced that decaf coffee has roughly the same effect on me as regular coffee. However, I haven&rsquo;t been able to say with certainty because there&rsquo;s huge potential for placebo effects. Starting tomorrow, I&rsquo;ll be conducting a (99%) blinded experiment to test whether drinking regular vs. decaf coffee has a detectable effect on my mood and alertness.</p>
+
+<p>I intend to record the metrics I describe in the next section under the &lsquo;Data collection&rsquo; heading of this post and will also report results here once the experiment is over. I&rsquo;ll make data from my Quantified Mind experiment (discussed below) available as well in CSV format.</p>
+
+<h2 id="experiment">Experiment</h2>
+
+<h3 id="preparation">Preparation</h3>
+
+<p>To prepare for the experiment, I split 2 weeks&rsquo; worth of coffee (7 days of decaf, 7 days of regular) into 14 bags. After I split the coffee into 14 bags, my lab assistant (girlfriend) sorted them into a random order (with labels for each day) by flipping a coin to decide whether that day&rsquo;s coffee would be regular or decaf.</p>
+
+<h3 id="procedure">Procedure</h3>
+
+<p>Starting tomorrow, for the next 14 days, I&rsquo;ll make my coffee using the grounds from the labelled bags and track a few subjective metrics three times a day (right after having coffee, at 1 PM, and at 6 PM):
+- Alertness (1-5 scale): loosely defined as how tired and sleepy I feel.
+- Sharpness (1-5 scale): the opposite of &lsquo;fogginess&rsquo;.
+- Headache (yes/no): I get headaches if I don&rsquo;t have coffee in the morning, so it will be interesting to see whether I get them on decaf days even when I don&rsquo;t know the coffee is decaf.
+- Regular vs. decaf day (regular/decaf): Given how I feel today, do I think this morning&rsquo;s coffee was regular or decaf.
+I&rsquo;ve also set up a <a href="quantified-mind.com">Quantified Mind</a> (QM) experiment which will give me 8 minutes of cognitive tests each day and record my scores. I&rsquo;ll take these tests immediately upon finishing my coffee in the morning.</p>
+
+<h3 id="materials">Materials</h3>
+
+<p>I&rsquo;m using <a href="https://joecoffeecompany.com/shop/nightcap-decaf/">Joe Coffee Nightcap Decaf</a> and <a href="https://joecoffeecompany.com/shop/colombia-la-familia-guarnizo/">Joe Coffee Colombia La Familia Guarnizo</a> regular coffee brewed in a Mr. Coffee drip coffee maker.
+<img src="/images/coffee_bags.jpg" style="width: 400px; height:200 px;  clip: rect(0px,-60px,-200px,0px);"></p>
+
+<p>I chose Swiss Water after reading that they do the best job of filtering out &gt;99% of the caffeine from the beans.</p>
+
+<h3 id="potential-confounders">Potential confounders</h3>
+
+<p>One potential confounder is amount of sleep. Getting less than 7 hours of sleep affects how sharp I feel throughout the day and how awake I feel in the afternoon. Even though this is a randomized experiment, 14 days is short enough that were my sleep schedule to get interrupted, noise from sleep quality variance could easily overwhelm the signal from drinking regular vs. decaf coffee in the data. I plan to deal with this in two ways:</p>
+
+<ol>
+<li>Track how much sleep I get each night (in number of hours). Unfortunately, I don&rsquo;t have a good sleep tracker so this will just be based on estimate of when I went to bed, how long it took me to fall asleep, and when I woke up.</li>
+<li>Avoid major sleep disruptions and sleep roughly the same number of hours each night.
+That said, if 2 fails and my sleep schedule gets messed up during the experiment, I&rsquo;ll be much less confident in the results.</li>
+</ol>
+
+<p>Another potential confounder is diet. Relative to sleep, I&rsquo;m less convinced that regular dietary variation&ndash;i.e. eating relatively &lsquo;healthy&rsquo; food and not being moribdly obese&ndash;has much of an effect on cognitive performance. But I still will keep my regular eating schedule of skipping breakfast and only having lunch and dinner as I suspect this will also help me keep a regular sleep schedule. To keep myself honest here, I&rsquo;ll track <strong>when</strong> I eat each day.</p>
+
+<h2 id="analysis">Analysis</h2>
+
+<h3 id="on-not-pre-registering-in-detail">On not pre-registering in detail</h3>
+
+<p>Since I&rsquo;ve been reading Gelman&rsquo;s wonderful <a href="http://www.stat.columbia.edu/~gelman/book/"><strong>Bayesian Data Analysis</strong></a> and also view this study as a good candidate for a Bayesian approach due to the experiment having a small \( n \), I intend to use Bayesian methods for my analysis. In an ideal world, I&rsquo;d pre-register exactly what analyses I intend to do now (as of 03/01), but unfortunately, I&rsquo;m still enough of a noob at this that I need to spend a good chunk of time reading about the right way to set up the analysis. For now, I&rsquo;m recording the questions I want to answer below and will edit to add details of the analysis as I figure them out. I worry less than I normally would about post-hoc changing the analysis to find a significant result because I don&rsquo;t have strong incentives to find one. That is, I&rsquo;m genuinely interested in the &lsquo;true&rsquo; answer to the question and don&rsquo;t have a strong desire for it to be &lsquo;there&rsquo;s a big effect&rsquo; or &lsquo;there&rsquo;s no effect&rsquo;. Being transparent about the results of each stage of analysis should also help keep me honest. (Of course, I could always post-hoc choose not to share intermediate stages but again I don&rsquo;t think my incentives are to do that.)</p>
+
+<h3 id="high-level-plan">High level plan</h3>
+
+<p>At a high level, I want to test the effect of regular vs. decaf coffee on alertness, sharpness, headaches, and my QM results. This is complicated by the fact that my prior is that the response variables I described above only share <strong>some</strong> common causes and that the causal effects of caffeine consumption differ between the response variables. For example, I suspect alertness and QM test scores are both affected by sleep quantity and coffee consumption but that alertness may also be impacted by other confounding variables like mood and plans for the day. To mitigate this, I&rsquo;ll heavily rely on the most objective response variable, the QM results, to determine the magnitude of the &lsquo;true effect&rsquo;. In causal terms, this is equivalent to assuming that sleep is sufficient for blocking all &lsquo;backdoor&rsquo; paths between regular vs. decaf coffee and cognitive ability. I&rsquo;m still measuring the other subjective variables because I&rsquo;m curious to see how correlated they are with my QM results and each other.</p>
+
+<h2 id="faq">FAQ</h2>
+
+<p>This is currently (as of 03/01) a list of questions that I came up with for myself, but I&rsquo;ll also add answers to questions others raise in this section.</p>
+
+<h3 id="isn-t-this-too-short">Isn&rsquo;t this too short?</h3>
+
+<p>As I mentioned, 14 days is short enough that even though the regular vs. decaf day assignments are randomized and blinded, the &lsquo;statistical power&rsquo; of my results will be relatively weak. Two responses to this:
+1. From a decision-theoretic perspective, I mostly care about the easier to answer question of was the effect meaningful enough that I could accurately detect whether the coffee I had that day was regular or decaf conditional on what I know about my sleep and other factors.
+2. I&rsquo;m going to use Bayesian methods and will be more than willing to label the results &lsquo;inconclusive&rsquo; if my analysis results in a diffuse posterior.</p>
+
+<h3 id="why-99-blinded">Why &lsquo;99%&rsquo; blinded?</h3>
+
+<p>I&rsquo;m calling this 99% blinded because there is a slight visual difference between the two coffee grounds that I could in theory detect while making my morning coffee. By making my coffee in the dark (I do this already) and having the bags pre-sorted so I barely have to look at them, I hope to minimize the likelihood of &lsquo;de-blinding&rsquo; the experiment. I tried to minimize the likelihood further by buying identical decaf and regular grounds but unfortunately couldn&rsquo;t find a seller that sold the same beans in decaf and regular. In lieu of that, I settled for buying beans from the same region with the same flavor profile (I also don&rsquo;t have very good taste sense) so as to limit the difference to a visual one.</p>
+
+<h2 id="data-collection">Data Collection</h2>
+
+<p>(Where I&rsquo;ll record my daily subjective metrics.)</p>
+
+<h2 id="results">Results</h2>
+
+<p>(Where I&rsquo;ll record graphs and other summary statistics.)</p>
+</div>
+</main>
+ 
+
+
+
+
+
+
+<div class="tl fixed list-pages lh-copy" id="contents-list"></div>
+
+
+
+<div class="pagination tc tr-l db fixed-l bottom-2-l right-2-l mb3 mb0-l">
+  
+<a id="scroll-to-top" class="f6 o-0 link br2 ph2 pv1 mb1 bg-main-color pointer" onclick="topFunction()" style="color: #fff; visibility: hidden; display: none; transition: opacity .5s, visibility .5s;" title="back to top">back to top</a>
+<br>
+  <p class="mb0 mt2">
+  <a href="https://an1lam.github.io/post/2019-12-13-alternative-explanation-of-simpsons-paradox/">prev post</a>
+  
+  </p>
+</div>
+
+  <footer class="content-width mt0 mt5-l mb4 f6 center ph3 gray tc tl-l">
+  <hr class="dn db-l ml0-l gray w3"><br>
+  Powered by <a href="https://gohugo.io/" target="_blank" class="link gray dim">Hugo</a>, based on the <a href="https://github.com/lingxz/er" target="_blank" class="link gray dim">Er</a> theme. <br>
+  
+</footer>
+  
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.css">
+<style>.is-active-link::before { background-color: var(--secondary-color); }</style>
+
+
+
+
+<script type="text/javascript">
+var prevScrollpos = window.pageYOffset;
+window.onscroll = function() {
+  var currentScrollPos = window.pageYOffset;
+
+  
+  if (document.getElementById("tag-cloud") !== null) { 
+    if (prevScrollpos > currentScrollPos) { 
+      document.getElementById("tag-cloud").style.visibility = "visible";
+      document.getElementById("tag-cloud").style.opacity = "1";
+    } else {
+      document.getElementById("tag-cloud").style.visibility = "hidden";
+      document.getElementById("tag-cloud").style.opacity = "0";
+    }
+  }
+  
+
+  
+  if (document.body.scrollTop > 1000 || document.documentElement.scrollTop > 1000) {
+      document.getElementById("scroll-to-top").style.display = "inline";
+      document.getElementById("scroll-to-top").style.visibility = "visible";
+      document.getElementById("scroll-to-top").style.opacity = "1";
+  } else {
+      document.getElementById("scroll-to-top").style.visibility = "hidden";
+      document.getElementById("scroll-to-top").style.opacity = "0";
+  }
+  
+  prevScrollpos = currentScrollPos;
+}
+
+
+function topFunction() {
+  document.body.scrollTop = 0; 
+  document.documentElement.scrollTop = 0; 
+}
+
+
+
+
+
+
+if (document.getElementById("contents-list") !== null && document.getElementsByClassName("post-content").length !== 0) { 
+  tocbot.init({
+    
+    tocSelector: '#contents-list',
+    
+    contentSelector: '.post-content',
+    
+    headingSelector: 'h1, h2, h3',
+  });
+}
+
+
+</script>
+
+
+
+
+</body>
+</html>

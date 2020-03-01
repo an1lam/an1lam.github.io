@@ -28,7 +28,7 @@ For (a), to show $ E $ is a subspace of $ \mathcal L(V, W) $, we need to show th
 
 
 
-<meta name="generator" content="Hugo 0.62.2" />
+<meta name="generator" content="Hugo 0.57.2" />
 
 <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600" rel="stylesheet">
 <style type="text/css">/*https://coolors.co/afd5aa-f0f2ef-a69f98-3d3d3d-8c6057*/
@@ -113,72 +113,112 @@ type="image/x-icon"/>
     tags: [ <a href='/tags/linear-algebra-done-right' class="link silver">Linear Algebra Done Right</a> <a href='/tags/math' class="link silver">Math</a> <a href='/tags/notes' class="link silver">Notes</a>  ]
     
   </p>
-  <div class="lh-copy post-content"><h1 id="selected-exercises">Selected Exercises</h1>
-<h2 id="3d">3.D</h2>
+  <div class="lh-copy post-content">
+
+<h1 id="selected-exercises">Selected Exercises</h1>
+
+<h2 id="3-d">3.D</h2>
+
 <p><strong>7.</strong> Suppose $ V $ &amp; $ W $ are finite-dimensional. Let $ v \in V $. Let
 $$
 E = \{ T \in \mathcal L(V, W): T(v) = 0 \}.
 $$</p>
-<p>(a)  Show that $ E $ is a subspace of $ \mathcal L(V, W) $.<br>
+
+<p>(a)  Show that $ E $ is a subspace of $ \mathcal L(V, W) $.<br />
 (b)  Suppose $ v \neq 0 $. What is $\dim E$?</p>
+
 <p>For (a), to show $ E $ is a subspace of $ \mathcal L(V, W) $, we need to show that $ E $ contains zero and is closed under both addition and multiplication.</p>
+
 <p>If $ T = 0 $, then $ T(v) = 0 $ for all $ v \in V $, so $ 0 \in E $.</p>
+
 <p>Now, suppose $ T_0, T_1 \in E $. Then,</p>
+
 <p>$$
 (T_0 + T_1)(v) = T_0(v) + T_1(v) = 0 + 0 = 0,
 $$</p>
+
 <p>where the first equality comes from the definition of linear maps and the second comes from the fact that both maps are assumed to be in $E$. Thus, $E$ is closed under addition.</p>
+
 <p>Last, suppose $ T \in E $ and $ \lambda \in F $. Then,
 $$
 (\lambda T)(v) = \lambda \circ T(v) = \lambda \circ 0 = 0,
 $$</p>
+
 <p>where the first equality comes from the definition of linear maps and the rest should be obvious. Thus, $ E $ is closed under multiplication.</p>
+
 <p>For (b), we want to find the dimension of $ E $. One way to do this is construct an isomorphism between $ E $ and a vector space whose dimension we already know, as Axler does as part of showing that $ \dim \mathcal L(V, W) = (\dim V)(\dim W) $.</p>
-<p>We do this in a kind of roundabout way. First, observe that, given an arbitrary $ T \in E $, $v \neq 0 \in V$, we can extend $ v $ to a basis of $ V $, $ v, u_1, u_2, &hellip;, u_n $. Since $ T \in E $, we know that $ \mathcal M(T) $'s first column will consist of all $ 0 $s. Since $ \mathcal M: \mathcal L(V, W) \rightarrow F^{m, n} $ is an isomorphism, $ \dim E $ is the number of matrices in $ F^{m, n} $ where the first column vector is $ 0 $. Thus, $ \dim E = (n-1) * m = n * m - m = (\dim V)(\dim W) - \dim W$.</p>
-<p><strong>9.</strong> Suppose $ V $ is finite-dimensional and $ S, T \in \mathcal L(V) $. Prove that $ ST $ is invertible iff both $ S $ and $ T $ are invertible.<br>
+
+<p>We do this in a kind of roundabout way. First, observe that, given an arbitrary $ T \in E $, $v \neq 0 \in V$, we can extend $ v $ to a basis of $ V $, $ v, u_1, u_2, &hellip;, u_n $. Since $ T \in E $, we know that $ \mathcal M(T) $&rsquo;s first column will consist of all $ 0 $s. Since $ \mathcal M: \mathcal L(V, W) \rightarrow F^{m, n} $ is an isomorphism, $ \dim E $ is the number of matrices in $ F^{m, n} $ where the first column vector is $ 0 $. Thus, $ \dim E = (n-1) * m = n * m - m = (\dim V)(\dim W) - \dim W$.</p>
+
+<p><strong>9.</strong> Suppose $ V $ is finite-dimensional and $ S, T \in \mathcal L(V) $. Prove that $ ST $ is invertible iff both $ S $ and $ T $ are invertible.<br />
 We start with the forward direction, for which we assume that $ ST $ is invertible. By 3.56 and the definitions of injectivity and surjectivity, $ \operatorname{null} ST = \{0\} $ and $ \operatorname{range} ST = V $.</p>
+
 <p>Since $ \operatorname{range} ST \subset \operatorname{range} S $, $ V \subset \operatorname{range} S $ but also, by definition, $ \operatorname{range} S \subset V $, so $ \operatorname{range} S = V $, meaning $ S $ is surjective. Because $ S $ is an operator, surjectivity implies invertibility.</p>
+
 <p>Now, assume $ \operatorname{null} T \neq \{0\} $. Then there exists $ v \neq 0 \in V $ such that $T(v) = 0$, meaning $ (ST)(v) = 0 $. However, we also know that $ \operatorname{null} ST = 0 $, so we have a contradiction. Hence, $ T $ is injective and therefore invertible.</p>
+
 <p>For the backwards direction, we assume that $ S $ and $ T $ are invertible. To show $ ST $ is invertible, we can show that $ \operatorname{null} ST = \{0\} $.</p>
+
 <p>Let $ v \in V $ where $ ST(v) = 0 $ and $ T(v) = w $. First, $ S(w) = 0 $ iff $ w \in \operatorname{null} S $ iff $ w = 0 $. Then, $ T(v) = 0 $ iff $ v \in \operatorname{null} T $ iff $ v = 0 $. Hence, $ ST(v) = 0 $ iff $ v = 0 $, meaning $ \operatorname{null} ST = \{0\} $.</p>
+
 <p>Therefore, $ ST $ is injective and invertible.</p>
-<p><strong>10.</strong> Suppose $ V $ is finite-dimensional and $S,T \in \mathcal L(V) $. Prove that $ST = I$ iff $ TS = I $.<br>
+
+<p><strong>10.</strong> Suppose $ V $ is finite-dimensional and $S,T \in \mathcal L(V) $. Prove that $ST = I$ iff $ TS = I $.<br />
 Assume $ ST = I $. Let $v_0, v_1 \in V$ where $T(v_0) = v_1$. By assumption, it must be true that $S(v_1) = v_0$. Thus, $TS(v_1) = v_1$, and $TS = I$. We can apply analogous logic in the reverse direction.</p>
+
 <p><strong>16.</strong> Suppose $ V $ is finite-dimensional and $ T \in \mathcal L(V) $. Prove that T is a scalar multiple of the identity iff $ ST = TS $ for every $ S \in \mathcal L(V) $.</p>
+
 <p>For the forward direction, we assume that $ T $ is a scalar multiple of the identity, i.e. $ T = \lambda I $ for some $ \lambda \in F $.</p>
+
 <p>Thus, $ (TS)(v) = T(S(v)) = \lambda * S(v) = S(\lambda v) = S(T(v)) = (ST)(v) $. where the third equality comes from the homogeneity property of linear maps.</p>
+
 <p>For the reverse direction, we take a more arduous path. Assume that $ ST = TS $ for every $ S \in \mathcal L(V) $.</p>
+
 <p>First, we show that $ (v, T(v)) $ is a linearly dependent list. Assume that $ (v, T(v)) $ is linearly independent. Then we can extend $ (v, T(v)) $ to a basis, $ (v, T(v), u_1, &hellip;, u_n) $. Let $ S $ be the linear map defined as $S(av + bT(v) + c_1 u_1 + \dots + c_n u_n) = bv $. Thus, $S(v + T(v)) = v$ but $S(v + T(v)) = S(v) + S(T(v)) = 0 + T(S(v)) = 0 + T(0) = 0 $. This gives us a contradiction since $T$ is assumed to be linearly independent but supposedly $ v = 0 $. Thus, $ (v, T(v)) $ must be linearly dependent for all $ v \in V $.</p>
-<p>While we now know that $ T(v) = a_v * v $ for some $ a_v \in F $, we still have to show that $ a_v $ isn't dependent on the value of $ v $.</p>
+
+<p>While we now know that $ T(v) = a_v * v $ for some $ a_v \in F $, we still have to show that $ a_v $ isn&rsquo;t dependent on the value of $ v $.</p>
+
 <p>Assume that we have $ v, w \in V $ and $ a_v, a_w \in F $ where $ T(v) = a_v v $ and $ T(w) = a_w w $. We want to show that $ a_v = a_w $ regardless of the values of $ v $ and $ w $.</p>
+
 <p>First, we do this for the case where $ v $ and $ w $ are linearly dependent. In this case, we know that $ bw = v $ for some $ b \in F $. Thus, we have</p>
+
 <p>$$
 \begin{eqnarray}
-a_v v &amp; = &amp; T(v) \\\\<br>
-&amp; = &amp; T(bw) \\\\<br>
-&amp; = &amp; bT(w) \\\\<br>
-&amp; = &amp; b a_w w \\\\<br>
-&amp; = &amp; a_w b w \\\\<br>
-&amp; = &amp; a_w v.
+    a_v v &amp; = &amp; T(v) \\\<br />
+    &amp; = &amp; T(bw) \\\<br />
+    &amp; = &amp; bT(w) \\\<br />
+    &amp; = &amp; b a_w w \\\<br />
+    &amp; = &amp; a_w b w \\\<br />
+    &amp; = &amp; a_w v.
 \end{eqnarray}
 $$</p>
+
 <p>Second, we do this for the case where $ v $ and $ w $ are linearly independent. Assume that $ T(v+w) = a_{v+w} (v+w) $ and note that we know that $ a_0 v + a_1 w = 0 $ implies $ a_0 = a_w = 0 $. So, we have</p>
+
 <p>$$
 T(v + w) = a_{v+w} (v+w)
 $$</p>
+
 <p>but also</p>
+
 <p>$$
 T(v + w) = T(v) + T(w) = a_v v + a_w w,
 $$</p>
+
 <p>which implies</p>
+
 <p>$$
 a_v v + a_w w = a_{v+w} v + a_{v+w} w.
 $$</p>
+
 <p>Hence,</p>
+
 <p>$$
 (a_v - a_{v+w}) v + (a_w - a_{v+w}) w = 0.
 $$</p>
+
 <p>And since $ a_v, a_w $ is linearly independent, $ a_v = a_{v+w} = a_w $.</p>
+
 <p>Thus, $ a_v = a_w $ for all $ v, w \in V $ and therefore $ T $ is a scalar multiple of the identity map.</p>
 </div>
 </main>
