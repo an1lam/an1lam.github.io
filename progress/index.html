@@ -47,38 +47,7 @@
 
 type="image/x-icon"/>
 
-
-<script type="text/javascript" async
-  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
-  MathJax.Hub.Config({
-  tex2jax: {
-    inlineMath: [['$','$'], ['\\(','\\)']],
-    displayMath: [['$$','$$']],
-    processEscapes: true,
-    processEnvironments: true,
-    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
-    TeX: { equationNumbers: { autoNumber: "AMS" },
-         extensions: ["AMSmath.js", "AMSsymbols.js"] }
-  }
-  });
-  MathJax.Hub.Queue(function() {
-    
-    
-    
-    var all = MathJax.Hub.getAllJax(), i;
-    for(i = 0; i < all.length; i += 1) {
-        all[i].SourceElement().parentNode.className += ' has-jax';
-    }
-  });
-
-  MathJax.Hub.Config({
-  
-  TeX: { equationNumbers: { autoNumber: "AMS" } }
-  });
-</script>
-
 <link href='/feed.xml' rel="alternate" type="application/atom+xml" title="Stephen Malina" />
-
 </head>
 <body class="global-font">
   <nav class=" flex-ns justify-between border-box pa3 pl3-l pr2-l mt1 mt0-ns" id="navbar">
@@ -87,6 +56,8 @@ type="image/x-icon"/>
   </div>
   
   <div class=" flex-ns mt2 mt0-ns pv1">
+    
+      <a class="link dim dark-gray f6 dib mr2 mr3-l ttu tracked" href='/about' title="About">About</a>
     
       <a class="link dim dark-gray f6 dib mr2 mr3-l ttu tracked" href='/' title="Home">Home</a>
     
@@ -147,13 +118,15 @@ In college, I had the naive view that most progress in modern day society was co
 
 <h3 id="should-we-prioritize-research-that-aims-at-specific-goals-does-this-close-us-off-from-serendipitous-discoveries">Should we prioritize research that aims at specific goals? Does this close us off from serendipitous discoveries?</h3>
 
-<p><strong>Last Updated: 2018-10-12</strong><br />
-<em>Status</em>: I have a lot of interesting threads to pursue on this question and would like to organize them at some point.</p>
+<p><strong>Last Updated: 2020-03-03</strong><br />
+<em>Status</em>: I&rsquo;m slowly moving towards the view that goal-driven research with the right goals is underrated.</p>
 
 <p>I worry that the current version of this question munges together a few distinct questions:
 - How important is basic research for technological progress?
 - Are long-term research goals better achieved by slowly accumulating successes at incremental progress towards the bigger goal?
 - To what degree are theoretical advances, in particular in fields like math and computer science, the bottleneck for further progress?</p>
+
+<p>That said, I&rsquo;m starting to think that goal-driven research with good goals is underrated having now spent some time back in academia.</p>
 
 <p>For now, only scattered thoughts and a repository of links and quotes that seem relevant follow.</p>
 
@@ -201,11 +174,17 @@ So, I feel like there&rsquo;s an element of the latter, in the sense that you ha
 
 <p>A representative and oft-cited example of the Hayekian approach is number theory proving useful for crypto. Number theorists spent decades finding and proving new theorems, and then one day computer scientists realized they could use the theorems to construct provable unbreakable cryptography algorithms. Without the number theorists exploring the least applied of disciplines, we might have missed out on one of the key enabling technologies of the internet and online payments.</p>
 
+<p>On the other hand, I&rsquo;ve read <a href="https://www.lesswrong.com/posts/s5sy3qiknFs7ehsLA/the-value-of-theoretical-research">elsewhere</a> that a lot of the number theory used in foundational crypto is fairly basic and could&rsquo;ve been invented just-in-time had it not existed. In addition, cryptocurrency seems to be a good example of the pull-based approach to research working well. I.e., zero-knowledge proofs are becoming popular and now there&rsquo;s a ton more research into them.</p>
+
 <h3 id="how-hard-would-it-be-to-modify-the-genes-of-a-human-in-vivo">How hard would it be to modify the genes of a human in vivo?</h3>
 
-<p><strong>Last Updated: 2018-10-12</strong><br />
-<em>Status</em>: Leaning towards the conventional view that it is harder and that if I researched it more, I could understand why without a full education in biology.<br />
+<p><strong>Last Updated: 2018-10-12</strong>
+<em>Status</em>: Hoping to learn more about this this Summer during my internship at <a href="dynotx.com">Dyno</a>.
 People discuss the promise and perils of genetics in the context of modifying the next generation. Is it significantly harder to modify the genes of already born humans (and have those modifications propagate in humans&rsquo; phenotypes) than it is to modify those of embryos?</p>
+
+<h4 id="george-church-s-views">George Church&rsquo;s views</h4>
+
+<p>George Church seems to think it&rsquo;s safer than germline modification and is <a href="https://www.nextbigfuture.com/mass-genetic-modification-of-most-of-the-cells-of-adults-as-simple-as-vaccination-injection">founding companies</a> based on this belief.</p>
 
 <h3 id="are-things-more-partisan-than-ever-before">Are things more partisan than ever before?</h3>
 
@@ -221,7 +200,7 @@ People discuss the promise and perils of genetics in the context of modifying th
 
 <p>The whole thing&rsquo;s also quite hard to measure. If empirical evidence substantiates string theory, that will be a big development for physics but won&rsquo;t, as far as I can tell, have an immediate application in the way atomic theory made nuclear weapons and power possible.</p>
 
-<p>But then there&rsquo;s quantum computing. First of all, what era even gets credit for that? Feynman proposed the idea of exploting quantum effects for computing, but <a href="https://en.wikipedia.org/wiki/Shor%27s_algorithm&lt;Paste">Shor&rsquo;s algorithm</a> wasn&rsquo;t invented until 1994. Second, how big a deal is it? Working non-trivial quantum computers don&rsquo;t exist yet (as far as I know) but Scott Aaronson, a quantum complexity theorist, <a href="https://www.scottaaronson.com/blog/?p=902">once wagered $100,000 that noone could produce a physical proof against the feasibility of larger scale quantum computers</a> so they seem likely to exist at some point. Having working quantum computers that can break cryptography and do high fidelity simulations of chaotic phenomena could have a huge impact on society, although unclear whether it would be as big an impact as nuclear weapons and power.</p>
+<p>But then there&rsquo;s quantum computing. First of all, what era even gets credit for that? Feynman proposed the idea of exploting quantum effects for computing, but <a href="https://en.wikipedia.org/wiki/Shor%27s_algorithm&lt;Paste">Shor&rsquo;s algorithm</a> wasn&rsquo;t invented until 1994. David Deutsch is also often credited as the inventor. Second, how big a deal is it? Working non-trivial quantum computers don&rsquo;t exist yet (as far as I know) but quantum supremacy <a href="https://www.nature.com/articles/s41586-019-1666-5">is here</a>.</p>
 
 <p>Another edge case, the <a href="https://en.wikipedia.org/wiki/Many-worlds_interpretation">Many Worlds Interpretation</a> was only invented in the 1950s and seems like a pretty big deal.</p>
 
@@ -261,31 +240,10 @@ People discuss the promise and perils of genetics in the context of modifying th
 </div>
 
   <footer class="content-width mt0 mt5-l mb4 f6 center ph3 gray tc tl-l">
-<div id="disqus_thread"></div>
-<script type="application/javascript">
-    var disqus_config = function () {
-    
-    
-    
-    };
-    (function() {
-        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
-            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
-            return;
-        }
-        var d = document, s = d.createElement('script'); s.async = true;
-        s.src = '//' + "an1lam-github-io" + '.disqus.com/embed.js';
-        s.setAttribute('data-timestamp', +new Date());
-        (d.head || d.body).appendChild(s);
-    })();
-</script>
-<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
   <hr class="dn db-l ml0-l gray w3"><br>
   Powered by <a href="https://gohugo.io/" target="_blank" class="link gray dim">Hugo</a>, based on the <a href="https://github.com/lingxz/er" target="_blank" class="link gray dim">Er</a> theme. <br>
   
 </footer>
-
   
 
 
