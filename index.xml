@@ -34,20 +34,6 @@ I intend to record the metrics I describe in the next section under the &amp;lsq
     </item>
     
     <item>
-      <title>Exam Blogging - Fun with the Exponential Family</title>
-      <link>https://an1lam.github.io/post/2020-03-06-exam-blogging-exponential-family-fun/</link>
-      <pubDate>Sun, 01 Mar 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://an1lam.github.io/post/2020-03-06-exam-blogging-exponential-family-fun/</guid>
-      <description>Disclaimer: Not a tutorial.
- Not your average nuclear family.
- - Kolmogorov
- You won&amp;rsquo;t believe these 5 exponential family tricks!
- - BuzzFeed
-Quick Intro The exponential family is a collection of probability distributions that can all be cast in the same true form (technically there are a few different forms but they&amp;rsquo;re equivalent under transformation). Surprisingly, the exponential family includes many of the probability distributions we know and love:</description>
-    </item>
-    
-    <item>
       <title>Yet another Simpson&#39;s Paradox post</title>
       <link>https://an1lam.github.io/post/2019-12-13-alternative-explanation-of-simpsons-paradox/</link>
       <pubDate>Fri, 13 Dec 2019 00:00:00 +0000</pubDate>
@@ -960,15 +946,6 @@ A long, in-depth piece on the history of spreadsheet modeling. The two points th
       
       <guid>https://an1lam.github.io/post/2018-11-03-deep-learning-goodfellow-ch4-notes/</guid>
       <description> Chapter 4  What&amp;rsquo;s a multinoulli distribution? Show that softmax function is not affected by taking $ softmax(z) $ where $ z = x - max_i x_i $.  </description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://an1lam.github.io/post/2020-03-18-digital-minimalism-exp/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://an1lam.github.io/post/2020-03-18-digital-minimalism-exp/</guid>
-      <description></description>
     </item>
     
     <item>
