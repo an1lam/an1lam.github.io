@@ -105,7 +105,7 @@ type="image/x-icon"/>
 <p>One of the most striking results in early causal inference literature, called the front-door criterion, states that, for all graphs like ours which satisfy these three criteria, the causal effect $ P(y \mid \mathrm{do}(x)) $ is identifiable by the formula (assume discrete variables for convenience)</p>
 
 <p>$$
-P(y \mid do(x)) = \sum<em>{m \in M} P(m \mid x) \sum</em>{x&rsquo; \in X} P(y \mid m, x&rsquo;) P(x&rsquo;).
+P(y \mid do(x)) = \sum_{m \in M} P(m \mid x) \sum_{x&rsquo; \in X} P(y \mid m, x&rsquo;) P(x&rsquo;).
 $$</p>
 
 <p>Intuitively, this is &lsquo;striking&rsquo; because it shows that we can identify the effect of a cause on an effect if we know the distribution of a mediator, <strong>even if</strong> there&rsquo;s unmeasured confounding between the cause and effect.</p>
@@ -274,36 +274,18 @@ if (document.getElementById("contents-list") !== null && document.getElementsByC
 
 
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.6.0/katex.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/contrib/auto-render.min.js" integrity="sha384-dq1/gEHSxPZQ7DdrM82ID4YVol9BYyU7GbWlIwnwyPzotpoc57wDw/guX8EaYGPx" crossorigin="anonymous"></script>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.6.0/katex.min.css">
-<script>
-  renderMathInElement(document.body,
-    {
-        delimiters: [
-            {left: "$$", right: "$$", display: true},
-            {left: "$", right: "$", display: false},
-        ]
+
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
     }
-  );
-
-  var inlineMathArray = document.querySelectorAll("script[type='math/tex']");
-  for (var i = 0; i < inlineMathArray.length; i++) {
-    var inlineMath = inlineMathArray[i];
-    var tex = inlineMath.innerText || inlineMath.textContent;
-    var replaced = document.createElement("span");
-    replaced.innerHTML = katex.renderToString(tex, {displayMode: false});
-    inlineMath.parentNode.replaceChild(replaced, inlineMath);
-  }
-
-  var displayMathArray = document.querySelectorAll("script[type='math/tex; mode=display']");
-  for (var i = 0; i < displayMathArray.length; i++) {
-    var displayMath = displayMathArray[i];
-    var tex = displayMath.innerHTML;
-    var replaced = document.createElement("span");
-    replaced.innerHTML = katex.renderToString(tex.replace(/%.*/g, ''), {displayMode: true});
-    displayMath.parentNode.replaceChild(replaced, displayMath);
-  }
+  });
+</script>
+<script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
 </script>
 
 
