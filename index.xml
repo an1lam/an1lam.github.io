@@ -6,10 +6,21 @@
     <description>Recent content on Stephen Malina</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 09 Mar 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 18 Mar 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://an1lam.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Digital Reduction Experiment</title>
+      <link>https://an1lam.github.io/post/2020-03-18-digital-minimalism-exp/</link>
+      <pubDate>Wed, 18 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://an1lam.github.io/post/2020-03-18-digital-minimalism-exp/</guid>
+      <description>Intro / Motivation I know I&amp;rsquo;m a walking millenial trope, but I&amp;rsquo;m starting a deliberate experiment to dramatically reduce my internet engagement. Especially while I&amp;rsquo;m quarantined for who knows how long, I want to almost entirely stop:
+ checking Twitter; reading about the virus throughout the day; checking email; reading blogs frequently; and constantly texting with people (mostly about the virus).  Instead, I want to focus on:
+ doing lots of (ML) research; schoolwork; spending time outside; exercising; video calls with friends; reading books; and writing more blog posts.</description>
+    </item>
     
     <item>
       <title>Deriving the front-door criterion with the do-calculus</title>
