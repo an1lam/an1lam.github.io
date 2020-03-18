@@ -19,8 +19,8 @@
       <guid>https://an1lam.github.io/post/2020-03-09-front-door-do-calc-derivation/</guid>
       <description>Attention conservation notice: Narrow target audience - will only make sense to people somewhat familiar with causal inference who don&amp;rsquo;t find the result entirely boring.
 The Front-Door Criterion Suppose we have a causal graphical model that looks like the following.
-Assume \( U \) is unmeasured whereas \( X, M, Y \) can be measured. Notice that:
- All directed paths from \( X \) to \( Y \) flow through \( M \).</description>
+Assume $ U $ is unmeasured whereas $ X, M, Y $ can be measured. Notice that:
+ All directed paths from $ X $ to $ Y $ flow through $ M $.</description>
     </item>
     
   </channel>

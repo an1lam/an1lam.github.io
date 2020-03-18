@@ -11,8 +11,8 @@
 
 <meta property="og:description" content="Attention conservation notice: Narrow target audience - will only make sense to people somewhat familiar with causal inference who don&rsquo;t find the result entirely boring.
 The Front-Door Criterion Suppose we have a causal graphical model that looks like the following.
-Assume \( U \) is unmeasured whereas \( X, M, Y \) can be measured. Notice that:
- All directed paths from \( X \) to \( Y \) flow through \( M \)." />
+Assume $ U $ is unmeasured whereas $ X, M, Y $ can be measured. Notice that:
+ All directed paths from $ X $ to $ Y $ flow through $ M $." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://an1lam.github.io/post/2020-03-09-front-door-do-calc-derivation/" />
 
@@ -94,17 +94,19 @@ type="image/x-icon"/>
 
 <p><img src="https://i.imgur.com/i5HQ1Jt.png" width="500" height="350" /></p>
 
-<p>Assume \( U \) is unmeasured whereas \( X, M, Y \) can be measured. Notice that:</p>
+<p>Assume $ U $ is unmeasured whereas $ X, M, Y $ can be measured. Notice that:</p>
 
 <ol>
-<li>All directed paths from \( X \) to \( Y \) flow through \( M \).</li>
-<li>\( X \) blocks all back-door paths from \( M \) to \( Y \).</li>
-<li>There are no unblocked back-door paths from \( X \) to \( M \).</li>
+<li>All directed paths from $ X $ to $ Y $ flow through $ M $.</li>
+<li>$ X $ blocks all back-door paths from $ M $ to $ Y $.</li>
+<li>There are no unblocked back-door paths from $ X $ to $ M $.</li>
 </ol>
 
-<p>One of the most striking results in early causal inference literature, called the front-door criterion, states that, for all graphs like ours which satisfy these three criteria, the causal effect \( P(y \mid \mathrm{do}(x)) \) is identifiable by the formula (assume discrete variables for convenience)</p>
+<p>One of the most striking results in early causal inference literature, called the front-door criterion, states that, for all graphs like ours which satisfy these three criteria, the causal effect $ P(y \mid \mathrm{do}(x)) $ is identifiable by the formula (assume discrete variables for convenience)</p>
 
-<p>\[ P(y \mid do(x)) = \sum_{m \in M} P(m \mid x) \sum_{x&rsquo; \in X} P(y \mid m, x&rsquo;) P(x&rsquo;). \]</p>
+<p>$$
+P(y \mid do(x)) = \sum<em>{m \in M} P(m \mid x) \sum</em>{x&rsquo; \in X} P(y \mid m, x&rsquo;) P(x&rsquo;).
+$$</p>
 
 <p>Intuitively, this is &lsquo;striking&rsquo; because it shows that we can identify the effect of a cause on an effect if we know the distribution of a mediator, <strong>even if</strong> there&rsquo;s unmeasured confounding between the cause and effect.</p>
 
@@ -114,46 +116,54 @@ type="image/x-icon"/>
 
 <p>In this section, I quickly review the rules of the do-calculus and the intuition for them. For a more in depth but understandable presentation of the do-calculus, I recommend Michael Nielsen&rsquo;s article<sup class="footnote-ref" id="fnref:1"><a href="#fn:1">1</a></sup> on the topic. For a &ldquo;classic&rdquo;, more technical presentation of the do-calculus, see Judea Pearl&rsquo;s &ldquo;The Do-Calculus Revisited<sup class="footnote-ref" id="fnref:2"><a href="#fn:2">2</a></sup>&rdquo;.</p>
 
-<p>The do-calculus provides a complete<sup class="footnote-ref" id="fnref:3"><a href="#fn:3">3</a></sup> algebra for transforming causal quantities into observational ones. I.e., transforming probabilities that include \( \mathrm{do}(\cdot) \) terms into probabilities that only include normal conditional terms. Completeness means that a query (\( \mathrm{do} \) term) is identifiable if-and-only-if we can use do-calculus to compute its observational equivalent.</p>
+<p>The do-calculus provides a complete<sup class="footnote-ref" id="fnref:3"><a href="#fn:3">3</a></sup> algebra for transforming causal quantities into observational ones. I.e., transforming probabilities that include $ \mathrm{do}(\cdot) $ terms into probabilities that only include normal conditional terms. Completeness means that a query ($ \mathrm{do} $ term) is identifiable if-and-only-if we can use do-calculus to compute its observational equivalent.</p>
 
 <h3 id="do-calculus-rules">Do-Calculus Rules</h3>
 
-<p>The actual calculus consists of three rules for transforming \( \mathrm{do} \) queries into observational ones. Since the rules are complete, they include a little extra baggage, but each one comes from an understandable intuition that I&rsquo;ll describe below.</p>
+<p>The actual calculus consists of three rules for transforming $ \mathrm{do} $ queries into observational ones. Since the rules are complete, they include a little extra baggage, but each one comes from an understandable intuition that I&rsquo;ll describe below.</p>
 
 <h4 id="notation">Notation</h4>
 
-<p>For each rule, we assume that we have a causal model that includes at least 4 terms \( X, Z, Y, W \) in a graph \( G \). All three rules treat \( Y \) as the outcome variable and \( Z \) as the term we want to remove or transform. \( G_{\overline{X}} \) denotes a modified version of the original graph \( G \) in which all arrows going into \( X \) have been removed. \( G_{\underline{X}} \) denotes a modified version of the original graph \( G \) in which all arrows coming out of \( X \) have been removed.</p>
+<p>For each rule, we assume that we have a causal model that includes at least 4 node sets $ X, Z, Y, W $ in a graph $ G $. All three rules treat $ Y $ as the outcome variable and $ Z $ as the term(s) we want to remove or transform. $ G_{\overline{X}} $ denotes a modified version of the original graph $ G $ in which all arrows going into nodes in $ X $ have been removed. $ G_{\underline{X}} $ denotes a modified version of the original graph $ G $ in which all arrows coming out of nodes in $ X $ have been removed. In practice, when we apply these rules, we&rsquo;ll mostly be using single-node sets for $ X, Z, Y $ but we still list the set versions to align with other presentations.</p>
 
 <h4 id="rule-1-when-we-can-ignore-an-observation">Rule 1: When we can ignore an observation</h4>
 
 <p>Rule 1 says that we can ignore an observation of a quantity when it doesn&rsquo;t influence the outcome through any path. We formalize this as
-\[ P(y \mid z, \mathrm{do}(x), w) = P(y \mid \mathrm{do}(x), w) \text{ if } (Y \perp Z \mid W, X)_{G_\overline{X}}. \]</p>
+$$ P(y \mid z, \mathrm{do}(x), w) = P(y \mid \mathrm{do}(x), w) \text{ if } (Y \perp Z \mid W, X)_{G_{\overline{X}}}. $$</p>
 
 <h4 id="rule-2-when-we-can-treat-an-intervention-as-an-observation">Rule 2: When we can treat an intervention as an observation</h4>
 
-<p>Rule 2 says that observations and interventions are equivalent when the causal effect of a variable on the outcome only influences the outcome through directed paths. We formalize this as
-\[ P(y \mid \mathrm{do}(z), \mathrm{do}(x), w) = P(y \mid z, \mathrm{do}(x), w) \text{ if } (Y \perp Z \mid W, X)_{G_\overline{X}, G_\underline{Z}}. \]
-<em>Note: Rule 2 can also be thought of as a generalization of the back-door criterion in which \( \mathrm{do}(X), W \) together form a back-door admissible set.</em></p>
+<p>Rule 2 says that observations and interventions are equivalent when the causal effect of a variable on the outcome only influences the outcome through directed paths. We formalize this as</p>
+
+<p>$$ P(y \mid \mathrm{do}(z), \mathrm{do}(x), w) = P(y \mid z, \mathrm{do}(x), w) \text{ if } (Y \perp Z \mid W, X)_{G_{\overline{X}, \underline{Z}}}. $$</p>
+
+<p><em>Note: Rule 2 can also be thought of as a generalization of the back-door criterion in which $ \mathrm{do}(X), W $ together form a back-door admissible set.</em></p>
 
 <h4 id="rule-3-when-we-can-ignore-an-intervention">Rule 3: When we can ignore an intervention</h4>
 
-<p>Rule 3 says that we can ignore an intervention when it doesn&rsquo;t influence the outcome through any path.</p>
+<p>Rule 3 says that we can ignore an intervention when it doesn&rsquo;t influence the outcome through any path, formalized as</p>
+
+<p>$$ P(y \mid \mathrm{do}(z), \mathrm{do}(x), w) = P(y \mid \mathrm{do}(x), w) \text{ if } (Y \perp Z \mid W, X)_{G_{\overline{X}, \overline{Z(W)}}}. $$</p>
+
+<p>$ G_{\overline{Z(W)}} $ means &ldquo;in the graph in which we block all incoming arrows to nodes in $ Z $ that aren&rsquo;t ancestors of nodes in $ W $. For example, if I have a graph $ G = U \rightarrow Z \rightarrow W \rightarrow Y $, then $ G_{\overline{Z(W)}} = G $ because $ Z $ is an ancestor of $ W $.</p>
 
 <h2 id="derivation-with-do-calculus">Derivation with Do-Calculus</h2>
 
-<p>Assuming we have the graph given above and start with \( P(y \mid \mathrm{do}(x)) \), we can use the following series of do-calculus and probability transformations to derive an expression that only includes observational probabilities:
-\[
+<p>Assuming we have the graph given above and start with $ P(y \mid \mathrm{do}(x)) $, we can use the following series of do-calculus and probability transformations to derive an expression that only includes observational probabilities:</p>
+
+<p>$$
 \begin{aligned}
-    P(y \mid \mathrm{do}(x)) &amp;= \sum_z P(y \mid \mathrm{do}(x), z) P(z \mid \mathrm{do}(x)) &amp; \text{(Rule 2 twice)}\\<br />
-                       &amp;= \sum_z P(y \mid \mathrm{do}(x), \mathrm{do}(z)) P(z \mid x) &amp; \text{(Rule 2)} \\<br />
-                       &amp;= \sum_{z, u} P(y \mid \mathrm{do}(x), \mathrm{do}(z), u) P(u \mid \mathrm{do}(x), \mathrm{do}(z)) P(z \mid x) &amp; \text{(Rule 3)}\\<br />
-                       &amp;= \sum_{z, u} P(y \mid \mathrm{do}(z), u) P(u \mid \mathrm{do}(z)) P(z \mid x) &amp; \text{(Marginalization)} \\<br />
-                       &amp;= \sum_{z} P(y \mid \mathrm{do}(z)) P(z \mid x) &amp; \text{(Introduce auxiliary ( x&rsquo; ))} \\<br />
-                       &amp;= \sum_{z} P(z \mid x) \sum_{x&rsquo;} P(y \mid \mathrm{do}(z), x&rsquo;) P(x&rsquo; \mid \mathrm{do}(z)) &amp; \text{(Rule 2)} \\<br />
-                       &amp;= \sum_{z} P(z \mid x) \sum_{x&rsquo;} P(y \mid z, x&rsquo;) P(x&rsquo; \mid \mathrm{do}(z)) &amp; \text{(Rule 3)} \\<br />
-                       &amp;= \sum_{z} P(z \mid x) \sum_{x&rsquo;} P(y \mid z, x&rsquo;) P(x&rsquo;).
+    &amp; P(y \mid \mathrm{do}(x))
+    \\\\ &amp;= \sum_z P(y \mid \mathrm{do}(x), z) P(z \mid \mathrm{do}(x)) &amp; \text{(Rule 2 twice)}
+    \\ &amp;= \sum_z P(y \mid \mathrm{do}(x), \mathrm{do}(z)) P(z \mid x) &amp; \text{(Rule 2)}
+    \\ &amp;= \sum_{z, u} P(y \mid \mathrm{do}(x), \mathrm{do}(z), u) P(u \mid \mathrm{do}(x), \mathrm{do}(z)) P(z \mid x) &amp; \text{(Rule 3)}
+    \\ &amp;= \sum_{z, u} P(y \mid \mathrm{do}(z), u) P(u \mid \mathrm{do}(z)) P(z \mid x) &amp; \text{(Marginalization)}
+    \\ &amp;= \sum_{z} P(y \mid \mathrm{do}(z)) P(z \mid x) &amp; \text{(Introduce auxiliary } x_1 \text{ )}
+    \\ &amp;= \sum_{z} P(z \mid x) \sum_{x_1} P(y \mid \mathrm{do}(z), x_1) P(x_1 \mid \mathrm{do}(z)) &amp; \text{(Rule 2)}
+    \\ &amp;= \sum_{z} P(z \mid x) \sum_{x_1} P(y \mid z, x_1) P(x_1 \mid \mathrm{do}(z)) &amp; \text{(Rule 3)}
+    \\ &amp;= \sum_{z} P(z \mid x) \sum_{x_1} P(y \mid z, x_1) P(x_1).
 \end{aligned}
-\]</p>
+$$</p>
 <div class="footnotes">
 
 <hr />
@@ -262,6 +272,39 @@ if (document.getElementById("contents-list") !== null && document.getElementsByC
 </script>
 
 
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.6.0/katex.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/contrib/auto-render.min.js" integrity="sha384-dq1/gEHSxPZQ7DdrM82ID4YVol9BYyU7GbWlIwnwyPzotpoc57wDw/guX8EaYGPx" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.6.0/katex.min.css">
+<script>
+  renderMathInElement(document.body,
+    {
+        delimiters: [
+            {left: "$$", right: "$$", display: true},
+            {left: "$", right: "$", display: false},
+        ]
+    }
+  );
+
+  var inlineMathArray = document.querySelectorAll("script[type='math/tex']");
+  for (var i = 0; i < inlineMathArray.length; i++) {
+    var inlineMath = inlineMathArray[i];
+    var tex = inlineMath.innerText || inlineMath.textContent;
+    var replaced = document.createElement("span");
+    replaced.innerHTML = katex.renderToString(tex, {displayMode: false});
+    inlineMath.parentNode.replaceChild(replaced, inlineMath);
+  }
+
+  var displayMathArray = document.querySelectorAll("script[type='math/tex; mode=display']");
+  for (var i = 0; i < displayMathArray.length; i++) {
+    var displayMath = displayMathArray[i];
+    var tex = displayMath.innerHTML;
+    var replaced = document.createElement("span");
+    replaced.innerHTML = katex.renderToString(tex.replace(/%.*/g, ''), {displayMode: true});
+    displayMath.parentNode.replaceChild(replaced, displayMath);
+  }
+</script>
 
 
 </body>
