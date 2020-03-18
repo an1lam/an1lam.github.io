@@ -1,0 +1,268 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta content='text/html; charset=utf-8' http-equiv='content-type' />
+
+  <title>Deriving the front-door criterion with the do-calculus - Stephen Malina</title>
+  <meta content='Deriving the front-door criterion with the do-calculus - Stephen Malina' property='title' />
+  <meta content='Deriving the front-door criterion with the do-calculus - Stephen Malina' property='og:title' />
+
+
+<meta property="og:description" content="Attention conservation notice: Narrow target audience - will only make sense to people somewhat familiar with causal inference who don&rsquo;t find the result entirely boring.
+The Front-Door Criterion Suppose we have a causal graphical model that looks like the following.
+Assume \( U \) is unmeasured whereas \( X, M, Y \) can be measured. Notice that:
+ All directed paths from \( X \) to \( Y \) flow through \( M \)." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://an1lam.github.io/post/2020-03-09-front-door-do-calc-derivation/" />
+
+
+<meta property="article:published_time" content="2020-03-09T00:00:00&#43;00:00"/>
+
+<meta property="article:modified_time" content="2020-03-09T00:00:00&#43;00:00"/>
+
+
+
+
+
+
+
+
+<meta name="generator" content="Hugo 0.57.2" />
+
+<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600" rel="stylesheet">
+<style type="text/css">/*https://coolors.co/afd5aa-f0f2ef-a69f98-3d3d3d-8c6057*/
+:root {
+  --main-color: #8C6056; 
+  --secondary-color: #AFD5AA;
+  --logo-text-color: #fff;
+  --body-text-color: #3d3d3d;
+  --heading-text-color: #383838;
+  --background-color: #fff;
+}</style>
+<link href='/css/tachyons.min.css' rel="stylesheet">
+<link href='/css/styles.css' rel="stylesheet">
+
+
+<link rel="icon" 
+ 
+  href='/favicon.ico'
+
+type="image/x-icon"/>
+
+<link href='/feed.xml' rel="alternate" type="application/atom+xml" title="Stephen Malina" />
+</head>
+<body class="global-font">
+  <nav class=" flex-ns justify-between border-box pa3 pl3-l pr2-l mt1 mt0-ns" id="navbar">
+  <div class="flex">
+    <a class="f4 fw6 ttu no-underline dim bg-main-color pv1 ph2 br2" id="site-title" href='/' title="Home">Stephen Malina</a>
+  </div>
+  
+  <div class=" flex-ns mt2 mt0-ns pv1">
+    
+      <a class="link dim dark-gray f6 dib mr2 mr3-l ttu tracked" href='/about' title="About">About</a>
+    
+      <a class="link dim dark-gray f6 dib mr2 mr3-l ttu tracked" href='/' title="Home">Home</a>
+    
+      <a class="link dim dark-gray f6 dib mr2 mr3-l ttu tracked" href='/learning/' title="Learning">Learning</a>
+    
+      <a class="link dim dark-gray f6 dib mr2 mr3-l ttu tracked" href='/post/' title="Posts">Posts</a>
+    
+      <a class="link dim dark-gray f6 dib mr2 mr3-l ttu tracked" href='/progress' title="The State of My Mind">The State of My Mind</a>
+    
+  </div>
+  
+</nav>
+  
+<main class="center mv4 content-width ph3">
+  <div class="f3 fw6 heading-color heading-font post-title">Deriving the front-door criterion with the do-calculus</div>
+  <p class="silver f6 mt1 mb4 post-meta">
+    <time>09 Mar 2020</time> 
+     | 
+    
+    
+    tags: [ <a href='/tags/math' class="link silver">math</a> <a href='/tags/causal-inference' class="link silver">causal-inference</a> <a href='/tags/derivation' class="link silver">derivation</a>  ]
+    
+  </p>
+  <div class="lh-copy post-content">
+
+<p><em>Attention conservation notice:</em> Narrow target audience - will only make sense to people somewhat familiar with causal inference who don&rsquo;t find the result entirely boring.</p>
+
+<h2 id="the-front-door-criterion">The Front-Door Criterion</h2>
+
+<p>Suppose we have a causal graphical model that looks like the following.</p>
+
+<p><img src="https://i.imgur.com/i5HQ1Jt.png" width="500" height="350" /></p>
+
+<p>Assume \( U \) is unmeasured whereas \( X, M, Y \) can be measured. Notice that:</p>
+
+<ol>
+<li>All directed paths from \( X \) to \( Y \) flow through \( M \).</li>
+<li>\( X \) blocks all back-door paths from \( M \) to \( Y \).</li>
+<li>There are no unblocked back-door paths from \( X \) to \( M \).</li>
+</ol>
+
+<p>One of the most striking results in early causal inference literature, called the front-door criterion, states that, for all graphs like ours which satisfy these three criteria, the causal effect \( P(y \mid \mathrm{do}(x)) \) is identifiable by the formula (assume discrete variables for convenience)</p>
+
+<p>\[ P(y \mid do(x)) = \sum_{m \in M} P(m \mid x) \sum_{x&rsquo; \in X} P(y \mid m, x&rsquo;) P(x&rsquo;). \]</p>
+
+<p>Intuitively, this is &lsquo;striking&rsquo; because it shows that we can identify the effect of a cause on an effect if we know the distribution of a mediator, <strong>even if</strong> there&rsquo;s unmeasured confounding between the cause and effect.</p>
+
+<p>As an exercise, I thought it would be fun to use the do-calculus<sup class="footnote-ref" id="fnref:1"><a href="#fn:1">1</a></sup> to re-derive the front-door criterion (for a representative front-door graph).</p>
+
+<h2 id="do-calculus-brief-refresher">Do-Calculus Brief Refresher</h2>
+
+<p>In this section, I quickly review the rules of the do-calculus and the intuition for them. For a more in depth but understandable presentation of the do-calculus, I recommend Michael Nielsen&rsquo;s article<sup class="footnote-ref" id="fnref:1"><a href="#fn:1">1</a></sup> on the topic. For a &ldquo;classic&rdquo;, more technical presentation of the do-calculus, see Judea Pearl&rsquo;s &ldquo;The Do-Calculus Revisited<sup class="footnote-ref" id="fnref:2"><a href="#fn:2">2</a></sup>&rdquo;.</p>
+
+<p>The do-calculus provides a complete<sup class="footnote-ref" id="fnref:3"><a href="#fn:3">3</a></sup> algebra for transforming causal quantities into observational ones. I.e., transforming probabilities that include \( \mathrm{do}(\cdot) \) terms into probabilities that only include normal conditional terms. Completeness means that a query (\( \mathrm{do} \) term) is identifiable if-and-only-if we can use do-calculus to compute its observational equivalent.</p>
+
+<h3 id="do-calculus-rules">Do-Calculus Rules</h3>
+
+<p>The actual calculus consists of three rules for transforming \( \mathrm{do} \) queries into observational ones. Since the rules are complete, they include a little extra baggage, but each one comes from an understandable intuition that I&rsquo;ll describe below.</p>
+
+<h4 id="notation">Notation</h4>
+
+<p>For each rule, we assume that we have a causal model that includes at least 4 terms \( X, Z, Y, W \) in a graph \( G \). All three rules treat \( Y \) as the outcome variable and \( Z \) as the term we want to remove or transform. \( G_{\overline{X}} \) denotes a modified version of the original graph \( G \) in which all arrows going into \( X \) have been removed. \( G_{\underline{X}} \) denotes a modified version of the original graph \( G \) in which all arrows coming out of \( X \) have been removed.</p>
+
+<h4 id="rule-1-when-we-can-ignore-an-observation">Rule 1: When we can ignore an observation</h4>
+
+<p>Rule 1 says that we can ignore an observation of a quantity when it doesn&rsquo;t influence the outcome through any path. We formalize this as
+\[ P(y \mid z, \mathrm{do}(x), w) = P(y \mid \mathrm{do}(x), w) \text{ if } (Y \perp Z \mid W, X)_{G_\overline{X}}. \]</p>
+
+<h4 id="rule-2-when-we-can-treat-an-intervention-as-an-observation">Rule 2: When we can treat an intervention as an observation</h4>
+
+<p>Rule 2 says that observations and interventions are equivalent when the causal effect of a variable on the outcome only influences the outcome through directed paths. We formalize this as
+\[ P(y \mid \mathrm{do}(z), \mathrm{do}(x), w) = P(y \mid z, \mathrm{do}(x), w) \text{ if } (Y \perp Z \mid W, X)_{G_\overline{X}, G_\underline{Z}}. \]
+<em>Note: Rule 2 can also be thought of as a generalization of the back-door criterion in which \( \mathrm{do}(X), W \) together form a back-door admissible set.</em></p>
+
+<h4 id="rule-3-when-we-can-ignore-an-intervention">Rule 3: When we can ignore an intervention</h4>
+
+<p>Rule 3 says that we can ignore an intervention when it doesn&rsquo;t influence the outcome through any path.</p>
+
+<h2 id="derivation-with-do-calculus">Derivation with Do-Calculus</h2>
+
+<p>Assuming we have the graph given above and start with \( P(y \mid \mathrm{do}(x)) \), we can use the following series of do-calculus and probability transformations to derive an expression that only includes observational probabilities:
+\[
+\begin{aligned}
+    P(y \mid \mathrm{do}(x)) &amp;= \sum_z P(y \mid \mathrm{do}(x), z) P(z \mid \mathrm{do}(x)) &amp; \text{(Rule 2 twice)}\\<br />
+                       &amp;= \sum_z P(y \mid \mathrm{do}(x), \mathrm{do}(z)) P(z \mid x) &amp; \text{(Rule 2)} \\<br />
+                       &amp;= \sum_{z, u} P(y \mid \mathrm{do}(x), \mathrm{do}(z), u) P(u \mid \mathrm{do}(x), \mathrm{do}(z)) P(z \mid x) &amp; \text{(Rule 3)}\\<br />
+                       &amp;= \sum_{z, u} P(y \mid \mathrm{do}(z), u) P(u \mid \mathrm{do}(z)) P(z \mid x) &amp; \text{(Marginalization)} \\<br />
+                       &amp;= \sum_{z} P(y \mid \mathrm{do}(z)) P(z \mid x) &amp; \text{(Introduce auxiliary ( x&rsquo; ))} \\<br />
+                       &amp;= \sum_{z} P(z \mid x) \sum_{x&rsquo;} P(y \mid \mathrm{do}(z), x&rsquo;) P(x&rsquo; \mid \mathrm{do}(z)) &amp; \text{(Rule 2)} \\<br />
+                       &amp;= \sum_{z} P(z \mid x) \sum_{x&rsquo;} P(y \mid z, x&rsquo;) P(x&rsquo; \mid \mathrm{do}(z)) &amp; \text{(Rule 3)} \\<br />
+                       &amp;= \sum_{z} P(z \mid x) \sum_{x&rsquo;} P(y \mid z, x&rsquo;) P(x&rsquo;).
+\end{aligned}
+\]</p>
+<div class="footnotes">
+
+<hr />
+
+<ol>
+<li id="fn:1"><a href="http://www.michaelnielsen.org/ddi/if-correlation-doesnt-imply-causation-then-what-does/">If correlation doesn&rsquo;t imply causation, then what does?</a>
+ <a class="footnote-return" href="#fnref:1"><sup>[return]</sup></a></li>
+<li id="fn:2"><a href="https://ftp.cs.ucla.edu/pub/stat_ser/r402.pdf">Primer by Pearl on the do-calculus</a>
+ <a class="footnote-return" href="#fnref:2"><sup>[return]</sup></a></li>
+<li id="fn:3"><a href="https://ftp.cs.ucla.edu/pub/stat_ser/r327.pdf">Ilya Shpiter&rsquo;s work proving the completeness of the do-calculus</a>: note that I haven&rsquo;t read this and currently don&rsquo;t <em>know</em> the completeness proof.
+ <a class="footnote-return" href="#fnref:3"><sup>[return]</sup></a></li>
+</ol>
+</div>
+</div>
+</main>
+ 
+
+
+
+
+
+
+<div class="tl fixed list-pages lh-copy" id="contents-list"></div>
+
+
+
+<div class="pagination tc tr-l db fixed-l bottom-2-l right-2-l mb3 mb0-l">
+  
+<a id="scroll-to-top" class="f6 o-0 link br2 ph2 pv1 mb1 bg-main-color pointer" onclick="topFunction()" style="color: #fff; visibility: hidden; display: none; transition: opacity .5s, visibility .5s;" title="back to top">back to top</a>
+<br>
+  <p class="mb0 mt2">
+  <a href="https://an1lam.github.io/post/2020-03-01-coffee-rct/">prev post</a>
+  
+  </p>
+</div>
+
+  <footer class="content-width mt0 mt5-l mb4 f6 center ph3 gray tc tl-l">
+  <hr class="dn db-l ml0-l gray w3"><br>
+  Powered by <a href="https://gohugo.io/" target="_blank" class="link gray dim">Hugo</a>, based on the <a href="https://github.com/lingxz/er" target="_blank" class="link gray dim">Er</a> theme. <br>
+  
+</footer>
+  
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.css">
+<style>.is-active-link::before { background-color: var(--secondary-color); }</style>
+
+
+
+
+<script type="text/javascript">
+var prevScrollpos = window.pageYOffset;
+window.onscroll = function() {
+  var currentScrollPos = window.pageYOffset;
+
+  
+  if (document.getElementById("tag-cloud") !== null) { 
+    if (prevScrollpos > currentScrollPos) { 
+      document.getElementById("tag-cloud").style.visibility = "visible";
+      document.getElementById("tag-cloud").style.opacity = "1";
+    } else {
+      document.getElementById("tag-cloud").style.visibility = "hidden";
+      document.getElementById("tag-cloud").style.opacity = "0";
+    }
+  }
+  
+
+  
+  if (document.body.scrollTop > 1000 || document.documentElement.scrollTop > 1000) {
+      document.getElementById("scroll-to-top").style.display = "inline";
+      document.getElementById("scroll-to-top").style.visibility = "visible";
+      document.getElementById("scroll-to-top").style.opacity = "1";
+  } else {
+      document.getElementById("scroll-to-top").style.visibility = "hidden";
+      document.getElementById("scroll-to-top").style.opacity = "0";
+  }
+  
+  prevScrollpos = currentScrollPos;
+}
+
+
+function topFunction() {
+  document.body.scrollTop = 0; 
+  document.documentElement.scrollTop = 0; 
+}
+
+
+
+
+
+
+if (document.getElementById("contents-list") !== null && document.getElementsByClassName("post-content").length !== 0) { 
+  tocbot.init({
+    
+    tocSelector: '#contents-list',
+    
+    contentSelector: '.post-content',
+    
+    headingSelector: 'h1, h2, h3',
+  });
+}
+
+
+</script>
+
+
+
+
+</body>
+</html>

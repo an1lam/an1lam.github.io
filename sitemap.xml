@@ -4,8 +4,38 @@
   
   <url>
     <loc>https://an1lam.github.io/</loc>
-    <lastmod>2020-03-01T00:00:00+00:00</lastmod>
+    <lastmod>2020-03-09T00:00:00+00:00</lastmod>
     <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://an1lam.github.io/tags/causal-inference/</loc>
+    <lastmod>2020-03-09T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://an1lam.github.io/tags/derivation/</loc>
+    <lastmod>2020-03-09T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://an1lam.github.io/post/2020-03-09-front-door-do-calc-derivation/</loc>
+    <lastmod>2020-03-09T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://an1lam.github.io/tags/math/</loc>
+    <lastmod>2020-03-09T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://an1lam.github.io/post/</loc>
+    <lastmod>2020-03-09T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://an1lam.github.io/tags/</loc>
+    <lastmod>2020-03-09T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -14,7 +44,7 @@
   </url>
   
   <url>
-    <loc>https://an1lam.github.io/post/</loc>
+    <loc>https://an1lam.github.io/post/2020-03-06-exam-blogging-exponential-family-fun/</loc>
     <lastmod>2020-03-01T00:00:00+00:00</lastmod>
   </url>
   
@@ -44,11 +74,6 @@
   </url>
   
   <url>
-    <loc>https://an1lam.github.io/tags/</loc>
-    <lastmod>2019-12-12T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://an1lam.github.io/tags/genomics/</loc>
     <lastmod>2019-11-16T00:00:00+00:00</lastmod>
   </url>
@@ -74,11 +99,6 @@
   </url>
   
   <url>
-    <loc>https://an1lam.github.io/tags/causal-inference/</loc>
-    <lastmod>2019-11-15T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://an1lam.github.io/learning/2019-11-08-causal-inference/</loc>
     <lastmod>2019-11-15T00:00:00+00:00</lastmod>
   </url>
@@ -100,11 +120,6 @@
   
   <url>
     <loc>https://an1lam.github.io/tags/linear-algebra/</loc>
-    <lastmod>2019-08-13T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://an1lam.github.io/tags/math/</loc>
     <lastmod>2019-08-13T00:00:00+00:00</lastmod>
   </url>
   
@@ -505,6 +520,11 @@
   
   <url>
     <loc>https://an1lam.github.io/post/2018-11-03-deep-learning-goodfellow-ch4-notes/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://an1lam.github.io/post/2020-03-18-digital-minimalism-exp/</loc>
     <priority>0</priority>
   </url>
   

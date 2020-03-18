@@ -6,10 +6,22 @@
     <description>Recent content in Posts on Stephen Malina</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 01 Mar 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 09 Mar 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://an1lam.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Deriving the front-door criterion with the do-calculus</title>
+      <link>https://an1lam.github.io/post/2020-03-09-front-door-do-calc-derivation/</link>
+      <pubDate>Mon, 09 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://an1lam.github.io/post/2020-03-09-front-door-do-calc-derivation/</guid>
+      <description>Attention conservation notice: Narrow target audience - will only make sense to people somewhat familiar with causal inference who don&amp;rsquo;t find the result entirely boring.
+The Front-Door Criterion Suppose we have a causal graphical model that looks like the following.
+Assume \( U \) is unmeasured whereas \( X, M, Y \) can be measured. Notice that:
+ All directed paths from \( X \) to \( Y \) flow through \( M \).</description>
+    </item>
     
     <item>
       <title>Decaf vs. regular coffee blinded experiment</title>
@@ -19,6 +31,20 @@
       <guid>https://an1lam.github.io/post/2020-03-01-coffee-rct/</guid>
       <description>For a while, I&amp;rsquo;ve been convinced that decaf coffee has roughly the same effect on me as regular coffee. However, I haven&amp;rsquo;t been able to say with certainty because there&amp;rsquo;s huge potential for placebo effects. Starting tomorrow, I&amp;rsquo;ll be conducting a (99%) blinded experiment to test whether drinking regular vs. decaf coffee has a detectable effect on my mood and alertness.
 I intend to record the metrics I describe in the next section under the &amp;lsquo;Data collection&amp;rsquo; heading of this post and will also report results here once the experiment is over.</description>
+    </item>
+    
+    <item>
+      <title>Exam Blogging - Fun with the Exponential Family</title>
+      <link>https://an1lam.github.io/post/2020-03-06-exam-blogging-exponential-family-fun/</link>
+      <pubDate>Sun, 01 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://an1lam.github.io/post/2020-03-06-exam-blogging-exponential-family-fun/</guid>
+      <description>Disclaimer: Not a tutorial.
+ Not your average nuclear family.
+ - Kolmogorov
+ You won&amp;rsquo;t believe these 5 exponential family tricks!
+ - BuzzFeed
+Quick Intro The exponential family is a collection of probability distributions that can all be cast in the same true form (technically there are a few different forms but they&amp;rsquo;re equivalent under transformation). Surprisingly, the exponential family includes many of the probability distributions we know and love:</description>
     </item>
     
     <item>
@@ -841,6 +867,15 @@ A long, in-depth piece on the history of spreadsheet modeling. The two points th
       
       <guid>https://an1lam.github.io/post/2018-11-03-deep-learning-goodfellow-ch4-notes/</guid>
       <description> Chapter 4  What&amp;rsquo;s a multinoulli distribution? Show that softmax function is not affected by taking $ softmax(z) $ where $ z = x - max_i x_i $.  </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://an1lam.github.io/post/2020-03-18-digital-minimalism-exp/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://an1lam.github.io/post/2020-03-18-digital-minimalism-exp/</guid>
+      <description></description>
     </item>
     
   </channel>

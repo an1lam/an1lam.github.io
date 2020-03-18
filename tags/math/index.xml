@@ -6,10 +6,22 @@
     <description>Recent content in Math on Stephen Malina</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 13 Aug 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 09 Mar 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://an1lam.github.io/tags/math/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Deriving the front-door criterion with the do-calculus</title>
+      <link>https://an1lam.github.io/post/2020-03-09-front-door-do-calc-derivation/</link>
+      <pubDate>Mon, 09 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://an1lam.github.io/post/2020-03-09-front-door-do-calc-derivation/</guid>
+      <description>Attention conservation notice: Narrow target audience - will only make sense to people somewhat familiar with causal inference who don&amp;rsquo;t find the result entirely boring.
+The Front-Door Criterion Suppose we have a causal graphical model that looks like the following.
+Assume \( U \) is unmeasured whereas \( X, M, Y \) can be measured. Notice that:
+ All directed paths from \( X \) to \( Y \) flow through \( M \).</description>
+    </item>
     
     <item>
       <title>Matrix Potpourri</title>
