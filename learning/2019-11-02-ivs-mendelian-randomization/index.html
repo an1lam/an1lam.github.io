@@ -1,83 +1,105 @@
-<!doctype html>
-<html lang="en">
-<head><meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<meta content='text/html; charset=utf-8' http-equiv='content-type' />
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
 
-  <title>Paper Review - IVs and Mendelian Randomization - Stephen Malina</title>
-  <meta content='Paper Review - IVs and Mendelian Randomization - Stephen Malina' property='title' />
-  <meta content='Paper Review - IVs and Mendelian Randomization - Stephen Malina' property='og:title' />
+<head>
+<title>Stephen Malina - Paper Review - IVs and Mendelian Randomization</title>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
 
-
-<meta property="og:description" content="Summary Detailed Notes 3 IV Requirements  IV must have a direct influence on the treatment IV must not covary with the unmeasured confounding that impacts the outcome IV must not have a direct influence on the outcome  Relevant considerations for deciding whether to do an IV analysis  Is there any unmeasured confounding?  If not, is the answer that we can just use a normal regression?  When is unmeasured confounding especially likely?" />
-<meta property="og:type" content="article" />
-<meta property="og:url" content="https://an1lam.github.io/learning/2019-11-02-ivs-mendelian-randomization/" />
-
-
-<meta property="article:published_time" content="2019-11-03T00:00:00&#43;00:00"/>
-
-<meta property="article:modified_time" content="2019-11-03T00:00:00&#43;00:00"/>
-
-
-
-
-
-
-
-
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="">
+<meta name="keywords" content="">
+<meta name="author" content="Stephen Malina">
 <meta name="generator" content="Hugo 0.57.2" />
 
-<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600" rel="stylesheet">
-<style type="text/css">/*https://coolors.co/afd5aa-f0f2ef-a69f98-3d3d3d-8c6057*/
-:root {
-  --main-color: #8C6056; 
-  --secondary-color: #AFD5AA;
-  --logo-text-color: #fff;
-  --body-text-color: #3d3d3d;
-  --heading-text-color: #383838;
-  --background-color: #fff;
-}</style>
-<link href='/css/tachyons.min.css' rel="stylesheet">
-<link href='/css/styles.css' rel="stylesheet">
+  
+  
+
+  <script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    displayMath: [['$$','$$'], ['\\[','\\]']],
+    processEscapes: true,
+    processEnvironments: true,
+    menuSettings: { zoom: "Double-Click" },
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+    TeX: { equationNumbers: { autoNumber: "AMS" },
+         extensions: ["AMSmath.js", "AMSsymbols.js"] }
+  }
+});
+</script>
+
+<script type="text/javascript"
+  src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
 
 
-<link rel="icon" 
- 
-  href='/favicon.ico'
 
-type="image/x-icon"/>
 
-<link href='/feed.xml' rel="alternate" type="application/atom+xml" title="Stephen Malina" />
+
+
+
+<link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
+
+
+    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/grids-responsive-min.css">
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+
+<link rel="stylesheet" href="https://an1lam.github.io/css/tufte.css">
+<link rel="stylesheet" href="https://an1lam.github.io/css/hugo-tufte.css">
+<link rel="stylesheet" href="https://an1lam.github.io/css/hugo-tufte-override.css">
+
 </head>
-<body class="global-font">
-  <nav class=" flex-ns justify-between border-box pa3 pl3-l pr2-l mt1 mt0-ns" id="navbar">
-  <div class="flex">
-    <a class="f4 fw6 ttu no-underline dim bg-main-color pv1 ph2 br2" id="site-title" href='/' title="Home">Stephen Malina</a>
-  </div>
-  
-  <div class=" flex-ns mt2 mt0-ns pv1">
+
+
+<body>
+<div id="layout" class="pure-g">
+<article class="pure-u-1">
+<header class="brand">
+  <h1>Stephen Malina</h1>
+  <h2>This is my blog. There are many others like it but this one is mine.</h2>
+  <nav class="menu">
+    <ul>
     
-      <a class="link dim dark-gray f6 dib mr2 mr3-l ttu tracked" href='/about' title="About">About</a>
+        <li><a href="https://an1lam.github.io/">Home</a></li>
     
-      <a class="link dim dark-gray f6 dib mr2 mr3-l ttu tracked" href='/' title="Blog">Blog</a>
+        <li><a href="https://an1lam.github.io/about">About</a></li>
     
-      <a class="link dim dark-gray f6 dib mr2 mr3-l ttu tracked" href='/progress' title="The State of My Mind">The State of My Mind</a>
+        <li><a href="https://an1lam.github.io/posts">Posts</a></li>
     
-  </div>
-  
+        <li><a href="https://an1lam.github.io/tags">Tags</a></li>
+    
+        <li><a href="https://an1lam.github.io/progress">The State of My Mind</a></li>
+    
+    </ul>
 </nav>
+
+</header>
+
+<section>
+<h1 class="content-title">
   
-<main class="center mv4 content-width ph3">
-  <div class="f3 fw6 heading-color heading-font post-title">Paper Review - IVs and Mendelian Randomization</div>
-  <p class="silver f6 mt1 mb4 post-meta">
-    <time>03 Nov 2019</time> 
-     | 
-    
-    
-    tags: [ <a href='/tags/causality' class="link silver">Causality</a> <a href='/tags/statistics' class="link silver">Statistics</a> <a href='/tags/notes' class="link silver">Notes</a>  ]
-    
-  </p>
-  <div class="lh-copy post-content">
+  <a href="https://an1lam.github.io/learning/2019-11-02-ivs-mendelian-randomization/">Paper Review - IVs and Mendelian Randomization</a>
+  
+</h1>
+
+
+
+
+</section>
+
+
+
+<section>
 
 <h1 id="summary">Summary</h1>
 
@@ -361,117 +383,46 @@ type="image/x-icon"/>
 \[ \frac{1}{2}(\hat{\mathbb{E}}[D_i \mid Z_i = 1] + (1-\hat{\mathbb{E}}[D_i \mid Z_i = 1])) \]</li>
 </ul></li>
 </ul>
-</div>
-</main>
- 
-
-
-
-
-
-
-<div class="tl fixed list-pages lh-copy" id="contents-list"></div>
-
-
-
-<div class="pagination tc tr-l db fixed-l bottom-2-l right-2-l mb3 mb0-l">
+</section>
+<section>
   
-<a id="scroll-to-top" class="f6 o-0 link br2 ph2 pv1 mb1 bg-main-color pointer" onclick="topFunction()" style="color: #fff; visibility: hidden; display: none; transition: opacity .5s, visibility .5s;" title="back to top">back to top</a>
-<br>
-  <p class="mb0 mt2">
-  <a href="https://an1lam.github.io/learning/2019-05-20-linear-algebra-done-right-ch6-notes/">prev post</a>
-  <a href="https://an1lam.github.io/learning/2019-11-08-causal-inference/">next post</a>
+
+  <footer class="page-footer">
+		<hr>
+		<ul class="page-footer-menu">
+		
+      <li><a href="https://github.com/an1lam"><i class='fa fa-github fa-2x'></i> </a></li>
+		
+      <li><a href="https://twitter.com/an1lam"><i class='fa fa-twitter fa-2x'></i> </a></li>
+		
+      <li><a href="mailto:stephenmalina@gmail.com"><i class='fa fa-envelope fa-2x'></i> </a></li>
+		
+      <li><a href="https://stackoverflow.com/users/1631855/an1lam"><i class='fa fa-stack-overflow fa-2x'></i> </a></li>
+		
+		</ul>
+
+  
+    <p>
+      Powered by <a href="https://gohugo.io">Hugo</a> and the
+      <a href="https://github.com/shawnohare/hugo-tufte">Tufte theme</a>.
+    </p>
+  
+
+	<div class="copyright">
+	<p>
+    
+      &copy; 2020
+    .
+    All rights reserved.
+    
   </p>
 </div>
-
-  <footer class="content-width mt0 mt5-l mb4 f6 center ph3 gray tc tl-l">
-  <hr class="dn db-l ml0-l gray w3"><br>
-  Powered by <a href="https://gohugo.io/" target="_blank" class="link gray dim">Hugo</a>, based on the <a href="https://github.com/lingxz/er" target="_blank" class="link gray dim">Er</a> theme. <br>
-  
 </footer>
-  
 
 
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.min.js"></script>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.css">
-<style>.is-active-link::before { background-color: var(--secondary-color); }</style>
-
-
-
-
-<script type="text/javascript">
-var prevScrollpos = window.pageYOffset;
-window.onscroll = function() {
-  var currentScrollPos = window.pageYOffset;
-
-  
-  if (document.getElementById("tag-cloud") !== null) { 
-    if (prevScrollpos > currentScrollPos) { 
-      document.getElementById("tag-cloud").style.visibility = "visible";
-      document.getElementById("tag-cloud").style.opacity = "1";
-    } else {
-      document.getElementById("tag-cloud").style.visibility = "hidden";
-      document.getElementById("tag-cloud").style.opacity = "0";
-    }
-  }
-  
-
-  
-  if (document.body.scrollTop > 1000 || document.documentElement.scrollTop > 1000) {
-      document.getElementById("scroll-to-top").style.display = "inline";
-      document.getElementById("scroll-to-top").style.visibility = "visible";
-      document.getElementById("scroll-to-top").style.opacity = "1";
-  } else {
-      document.getElementById("scroll-to-top").style.visibility = "hidden";
-      document.getElementById("scroll-to-top").style.opacity = "0";
-  }
-  
-  prevScrollpos = currentScrollPos;
-}
-
-
-function topFunction() {
-  document.body.scrollTop = 0; 
-  document.documentElement.scrollTop = 0; 
-}
-
-
-
-
-
-
-if (document.getElementById("contents-list") !== null && document.getElementsByClassName("post-content").length !== 0) { 
-  tocbot.init({
-    
-    tocSelector: '#contents-list',
-    
-    contentSelector: '.post-content',
-    
-    headingSelector: 'h1, h2, h3',
-  });
-}
-
-
-</script>
-
-
-
-
-
-
-<script type="text/x-mathjax-config">
-  MathJax.Hub.Config({
-    tex2jax: {
-      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
-      processEscapes: true
-    }
-  });
-</script>
-<script type="text/javascript" async
-  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
-</script>
-
-
+</section>
+</article>
+</div>
 </body>
 </html>

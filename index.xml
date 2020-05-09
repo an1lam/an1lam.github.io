@@ -6,7 +6,7 @@
     <description>Recent content on Stephen Malina</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 18 Mar 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 18 Mar 2020 00:00:00 -0400</lastBuildDate>
     
 	<atom:link href="https://an1lam.github.io/index.xml" rel="self" type="application/rss+xml" />
     
@@ -14,7 +14,7 @@
     <item>
       <title>Digital Reduction Experiment</title>
       <link>https://an1lam.github.io/post/2020-03-18-digital-minimalism-exp/</link>
-      <pubDate>Wed, 18 Mar 2020 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 18 Mar 2020 00:00:00 -0400</pubDate>
       
       <guid>https://an1lam.github.io/post/2020-03-18-digital-minimalism-exp/</guid>
       <description>Intro / Motivation I know I&amp;rsquo;m a walking millenial trope, but I&amp;rsquo;m starting a deliberate experiment to dramatically reduce my internet engagement. Especially while I&amp;rsquo;m quarantined for who knows how long, I want to almost entirely stop:
@@ -939,6 +939,15 @@ Despite the above disclaimer, I included this because I mentioned the Marathon M
       <description>This is a weekly newsletter I publish each week that contains content I enjoyed and hope that you will enjoy. If you have questions or comments, you can find me at stephenmalina@gmail.com or on Twitter.
 Technology and Human Augmentation A Spreadsheet Way of Knowledge
 A long, in-depth piece on the history of spreadsheet modeling. The two points that stick with me from this piece are the dismissive attitude people initially had towards the spreadsheet and the obsession with modeling people displayed (and continue to display).</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://an1lam.github.io/home/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://an1lam.github.io/home/</guid>
+      <description>test</description>
     </item>
     
     <item>
