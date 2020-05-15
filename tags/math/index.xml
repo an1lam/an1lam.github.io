@@ -24,6 +24,16 @@ Assume $ U $ is unmeasured whereas $ X, M, Y $ can be measured. Notice that:
     </item>
     
     <item>
+      <title>Let&#39;s Derive - Baum-Welch for HMMs</title>
+      <link>https://an1lam.github.io/post/2019-11-01-baum-welch/</link>
+      <pubDate>Fri, 01 Nov 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://an1lam.github.io/post/2019-11-01-baum-welch/</guid>
+      <description>I&amp;rsquo;ve gotten so tired of reading other people&amp;rsquo;s descriptions of Baum Welch that don&amp;rsquo;t seem to help me understand it better so I&amp;rsquo;ve decided to write my own. Hopefully, this makes it so that I never have to read anyone else&amp;rsquo;s description again.
+Reader Assumptions Since I&amp;rsquo;m writing this for myself, I&amp;rsquo;m going to assume a lot of knowledge. If you&amp;rsquo;ve never heard of an HMM, this post&amp;rsquo;s probably not for you.</description>
+    </item>
+    
+    <item>
       <title>Matrix Potpourri</title>
       <link>https://an1lam.github.io/post/2019-09-07-matrix-potpourri/</link>
       <pubDate>Tue, 13 Aug 2019 00:00:00 +0000</pubDate>
@@ -86,6 +96,21 @@ For (a), to show $ E $ is a subspace of $ \mathcal L(V, W) $, we need to show th
       <guid>https://an1lam.github.io/learning/2018-12-24-linear-algebra-done-right-ch2-notes/</guid>
       <description>Intro I&amp;rsquo;ve recently been making my way through Axler&amp;rsquo;s Linear Algebra Done Right and, as a way to motivate myself to continue, have decided to blog my notes and solutions for exercises as I go.
 Insights Section 2.A You can convert any linearly dependent list to a linearly independent list with the same span. By the linear dependence lemma, if you have a list that&amp;rsquo;s linearly dependenty, then you can remove one item without changing the list&amp;rsquo;s span.</description>
+    </item>
+    
+    <item>
+      <title>Math Sample</title>
+      <link>https://an1lam.github.io/post/2017-03-05-math-sample/</link>
+      <pubDate>Sun, 05 Mar 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://an1lam.github.io/post/2017-03-05-math-sample/</guid>
+      <description>&lt;p&gt;KaTeX can be used to generate complex math formulas server-side.&lt;/p&gt;
+
+&lt;p&gt;$$
+\phi = \frac{(1+\sqrt{5})}{2} = 1.6180339887\cdots
+$$&lt;/p&gt;
+
+&lt;p&gt;Additional details can be found on &lt;a href=&#34;https://github.com/Khan/KaTeX&#34;&gt;GitHub&lt;/a&gt; or on the &lt;a href=&#34;http://tiddlywiki.com/plugins/tiddlywiki/katex/&#34;&gt;Wiki&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
     
   </channel>

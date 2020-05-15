@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+
+<head>
+<title>Stephen Malina - Notes on Terry Tao&#39;s &#34;Analysis I&#34;</title>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="">
+<meta name="keywords" content="">
+<meta name="author" content="Stephen Malina">
+<meta name="generator" content="Hugo 0.57.2" />
+
+  
+  
+
+
+
+
+
+
+<link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
+
+
+    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/grids-responsive-min.css">
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+
+<link rel="stylesheet" href="https://an1lam.github.io/css/tufte.css">
+<link rel="stylesheet" href="https://an1lam.github.io/css/hugo-tufte.css">
+<link rel="stylesheet" href="https://an1lam.github.io/css/hugo-tufte-override.css">
+
+</head>
+
+
+<body>
+<div id="layout" class="pure-g">
+<article class="pure-u-1">
+<header class="brand">
+  <h1>Stephen Malina</h1>
+  <h2>This is my blog. There are many others like it but this one is mine.</h2>
+  <nav class="menu">
+    <ul>
+    
+        <li><a href="https://an1lam.github.io/">Home</a></li>
+    
+        <li><a href="https://an1lam.github.io/about">About</a></li>
+    
+        <li><a href="https://an1lam.github.io/post">Post</a></li>
+    
+        <li><a href="https://an1lam.github.io/tags">Tags</a></li>
+    
+        <li><a href="https://an1lam.github.io/progress">The State of My Mind</a></li>
+    
+    </ul>
+</nav>
+
+</header>
+
+<section>
+<h1 class="content-title">
+  
+  <a href="https://an1lam.github.io/post/2018-10-28-analysis-i-notes/">Notes on Terry Tao&#39;s &#34;Analysis I&#34; :: Draft </a>
+  
+</h1>
+
+
+
+  <span class="content-meta">
+    
+
+
+    
+      <i class="fa fa-calendar"></i>
+      &nbsp;Oct 16, 2018
+    
+
+    
+      &nbsp;<i class="fa fa-clock-o"></i>
+      &nbsp;2 min read
+    
+
+    
+  </span>
+
+
+</section>
+
+
+
+<section>
+
+<h2 id="chapter-2">Chapter 2</h2>
+
+<h3 id="notes">Notes</h3>
+
+<p>In which I sketch out some proofs and copy in the relevant Peano Axioms along the way.</p>
+
+<h4 id="proof-the-sum-of-two-natural-numbers-is-also-a-natural-number">Proof: The sum of two natural numbers is also a natural number.</h4>
+
+<p><strong>Axiom 2.1.</strong> 0 is a natural number.<br />
+<strong>Axiom 2.2.</strong> If n is a natural number, then $n{+}{+}$ is also a natural number.<br />
+<strong>Axiom 2.5.</strong> For property, $P(n)$, if $P(0)$ and, for arbitrary natural number n, $P(n)$ implies $P(n{+}{+})$, then $P(n)$ is true for all $n \in N$.<br />
+<strong>Definition 2.2.1 (Addition of natural numbers).</strong> Let m be a natural number. To add 0 to m, we define $0 + m := m$. Assume we&rsquo;ve defined how to add n to m, let us define $(n{+}{+}) + m := (n+m){+}{+}$.<br />
+<strong>Proposition.</strong> For any $n \in N$, with fixed $m \in N$, $n+m$ is a natural number.<br />
+<strong>Proof.</strong> Assume $m$ is a fixed natural number. $0+m$ is a natural number because $0+m:=m$. Inductively, assume $n+m$ is a natural number. $(n{+}{+})+m=(n+m){+}{+}$. We know $n+m$ is a natural number because of the inductive hypothesis. By Axiom 2.2, $(n+m){+}{+}$ is also a natural number.<br />
+<strong>Question for QC.</strong> Is this a valid proof? How come I didn&rsquo;t have to use Axiom 2.1?</p>
+
+<h4 id="proof-for-any-natural-number-n-n-0-n">Proof: For any natural number, n, n+0 = n.</h4>
+
+<p><strong>Proof (By induction).</strong> When $n = 0$, $0 + 0 = 0$ by definition of addition. If by inductive hypothesis, $n + 0 = n$, then $(n++) + 0 = (n+0)++ = n++$.</p>
+
+<h3 id="exercises">Exercises</h3>
+</section>
+<section>
+  
+
+  <footer class="page-footer">
+		<hr>
+		<ul class="page-footer-menu">
+		
+      <li><a href="https://github.com/an1lam"><i class='fa fa-github fa-2x'></i> </a></li>
+		
+      <li><a href="https://twitter.com/an1lam"><i class='fa fa-twitter fa-2x'></i> </a></li>
+		
+      <li><a href="mailto:stephenmalina@gmail.com"><i class='fa fa-envelope fa-2x'></i> </a></li>
+		
+      <li><a href="https://stackoverflow.com/users/1631855/an1lam"><i class='fa fa-stack-overflow fa-2x'></i> </a></li>
+		
+		</ul>
+
+  
+    <p>
+      Powered by <a href="https://gohugo.io">Hugo</a> and the
+      <a href="https://github.com/shawnohare/hugo-tufte">Tufte theme</a>.
+    </p>
+  
+
+	<div class="copyright">
+	<p>
+    
+      &copy; 2020
+    .
+    All rights reserved.
+    
+  </p>
+</div>
+</footer>
+
+
+
+</section>
+</article>
+</div>
+</body>
+</html>

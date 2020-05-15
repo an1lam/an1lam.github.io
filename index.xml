@@ -35,6 +35,15 @@ Assume $ U $ is unmeasured whereas $ X, M, Y $ can be measured. Notice that:
     </item>
     
     <item>
+      <title>Course Review - Causal Inference</title>
+      <link>https://an1lam.github.io/post/2020-05-08-ci-course-review/</link>
+      <pubDate>Sun, 01 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://an1lam.github.io/post/2020-05-08-ci-course-review/</guid>
+      <description>This semester, I had the pleasure of taking a course on Causal Inference with Professor Elias Bareinboim, one of Judea Pearl&amp;rsquo;s former students and author of some seminal results in Causal Inference. I feel like this course highlighted not only the content Causal Inference researchers consider important but also the types of understanding they value. In this review, I&amp;rsquo;ll focus on the latter. I hope to write some blog posts in the future about the former but have learned from past experience not to promise future posts unless I have time during which I know I can write them.</description>
+    </item>
+    
+    <item>
       <title>Decaf vs. regular coffee blinded experiment</title>
       <link>https://an1lam.github.io/post/2020-03-01-coffee-rct/</link>
       <pubDate>Sun, 01 Mar 2020 00:00:00 +0000</pubDate>
@@ -42,6 +51,30 @@ Assume $ U $ is unmeasured whereas $ X, M, Y $ can be measured. Notice that:
       <guid>https://an1lam.github.io/post/2020-03-01-coffee-rct/</guid>
       <description>For a while, I&amp;rsquo;ve been convinced that decaf coffee has roughly the same effect on me as regular coffee. However, I haven&amp;rsquo;t been able to say with certainty because there&amp;rsquo;s huge potential for placebo effects. Starting tomorrow, I&amp;rsquo;ll be conducting a (99%) blinded experiment to test whether drinking regular vs. decaf coffee has a detectable effect on my mood and alertness.
 I intend to record the metrics I describe in the next section under the &amp;lsquo;Data collection&amp;rsquo; heading of this post and will also report results here once the experiment is over.</description>
+    </item>
+    
+    <item>
+      <title>Exam Blogging - Fun with the Exponential Family</title>
+      <link>https://an1lam.github.io/post/2020-03-06-exam-blogging-exponential-family-fun/</link>
+      <pubDate>Sun, 01 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://an1lam.github.io/post/2020-03-06-exam-blogging-exponential-family-fun/</guid>
+      <description>Disclaimer: Not a tutorial.
+ Not your average nuclear family.
+ - Kolmogorov
+ You won&amp;rsquo;t believe these 5 exponential family tricks!
+ - BuzzFeed
+Quick Intro The exponential family is a collection of probability distributions that can all be cast in the same true form (technically there are a few different forms but they&amp;rsquo;re equivalent under transformation). Surprisingly, the exponential family includes many of the probability distributions we know and love:</description>
+    </item>
+    
+    <item>
+      <title>Goodbye, Grandpa</title>
+      <link>https://an1lam.github.io/post/2020-01-10-farewell-pa/</link>
+      <pubDate>Fri, 10 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://an1lam.github.io/post/2020-01-10-farewell-pa/</guid>
+      <description>The speaker next in line was a spiritual sage who was widely respected for his kindness and gentleness as well as for his devotion. As he strode to the podium, a small boy yelled out from the audience: “The dragon is bad!”
+The boy’s parents turned bright red and began hushing and scolding the child. But the sage said, “Let the boy speak. He is probably wiser than an old fool like me.</description>
     </item>
     
     <item>
@@ -90,6 +123,25 @@ Observe that every path between two exogenous variables starts with variables go
       
       <guid>https://an1lam.github.io/learning/2019-11-02-ivs-mendelian-randomization/</guid>
       <description>Summary Detailed Notes 3 IV Requirements  IV must have a direct influence on the treatment IV must not covary with the unmeasured confounding that impacts the outcome IV must not have a direct influence on the outcome  Relevant considerations for deciding whether to do an IV analysis  Is there any unmeasured confounding?  If not, is the answer that we can just use a normal regression?  When is unmeasured confounding especially likely?</description>
+    </item>
+    
+    <item>
+      <title>Let&#39;s Derive - Baum-Welch for HMMs</title>
+      <link>https://an1lam.github.io/post/2019-11-01-baum-welch/</link>
+      <pubDate>Fri, 01 Nov 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://an1lam.github.io/post/2019-11-01-baum-welch/</guid>
+      <description>I&amp;rsquo;ve gotten so tired of reading other people&amp;rsquo;s descriptions of Baum Welch that don&amp;rsquo;t seem to help me understand it better so I&amp;rsquo;ve decided to write my own. Hopefully, this makes it so that I never have to read anyone else&amp;rsquo;s description again.
+Reader Assumptions Since I&amp;rsquo;m writing this for myself, I&amp;rsquo;m going to assume a lot of knowledge. If you&amp;rsquo;ve never heard of an HMM, this post&amp;rsquo;s probably not for you.</description>
+    </item>
+    
+    <item>
+      <title>Against Athletic Recruiting</title>
+      <link>https://an1lam.github.io/post/2019-08-13-against-athletic-recruiting/</link>
+      <pubDate>Tue, 13 Aug 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://an1lam.github.io/post/2019-08-13-against-athletic-recruiting/</guid>
+      <description>Introduction Given recent discussions of admissions quotas for certain groups at elite universities, I&amp;rsquo;ve been surprised to see little discussion of athlete admissions and athletic recruiting at schools like Harvard. I&amp;rsquo;m especially surprised to see so little discussion of this in my Twitter-sphere, which consists of ~0 former recruited athletes as far as I know. So, in this post, I will make the case for eliminating athletic recruiting at &amp;ldquo;elite&amp;rdquo; universities.</description>
     </item>
     
     <item>
@@ -199,6 +251,24 @@ While I&amp;rsquo;m willing to swallow the bitter pill that feudal-ish structure
     </item>
     
     <item>
+      <title>Book Review - Self Therapy</title>
+      <link>https://an1lam.github.io/post/2019-02-07-self-therapy-review/</link>
+      <pubDate>Thu, 07 Feb 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://an1lam.github.io/post/2019-02-07-self-therapy-review/</guid>
+      <description>An example is worth a thousand words: the case studies are so much more useful than vague quotes A younger me would&amp;rsquo;ve enjoyed this more The emotional bias twisting the model and lack of effort to make the model coherent was very hard for me to deal with How can Self both have characteristics like curiosity and compassion but not be a part? I want more nitty gritty, what&amp;rsquo;s the qualia of asking a part?</description>
+    </item>
+    
+    <item>
+      <title>Automated Theorem Proving with ML Literature Review</title>
+      <link>https://an1lam.github.io/post/2018-12-30-ml-atp-review/</link>
+      <pubDate>Sat, 05 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://an1lam.github.io/post/2018-12-30-ml-atp-review/</guid>
+      <description> Reinforcement Learning of Theorem Proving: Applies MCTS/XGBoost-based RL to build a better first-order logic theorem prover. MizAR 40 for Mizar 40: Applies an ensemble of automated theorem provers and hand-selected premises to achieve 56.2% accuracy at proving theorems in the MML.  </description>
+    </item>
+    
+    <item>
       <title>Linear Algebra Done Right - Chapter 2</title>
       <link>https://an1lam.github.io/learning/2018-12-24-linear-algebra-done-right-ch2-notes/</link>
       <pubDate>Mon, 24 Dec 2018 00:00:00 +0000</pubDate>
@@ -229,6 +299,27 @@ This is the first time I&amp;rsquo;ve posted on Facebook in &amp;hellip; long. H
     </item>
     
     <item>
+      <title>Notes on Michael Nielsen&#39;s &#34;Neural Networks and Deep Learning&#34;</title>
+      <link>https://an1lam.github.io/post/2018-10-16-michael-nielsen-deep-learning-notes/</link>
+      <pubDate>Tue, 16 Oct 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://an1lam.github.io/post/2018-10-16-michael-nielsen-deep-learning-notes/</guid>
+      <description>Chapter 1 Notes  How far can perceptron&amp;rsquo;s take us? How much do Marvin Minsky&amp;rsquo;s objections to perceptrons apply to sigmoid neurons? [For QC]: How would I, if I were inventing logistic neurons for the first time, know to propose the sigmoid function? What properties would I look at? [For QC]: How much do you rely on reasoning in your head vs. writing things out, especially when you&amp;rsquo;re reading? [For QC]: Ratio of thinking to reading, how much time do you spend on each point?</description>
+    </item>
+    
+    <item>
+      <title>Notes on Terry Tao&#39;s &#34;Analysis I&#34;</title>
+      <link>https://an1lam.github.io/post/2018-10-28-analysis-i-notes/</link>
+      <pubDate>Tue, 16 Oct 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://an1lam.github.io/post/2018-10-28-analysis-i-notes/</guid>
+      <description>Chapter 2 Notes In which I sketch out some proofs and copy in the relevant Peano Axioms along the way.
+Proof: The sum of two natural numbers is also a natural number. Axiom 2.1. 0 is a natural number.
+Axiom 2.2. If n is a natural number, then $n{+}{+}$ is also a natural number.
+Axiom 2.5. For property, $P(n)$, if $P(0)$ and, for arbitrary natural number n, $P(n)$ implies $P(n{+}{+})$, then $P(n)$ is true for all $n \in N$.</description>
+    </item>
+    
+    <item>
       <title>State of my Mind</title>
       <link>https://an1lam.github.io/progress/</link>
       <pubDate>Fri, 12 Oct 2018 00:00:00 +0000</pubDate>
@@ -238,12 +329,31 @@ This is the first time I&amp;rsquo;ve posted on Facebook in &amp;hellip; long. H
     </item>
     
     <item>
+      <title>Fact Post - How Safe Is Biking in NYC?</title>
+      <link>https://an1lam.github.io/post/2018-07-01-fact-post-biking-in-nyc/</link>
+      <pubDate>Sun, 01 Jul 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://an1lam.github.io/post/2018-07-01-fact-post-biking-in-nyc/</guid>
+      <description>I want to practice changing my mind from data. Biking is a good testing ground because I&amp;rsquo;ve only recently started doing it and I&amp;rsquo;m not emotionally attached to it.
+Personal Pre-Registration Before I dive into the data, I should decide what it would take for me to decide to stop biking to and from work 2 to 3 times a week, as I&amp;rsquo;ve recently started doing. This is hard because my risk tolerance in % terms isn&amp;rsquo;t very calibrated.</description>
+    </item>
+    
+    <item>
       <title>Statistical Models - Theory and Practice</title>
       <link>https://an1lam.github.io/post/2018-06-12-statistical-models-ch-2/</link>
       <pubDate>Tue, 12 Jun 2018 00:00:00 +0000</pubDate>
       
       <guid>https://an1lam.github.io/post/2018-06-12-statistical-models-ch-2/</guid>
       <description>Questions  What does the regression equation mean? Is the idea that we get bigger $ r $ values when $ x $ and $ y $ deviate together? What does it mean for a function to be convex beyond $ f((x + y) / 2)) \leq (f(x) + f(y)) / 2 $? Put another way, why is this the proof of convexity?  $$ h\_{son} = slope * h\_{father} + yint = 70.</description>
+    </item>
+    
+    <item>
+      <title>Caplan&#39;s &#34;The Case Against Education&#34; - Part 1</title>
+      <link>https://an1lam.github.io/post/2018-06-10-the-case-against-education-part-1/</link>
+      <pubDate>Sun, 10 Jun 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://an1lam.github.io/post/2018-06-10-the-case-against-education-part-1/</guid>
+      <description>Introduction I really enjoyed Bryan Caplan&amp;rsquo;s The Case Against Education and value Caplan&amp;rsquo;s intellectual honesty, something for which few will reward him. It&amp;rsquo;s rare that someone makes the case against their own profession, especially when that profession is as universally praised as education. In fact, I can&amp;rsquo;t help but wonder whether Caplan has some sort of hidden motivation (h/t The Elephant In the Brain) for writing this book beyond truth-seeking.</description>
     </item>
     
     <item>
@@ -257,12 +367,132 @@ We learn about the difference between randomized controlled experiments and obse
     </item>
     
     <item>
+      <title>Coursera ML</title>
+      <link>https://an1lam.github.io/post/2018-06-04-machine-learning-week-10/</link>
+      <pubDate>Mon, 04 Jun 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://an1lam.github.io/post/2018-06-04-machine-learning-week-10/</guid>
+      <description>Large Scale Machine Learning Gradient Descent With Large Datasets  It&amp;rsquo;s not who has the best algorithm that wins. It&amp;rsquo;s who has the most data. - We want to be able to learn with large datasets. This rings very true with my experience. Data scientists at Compass were handicapped by the lack of large datasets.
+  Take linear regression as an example. How do we sanity check if a smaller training set will do just as well?</description>
+    </item>
+    
+    <item>
+      <title>Math Test</title>
+      <link>https://an1lam.github.io/post/2018-06-03-math-test/</link>
+      <pubDate>Sun, 03 Jun 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://an1lam.github.io/post/2018-06-03-math-test/</guid>
+      <description>This is a test of kramdown&amp;rsquo;s math formatting blocks:
+$$ \begin{align} &amp;amp; \phi(x,y) = \phi \left(\sum_{i=1}^n x_iei, \sum{j=1}^n y_jej \right) = \sum{i=1}^n \sum_{j=1}^n x_i y_j \phi(e_i, e_j) = &amp;amp; (x_1, \ldots, x_n) \left( \begin{array}{ccc} \phi(e_1, e_1) &amp;amp; \cdots &amp;amp; \phi(e_1, e_n) \vdots &amp;amp; \ddots &amp;amp; \vdots \phi(e_n, e_1) &amp;amp; \cdots &amp;amp; \phi(e_n, e_n) \end{array} \right) \left( \begin{array}{c} y_1 \vdots y_n \end{array} \right) \end{align} $$
+and inline math syntax: $$ \theta_j(x) $$.</description>
+    </item>
+    
+    <item>
       <title>JIT Reading</title>
       <link>https://an1lam.github.io/post/2018-02-24-jit-reading/</link>
       <pubDate>Sat, 24 Feb 2018 00:00:00 +0000</pubDate>
       
       <guid>https://an1lam.github.io/post/2018-02-24-jit-reading/</guid>
       <description>Seibel, James Hague and others have all tried to justify why code reading is so uncommon, and they make good points. But perhaps the conversation is led astray by use of the word read. I wonder if Abelson and the others would have had more examples if Seibel had asked them what code they had learned about for fun. Perhaps the word &amp;ldquo;read&amp;rdquo; put them in a passive frame of mind, caused them to filter out programs they&amp;rsquo;d hacked on?</description>
+    </item>
+    
+    <item>
+      <title>JIT Reading Outline</title>
+      <link>https://an1lam.github.io/post/2018-02-11-change-driven-reading-outline/</link>
+      <pubDate>Sun, 11 Feb 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://an1lam.github.io/post/2018-02-11-change-driven-reading-outline/</guid>
+      <description>High-Level Outline  Focus on code comprehension rather than code reading. When we focus on code reading, we&amp;rsquo;re prioritizing an image of what&amp;rsquo;s virtuous over the actual goal &amp;ndash; to understand something enough to change it or evolve it in a different domain. For comprehension, active beats passive, goal-directed beats random, and critical beats unquestioning. No one who cares about comprehension should encourage passive code reading. How can we design codebases for active, goal-directed, and critical reading?</description>
+    </item>
+    
+    <item>
+      <title>Marginalia - Gödel, Escher, Bach</title>
+      <link>https://an1lam.github.io/post/2018-01-25-godel-escher-bach/</link>
+      <pubDate>Thu, 25 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://an1lam.github.io/post/2018-01-25-godel-escher-bach/</guid>
+      <description>How much do isomorphisms play a role in our understanding of abstract concepts? &amp;gt; Sometimes it is helpful to think of the LISP statements as mere pieces of data which are fed &amp;gt; sequentially to a constant running machine language program (the LISP interpreter). When you &amp;gt; think of things this way, you get a different image of the relation between a program written in &amp;gt; a higher-level language and the machine which is executing it.</description>
+    </item>
+    
+    <item>
+      <title>Change-Driven Code Reading</title>
+      <link>https://an1lam.github.io/post/2017-12-30-change-driven-reading/</link>
+      <pubDate>Sat, 30 Dec 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://an1lam.github.io/post/2017-12-30-change-driven-reading/</guid>
+      <description>That none of us read enough code is one of the few things on which programmers agree. Taken together, the interviews in Peter Seibel&amp;rsquo;s book, Coders At Work and on his blog, highlight a comical contradiction: almost all the programmers interviewed by Seibel recommend that others read code for fun, but none of them routinely does so themselves. After noticing this, Seibel even asked Hal Abelson (of SICP fame) about this phenomenon directly in an interview: &amp;gt; Seibel: I want to dig a little deeper on this.</description>
+    </item>
+    
+    <item>
+      <title>Book Review of Effortless Mastery</title>
+      <link>https://an1lam.github.io/post/2017-10-12-book-review-effortless-mastery/</link>
+      <pubDate>Thu, 12 Oct 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://an1lam.github.io/post/2017-10-12-book-review-effortless-mastery/</guid>
+      <description>Effortless Mastery is a strange book, one-third meditation guide, one-third musical exercises, and one-third amateur (seriously amateur) metaphysics sermon. Reading Effortless Mastery reaffirmed my growing conviction that some books just aren&amp;rsquo;t meant to be read all-the-way-through from front to back. As a non-musician, mystical skeptic, and fox-in-training, I have little in common with the author of Effortless Mastery, Kenny Werner. Moreover, I suspect Werner, a professional musician, Advaita Vedanta adherent, hedgehog (by my assessment, I doubt he&amp;rsquo;s aware of the fox-hedgehog dichotomy), wouldn&amp;rsquo;t like me, even if we ignore my brief attack on his only published work.</description>
+    </item>
+    
+    <item>
+      <title>Big Image Sample</title>
+      <link>https://an1lam.github.io/post/2017-03-07-bigimg-sample/</link>
+      <pubDate>Tue, 07 Mar 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://an1lam.github.io/post/2017-03-07-bigimg-sample/</guid>
+      <description>&lt;p&gt;The image banners at the top of the page are refered to as &amp;ldquo;bigimg&amp;rdquo; in this theme. They are optional, and one more more can be specified. If more than one is specified, the images rotate every 10 seconds. In the front matter, bigimgs are specified using an array of hashes.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Math Sample</title>
+      <link>https://an1lam.github.io/post/2017-03-05-math-sample/</link>
+      <pubDate>Sun, 05 Mar 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://an1lam.github.io/post/2017-03-05-math-sample/</guid>
+      <description>&lt;p&gt;KaTeX can be used to generate complex math formulas server-side.&lt;/p&gt;
+
+&lt;p&gt;$$
+\phi = \frac{(1+\sqrt{5})}{2} = 1.6180339887\cdots
+$$&lt;/p&gt;
+
+&lt;p&gt;Additional details can be found on &lt;a href=&#34;https://github.com/Khan/KaTeX&#34;&gt;GitHub&lt;/a&gt; or on the &lt;a href=&#34;http://tiddlywiki.com/plugins/tiddlywiki/katex/&#34;&gt;Wiki&lt;/a&gt;.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Vancouver Trip - Day 2</title>
+      <link>https://an1lam.github.io/post/2016-08-06-vancouver-trip-day-2/</link>
+      <pubDate>Sat, 06 Aug 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://an1lam.github.io/post/2016-08-06-vancouver-trip-day-2/</guid>
+      <description>We kicked off the day with the Capillano suspension bridge, which acts as the sole entranceway to woods on the other side of the gorge which the bridge spans. As we explored the woods beyond the bridge, the careful attachment of a tree walk&amp;rsquo;s platforms to Douglas Firs prompted thinking about integrating nature and human activity, which Vancouver does well. Small examples of this integration beyond the bridge attraction include trees on roofs of buildings, gardens nestled throughout the city, and sustainable energy sources throughout the city.</description>
+    </item>
+    
+    <item>
+      <title>Vancouver Trip - Day 1</title>
+      <link>https://an1lam.github.io/post/2016-08-05-vancouver-trip-day-1/</link>
+      <pubDate>Fri, 05 Aug 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://an1lam.github.io/post/2016-08-05-vancouver-trip-day-1/</guid>
+      <description>We got an early start, heading to the airport at 4:15 AM and taking off at 7:30 AM.
+During the flight, whilst I listened to Ben Franklin&amp;rsquo;s Autobiography and the Scrum book, Jen interrupted me to point out a much-appreciated unsullied view of Mt. Baker.
+After reading about fasting as a preventative for jet lag, I resolved to fast from Wednesday night&amp;rsquo;s dinner to mid-day of our arrival in Vancouver. I succeeded at this, further convincing Jen&amp;rsquo;s mother of my strangeness.</description>
+    </item>
+    
+    <item>
+      <title>Code Sample</title>
+      <link>https://an1lam.github.io/post/2016-03-08-code-sample/</link>
+      <pubDate>Tue, 08 Mar 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://an1lam.github.io/post/2016-03-08-code-sample/</guid>
+      <description>&lt;p&gt;The following are two code samples using syntax highlighting.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Stoicism 2.0</title>
+      <link>https://an1lam.github.io/post/2016-03-06-stoic-optimism/</link>
+      <pubDate>Sun, 06 Mar 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://an1lam.github.io/post/2016-03-06-stoic-optimism/</guid>
+      <description>My History with Stoicism I can&amp;rsquo;t remember when I first stumbled upon Stoicism. I suspect Tim Ferriss and Ryan Holiday led me to further investigate Stoicism.
+I think of Stoicism as a framework for thinking. I apply Stoic ideals to decisions on a daily basis. * Tenets of Stoicism 1.0 * Virtues as ends in themselves * Honesty * Reason: control (subjugation?) of Emotions / Affectivity * A priori assumption that everything that happens is exercising its Nature * Independence from external influences * Intermittently practicing &amp;amp; regularly imagining hardship * Contemplative journaling * Focused re-reading and contemplation of important works</description>
     </item>
     
     <item>
@@ -363,6 +593,15 @@ Medicine and Biology Can we end the war on Cancer?</description>
     </item>
     
     <item>
+      <title>Sample draft post</title>
+      <link>https://an1lam.github.io/post/2015-10-23-agent-horticulture/</link>
+      <pubDate>Fri, 23 Oct 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://an1lam.github.io/post/2015-10-23-agent-horticulture/</guid>
+      <description>I want to turn my brain into something that can better process code. And I want to be able to better manipulate my lower-level semantic networks. Possible avenues for this include visualization, deconcentration, and meditation. First, I will elaborate upon what succeeding at these goals would mean. With my desired result laid out, I will circle back and discuss the extent to which each possible avenue satisfies the criteria. Finally, I will establish a path for getting to my goals.</description>
+    </item>
+    
+    <item>
       <title>Weekly Newsletter</title>
       <link>https://an1lam.github.io/post/2015-10-18-nl10182015/</link>
       <pubDate>Sun, 18 Oct 2015 00:00:00 +0000</pubDate>
@@ -370,6 +609,15 @@ Medicine and Biology Can we end the war on Cancer?</description>
       <guid>https://an1lam.github.io/post/2015-10-18-nl10182015/</guid>
       <description>Design UX and the Civilizing Process
 Another piece from the author of last week&amp;rsquo;s 4-part series that took us through the theories of Julian Jaynes. This piece focuses on similarities between User Experience design, which aims to create seamless interactions between humans and products, and etiquette. My super-secret goal for the newsletter has always been to find at least one article my sister will genuinely enjoy and I may actually have a winner with this one.</description>
+    </item>
+    
+    <item>
+      <title>Algorithms Mnemonics</title>
+      <link>https://an1lam.github.io/post/2015-10-17-algorithms-mnemonics/</link>
+      <pubDate>Sat, 17 Oct 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://an1lam.github.io/post/2015-10-17-algorithms-mnemonics/</guid>
+      <description></description>
     </item>
     
     <item>
@@ -447,6 +695,16 @@ A writer discusses his experience fasting for over a week. He cites scientific a
 Argues that college applicants should seek out &amp;ldquo;sources of power&amp;rdquo; which improve their chances of acceptance by orders of magnitude. This article fits with my observations about the college process.
 Alternative Businesses The Cheese Board Collective
 Profiles a cooperative cheese shop where all employees are owners. I&amp;rsquo;ve expressed my enthusiasm for business model experimentation and co-ops in particular before so I&amp;rsquo;ll refrain from doing so again now.</description>
+    </item>
+    
+    <item>
+      <title>Mind Programming</title>
+      <link>https://an1lam.github.io/post/2015-08-29-brain-programming/</link>
+      <pubDate>Sat, 29 Aug 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://an1lam.github.io/post/2015-08-29-brain-programming/</guid>
+      <description>Introduction For the past few years, ideas about the mind and the body have been percolating around in my consciousness, mixing with each other into a primordial soup of notions about meditation and the power of the brain. I&amp;rsquo;m a voracious consumer of articles, essays, fiction, and journal articles about anything that falls into a multi-dimensional venn diagram which consists of meditation, human potential, neuroscience, psychology, and memory.
+Recently, I&amp;rsquo;ve been feeling like I have a better grasp on what I&amp;rsquo;ve been trying to achieve through meditation and discover by reading all of these different sources.</description>
     </item>
     
     <item>
@@ -604,6 +862,15 @@ As I mentioned last week, I&amp;rsquo;ve decided to mark this week as the 6 mont
     </item>
     
     <item>
+      <title>My Meditation Practice - Part I</title>
+      <link>https://an1lam.github.io/post/2015-04-29-meditation-progress-1/</link>
+      <pubDate>Wed, 29 Apr 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://an1lam.github.io/post/2015-04-29-meditation-progress-1/</guid>
+      <description>Table of Contents  Background Current Practice Struggles and Open Questions  Background  As most people who know me in real life know, I&amp;rsquo;m a regular meditator and spend way too much time thinking about meditation-like practices. I&amp;rsquo;ve played around with various techniques over the last few years, but have mainly focused on mindfulness of breathing. I recently started to grow disillusioned with my practice, however. In this post, I&amp;rsquo;ll hopefully elucidate my reasons for becoming disillusioned with my previous Buddhist-inspired practice, explain my new practice, and give some insight into the obstacles I currently face.</description>
+    </item>
+    
+    <item>
       <title>Weekly Newsletter</title>
       <link>https://an1lam.github.io/post/2015-04-26-nl04262015/</link>
       <pubDate>Sun, 26 Apr 2015 00:00:00 +0000</pubDate>
@@ -648,6 +915,16 @@ Investigates the Kremlin&amp;rsquo;s disinformation campaign and questions its r
 Investigates the promises and perils of tDCS, the electrical stimulation of the brain proponents claim will help treat depression and other neurological disorders.
 Evolution Defending Darwin
 A biology professor at the University of Kentucky discusses his experiencing teaching evolution to a group largely composed of Creationists. This article interests me on two levels: 1) I come from an area where evolution is largely unchallenged. In school, I don&amp;rsquo;t ever recall one of my peers arguing with the teacher about evolution, so it&amp;rsquo;s interesting to read about a place where this is not the case.</description>
+    </item>
+    
+    <item>
+      <title>Using NPM as a build system</title>
+      <link>https://an1lam.github.io/post/2015-04-02-using-npm-as-a-build-system/</link>
+      <pubDate>Thu, 02 Apr 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://an1lam.github.io/post/2015-04-02-using-npm-as-a-build-system/</guid>
+      <description>When we started building Repcoin, Matt and I were relatively inexperienced with Node and React. We didn&amp;rsquo;t have experience setting up and maintaining build systems for large Javascript projects. [Gulp]() and [Grunt]() are standard in the industry, so we decided to go with Gulp, since it seemed newer and flashier.
+Before I go on, I want to make a disclaimer: I&amp;rsquo;m not a Gulp expert and will only discuss it in this article to the extent to which it illustrates why we switched to NPM as our build system.</description>
     </item>
     
     <item>
@@ -709,6 +986,15 @@ Discusses the prospects for transplanting a human head onto another body. Neglec
     </item>
     
     <item>
+      <title>Flake it till you make it</title>
+      <link>https://an1lam.github.io/post/2015-02-26-flake-it-till-you-make-it/</link>
+      <pubDate>Thu, 26 Feb 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://an1lam.github.io/post/2015-02-26-flake-it-till-you-make-it/</guid>
+      <description>Under what circumstances should we step off a path? When is it essential that we finish what we start? If I bought a bag of peanuts and had an allergic reaction, no one would fault me if I threw it out. If I ended a relationship with a woman who hit me, no one would say that I had a commitment problem. But if I walk away from a seemingly secure route because my soul has other ideas, I am a flake?</description>
+    </item>
+    
+    <item>
       <title>Weekly Newsletter</title>
       <link>https://an1lam.github.io/post/2015-02-22-nl02222015/</link>
       <pubDate>Sun, 22 Feb 2015 00:00:00 +0000</pubDate>
@@ -723,6 +1009,18 @@ Profiles E-nable and other groups focused on improving upon the process of creat
     </item>
     
     <item>
+      <title>Test markdown</title>
+      <link>https://an1lam.github.io/post/2015-02-20-test-markdown/</link>
+      <pubDate>Fri, 20 Feb 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://an1lam.github.io/post/2015-02-20-test-markdown/</guid>
+      <description>You can write regular markdown here and Jekyll will automatically convert it to a nice webpage. I strongly encourage you to take 5 minutes to learn how to write in markdown - it&amp;rsquo;ll teach you how to transform regular text into bold/italics/headings/tables/etc.
+Here is some bold text
+Here is a secondary heading Here&amp;rsquo;s a useless table:
+   Number Next number Previous number     Five Six Four   Ten Eleven Nine   Seven Eight Six   Two Three One    How about a yummy crepe?</description>
+    </item>
+    
+    <item>
       <title>Weekly Newsletter</title>
       <link>https://an1lam.github.io/post/2015-02-15-nl02152015/</link>
       <pubDate>Sun, 15 Feb 2015 00:00:00 +0000</pubDate>
@@ -730,6 +1028,15 @@ Profiles E-nable and other groups focused on improving upon the process of creat
       <guid>https://an1lam.github.io/post/2015-02-15-nl02152015/</guid>
       <description>Philosophy Do Easy
 The film and source essay (linked to at the bottom of the page) both convey a philosophy rooted in Taoism, but understandable for the modern American. It&amp;rsquo;s important to note that William S. Burroughs (the essay&amp;rsquo;s author and the author of Naked Lunch) struggled with a debilitating heroine addiction for much of his life. Looking at this essay in light of that, I found that many of the ideas took on a dual meaning.</description>
+    </item>
+    
+    <item>
+      <title>To be</title>
+      <link>https://an1lam.github.io/post/2015-02-13-hamlet-monologue/</link>
+      <pubDate>Fri, 13 Feb 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://an1lam.github.io/post/2015-02-13-hamlet-monologue/</guid>
+      <description>To be, or not to be&amp;ndash;that is the question: Whether &amp;lsquo;tis nobler in the mind to suffer The slings and arrows of outrageous fortune Or to take arms against a sea of troubles And by opposing end them. To die, to sleep&amp;ndash; No more&amp;ndash;and by a sleep to say we end The heartache, and the thousand natural shocks That flesh is heir to. &amp;lsquo;Tis a consummation Devoutly to be wished. To die, to sleep&amp;ndash; To sleep&amp;ndash;perchance to dream: ay, there&amp;rsquo;s the rub, For in that sleep of death what dreams may come When we have shuffled off this mortal coil, Must give us pause.</description>
     </item>
     
     <item>
@@ -758,6 +1065,15 @@ Seeds of Doubt</description>
     </item>
     
     <item>
+      <title>Dear diary</title>
+      <link>https://an1lam.github.io/post/2015-01-27-dear-diary/</link>
+      <pubDate>Tue, 27 Jan 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://an1lam.github.io/post/2015-01-27-dear-diary/</guid>
+      <description>What is it with that Mary girl? Dragging me to school every day. As if I had a choice. What you don&amp;rsquo;t hear in those nursery rhymes is that she starves me if I don&amp;rsquo;t go to school with her; it&amp;rsquo;s the only way I can stay alive! I&amp;rsquo;m thinking about being adopted by Little Bo Peep, sure I may get lost, but anything is better than being with Mary and those little brats at school (shudder, shudder).</description>
+    </item>
+    
+    <item>
       <title>Weekly Newsletter</title>
       <link>https://an1lam.github.io/post/2015-01-25-nl01252015/</link>
       <pubDate>Sun, 25 Jan 2015 00:00:00 +0000</pubDate>
@@ -765,6 +1081,25 @@ Seeds of Doubt</description>
       <guid>https://an1lam.github.io/post/2015-01-25-nl01252015/</guid>
       <description>Human Potential Natural Born Heroes
 Sometimes, when I read an article, I think it would be great for the newsletter because it calls into question a widely-held belief or delves deep into an esoteric topic in a profound way. This isn&amp;rsquo;t one of those articles &amp;ndash; this is an article that you read and think &amp;ldquo;this is awesome.&amp;rdquo; The article covers a few different groups reviving or creating new uses of the human form.</description>
+    </item>
+    
+    <item>
+      <title>Reading List</title>
+      <link>https://an1lam.github.io/post/2015-01-23-reading-list/</link>
+      <pubDate>Fri, 23 Jan 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://an1lam.github.io/post/2015-01-23-reading-list/</guid>
+      <description>Crypto Anarchy, Cyberstates, and Pirate Utopias No Place to Hide: Edward Snowden, the NSA, and the U.S. Surveillance State Remember, Remember: Learn the Stuff You Thought You Never Could Montaigne: Essays Cryptonomicon Natural Born Heroes: How a Daring Band of Misfits Mastered the Lost Secrets of Strength and Endurance The Odyssey Finite and Infinite Games: A Vision of Life as Play and Possibility Quantum Memory Power: Learn to Improve Your Memory with the World Memory Champion!</description>
+    </item>
+    
+    <item>
+      <title>Soccer</title>
+      <link>https://an1lam.github.io/post/2015-01-19-soccer/</link>
+      <pubDate>Mon, 19 Jan 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://an1lam.github.io/post/2015-01-19-soccer/</guid>
+      <description>From Wikipedia:
+Association football, more commonly known as football or soccer,[2] is a sport played between two teams of eleven players with a spherical ball. It is played by 250 million players in over 200 countries, making it the world&amp;rsquo;s most popular sport.[3][4][5][6] The game is played on a rectangular field with a goal at each end. The object of the game is to score by getting the ball into the opposing goal.</description>
     </item>
     
     <item>
@@ -782,6 +1117,15 @@ Summarizes a recent study with results indicating that imagining muscular contra
     </item>
     
     <item>
+      <title>Pirates arrrr</title>
+      <link>https://an1lam.github.io/post/2015-01-15-pirates/</link>
+      <pubDate>Thu, 15 Jan 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://an1lam.github.io/post/2015-01-15-pirates/</guid>
+      <description>Piracy is typically an act of robbery or criminal violence at sea. The term can include acts committed on land, in the air, or in other major bodies of water or on a shore. It does not normally include crimes committed against persons traveling on the same vessel as the perpetrator (e.g. one passenger stealing from others on the same vessel). The term has been used throughout history to refer to raids across land borders by non-state agents.</description>
+    </item>
+    
+    <item>
       <title>Weekly Newsletter</title>
       <link>https://an1lam.github.io/post/2015-01-11-nl01112015/</link>
       <pubDate>Sun, 11 Jan 2015 00:00:00 +0000</pubDate>
@@ -792,6 +1136,15 @@ Covers massive French rallies meant to demonstrate unity after the attacks on Ch
 Je Suis Charlie (Until Je Get Scared)
 Asserts that many Westerners hold inconsistent views on free speech. Illustrates this with examples of newspapers blurring out the Charlie Hebdo comics and journalists subtly blaming Hebdo authors for publishing &amp;ldquo;inflammatory&amp;rdquo; content.
 Is Saudi Arabia trying to cripple American fracking?</description>
+    </item>
+    
+    <item>
+      <title>First post!</title>
+      <link>https://an1lam.github.io/post/2015-01-04-first-post/</link>
+      <pubDate>Mon, 05 Jan 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://an1lam.github.io/post/2015-01-04-first-post/</guid>
+      <description>This is my first post, how exciting!</description>
     </item>
     
     <item>
@@ -812,6 +1165,17 @@ Narrates how a journalist won the U.S. Memory Championship. Summarizes the techn
       <guid>https://an1lam.github.io/post/2014-12-28-nl12282014/</guid>
       <description>Stoicism Stoicism has been at the forefront of my thoughts this break. I&amp;rsquo;m most of the way through Seneca&amp;rsquo;s Letters from a Stoic: Epistulae Morales AD Lucilium, a primary source for Stoic philosophy and recently finished Ryan Holiday&amp;rsquo;s The Obstacle Is the Way, which presents a simplified version of Stoicism that caters to modern audiences.
 The first article about Stoicism in this newsletter, Indifference is a power, reveals Stoicism&amp;rsquo;s tenets and discusses its application both by its founders during Roman times and in modern cognitive behavioral therapy (the creator of Cognitive Behavioral Therapy struggled as a psychoanalyst until he remembered the teachings of ancient Stoicism, citation.</description>
+    </item>
+    
+    <item>
+      <title>Gaining Root Access to the Human Brain</title>
+      <link>https://an1lam.github.io/post/2014-12-22-root-access-to-the-brain/</link>
+      <pubDate>Mon, 22 Dec 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://an1lam.github.io/post/2014-12-22-root-access-to-the-brain/</guid>
+      <description>For a long time, I&amp;rsquo;ve been fascinated by meditation and other internally-focused arts. Although I&amp;rsquo;ve mainly practiced mindfulness meditation, I&amp;rsquo;ve spent far too many hours reading about myriad types of meditations, breathing exercises, and visualization practices.
+I have a confession to make. I&amp;rsquo;m not seeking enlightenment.
+I don&amp;rsquo;t care about piercing the veil of perception in order to see the true reality and merge with the Universal Mind, or whatever your Eastern philosophical doctrine proposes will happen as a result of Enlightenment.</description>
     </item>
     
     <item>
@@ -856,6 +1220,15 @@ On an unrelated note, I&amp;rsquo;ve been documenting my Winter Break Reading. W
     </item>
     
     <item>
+      <title>Book Review - Gentle Bridges, Conversations with the Dalai Lama on the Science of Mind by Jeremy W. Hayward</title>
+      <link>https://an1lam.github.io/post/2014-11-29-gentle-bridges-book-review/</link>
+      <pubDate>Sat, 29 Nov 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://an1lam.github.io/post/2014-11-29-gentle-bridges-book-review/</guid>
+      <description>Reading Gentle Bridges, I found myself wishing that the Dalai Lama would talk more and the scientists would talk less. The author structures the book so that most of the book is spent on lectures given by scientists visting the Dalai Lama about the foundational methodologies and findings of their respective field. He begins with an explanation of the scientific method and then transcribes the discussions of neuroscience, cognitive psychology, artificial intelligence, and evolution.</description>
+    </item>
+    
+    <item>
       <title>Book Review - Regenesis by George Church</title>
       <link>https://an1lam.github.io/post/2014-11-26-regenesis-book-review/</link>
       <pubDate>Wed, 26 Nov 2014 00:00:00 +0000</pubDate>
@@ -863,6 +1236,24 @@ On an unrelated note, I&amp;rsquo;ve been documenting my Winter Break Reading. W
       <guid>https://an1lam.github.io/post/2014-11-26-regenesis-book-review/</guid>
       <description>Synthetic biology is a burgeoning discipline that stems from a long lineage of genetic meddling. Synthetic biology&amp;rsquo;s ancestral legacy began when man first selected which seeds to plant based on the traits of the plants that birthed them. In Regenesis by George Church, Church takes the reader through this lineage, canvassing the past thousands of years and then focusing in on the past 30.
 Church does a good job of balancing technical explanations with interesting anecdotes in the book.</description>
+    </item>
+    
+    <item>
+      <title>Life Tracking</title>
+      <link>https://an1lam.github.io/post/2014-11-25-life-tracking/</link>
+      <pubDate>Tue, 25 Nov 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://an1lam.github.io/post/2014-11-25-life-tracking/</guid>
+      <description>Streaks: 8-hour Eating Window: Nov. 20th - &amp;hellip;
+Running: Nov. 25th - &amp;hellip;
+Visualization Practice - &amp;hellip; - &amp;hellip;
+By Date: 11-25-2014
+11-22-2014
+Work: 2h47m
+11-21-2014
+Work: 5h41m
+11-20-2014
+Work: 3h20m</description>
     </item>
     
     <item>
@@ -939,6 +1330,17 @@ Despite the above disclaimer, I included this because I mentioned the Marathon M
       <description>This is a weekly newsletter I publish each week that contains content I enjoyed and hope that you will enjoy. If you have questions or comments, you can find me at stephenmalina@gmail.com or on Twitter.
 Technology and Human Augmentation A Spreadsheet Way of Knowledge
 A long, in-depth piece on the history of spreadsheet modeling. The two points that stick with me from this piece are the dismissive attitude people initially had towards the spreadsheet and the obsession with modeling people displayed (and continue to display).</description>
+    </item>
+    
+    <item>
+      <title>Sample draft post</title>
+      <link>https://an1lam.github.io/post/2014-02-25-draft/</link>
+      <pubDate>Tue, 25 Feb 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://an1lam.github.io/post/2014-02-25-draft/</guid>
+      <description>This is a draft post that isn&amp;rsquo;t ready for the wild. See how it doesn&amp;rsquo;t show up in your list of posts, nor in your RSS feed? You can, however, link directly to it.
+To make it go live, all you have to do is remove the draft:true line, and you&amp;rsquo;re off to the races.
+You&amp;rsquo;ll want to get the code and read the README to learn how to install and set up Left for your own purposes.</description>
     </item>
     
     <item>

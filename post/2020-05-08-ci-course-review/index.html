@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+
+<head>
+<title>Stephen Malina - Course Review - Causal Inference</title>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="">
+<meta name="keywords" content="">
+<meta name="author" content="Stephen Malina">
+<meta name="generator" content="Hugo 0.57.2" />
+
+  
+  
+
+  <script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    displayMath: [['$$','$$'], ['\\[','\\]']],
+    processEscapes: true,
+    processEnvironments: true,
+    menuSettings: { zoom: "Double-Click" },
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+    TeX: { equationNumbers: { autoNumber: "AMS" },
+         extensions: ["AMSmath.js", "AMSsymbols.js"] }
+  }
+});
+</script>
+
+<script type="text/javascript"
+  src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+
+
+
+
+
+
+<link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
+
+
+    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/grids-responsive-min.css">
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+
+<link rel="stylesheet" href="https://an1lam.github.io/css/tufte.css">
+<link rel="stylesheet" href="https://an1lam.github.io/css/hugo-tufte.css">
+<link rel="stylesheet" href="https://an1lam.github.io/css/hugo-tufte-override.css">
+
+</head>
+
+
+<body>
+<div id="layout" class="pure-g">
+<article class="pure-u-1">
+<header class="brand">
+  <h1>Stephen Malina</h1>
+  <h2>This is my blog. There are many others like it but this one is mine.</h2>
+  <nav class="menu">
+    <ul>
+    
+        <li><a href="https://an1lam.github.io/">Home</a></li>
+    
+        <li><a href="https://an1lam.github.io/about">About</a></li>
+    
+        <li><a href="https://an1lam.github.io/post">Post</a></li>
+    
+        <li><a href="https://an1lam.github.io/tags">Tags</a></li>
+    
+        <li><a href="https://an1lam.github.io/progress">The State of My Mind</a></li>
+    
+    </ul>
+</nav>
+
+</header>
+
+<section>
+<h1 class="content-title">
+  
+  <a href="https://an1lam.github.io/post/2020-05-08-ci-course-review/">Course Review - Causal Inference :: Draft </a>
+  
+</h1>
+
+
+
+  <span class="content-meta">
+    
+
+
+    
+      <i class="fa fa-calendar"></i>
+      &nbsp;Mar 1, 2020
+    
+
+    
+      &nbsp;<i class="fa fa-clock-o"></i>
+      &nbsp;13 min read
+    
+
+    
+  </span>
+
+
+</section>
+
+
+
+<section>
+
+<p>This semester, I had the pleasure of taking a course on Causal Inference with <a href="https://causalai.net/">Professor Elias Bareinboim</a>, one of Judea Pearl&rsquo;s former students and author of some <a href="https://arxiv.org/pdf/1312.7485.pdf">seminal</a> <a href="https://www.pnas.org/content/113/27/7345">results</a> in Causal Inference. I feel like this course highlighted not only the content Causal Inference researchers consider important but also the types of understanding they value. In this review, I&rsquo;ll focus on the latter. I hope to write some blog posts in the future about the former but have learned from past experience not to promise future posts unless I have time during which I know I can write them.</p>
+
+<h1 id="brief-course-content-overview">Brief Course Content Overview</h1>
+
+<p>The course was organized along the rungs of the ladder of causation. As depicted below, the first rung of the ladder is association. Since many of the students, including myself, taking this course have a background in machine learning, we didn&rsquo;t spend much time on this rung. We reviewed some of the results from the probabilistic graphical models literature and then recast them from a causal perspective. I&rsquo;ll talk more about what this recasting looks like in the next section. The second rung of the ladder is intervention. This is about understanding how feasible manipulation of variables impacts overall systems. The bulk of our time in the course was spent on this rung. Specifically, we spent a lot of time talking about and going over the key results for identifying interventional quantities (\( \text{do}(\cdot) \) probabilities. After that, we spent some time diving into more recent results such as the <a href="https://www.aaai.org/Papers/AAAI/2020GB/AAAI-CorreaJ.8051.pdf">stochastic calculus</a> and <a href="http://www.ifaamas.org/Proceedings/aamas2017/pdfs/p1778.pdf">causal reinforcement learning</a> that leverage and extend these results. From there, we broadened our focus to what Elias calls the &ldquo;Data Fusion&rdquo; problem, which is broadly about solving the problem of answering rung 1 questions across environments, sampling regimes, and given different experimental results. Finally, we jumped up to the third rung, counterfactuals, which is often analogized to imagination and retrospection. That is, answering the question &ldquo;what would have happened if &hellip;?&rdquo;</p>
+
+<p><img src="https://an1lam.github.io/images/ladder-of-causation.png" width=500 /></p>
+
+<h1 id="themes">Themes</h1>
+
+<h2 id="it-all-starts-with-an-scm">It all starts with an SCM</h2>
+
+<p>When I first encountered causality outside of the course, it was often described 1) as an extension to probabilistic graphical models or 2) as something we could use with linear relationships. This first presentation made things confusing because it was never clear which results only applied to probabilistic graphical models versus also to causal graphical models (or vice versa). The second presentation made things confusing by conflating statistical and causal language and questions. While the core results for both probabilistic graphical models and linear causal models do predate the non-parametric results in causal inference, in my humble opinion, teaching things in the historical order the <strong>wrong</strong> way to introduce causality to most people.</p>
+
+<p>Thankfully, this is also not how Elias&rsquo;s course introduces it. Elias does things the &ldquo;right&rdquo; way by starting with the structural causal model (SCM) and using it to derive non-parametric results for figuring out causal effects. I call this the right way because I think it&rsquo;s conceptually much clearer in terms of starting with the most fundamental concept and then showing how everything else follows naturally from it.</p>
+
+<p>Briefly, the key assumption behind structural causal models is that reality&rsquo;s underlying mechanisms can be described in terms of deterministic functional relationships between observed and unobserved entities with all of the randomness coming from the unobservables. While I spent a non-trivial amount of time pestering Elias and the TAs about how ontologically this isn&rsquo;t true, it&rsquo;s very similar to the sorts of assumptions we make in machine learning, statistics, much of physics and chemistry, and our everyday lives, so I think it&rsquo;s quite reasonable.<sup class="footnote-ref" id="fnref:1"><a href="#fn:1">1</a></sup></p>
+
+<h3 id="fertilizer-scm-example">Fertilizer SCM Example</h3>
+
+<p>Suppose we are modeling the effect of two fertilizers on tree growth. An over-simplified SCM for this situation would likely include two observed variables, \( F \in \{0, 1\} \) representing the two fertilizers and \( T \in \mathbb{R} \) representing the tree&rsquo;s height at some pre-determined point in time after adding the fertilizer to the tree&rsquo;s soil. However, we also need to account for the fact that the tree&rsquo;s growth depends on myriad other factors besides the fertilizer choice &ndash; weather, soil, genetics, and presumably other factors of which I&rsquo;m not aware. If we were actually modeling this situation, we&rsquo;d probably measure and &ldquo;control for&rdquo; <label for="sidenote-aa10a98f13f971425a5037227943572c-0" class="margin-toggle sidenote-number"></label>
+<input type="checkbox" id="sidenote-aa10a98f13f971425a5037227943572c-0" class="margin-toggle"/>
+<span class="sidenote"> Controlling for a variable is a term from statistics that roughly means to try and understand what the relationship between the input and output variables we care about is assuming we hold the control variables constant. The image I typically have in mind when I think of controlling for variables is wiggling the input variable of interest while fixing the control variables.  </span>
+ some of these variables, but for the sake of keeping this example simple, let&rsquo;s assume we can&rsquo;t measure any of them. Instead, we can decide that we&rsquo;re just going to assume that these variables can all be summarized with a random variable $ U_T $.</p>
+
+<p>Now, recall that I said the key assumption behind SCMs is that we can model reality with functions of observed and unobserved variables. Let&rsquo;s try and do that here. Assuming the fertilizer application is done randomly (say by the flip of a coin), there&rsquo;s no mechanism by which these unobserved factors can affect it, so the functions that determines fertilizer will not contain $ U_T $ as a term and instead will just be $ f_X(U_X) = U_X $ where $ U_X \sim \text{Bern}(1 / 2) $. Tree growth on the other hand, will presumably be affected by all these unobservables. For simplicity&rsquo;s sake let&rsquo;s suppose it&rsquo;s a linear function of the unobservables plus some constant times whether we use fertilizer,
+$$
+T \leftarrow f_T(U_T, X) = U_T + \beta X.
+$$
+Finally, let&rsquo;s suppose that we can model our unobservables as normally distributed around some mean.
+<label for="sidenote-aa10a98f13f971425a5037227943572c-1" class="margin-toggle sidenote-number"></label>
+<input type="checkbox" id="sidenote-aa10a98f13f971425a5037227943572c-1" class="margin-toggle"/>
+<span class="sidenote">
+While this may seem a little weird, it&rsquo;s actually not as crazy as it may seem. If you&rsquo;re familiar with regression from statistics, we can think of this as a linear model with normally distributed noise ($ U $) and make some argument about it being a reasonable approximation with large sample sizes.
+</span></p>
+
+<p>It turns out that the combination of the distribution over the unobservables combined with the functional relationships also induces a graph that looks like the following. Furthermore, it turns out that just by looking at the graph, we can deduce that the impact of fertilizer application on tree growth in the observed distribution is equal to the impact of intervening by adding fertilizer. This may not seem surprising because we explicitly randomized the process of fertilizer application, but where this gets interesting is that we can also obtain similar interventional quantities from observational data where it might initially seem impossible. <label for="sidenote-aa10a98f13f971425a5037227943572c-2" class="margin-toggle sidenote-number"></label>
+<input type="checkbox" id="sidenote-aa10a98f13f971425a5037227943572c-2" class="margin-toggle"/>
+<span class="sidenote"> For a classic example, see <a href="https://an1lam.github.io/2020-03-09-front-door-do-calc-derivation.md">my post</a> on deriving the front-door criterion. </span>
+ There&rsquo;s lots more I could say about this, but I insetad recommend looking at other resources such as <a href="http://www.michaelnielsen.org/ddi/if-correlation-doesnt-imply-causation-then-what-does/">Michael Nielsen&rsquo;s post</a>, <a href="https://www.youtube.com/watch?v=ZaPV1OSEpHw">this talk by Pearl</a>, and <a href="https://www.amazon.com/dp/B075DCKP7V/ref=dp-kindle-redirect?_encoding=UTF8&amp;btkr=1">The Book of Why</a> for more on the details.</p>
+
+<h2 id="construct-a-counterexample">Construct a counterexample</h2>
+
+<p>One way to learn causal inference is to understand what it can accomplish. An alternate, in my opinion, underrated, way is to understand what it can&rsquo;t accomplish. It turns out this latter form of understanding features heavily in the way Elias and his students think about and discuss the area with each other. By this I mean that for any given concept in causal inference, I suspect they could generate a few counter-examples that illuminate the core reason why the concept is non-trivial but important. This is best illustrated by example.</p>
+
+<h3 id="simple-st-identifiability-counterexample">Simple(st) Identifiability Counterexample</h3>
+
+<p>Identifiability is one of the core concepts of causal inference. Informally, identifiability is about our ability to estimate an interventional quantity given a graph and a joint distribution. In plain English, if I know the graph of how things are related and have observational data, can I estimate what value a variable (or variables) will take given that I set another (or others)? A little less informally, we say a <strong>quantity</strong> like $ P(y \mid \text{do}(x)) $ <label for="sidenote-aa10a98f13f971425a5037227943572c-3" class="margin-toggle sidenote-number"></label>
+<input type="checkbox" id="sidenote-aa10a98f13f971425a5037227943572c-3" class="margin-toggle"/>
+<span class="sidenote"> Probability that random variable $ Y $ takes a certain value, $ y $, given that we intervene to <strong>set</strong> $ X $ to $ x $. </span>
+is identifiable if all the all models that induce the graph $ \mathcal{G} $ and joint distribution over observables $ P(\mathbf{V}) $, produce the same value for $ P(y \mid \text{do}(x)) $. To be totally honest, I&rsquo;d read this definition in a bunch of different places before I took this course but didn&rsquo;t really grok it because it wasn&rsquo;t clear to me what <strong>wasn&rsquo;t</strong> identifiable. Hopefully this counterexample is as helpful for others as it was for me.</p>
+
+<p>Consider the following graph (often called the &ldquo;bow graph&rdquo;), in which we&rsquo;ll show that $ P(y \mid \text{do}(x)) $ is identifiable.</p>
+
+<p>It has two binary observed variables, $ X $ and $ Y $, and one binary unobserved confounding variable $ U $. Here are two SCMs ($ \mathcal{M}_0 $, $ \mathcal{M}_1 $) that induce this same graph.
+$$
+\begin{aligned}
+\mathcal{M}_0: \mathcal{F} = \{f_X, f_Y \} \text{ where } f_X(U) = U, f_Y(U, X) = (X \land U) \oplus U_Y \\<br />
+\mathcal{M}_1: \mathcal{F} = \{f_X, f_Y \} \text{ where } f_X(U) = U, f_Y(U, X) = (X \lor U) \oplus U_Y.
+\end{aligned}
+$$
+In both, $ P(U = 0) = P(U_Y = 0) = 3 / 4 $. <label for="sidenote-aa10a98f13f971425a5037227943572c-4" class="margin-toggle sidenote-number"></label>
+<input type="checkbox" id="sidenote-aa10a98f13f971425a5037227943572c-4" class="margin-toggle"/>
+<span class="sidenote"> A reasonable question to ask would be, &ldquo;why include the $ U_Y $ variable?&rdquo; The brief answer is that the definition of SCMs typically assume that all possible values of the observed variables have non-zero probability. As one can calculate for this example, this is true if we include the $ U_Y $ and false without it.  </span></p>
+
+<p>Recall, that $ P(y \mid \text{do}(x)) $ is identifiable if and only if all models that induce $ \mathcal{G} $ and have the same $ P(\mathbf{V}) $ have the same $ P(y \mid \text{do}(x)) $. Clearly these two models induce the same $ \mathcal{G} $. Let&rsquo;s show they induce the same $ P(\mathbf{V}) $.</p>
+
+<p>In order to compute the observed joint distribution for these two models, we can simply plug in the value of $ X $ in terms of $ U $ and get,
+$$
+\begin{aligned}
+P_{\mathcal{M}_0}(X = 0, Y = 0) &amp;= P(U = 0, U \oplus U_Y = 0) \\\
+                                 &amp;= P(U = 0) P(U \oplus U_Y = 0 \mid U = 0) \\<br />
+                                 &amp;= 3 / 16,
+\end{aligned}
+$$
+and
+$$
+\begin{aligned}
+P_{\mathcal{M}_1}(X = 0, Y = 0) &amp;= P(U = 0, U \oplus U_Y = 0) \\\
+                                 &amp;= P(U = 0) P(U \oplus U_Y = 0 \mid U = 0) \\<br />
+                                 &amp;= 3 / 16.
+\end{aligned}
+$$
+Both results follow from the identities $ A \land A = A \lor A = A $ and by application of the probability chain rule. If we do similar calculations for the other three possible pairs of values for $ X $ and $ Y $, we&rsquo;ll find that all pairs have equal probability in both models as well. This is easy to see by noting that in both models, $ f_Y(U, X) = U \oplus U_Y $ when we substitute $ U $ for $ X $.</p>
+
+<p>So both models induce the same graph and joint distribution, but what about the quantity we&rsquo;re interested in, $ P(y \mid \text{do}(x)) $?  To determine $ P(y \mid \text{do}(x)) $, we replace $ f_X(U) $ with the constant $ x $ everywhere $ f_X $ appears in the SCM. If we do that with our two models and intervene with $ \text{do}(X = 0) $, we get the following probabilities for $ Y = 0 $
+$$
+\begin{aligned}
+P_{\mathcal{M}_0}(Y = 0 \mid \text{do}(X = 0)) &amp;= P((0 \land U) \oplus U_Y = 0) \\\
+    &amp;= P(U_Y = 0) \\<br />
+    &amp;= 3 / 4.
+\end{aligned}
+$$
+and
+$$
+\begin{aligned}
+P_{\mathcal{M}_1}(Y = 0 \mid \text{do}(X = 0)) &amp;= P((0 \lor U) \oplus U_Y = 0) \\\
+                                 &amp;= P(U \oplus U_Y = 0) \\<br />
+                                 &amp;= P(U = 0, U_Y = 0) + P(U = 1, U_Y = 1) \\<br />
+                                 &amp;= (3 / 4)(3 / 4) + (1 / 4)(1 / 4) \\<br />
+                                 &amp;= 5 / 8.
+\end{aligned}
+$$
+These don&rsquo;t match, which means we have proven that $ P(y \mid \text{do}(x)) $ is not identifiable in graph $ \mathcal{G} $.</p>
+
+<p>Having gone through all this work to show this, what was the point? In my opinion, seeing the counterexample helps one understand identifiability in a way that just learning the definition and seeing positive examples doesn&rsquo;t. With respect to this specific example, this example shows how un-identifiability can arise due to effects canceling each other out in the observational distribution, even when the model&rsquo;s mechanisms produce fundamentally different outcomes once we eliminate some of the randomness coming from the unobservables.</p>
+
+<p>At a higher level, I think the focus on counterexamples in causal inference is relatively unique and highlights how counterexamples can play a large role in improving understanding of abstract concepts.</p>
+
+<h2 id="show-me-the-algorithm">Show me the algorithm!</h2>
+
+<p>As a computer science, programmer type, I&rsquo;m very much onboard with the &lsquo;algorithmitization&rsquo; approach to subjects. As Donald Knuth <a href="https://en.wikiquote.org/wiki/Donald_Knuth#Computer_Programming_as_an_Art_(1974)">put it</a>, &ldquo;Science is knowledge which we understand so well that we can teach it to a computer.&rdquo; Based on the course, causal inference researchers seem to share this view and have made impressive strides towards &lsquo;algorithmitizing&rsquo; causal inference. For example, one of my favorite things we discussed in the course was the <code>Identify</code> algorithm<sup class="footnote-ref" id="fnref:2"><a href="#fn:2">2</a></sup>. Given a causal DAG, <code>Identify</code> either returns a formula for a $ \text{do} $ quantity in terms of the observed distribution or exits, indicating that the quantity is unidentifiable. This is incredible to me because it means that we no longer have to worry about figuring out whether individual quantities are identifiable in graphs and that we can answer identifiability questions for arbitrarily large graphs. This also shows what I consider to be the right attitude towards problems like this one. Rather than solving special cases, wherever possible, find an algorithm that can solve any case that is in principle solvable.</p>
+
+<p>Going out on a limb, I (controversially) claim that the algorithmitization approach to knowledge-building allows for more productive knowledge-building. Consider a counterfactual world (no pun intended) in which the <code>Identify</code> algorithm never existed. One can easily imagine a proliferation of papers and researchers constructing more and more complicated graphs and showing that they can solve them, perhaps even with the help of algorithmitized but not complete heuristics. Over time, the idea of algorithmitizing identifiability might even start to seem impossible given how much work had gone into all the special cases. Of course, as we also learned in the course, counterfactual predictions are hard, so I can&rsquo;t actually say any of this would have happened. But, I think it&rsquo;s plausible enough to highlight how important the emphasis on algorithmitization is to progress, and I&rsquo;m grateful to causal inference researchers for showing me how far one can take this emphasis.</p>
+
+<h1 id="conclusion">Conclusion</h1>
+
+<p>In writing this post, I hope to convey some of the themes that underlie what we studied in my causal inference course. While I partly just want to share these because I wish someone had explained them to me earlier on in my causal inference journey, I&rsquo;m also (ambitiously) hopeful that I can, on the margin, push more people to write posts similar to this one for other fields that they know or are learning about. While something like this is unsuitable as a paper, especially by a nobody like me, it&rsquo;s the perfect content for a blog post! Yet, outside of a few <a href="terrytao.wordpress.com">amazing</a> <a href="https://johncarlosbaez.wordpress.com/">math</a> and <a href="scottaaronson.wordpress.com">computer science</a> <a href="https://johncarlosbaez.wordpress.com/">blogs</a> by Very Important Researchers, this type of post seems relatively uncommon. While I suspect some of this can be attributed to 1) more junior people not wanting to seem presumptuous and 2) the concern that writing about a discipline is the first step down the path of not actually doing object-level work in it, I think being aware of these concerns is enough to mitigate them while still writing posts like these!</p>
+
+<p>Finally, thanks again to Elias and our course TAs for putting a lot of work into the course!</p>
+<div class="footnotes">
+
+<hr />
+
+<ol>
+<li id="fn:1">Almost all of the current results in causal inference assume acyclic structural causal models, i.e. \( X \) and \( Y \) can&rsquo;t both depend on each other, this is because assuming this allows us to derive more useful results, not because SCMs are inherently acyclic.
+ <a class="footnote-return" href="#fnref:1"><sup>[return]</sup></a></li>
+<li id="fn:2">Invented by Jin Tian and described in his <a href="https://ftp.cs.ucla.edu/pub/stat_ser/r309.pdf">masterpiece of a PhD thesis</a>.
+ <a class="footnote-return" href="#fnref:2"><sup>[return]</sup></a></li>
+</ol>
+</div>
+</section>
+<section>
+  
+
+  <footer class="page-footer">
+		<hr>
+		<ul class="page-footer-menu">
+		
+      <li><a href="https://github.com/an1lam"><i class='fa fa-github fa-2x'></i> </a></li>
+		
+      <li><a href="https://twitter.com/an1lam"><i class='fa fa-twitter fa-2x'></i> </a></li>
+		
+      <li><a href="mailto:stephenmalina@gmail.com"><i class='fa fa-envelope fa-2x'></i> </a></li>
+		
+      <li><a href="https://stackoverflow.com/users/1631855/an1lam"><i class='fa fa-stack-overflow fa-2x'></i> </a></li>
+		
+		</ul>
+
+  
+    <p>
+      Powered by <a href="https://gohugo.io">Hugo</a> and the
+      <a href="https://github.com/shawnohare/hugo-tufte">Tufte theme</a>.
+    </p>
+  
+
+	<div class="copyright">
+	<p>
+    
+      &copy; 2020
+    .
+    All rights reserved.
+    
+  </p>
+</div>
+</footer>
+
+
+
+</section>
+</article>
+</div>
+</body>
+</html>
