@@ -137,7 +137,11 @@ Finally, let&rsquo;s suppose that we can model our unobservables as normally dis
 While this may seem a little weird, it&rsquo;s actually not as crazy as it may seem. If you&rsquo;re familiar with regression from statistics, we can think of this as a linear model with normally distributed noise ($ U $) and make some argument about it being a reasonable approximation with large sample sizes.
 </span></p>
 
-<p>It turns out that the combination of the distribution over the unobservables combined with the functional relationships also induces a graph that looks like the following. Furthermore, it turns out that just by looking at the graph, we can deduce that the impact of fertilizer application on tree growth in the observed distribution is equal to the impact of intervening by adding fertilizer. This may not seem surprising because we explicitly randomized the process of fertilizer application, but where this gets interesting is that we can also obtain similar interventional quantities from observational data where it might initially seem impossible. <label for="sidenote-19997747704f52e7b149b06258468b62-2" class="margin-toggle sidenote-number"></label>
+<p>It turns out that the combination of the distribution over the unobservables combined with the functional relationships also induces a graph that looks like the following.</p>
+
+<p><img src="https://an1lam.github.io/images/tree-graph.png" width=300 /></p>
+
+<p>Furthermore, just by looking at the graph, we can deduce that the impact of fertilizer application on tree growth in the observed distribution is equal to the impact of intervening by adding fertilizer. This may not seem surprising because we explicitly randomized the process of fertilizer application, but where this gets interesting is that we can also obtain similar interventional quantities from observational data where it might initially seem impossible. <label for="sidenote-19997747704f52e7b149b06258468b62-2" class="margin-toggle sidenote-number"></label>
 <input type="checkbox" id="sidenote-19997747704f52e7b149b06258468b62-2" class="margin-toggle"/>
 <span class="sidenote"> For a classic example, see <a href="https://an1lam.github.io/2020-03-09-front-door-do-calc-derivation.md">my post</a> on deriving the front-door criterion. </span>
  There&rsquo;s lots more I could say about this, but I insetad recommend looking at other resources such as <a href="http://www.michaelnielsen.org/ddi/if-correlation-doesnt-imply-causation-then-what-does/">Michael Nielsen&rsquo;s post</a>, <a href="https://www.youtube.com/watch?v=ZaPV1OSEpHw">this talk by Pearl</a>, and <a href="https://www.amazon.com/dp/B075DCKP7V/ref=dp-kindle-redirect?_encoding=UTF8&amp;btkr=1">The Book of Why</a> for more on the details.</p>
@@ -154,6 +158,8 @@ While this may seem a little weird, it&rsquo;s actually not as crazy as it may s
 is identifiable if all the all models that induce the graph $ \mathcal{G} $ and joint distribution over observables $ P(\mathbf{V}) $, produce the same value for $ P(y \mid \text{do}(x)) $. To be totally honest, I&rsquo;d read this definition in a bunch of different places before I took this course but didn&rsquo;t really grok it because it wasn&rsquo;t clear to me what <strong>wasn&rsquo;t</strong> identifiable. Hopefully this counterexample is as helpful for others as it was for me.</p>
 
 <p>Consider the following graph (often called the &ldquo;bow graph&rdquo;), in which we&rsquo;ll show that $ P(y \mid \text{do}(x)) $ is identifiable.</p>
+
+<p><img src="https://an1lam.github.io/images/bow-graph.png" width=500 /></p>
 
 <p>It has two binary observed variables, $ X $ and $ Y $, and one binary unobserved confounding variable $ U $. Here are two SCMs ($ \mathcal{M}_0 $, $ \mathcal{M}_1 $) that induce this same graph.
 $$
