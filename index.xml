@@ -960,24 +960,6 @@ A long, in-depth piece on the history of spreadsheet modeling. The two points th
     </item>
     
     <item>
-      <title></title>
-      <link>https://an1lam.github.io/post/2018-06-26-surfing-uncertainty-review/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://an1lam.github.io/post/2018-06-26-surfing-uncertainty-review/</guid>
-      <description>date: 2018-06-26 date: 2018-06-26 - Sheds interesting light on expert performance. - What about cognitive biases? If the brain is a prediction machine, then why do we fall prey to &amp;ldquo;sub-optimal&amp;rdquo; biases? - Evolutionary argument against Plato&amp;rsquo;s cave: prediction is so important for brains that if we were only perceiving the shadows on the wall, some other animal would have eaten us all by seeing the actual fire. - What does this theory predict that others don&amp;rsquo;t?</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://an1lam.github.io/post/2018-11-03-deep-learning-goodfellow-ch4-notes/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://an1lam.github.io/post/2018-11-03-deep-learning-goodfellow-ch4-notes/</guid>
-      <description> Chapter 4  What&amp;rsquo;s a multinoulli distribution? Show that softmax function is not affected by taking $ softmax(z) $ where $ z = x - max_i x_i $.  </description>
-    </item>
-    
-    <item>
       <title>About me</title>
       <link>https://an1lam.github.io/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
