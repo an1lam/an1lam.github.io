@@ -195,16 +195,6 @@ Bret Victor, a world-class designer, uses his technical and design skills to cre
     
     <item>
       <title>Weekly Newsletter</title>
-      <link>https://an1lam.github.io/post/2015-11-25-tdd-by-example/</link>
-      <pubDate>Wed, 25 Nov 2015 00:00:00 +0000</pubDate>
-      
-      <guid>https://an1lam.github.io/post/2015-11-25-tdd-by-example/</guid>
-      <description>Value Objects  Avoid aliasing, where changes to mutable objects cascade to connected objects. All value objects must return new objects Should implement an equals method  Triangulation  Only generalize code when we have two or more examples (enough to triangulate for a radio signal) Ignore duplication until our tests require us to generalize Useful when you want to think about the &amp;ldquo;axis of variability&amp;rdquo;
-Decouple Make the tests use an interface that is decoupled from the underlying implementation.</description>
-    </item>
-    
-    <item>
-      <title>Weekly Newsletter</title>
       <link>https://an1lam.github.io/post/2015-11-22-nl/</link>
       <pubDate>Sun, 22 Nov 2015 00:00:00 +0000</pubDate>
       
