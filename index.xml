@@ -6,10 +6,19 @@
     <description>Recent content on Stephen Malina</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 18 Mar 2020 00:00:00 -0400</lastBuildDate>
+    <lastBuildDate>Fri, 15 May 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://an1lam.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Course Review - Causal Inference</title>
+      <link>https://an1lam.github.io/drafts/2020-05-15-ci-course-review/</link>
+      <pubDate>Fri, 15 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://an1lam.github.io/drafts/2020-05-15-ci-course-review/</guid>
+      <description>This semester, I had the pleasure of taking a course on Causal Inference with Professor Elias Bareinboim, one of Judea Pearl&amp;rsquo;s former students and author of some seminal results in Causal Inference. I feel like this course highlighted not only the content Causal Inference researchers consider important but also the types of understanding they value. In this review, I&amp;rsquo;ll focus on the latter. I hope to write some blog posts in the future about the former but have learned from past experience not to promise future posts unless I have time during which I know I can write them.</description>
+    </item>
     
     <item>
       <title>Digital Reduction Experiment</title>
