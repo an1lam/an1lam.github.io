@@ -200,7 +200,7 @@ $$
 \begin{aligned}
 P_{\mathcal{M}_0}(X = 0, Y = 0) &amp;= P(U = 0, U \oplus U_Y = 0) \\\
                                  &amp;= P(U = 0) P(U \oplus U_Y = 0 \mid U = 0) \\<br />
-                                 &amp;= 3 / 16,
+                                 &amp;= 9 / 16,
 \end{aligned}
 $$
 and
@@ -208,10 +208,15 @@ $$
 \begin{aligned}
 P_{\mathcal{M}_1}(X = 0, Y = 0) &amp;= P(U = 0, U \oplus U_Y = 0) \\\
                                  &amp;= P(U = 0) P(U \oplus U_Y = 0 \mid U = 0) \\<br />
-                                 &amp;= 3 / 16.
+                                 &amp;= 9 / 16.
 \end{aligned}
 $$
-Both results follow from the identities $ A \land A = A \lor A = A $ and by application of the probability chain rule. If we do similar calculations for the other three possible pairs of values for $ X $ and $ Y $, we&rsquo;ll find that all pairs have equal probability in both models as well. This is easy to see by noting that in both models, $ f_Y(U, X) = U \oplus U_Y $ when we substitute $ U $ for $ X $.</p>
+Both results follow from the identities $ A \land A = A \lor A = A $ and by application of the probability chain rule. If we do similar calculations for the other three possible pairs of values for $ X $ and $ Y $, we&rsquo;ll find that all pairs have equal probability in both models as well. This is easy to see by noting that in both models, $ f_Y(U, X) = U \oplus U_Y $ when we substitute $ U $ for $ X $.
+<label for="sidenote-8f715a39ba960ee6ef201201d0e0a224-6" class="margin-toggle sidenote-number"></label>
+<input type="checkbox" id="sidenote-8f715a39ba960ee6ef201201d0e0a224-6" class="margin-toggle"/>
+<span class="sidenote">
+Note that we are assuming $ (U_Y \perp U) $ in this graph and pair of models. To see why we can assume this, you can imagine replacing the bi-directed arrow in $ \mathcal{G} $ with a node $ U $ that has arrows to $ X $ and $ Y $ and adding a node $ U_Y $ with just an arrow to $ Y $. $ Y $ then acts as a collider between $ U $ and $ U_Y $, so they are independent. Put a different way, the idea is that $ Y $ has two sources of variation, one which is coupled to $ X $ and one which is independent of $ X $.
+</span></p>
 
 <p>So both models induce the same graph and joint distribution, but what about the quantity we&rsquo;re interested in, $ P(y \mid \text{do}(x)) $?  To determine $ P(y \mid \text{do}(x)) $, we replace $ f_X(U) $ with the constant $ x $ everywhere $ f_X $ appears in the SCM. If we do that with our two models and intervene with $ \text{do}(X = 0) $, we get the following probabilities for $ Y = 0 $
 $$
@@ -239,8 +244,8 @@ These don&rsquo;t match, which means we have proven that $ P(y \mid \text{do}(x)
 
 <h2 id="show-me-the-algorithm">Show me the algorithm!</h2>
 
-<p>As a computer science, programmer type, I&rsquo;m very much onboard with the &lsquo;algorithmitization&rsquo; approach to subjects. As Donald Knuth <a href="https://en.wikiquote.org/wiki/Donald_Knuth#Computer_Programming_as_an_Art_(1974)">put it</a>, &ldquo;Science is knowledge which we understand so well that we can teach it to a computer.&rdquo; Based on the course, causal inference researchers seem to share this view and have made impressive strides towards &lsquo;algorithmitizing&rsquo; causal inference. For example, one of my favorite things we discussed in the course was the <code>Identify</code> algorithm <label for="sidenote-8f715a39ba960ee6ef201201d0e0a224-6" class="margin-toggle sidenote-number"></label>
-<input type="checkbox" id="sidenote-8f715a39ba960ee6ef201201d0e0a224-6" class="margin-toggle"/>
+<p>As a computer science, programmer type, I&rsquo;m very much onboard with the &lsquo;algorithmitization&rsquo; approach to subjects. As Donald Knuth <a href="https://en.wikiquote.org/wiki/Donald_Knuth#Computer_Programming_as_an_Art_(1974)">put it</a>, &ldquo;Science is knowledge which we understand so well that we can teach it to a computer.&rdquo; Based on the course, causal inference researchers seem to share this view and have made impressive strides towards &lsquo;algorithmitizing&rsquo; causal inference. For example, one of my favorite things we discussed in the course was the <code>Identify</code> algorithm <label for="sidenote-8f715a39ba960ee6ef201201d0e0a224-7" class="margin-toggle sidenote-number"></label>
+<input type="checkbox" id="sidenote-8f715a39ba960ee6ef201201d0e0a224-7" class="margin-toggle"/>
 <span class="sidenote"> Invented by Jin Tian and described in his <a href="https://ftp.cs.ucla.edu/pub/stat_ser/r309.pdf">masterpiece of a PhD thesis</a>. Excitingly, although I haven&rsquo;t yet had the chance to deeply study it, Professor Bareinboim and one of our course TAs, Juan Correa, <a href="https://causalai.net/r46.pdf">recently extended</a> this algorithm to a more general scenario in which additional experimental distributions, i.e. $ P(\mathbf{v} \mid \text{do}(\mathbf{z})) $, are also available for assisting with identifying the target quantity. </span>
  Given a causal DAG, <code>Identify</code> either returns a formula for a $ \text{do} $ quantity in terms of the observed distribution or exits, indicating that the quantity is unidentifiable. This is incredible to me because it means that we no longer have to worry about figuring out whether individual quantities are identifiable in graphs and that we can answer identifiability questions for arbitrarily large graphs. This also shows what I consider to be the right attitude towards problems like this one. Rather than solving special cases, wherever possible, find an algorithm that can solve any case that is in principle solvable.</p>
 
