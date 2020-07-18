@@ -54,9 +54,9 @@ MathJax.Hub.Config({
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
 
-<link rel="stylesheet" href="https://an1lam.github.io/css/tufte.css">
-<link rel="stylesheet" href="https://an1lam.github.io/css/hugo-tufte.css">
-<link rel="stylesheet" href="https://an1lam.github.io/css/hugo-tufte-override.css">
+<link rel="stylesheet" href="https://stephenmalina.com/css/tufte.css">
+<link rel="stylesheet" href="https://stephenmalina.com/css/hugo-tufte.css">
+<link rel="stylesheet" href="https://stephenmalina.com/css/hugo-tufte-override.css">
 
 </head>
 
@@ -70,13 +70,13 @@ MathJax.Hub.Config({
   <nav class="menu">
     <ul>
     
-        <li><a href="https://an1lam.github.io/">Home</a></li>
+        <li><a href="https://stephenmalina.com/">Home</a></li>
     
-        <li><a href="https://an1lam.github.io/about">About</a></li>
+        <li><a href="https://stephenmalina.com/about">About</a></li>
     
-        <li><a href="https://an1lam.github.io/post">Post</a></li>
+        <li><a href="https://stephenmalina.com/post">Post</a></li>
     
-        <li><a href="https://an1lam.github.io/tags">Tags</a></li>
+        <li><a href="https://stephenmalina.com/tags">Tags</a></li>
     
     </ul>
 </nav>
@@ -86,7 +86,7 @@ MathJax.Hub.Config({
 <section>
 <h1 class="content-title">
   
-  <a href="https://an1lam.github.io/post/2020-05-15-ci-course-review/">Course Review - Causal Inference</a>
+  <a href="https://stephenmalina.com/post/2020-05-15-ci-course-review/">Course Review - Causal Inference</a>
   
 </h1>
 
@@ -122,7 +122,7 @@ MathJax.Hub.Config({
 
 <p>The course was organized along the rungs of the ladder of causation. As depicted below, the first rung of the ladder is association. Since many of the students, including myself, taking this course have a background in machine learning, we didn&rsquo;t spend much time on this rung. We reviewed some of the results from the probabilistic graphical models literature and then recast them from a causal perspective. I&rsquo;ll talk more about what this recasting looks like in the next section. The second rung of the ladder is intervention. This is about understanding how feasible manipulation of variables impacts overall systems. The bulk of our time in the course was spent on this rung. Specifically, we spent a lot of time talking about and going over the key results for identifying interventional quantities (\( \text{do}(\cdot) \) probabilities. After that, we spent some time diving into more recent results such as the <a href="https://www.aaai.org/Papers/AAAI/2020GB/AAAI-CorreaJ.8051.pdf">stochastic calculus</a> and <a href="https://causalai.net/r25.pdf">causal reinforcement learning</a> (also see <a href="https://www.youtube.com/watch?v=W20GWMzME5w&amp;feature=youtu.be">this talk</a>) that leverage and extend these results. From there, we broadened our focus to what Elias calls the &ldquo;Data Fusion&rdquo; problem, which is broadly about solving the problem of answering questions across the rungs. Finally, we jumped up to the third rung, counterfactuals, which is often analogized to imagination and retrospection. That is, answering the question &ldquo;what would have happened if &hellip;?&rdquo;</p>
 
-<p><img src="https://an1lam.github.io/images/ladder-of-causation.png" width=500 /></p>
+<p><img src="https://stephenmalina.com/images/ladder-of-causation.png" width=500 /></p>
 
 <h1 id="themes">Themes</h1>
 
@@ -160,11 +160,11 @@ Finally, let&rsquo;s suppose that we can model our unobservables as normally dis
 
 <p>It turns out that the combination of the distribution over the unobservables combined with the functional relationships also induces a graph that looks like the following.</p>
 
-<p><img src="https://an1lam.github.io/images/tree-graph.png" width=300 /></p>
+<p><img src="https://stephenmalina.com/images/tree-graph.png" width=300 /></p>
 
 <p>Furthermore, just by looking at the graph, we can deduce that the impact of fertilizer application on tree growth in the observed distribution is equal to the impact of intervening by adding fertilizer. This may not seem surprising because we explicitly randomized the process of fertilizer application, but where this gets interesting is that we can also obtain similar interventional quantities from observational data where it might initially seem impossible. <label for="sidenote-8f715a39ba960ee6ef201201d0e0a224-3" class="margin-toggle sidenote-number"></label>
 <input type="checkbox" id="sidenote-8f715a39ba960ee6ef201201d0e0a224-3" class="margin-toggle"/>
-<span class="sidenote">For a classic example, see <a href="https://an1lam.github.io/2020-03-09-front-door-do-calc-derivation.md">my post</a> on deriving the front-door criterion.</span>
+<span class="sidenote">For a classic example, see <a href="https://stephenmalina.com/2020-03-09-front-door-do-calc-derivation.md">my post</a> on deriving the front-door criterion.</span>
  There&rsquo;s lots more I could say about this, but I insetad recommend looking at other resources such as <a href="http://www.michaelnielsen.org/ddi/if-correlation-doesnt-imply-causation-then-what-does/">Michael Nielsen&rsquo;s post</a>, <a href="https://www.youtube.com/watch?v=nWaM6XmQEmU">this talk by Pearl</a>, and <a href="https://www.amazon.com/dp/B075DCKP7V/ref=dp-kindle-redirect?_encoding=UTF8&amp;btkr=1">The Book of Why</a> for more on the details.</p>
 
 <h2 id="construct-a-counterexample">Construct a counterexample</h2>
@@ -180,7 +180,7 @@ is identifiable if all the all models that induce the graph $ \mathcal{G} $ and 
 
 <p>Consider the following graph (often called the &ldquo;bow graph&rdquo;), in which we&rsquo;ll show that $ P(y \mid \text{do}(x)) $ is identifiable.</p>
 
-<p><img src="https://an1lam.github.io/images/bow-graph.png" width=500 /></p>
+<p><img src="https://stephenmalina.com/images/bow-graph.png" width=500 /></p>
 
 <p>It has two binary observed variables, $ X $ and $ Y $, and one binary unobserved confounding variable $ U $. Here are two SCMs ($ \mathcal{M}_0 $, $ \mathcal{M}_1 $) that induce this same graph.
 $$

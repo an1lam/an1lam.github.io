@@ -2,31 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Causality on Stephen Malina</title>
-    <link>https://an1lam.github.io/tags/causality/</link>
+    <link>https://stephenmalina.com/tags/causality/</link>
     <description>Recent content in Causality on Stephen Malina</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 15 Nov 2019 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://an1lam.github.io/tags/causality/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://stephenmalina.com/tags/causality/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Causal Inference Notes</title>
-      <link>https://an1lam.github.io/learning/2019-11-08-causal-inference/</link>
+      <link>https://stephenmalina.com/learning/2019-11-08-causal-inference/</link>
       <pubDate>Fri, 15 Nov 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://an1lam.github.io/learning/2019-11-08-causal-inference/</guid>
+      <guid>https://stephenmalina.com/learning/2019-11-08-causal-inference/</guid>
       <description>Causal Inference in Statistics Questions  Why is the causal effect identifiable in an IV DAG when the dependencies are linear (from an SCM perspective)?  I think this may relate to factor models.   Advanced Data Analysis from an Elementary Point of View (Ch. 18-23) Chapter 18 Exercises 18.2. Proof that every path must go through a collider:
 Observe that every path between two exogenous variables starts with variables going in the opposite direction.</description>
     </item>
     
     <item>
       <title>Paper Review - IVs and Mendelian Randomization</title>
-      <link>https://an1lam.github.io/learning/2019-11-02-ivs-mendelian-randomization/</link>
+      <link>https://stephenmalina.com/learning/2019-11-02-ivs-mendelian-randomization/</link>
       <pubDate>Sun, 03 Nov 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://an1lam.github.io/learning/2019-11-02-ivs-mendelian-randomization/</guid>
+      <guid>https://stephenmalina.com/learning/2019-11-02-ivs-mendelian-randomization/</guid>
       <description>Summary Detailed Notes 3 IV Requirements  IV must have a direct influence on the treatment IV must not covary with the unmeasured confounding that impacts the outcome IV must not have a direct influence on the outcome  Relevant considerations for deciding whether to do an IV analysis  Is there any unmeasured confounding?  If not, is the answer that we can just use a normal regression?  When is unmeasured confounding especially likely?</description>
     </item>
     
