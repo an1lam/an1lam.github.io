@@ -6,37 +6,10 @@
     <description>Recent content in Tags on Stephen Malina</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 09 Mar 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 12 Dec 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://an1lam.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>Causal Inference</title>
-      <link>https://an1lam.github.io/tags/causal-inference/</link>
-      <pubDate>Mon, 09 Mar 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://an1lam.github.io/tags/causal-inference/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>derivation</title>
-      <link>https://an1lam.github.io/tags/derivation/</link>
-      <pubDate>Mon, 09 Mar 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://an1lam.github.io/tags/derivation/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Math</title>
-      <link>https://an1lam.github.io/tags/math/</link>
-      <pubDate>Mon, 09 Mar 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://an1lam.github.io/tags/math/</guid>
-      <description></description>
-    </item>
     
     <item>
       <title>All of Statistics</title>
@@ -48,47 +21,11 @@
     </item>
     
     <item>
-      <title>Notes</title>
-      <link>https://an1lam.github.io/tags/notes/</link>
-      <pubDate>Thu, 12 Dec 2019 00:00:00 +0000</pubDate>
+      <title>Causal Inference</title>
+      <link>https://an1lam.github.io/tags/causal-inference/</link>
+      <pubDate>Mon, 09 Mar 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://an1lam.github.io/tags/notes/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>genomics</title>
-      <link>https://an1lam.github.io/tags/genomics/</link>
-      <pubDate>Sat, 16 Nov 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://an1lam.github.io/tags/genomics/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>machine-learning</title>
-      <link>https://an1lam.github.io/tags/machine-learning/</link>
-      <pubDate>Sat, 16 Nov 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://an1lam.github.io/tags/machine-learning/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>paper</title>
-      <link>https://an1lam.github.io/tags/paper/</link>
-      <pubDate>Sat, 16 Nov 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://an1lam.github.io/tags/paper/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>review</title>
-      <link>https://an1lam.github.io/tags/review/</link>
-      <pubDate>Sat, 16 Nov 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://an1lam.github.io/tags/review/</guid>
+      <guid>https://an1lam.github.io/tags/causal-inference/</guid>
       <description></description>
     </item>
     
@@ -102,16 +39,25 @@
     </item>
     
     <item>
-      <title>Statistics</title>
-      <link>https://an1lam.github.io/tags/statistics/</link>
-      <pubDate>Sun, 03 Nov 2019 00:00:00 +0000</pubDate>
+      <title>Derivation</title>
+      <link>https://an1lam.github.io/tags/derivation/</link>
+      <pubDate>Mon, 09 Mar 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://an1lam.github.io/tags/statistics/</guid>
+      <guid>https://an1lam.github.io/tags/derivation/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>linear-algebra</title>
+      <title>Genomics</title>
+      <link>https://an1lam.github.io/tags/genomics/</link>
+      <pubDate>Sat, 16 Nov 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://an1lam.github.io/tags/genomics/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Linear Algebra</title>
       <link>https://an1lam.github.io/tags/linear-algebra/</link>
       <pubDate>Tue, 13 Aug 2019 00:00:00 +0000</pubDate>
       
@@ -125,6 +71,60 @@
       <pubDate>Mon, 20 May 2019 00:00:00 +0000</pubDate>
       
       <guid>https://an1lam.github.io/tags/linear-algebra-done-right/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Machine Learning</title>
+      <link>https://an1lam.github.io/tags/machine-learning/</link>
+      <pubDate>Sat, 16 Nov 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://an1lam.github.io/tags/machine-learning/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Math</title>
+      <link>https://an1lam.github.io/tags/math/</link>
+      <pubDate>Mon, 09 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://an1lam.github.io/tags/math/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Notes</title>
+      <link>https://an1lam.github.io/tags/notes/</link>
+      <pubDate>Thu, 12 Dec 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://an1lam.github.io/tags/notes/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Paper</title>
+      <link>https://an1lam.github.io/tags/paper/</link>
+      <pubDate>Sat, 16 Nov 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://an1lam.github.io/tags/paper/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Review</title>
+      <link>https://an1lam.github.io/tags/review/</link>
+      <pubDate>Sat, 16 Nov 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://an1lam.github.io/tags/review/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Statistics</title>
+      <link>https://an1lam.github.io/tags/statistics/</link>
+      <pubDate>Sun, 03 Nov 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://an1lam.github.io/tags/statistics/</guid>
       <description></description>
     </item>
     
