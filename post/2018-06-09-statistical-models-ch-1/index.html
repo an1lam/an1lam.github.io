@@ -9,7 +9,7 @@
 <meta name="description" content="">
 <meta name="keywords" content="">
 <meta name="author" content="Stephen Malina">
-<meta name="generator" content="Hugo 0.40.1" />
+<meta name="generator" content="Hugo 0.74.3" />
 
   
   
@@ -96,86 +96,72 @@
 
 
 
-<section>
-
-<h1 id="summary">Summary</h1>
-
+<section><h1 id="summary">Summary</h1>
 <p>This chapter introduces basic terminology and describes three separate experiments to introduce us to statistical methods in action.</p>
-
 <p>We learn about the difference between randomized controlled experiments and observational experiments.  A randomized controlled experiment is an experiment in which subjects are randomly assigned to two groups: experiment and control. Members of the experimental group receive the &ldquo;treatment&rdquo;, whereas members of the control do not. We expect that randomized controlled experiments minimize confounding &ndash; other factors seeping in to impact our results without us knowing &ndash; because we expect members of the experimental and control group to be on average the same outside of whatever difference the treatment produces.</p>
-
-<p>The three experiments described are:
-1. The HIP Trial: A randomized control trial that proved the benefits of scanning women age 40-64 using mammography.
-2. Snow&rsquo;s Cholera Study: A natural experiment in which Snow, after much effort and careful investigation, proved that cholera was spread via the water supply.
-3. Yule&rsquo;s Pauper Study: A natural experiment in which Yule tried, but as the book argues, failed to show that policy choices affected the number of poor in England.</p>
-
-<p>In 1, we see the importance of not allowing selection bias into what you treat as treatment and control results. Specifically, the researchers evaluating the HIP trial made the wise decision to not bias their evaluation by excluding data from non-compliant treatment patients.</p>
-
-<p>In 2, we see how Snow carefully sought out ways to mimic controlled studies in the natural environment in order to eliminate confounding factors. One example of this is Snow studied cholera rates of individuals receiving water from two sources, one purified, one not, to show how the only explanation for the different rates of cholera among the two groups was water quality.</p>
-
-<p>In 3, we see how Yule mistook correlation for causation in his results. The author hints at but doesn&rsquo;t fully explain the difference between association and causal inference, concluding that Yule only showed the former.</p>
-
-<h1 id="exercises">Exercises</h1>
-
+<p>The three experiments described are:</p>
 <ol>
-<li><p>In the HIP trial (table 1), what is the evidence confirming that treatment has no effect on death from other causes?</p>
-
-<p>The fact that no significant difference between the Treatment and Control death rates from &ldquo;All other&rdquo; causes confirms that treatment does not impact death from other causes.</p></li>
-
-<li><p>Someone wants to analyze the HIP data by comparing the women who accept screening to the controls. Is this a good idea?</p>
-
+<li>The HIP Trial: A randomized control trial that proved the benefits of scanning women age 40-64 using mammography.</li>
+<li>Snow&rsquo;s Cholera Study: A natural experiment in which Snow, after much effort and careful investigation, proved that cholera was spread via the water supply.</li>
+<li>Yule&rsquo;s Pauper Study: A natural experiment in which Yule tried, but as the book argues, failed to show that policy choices affected the number of poor in England.</li>
+</ol>
+<p>In 1, we see the importance of not allowing selection bias into what you treat as treatment and control results. Specifically, the researchers evaluating the HIP trial made the wise decision to not bias their evaluation by excluding data from non-compliant treatment patients.</p>
+<p>In 2, we see how Snow carefully sought out ways to mimic controlled studies in the natural environment in order to eliminate confounding factors. One example of this is Snow studied cholera rates of individuals receiving water from two sources, one purified, one not, to show how the only explanation for the different rates of cholera among the two groups was water quality.</p>
+<p>In 3, we see how Yule mistook correlation for causation in his results. The author hints at but doesn&rsquo;t fully explain the difference between association and causal inference, concluding that Yule only showed the former.</p>
+<h1 id="exercises">Exercises</h1>
+<ol>
+<li>
+<p>In the HIP trial (table 1), what is the evidence confirming that treatment has no effect on death from other causes?</p>
+<p>The fact that no significant difference between the Treatment and Control death rates from &ldquo;All other&rdquo; causes confirms that treatment does not impact death from other causes.</p>
+</li>
+<li>
+<p>Someone wants to analyze the HIP data by comparing the women who accept screening to the controls. Is this a good idea?</p>
 <p>No, this is a bad idea. If we look at Table 1&rsquo;s &ldquo;All other causes&rdquo; column and compare the two treatment sub-groups&rsquo; rates, we see that the women who didn&rsquo;t accept screening had much higher death rates from other causes. This hints at a confounding factor (outside of mammography screenings) that likely influences breast cancer rate as well. For example, the text mentions that women that accepted screening were on the whole more affluent, a factor which could also contribute to their greater overall health and, therefore, lower breast cancer rate independent of mammography screenings.</p>
-
-<p>To summarize, it&rsquo;s a bad idea because we&rsquo;d knowingly be comparing two groups while ignoring confounding factors that make one&rsquo;s members, on average, healthier than the other&rsquo;s, but treating the two groups as comparable.</p></li>
-
-<li><p>Was Snow’s study of the epidemic of 1853–54 (table 2) a randomized controlled experiment or a natural experiment? Why does it matter that the Lambeth company moved its intake point in 1852? Explain briefly.</p>
-
+<p>To summarize, it&rsquo;s a bad idea because we&rsquo;d knowingly be comparing two groups while ignoring confounding factors that make one&rsquo;s members, on average, healthier than the other&rsquo;s, but treating the two groups as comparable.</p>
+</li>
+<li>
+<p>Was Snow’s study of the epidemic of 1853–54 (table 2) a randomized controlled experiment or a natural experiment? Why does it matter that the Lambeth company moved its intake point in 1852? Explain briefly.</p>
 <p>It was a natural experiment that had many of the positive qualities of a randomized controlled expreiment. Technically, we can&rsquo;t prove that the subjects were selected randomly without bias, but given they didn&rsquo;t select water providers at a time when the two companies were using different sources, we can say with high confidence the selection is mostly random.</p>
-
 <p>The Lambeth company moving its intake point in 1852 allows us to make two important assumptions:</p>
-
 <ol>
 <li>People didn&rsquo;t select water providers based on taste or other confounding factors.</li>
 <li>The Lambeth company moving its water supply provided a convenient setup for an observational study with one group receiving pure water and one receiving sewage water.</li>
-</ol></li>
-
-<li><p>Was Yule’s study a randomized controlled experiment or an observational study?</p>
-
-<p>Yule&rsquo;s study was an observational study. He was comparing outcomes for two different groups that differ in many key ways, income being the obvious one. That&rsquo;s why he had to run a regression on his data.:</p></li>
-
-<li><p>In equation (2), suppose the coefficient of ΔOut had been –0.755. What would Yule have had to conclude? If the coefficient had been +0.005?</p>
-
-<p>Yule would&rsquo;ve had to conclude that outrelief reduced poverty if ΔOut had been -0.755. If ΔOut had been +0.005, Yule would&rsquo;ve had to conclude that outrelief did not impact poverty.</p></li>
-
-<li><p>Suppose X1, X2, …, Xn are independent random variables, with common expectation μ and variance σ2. Let Sn = X1 + X2 + · · · + Xn. Find the expectation and variance of Sn. Repeat for Sn/n.</p>
-
+</ol>
+</li>
+<li>
+<p>Was Yule’s study a randomized controlled experiment or an observational study?</p>
+<p>Yule&rsquo;s study was an observational study. He was comparing outcomes for two different groups that differ in many key ways, income being the obvious one. That&rsquo;s why he had to run a regression on his data.:</p>
+</li>
+<li>
+<p>In equation (2), suppose the coefficient of ΔOut had been –0.755. What would Yule have had to conclude? If the coefficient had been +0.005?</p>
+<p>Yule would&rsquo;ve had to conclude that outrelief reduced poverty if ΔOut had been -0.755. If ΔOut had been +0.005, Yule would&rsquo;ve had to conclude that outrelief did not impact poverty.</p>
+</li>
+<li>
+<p>Suppose X1, X2, …, Xn are independent random variables, with common expectation μ and variance σ2. Let Sn = X1 + X2 + · · · + Xn. Find the expectation and variance of Sn. Repeat for Sn/n.</p>
 <p>Expectation of $$S_n$$ is $$n\mu$$ and of $$\frac{S_n}{n}$$ is $$\mu$$.</p>
-
-<p>Variance of $$S_n$$ is $$n * \sigma^2$$. Variance of $$\frac{S_n}{n}$$ is $$\frac{\sigma^2}{n}$$. (Note: I got this wrong originally, because I didn&rsquo;t understand that an n-factor change to a random variable produces an $$n^2$$ factor change to its variance).</p></li>
-
-<li><p>Suppose X1, X2, …, Xn are independent random variables, with a common distribution: P(Xi = 1) = p and P(Xi = 0) = 1 – p, where 0 &lt; p &lt; 1. Let Sn = X1 + X2 + · · · + Xn. Find the expectation and variance of Sn. Repeat for Sn/n.</p>
-
+<p>Variance of $$S_n$$ is $$n * \sigma^2$$. Variance of $$\frac{S_n}{n}$$ is $$\frac{\sigma^2}{n}$$. (Note: I got this wrong originally, because I didn&rsquo;t understand that an n-factor change to a random variable produces an $$n^2$$ factor change to its variance).</p>
+</li>
+<li>
+<p>Suppose X1, X2, …, Xn are independent random variables, with a common distribution: P(Xi = 1) = p and P(Xi = 0) = 1 – p, where 0 &lt; p &lt; 1. Let Sn = X1 + X2 + · · · + Xn. Find the expectation and variance of Sn. Repeat for Sn/n.</p>
 <p>$$E(S_n) = np$$ and $$Var(S_n) = n * Var(X_i)$$. $$Var(X_i) = E((X - E(X))^2) = p(1 - p)$$.</p>
-
-<p>Similarly, $$E(\frac{S_n}{n}) = \frac{p}{n}$$. $$Var(\frac{X_i}{n}) = \frac{p(1-p)}{n^2}$$ and $$Var(\frac{S_n}{n}) = \frac{p(1-p)}{n}$$.</p></li>
-
-<li><p>What is the law of large numbers?</p>
-
-<p>The law of large numbers states that, for a given random variable, $$X_i$$ with expected mean, $$\mu$$, as the number of samples in a real-world situation that fits $$X_i$$ increases, the mean of the samples will move closer to $$\mu$$.</p></li>
-
-<li><p>Keefe et al (2001) summarize their data as follows:</p>
-
+<p>Similarly, $$E(\frac{S_n}{n}) = \frac{p}{n}$$. $$Var(\frac{X_i}{n}) = \frac{p(1-p)}{n^2}$$ and $$Var(\frac{S_n}{n}) = \frac{p(1-p)}{n}$$.</p>
+</li>
+<li>
+<p>What is the law of large numbers?</p>
+<p>The law of large numbers states that, for a given random variable, $$X_i$$ with expected mean, $$\mu$$, as the number of samples in a real-world situation that fits $$X_i$$ increases, the mean of the samples will move closer to $$\mu$$.</p>
+</li>
+<li>
+<p>Keefe et al (2001) summarize their data as follows:</p>
 <blockquote>
 <p>Thirty-five patients with rheumatoid arthiritis kept a diary for 30 days. The participants reported having spiritual experiences, such as a desire to be in union with God, on a frequent basis. On days that participants rated their ability to control pain using religious coping methods as high, they were much less likely to have joint pain.</p>
 </blockquote>
-
 <p>Does the study show that religious coping methods are effective at controlling joint pain? If not, how would you explain the data.</p>
-
-<p>No, the study could just as easily be explained as showing reverse causation, that people were more likely to do their religious coping exercises on days where they had less joint pain.</p></li>
-
-<li><p>According to many textbooks, association is not causation. To what extent do you agree? Discuss briefly.</p>
-
-<p>Association is often a good indicator that causation may be present, but it&rsquo;s in no way sufficient for proving causation.</p></li>
+<p>No, the study could just as easily be explained as showing reverse causation, that people were more likely to do their religious coping exercises on days where they had less joint pain.</p>
+</li>
+<li>
+<p>According to many textbooks, association is not causation. To what extent do you agree? Discuss briefly.</p>
+<p>Association is often a good indicator that causation may be present, but it&rsquo;s in no way sufficient for proving causation.</p>
+</li>
 </ol>
 </section>
 <section>

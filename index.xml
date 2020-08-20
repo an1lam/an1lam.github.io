@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Stephen Malina</title>
@@ -91,7 +91,7 @@ What is this paper about? This paper describes a method for doing Mendelian Rand
       <pubDate>Fri, 15 Nov 2019 00:00:00 +0000</pubDate>
       
       <guid>https://stephenmalina.com/learning/2019-11-08-causal-inference/</guid>
-      <description>Causal Inference in Statistics Questions  Why is the causal effect identifiable in an IV DAG when the dependencies are linear (from an SCM perspective)?  I think this may relate to factor models.   Advanced Data Analysis from an Elementary Point of View (Ch. 18-23) Chapter 18 Exercises 18.2. Proof that every path must go through a collider:
+      <description>Causal Inference in Statistics Questions  Why is the causal effect identifiable in an IV DAG when the dependencies are linear (from an SCM perspective)?  I think this may relate to factor models.    Advanced Data Analysis from an Elementary Point of View (Ch. 18-23) Chapter 18 Exercises 18.2. Proof that every path must go through a collider:
 Observe that every path between two exogenous variables starts with variables going in the opposite direction.</description>
     </item>
     
@@ -101,7 +101,8 @@ Observe that every path between two exogenous variables starts with variables go
       <pubDate>Sun, 03 Nov 2019 00:00:00 +0000</pubDate>
       
       <guid>https://stephenmalina.com/learning/2019-11-02-ivs-mendelian-randomization/</guid>
-      <description>Summary Detailed Notes 3 IV Requirements  IV must have a direct influence on the treatment IV must not covary with the unmeasured confounding that impacts the outcome IV must not have a direct influence on the outcome  Relevant considerations for deciding whether to do an IV analysis  Is there any unmeasured confounding?  If not, is the answer that we can just use a normal regression?  When is unmeasured confounding especially likely?</description>
+      <description>Summary Detailed Notes 3 IV Requirements  IV must have a direct influence on the treatment IV must not covary with the unmeasured confounding that impacts the outcome IV must not have a direct influence on the outcome  Relevant considerations for deciding whether to do an IV analysis   Is there any unmeasured confounding?
+ If not, is the answer that we can just use a normal regression?    When is unmeasured confounding especially likely?</description>
     </item>
     
     <item>
@@ -141,7 +142,7 @@ Bio Background The genome consists of (broadly) two types of genes, coding genes
       
       <guid>https://stephenmalina.com/post/2019-07-26-deepbind/</guid>
       <description>In which I record my thoughts on DeepBind.
-What is this paper about? The authors of this paper designed a conv net model to predict how well different proteins will bind to sequences of DNA or RNA. They train one model per protein for many different sequences and show that these models can predict binding affinities for sequences well enough to produce insights regarding the impact of single nucleotide mutations.</description>
+What is this paper about? The authors of this paper designed a conv net model to predict how well different proteins will bind to sequences of DNA or RNA. They train one model per protein for many different sequences and show that these models can predict binding affinities for sequences well enough to produce insights regarding the impact of single nucleotide mutations. They then discuss different datasets and areas in which they tested their model and how it performed (often SOTA [as of 2015]).</description>
     </item>
     
     <item>
@@ -255,7 +256,7 @@ This is the first time I&amp;rsquo;ve posted on Facebook in &amp;hellip; long. H
       <pubDate>Tue, 12 Jun 2018 00:00:00 +0000</pubDate>
       
       <guid>https://stephenmalina.com/post/2018-06-12-statistical-models-ch-2/</guid>
-      <description>Questions  What does the regression equation mean? Is the idea that we get bigger $ r $ values when $ x $ and $ y $ deviate together? What does it mean for a function to be convex beyond $ f((x + y) / 2)) \leq (f(x) + f(y)) / 2 $? Put another way, why is this the proof of convexity?  $$ h\_{son} = slope * h\_{father} + yint = 70.</description>
+      <description>Questions  What does the regression equation mean? Is the idea that we get bigger $ r $ values when $ x $ and $ y $ deviate together?   What does it mean for a function to be convex beyond $ f((x + y) / 2)) \leq (f(x) + f(y)) / 2 $? Put another way, why is this the proof of convexity?  $$ h\{son} = slope * h\{father} + yint = 70.</description>
     </item>
     
     <item>
@@ -325,9 +326,7 @@ The leader of Andreessen Horowitz new bio arm gives a Q&amp;amp;A about the moti
       <pubDate>Sat, 14 Nov 2015 00:00:00 +0000</pubDate>
       
       <guid>https://stephenmalina.com/post/2015-11-14-sicp-1-1/</guid>
-      <description>Key Concepts  Environments, Syntax, Programming Languages v. Natural Languages, Applicative Order of Operations  Environments  Understanding meaning is a matter of combining primitives with context.
-Syntax  Lisp programmers tend to eschew syntactic sugar in favor of building their own syntax. Procedures are noticeably more composable than other languages I&amp;rsquo;ve used previously. There&amp;rsquo;s little difference between user-defined and language-defined procedures
-Comparison between programming and natural languages We can define procedures (verbs) and use variables (pronouns) to build higher-level abstractions.</description>
+      <description>Key Concepts  Environments, Syntax, Programming Languages v. Natural Languages, Applicative Order of Operations  Environments  Understanding meaning is a matter of combining primitives with context.  Syntax  Lisp programmers tend to eschew syntactic sugar in favor of building their own syntax. Procedures are noticeably more composable than other languages I&amp;rsquo;ve used previously. There&amp;rsquo;s little difference between user-defined and language-defined procedures  Comparison between programming and natural languages  We can define procedures (verbs) and use variables (pronouns) to build higher-level abstractions.</description>
     </item>
     
     <item>
@@ -506,7 +505,7 @@ In this letter, Dr. Ernst Stuhlinger, the past director of science at a NASA fac
       <pubDate>Sun, 12 Jul 2015 00:00:00 +0000</pubDate>
       
       <guid>https://stephenmalina.com/post/2015-07-12-themythofthearchofjustice/</guid>
-      <description>The past few weeks have seen major shifts in two important areas of American society: race and sexual orientation. Following the Charleston shooting, an increasing number of leaders such as South Carolina Governor Nikki Haley have called for the removal of the Confederate flag from state grounds due to its symbolic association with racism and support for slavery. And on June 26, the Supreme Court ruled in favor of a constitutional right for same-sex marriage.</description>
+      <description></description>
     </item>
     
     <item>
@@ -684,7 +683,7 @@ Explores the debate about the mechanism of near-death experiences between scient
       <guid>https://stephenmalina.com/post/2015-03-15-nl03152015/</guid>
       <description>Genocide Interview with a Torturer
 An author and survivor of the Khmer Rouge genocide in Cambodia attempts to come to terms with his experience. At times, this piece was hard to read at times, but I think that quality adds to its power. This quote really resonated with me:
- &amp;ldquo;There’s a contemporary notion that we’re all potential torturers. This fatalism tinged with smugness exercises literature, film, and certain intellectuals.</description>
+ &amp;ldquo;There’s a contemporary notion that we’re all potential torturers. This fatalism tinged with smugness exercises literature, film, and certain intellectuals. After all what’s more exciting than a great criminal?</description>
     </item>
     
     <item>
@@ -882,7 +881,7 @@ Church does a good job of balancing technical explanations with interesting anec
       <pubDate>Sun, 23 Nov 2014 00:00:00 +0000</pubDate>
       
       <guid>https://stephenmalina.com/post/2014-11-23-nl11232014/</guid>
-      <description>Philosophy / History Response to &amp;ldquo;Did Zen create the Kamikaze?&amp;rdquo;
+      <description>Philosophy / History Response to &amp;ldquo;Did Zen create the Kamikaze?&amp;quot;
 A regular reader of the newsletter, Will Baird, responds to one of the articles I included in last week&amp;rsquo;s newsletter. If I could pick one article in this newsletter for you to read, it would be this one. Will worked hard on this response, bringing an expert&amp;rsquo;s mind to his critique and pulling knowledge from a wellspring of related sources and scholarly work.</description>
     </item>
     
@@ -893,7 +892,7 @@ A regular reader of the newsletter, Will Baird, responds to one of the articles 
       
       <guid>https://stephenmalina.com/post/2014-11-18-existence-david-brin-review/</guid>
       <description>Mind-blowing, challenging, and disturbing at times, David Brin&amp;rsquo;s view of the future is more comprehensive and more diverse than any other writer&amp;rsquo;s. The thing I love about this book is that it doesn&amp;rsquo;t shy away from discussing hard truths, like the myriad failure-modes humanity can enter. However, it accompanies this discussion with a constant sense that, if it&amp;rsquo;s possible, humanity will find a way.
-Existence is a sci-fi novel for the Internet Age.</description>
+Existenceis a sci-fi novel for the Internet Age.</description>
     </item>
     
     <item>
@@ -903,7 +902,7 @@ Existence is a sci-fi novel for the Internet Age.</description>
       
       <guid>https://stephenmalina.com/post/2014-11-17-response-to-nl11162014/</guid>
       <description>One of my readers, Will Baird, read the &amp;ldquo;Did Zen philosophy create the Kamikaze?&amp;rdquo; article in this past week&amp;rsquo;s newsletter, and, being a History buff, had a strong reaction to the article. Thus, he asked that I make his well though-out and well informed response available for my readers, as I have done below.
-History as Clickbait &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;In his article “Into nothingness” Christopher Harding asks, “Did Zen ideas create the kamikaze?</description>
+History as Clickbait  In his article “Into nothingness” Christopher Harding asks, “Did Zen ideas create the kamikaze?</description>
     </item>
     
     <item>
@@ -926,7 +925,7 @@ Begins by talking about an architect&amp;rsquo;s attempt to mimic the way termit
       <pubDate>Sun, 09 Nov 2014 00:00:00 +0000</pubDate>
       
       <guid>https://stephenmalina.com/post/2014-11-09-nl11092014/</guid>
-      <description>Questions or Comments? Contact me at stephenmalina@gmail.com or on Twitter.
+      <description>Questions or Comments? Contact me at [stephenmalina@gmail.com](mailto: stephenmalina@gmail.com) or on Twitter.
 Philosophy Marathon Monks of Mt. Hiei
 Disclaimer: There is New-Agey-ness within this article. For a more accurate depiction of the Marathon Monks, I recommend this documentary or this book (I intend to consume both over winter break)
 Despite the above disclaimer, I included this because I mentioned the Marathon Monks to a friend yesterday. Upon doing so, I decided that their story is worthwhile to share.</description>
@@ -938,7 +937,7 @@ Despite the above disclaimer, I included this because I mentioned the Marathon M
       <pubDate>Sun, 02 Nov 2014 00:00:00 +0000</pubDate>
       
       <guid>https://stephenmalina.com/post/2014-11-02-nl11022014/</guid>
-      <description>This is a weekly newsletter I publish each week that contains content I enjoyed and hope that you will enjoy. If you have questions or comments, you can find me at stephenmalina@gmail.com or on Twitter.
+      <description>This is a weekly newsletter I publish each week that contains content I enjoyed and hope that you will enjoy. If you have questions or comments, you can find me at [stephenmalina@gmail.com](mailto: stephenmalina@gmail.com) or on Twitter.
 Technology and Human Augmentation A Spreadsheet Way of Knowledge
 A long, in-depth piece on the history of spreadsheet modeling. The two points that stick with me from this piece are the dismissive attitude people initially had towards the spreadsheet and the obsession with modeling people displayed (and continue to display).</description>
     </item>
@@ -959,7 +958,7 @@ A long, in-depth piece on the history of spreadsheet modeling. The two points th
       
       <guid>https://stephenmalina.com/page/subscribe/</guid>
       <description>Thank you for reading my blog!
-Sign up for my email newsletter or use this RSS feed to get notified of new blog posts.</description>
+Sign up for my email newsletteror use this RSS feedto get notified of new blog posts.</description>
     </item>
     
     <item>
@@ -978,7 +977,7 @@ Sign up for my email newsletter or use this RSS feed to get notified of new blog
       
       <guid>https://stephenmalina.com/about/</guid>
       <description>Hi! I&amp;rsquo;m Stephen Malina. I&amp;rsquo;m currently a CS MS student at Columbia interested in Machine Learning and its applications in biology.
-Previously, I worked at UberEats as a backend engineer and at Compass before that. I keep a low social media presence, but, if you enjoy what I have to say or want to rant at me, you should email me at stephenmalina@gmail.com. If you&amp;rsquo;re interested in what I&amp;rsquo;m currently hacking on, check out my Github.</description>
+Previously, I worked at UberEatsas a backend engineer and at Compass before that. I keep a low social media presence, but, if you enjoy what I have to say or want to rant at me, you should email me at stephenmalina@gmail.com. If you&amp;rsquo;re interested in what I&amp;rsquo;m currently hacking on, check out my Github.</description>
     </item>
     
     <item>

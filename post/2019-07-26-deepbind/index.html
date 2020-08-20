@@ -9,7 +9,7 @@
 <meta name="description" content="">
 <meta name="keywords" content="">
 <meta name="author" content="Stephen Malina">
-<meta name="generator" content="Hugo 0.40.1" />
+<meta name="generator" content="Hugo 0.74.3" />
 
   
   
@@ -116,47 +116,27 @@ MathJax.Hub.Config({
 
 
 
-<section>
-
-<p>In which I record my thoughts on <a href="https://www.nature.com/articles/nbt.3300.pdf">DeepBind</a>.</p>
-
+<section><p>In which I record my thoughts on <a href="https://www.nature.com/articles/nbt.3300.pdf">DeepBind</a>.</p>
 <h2 id="what-is-this-paper-about">What is this paper about?</h2>
-
 <p>The authors of this paper designed a conv net model to predict how well different proteins will bind to sequences of DNA or RNA. They train one model per protein for many different sequences and show that these models can predict binding affinities for sequences well enough to produce insights regarding the impact of single nucleotide mutations. They then discuss different datasets and areas in which they tested their model and how it performed (often SOTA [as of 2015]).</p>
-
 <h2 id="why-is-this-important">Why is this important?</h2>
-
 <p>At the object level, being able to better predict protein binding affinity to DNA/RNA sequences can help us better understand gene expression and identify mutations that will degrade functioning. At the meta level, this paper (claims to) showcase the power of convolutional neural nets to &ldquo;automatically&rdquo; learn general models of protein binding from heterogeneous inputs. The authors highlight how using a CNN obviates the need for lots of manual hand-tuning, although I suspect, like in many deep learning papers, they&rsquo;re failing to mention other tuning they did to get this model to work as well as it does. The authors point out that, if these sorts of NN models prove useful in bio, future research can essentially ride the curve of deep learning model improvement that they expect to result from the increased investment by industry and academia in deep learning.</p>
-
 <h2 id="technical-methods">Technical Methods</h2>
-
 <p>Their conv net model has 4 layers: a convolutional layer, a rectification layer, a max/avg pooling layer, and one or two neuron layers depending on whic performs better on the validation set.</p>
-
 <p>Each model is trained to determine the binding affinity (or binding confidence in the classification case) for one protein. Their models take a DNA or RNA sequence as input and output a real-valued binding affinity score that represents the likelihood of that protein binding to this sequence (note: I still don&rsquo;t understand what exactly this score represents). Specifically, they convert a sequence of $ m $ characters chosen from {A, C, T, G} (in the case of DNA) into a padding $m \times 4$-length vector where each row&rsquo;s values sum to 1 and a $1$ at position $j,k$ indicates the existence of nucleotide $k$ at position $j$.</p>
-
 <p>During training, they use dropout on both NN layers (when applicable) and use random search to find good hyperparameters. Since their models actually can function as classifiers or predictors, they use different loss functions to train each &ndash; negative log likelihood for classification and MSE for prediction.</p>
-
 <h2 id="criticisms">Criticisms</h2>
-
 <h3 id="to-hide-or-not-to-hide">To Hide Or Not To Hide</h3>
-
 <p>I&rsquo;m not sure how common this is, but the decision to selectively use the hidden ReLu layer depending on validation performance felt unmotivated to me. I&rsquo;d be interested in learning more about the intuition behind why removing it sometimes improves performance.</p>
-
-<h3 id="never-roll-your-own-https-news-ycombinator-com-item-id-19947317-models"><a href="https://news.ycombinator.com/item?id=19947317">Never Roll Your Own&hellip;</a> Models</h3>
-
+<h3 id="never-roll-your-ownhttpsnewsycombinatorcomitemid19947317-models"><a href="https://news.ycombinator.com/item?id=19947317">Never Roll Your Own&hellip;</a> Models</h3>
 <p>Their model is &ldquo;built from the ground up in C++ and Python, with only low-level dependencies (CUDA and Numpy).&rdquo; In fairness, this paper was written in 2015, so the Tensorflow paper had either just dropped or not even appeared yet. Unlike some <a href="https://twitter.com/kchonyc/status/1149826779999363072">reviewers</a>, I don&rsquo;t expect the authors of papers to time travel, so maybe this just shows how fast things progress in ML these days that I now expect a paper like this to use off-the-shelf components.</p>
-
 <p>Regardless, someone has since created a <a href="https://github.com/kundajelab/DeepBindToKeras/blob/master/DeepBind%20to%20Keras.ipynb">Keras version</a> of DeepBind.</p>
-
 <h2 id="speculative-future-extensions">Speculative Future Extensions</h2>
-
 <ul>
 <li>Using one big model to learn all the different protein affinities. I&rsquo;m not exactly sure how you&rsquo;d do this, but you&rsquo;d have to have some way of parameterizing your model with both the protein and sequence as input. In the ideal case, your model would perform better due to learning relationships between proteins in addition to motif-to-affinity relationships.</li>
 <li>Leverage something better than random parameter search (bayesian optimization, one of the newfangled evolutionary strategies, etc.) to see if you can get better performance without compromising generalization. I suspect this would be more important if you wanted to train one model on multiple (or all) of the proteins as I mentioned in the prior bullet.</li>
 </ul>
-
 <h2 id="questions">Questions</h2>
-
 <ul>
 <li>What does the outputted score actually represent when it&rsquo;s a continuous value? I get that it&rsquo;s modeling the protein&rsquo;s binding affinity but what&rsquo;s the unit of measure for the thing being predicted? This is one of those embarrassing &ldquo;I don&rsquo;t know anything about bio&rdquo; questions&hellip;</li>
 <li>What&rsquo;s the physics/chemistry intuition behind using motif-based convolutions? Is it purely structural, i.e. is the assumption that the nucleotide sequence determines its structure and its structure determines whether the protein will bind to it?</li>
