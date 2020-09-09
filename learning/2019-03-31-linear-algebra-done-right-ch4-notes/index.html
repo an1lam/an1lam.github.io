@@ -9,7 +9,7 @@
 <meta name="description" content="">
 <meta name="keywords" content="">
 <meta name="author" content="Stephen Malina">
-<meta name="generator" content="Hugo 0.74.3" />
+<meta name="generator" content="Hugo 0.40.1" />
 
   
   
@@ -99,46 +99,64 @@ MathJax.Hub.Config({
 
 
 
-<section><h1 id="selected-exercises">Selected Exercises</h1>
+<section>
+
+<h1 id="selected-exercises">Selected Exercises</h1>
+
 <p><strong>4.</strong> Suppose $m$ and $n$ are positive integers with $ m \leq n $, and suppose $ \lambda_1, \dots, \lambda_m \in F $. Prove that there exists a polynomial $ p \in \mathcal P(\mathbf{F}) $ with $ \deg p = n $ such that $ 0 = p(\lambda_1) = \cdots = p(\lambda_m) $ and such that $ p $ has no other zeros.</p>
+
 <p>First, we can show that the polynomial $p&rsquo;(z) = (z - \lambda_1) \cdots (z-\lambda_m) $ with $ \deg p&rsquo; = m $ has $ 0 = p&rsquo;(\lambda_1) = \cdots = p&rsquo;(\lambda_m) $ and no other zeros. By 4.12, we know that $ p&rsquo; $ has at most $ m $ zeros and therefore has no other zeros besides $ \lambda_1, \dots, \lambda_m $.</p>
+
 <p>Now, we wish to increase the degree of $ p&rsquo; $ from $ m $ to $ n $ without adding additional zeros. To accomplish this, we multiply $ p&rsquo; $ by $ (z-\lambda_m)^{n-m}$. This gives us
 $$
 p(z) = (z-\lambda_m)^{n-m} * p&rsquo;(z) = (z - \lambda_1) \cdots (z-\lambda_m)^{n-m+1}.
 $$</p>
+
 <p>It remains to show that $ p(z) $ does not have any additional zeros beyond those of $ p&rsquo; $. Similar to 4.14, we can express this as</p>
+
 <p>$$
 (z-\lambda_1) \cdots (z-\lambda_m)^{m-n+1} = (z-\tau_1) \cdots (z-\tau_n).
 $$</p>
+
 <p>However, in this case, after dividing by $ (z-\lambda_1), \dots, (z-\lambda_m) $, we&rsquo;re left with</p>
+
 <p>$$
 (z-\lambda_m)^{n-m} = (z-\tau_{m+1}) \cdots (z-\tau_n).
 $$</p>
+
 <p>It turns out the same procedure we used above works here too, since each time we divide by $ (z-\lambda_m) $, we get a new equality with degree one less.</p>
+
 <p><strong>5.</strong> Suppose $ m $ is a nonnegative integer, $ z_1, &hellip;, z_{m+1} $ are distinct elements of $ \mathbf{F} $, and $ w_1, \dots, w_{m+1} \in \mathbf{F} $. Prove that there exists a unique polynomial $ p \in \mathcal P_{m}(\mathbf{F}) $ such that
 $$
 p(z_j) = w_j
 $$</p>
+
 <p>for $ j = 1, \dots, m+1$.</p>
+
 <p>Define $ T: P_m(\mathbf{F}) \rightarrow F^{m+1} $ by
 $$
 T(p) = (p(z_1), \dots, p(z_{m+1})).
 $$</p>
+
 <p>Then, if $ T $ is an injective and surjective linear map, we know that there exists a unique polynomial $ p \in \mathcal P_{m}(\mathbf{F}) $ such that
 $$
 p(z_j) = w_j.
 $$</p>
+
 <p>It&rsquo;s obvious due to properties of polynomials that $ T $ is a linear map, so we skip the proof of this fact.</p>
+
 <p>If $ p \in \operatorname{null} T $, $p(z_1) = \cdots = p(z_m) = 0 $, so if $ p \neq 0 $, $ p $ would be a degree $ m $ polynomial with $ m+1 $ distinct roots. By 4.12, this is a contradiction, so $ p = 0 $ and $ \operatorname{null} T = \{0\} $.</p>
+
 <p>$T$ is surjective iff $ range T = F^{m+1} $. By the Fundamental Theorem of Linear Maps,
 $$
 \begin{eqnarray}
-\dim P_{m} &amp; = &amp; \dim \operatorname{null} T + \dim \operatorname{range} T \\\\<br>
-m+1 &amp; = &amp; 0 + \dim \operatorname{range} T \\\\<br>
-m+1 &amp; = &amp; \dim \operatorname{range} T \\\\<br>
-\dim F^{m+1} &amp; = &amp; \dim \operatorname{range} T \\\\<br>
+\dim P_{m} &amp; = &amp; \dim \operatorname{null} T + \dim \operatorname{range} T \\\<br />
+m+1 &amp; = &amp; 0 + \dim \operatorname{range} T \\\<br />
+m+1 &amp; = &amp; \dim \operatorname{range} T \\\<br />
+\dim F^{m+1} &amp; = &amp; \dim \operatorname{range} T \\\<br />
 \end{eqnarray}
 $$</p>
+
 <p>Hence, $ T $ is also surjective.</p>
 </section>
 <section>

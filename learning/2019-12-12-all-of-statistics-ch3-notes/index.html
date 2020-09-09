@@ -9,7 +9,7 @@
 <meta name="description" content="">
 <meta name="keywords" content="">
 <meta name="author" content="Stephen Malina">
-<meta name="generator" content="Hugo 0.74.3" />
+<meta name="generator" content="Hugo 0.40.1" />
 
   
   
@@ -99,34 +99,45 @@ MathJax.Hub.Config({
 
 
 
-<section><h1 id="selected-exercises">Selected Exercises</h1>
+<section>
+
+<h1 id="selected-exercises">Selected Exercises</h1>
+
 <p><strong>1.</strong> Suppose we play a game where we start with $ c $ dollars. On each play of the game you either double or halve your money, with equal probability. What is your expected fortune after $ n $ trials?</p>
+
 <p>I&rsquo;m pretty sure we can use a trick that I&rsquo;ve seen a lot in machine learning to solve this using plain old expectations. If I&rsquo;m right, we let $ X \sim \text{Binomial}(n, \frac{1}{2}) $ and can create a new random variable, $ Z $, where</p>
+
 <p>$$ Z = c \cdot 2^{X} \left(\frac{1}{2}\right)^{1-X}. $$</p>
+
 <p>Taking the expectation when $ n = 1 $ is easy. We just get
 $$
 \begin{align}
-\mathbb{E} Z &amp;= c \cdot \mathbb{E}\left[2^{X} \left(\frac{1}{2}\right)^{1-X} \right] \\\<br>
-&amp;= c \cdot \left(2 \cdot 1 \cdot \frac{1}{2} + 1 \cdot \frac{1}{2} \cdot \frac{1}{2} \right) \\\<br>
+\mathbb{E} Z &amp;= c \cdot \mathbb{E}\left[2^{X} \left(\frac{1}{2}\right)^{1-X} \right] \\<br />
+&amp;= c \cdot \left(2 \cdot 1 \cdot \frac{1}{2} + 1 \cdot \frac{1}{2} \cdot \frac{1}{2} \right) \\<br />
 &amp;= \frac{5}{4} c .
 \end{align}
 $$</p>
+
 <p>For $ n &gt; 1 $, I initially thought this was going to be really hard. But thinking about it a bit more, it seems like the fact that a binomial just equals the sum of many Bernoulli random variables makes this easy too. Formally, since $ X = X_1 + \cdots + X_n $ for some $ n $ i.i.d. Bernoulli random variables,
 $$
 \mathbb{E} Z = c \cdot \mathbb{E}\left[2^{X} \left(\frac{1}{2}\right)^{1-X} \right] = c \cdot \prod_{i=1}^n\mathbb{E}\left[2^{X_i} \left(\frac{1}{2}\right)^{1-X_i} \right] = \left(5 / 4\right)^n c.
 $$</p>
+
 <p><strong>2.</strong> Show that $ \mathbb{V}(X) = 0 $ iff $ P(X = c) = 1 $ for some $ c $.</p>
+
 <p>The reverse direction is easy. We just note that $ P(X = c) = 1 \implies \mathbb{E}[X] = c \land \mathbb{E}[X^2] = c^2 $, so
 $$
 \mathbb{V}(X) = \mathbb{E}\left[X^2\right] - \mathbb{E}[X]^2 = c^2 - c^2 = 0.
 $$</p>
+
 <p>For the forward direction, we have to work things about a bit more explicitly. The formula for $ \mathbb{V}(X) $ tells us
 $$
 \begin{align}
-\mathbb{E}\left[\left(X-\mu_X\right)^2\right] &amp;= 0 \\\<br>
-\sum_{x_i \in X} (x_i-\mu_X)^2 \Pr(X=x) &amp;= 0.
+    \mathbb{E}\left[\left(X-\mu_X\right)^2\right] &amp;= 0 \\<br />
+    \sum_{x_i \in X} (x_i-\mu_X)^2 \Pr(X=x) &amp;= 0.
 \end{align}
 $$</p>
+
 <p>Because of the probability axioms and the squared term, each term in the sum is always non-negative and the probabilities have to sum to 1. So, the only way this sum can equal 0 is if $ \Pr(X = \mu_X) = 1 $ for an arbitrary choice of $ \mu_X $. The same thing holds for a continuous distribution, since its density can never be negative. One way to see this is to note that the density is the derivative of the CDF, and so it&rsquo;s always non-negative.</p>
 </section>
 <section>

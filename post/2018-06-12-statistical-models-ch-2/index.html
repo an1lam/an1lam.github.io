@@ -9,7 +9,7 @@
 <meta name="description" content="">
 <meta name="keywords" content="">
 <meta name="author" content="Stephen Malina">
-<meta name="generator" content="Hugo 0.74.3" />
+<meta name="generator" content="Hugo 0.40.1" />
 
   
   
@@ -96,139 +96,162 @@
 
 
 
-<section><h1 id="questions">Questions</h1>
+<section>
+
+<h1 id="questions">Questions</h1>
+
 <ul>
 <li>What does the regression equation <em>mean</em>? Is the idea that we get bigger $ r $ values when $ x $ and $ y $ deviate together?</li>
-</ul>
-<ul>
 <li>What does it mean for a function to be convex beyond $ f((x + y) / 2)) \leq (f(x) + f(y)) / 2 $? Put another way, why is this the proof of convexity?</li>
 </ul>
-<p>$$ h\<em>{son} = slope * h\</em>{father} + yint = 70.908in $$</p>
+
+<p>$$ h\_{son} = slope * h\_{father} + yint = 70.908in $$</p>
+
 <h1 id="exercises">Exercises</h1>
+
 <h2 id="set-a">Set A</h2>
+
 <ol>
-<li>
-<p>In the Pearson-Lee data, the average height of the fathers was 67.7 inches; the SD was 2.74 inches. The average height of the sons was 68.7 inches; the SD was 2.81 inches. The correlation was 0.501.
+<li><p>In the Pearson-Lee data, the average height of the fathers was 67.7 inches; the SD was 2.74 inches. The average height of the sons was 68.7 inches; the SD was 2.81 inches. The correlation was 0.501.
 a. True or false and explain: because the sons average an inch taller than the fathers, if the father is 72 inches tall, it&rsquo;s 50-50 whether the son is taller than 73 inches.</p>
+
 <p>Intuitively, no. The average son will be 68.7 inches and the correlation between fathers and sons is only 0.501. Formally, to calculate the probability a given son with father 72 inches, we need to somehow factor in both the average height of a given son, 68.7 inches, and the amount the father&rsquo;s height impacts our predicted son height. To do this, we use our result from b to predict what the average son born to a father of height 72 inches would be:</p>
+
 <p>Therefore, the 50-50 son of a 72 inch tall father will be shorter than 73 inches by over two inches.</p>
+
 <p>b. Find the regression line of son&rsquo;s height on father&rsquo;s height, and its RMS error.</p>
-<p>Slope is $ r * (s_{son} / s_{father}) $, equal to 0.51379927007. The y-intercept is $ \bar{y} - slope * \bar{x} $, equal to 33.9157894163. MSE is $ (1-r^2) * Var(y) $, equal to 5.9141710039. RMSE is $ \sqrt{MSE} $, equal to 2.43.</p>
-</li>
-<li>
-<p>Can you determine <em>a</em> in equation 7 (Hooke&rsquo;s Law regression equation) by measuring the length of the spring with no load? With one measurement? Ten measurements? Explain briefly.</p>
-<p>Yes, you can determine an  $ a $  value even with no, one, or ten measurements, but the fewer measurements you have, the less accurate your  $ a $  value will be. When you have 0 measurements, your  $ a $  value will equal  $ Y $  delta whatever  $ e_i $  you have. When you have one measurement, your  $ a $  value will only be influenced by that one data point.</p>
-</li>
-<li>
-<p>Use the data in table 1 to find the MSE and the RMS error for the regression line predicting length from weight. Which statistic gives a better sense of how far the data are from the regression line? Hint: keep track of the units, plot the data, or both.</p>
+
+<p>Slope is $ r * (s_{son} / s_{father}) $, equal to 0.51379927007. The y-intercept is $ \bar{y} - slope * \bar{x} $, equal to 33.9157894163. MSE is $ (1-r^2) * Var(y) $, equal to 5.9141710039. RMSE is $ \sqrt{MSE} $, equal to 2.43.</p></li>
+
+<li><p>Can you determine <em>a</em> in equation 7 (Hooke&rsquo;s Law regression equation) by measuring the length of the spring with no load? With one measurement? Ten measurements? Explain briefly.</p>
+
+<p>Yes, you can determine an  $ a $  value even with no, one, or ten measurements, but the fewer measurements you have, the less accurate your  $ a $  value will be. When you have 0 measurements, your  $ a $  value will equal  $ Y $  delta whatever  $ e_i $  you have. When you have one measurement, your  $ a $  value will only be influenced by that one data point.</p></li>
+
+<li><p>Use the data in table 1 to find the MSE and the RMS error for the regression line predicting length from weight. Which statistic gives a better sense of how far the data are from the regression line? Hint: keep track of the units, plot the data, or both.</p>
+
 <p>$$  MSE = \frac{.0001 + .0001 + 0 + 0 + .0001 + .0001}{6} = .00007 cm^2 $$
-$$  RMSE = .008 cm $$</p>
-<p>RMSE is a better measure because it&rsquo;s in the right units, cm.</p>
-</li>
-<li>
-<p>The correlation coefficient is a good descriptive statistic for one of the three diagrams below. Which one, and why?</p>
-<p>The correlation coefficient is a good descriptive statistic for the first plot because its points closely approximate a line. The other two graphs approximate a curve and two disjoint clusters respectively.</p>
-</li>
+ $$  RMSE = .008 cm $$</p>
+
+<p>RMSE is a better measure because it&rsquo;s in the right units, cm.</p></li>
+
+<li><p>The correlation coefficient is a good descriptive statistic for one of the three diagrams below. Which one, and why?</p>
+
+<p>The correlation coefficient is a good descriptive statistic for the first plot because its points closely approximate a line. The other two graphs approximate a curve and two disjoint clusters respectively.</p></li>
 </ol>
+
 <h2 id="set-b">Set B</h2>
+
 <ol>
-<li>
-<p>In Equation (1), variance applies to data, or random variables? What about correlation in Equation (4)?</p>
-<p>In Equation (1), variance applies to data, as does the correlation coefficient in Equation (4).</p>
-</li>
-<li>
-<p>On page 22, below table 1, you will find the number 439.01. Is this a parameter or an estimate? What about the 0.05?</p>
-<p>Both are estimates.</p>
-</li>
-<li>
-<p>Find what the regression coefficient would be for the data in Table 1 if we didn&rsquo;t have the 5th (last) item.</p>
+<li><p>In Equation (1), variance applies to data, or random variables? What about correlation in Equation (4)?</p>
+
+<p>In Equation (1), variance applies to data, as does the correlation coefficient in Equation (4).</p></li>
+
+<li><p>On page 22, below table 1, you will find the number 439.01. Is this a parameter or an estimate? What about the 0.05?</p>
+
+<p>Both are estimates.</p></li>
+
+<li><p>Find what the regression coefficient would be for the data in Table 1 if we didn&rsquo;t have the 5th (last) item.</p>
+
 <p>To recap,
 $$
 r = \frac{1}{n} \sum_{1}^{n}\frac{(x - \bar{x})}{s_x} * \frac{(y-\bar{y})}{s_y}
 $$</p>
+
 <p>$$
-\bar{y} = 439.208 \\\<br>
-\bar{x} = 4 \\\<br>
-s_y = \sqrt{\frac{1}{5} * (.04326 + .00744 + .000005 + .0104 + .03686)} \\\<br>
-s_y = \sqrt{.01966} = .14020 \\\<br>
-s_x = \sqrt{\frac{1}{5} * (16 + 4 + 0 + 4 + 16)} = \sqrt{8} = 2.82843 \\\<br>
-r = \frac{1}{5} * (2.09812 + .44383 + 0 + .51444 + 1.93672) = \frac{4.99312}{5} = .99862 \\\<br>
-\hat{b} = r * s_y / s_x = .04950 \\\<br>
-\hat{a} = 439.01 \\\<br>
+\bar{y} = 439.208 \\<br />
+\bar{x} = 4 \\<br />
+s_y = \sqrt{\frac{1}{5} * (.04326 + .00744 + .000005 + .0104 + .03686)} \\<br />
+s_y = \sqrt{.01966} = .14020 \\<br />
+s_x = \sqrt{\frac{1}{5} * (16 + 4 + 0 + 4 + 16)} = \sqrt{8} = 2.82843 \\<br />
+r = \frac{1}{5} * (2.09812 + .44383 + 0 + .51444 + 1.93672) = \frac{4.99312}{5} = .99862 \\<br />
+\hat{b} = r * s_y / s_x = .04950 \\<br />
+\hat{a} = 439.01 \\<br />
 $$</p>
-<p>So, our regression line is  $ y = 439.01 + .04950 * x $ .</p>
-</li>
-<li>
-<p>In Example 1, is 900 square pounds the variance of a random variable or data?<br>
-900 square pounds is the variance of data.</p>
-</li>
-<li>
-<p>In example 2, is 35/12 the variance of a random variable? of data? maybe both? Discuss briefly.</p>
-<p>35/12 is the variance of a random variable as it&rsquo;s presented because it&rsquo;s calculated based off of the individual probabilities of different rolls rather than the outcomes of 100 real rolls. That said, we expect the variance of 100 real rolls to be close to 35/12.</p>
-<p><em>Wrong</em>: The correct answer is that 35/12 starts as the variance of data, a 6-item, monotonically increasing list. It becomes the variance of a random variable once the hypothetical situation shifts to being about rolling a dice where one of 1 through 6 will appear at random.</p>
-</li>
-<li>
-<p>A dice is rolled 180 times. Find the expected number of aces and the expected &ldquo;give or take&rdquo; of that number.</p>
+
+<p>So, our regression line is  $ y = 439.01 + .04950 * x $ .</p></li>
+
+<li><p>In Example 1, is 900 square pounds the variance of a random variable or data?<br />
+900 square pounds is the variance of data.</p></li>
+
+<li><p>In example 2, is <sup>35</sup>&frasl;<sub>12</sub> the variance of a random variable? of data? maybe both? Discuss briefly.</p>
+
+<p><sup>35</sup>&frasl;<sub>12</sub> is the variance of a random variable as it&rsquo;s presented because it&rsquo;s calculated based off of the individual probabilities of different rolls rather than the outcomes of 100 real rolls. That said, we expect the variance of 100 real rolls to be close to <sup>35</sup>&frasl;<sub>12</sub>.</p>
+
+<p><em>Wrong</em>: The correct answer is that <sup>35</sup>&frasl;<sub>12</sub> starts as the variance of data, a 6-item, monotonically increasing list. It becomes the variance of a random variable once the hypothetical situation shifts to being about rolling a dice where one of 1 through 6 will appear at random.</p></li>
+
+<li><p>A dice is rolled 180 times. Find the expected number of aces and the expected &ldquo;give or take&rdquo; of that number.</p>
+
 <p>Let  $ S = A_1 + A_2 + &hellip; + A_180 $  be a random variable that represents the total number of aces.
 $$
-E(S) = \sum_1^180 E(A_i) = \frac{1}{6} * 180 = 30 \<br>
-var(S) = var(A_1 + A_2 + &hellip; + A_180) = var(A_1) + var(A_2) + &hellip; var(A_180) = 180 * var(A_1) = 180 * (\frac{1}{6} * \frac{5}{6}) = \frac{180 * 5}{36} = 5 \<br>
+E(S) = \sum_1^180 E(A_i) = \frac{1}{6} * 180 = 30 <br />
+var(S) = var(A_1 + A_2 + &hellip; + A_180) = var(A_1) + var(A_2) + &hellip; var(A_180) = 180 * var(A_1) = 180 * (\frac{1}{6} * \frac{5}{6}) = \frac{180 * 5}{36} = 5 <br />
 $$</p>
-<p>Hence, we expect 30 aces, give or take 5 when rolling a fair dice 180 times.</p>
-</li>
-<li>
-<p>A die is rolled 250 times. The fraction of time it lands ace will be around  $ x $  give or take  $ y $  or so.</p>
-<p>The fraction of times it lands ace,  $ x $ , will be  $ \frac{E(S)}{n} = (1/6) * 250 / 250 = 1/6 $ .</p>
+
+<p>Hence, we expect 30 aces, give or take 5 when rolling a fair dice 180 times.</p></li>
+
+<li><p>A die is rolled 250 times. The fraction of time it lands ace will be around  $ x $  give or take  $ y $  or so.</p>
+
+<p>The fraction of times it lands ace,  $ x $ , will be  $ \frac{E(S)}{n} = (<sup>1</sup>&frasl;<sub>6</sub>) * 250 / 250 = <sup>1</sup>&frasl;<sub>6</sub> $ .</p>
+
 <p>The variance of the fraction of times it lands ace is more complicated to calculate. Let our new random variable be  $ \frac{S_n}{n} $ .</p>
+
 <p>Because of the squared term within variance, every multiplicative factor for a variable&rsquo;s &ldquo;reward&rdquo; gets squared when factored into variance, i.e.  $ var(n * X) = n^2 * var(X) $ . Therefore,</p>
+
 <p>$$
-var(\frac{S_n}{n}) = 250 * (1/250^2) * var(A_i) = (1 / 6) * (5 / 6) * (1 / 250) = .000555
+var(\frac{S_n}{n}) = 250 * (<sup>1</sup>&frasl;<sub>250</sub>^2) * var(A_i) = (1 / 6) * (5 / 6) * (1 / 250) = .000555
 $$</p>
-<p>Hence,  $ y = \sqrt{.000555} = .0236 $ .</p>
-</li>
-<li>
-<p>One hundred draws are made at random with replacement from the box containing {1, 2, 2, 5}. The draws come out as follows: 17 &ldquo;1&quot;s, 54 &ldquo;2&quot;s, and 29 &ldquo;5&quot;s. Fill in the blanks.</p>
+
+<p>Hence,  $ y = \sqrt{.000555} = .0236 $ .</p></li>
+
+<li><p>One hundred draws are made at random with replacement from the box containing {1, 2, 2, 5}. The draws come out as follows: 17 &ldquo;1&rdquo;s, 54 &ldquo;2&rdquo;s, and 29 &ldquo;5&rdquo;s. Fill in the blanks.</p>
+
 <p>a. For the [blank], the observed value is .8 SEs above the expected value.</p>
-<p>Out of 100, we should expect 50 to be &ldquo;2&quot;s, 25 to be &ldquo;1&quot;s, and 25 to be &ldquo;5&quot;s. Hence, we can immediately eliminate &ldquo;1&rdquo; as an option.</p>
+
+<p>Out of 100, we should expect 50 to be &ldquo;2&rdquo;s, 25 to be &ldquo;1&rdquo;s, and 25 to be &ldquo;5&rdquo;s. Hence, we can immediately eliminate &ldquo;1&rdquo; as an option.</p>
+
 <p>Let  $ S_2 = \sum_i^{100} A_i $  where  $ A_i $  is a random variable with value one for every roll that comes out as 2.</p>
+
 <p>$$
-var(S_2) = 100 * var(A_i) = 100 * \frac{1}{4} = 25 \<br>
+var(S_2) = 100 * var(A_i) = 100 * \frac{1}{4} = 25 <br />
 SE(S_2) = \sqrt{25} = 5
 $$</p>
-<p>Therefore, 54 &ldquo;2&quot;s is in fact .8 SEs above the expected value of 50 &ldquo;2&quot;s.</p>
+
+<p>Therefore, 54 &ldquo;2&rdquo;s is in fact .8 SEs above the expected value of 50 &ldquo;2&rdquo;s.</p>
+
 <p>b. For the [blank], the observed value is 1.33 SEs above the expected value.
-It&rsquo;s either the number of &ldquo;5&quot;s drawn or the sum of the draws.</p>
+It&rsquo;s either the number of &ldquo;5&rdquo;s drawn or the sum of the draws.</p>
+
 <p>Let $S_5 = \sum_i^100 A_i$ where $A_i$ is a random variable representing the choice of a 5.
 $$
-var(S_5) = 100 * var(A_i) = 100 * (\frac{1}{4}) * (\frac{3}{4}) = \frac{75}{4} \<br>
+var(S_5) = 100 * var(A_i) = 100 * (\frac{1}{4}) * (\frac{3}{4}) = \frac{75}{4} <br />
 SE(S_5) = \sqrt{\frac{75}{4}} = 4.33
 $$</p>
+
 <p>Thus, the number of fives is less than 1 SE above the mean, meaning the sum of the draws must be 1.33 SEs above its expected value.</p>
+
 <p>Doing a quick estimation, the expected value of the sum of the draws is  $ 25 + 50 + 50 + 125 = 250 $  and the actual value is  $ 17 + 108 + 145 = 270 $ .
-The variance of the sum of the draws is 15, so the observed value is the expected value plus 1.33 times the SE.</p>
-</li>
-<li>
-<p>Equation (7) (the formula for sample mean) is a [blank].</p>
-<p>[blank] is &ldquo;model&rdquo;.</p>
-</li>
-<li>
-<p>In Equation (7),  $ a $  is a [blank],  $ b $  is a [blank],  $ \epsilon_i $  is a [blank], and  $ Y_i $  is a blank.
-$ a $  is a parameter,  $ b $  is a parameter,  $ \epsilon_i $  is a random variable, and  $ Y_i $  is an observable.</p>
-<p><em>Wrong</em>: I missed that  $ a $  and  $ b $  are <em>observable</em> parameters,  $ \epsilon_i $  is an <em>unobservable</em> random variable, and  $ Y_i $  is an <em>observable</em> random variable.<br>
-I still don&rsquo;t totally understand what it means for  $ \epsilon_i $  to be un-observable.</p>
-</li>
-<li>
-<p>According to equation (7), the 439.00 in Table 1 is a [blank].
-The observed value of a random variable.</p>
-</li>
-<li>
-<p>[Still need to transcribe.]</p>
-</li>
-<li>
-<p>A statistician has a sample, and is computing the sum of the squared deviations of the sample numbers from a number  $ q $ . The sum of the squared deviations will be smallest when  $ q $  is the [blank]. Fill in [blank] and explain.</p>
-<p>The sum of the squared deviation will be smallest when  $ q $  is the mean. Can be determined by plugging  $ q $  into the equation from exercise 12c.</p>
-</li>
+The variance of the sum of the draws is 15, so the observed value is the expected value plus 1.33 times the SE.</p></li>
+
+<li><p>Equation (7) (the formula for sample mean) is a [blank].</p>
+
+<p>[blank] is &ldquo;model&rdquo;.</p></li>
+
+<li><p>In Equation (7),  $ a $  is a [blank],  $ b $  is a [blank],  $ \epsilon_i $  is a [blank], and  $ Y_i $  is a blank.
+ $ a $  is a parameter,  $ b $  is a parameter,  $ \epsilon_i $  is a random variable, and  $ Y_i $  is an observable.</p>
+
+<p><em>Wrong</em>: I missed that  $ a $  and  $ b $  are <em>observable</em> parameters,  $ \epsilon_i $  is an <em>unobservable</em> random variable, and  $ Y_i $  is an <em>observable</em> random variable.<br />
+I still don&rsquo;t totally understand what it means for  $ \epsilon_i $  to be un-observable.</p></li>
+
+<li><p>According to equation (7), the 439.00 in Table 1 is a [blank].
+The observed value of a random variable.</p></li>
+
+<li><p>[Still need to transcribe.]</p></li>
+
+<li><p>A statistician has a sample, and is computing the sum of the squared deviations of the sample numbers from a number  $ q $ . The sum of the squared deviations will be smallest when  $ q $  is the [blank]. Fill in [blank] and explain.</p>
+
+<p>The sum of the squared deviation will be smallest when  $ q $  is the mean. Can be determined by plugging  $ q $  into the equation from exercise 12c.</p></li>
 </ol>
+
 <p>&hellip; Last few exercises done on paper, will write up eventually.</p>
 </section>
 <section>

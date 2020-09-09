@@ -9,7 +9,7 @@
 <meta name="description" content="">
 <meta name="keywords" content="">
 <meta name="author" content="Stephen Malina">
-<meta name="generator" content="Hugo 0.74.3" />
+<meta name="generator" content="Hugo 0.40.1" />
 
   
   
@@ -96,43 +96,70 @@
 
 
 
-<section><h3 id="babbling-about-babble">Babbling About Babble</h3>
+<section>
+
+<h3 id="babbling-about-babble">Babbling About Babble</h3>
+
 <p>In a <a href="https://radimentary.wordpress.com/2018/01/10/babble/">series</a> <a href="https://radimentary.wordpress.com/2018/01/12/prune/">of</a> <a href="https://radimentary.wordpress.com/2018/01/11/more-babble/">posts</a> <a href="https://radimentary.wordpress.com/2018/01/28/write/">on</a> his blog (or <a href="https://www.lesswrong.com/s/pC6DYFLPMTCbEwH8W">LessWrong</a> if you prefer), alkjash writes about &ldquo;babble&rdquo; and &ldquo;prune&rdquo;, the two components of an adversarial model of knowledge production in humans. Alkjash describes babble and prune like this:</p>
+
 <blockquote>
 <p>Here’s a simplistic model of how this works. I try to build a coherent sentence. At each step, to pick the next word, I randomly generate words in the category (correct part of speech, relevance) and sound them out one by one to see which continues the sentence most coherently. So, instead of deliberately and carefully generating sentences in one go, the algorithm is something like:</p>
+
 <ol>
 <li>Babble. Use a weak and local filter to randomly generate a lot of possibilities. Is the word the right part of speech? Does it lie in the same region of thingspace? Does it fit the context?</li>
 <li>Prune. Use a strong and global filter to test for the best, or at least a satisfactory, choice. With this word in the blank, do I actually believe this sentence? Does the word have the right connotations? Does the whole thought read smoothly?</li>
 </ol>
 </blockquote>
+
 <p>In <a href="https://radimentary.wordpress.com/2018/01/11/more-babble/">More Babble</a>, alkjash expands the idea of babble, describing concepts and words as bound together in a massive graph which babbling explores. While this metaphor breaks down if you poke at it too hard, I&rsquo;ve recently found it very useful for modeling and troubleshooting my own learning process.</p>
+
 <h3 id="the-three-stages-of-babble-for-learning">The Three Stages of Babble for Learning</h3>
+
 <p>As I&rsquo;ve been learning proof-based linear algebra (from Axler&rsquo;s <a href="https://www.amazon.com/Linear-Algebra-Right-Undergraduate-Mathematics/dp/0387982582/ref=cm_cr_arp_d_product_top?ie=UTF8">Linear Algebra Done Right</a>), I&rsquo;ve noticed a pattern in how my understanding of a concept grows, which I&rsquo;ve been modeling as an iterative babble/prune loop. When I&rsquo;m first learning a concept, the basics of vector spaces for example, I focus on getting the ideas into my mental workspace. This requires repetitive babble where I mentally repeat the atomic facts I&rsquo;m trying to learn, ask basic questions about them, and sometimes enter them into Anki. I think of this as creating new low-level paths through and adding nodes to my babble graph.</p>
+
 <p><em>Note: While alkjash&rsquo;s original formulation of the babble graph described it as made out of words, for this purpose, I find it useful to imagine the graph as made of concepts, represented in whatever language brains represent concepts in (causal graphs, probabilistic programs, mentalese, etc.).</em></p>
+
 <p>Once I&rsquo;ve grasped the basic facts enough that I don&rsquo;t have to constantly refer back to the source material for them, I start to connect them together, use them to solve problems, and relate them to more complicated examples. Here, babble and prune mix freely as I experiment with and, often over-zealously, try to apply the new facts I&rsquo;ve learned to more complicated examples and problems. A different form of pruning also often occurs in this phase. As I reference and try to apply the facts I&rsquo;ve learned, I&rsquo;ll often realize that my understanding of a fact is under-constrained or subtly wrong, so I&rsquo;ll have to prune the concept to better fit the correct definition. For example, being asked to prove that $ 0v = 0 $ in chapter 1 of Axler led to me pruning my internal model of vector space multiplication to mean something narrower than it had originally.</p>
+
 <p>The last step in this process is one that I paradoxically find very helpful but have historically done a bad job of consistently taking while learning. In this last step, pithily described as self-splaining, I go back and structure what I&rsquo;ve learned into a narrative of sorts. In the case of vector spaces, this would involve starting with axioms and explaining (usually with my internal monologue) how these axioms imply important, useful facts about vector spaces and reviewing important problems which I&rsquo;ve solved while trying to condense their solutions into the essentials. From the inside, this feels like strengthening connections between and finding metaphors for higher-level clusters in my babble graph. This step also involves compression of clusters into more compact representations, often described as <a href="https://en.wikipedia.org/wiki/Practice_(learning_method)#Deliberate_practice">chunks</a> in the deliberate practice literature. Having the concepts of babble and prune available to me, I now view chunking as a form of pruning where a cluster of nodes and edges get compacted into a more efficient representation. This metaphor leaves out a lot of details but manages to capture the dual nature of chunks as atomic concepts and pointers to collections of facts and associations in a way that I haven&rsquo;t seen elsewhere.</p>
+
 <p>While the above description portrays learning as divided into discrete phases, my actual learning process is much messier. As a lazy, impatient millenial, I tend to jump from the first phase to the second before I have a sufficient grasp of atomic facts. As a result, I often bounce back from phase 2 to 1 multiple times before becoming capable of narrativizing my learning in phase 3. Additionally, within each phase, recursive iterations of all three phases can occur for smaller sub-concepts. My impression is that a significant fraction of higher math (group theory, category theory) revolves around treating entire classes of objects as atomic facts and reasoning about their properties, which can be viewed as a higher-level version of the three-phased process I described.</p>
+
 <p>Furthermore, this model&rsquo;s speculative enough that one might rightfully question why I bothered writing about it in the first place. It&rsquo;s not detailed or empirical enough to develop into an actual scientific model and I&rsquo;m mostly using it to describe a process which has likely been described in other learning literature. In spite of this, I&rsquo;ve gotten value out using it and the general concept of babble as intuition pumps for getting myself unstuck while learning. Furthermore, I hope that describing phase 3 in terms of compression will help me overcome the impatience that often arises while I&rsquo;m self-splaining.</p>
-<h3 id="beware-the-typical-mind-fallacyhttpswwwlesswrongcompostsbatwmegr42pash9qjgeneralizing-from-one-example">Beware The <a href="https://www.lesswrong.com/posts/baTWMegR42PAsH9qJ/generalizing-from-one-example">Typical Mind Fallacy</a></h3>
+
+<h3 id="beware-the-typical-mind-fallacy-https-www-lesswrong-com-posts-batwmegr42pash9qj-generalizing-from-one-example">Beware The <a href="https://www.lesswrong.com/posts/baTWMegR42PAsH9qJ/generalizing-from-one-example">Typical Mind Fallacy</a></h3>
+
 <p>I question how much the above model generalizes to different thinking styles. In his original post, alkjash mentions that the verbal internal monologue dominates his thinking, and it dominates mine as well. Images and motor sensations also play a role, but my internal monologue drives these other forms of imagery even when they are present. To put it another way, I lack the ability to think productively without some form of words guiding my thinking.</p>
+
 <p>Pointing in the direction of the babble model generalizing is the widespread endorsement of the value of talking through something as a way of reducing confusion or solving a problem. Examples of this include:</p>
+
 <ul>
 <li><a href="https://spin.atomicobject.com/2015/08/18/rubber-duck-debugging/">Rubber duck debugging</a>: A technique/phenomenon in which programmers spontaneously realize solutions to their problems while describing them out loud to inanimate objects.</li>
 <li><a href="http://www.programmersstone.com/Day1.html">Explaining a concept to an imaginary friend</a>: Recommended by Alan Carter in the Programmer&rsquo;s Stone as a technique for regaining the ability to think in terms of deep structure, this involves explaining concepts to an imaginary friend and imagining they consistently ask &ldquo;why?&rdquo;.</li>
 <li><a href="https://qr.ae/TUtWx7">Ron Maimon&rsquo;s discussion of practicing Math 55 proofs</a>: &ldquo;Other than that, I remember having an easy time presenting proofs, because I had practiced presenting the proof in my head to learn the material.&rdquo;</li>
 <li><a href="http://calnewport.com/blog/2015/11/25/the-feynman-notebook-method/">The Feynman technique</a>: The Feynman technique&rsquo;s name comes from an anecdote about Feynman studying for his PhD oral exam by rebuilding his knowledge of physics from scratch in a notebook. The technique involves explaining a concept you learned in simple terms from scratch on a piece of paper. (Tangent: While I endorse the technique, I dislike that it reinforces the idea of Feynman as someone who <em>just</em> had the right learning techniques. The more I learn about Feynman, the more it becomes clear to me that his physics prowess came from being really smart and being able to solve problems using techniques he definitely couldn&rsquo;t explain. For more on this, see Gleick&rsquo;s <a href="https://books.google.com/books?id=j42RD66g72oC&amp;pg=PT220&amp;lpg=PT220&amp;dq=bessel+functions+flying+around+in+colors+feynman&amp;source=bl&amp;ots=fEoec0yO1i&amp;sig=Ete90OMr9s9nPBCyR2lxST76s6Q&amp;hl=en&amp;sa=X&amp;ved=2ahUKEwib4L3m2aTfAhVDnOAKHSXWB9sQ6AEwBXoECAMQAQ#v=onepage&amp;q=bessel%20functions%20flying%20around%20in%20colors%20feynman&amp;f=false">Genius</a>.)</li>
 </ul>
+
 <p>These examples, in particular the widespread endorsement of rubber duck debugging amongst programmers, show that babbling about a topic helps some subset of the population clarify their understanding. On the other hand, other anecdotes show that another subset of the population doesn&rsquo;t identify with the description of babble as being core to their experience of thinking. To take an extreme example, in <a href="http://grandin.com/inc/visual.thinking.html">Thinking in Pictures</a>, Temple Grandin describes her thinking as entirely visual:</p>
+
 <blockquote>
 <p>It wasn&rsquo;t until I went to college that I realized some people are completely verbal and think only in words. I first suspected this when I read an article in a science magazine about the development of tool use in prehistoric humans. Some renowned scientist speculated that humans had to develop language before they could develop tools. I thought this was ridiculous, and this article gave me the first inkling that my thought processes were truly different from those of many other people. When I invent things, I do not use language. Some other people think in vividly detailed pictures, but most think in a combination of words and vague, generalized pictures.</p>
+
 <p>For example, many people see a generalized generic church rather than specific churches and steeples when they read or hear the word &ldquo;steeple.&rdquo; Their thought patterns move from a general concept to specific examples. I used to become very frustrated when a verbal thinker could not understand something I was trying to express because he or she couldn&rsquo;t see the picture that was crystal clear to me. Further, my mind constantly revises general concepts as I add new information to my memory library. It&rsquo;s like getting a new version of software for the computer. My mind readily accepts the new &ldquo;software,&rdquo; though I have observed that some people often do not readily accept new information.</p>
+
 <p>Unlike those of most people, my thoughts move from video like, specific images to generalization and concepts. For example, my concept of dogs is inextricably linked to every dog I&rsquo;ve ever known. It&rsquo;s as if I have a card catalog of dogs I have seen, complete with pictures, which continually grows as I add more examples to my video library. If I think about Great Danes, the first memory that pops into my head is Dansk, the Great Dane owned by the headmaster at my high school. The next Great Dane I visualize is Helga, who was Dansk&rsquo;s replacement. The next is my aunt&rsquo;s dog in Arizona, and my final image comes from an advertisement for Fitwell seat covers that featured that kind of dog. My memories usually appear in my imagination in strict chronological order, and the images I visualize are always specific. There is no generic, generalized Great Dane.</p>
 </blockquote>
+
 <p>Temple Grandin would find my description of babble totally alien to her internal experience. And although she&rsquo;s on the extreme end of the visual thinking spectrum, I suspect there&rsquo;s a large group of visually dominant thinkers who would share her confusion.</p>
+
 <p>Based on my brief investigation, babble captures an important aspect of what thinking feels like for verbally-dominant thinkers but doesn&rsquo;t generalize to all forms of thinking and thinkers.</p>
+
 <h3 id="conclusion">Conclusion</h3>
+
 <p>This post has been an experiment in trying to model my own thinking in terms of babble and prune. While it&rsquo;s a bit too early to tell, I hope that clarifying how learning can be described in terms of babble will help me better recognize and handle the different phases of my learning process.</p>
+
 <p>I&rsquo;m also quite curious on whether this resonates with others&rsquo; introspective model of their own thinking process. (Addressed to hypothetical reader.) Do you find describing something you&rsquo;ve learned helps you compress and understand it better? Does the internal monologue play into your learning process at all? While learning styles research has failed to replicate, people still clearly think in different styles, and having anecdotes about what those different styles feel like in terms of lived experience is interesting and valuable.</p>
+
 <p>[ETA 2019/12/23: In the original version of this post, I had a disclaimer about how this post involved more babble than prune, but looking back, I don&rsquo;t think that&rsquo;s that accurate. The post isn&rsquo;t perfect, but I don&rsquo;t think it&rsquo;s particularly ramble-y either.]</p>
 </section>
 <section>

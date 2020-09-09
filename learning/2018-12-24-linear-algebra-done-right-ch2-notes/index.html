@@ -9,7 +9,7 @@
 <meta name="description" content="">
 <meta name="keywords" content="">
 <meta name="author" content="Stephen Malina">
-<meta name="generator" content="Hugo 0.74.3" />
+<meta name="generator" content="Hugo 0.40.1" />
 
   
   
@@ -99,24 +99,44 @@ MathJax.Hub.Config({
 
 
 
-<section><h1 id="intro">Intro</h1>
+<section>
+
+<h1 id="intro">Intro</h1>
+
 <p>I&rsquo;ve recently been making my way through Axler&rsquo;s <em>Linear Algebra Done Right</em> and, as a way to motivate myself to continue, have decided to blog my notes and solutions for exercises as I go.</p>
+
 <h1 id="insights">Insights</h1>
-<h2 id="section-2a">Section 2.A</h2>
+
+<h2 id="section-2-a">Section 2.A</h2>
+
 <h4 id="you-can-convert-any-linearly-dependent-list-to-a-linearly-independent-list-with-the-same-span">You can convert any linearly dependent list to a linearly independent list with the same span.</h4>
+
 <p>By the linear dependence lemma, if you have a list that&rsquo;s linearly dependenty, then you can remove one item without changing the list&rsquo;s span. By inductive hand-waving, that means we can remove one item repeatedly while not changing the list&rsquo;s span until the list becomes linearly independent. This seems like it might be useful by analogy to compression, if we assume the span captures some essential property of a list of vectors, we can remove items from a linearly dependent list without changing its final representation.</p>
+
 <p><strong>Note</strong>: It turns out section 2.B on bases leverages this and an analogous insight to provide useful theorems about converting linearly independent lists and spans into bases.</p>
-<h2 id="section-2b">Section 2.B</h2>
+
+<h2 id="section-2-b">Section 2.B</h2>
+
 <h4 id="a-basis-is-a-list-of-vector-that-can-uniquely-produce-every-element-in-a-vector-space-through-linear-combination">A basis is a list of vector that can uniquely produce every element in a vector space through linear combination.</h4>
+
 <p>I like analogizing bases to lossless compressions of vector spaces.</p>
-<h2 id="section-2c">Section 2.C</h2>
+
+<h2 id="section-2-c">Section 2.C</h2>
+
 <h4 id="the-analogy-between-basis-and-degrees-of-freedom">The analogy between basis and degrees of freedom.</h4>
-<p>In solving exercise 10 in this section—prove that a list of polynomials $ p_0, p_1, \cdots, p_m \in \mathcal{P}_m(\mathbf{F}) $ in which each polynomial $ p_j $ has degree $j$ is a basis of $ \mathcal{P}_m(\mathbf{F}) $—I realized that, to be a basis, a list of vectors must combine into a linear combination with $dim V$ degrees of freedom. For the polynomial example specifically, I picture a set of knobs lined up from left to right where each knob twisting also twists all the knobs to the left of it. The key here is that you can go from right to left and adjust each knob into the position you want it without moving the knobs you&rsquo;ve already adjusted out of position. As a result, the list of polynomials has $m$ degrees of freedom because you can independently set the value of each knob. A list with too few degrees of freedom can still be linearly independent but cannot be a span. A list with too many degrees of freedom can be a span but not linearly independent.</p>
+
+<p>In solving exercise 10 in this section&mdash;prove that a list of polynomials $ p_0, p_1, \cdots, p_m \in \mathcal{P}_m(\mathbf{F}) $ in which each polynomial $ p_j $ has degree $j$ is a basis of $ \mathcal{P}_m(\mathbf{F}) $&mdash;I realized that, to be a basis, a list of vectors must combine into a linear combination with $dim V$ degrees of freedom. For the polynomial example specifically, I picture a set of knobs lined up from left to right where each knob twisting also twists all the knobs to the left of it. The key here is that you can go from right to left and adjust each knob into the position you want it without moving the knobs you&rsquo;ve already adjusted out of position. As a result, the list of polynomials has $m$ degrees of freedom because you can independently set the value of each knob. A list with too few degrees of freedom can still be linearly independent but cannot be a span. A list with too many degrees of freedom can be a span but not linearly independent.</p>
+
 <p>Admittedly, this is a bit hand-wavey and I need to improve the mapping of the analogy.</p>
-<h4 id="each-line-is-a-subspace-of--r2-">Each line &ldquo;is&rdquo; a subspace of $ R^2 $.</h4>
+
+<h4 id="each-line-is-a-subspace-of-r-2">Each line &ldquo;is&rdquo; a subspace of $ R^2 $.</h4>
+
 <p>In parsing exercise 2 from this section, I kept reading &ldquo;the subspaces of $ R^2 $ are \cdots and all lines in $ R^2 $ through the origin&rdquo; as a type error because I was confused about how &ldquo;all lines&rdquo; could be a subspace. Eventually, I realized that this statement was saying that each line forms a subspace. This still confused me until I realized that what the text means by a line being a subspace is that each line through the origin &ldquo;is&rdquo; the set of pairs formed by multiplying some $ x,y \in \mathbf{R} $ by all $ k \in R $.</p>
+
 <h1 id="selected-exercises">Selected Exercises</h1>
-<h2 id="section-2a-1">Section 2.A</h2>
+
+<h2 id="section-2-a-1">Section 2.A</h2>
+
 <p><strong>11.</strong> Suppose $v_1, \cdots, v_m $ is linearly independent in $V$ and $w \in V$. Show that $v_1, \cdots, v_m, w $ is linearly independent if and only if
 $$
 w \notin span(v_1, \cdots, v_m).
@@ -130,10 +150,14 @@ $$
 0 = a_1 v_1 + \cdots + a_m v_m + (-1 * w),
 $$
 which is a contradiction.</p>
+
 <p>Now, assume $ w \notin span(v_1, \cdots, v_m) $ for some $ v_1, \cdots, v_m, w \in V $ where $ v_1, \cdots, v_m $ is linearly independent. First, $ w \neq 0 $ because $ w \notin span(v_1, \cdots, v_m) $.  For $ a_1 v_1 + \cdots + a_m v_m + a_{m+1} w = 0 $, either $ a_1 v_1 + \cdots + a_m v_m = -a_{m+1} w $ for some $a_{m+1}$ or $a_1 v_1 + \cdots + a_m v_m = a_{m+1} w = 0 $. Since $ a_1 v_1 + \cdots + a_m v_m \neq  w $ for all $ a_1, \cdots, a_m \in F $, the option 1 is impossible. And since $ w \neq 0 $, $a_1 v_1 + \cdots + a_m v_m = a_{m+1} w = 0 $ implies that $ a_{m+1} = 0 $. Hence, $ v_1, \cdots, v_m, w $ is linearly independent.</p>
-<p><strong>12.</strong> Explain why there does not exist a list of six polynomials is linearly independent in $ \mathcal{P}_4(\mathbf{F}) $.<br>
+
+<p><strong>12.</strong> Explain why there does not exist a list of six polynomials is linearly independent in $ \mathcal{P}_4(\mathbf{F}) $.<br />
 By the linear independence lemma, there exists no list of polynomials in $ \mathcal{P}_4(\mathbf{F}) $ with length longer than 5, the length of $ span(1, z, z^2, z^3, z^4) = \mathcal{P}_4(\mathbf{F}) $.</p>
+
 <p><strong>17.</strong> Suppose $ p_0, p_1, \cdots, p_m $ are polynomials in $ \mathcal{P}_m(\mathbf{F}) $ such that $ p_j(2) = 0 $ for each $ j $. Prove that $ p_0, p_1, \cdots, p_m $ is not linearly independent in $ \mathcal{P}_m(\mathbf{F}) $.</p>
+
 <p>Assume $ p_0, p_1, \cdots, p_m $ is linearly independent. Take the list $z, p_0, \cdots, p_m $. Because $ 1, z, \cdots, z^m $ with length $m+1$ spans $ \mathcal{P}_m(\mathbf{F}) $, the list with length $m+2$ is linearly dependent by the linear independence lemma. For some $ a_0, \cdots, a_{m+1} \in \mathbf{F} $, by problem 11,
 $$
 z = a_0 p_0 + \cdots + a_m p_m
@@ -143,7 +167,9 @@ $$
 2 = 0.
 $$
 Hence we get a contradiction.</p>
-<h2 id="section-2b-1">Section 2.B</h2>
+
+<h2 id="section-2-b-1">Section 2.B</h2>
+
 <p><strong>5.</strong> Prove or disprove: there exists a basis $ p_0, p_1, p_2, p_3 $ of $ \mathcal{P}_3(\mathbf{F}) $ such that none of the polynomials $ p_0, p_1, p_2, p_3 $ has degree 2.
 This is true. We construct a basis
 $$
@@ -154,51 +180,71 @@ $$
 a_0 + a_1 x + a_2 x^2 + (a_3-a_2)x^3.
 $$
 Because $ 1, x, x^2, x^2 $ is a basis of $ \mathcal{P}_3(\mathbf{F}) $, we only have to show that every linear combination of this basis can be constructed as a linear combination of our chosen basis as well, as follows. We can produce linear combination $ b_0 + b_1 x + b_2 x^2 + b_3 x^3 \in \mathcal{P}_3(\mathbf{F}) $ for some $ b_0, b_1, b_2, b_3 \in \mathbf{F} $ by setting $ a_0 = b_0, a_1 = b_1, a_2 = b_2, a_3 = b_3+a_2 $.</p>
+
 <p><strong>7.</strong> Prove or give a counterexample: If $ v_1, v_2, v_3, v_4 $ is a basis of $ V $ and $ U $ is a subspace such that $ v_1, v_2 \in U $ and $ v_3 \notin U $ and $ v_4 \notin U $ then $ v_1, v_2 $ is a basis of $ U $.
 This is false. There exists counterexample $ U = \{(x,y,z,0) \in \mathbf{R}^4: x,y,z \in \mathbf{R}\} $, $ V = \mathbf{R}^4 $, and $ v_1 = (1,0,0,0) $, $ v_2 = (0,1,0,0) $, $ v_3 = (0,0,1,1) $, $ v_4 = (0,0,0,1) $. The intuition behind the counterexample is finding a $ v_2 $ or $ v_3 $ that would contribute to the basis of $ U $ but also includes an element (in the list) that disqualifies the list from being a member of $ U $. The higher-level intuition that drives this answer is that while &ldquo;every subspace of a finite-dimensional vector space has a basis composed of elements in that subspace&rdquo; is true, &ldquo;the elements of a basis whose linear combination span the elements of a subspace all come from that subspace&rdquo; is false.</p>
-<h2 id="section-2c-1">Section 2.C</h2>
+
+<h2 id="section-2-c-1">Section 2.C</h2>
+
 <p><strong>2.</strong> Show that the subspaces of $ \mathbf{R}^2 $ are precisely $ {0} $, $ \mathbf{R}^2 $, and all lines in $ \mathbf{R}^2 $ through the origin.
 To show this, we must show that $ {0} $, $ \mathbf{R}^2 $, and all lines in $ \mathbf{R}^2 $ through the origin are subspaces of $ \mathbf{R}^2 $ and that these are the <strong>only</strong> subspaces of $ \mathbf{R^2} $.</p>
+
 <p>First, it&rsquo;s trivial to show that $ {0} $ and $ R^2 $ are subspaces of $ R^2 $.</p>
-<p>Second, all lines through the origin form a subspace of $ R^2 $ because the set contains $0$ and is closed under addition and multiplication. To start, let each line through the origin be the set of all scalar multiples of a pair, i.e. for a single $ u \in \mathbf{R^2} $, the corresponding line through the origin is $ \{ ku \in \mathbf{R^2} : k \in \mathbf{R} \} $. By this definition, $0=k(0,0)$.<br>
-<strong>Closed under addition</strong>: The sum of any two lines through the origin can be represented as $ k u_0 + k u_1 = k (u_0 + u_1) $, where $ k(u_0 + u_1)$ is also a line through the origin.<br>
+
+<p>Second, all lines through the origin form a subspace of $ R^2 $ because the set contains $0$ and is closed under addition and multiplication. To start, let each line through the origin be the set of all scalar multiples of a pair, i.e. for a single $ u \in \mathbf{R^2} $, the corresponding line through the origin is $ \{ ku \in \mathbf{R^2} : k \in \mathbf{R} \} $. By this definition, $0=k(0,0)$.<br />
+<strong>Closed under addition</strong>: The sum of any two lines through the origin can be represented as $ k u_0 + k u_1 = k (u_0 + u_1) $, where $ k(u_0 + u_1)$ is also a line through the origin.<br />
 <strong>Closed under multiplication</strong>: The scalar multiple of any line through the origin can be represented as $ k_1 (k_0 u) $, which is also a line through the origin.</p>
+
 <p>Now, we show that each of the aforementioned three subspace are the only possible subspaces of $ \mathbf{R}^2 $ with dimensions 0, 1, and 2 respectively.</p>
+
 <p>$ \{0\}$ is the only subspace with dimension $ 0 $ as its basis is $()$.</p>
+
 <p>All subspaces of $ \mathbf{R}^2 $ with dimension 1 have a basis $ u \in \mathbf{R}^2 $. Each linear combination of one such basis, $ ku $, contains the set of points along the line through the origin that also passes through point $ u $.</p>
+
 <p>Finally, as shown in problem 1, if $ \dim U = \dim V $, then $ U = V $ when $ U $ is a subspace of $ V $. Hence, when $ \dim U = 2 $, $ U = \mathbf{R}^2$.</p>
+
 <p><strong>9.</strong> Suppose $ v_1, \cdots, v_m $ is linearly independent in $ V $ and $ w \in V $. Prove that
 $$
 \dim \mathrm{span}(v_1 + w, \cdots, v_m + w) \geq m-1.
 $$</p>
+
 <p>First, we observe that $v_i - v_1 \in \mathrm{span}(v_1 + w, \cdots, v_m + w)$ for all $ 1 \leq i \leq m $ (by taking $ v_i + w - v_1 - w $). Furthermore, $ v_2 - v_1, \cdots, v_m - v_1 \in \mathrm{span}(v_1 + w, \cdots, v_m + w) $.</p>
-<p>Also, $ v_2 - v_1, \cdots, v_m - v_1 $ is linearly independent, as the following shows.<br>
+
+<p>Also, $ v_2 - v_1, \cdots, v_m - v_1 $ is linearly independent, as the following shows.<br />
 <strong>Linear independence of $ v_2 - v_1, \cdots, v_m - v_1 $</strong>:
-Each linear combination of $ v_2 - v_1, \cdots, v_m - v_1 $ is<br>
+Each linear combination of $ v_2 - v_1, \cdots, v_m - v_1 $ is<br />
 $$
 b_1(v_2-v_1) + \cdots + b_{m-1}(v_m-v_1) = b_1 v_2 + \cdots + b_{m-1} v_m - (b_1 + \cdots + b_{m-1}) v_1
 $$
 for some $ b_1, \cdots, b_{m-1} \in F $.</p>
+
 <p>Because $ v_1, \cdots, v_m $ is linearly independent, when the above expression equals $ 0 $, all of $ b_1, \cdots, b_{m-1} $ must equal $ 0 $. Hence, $ v_2 - v_1, \cdots, v_m - v_1 $ (with length $m-1$) is linearly independent. Thus, by 2.33,
 $$
 \dim \mathrm{span}(v_1 + w, \cdots, v_m + w) \geq m-1.
 $$</p>
+
 <p><strong>16.</strong> Suppose $U_1, \cdots, U_m $ are finite-dimensional subspaces of V such that $ U_1 + \cdots + U_m $ is a direct sum. Prove that $ U_1 \oplus \cdots \oplus U_m $ is finite-dimensional and
 $$
 \dim U_1 \oplus \cdots \oplus U_m = \dim U_1 + \cdots + \dim U_m.
 $$</p>
+
 <p>Every sum of finite-dimensional subspaces is finite-dimensional, so $ U_1 \oplus \cdots \oplus U_m $ is finite-dimensional.</p>
+
 <p>Then, we prove that $ \dim U_1 \oplus \cdots \oplus U_m = \dim U_1 + \cdots + dim U_m $ by induction on $ m $.</p>
+
 <p>When $ m = 2 $, $ \dim U_1 \oplus U_2 = \dim U_1 + \dim U_2 - \dim U_1 \cap U_2 $. Since $ U_1 \cap U_2 = \{0\} $ by definition of direct sum, $ \dim U_1 \cap U_2 = 0 $.</p>
+
 <p>Now, we assume that for $ m-1 $, $ \dim U_1 \oplus \cdots \oplus U_{m-1} = \dim U_1 + \cdots + U_{m-1} $. Setting $ W = U_1, \cdots, U_{m-1} $,
 $$
 \dim (W + U_m) = \dim W + \dim U_m - \dim W \cap U_m.
 $$
 If $ W + U_m $ is a direct sum, then $ \dim W \cap U_m = 0 $.</p>
+
 <p>Let $ x \in W $, $ y \in U_m $, if $ x + y = 0 $, then $ x = 0 $ and $ y = 0 $ by definition of direct sum (where the direct sum being referred to is of all of the elements). Hence, $ W + U_m $ is a direct sum, meaning
 $$
 \dim (W + U_m) = \dim W + \dim U_m - 0 = \dim W + \dim U_m = \dim U_1 + \cdots \dim U_{m-1} + \dim U_m.
 $$</p>
+
 <p><em>Note:</em> In the <a href="http://linearalgebras.com/2c.html">solution</a> I looked at, the author insisted on proving that $ U_1, \cdots, U_{m-1} $ was a direct sum. Why can&rsquo;t we just treat that as part of the inductive hypothesis?</p>
 </section>
 <section>

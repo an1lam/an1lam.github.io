@@ -9,7 +9,7 @@
 <meta name="description" content="">
 <meta name="keywords" content="">
 <meta name="author" content="Stephen Malina">
-<meta name="generator" content="Hugo 0.74.3" />
+<meta name="generator" content="Hugo 0.40.1" />
 
   
   
@@ -99,152 +99,168 @@ MathJax.Hub.Config({
 
 
 
-<section><h1 id="summary">Summary</h1>
+<section>
+
+<h1 id="summary">Summary</h1>
+
 <h1 id="detailed-notes">Detailed Notes</h1>
+
 <h2 id="3-iv-requirements">3 IV Requirements</h2>
+
 <ol>
 <li>IV must have a direct influence on the treatment</li>
 <li>IV must not covary with the unmeasured confounding that impacts the outcome</li>
 <li>IV must not have a direct influence on the outcome</li>
 </ol>
+
 <h2 id="relevant-considerations-for-deciding-whether-to-do-an-iv-analysis">Relevant considerations for deciding whether to do an IV analysis</h2>
+
 <ul>
-<li>
-<p>Is there any unmeasured confounding?</p>
+<li>Is there any unmeasured confounding?
+
 <ul>
 <li>If not, is the answer that we can just use a normal regression?</li>
-</ul>
-</li>
-<li>
-<p>When is unmeasured confounding especially likely?</p>
+</ul></li>
+
+<li><p>When is unmeasured confounding especially likely?</p>
+
 <ul>
 <li>If someone&rsquo;s trying to help the patient, it&rsquo;s likely there are some unrecorded features the helper took into account.</li>
 <li>Ex: Doctor doesn&rsquo;t record that the patient smokes or eats french fries for lunch every day.</li>
-</ul>
-</li>
-<li>
-<p>What about if the IV assumptions are plausible but don&rsquo;t definitely hold?</p>
+</ul></li>
+
+<li><p>What about if the IV assumptions are plausible but don&rsquo;t definitely hold?</p>
+
 <ul>
 <li>Going back to the NICU example, maybe people in this geography are exposed to pollution.</li>
-<li>Ensembling IVs and finding results pointing in the same direction in all cases provides better evidence than controlling for one measured confounder in each study (because of unknown unknowns).</li>
-</ul>
-<blockquote>
-<p>when different IVs are used, each IV identifies the average treatment effect for a different subgroup, so that we would only expect that findings from the different IVs would agree in direction if the average treatment effects for the different subgroups have the same direction</p>
-</blockquote>
-</li>
-<li>
-<p>Strength of the IVs</p>
+<li>Ensembling IVs and finding results pointing in the same direction in all cases provides better evidence than controlling for one measured confounder in each study (because of unknown unknowns).
+&gt; when different IVs are used, each IV identifies the average treatment effect for a different subgroup, so that we would only expect that findings from the different IVs would agree in direction if the average treatment effects for the different subgroups have the same direction</li>
+</ul></li>
+
+<li><p>Strength of the IVs</p>
+
 <ul>
 <li>Weak IVs -&gt; high variance treatment effect estimates even with large #s of participants</li>
+</ul></li>
 </ul>
-</li>
-</ul>
+
 <h2 id="examples-of-common-ivs">Examples of common IVs</h2>
+
 <h3 id="ex-1-random-encouragement-trials">Ex. 1: Random Encouragement Trials</h3>
+
 <ul>
 <li>Doing an experiment to measure impact of smoking during pregnancy on birthweight</li>
 <li>Staff person encourages subset of mothers who smoke to stop smoking using pamphlets, guidance, etc.</li>
 <li>IV is whether the mother received encouragement</li>
 <li>Criteria check:
+
 <ol>
 <li>In theory, influences the treatment (whether the mother smokes)</li>
 <li>Not sure what the unmeasured confounding is here&hellip;</li>
 <li>Can have direct effect on the outcome via affecting other similar decisions (drinking alcohol, other healthy behaviors)</li>
-</ol>
-</li>
+</ol></li>
 </ul>
+
 <h3 id="ex-2-distance-to-specialty-care-provider">Ex. 2: Distance to Specialty Care Provider</h3>
+
 <ul>
 <li>Say you want to understand how going to a specialist doctor vs. a general practitioner affects outcomes</li>
 <li>You can use the fact that people will tend to go to closer doctors and select distance to each as an IV</li>
 <li>Best for conditions that surprise you, since the more time you have to plan the less distance will impact your decision</li>
 <li>But so many confounders&hellip; Maybe you can measure them?
+
 <ul>
 <li>Socioeconomic background&rsquo;s the obvious one, but at least it&rsquo;s known</li>
-</ul>
-</li>
+</ul></li>
 <li>Criteria check:
+
 <ol>
 <li>Influences the treatment, especially for urgent care</li>
 <li>Unmeasured confounding seems like a big risk</li>
 <li></li>
-</ol>
-</li>
+</ol></li>
 </ul>
+
 <h3 id="ex-3-preference-based-ivs">Ex. 3: Preference-Based IVs</h3>
+
 <ul>
 <li>Take advantage of variation in medical practice patterns between groups</li>
 <li>Ex: surgery vs. endovascular therapy for aneurysms using hospital as the IV</li>
 </ul>
+
 <h3 id="ex-4-genes-as-ivs-mendelian-randomization">Ex. 4: Genes as IVs (Mendelian Randomization)</h3>
+
 <ul>
-<li>
-<p><strong>This is the reason we&rsquo;re interested in this</strong></p>
-</li>
-<li>
-<p>Ex:</p>
+<li><strong>This is the reason we&rsquo;re interested in this</strong></li>
+
+<li><p>Ex:</p>
+
 <blockquote>
 <p>Another example is that [32] studied the effect of maternal smoking on orofacial clefts in babies using genetic variants that increase the probability that a mother smokes as IVs.</p>
-</blockquote>
-</li>
-<li>
-<p><strong>Genes have to satisfy additional criteria to work as IVs</strong></p>
+</blockquote></li>
+
+<li><p><strong>Genes have to satisfy additional criteria to work as IVs</strong></p>
+
 <ul>
 <li>Genes can&rsquo;t be associated with population stratification
+
 <ul>
 <li><strong>Risks violating criteria 2</strong></li>
-<li>Suppose we want use ALDH2 (Asian glow gene) to study the effect of alcohol consumption on high blood pressure</li>
+<li>Suppose we want use ALDH2 (Asian glow gene) to study the effect of alcohol consumption on high blood pressure<br /></li>
 <li>This gene is highly correlated with Asian ancestry so only works as an IV if we&rsquo;ve fully measured the influence of ancestry</li>
 <li>Q: What does &ldquo;measure&rdquo; mean in this context? Do we need to have enough subjects of Asian ancestry to actually regress on this attribute?</li>
-</ul>
-</li>
+</ul></li>
 <li>No genetic linkage to other causal genes
+
 <ul>
 <li><strong>Risks violating criteria 2</strong></li>
 <li>Genes close together on parental chromosomes tend to get inherited together</li>
 <li>If subject inherits two genes that are causally associated with the outcome we want to measure but only use one as an IV, then we have unmeasured confounding</li>
-</ul>
-</li>
+</ul></li>
 <li>No direct effect through &ldquo;pleiotropy&rdquo;
+
 <ul>
 <li><strong>Risks violating criteria 1</strong></li>
 <li>Pleiotropy is where a gene has multiple functions</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>
-<p>Additional papers on Mendelian Randomization:</p>
+</ul></li>
+</ul></li>
+
+<li><p>Additional papers on Mendelian Randomization:</p>
+
 <ul>
 <li><a href="https://www.ncbi.nlm.nih.gov/pubmed/17715159">Mendelian randomization as an instrumental variable approach to causal inference</a></li>
 <li><a href="https://www.ncbi.nlm.nih.gov/pubmed/17886233/">Mendelian randomization: using genes as instruments for making causal inferences in epidemiology.</a></li>
+</ul></li>
 </ul>
-</li>
-</ul>
+
 <h2 id="formal-iv-assumptions-and-estimation-for-binary-ivs-and-treatments">Formal IV Assumptions and Estimation for Binary IVs and Treatments</h2>
+
 <h3 id="setting">Setting</h3>
+
 <ul>
 <li>Notation note: bolded characters are vectors</li>
 <li>\( N \): # of subjects</li>
 <li>\( \mathbf{z} \): \( N \)-dimensional vector of IV assignments
+
 <ul>
 <li>\( z_i \in \{0, 1\} \) for all \( i \in [N] \)</li>
-</ul>
-</li>
+</ul></li>
 <li>\( \mathbf{D^z} \in {0,1}^N \): \( N \)-dimensional vector of treatment assignments under IV assignment \( \mathbf{z} \)
+
 <ul>
 <li>Denote single treatment assignment with \( \mathbf{d} \)</li>
-</ul>
-</li>
+</ul></li>
 <li>\( \mathbf{Y^{(z, d)}} \): \( N \)-dimensional vector of potential outcomes under IV assignment \( \mathbf{z} \) and treatment assignment \( \mathbf{d} \)
+
 <ul>
 <li>\( Y^{(\mathbf{z, d})}_i \) is the outcome subject \( i \) would have under IV assignment \( \mathbf{z} \) and treatment assignment \( \mathbf{d} \)</li>
 <li>Assume we can write \( \mathbb{E}[Y] \) to denote expected value of outcome for a randomly sampled subject</li>
-</ul>
-</li>
+</ul></li>
 <li>\( \mathbf{X} \in \mathbb{R}^{N \times \dots} \): observed covariates for subjects</li>
 </ul>
+
 <h3 id="5-formal-iv-assumptions">5 Formal IV Assumptions</h3>
+
 <ol>
 <li>Stable Unit Treatment Value Assumption</li>
 <li>Criteria 1</li>
@@ -253,108 +269,119 @@ MathJax.Hub.Config({
 <li>Monotonicity
 <strong>Note to self: Are these easier to encode in causal DAGs?</strong></li>
 </ol>
+
 <h3 id="stable-unit-treatment-value-assumption-sutva">Stable Unit Treatment Value Assumption (SUTVA)</h3>
+
 <ul>
 <li>Formal statement:
-\[ \mathbf{z}_i = \mathbf{z}'_i \rightarrow D^{\mathbf{z}}_i = D^{\mathbf{z&rsquo;}}_i \land \mathbf{d}_i = \mathbf{d}'_i \rightarrow \mathbf{Y}^{(\mathbf{z, d})}_i = \mathbf{Y}^{(\mathbf{z&rsquo;, d&rsquo;})}_i \]</li>
+\[ \mathbf{z}_i = \mathbf{z}&rsquo;_i \rightarrow D^{\mathbf{z}}_i = D^{\mathbf{z&rsquo;}}_i \land \mathbf{d}_i = \mathbf{d}&rsquo;_i \rightarrow \mathbf{Y}^{(\mathbf{z, d})}_i = \mathbf{Y}^{(\mathbf{z&rsquo;, d&rsquo;})}_i \]</li>
 <li>Plain English: if the IV assignments are the same, then the treatment assignments have to be the same. And if the treatment assignments are the same, then the potential outcomes have to be the same.</li>
 </ul>
+
 <h3 id="formal-versions-of-three-criteria">Formal Versions of Three Criteria</h3>
+
 <ol>
 <li>IV positive correlated with treatment:
 \[ \mathbb{E}[D^1 \mid \mathbf{X}] &gt; \mathbb{E}[D^0 \mid \mathbf{X}] \]
+
 <ul>
 <li>Note: this seems like a weird way to write this&hellip;</li>
-</ul>
-</li>
+</ul></li>
 <li>IV independent of unmeasured confounders: IV conditionally independent of \( \mathbf{D} \)s, \( \mathbf{Y} \)s on observed covariates</li>
 <li>Exclusion restriction: \( Y^{(\mathbf{d, z})} = Y^d \)</li>
-</ol>
-<ul>
 <li>These alone allow effect bounds to be determined but not point identified</li>
-</ul>
+</ol>
+
 <h3 id="compliance-classes-and-point-identification">Compliance classes and point identification</h3>
+
 <ul>
 <li>Always-takers, compliers, defiers, never-takers (self-explanatory)</li>
 <li>How do you know if someone&rsquo;s a complier? Estimate them from other factors, presumably the covariates?</li>
 <li>What do these classes mean in the context of genes as IVs?
+
 <ul>
 <li>Always-takers are people who do the thing regardless of whether they have the gene?</li>
 <li>Compliers are people who do the thing if they have the gene</li>
 <li>Defiers are people who only do the thing if they don&rsquo;t have the gene</li>
 <li>Never-takers are people who never do the thing</li>
+</ul></li>
 </ul>
-</li>
-</ul>
+
 <h4 id="approach-1-to-enabling-point-identification-assume-monotonicity">Approach 1 to enabling point identification: assume monotonicity</h4>
+
 <ul>
 <li>Monotonicity means there are no defiers
+
 <ul>
 <li>Automatically satisfied if only subjects who receive the IV can get the treatment (ex: random encouragement)
+
 <ul>
 <li>Only compliers and never-takers because always-takers can&rsquo;t exist either since not everyone has opportunity to take the treatment</li>
-</ul>
-</li>
+</ul></li>
 <li>However, this only tells us info about compliers if our outcomes are binary</li>
-</ul>
-</li>
+</ul></li>
 <li>Average effect for compliers and always takers is identifiable in this approach (compliance average causal effect, CACE / LATE): \( \mathbb{E}(Y^1_i - Y^0_i \mid C_i = \text{complier}) \)</li>
 </ul>
+
 <h4 id="approach-2-to-enabling-point-identification-assume-effects-same-across-compliance-classes">Approach 2 to enabling point identification: assume effects same across compliance classes</h4>
+
 <ul>
 <li>Strongest version: assume expectation of difference between \( Y^0 \) and \( Y^1 \) uniform across compliance classes</li>
 <li>In other words, treatment effects same amongst always takers and compliers conditional on the covariates</li>
 </ul>
+
 <h3 id="iv-estimation">IV Estimation</h3>
+
 <ul>
 <li>Horribly typeset proof that CACE is identified as described in approach 1</li>
 <li>Can determine CASE using a 2-stage least squares (2SLS) process
+
 <ul>
 <li>Regress \( \mathbf{D} \) on \( \mathbf{Z} \) to get \( \hat{\mathbb{E}}(\mathbf{D} \mid \mathbf{Z}) \) (hat denotes sample mean)</li>
 <li>Then regress \( Y \) on \( \hat{\mathbb{E}}(\mathbf{D} \mid \mathbf{Z}) \) to get an estimate of the CACE</li>
-</ul>
-</li>
+</ul></li>
 <li>All of above assumes no observed covariates, but that&rsquo;s not very realistic</li>
 <li>When we have observed covariates, we regress on \( \mathbf{Z} \) and \( \mathbf{X} \) (observed covariates)
+
 <ul>
 <li>Can guarantee estimate consistency if the effect of \( \mathbf{X} \) on the outcomes for compliers is linear and CACE given \( \mathbf{X} \) is the same for all \( \mathbf{X} \)</li>
 <li>Impt for our stuff - what sort of covariates are going to be involved if we&rsquo;re trying to do the pioneer TF thing?</li>
-</ul>
-</li>
+</ul></li>
 <li>Bias-variance trade-off: if IV is valid, asymptotically unbiased (multiple regression is not). If IV is not perfectly valid, 2SLS is asymptotically biased too but has better variance properties?
+
 <ul>
 <li>Look at <a href="https://www.ncbi.nlm.nih.gov/pubmed/23765683/">this paper</a>, which develops a tool for deciding when to use 2SLS vs. multiple regression</li>
+</ul></li>
 </ul>
-</li>
-</ul>
+
 <h2 id="case-studies">Case Studies</h2>
+
 <h3 id="ex-2-treatment-in-a-randomized-trial-with-nonadherence">Ex. 2: Treatment in a randomized trial with nonadherence</h3>
+
 <ul>
 <li>Intention to treat (ITT) effect: effect of being assigned treatment vs. not</li>
 <li>Nonadherence means ITT does not equal effect of <strong>receiving</strong> treatment vs. control</li>
 <li>If nonadherence pattern differs between sample and actual target pop., we need to know the effect of <strong>receiving</strong> the treatment</li>
 <li>Ex.: offer kids Vitamin A to see if mortality goes down
+
 <ul>
 <li>Some kids didn&rsquo;t take the pills (still factored into ITT estimate)</li>
 <li>Notably different from actual real-world intervention of fortifying food</li>
-</ul>
-</li>
+</ul></li>
 <li>Ex.: want to know failure rate of contraception if youactually use it</li>
 <li>What if we just estimate \(\hat{\mathbb{E}}(Y \mid Z=1, D=1) - \hat{\mathbf{E}}(Y \mid Z=0, D=0)\) instead?
+
 <ul>
 <li>Can be systematically biased if defiance correlated with some other trait like having a worse diet</li>
 <li>Instead, treatement assignment can be the IV</li>
-</ul>
-</li>
+</ul></li>
 <li>Why?
-<blockquote>
-<p>the denominator of (4) is an estimate of the proportion of compliers.</p>
-</blockquote>
+&gt;  the denominator of (4) is an estimate of the proportion of compliers.
+
 <ul>
 <li>Isn&rsquo;t the estimate of proportion of compliers really
 \[ \frac{1}{2}(\hat{\mathbb{E}}[D_i \mid Z_i = 1] + (1-\hat{\mathbb{E}}[D_i \mid Z_i = 1])) \]</li>
-</ul>
-</li>
+</ul></li>
 </ul>
 </section>
 <section>
