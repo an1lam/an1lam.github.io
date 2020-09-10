@@ -85,7 +85,7 @@
 
     
       &nbsp;<i class="fa fa-clock-o"></i>
-      &nbsp;8 min read
+      &nbsp;14 min read
     
 
     
@@ -94,6 +94,59 @@
 
 </section>
 
+
+<section>
+  <details closed class="toc">
+    <summary>Contents</summary>
+    <nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#experiment">Experiment</a>
+<ul>
+<li><a href="#preparation">Preparation</a></li>
+<li><a href="#procedure">Procedure</a></li>
+<li><a href="#materials">Materials</a></li>
+</ul></li>
+<li><a href="#confounders">Confounders</a>
+<ul>
+<li><a href="#sleep">Sleep</a></li>
+<li><a href="#diet">Diet</a></li>
+<li><a href="#internet-use">Internet Use</a></li>
+<li><a href="#caffeine-withdrawal">Caffeine Withdrawal</a></li>
+<li><a href="#mood">Mood</a></li>
+<li><a href="#cognitive-test-practice-effects">Cognitive test practice effects</a></li>
+</ul></li>
+<li><a href="#analysis">Analysis</a>
+<ul>
+<li><a href="#on-not-pre-registering-in-detail">On not pre-registering in detail</a></li>
+<li><a href="#high-level-plan">High level plan</a></li>
+</ul></li>
+<li><a href="#faq">FAQ</a>
+<ul>
+<li><a href="#isn-t-this-too-short">Isn&rsquo;t this too short?</a></li>
+<li><a href="#why-99-blinded">Why &lsquo;99%&rsquo; blinded?</a></li>
+</ul></li>
+<li><a href="#data-collection">Data Collection</a></li>
+<li><a href="#results">Results</a>
+<ul>
+<li><a href="#qualitative-observations">Qualitative Observations</a></li>
+<li><a href="#quantitative-observations">Quantitative Observations</a>
+<ul>
+<li><a href="#analysis-assumptions">Analysis Assumptions</a></li>
+<li><a href="#discussion">Discussion</a></li>
+</ul></li>
+</ul></li>
+<li><a href="#takeaways">Takeaways</a>
+<ul>
+<li><a href="#object-level">Object Level</a></li>
+<li><a href="#meta-level">Meta Level</a></li>
+</ul></li>
+</ul></li>
+</ul>
+</nav>
+  </details>
+</section>
 
 
 <section>
@@ -210,10 +263,91 @@ In the comments, Bucky points out that caffeine use may also impact sleep the ne
 
 <h2 id="results">Results</h2>
 
-<p>(Where I&rsquo;ll record graphs and other summary statistics.)</p>
+<h3 id="qualitative-observations">Qualitative Observations</h3>
+
+<p><em>Note: I originally wrote this section soon after I finished the experiment but for whatever reason never posted it here.</em></p>
+
+<p>I&rsquo;m done! Made it through the withdrawal headaches. I haven&rsquo;t done much analysis yet but here are a few of my initial observations, some of which I won&rsquo;t be able to verify with analysis.</p>
+
+<ol>
+<li>I did pretty well at identifying which days were caffeine vs. decaf days. I only made two mistakes and one of them I had a hunch I was wrong in hindsight.</li>
+<li>Decaf days affected my actual subjective productivity less than expected. The main beneficial effect of caffeine seemed to be that it lowered the activation energy for me to get started on tasks and on days in which I&rsquo;d slept well seems to add a certain &lsquo;sharp&rsquo; quality to my thinking.</li>
+<li>Sleep matters for subjective measurements but not necessarily for the performance metrics I looked at. See the analysis section for further discussion of the latter point. On the former point (subjective measurements), anecdotally, especially if we ignore the headaches (which were a result of withdrawal not drinking decaf coffee in general), the difference in all my subjective metrics seemed to correlate much more with how much sleep I got before than with regular vs. decaf coffee.</li>
+<li>Caffeine may not help me do better when sleep deprived. As mentioned above, I do notice a small subjective positive effect on my &lsquo;sharpness&rsquo; when I sleep really well, have caffeine, and fast (which I do most days until lunch). On the other hand, on days on which I got &lt;7 hours of sleep (happened before both caffeine and decaf days), I felt like caffeine either made no difference or made me a bit more awake at the cost of making my cognition even fuzzier. I highly doubt this will show up in the Quantified Mind metrics in any detectable way but I wanted to note it as a hypothesis that I&rsquo;m very interested in as part of my general interest in mitigating the effects of sleep deprivation.</li>
+<li>(Credit to <a href="https://issarice.com/">Issa Rice</a> for pointing out that this would be an issue when I proposed the experiment.) Withdrawal did turn out to be a bit of an issue although not enough of one (IMO) to mess up the results of the experiment. My first decaf sequence was two days in a row and in the afternoon I got a bad withdrawal headache that was resistant to Ibuprofen. On later decaf days, I took Ibuprofen at the first sign of a headache and this seemed to largely mitigate withdrawal symptoms. Of course this does confound my headache tracking a bit, but I view it as worth it in order to try minimize the effect of withdrawal on other metrics.</li>
+</ol>
+
+<h3 id="quantitative-observations">Quantitative Observations</h3>
+
+<p>Unfortunately, due to time constraints and also an informal value-of-information calculation, I did limited analysis of my results data, mainly just looking at two basic relationships: the effect of regular vs. decaf coffee on my Quantified Mind metrics and the relationship between sleep duration and my Quantified Mind metrics. If you&rsquo;re interested in my full analysis, you can find the HTML output from my Jupyter notebook <a href="https://github.com/an1lam/coffee-rct-analysis/blob/master/coffee-effects-analysis.ipynb">here</a>. While I&rsquo;d still like to do some Bayesian analysis of the data, I&rsquo;m considering this as &ldquo;done&rdquo; without it.</p>
+
+<h4 id="analysis-assumptions">Analysis Assumptions</h4>
+
+<p>Before I discuss the analysis I did on my results, I want to explicitly note that my analysis:
+1. Assumes linear relationships between sleep duration and the scores I looked at.
+2. Didn&rsquo;t model interaction effects, meaning that for example, I have no way to know whether sleep somehow interacting with caffeine affected the results.
+3. Uses null hypothesis significance testing despite generally being a proponent of Bayesian methods.
+As I&rsquo;ve emphasized, given the small number of data points I collected, doing the additional analyses to investigate or remove these assumptions didn&rsquo;t seem worth it. But, if I were to do another follow-up experiment, I would try and explicitly model the generative process of my data, use posterior probabilities, and maybe look at non-linear effects between covariates.</p>
+
+<h4 id="discussion">Discussion</h4>
+
+<p>First I looked at how my Quantified Mind scores varied between caffeine and decaf days. The below graph shows violin plots comparing each test&rsquo;s scores for days on which I had regular vs. decaf coffee respectively. As you can pretty easily see, the means of the respective groups are, in almost every cases very (not significantly as measured by a paired two-sample t-test) close. The only case in which they differ meaningfully (and <em>barely</em> significantly with p = .049, which we all know is a sign that the hypothesis you&rsquo;re testing is <em>definitely</em> true for all of eternity) is &ldquo;Visual Backward Digit Span&rdquo;. Unexpectedly, in this case, I seem to do better when not caffeinated than when caffeinated. That said, as I hinted at with my parenthetical, I&rsquo;ve read enough Andrew Gelman blog posts to not put much stock in the weak &ldquo;significance&rdquo; result on its own. On seeing this initially, I realized that even if the correlation is meaningful, my experiment was short enough that sleep could be the real causal factor here. The main takeaway for me from this set of plots / analysis is that regular vs. decaf coffee doesn&rsquo;t make a big enough difference in my cognitive performance to show a meaningful effect within two weeks.</p>
+
+<p><img src="https://stephenmalina.com/images/coffee-rct-violin-plots.png" width="800" height="700" /></p>
+
+<p>Curiosity about whether sleep duration influenced my scores led me to the second visualization / statistical analysis I did. Before I go on, I want to add the caveat that I wasn&rsquo;t randomizing my sleep so any results from this section inherit all the standard issues of inferring things from observational data. Personally, I think of these results as at best hinting at worthwhile follow-ups rather than as telling us much about the effect of sleep cognitive performance. Caveats aside, the following graph shows the best-fit (OLS) regression lines for each Quantified Mind test score as a function of sleep duration. As you can see, outside of &ldquo;Visual Backward Digit Span&rdquo;, all the lines have slopes that are quite close to 0 (and have 95% confidence intervals that include 0). This suggests that it might be worth me running a longer experiment where I randomize (but obviously can&rsquo;t blind) sleep duration and then do, in particular working memory heavy, Quantified Mind tasks.</p>
+
+<p><img src="https://stephenmalina.com/images/coffee-rct-regression-lines.png" width="800" height="700" /></p>
+
+<p>Last, I briefly looked at my scores as a function of date to see whether practice effects were an issue. From my very basic linear regression analysis below, it appears that practice effects may have been a factor, in particular for finger tapping (which matches my subjective perception of which things I got better at). What&rsquo;s interesting is that it seems least likely that practice effects were an issue for the digit span task, but that&rsquo;s the only task where I found differences in terms of other covariates.</p>
+
+<p><img src="https://stephenmalina.com/images/coffee-rct-practice-effects.png" width="800" height="700" /></p>
+
+<p>To summarize, my conclusion from this analysis is that having decaf vs. regular coffee doesn&rsquo;t seem to have enough of an impact on cognitive performance to show up in a 2-week randomized Quantified Mind experiment. Based on observational data, it seems like sleep doesn&rsquo;t have a massive effect but may have some effect on performance on backwards digit span. However, since this is based on observational data and is still a relatively weak effect, a longer experiment paired with a more rigorous analysis would be required to come to meaningful conclusions.</p>
+
+<h2 id="takeaways">Takeaways</h2>
+
+<p>My object-level takeaways from running this experiment and analyzing the data are:</p>
+
+<h3 id="object-level">Object Level</h3>
+
+<ul>
+<li>Detoxing from coffee sucks from a happiness perspective but doesn&rsquo;t seem too bad from a mental performance perspective.</li>
+<li>Introspection is as miscalibrated as everyone talks about. I&rsquo;d repeatedly go to do my Quantified Mind on days on which I felt crappy and be surprised to see my results were basically the same as days on which I&rsquo;d felt good.</li>
+</ul>
+
+<h3 id="meta-level">Meta Level</h3>
+
+<ul>
+<li>With respect to the analysis, I was reminded of <a href="https://en.wikipedia.org/wiki/Hofstadter%27s_law">Hofstadter&rsquo;s Law</a> for the hundredth time.
+<blockquote cite="">
+  It always takes longer than you expect, even when you take into account Hofstadter&rsquo;s Law.
+  <footer>Douglas Hofstadter</footer>
+</blockquote>
+</li>
+<li>Being in a relationship is a great way to always have someone to help you conduct blinded, randomized experiments (and also is great for me in general!).</li>
+</ul>
 </section>
 <section>
   
+  <div id="disqus_thread"></div>
+  <script type="text/javascript">
+
+  (function() {
+      
+      
+      if (window.location.hostname == "localhost")
+          return;
+
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      var disqus_shortname = 'an1lam-github-io';
+      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  <a href="http://disqus.com/" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
 
   <footer class="page-footer">
 		<hr>
