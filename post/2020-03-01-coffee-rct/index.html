@@ -130,12 +130,8 @@
 <li><a href="#data-collection">Data Collection</a></li>
 <li><a href="#results">Results</a>
 <ul>
-<li><a href="#qualitative-observations">Qualitative Observations</a></li>
-<li><a href="#quantitative-observations">Quantitative Observations</a>
-<ul>
-<li><a href="#analysis-assumptions">Analysis Assumptions</a></li>
-<li><a href="#discussion">Discussion</a></li>
-</ul></li>
+<li><a href="#qualitative">Qualitative</a></li>
+<li><a href="#quantitative">Quantitative</a></li>
 </ul></li>
 <li><a href="#takeaways">Takeaways</a>
 <ul>
@@ -263,7 +259,7 @@ In the comments, Bucky points out that caffeine use may also impact sleep the ne
 
 <h2 id="results">Results</h2>
 
-<h3 id="qualitative-observations">Qualitative Observations</h3>
+<h3 id="qualitative">Qualitative</h3>
 
 <p><em>Note: I originally wrote this section soon after I finished the experiment but for whatever reason never posted it here.</em></p>
 
@@ -277,19 +273,21 @@ In the comments, Bucky points out that caffeine use may also impact sleep the ne
 <li>(Credit to <a href="https://issarice.com/">Issa Rice</a> for pointing out that this would be an issue when I proposed the experiment.) Withdrawal did turn out to be a bit of an issue although not enough of one (IMO) to mess up the results of the experiment. My first decaf sequence was two days in a row and in the afternoon I got a bad withdrawal headache that was resistant to Ibuprofen. On later decaf days, I took Ibuprofen at the first sign of a headache and this seemed to largely mitigate withdrawal symptoms. Of course this does confound my headache tracking a bit, but I view it as worth it in order to try minimize the effect of withdrawal on other metrics.</li>
 </ol>
 
-<h3 id="quantitative-observations">Quantitative Observations</h3>
+<h3 id="quantitative">Quantitative</h3>
 
 <p>Unfortunately, due to time constraints and also an informal value-of-information calculation, I did limited analysis of my results data, mainly just looking at two basic relationships: the effect of regular vs. decaf coffee on my Quantified Mind metrics and the relationship between sleep duration and my Quantified Mind metrics. If you&rsquo;re interested in my full analysis, you can find the HTML output from my Jupyter notebook <a href="https://github.com/an1lam/coffee-rct-analysis/blob/master/coffee-effects-analysis.ipynb">here</a>. While I&rsquo;d still like to do some Bayesian analysis of the data, I&rsquo;m considering this as &ldquo;done&rdquo; without it.</p>
 
-<h4 id="analysis-assumptions">Analysis Assumptions</h4>
+<p>Before I discuss how I analyzed my results, I want to explicitly note some assumptions I made and things I failed to look at:</p>
 
-<p>Before I discuss the analysis I did on my results, I want to explicitly note that my analysis:
-1. Assumes linear relationships between sleep duration and the scores I looked at.
-2. Didn&rsquo;t model interaction effects, meaning that for example, I have no way to know whether sleep somehow interacting with caffeine affected the results.
-3. Uses null hypothesis significance testing despite generally being a proponent of Bayesian methods.
-As I&rsquo;ve emphasized, given the small number of data points I collected, doing the additional analyses to investigate or remove these assumptions didn&rsquo;t seem worth it. But, if I were to do another follow-up experiment, I would try and explicitly model the generative process of my data, use posterior probabilities, and maybe look at non-linear effects between covariates.</p>
+<ol>
+<li>Assumed approximately linear relationships between sleep duration and the scores I looked at.</li>
+<li>Didn&rsquo;t model interaction effects, meaning that for example, I have no way to know whether sleep somehow interacting with caffeine affected the results.</li>
+<li>Used null hypothesis significance testing despite generally being a proponent of Bayesian methods.</li>
+</ol>
 
-<h4 id="discussion">Discussion</h4>
+<p>As I&rsquo;ve emphasized, given the small number of data points I collected, doing the additional analyses to investigate or remove these assumptions didn&rsquo;t seem worth it. But, if I were to do another follow-up experiment, I would try and explicitly model the generative process of my data, use posterior probabilities, and maybe look at non-linear effects between covariates.</p>
+
+<p>Now, we can actually talk about results!</p>
 
 <p>First I looked at how my Quantified Mind scores varied between caffeine and decaf days. The below graph shows violin plots comparing each test&rsquo;s scores for days on which I had regular vs. decaf coffee respectively. As you can pretty easily see, the means of the respective groups are, in almost every cases very (not significantly as measured by a paired two-sample t-test) close. The only case in which they differ meaningfully (and <em>barely</em> significantly with p = .049, which we all know is a sign that the hypothesis you&rsquo;re testing is <em>definitely</em> true for all of eternity) is &ldquo;Visual Backward Digit Span&rdquo;. Unexpectedly, in this case, I seem to do better when not caffeinated than when caffeinated. That said, as I hinted at with my parenthetical, I&rsquo;ve read enough Andrew Gelman blog posts to not put much stock in the weak &ldquo;significance&rdquo; result on its own. On seeing this initially, I realized that even if the correlation is meaningful, my experiment was short enough that sleep could be the real causal factor here. The main takeaway for me from this set of plots / analysis is that regular vs. decaf coffee doesn&rsquo;t make a big enough difference in my cognitive performance to show a meaningful effect within two weeks.</p>
 
@@ -303,7 +301,7 @@ As I&rsquo;ve emphasized, given the small number of data points I collected, doi
 
 <p><img src="https://stephenmalina.com/images/coffee-rct-practice-effects.png" width="800" height="700" /></p>
 
-<p>To summarize, my conclusion from this analysis is that having decaf vs. regular coffee doesn&rsquo;t seem to have enough of an impact on cognitive performance to show up in a 2-week randomized Quantified Mind experiment. Based on observational data, it seems like sleep doesn&rsquo;t have a massive effect but may have some effect on performance on backwards digit span. However, since this is based on observational data and is still a relatively weak effect, a longer experiment paired with a more rigorous analysis would be required to come to meaningful conclusions.</p>
+<p>To summarize, my conclusion from this analysis is that having decaf vs. regular coffee doesn&rsquo;t seem to have enough of an impact on cognitive performance to show up in a 2-week randomized Quantified Mind experiment. On one hand, it doesn&rsquo;t seems like sleep has a massive effect either. But, taking into account that the sleep data was observational and that sleep duration did correlate with performance on backwards digit span, a longer experiment on sleep&rsquo;s effect on performance metrics might be warranted. Were I to do one, I&rsquo;d pair it with a more rigorous analysis.</p>
 
 <h2 id="takeaways">Takeaways</h2>
 
