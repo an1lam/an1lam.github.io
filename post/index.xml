@@ -6,10 +6,20 @@
     <description>Recent content in Posts on Stephen Malina</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 11 Jul 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 09 Sep 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://stephenmalina.com/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Upcoming Maniac Week</title>
+      <link>https://stephenmalina.com/post/2020-09-25-upcoming-maniac-week/</link>
+      <pubDate>Wed, 09 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://stephenmalina.com/post/2020-09-25-upcoming-maniac-week/</guid>
+      <description>Abstract Guy on internet decides to follow lead of other people on internet and pre-commits to working much more than usual . Plans to document whole thing under illusion people care about some guy on the internet working a more-than-average number of hours relative to his baseline.
+Summary From Friday, October 9th (9:00 AM) through Thursday, October 15th (2:00 PM), I&amp;rsquo;ll attempt to work 13 hours a day on schoolwork and my primary research project.</description>
+    </item>
     
     <item>
       <title>Becoming a more playful, deeper thinker</title>
@@ -61,8 +71,7 @@ Assume $ U $ is unmeasured whereas $ X, M, Y $ can be measured. Notice that:
       <pubDate>Sun, 01 Mar 2020 00:00:00 +0000</pubDate>
       
       <guid>https://stephenmalina.com/post/2020-03-01-coffee-rct/</guid>
-      <description>For a while, I&amp;rsquo;ve been convinced that decaf coffee has roughly the same effect on me as regular coffee. However, I haven&amp;rsquo;t been able to say with certainty because there&amp;rsquo;s huge potential for placebo effects. Starting tomorrow, I&amp;rsquo;ll be conducting a (99%) blinded experiment to test whether drinking regular vs. decaf coffee has a detectable effect on my mood and alertness.
-I intend to record the metrics I describe in the next section under the &amp;lsquo;Data collection&amp;rsquo; heading of this post and will also report results here once the experiment is over.</description>
+      <description>Abstract I conducted a two-week blinded, randomized experiment to test whether drinking regular vs. decaf coffee had a detectable effect on my mood and alertness. Each day, I drank one cup of coffee in the morning and immediately took a Quantified Mind test. I also tracked hours of sleep each night and measured subjective factors such as mood and alertness a few times throughout the day. Overall, the experiment was a success in terms of being able to follow my original plan.</description>
     </item>
     
     <item>

@@ -85,7 +85,7 @@
 
     
       &nbsp;<i class="fa fa-clock-o"></i>
-      &nbsp;14 min read
+      &nbsp;16 min read
     
 
     
@@ -100,7 +100,9 @@
     <summary>Contents</summary>
     <nav id="TableOfContents">
 <ul>
-<li>
+<li><a href="#abstract">Abstract</a></li>
+<li><a href="#key-results">Key Results</a></li>
+<li><a href="#introduction">Introduction</a>
 <ul>
 <li><a href="#experiment">Experiment</a>
 <ul>
@@ -131,7 +133,12 @@
 <li><a href="#results">Results</a>
 <ul>
 <li><a href="#qualitative">Qualitative</a></li>
-<li><a href="#quantitative">Quantitative</a></li>
+<li><a href="#quantitative">Quantitative</a>
+<ul>
+<li><a href="#caffeine-vs-decaf-coffee-had-essentially-no-effect-on-my-quantified-mind-sub-test-scores">Caffeine vs. Decaf Coffee had essentially no effect on my Quantified Mind sub-test scores</a></li>
+<li><a href="#sleep-duration-only-meaningfully-correlated-with-1-one-out-of-6-quantified-mind-sub-tests">Sleep duration only meaningfully correlated with 1 one out of 6 Quantified Mind sub-tests</a></li>
+<li><a href="#practice-effects-likely-affected-scores-at-least-2-of-the-6-quantified-mind-sub-tests">Practice effects likely affected scores at least 2 of the 6 Quantified Mind sub-tests</a></li>
+</ul></li>
 </ul></li>
 <li><a href="#takeaways">Takeaways</a>
 <ul>
@@ -146,6 +153,24 @@
 
 
 <section>
+
+<h1 id="abstract">Abstract</h1>
+
+<p>I conducted a two-week blinded, randomized experiment to test whether drinking regular vs. decaf coffee had a detectable effect on my mood and alertness. Each day, I drank one cup of coffee in the morning and immediately took a <a href="http://www.quantified-mind.com/">Quantified Mind</a> test. I also tracked hours of sleep each night and measured subjective factors such as mood and alertness a few times throughout the day. Overall, the experiment was a success in terms of being able to follow my original plan. It did end up being only mostly blinded because I got caffeine withdrawal headaches after two consecutive decaf days.</p>
+
+<h1 id="key-results">Key Results</h1>
+
+<p><em>Note: If you want to have the story told in an order that&rsquo;s faithful to the chronology, skip this section and go straight to <a href="#introduction">Introduction</a>.</em></p>
+
+<ul>
+<li>Caffeine consumption meaningfully affected my mood but didn&rsquo;t significantly improve any of my Quantified Mind sub-test scores or my subjective productivity. While this may be because this experiment is statistically under-powered, from a decision-theory perspective, it&rsquo;s satisfactorily answered my original question.</li>
+<li>Although I didn&rsquo;t randomize sleep (so results to be taken with a grain of salt), I found that sleep duration also, surprisingly, had non-significant impact on all of my Quantified Mind scores with the exception of Visual Backwards Digit Span. This suggests doing a follow-up experiment that attempts to directly measure the effect of sleep on cognitive performance would be worthwhile (similar to <a href="https://guzey.com/science/sleep/14-day-sleep-deprivation-self-experiment/">this one</a>).</li>
+<li>Introspection is as miscalibrated as everyone talks about. I&rsquo;d repeatedly go to do my Quantified Mind on days on which I felt crappy and be surprised to see my results were basically the same as days on which I&rsquo;d felt good.</li>
+</ul>
+
+<p>More discussion of these results can be found in the <a href="#qualitative">Qualitative</a> and <a href="#quantitative">Quantitative</a> results sections.</p>
+
+<h1 id="introduction">Introduction</h1>
 
 <p>For a while, I&rsquo;ve been convinced that decaf coffee has roughly the same effect on me as regular coffee. However, I haven&rsquo;t been able to say with certainty because there&rsquo;s huge potential for placebo effects. Starting tomorrow, I&rsquo;ll be conducting a (99%) blinded experiment to test whether drinking regular vs. decaf coffee has a detectable effect on my mood and alertness.</p>
 
@@ -289,13 +314,19 @@ In the comments, Bucky points out that caffeine use may also impact sleep the ne
 
 <p>Now, we can actually talk about results!</p>
 
+<h4 id="caffeine-vs-decaf-coffee-had-essentially-no-effect-on-my-quantified-mind-sub-test-scores">Caffeine vs. Decaf Coffee had essentially no effect on my Quantified Mind sub-test scores</h4>
+
 <p>First I looked at how my Quantified Mind scores varied between caffeine and decaf days. The below graph shows violin plots comparing each test&rsquo;s scores for days on which I had regular vs. decaf coffee respectively. As you can pretty easily see, the means of the respective groups are, in almost every cases very (not significantly as measured by a paired two-sample t-test) close. The only case in which they differ meaningfully (and <em>barely</em> significantly with p = .049, which we all know is a sign that the hypothesis you&rsquo;re testing is <em>definitely</em> true for all of eternity) is &ldquo;Visual Backward Digit Span&rdquo;. Unexpectedly, in this case, I seem to do better when not caffeinated than when caffeinated. That said, as I hinted at with my parenthetical, I&rsquo;ve read enough Andrew Gelman blog posts to not put much stock in the weak &ldquo;significance&rdquo; result on its own. On seeing this initially, I realized that even if the correlation is meaningful, my experiment was short enough that sleep could be the real causal factor here. The main takeaway for me from this set of plots / analysis is that regular vs. decaf coffee doesn&rsquo;t make a big enough difference in my cognitive performance to show a meaningful effect within two weeks.</p>
 
 <p><img src="https://stephenmalina.com/images/coffee-rct-violin-plots.png" width="800" height="700" /></p>
 
+<h4 id="sleep-duration-only-meaningfully-correlated-with-1-one-out-of-6-quantified-mind-sub-tests">Sleep duration only meaningfully correlated with 1 one out of 6 Quantified Mind sub-tests</h4>
+
 <p>Curiosity about whether sleep duration influenced my scores led me to the second visualization / statistical analysis I did. Before I go on, I want to add the caveat that I wasn&rsquo;t randomizing my sleep so any results from this section inherit all the standard issues of inferring things from observational data. Personally, I think of these results as at best hinting at worthwhile follow-ups rather than as telling us much about the effect of sleep cognitive performance. Caveats aside, the following graph shows the best-fit (OLS) regression lines for each Quantified Mind test score as a function of sleep duration. As you can see, outside of &ldquo;Visual Backward Digit Span&rdquo;, all the lines have slopes that are quite close to 0 (and have 95% confidence intervals that include 0). This suggests that it might be worth me running a longer experiment where I randomize (but obviously can&rsquo;t blind) sleep duration and then do, in particular working memory heavy, Quantified Mind tasks.</p>
 
 <p><img src="https://stephenmalina.com/images/coffee-rct-regression-lines.png" width="800" height="700" /></p>
+
+<h4 id="practice-effects-likely-affected-scores-at-least-2-of-the-6-quantified-mind-sub-tests">Practice effects likely affected scores at least 2 of the 6 Quantified Mind sub-tests</h4>
 
 <p>Last, I briefly looked at my scores as a function of date to see whether practice effects were an issue. From my very basic linear regression analysis below, it appears that practice effects may have been a factor, in particular for finger tapping (which matches my subjective perception of which things I got better at). What&rsquo;s interesting is that it seems least likely that practice effects were an issue for the digit span task, but that&rsquo;s the only task where I found differences in terms of other covariates.</p>
 
