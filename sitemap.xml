@@ -1,6 +1,16 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>https://stephenmalina.com/post/2020-10-20-maniac-week-review/</loc>
+    <lastmod>2020-10-20T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://stephenmalina.com/post/</loc>
+    <lastmod>2020-10-20T00:00:00+00:00</lastmod>
+  </url>
   
   <url>
     <loc>https://stephenmalina.com/post/2020-09-25-upcoming-maniac-week/</loc>
@@ -23,7 +33,27 @@
   </url>
   
   <url>
+    <loc>https://stephenmalina.com/tags/causal-inference/</loc>
+    <lastmod>2020-03-09T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://stephenmalina.com/tags/derivation/</loc>
+    <lastmod>2020-03-09T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://stephenmalina.com/post/2020-03-09-front-door-do-calc-derivation/</loc>
+    <lastmod>2020-03-09T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://stephenmalina.com/tags/math/</loc>
+    <lastmod>2020-03-09T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://stephenmalina.com/tags/</loc>
     <lastmod>2020-03-09T00:00:00+00:00</lastmod>
   </url>
   
@@ -33,12 +63,47 @@
   </url>
   
   <url>
+    <loc>https://stephenmalina.com/tags/all-of-statistics/</loc>
+    <lastmod>2019-12-12T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://stephenmalina.com/learning/2019-12-12-all-of-statistics-ch3-notes/</loc>
     <lastmod>2019-12-12T00:00:00+00:00</lastmod>
   </url>
   
   <url>
+    <loc>https://stephenmalina.com/learning/</loc>
+    <lastmod>2019-12-12T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://stephenmalina.com/tags/notes/</loc>
+    <lastmod>2019-12-12T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://stephenmalina.com/tags/genomics/</loc>
+    <lastmod>2019-11-16T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://stephenmalina.com/tags/machine-learning/</loc>
+    <lastmod>2019-11-16T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://stephenmalina.com/tags/paper/</loc>
+    <lastmod>2019-11-16T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://stephenmalina.com/post/2019-11-16-network-mendelian-randomization/</loc>
+    <lastmod>2019-11-16T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://stephenmalina.com/tags/review/</loc>
     <lastmod>2019-11-16T00:00:00+00:00</lastmod>
   </url>
   
@@ -48,8 +113,23 @@
   </url>
   
   <url>
+    <loc>https://stephenmalina.com/tags/causality/</loc>
+    <lastmod>2019-11-15T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://stephenmalina.com/learning/2019-11-02-ivs-mendelian-randomization/</loc>
     <lastmod>2019-11-03T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://stephenmalina.com/tags/statistics/</loc>
+    <lastmod>2019-11-03T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://stephenmalina.com/tags/linear-algebra/</loc>
+    <lastmod>2019-08-13T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -70,6 +150,11 @@
   <url>
     <loc>https://stephenmalina.com/post/2019-07-26-deepbind/</loc>
     <lastmod>2019-07-26T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://stephenmalina.com/tags/linear-algebra-done-right/</loc>
+    <lastmod>2019-05-20T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -119,6 +204,11 @@
   
   <url>
     <loc>https://stephenmalina.com/progress/</loc>
+    <lastmod>2018-10-12T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://stephenmalina.com/</loc>
     <lastmod>2018-10-12T00:00:00+00:00</lastmod>
   </url>
   
@@ -434,6 +524,7 @@
   
   <url>
     <loc>https://stephenmalina.com/home/</loc>
+    <priority>0</priority>
   </url>
   
   <url>
@@ -453,115 +544,11 @@
   </url>
   
   <url>
-    <loc>https://stephenmalina.com/tags/all-of-statistics/</loc>
-    <lastmod>2019-12-12T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://stephenmalina.com/categories/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://stephenmalina.com/tags/causal-inference/</loc>
-    <lastmod>2020-03-09T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://stephenmalina.com/tags/causality/</loc>
-    <lastmod>2019-11-15T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://stephenmalina.com/tags/derivation/</loc>
-    <lastmod>2020-03-09T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://stephenmalina.com/tags/genomics/</loc>
-    <lastmod>2019-11-16T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://stephenmalina.com/learning/</loc>
-    <lastmod>2019-12-12T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://stephenmalina.com/tags/linear-algebra/</loc>
-    <lastmod>2019-08-13T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://stephenmalina.com/tags/linear-algebra-done-right/</loc>
-    <lastmod>2019-05-20T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://stephenmalina.com/tags/machine-learning/</loc>
-    <lastmod>2019-11-16T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://stephenmalina.com/tags/math/</loc>
-    <lastmod>2020-03-09T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://stephenmalina.com/tags/notes/</loc>
-    <lastmod>2019-12-12T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://stephenmalina.com/page/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://stephenmalina.com/tags/paper/</loc>
-    <lastmod>2019-11-16T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://stephenmalina.com/post/</loc>
-    <lastmod>2020-09-26T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://stephenmalina.com/tags/review/</loc>
-    <lastmod>2019-11-16T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://stephenmalina.com/tags/statistics/</loc>
-    <lastmod>2019-11-03T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://stephenmalina.com/</loc>
-    <lastmod>2020-09-26T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://stephenmalina.com/tags/</loc>
-    <lastmod>2019-12-12T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
 </urlset>

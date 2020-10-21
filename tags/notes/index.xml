@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Notes on Stephen Malina</title>
@@ -37,7 +37,7 @@ What is this paper about? This paper describes a method for doing Mendelian Rand
       <pubDate>Fri, 15 Nov 2019 00:00:00 +0000</pubDate>
       
       <guid>https://stephenmalina.com/learning/2019-11-08-causal-inference/</guid>
-      <description>Causal Inference in Statistics Questions  Why is the causal effect identifiable in an IV DAG when the dependencies are linear (from an SCM perspective)?  I think this may relate to factor models.   Advanced Data Analysis from an Elementary Point of View (Ch. 18-23) Chapter 18 Exercises 18.2. Proof that every path must go through a collider:
+      <description>Causal Inference in Statistics Questions  Why is the causal effect identifiable in an IV DAG when the dependencies are linear (from an SCM perspective)?  I think this may relate to factor models.    Advanced Data Analysis from an Elementary Point of View (Ch. 18-23) Chapter 18 Exercises 18.2. Proof that every path must go through a collider:
 Observe that every path between two exogenous variables starts with variables going in the opposite direction.</description>
     </item>
     
@@ -47,7 +47,8 @@ Observe that every path between two exogenous variables starts with variables go
       <pubDate>Sun, 03 Nov 2019 00:00:00 +0000</pubDate>
       
       <guid>https://stephenmalina.com/learning/2019-11-02-ivs-mendelian-randomization/</guid>
-      <description>Summary Detailed Notes 3 IV Requirements  IV must have a direct influence on the treatment IV must not covary with the unmeasured confounding that impacts the outcome IV must not have a direct influence on the outcome  Relevant considerations for deciding whether to do an IV analysis  Is there any unmeasured confounding?  If not, is the answer that we can just use a normal regression?  When is unmeasured confounding especially likely?</description>
+      <description>Summary Detailed Notes 3 IV Requirements  IV must have a direct influence on the treatment IV must not covary with the unmeasured confounding that impacts the outcome IV must not have a direct influence on the outcome  Relevant considerations for deciding whether to do an IV analysis   Is there any unmeasured confounding?
+ If not, is the answer that we can just use a normal regression?    When is unmeasured confounding especially likely?</description>
     </item>
     
     <item>
@@ -77,7 +78,7 @@ Bio Background The genome consists of (broadly) two types of genes, coding genes
       
       <guid>https://stephenmalina.com/post/2019-07-26-deepbind/</guid>
       <description>In which I record my thoughts on DeepBind.
-What is this paper about? The authors of this paper designed a conv net model to predict how well different proteins will bind to sequences of DNA or RNA. They train one model per protein for many different sequences and show that these models can predict binding affinities for sequences well enough to produce insights regarding the impact of single nucleotide mutations.</description>
+What is this paper about? The authors of this paper designed a conv net model to predict how well different proteins will bind to sequences of DNA or RNA. They train one model per protein for many different sequences and show that these models can predict binding affinities for sequences well enough to produce insights regarding the impact of single nucleotide mutations. They then discuss different datasets and areas in which they tested their model and how it performed (often SOTA [as of 2015]).</description>
     </item>
     
     <item>

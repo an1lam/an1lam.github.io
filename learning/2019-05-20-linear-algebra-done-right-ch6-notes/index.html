@@ -9,7 +9,7 @@
 <meta name="description" content="">
 <meta name="keywords" content="">
 <meta name="author" content="Stephen Malina">
-<meta name="generator" content="Hugo 0.40.1" />
+<meta name="generator" content="Hugo 0.68.3" />
 
   
   
@@ -79,59 +79,44 @@
 
 
 
-<section>
-
-<h1 id="selected-exercises">Selected Exercises</h1>
-
-<h2 id="6-b">6.B</h2>
-
-<p><strong>1.</strong> (a) Suppose \( \theta \in \mathbf{R} \). Show that $ (\cos \theta, \sin \theta), (-\sin \theta, \cos \theta) $ and $ (\cos \theta, \sin \theta), (\sin \theta, -\cos \theta) $ are orthonormal bases of $ \mathbf{R}^2 $.<br />
+<section><h1 id="selected-exercises">Selected Exercises</h1>
+<h2 id="6b">6.B</h2>
+<p><strong>1.</strong> (a) Suppose \( \theta \in \mathbf{R} \). Show that $ (\cos \theta, \sin \theta), (-\sin \theta, \cos \theta) $ and $ (\cos \theta, \sin \theta), (\sin \theta, -\cos \theta) $ are orthonormal bases of $ \mathbf{R}^2 $.<br>
 (b) Show that each orthonormal basis of $ \mathbf{R}^2 $ is of the form given by one of the two possibilities of part (a).</p>
-
 <p>(a) First, we show that both lists of vectors are orthonormal (using the Euclidean inner product), i.e. that the inner product of the two vectors equals 0 and that the inner product of each with itself equals 1.</p>
-
 <p>The former,</p>
-
 <p>$$
 \begin{aligned}
-\langle (\cos \theta, \sin \theta), (-\sin \theta, \cos \theta) \rangle &amp; = &amp; \<br />
--\cos \theta \sin \theta + \sin \theta \cos \theta &amp; = &amp; 0. \<br />
+\langle (\cos \theta, \sin \theta), (-\sin \theta, \cos \theta) \rangle &amp; = &amp; \\<br>
+-\cos \theta \sin \theta + \sin \theta \cos \theta &amp; = &amp; 0. \\<br>
 \end{aligned}
 $$</p>
-
 <p>The latter for the first list,
 $$
 \begin{aligned}
-\langle (\cos \theta, \sin \theta), (\cos \theta, \sin \theta) \rangle &amp; = \<br />
-\cos^2 \theta + \sin^2 \theta &amp; = 1, \<br />
+\langle (\cos \theta, \sin \theta), (\cos \theta, \sin \theta) \rangle &amp; = \\<br>
+\cos^2 \theta + \sin^2 \theta &amp; = 1, \\<br>
 \end{aligned}
 $$
 and the second,</p>
-
 <p>$$
 \begin{aligned}
-\langle (-\sin \theta, \cos \theta), (-\sin \theta, \cos \theta) \rangle &amp; = &amp; \<br />
-\sin^2 \theta + \cos^2 \theta &amp; = &amp; 1. \<br />
+\langle (-\sin \theta, \cos \theta), (-\sin \theta, \cos \theta) \rangle &amp; = &amp; \\<br>
+\sin^2 \theta + \cos^2 \theta &amp; = &amp; 1. \\<br>
 \end{aligned}
 $$</p>
-
 <p>Thus, the two lists are orthonormal. By 6.28, these lists are bases of $\mathbf{R}^2$, since they both have length $2 = \dim\ \mathbf{R}^2 $.</p>
-
 <p>(b) We know that, if $u, v$ are nonzero vectors in $R</p>
-
 <p><strong>2.</strong> Suppose $ e_1, \dots. e_m $ is an orthonormal list of vectors in $V$. Let $ v \in V $, Prove that
 $$
 \lVert v \rVert^2 = \lvert \langle v, e_1 \rangle \rvert^2 + \cdots + \lvert \langle v, e_m \rangle \rvert^2
 $$
 if and only if $v \in \operatorname{span}(e_1, \dots, e_m)$.</p>
-
 <p>Let&rsquo;s start with the backwards direction because it&rsquo;s easier and I&rsquo;m a lazy programmer at heart.</p>
-
 <p>Assume $ v \in \operatorname{span}(e_1, \dots, e_m) $. Then, there exists some list of scalars $a_1, \dots, a_m$ such that
 $$
 v = a_1 e_1 + \cdots a_m e_m.
 $$</p>
-
 <p>Similar to the proof of 6.30, we can take the inner product of both sides for each $ e_j $ for $j \in 1, \dots, m $ and get
 $$
 \langle v, e_j \rangle = \langle a_j \rangle,
@@ -140,25 +125,20 @@ so
 $$
 v = \langle v, e_1 \rangle e_1 + \cdots + \langle v, e_m \rangle e_m.
 $$</p>
-
 <p>Then, taking the norm of both sides and using 6.25 gives us
 $$
 \lVert v \rVert^2 = \lvert \langle v, e_1 \rangle \rvert^2 + \cdots + \lvert \langle v, e_m \rangle \rvert^2.
 $$</p>
-
 <p>The other direction of the if-and-only-if implication is trickier&hellip;</p>
-
 <p>Let
 $$
 \xi = v - (\langle v, e_1 \rangle e_1 + \cdots + \langle v, e_m \rangle e_m).
 $$
 We aim to show that $ \xi = 0 $.</p>
-
 <p>If we take the inner product of both sides with $e_j$ for all $j \in 1, \dots, m$, we get
 $$
 \langle \xi, e_j \rangle = \langle v, e_j \rangle - \langle v, e_j \rangle = 0.
 $$</p>
-
 <p>This implies that
 $$
 \langle \xi, e_1 \rangle e_1 + \cdots \langle \xi, e_m \rangle e_m = 0,
@@ -170,15 +150,13 @@ $$
 So by 6.13 and 6.25, we have
 $$
 \begin{eqnarray}
-\lVert v \rVert^2 &amp;=&amp; \lVert \xi + (\langle v, e_1 \rangle e_1 + \cdots + \langle v, e_m \rangle e_m) \rVert^2 \\<br />
-&amp;=&amp; \lVert \xi \rVert^2 + \lVert (\langle v, e_1 \rangle e_1 + \cdots + \langle v, e_m \rangle e_m) \rVert^2 \\<br />
+\lVert v \rVert^2 &amp;=&amp; \lVert \xi + (\langle v, e_1 \rangle e_1 + \cdots + \langle v, e_m \rangle e_m) \rVert^2 \\\<br>
+&amp;=&amp; \lVert \xi \rVert^2 + \lVert (\langle v, e_1 \rangle e_1 + \cdots + \langle v, e_m \rangle e_m) \rVert^2 \\\<br>
 &amp;=&amp; \lVert \xi \rVert^2 + \lvert \langle v, e_1 \rangle e_1 \rvert^2 + \cdots + \lvert \langle v, e_m \rangle e_m \rvert^2.
 \end{eqnarray}
 $$</p>
-
 <p>Thus, $ \lVert \xi \rVert^2 = 0 $, so $ \xi = 0 $. $ \blacksquare $</p>
-
-<p><strong>3.</strong> Suppose $ T \in \mathcal{L}(\mathbf{R}^3) $ has an upper-triangular matrix with respect to the basis $ (1, 0, 0), (1, 1, 1), (1, 1, 2) $. Find an orthonormal basis of $ \mathbf{R}^3 $ (use the usual inner product on $ \mathbf{R}^3 $) with respect to which $ T $ has an upper-triangular matrix.<br />
+<p><strong>3.</strong> Suppose $ T \in \mathcal{L}(\mathbf{R}^3) $ has an upper-triangular matrix with respect to the basis $ (1, 0, 0), (1, 1, 1), (1, 1, 2) $. Find an orthonormal basis of $ \mathbf{R}^3 $ (use the usual inner product on $ \mathbf{R}^3 $) with respect to which $ T $ has an upper-triangular matrix.<br>
 We use the Gram-Schmidt procedure to convert $ (1, 0, 0), (1, 1, 1), (1, 1, 2) $ to an orthonormal basis in $ V $. For $ e_1  $, we get
 $$
 e_1 = \frac{(1, 0, 0)}{\sqrt{1}} = (1, 0, 0)
@@ -195,11 +173,10 @@ giving us
 $$
 e_2 = \frac{1}{\sqrt{2}} (0, 1, 1).
 $$</p>
-
 <p>For $ e_3 $, our numerator will be
 $$
 \begin{eqnarray}
-(1, 1, 2) - \langle (1, 1, 2), \frac{1}{\sqrt{2}} (0, 1, 1) \rangle \frac{1}{\sqrt{2}} (0, 1, 1) - \langle (1, 1, 2), (1, 0, 0) \rangle (1, 0, 0) &amp;=&amp; (1, 1, 2) - (1, \frac{3}{2}, \frac{3}{2}) \\\<br />
+(1, 1, 2) - \langle (1, 1, 2), \frac{1}{\sqrt{2}} (0, 1, 1) \rangle \frac{1}{\sqrt{2}} (0, 1, 1) - \langle (1, 1, 2), (1, 0, 0) \rangle (1, 0, 0) &amp;=&amp; (1, 1, 2) - (1, \frac{3}{2}, \frac{3}{2}) \\\<br>
 &amp;=&amp; (0, -\frac{1}{2}, \frac{1}{2}),
 \end{eqnarray}
 $$

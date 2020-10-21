@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Paper on Stephen Malina</title>
+    <title>paper on Stephen Malina</title>
     <link>https://stephenmalina.com/tags/paper/</link>
-    <description>Recent content in Paper on Stephen Malina</description>
+    <description>Recent content in paper on Stephen Malina</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 16 Nov 2019 00:00:00 +0000</lastBuildDate>
@@ -48,7 +48,7 @@ Bio Background The genome consists of (broadly) two types of genes, coding genes
       
       <guid>https://stephenmalina.com/post/2019-07-26-deepbind/</guid>
       <description>In which I record my thoughts on DeepBind.
-What is this paper about? The authors of this paper designed a conv net model to predict how well different proteins will bind to sequences of DNA or RNA. They train one model per protein for many different sequences and show that these models can predict binding affinities for sequences well enough to produce insights regarding the impact of single nucleotide mutations.</description>
+What is this paper about? The authors of this paper designed a conv net model to predict how well different proteins will bind to sequences of DNA or RNA. They train one model per protein for many different sequences and show that these models can predict binding affinities for sequences well enough to produce insights regarding the impact of single nucleotide mutations. They then discuss different datasets and areas in which they tested their model and how it performed (often SOTA [as of 2015]).</description>
     </item>
     
   </channel>

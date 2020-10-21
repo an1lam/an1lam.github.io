@@ -9,7 +9,7 @@
 <meta name="description" content="">
 <meta name="keywords" content="">
 <meta name="author" content="Stephen Malina">
-<meta name="generator" content="Hugo 0.40.1" />
+<meta name="generator" content="Hugo 0.68.3" />
 
   
   
@@ -99,81 +99,56 @@ MathJax.Hub.Config({
 
 
 
-<section>
-
-<h1 id="selected-exercises">Selected Exercises</h1>
-
-<h2 id="5-a">5.A</h2>
-
+<section><h1 id="selected-exercises">Selected Exercises</h1>
+<h2 id="5a">5.A</h2>
 <p><strong>12.</strong> Define $ T \in \mathcal L(\mathcal P_4(\mathbf{R})) $ by</p>
-
 <p>$$
 (Tp)(x) = xp&rsquo;(x)
 $$</p>
-
 <p>for all $ x \in \mathbf{R} $. Find all eigenvalues and eigenvectors of $ T $.</p>
-
 <p>Observe that, if $ p = a_0 + a_1 x + a_2 x^2 + a_3 x^3 + a_4 x^4 $, then
 $$
 x p&rsquo;(x) = a_1 x + 2 a_2 x^2 + 3 a_3 x^3 + 4 a_4 x^4.
 $$</p>
-
 <p>This immediately tells us that  eigenvectors will have to include only one term.</p>
-
 <p>In light of this, the eigenvalues of $ T $ are $ 0, 1, 2, 3, 4 $ and the corresponding eigenvectors are represented by $ a_0, a_1 x, a_2 x^2, a_3 x^3, a_4 x^4 $. Note that this fits with the theorem that a $ \dim 5 $ vector space can have at most $ 5 $ eigenvalues.</p>
-
-<p><strong>15.</strong> Suppose $ T \in \mathcal L(V) $. Suppose $ S \in \mathcal L(V) $ is invertible.<br />
-(a)  Prove that $ T $ and $ S^{-1}TS$ have the same eigenvalues.<br />
+<p><strong>15.</strong> Suppose $ T \in \mathcal L(V) $. Suppose $ S \in \mathcal L(V) $ is invertible.<br>
+(a)  Prove that $ T $ and $ S^{-1}TS$ have the same eigenvalues.<br>
 (b)  What is the relationship between the eigenvectors of $ T $ and the eigenvectors of $ S^{-1}TS $?</p>
-
 <p>Regarding (a), suppose $ T $ has eigenvalue $ \lambda $. Then $ Tv = \lambda v $ for some $ v \in V $. $ S $ is surjective (since it&rsquo;s invertible). So, there exists some $ u \in V $ such that $ Su = v $. In this case,
 $$
 (S^{-1}TS)(u) = S^{-1}(T(S(u))) = S^{-1}(Tv) = S^{-1}(\lambda v) = \lambda S^{-1}(v) = \lambda u.
 $$</p>
-
 <p>Hence, $ \lambda $ is also an eigenvalue of $ S^{-1}TS$.</p>
-
 <p>Now for (b). In (a), $ v $ was an eigenvector of $ T $ and $ S^{-1}(v) $ was an eigenvector of $S^{-1}TS$. This relationship generalizes, since, for each eigenvalue of the two linear maps, $ v $ is an eigenvector of $ T $ implies that $ S^{-1}(v) $ is an eigenvector of $S^{-1}TS$.</p>
-
 <p><strong>18.</strong> Show that the operator $ T \in \mathcal L(C^{\infty}) $ defined by
 $$
 T(z_1, z_2, \dots) = (0, z_1, z_2, \dots)
 $$
 has no eigenvalues.</p>
-
 <p>Assume the operator has an eigenvalue. Then</p>
-
 <p>$$
 T(z_1, z_2, \dots) = (\lambda z_1, \lambda z_2, \lambda z_3, \dots)
 $$</p>
-
 <p>for some $ \lambda \in F $ and eigenvector $ v \in V $. This implies that</p>
-
 <p>$$
 (0, z_1, z_2, \dots) = (\lambda z_1, \lambda z_2, \lambda z_3, \dots).
 $$</p>
-
 <p>If $ \lambda z_1 = 0 $, then either $ \lambda = 0 $ or $ z_1 = 0 $. If $ \lambda = 0 $, then all $ \lambda z_i = 0 $ implying that all $ z_i = 0 $. This can&rsquo;t be true since $ z_1, \dots $ is supposed to be an eigenvector. If $ z_1 = 0 $, then by the latter elements in the two sides of this equation, $ \lambda z_2 = z_1 = 0 $, and so on for each $ \lambda z_i = z_{i-1} = 0 $. We already showed what would happen if $ \lambda $ was 0, so this implies that $ z_i = 0 $ for all $ i \in 1, \dots $. However, this gives us a contradiction, since $ z_1, \dots $ is supposed to be an eigenvector and therefore is non-zero.</p>
-
 <p><strong>20.</strong> Find all eigenvalues and eigenvectors of the backward shift operator $ T \in \mathcal L(F^{\infty}) $ defined by
 $$
 T(z_1, z_2, z_3, \dots) = (z_2, z_3, \dots).
 $$</p>
-
 <p>In order for $T(z_1, z_2, z_3, \dots) = (z_2, z_3, \dots) = \lambda(z_1, z_2, z_3, \dots)$, $ \lambda z_i = z_{i+1} $ for all $ i \in 1, \dots $. This means that $ \lambda $ can be any positive value in $ F $, but to be an eigenvector, $ z$ must obey the recurrence  $ z_i = \lambda^{i-1} z_{i-1} $ for all $ i \in 1, 2, \dots $.</p>
-
 <p><em>22.</em> Suppose $ T \in \mathcal L(V) $ and there exist nonzero vectors $v$ and $w$ in $V$ such that
 $$
 Tv = 3w \text{ and } Tw = 3v.
 $$</p>
-
 <p>Prove that $ 3 $ or $ -3 $ is an eigenvalue of $ T $.</p>
-
 <p>Observe that $ Tv, 3w $ and $ Tw, 3v $ are linearly dependent lists in $ V $. So,
 $$
 Tw - 3v = 0 = Tv - 3w.
 $$</p>
-
 <p>By algebra,
 $$
 Tw - Tv = 3v - 3w
@@ -182,46 +157,34 @@ and, by homogeneity,
 $$
 T(w-v) = 3(v-w).
 $$</p>
-
 <p>Hence, $3$ is an eigenvalue of $ T $ for the eigenvector $ v-w $. Note that we can show the same thing for $ -3 $ if we just flip $v-w$ to $w-v$ and pull out the resulting negative sign.</p>
-
 <p><strong>30.</strong> Suppose $ T \in \mathcal L(R^3) $ and $ -4 $, $ 5$, and $\sqrt{7} $ are eigenvalues of $ T $. Prove that there exists $ x \in R^{3} $ such that $ Tx - 9x = (-4, 5, \sqrt 7) $.</p>
-
 <p>To start, $ Tx \neq 9x $ for all $ x \in R^3 $, since that would imply that $ 9 $ is an eigenvalue of $ T $, contradicting 5.13. Thus, $T-9I$ is surjective, meaning there exists some $ x $ such that
 $$
 (T-9I)(x) = (-4, 5, \sqrt 7).
 $$</p>
-
-<p><strong>32.</strong> Suppose $\lambda_1, \dots, \lambda_n$ is a list of distinct real numbers. Prove that the list $e^{\lambda_1 x}, \dots, e^{\lambda_n x} $ is linearly independent in the vector space of real-valued functions on $ \mathbf{R} $.<br />
+<p><strong>32.</strong> Suppose $\lambda_1, \dots, \lambda_n$ is a list of distinct real numbers. Prove that the list $e^{\lambda_1 x}, \dots, e^{\lambda_n x} $ is linearly independent in the vector space of real-valued functions on $ \mathbf{R} $.<br>
 <em>Hint:</em> Let $V = \operatorname{span}(e^{\lambda_1 x}, \dots, e^{\lambda_n x}) $ and define an operator $ T \in \mathcal L(V) $ by $ Tf = f&rsquo; $. Find eigenvalues and eigenvectors of $ T $.</p>
-
 <p>Following the hint, if we define $ T $ as described, then $ f $ will be an eigenvector of $ T $ when
 $$
 f&rsquo; = (a_1 \lambda_1 e^{\lambda_1 x} + \cdots + a_n \lambda_n e^{\lambda_n x}) = \tau (a_1 e^{\lambda_1 x} + \cdots + a_n e^{\lambda_n x})
 $$
 for some $ \tau \in F $. Since $ \lambda_1, \dots, \lambda_n $ are distinct, finding a $ \tau $ is only possible when $ a_i \neq 0 $ for one $ i $ and $ a_j = 0 $ for all $ j \neq i \in 1, \dots, n $. Taking that constraint, the eigenvalues of $ T $ are $ \lambda_1, \dots, \lambda_n $ and the eigenvectors are $ a_1 e^{\lambda_1 x}, \dots, a_n e^{\lambda_n x} $ and all $ a_1, \dots, a_n \in F $. Thus, by 5.10, if we set $ a_1 = \cdots = a_n = 1 $, we get that $e^{\lambda_1 x}, \dots, e^{\lambda_n x}$ are linearly independent in the vector space of real-valued functions on $\mathbf{R}$.</p>
-
-<h2 id="5-b">5.B</h2>
-
-<p><strong>1.</strong> Suppose $ T \in \mathcal L(V) $ and there exists a positive integer $ n $ such that $T^n = 0$.<br />
+<h2 id="5b">5.B</h2>
+<p><strong>1.</strong> Suppose $ T \in \mathcal L(V) $ and there exists a positive integer $ n $ such that $T^n = 0$.<br>
 (a) Prove that $ I - T $ is invertible and that
 $$
 (I-T)^{-1] = I + T + \cdots + T^{n-1}.</p>
-
 <p>(b) Explain how you would guess the formula above.</p>
-
 <p>For (a), we use the strategy of showing that $ (I-T)(I + T + \cdots + T^{n-1}) = I $ and $ (I + T + \cdots + T^{n-1})(I-T) = I $.</p>
-
 <p>Observe that
 $$
 (I-T)(I + T + \cdots + T^{n-1}) = I + T + \cdots + T^{n-1} - (T + T^2 + \cdots + T^n).
 $$</p>
-
 <p>Since $ T^n $ is $ 0 $, we have
 $$
 I + T + \cdots + T^{n-1} - (T + T^2 + \cdots + T^n) = I + T + \cdots + T^{n-1} - (T + T^2 + \cdots + T^{n-1}) = I.
 $$</p>
-
 <p>Also observe that
 $$
 (I + T + \cdots + T^{n-1})(I-T) = I(I-T) + T(I-T) + \cdots + T^{n-1}(I-T) = I - T + T - T^2 + \cdots - T^{n-1} + T^{n-1} - T^n.
@@ -230,62 +193,46 @@ Again, since $ T^n $ is $ 0 $, we get
 $$
 I - T + T - T^2 + \cdots - T^{n-1} + T^{n-1} - T^n = I.
 $$</p>
-
 <p>Hence, $(I-T)$ is invertible and $(I-T)^{-1} = I + T + \cdots + T^{n-1} $.</p>
-
 <p>For (b), I wouldn&rsquo;t have guessed this but apparently the way to guess this is to know that
 $$
 1-x^n = (1-x)(1+x+\cdots+x^{n-1}).
 $$</p>
-
-<p><strong>2.</strong> Suppose $ T \in \mathcal L(V) $ and $ (T-2I)(T-3I)(T-4I) = 0 $. Suppose $ \lambda $ is an eigenvalue of $ T $. Prove that $ \lambda = 2 $ or $ \lambda = 3 $ or $\lambda = 4$.<br />
+<p><strong>2.</strong> Suppose $ T \in \mathcal L(V) $ and $ (T-2I)(T-3I)(T-4I) = 0 $. Suppose $ \lambda $ is an eigenvalue of $ T $. Prove that $ \lambda = 2 $ or $ \lambda = 3 $ or $\lambda = 4$.<br>
 Suppose $ v $ is the eigenvector for $ \lambda $. Then
 $$
 \begin{eqnarray}
-(T-2I)(T-3I)(T-4I)v &amp; = &amp; (\lambda v - 2v)(\lambda v - 3v)(\lambda v - 4v) \\\<br />
+(T-2I)(T-3I)(T-4I)v &amp; = &amp; (\lambda v - 2v)(\lambda v - 3v)(\lambda v - 4v) \\\\<br>
 &amp;=&amp; (\lambda - 2)(\lambda - 3)(\lambda - 4)v = 0.
 \end{eqnarray}
 $$
 So, because $ v $ isn&rsquo;t $ 0 $ by the definition of an eigenvector, one of $ \lambda - 4, \lambda -3, \lambda -2 $ must equal 0. Hence $ \lambda $ is one of $2$, $3$, or $4$.</p>
-
-<h2 id="5-c">5.C</h2>
-
+<h2 id="5c">5.C</h2>
 <p><strong>1.</strong> Suppose $ T \in \mathcal L(V) $ is diagonalizable. Prove that $ V = \operatorname{null} T \oplus \operatorname{range} T $.</p>
-
 <p>Going to solve this in two ways.</p>
-
 <p>(First way.) If $ T $ is invertible, then we&rsquo;re done. $ T $ is injective and therefore $ operatorname{null} T = {0} $ and $ operatorname{range} T = V $, so $ operatorname{null} T \intersect operatorname{range} T = {0} $ and $ \operatorname{null} T \oplus \operatorname{range} T = V $.</p>
-
 <p>If $ T $ is not invertible, since $ T $ is diagonalizable, at least one eigenvalue must equal $ 0 $, by 5.30 and 5.32. Let $ 0, \lambda_1, \dots, \lambda_n $ be the eigenvalues of $ T $ where $ \lambda_i = 0 $ for $ i = 1, \dots, n $. Then, by 5.41(d), we have
 $$
 V = E(0, T) \oplus E(\lambda_1, T) \oplus \cdots \oplus E(\lambda_n, T).
 $$</p>
-
 <p>$E(0,T) = \operatorname{null} T$ because if $ v \in E(\lambda_1, T) \oplus \cdots \oplus E(\lambda_n, T) $, then $Tv \noteq 0 $ by definition.</p>
-
 <p>It remains to show that $ E(\lambda_1, T) \oplus \cdots \oplus E(\lambda_n, T) = \operatorname{range} T $.</p>
-
 <p>Assume that $ v \in E(\lambda_i, T) $. Then, $ T(\frac{1}{\lambda_i} v) = v $, so $  E(\lambda_1, T) \oplus \cdots \oplus E(\lambda_n, T) \subset \operatorname{range} T $.</p>
-
 <p>Now assume that $ u \in \operatorname{range} T $. It follows that
 $$
 u = T(v) = T(v_0 + v_1 + \cdots + v_n) = \lambda_1 v_1 + \cdots + \lambda_n v_n \in E(\lambda_1, T) \oplus \cdots \oplus E(\lambda_n, T)
 $$
 where $ v_0, \dots, v_n $ are elements of $ E(\lambda_0, T), \dots, E(\lambda_n, T) $ respectively. This implies that $ \operatorname{range} T \subset  E(\lambda_1, T) \oplus \cdots \oplus E(\lambda_n, T) $, so $\operatorname{range} T = E(\lambda_1, T) \oplus \cdots \oplus E(\lambda_n, T) $.</p>
-
 <p>Taken together, this means that $ \operatorname{null} T \oplus \operatorname{range} T = V $.</p>
-
-<p><strong>2.</strong> Prove the converse of the statement in the exercise above or give a counterexample to the converse.<br />
+<p><strong>2.</strong> Prove the converse of the statement in the exercise above or give a counterexample to the converse.<br>
 The converse of the statement is false. When $ V = C^2 $ and $ T(w, z) = (z, w) \in \mathcal L(V) $, $T$ has only eigenvalue, $ \lambda = 1 $ and therefore is not diagonalizable, since having only one eigenvalue violates 5.41(d) and 5.41(e).</p>
-
-<p><strong>8.</strong> Suppose $ T \in \mathcal L(F^5) $ and $ \dim E(8, T) = 4 $. Prove that $ T-2I $ or $ T - 6I $ is invertible.<br />
+<p><strong>8.</strong> Suppose $ T \in \mathcal L(F^5) $ and $ \dim E(8, T) = 4 $. Prove that $ T-2I $ or $ T - 6I $ is invertible.<br>
 By 5.38, we know that
 $$
 \dim V \geq \dim E(\lambda_1, T) + \cdots \dim E(\lambda_m, T).
 $$
 So, $ 4 + \dim E(\lambda_1, T) + \cdots \dim E(\lambda_n, T) \leq 5 $, meaning $ \dim E(\lambda_1, T) + \cdots \dim E(\lambda_n, T) \leq 1 $. Since $ \dim E(\lambda_i, T) \gt 0 $ iff $ \lambda_i $ is an eigenvalue, then at most one of $ 6 $ and $ 2 $ can be an eigenvalue. By 5.6, for whichever $ n $ of $ 6 $ and $ 2 $ is not an eigenvalue, $ T - nI $ is invertible. Hence, one of $ T-2I $, $ T-6I$ is invertible.</p>
-
-<p><strong>14.</strong> Find $ T \in \mathcal L(C^3) $ such that $6$ and $7$ are eigenvalues of $T$ and such that $T$ does not have a diagonal matrix with respect to any basis of $C^3$.<br />
+<p><strong>14.</strong> Find $ T \in \mathcal L(C^3) $ such that $6$ and $7$ are eigenvalues of $T$ and such that $T$ does not have a diagonal matrix with respect to any basis of $C^3$.<br>
 TODO, I have a solution but am feeling a lot of resistance to writing it up.</p>
 </section>
 <section>
