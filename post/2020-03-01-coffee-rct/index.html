@@ -174,7 +174,7 @@
 <li>Headache (yes/no): I get headaches if I don&rsquo;t have coffee in the morning, so it will be interesting to see whether I get them on decaf days even when I don&rsquo;t know the coffee is decaf.</li>
 <li>Regular vs. decaf day (regular/decaf): &ldquo;Given how I feel today, do I think this morning&rsquo;s coffee was regular or decaf?&rdquo;</li>
 </ul>
-<!-- raw HTML omitted -->
+<img src="https://stephenmalina.com/images/coffee_bags.jpg" style="width: 400px; height:200 px;  clip: rect(0px,-60px,-200px,0px);">
 <p>I&rsquo;ve also set up a <a href="http://www.quantified-mind.com">Quantified Mind</a> (QM) experiment which will give me 8 minutes of cognitive tests each day and record my scores. I&rsquo;ll take these tests immediately upon finishing my coffee in the morning.</p>
 <h3 id="materials">Materials</h3>
 <p>I&rsquo;m using Swiss Water&rsquo;s version of <a href="https://www.swisswater.com/coffee-store/nightcap/">Joe Coffee Nightcap Decaf</a> and <a href="https://joecoffeecompany.com/shop/colombia-la-familia-guarnizo/">Joe Coffee Colombia La Familia Guarnizo</a> regular coffee both brewed in a Mr. Coffee drip coffee maker. I chose Swiss Water for decaf after reading that they do the best job of filtering out &gt;99% of the caffeine from the beans.</p>
@@ -244,13 +244,13 @@ In the comments, Bucky points out that caffeine use may also impact sleep the ne
 <p>Now, we can actually talk about results!</p>
 <h4 id="caffeine-vs-decaf-coffee-had-essentially-no-effect-on-my-quantified-mind-sub-test-scores">Caffeine vs. Decaf Coffee had essentially no effect on my Quantified Mind sub-test scores</h4>
 <p>First I looked at how my Quantified Mind scores varied between caffeine and decaf days. The below graph shows violin plots comparing each test&rsquo;s scores for days on which I had regular vs. decaf coffee respectively. As you can pretty easily see, the means of the respective groups are, in almost every cases very (not significantly as measured by a paired two-sample t-test) close. The only case in which they differ meaningfully (and <em>barely</em> significantly with p = .049, which we all know is a sign that the hypothesis you&rsquo;re testing is <em>definitely</em> true for all of eternity) is &ldquo;Visual Backward Digit Span&rdquo;. Unexpectedly, in this case, I seem to do better when not caffeinated than when caffeinated. That said, as I hinted at with my parenthetical, I&rsquo;ve read enough Andrew Gelman blog posts to not put much stock in the weak &ldquo;significance&rdquo; result on its own. On seeing this initially, I realized that even if the correlation is meaningful, my experiment was short enough that sleep could be the real causal factor here. The main takeaway for me from this set of plots / analysis is that regular vs. decaf coffee doesn&rsquo;t make a big enough difference in my cognitive performance to show a meaningful effect within two weeks.</p>
-<p><!-- raw HTML omitted --></p>
+<p><img src="https://stephenmalina.com/images/coffee-rct-violin-plots.png" width="800" height="700" /></p>
 <h4 id="sleep-duration-only-meaningfully-correlated-with-1-one-out-of-6-quantified-mind-sub-tests">Sleep duration only meaningfully correlated with 1 one out of 6 Quantified Mind sub-tests</h4>
 <p>Curiosity about whether sleep duration influenced my scores led me to the second visualization / statistical analysis I did. Before I go on, I want to add the caveat that I wasn&rsquo;t randomizing my sleep so any results from this section inherit all the standard issues of inferring things from observational data. Personally, I think of these results as at best hinting at worthwhile follow-ups rather than as telling us much about the effect of sleep cognitive performance. Caveats aside, the following graph shows the best-fit (OLS) regression lines for each Quantified Mind test score as a function of sleep duration. As you can see, outside of &ldquo;Visual Backward Digit Span&rdquo;, all the lines have slopes that are quite close to 0 (and have 95% confidence intervals that include 0). This suggests that it might be worth me running a longer experiment where I randomize (but obviously can&rsquo;t blind) sleep duration and then do, in particular working memory heavy, Quantified Mind tasks.</p>
-<p><!-- raw HTML omitted --></p>
+<p><img src="https://stephenmalina.com/images/coffee-rct-regression-lines.png" width="800" height="700" /></p>
 <h4 id="practice-effects-likely-affected-scores-at-least-2-of-the-6-quantified-mind-sub-tests">Practice effects likely affected scores at least 2 of the 6 Quantified Mind sub-tests</h4>
 <p>Last, I briefly looked at my scores as a function of date to see whether practice effects were an issue. From my very basic linear regression analysis below, it appears that practice effects may have been a factor, in particular for finger tapping (which matches my subjective perception of which things I got better at). What&rsquo;s interesting is that it seems least likely that practice effects were an issue for the digit span task, but that&rsquo;s the only task where I found differences in terms of other covariates.</p>
-<p><!-- raw HTML omitted --></p>
+<p><img src="https://stephenmalina.com/images/coffee-rct-practice-effects.png" width="800" height="700" /></p>
 <p>To summarize, my conclusion from this analysis is that having decaf vs. regular coffee doesn&rsquo;t seem to have enough of an impact on cognitive performance to show up in a 2-week randomized Quantified Mind experiment. On one hand, it doesn&rsquo;t seems like sleep has a massive effect either. But, taking into account that the sleep data was observational and that sleep duration did correlate with performance on backwards digit span, a longer experiment on sleep&rsquo;s effect on performance metrics might be warranted. Were I to do one, I&rsquo;d pair it with a more rigorous analysis.</p>
 <h2 id="takeaways">Takeaways</h2>
 <p>My object-level takeaways from running this experiment and analyzing the data are:</p>
@@ -263,7 +263,10 @@ In the comments, Bucky points out that caffeine use may also impact sleep the ne
 <ul>
 <li>With respect to the analysis, I was reminded of <a href="https://en.wikipedia.org/wiki/Hofstadter%27s_law">Hofstadter&rsquo;s Law</a> for the hundredth time.</li>
 </ul>
-<!-- raw HTML omitted -->
+<blockquote cite="">
+   It always takes longer than you expect, even when you take into account Hofstadter's Law.  
+  <footer>Douglas Hofstadter</footer>
+</blockquote>
 <ul>
 <li>Being in a relationship is a great way to always have someone to help you conduct blinded, randomized experiments (and also is great for me in general!).</li>
 </ul>
