@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+
+<head>
+<title>Stephen Malina - JIT Reading Outline</title>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="">
+<meta name="keywords" content="">
+<meta name="author" content="Stephen Malina">
+<meta name="generator" content="Hugo 0.68.3" />
+
+  
+  
+
+
+
+
+
+
+<link rel="stylesheet" href="https://unpkg.com/purecss@2.0.3/build/pure-min.css">
+
+
+    <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.3/build/grids-responsive-min.css">
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+
+<link rel="stylesheet" href="https://stephenmalina.com/css/tufte.css">
+<link rel="stylesheet" href="https://stephenmalina.com/css/hugo-tufte.css">
+<link rel="stylesheet" href="https://stephenmalina.com/css/hugo-tufte-override.css">
+
+  
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-187780632-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+
+  
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-187780632-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+</head>
+
+
+<body>
+<div id="layout" class="pure-g">
+<article class="pure-u-1">
+<header class="brand">
+  <h1>Stephen Malina</h1>
+  <h2>This is my blog. There are many others like it but this one is mine.</h2>
+  <nav class="menu">
+    <ul>
+    
+        <li><a href="https://stephenmalina.com/">Home</a></li>
+    
+        <li><a href="https://stephenmalina.com/about">About</a></li>
+    
+        <li><a href="https://stephenmalina.com/post">Post</a></li>
+    
+        <li><a href="https://stephenmalina.com/subscribe">Subscribe</a></li>
+    
+        <li><a href="https://stephenmalina.com/tags">Tags</a></li>
+    
+    </ul>
+</nav>
+
+</header>
+
+<section>
+<h1 class="content-title">
+  
+  <a href="https://stephenmalina.com/post/2018-02-11-change-driven-reading-outline/">JIT Reading Outline :: Draft </a>
+  
+</h1>
+
+
+
+  <span class="content-meta">
+    
+
+
+    
+      <i class="fa fa-calendar"></i>
+      &nbsp;Feb 11, 2018
+    
+
+    
+      &nbsp;<i class="fa fa-clock-o"></i>
+      &nbsp;3 min read
+    
+
+    
+  </span>
+
+
+</section>
+
+
+
+<section><h1 id="high-level-outline">High-Level Outline</h1>
+<ol>
+<li>Focus on code comprehension rather than code reading. When we focus on code reading, we&rsquo;re
+prioritizing an image of what&rsquo;s virtuous over the actual goal &ndash; to understand something enough
+to change it or evolve it in a different domain.</li>
+<li>For comprehension, active beats passive, goal-directed beats random, and critical beats
+unquestioning. No one who cares about comprehension should encourage passive code reading.</li>
+<li>How can we design codebases for active, goal-directed, and critical reading? Tests are good for
+active fiddling but don&rsquo;t do enough at a high-level to help goal-directed explorers. A
+goal-directed explorer cares about finding something similar to what they want to do and
+understanding the intent of what&rsquo;s there enough to know what they can throw away.</li>
+</ol>
+<h1 id="detailed-outline">Detailed Outline</h1>
+<ol>
+<li>Introduction: Comprehension as goal.
+<ol>
+<li>Seibel should&rsquo;ve asked people what code they learned about or hacked on for fun. What
+matters is that they learned about a codebase for it&rsquo;s own sake, not that they read it.</li>
+<li>Comprehension comes about from the interplay of active and passive exploration (Cal
+Newport&rsquo;s textbook method) - reading code to hack on it or understand how it accomplishes
+something specific. Group this under &ldquo;purposeful reading&rdquo;.</li>
+</ol>
+</li>
+<li>Active over passive. Although very few people seem to read code passively, let&rsquo;s beat
+into the ground why it&rsquo;s inferior to purposeful reading.
+<ol>
+<li>Learning research shows that active exploration beats passive consumption for comprehension
+in general (can cite <a href="http://calnewport.com/blog/2012/08/10/you-know-what-you-write-the-textbook-method-for-ultra-learning">Cal
+Newport</a>,
+Anders Ericsson, <a href="http://158.132.155.107/posh97/private/learning/learning-Simon.htm">Herbert
+Simon</a>, and <a href="http://nautil.us/issue/40/learning/how-i-rewired-my-brain-to-become-fluent-in-math-rp">Barbara
+Oakley</a>).</li>
+<li>The best learning happens when you&rsquo;re actively interacting with the material
+through synthesis and reframing, critically examining its claims, and building fluency
+through active repetition .</li>
+<li>Let&rsquo;s see how passive code stacks up against hacking-driven exploration for comprehension:
+<ol>
+<li>Passive reading is linear but random. It&rsquo;s hard for a passive reader to be critical
+because they lack clear measures (beyond local features like &ldquo;clean&rdquo;) with which to
+examine the code and all features of the code seem equally important.</li>
+<li>Purposeful reading is non-linear but goal-directed. A purposeful reader critically
+examines the code and weighs the relative importance of its features in order to decide
+whether it does what he or she needs.</li>
+<li>Neither involves much repetition but purposeful reading involves more remixing (not
+totally sure whether to include this?).</li>
+<li>Passive code readers may be aware of a larger area of the codebase, but lack
+contextualized knowledge.</li>
+</ol>
+</li>
+<li>Can frame this comparison by comparing a codebase to a map (blurb copy-pasted).
+<blockquote>
+<p>A codebase resembles a map. You can ask an infinite number of questions of a map. How far
+is it from A to B? Which is the nearest town to C? It makes no sense to read a map
+linearly from top to bottom, left to right. Obviously trying to enumerate all possible
+questions is an exercise in futility.</p>
+</blockquote>
+</li>
+</ol>
+</li>
+<li>Designing for purposeful reading (and hacking). Not sure of the final answer, but here are some
+ideas.
+<ol>
+<li>Tests are good.</li>
+<li>But tests don&rsquo;t give a higher-level view. Especially important for cross-cutting features.
+<ol>
+<li>Can we write documentation that focuses on mapping edges rather than nodes? Less what
+this thing does and more how different ideas flow through the code. De-emphasize local
+messiness in exchange for keeping high-level map up-to-date?</li>
+</ol>
+</li>
+<li>Project-specific katas build fluency through repetition.</li>
+</ol>
+</li>
+<li>Conclusion: Assume future readers will explore purposefully and hack.
+<ol>
+<li>Trade time spent adding more information for time spent coming up with things a future
+programmer can do that will require them understanding the information you would&rsquo;ve written
+down.</li>
+<li>Prioritize fixing or create high-level maps which emphasize historical intent over cleaning
+up local features.</li>
+</ol>
+</li>
+</ol>
+</section>
+<section>
+  
+
+  <footer class="page-footer">
+		<hr>
+		<ul class="page-footer-menu">
+		
+      <li><a href="https://github.com/an1lam"><i class='fa fa-github fa-2x'></i> </a></li>
+		
+      <li><a href="https://twitter.com/an1lam"><i class='fa fa-twitter fa-2x'></i> </a></li>
+		
+      <li><a href="mailto:stephenmalina@gmail.com"><i class='fa fa-envelope fa-2x'></i> </a></li>
+		
+      <li><a href="https://stackoverflow.com/users/1631855/an1lam"><i class='fa fa-stack-overflow fa-2x'></i> </a></li>
+		
+		</ul>
+
+  
+    <p>
+      Powered by <a href="https://gohugo.io">Hugo</a> and the
+      <a href="https://github.com/shawnohare/hugo-tufte">Tufte theme</a>.
+    </p>
+  
+
+	<div class="copyright">
+	<p>
+    
+      &copy; 2021
+    .
+    All rights reserved.
+    
+  </p>
+</div>
+</footer>
+
+
+
+</section>
+</article>
+</div>
+</body>
+</html>
