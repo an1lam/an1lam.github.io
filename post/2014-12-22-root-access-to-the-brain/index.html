@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+
+<head>
+<title>Stephen Malina - Gaining Root Access to the Human Brain</title>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="">
+<meta name="keywords" content="">
+<meta name="author" content="Stephen Malina">
+<meta name="generator" content="Hugo 0.68.3" />
+
+  
+  
+
+
+
+
+
+
+<link rel="stylesheet" href="https://unpkg.com/purecss@2.0.3/build/pure-min.css">
+
+
+    <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.3/build/grids-responsive-min.css">
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+
+<link rel="stylesheet" href="https://stephenmalina.com/css/tufte.css">
+<link rel="stylesheet" href="https://stephenmalina.com/css/hugo-tufte.css">
+<link rel="stylesheet" href="https://stephenmalina.com/css/hugo-tufte-override.css">
+
+  
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-187780632-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+
+  
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-187780632-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+</head>
+
+
+<body>
+<div id="layout" class="pure-g">
+<article class="pure-u-1">
+<header class="brand">
+  <h1>Stephen Malina</h1>
+  <h2>This is my blog. There are many others like it but this one is mine.</h2>
+  <nav class="menu">
+    <ul>
+    
+        <li><a href="https://stephenmalina.com/">Home</a></li>
+    
+        <li><a href="https://stephenmalina.com/about">About</a></li>
+    
+        <li><a href="https://stephenmalina.com/post">Post</a></li>
+    
+        <li><a href="https://stephenmalina.com/subscribe">Subscribe</a></li>
+    
+        <li><a href="https://stephenmalina.com/tags">Tags</a></li>
+    
+    </ul>
+</nav>
+
+</header>
+
+<section>
+<h1 class="content-title">
+  
+  <a href="https://stephenmalina.com/post/2014-12-22-root-access-to-the-brain/">Gaining Root Access to the Human Brain :: Draft </a>
+  
+</h1>
+
+
+
+  <span class="content-meta">
+    
+
+
+    
+      <i class="fa fa-calendar"></i>
+      &nbsp;Dec 22, 2014
+    
+
+    
+      &nbsp;<i class="fa fa-clock-o"></i>
+      &nbsp;5 min read
+    
+
+    
+  </span>
+
+
+</section>
+
+
+
+<section><p>For a long time, I&rsquo;ve been fascinated by meditation and other
+internally-focused arts. Although I&rsquo;ve mainly practiced mindfulness
+meditation, I&rsquo;ve spent far too many hours reading about myriad types of
+meditations, breathing exercises, and visualization practices.</p>
+<p>I have a confession to make. I&rsquo;m not seeking enlightenment.</p>
+<p>I don&rsquo;t care about piercing the veil of perception in order to see the
+true reality and merge with the Universal Mind, or whatever your Eastern
+philosophical doctrine proposes will happen as a result of
+Enlightenment. Those are worthy aims. They just aren&rsquo;t <em>my</em> aims. No, I
+am interested in a much more earth-bound
+achievement. I&rsquo;m interested in gaining root access to the human brain
+(and through the brain, the body).
+* Disclaimers:</p>
+<ul>
+<li>from here on out I&rsquo;m going to be using many programming /
+Unix-like metaphors for what I&rsquo;m talking about. If you find yourself
+lost, stop and look at the <em>Glossary</em> I&rsquo;ve provided below.</li>
+<li>If you don&rsquo;t believe that the brain can be explained using strictly
+physical ideas, you should stop reading now. I do not intend to engage in
+metaphysical arguments about the brain&rsquo;s physicality or about its
+reducibility to a universal computing device *
+I&rsquo;ve come to the conclusion that our daily experience of consciousness
+is analogous to the experience of a typical computer user who spends
+their time in user land. Although the analogy is a little
+fuzzy, it will become more clear what characteristics the two
+experiential modes share soon. The majority of computer users see their
+computer as an unfixable tool with mystical innards. They don&rsquo;t know how
+their computer works, and they don&rsquo;t know how to fix their computer if
+it breaks. Similarly, there are no humans (that I know of) who are able
+to consciously fix their brains through effort.</li>
+</ul>
+<p>At this point, if you possess a certain level of familiarity with
+computers, brains, or both, you&rsquo;ve probably come up with a few
+objections. If you&rsquo;re in the first group and you&rsquo;re not totally opposed
+to the whole analogy, you may still be frustrated that I&rsquo;m ignoring the
+distinction between hardware and software. This is an important point.
+Even the most skilled systems person can&rsquo;t fix a damaged hard drive from
+their terminal. In a more general sense, without nanotechnology or advanced robotics, software can&rsquo;t manipulate
+matter at a fine scale (at least not in your personal computer).
+However, in the brain, this argument lacks veracity. The brain has the
+advantage of having control over nano machines, pumps, and other
+contraptions that provide it with self-targeting repair capabilities.
+This is indicated by the fact that functioning brains routinely clean
+themselves of trash molecules through a process called autophagy (the
+breaking down of dead cell materials.)
+Therefore, in my analogy, I&rsquo;m going to imagine your personal computer as
+a futuristic device with little nano machines inside it that can fix
+different parts of it. With this conceit, our analogy becomes stronger.
+Unfortunately, I&rsquo;m not yet sure what the second group, the neuroscience
+and psychology experts, will object to, so I can&rsquo;t address their
+objections pre-reading. However, I encourage those of you who have
+brain-related objections to contact me with them.</p>
+<p>So, now that I&rsquo;ve hopefully at least made you feel better by attempting
+to address your objections, let&rsquo;s get back to the main focus. As you&rsquo;ve
+probably already figured out, my goal is to gain control of my brain&rsquo;s
+lower level processes. A good example of a &lsquo;low-level process&rsquo; we
+already possess control over is breathing. I view this as the likeliest
+reason why various meditative traditions instruct their practitioners to
+focus on their breath.</p>
+<p>Our control over the breath provides an exemplar for my vision of
+controlling the brain&rsquo;s low-level processes. Normally, the breath is
+automatic. We don&rsquo;t die when we stop focusing on our breath. However,
+control of the breath can become conscious with little effort. I simply
+think about breathing at a certain speed, and it happens. Furthermore,
+when controlling my breath, I receive feedback quickly on my body&rsquo;s
+current state. The feeling we get when we hold our breath for too long
+indicates to us that it is time to breath. Although this indicator is
+not as accurate as CO2 and oxygen gauges, it serves us well.</p>
+<p>Using the breath as a model, we can imagine what controlling other
+low-level processes would be like. For example, what if we could control
+our heartbeat with the same level of precision as our breath? Currently,
+we can only affect our heartbeat indirectly, through the breath,
+positioning, and prior activities. If we could instead lower and raise
+the heartbeat at will, things would be drastically different. Every time
+we&rsquo;d want to de-stress we&rsquo;d slow down the breath and our heart until we
+reached a state of deep relaxation. Often, stress starts with
+a release of norepinephrine and adrenaline leading to increased
+breathing and heart rates. If we could consciously suppress these
+processes, we&rsquo;d possess a more pronounced ability to modulate our stress
+levels. All sorts of interesting, outlandish ideas arise if we continue
+to ponder the idea. People experiencing extreme cold could override
+their natural response to cold (a slowing down of the heart beat, *
+need citation here *), and instead increase their heart rate in order
+to increase heat generation in their bodies.</p>
+<p>At this point, you&rsquo;re probably thinking &ldquo;What about the risks?&rdquo; This
+question is totally valid. Noone wants the next headline to be &ldquo;10 year
+old speeds up heart until it fails through new brain hacking technique&rdquo;.
+The key mechanism that will prevent these risks from being an overriding
+concern is the feedback mechanism. In the same way it is vital that our bodies tell us
+when we need to breath more air, it is important that any method of
+consciously affecting our heart rate allows for a feedback mechanism
+which protects us from unexpectedly killing ourselves. Unfortunately,
+the only way to discover if this feedback mechanism is encoded into our
+biology natively is to first figure out how to control our heart rate.
+Since controlling our heart rate would be a new ability for humans, it
+may not possess the same feedback mechanism as controlling our breath
+does. If this is the case, we will exercise extra case in experimenting
+with this new technique. But, the worst case scenario should not prevent
+us from discovering the ability in the first place.</p>
+</section>
+<section>
+  
+
+  <footer class="page-footer">
+		<hr>
+		<ul class="page-footer-menu">
+		
+      <li><a href="https://github.com/an1lam"><i class='fa fa-github fa-2x'></i> </a></li>
+		
+      <li><a href="https://twitter.com/an1lam"><i class='fa fa-twitter fa-2x'></i> </a></li>
+		
+      <li><a href="mailto:stephenmalina@gmail.com"><i class='fa fa-envelope fa-2x'></i> </a></li>
+		
+      <li><a href="https://stackoverflow.com/users/1631855/an1lam"><i class='fa fa-stack-overflow fa-2x'></i> </a></li>
+		
+		</ul>
+
+  
+    <p>
+      Powered by <a href="https://gohugo.io">Hugo</a> and the
+      <a href="https://github.com/shawnohare/hugo-tufte">Tufte theme</a>.
+    </p>
+  
+
+	<div class="copyright">
+	<p>
+    
+      &copy; 2021
+    .
+    All rights reserved.
+    
+  </p>
+</div>
+</footer>
+
+
+
+</section>
+</article>
+</div>
+</body>
+</html>

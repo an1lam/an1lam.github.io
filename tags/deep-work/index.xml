@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>deep-work on Stephen Malina</title>
+    <link>https://stephenmalina.com/tags/deep-work/</link>
+    <description>Recent content in deep-work on Stephen Malina</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 01 Apr 2021 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://stephenmalina.com/tags/deep-work/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Book Review - A World Without Email</title>
+      <link>https://stephenmalina.com/post/2021-04-01-world-without-email-review/</link>
+      <pubDate>Thu, 01 Apr 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://stephenmalina.com/post/2021-04-01-world-without-email-review/</guid>
+      <description>A World Without Email (AWWE) is Cal Newport&amp;rsquo;s new book arguing for an overhaul in our workplace communication and project management style. This topic is a natural follow up to Newport&amp;rsquo;s previous two books &amp;ndash; Deep Work and Digital Minimalism. These books focused on the individual benefits of hard focused effort and deliberate technology reduction respectively. This book applies a similar lens to the modern frenetic knowledge economy workplace. According to Newport, priortizing responsiveness and heavily relying on general purpose communication tools in the workplace is making us miserable and unproductive.</description>
+    </item>
+    
+  </channel>
+</rss>
