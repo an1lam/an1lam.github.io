@@ -58,6 +58,32 @@ MathJax.Hub.Config({
 <link rel="stylesheet" href="https://stephenmalina.com/css/hugo-tufte.css">
 <link rel="stylesheet" href="https://stephenmalina.com/css/hugo-tufte-override.css">
 
+  
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-187780632-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+
+  
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-187780632-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
 </head>
 
 
@@ -119,7 +145,7 @@ MathJax.Hub.Config({
 <section><p><em>Attention conservation notice:</em> Narrow target audience - will only make sense to people somewhat familiar with causal inference who don&rsquo;t find the result entirely boring.</p>
 <h2 id="the-front-door-criterion">The Front-Door Criterion</h2>
 <p>Suppose we have a causal graphical model that looks like the following.</p>
-<p><!-- raw HTML omitted --></p>
+<p><img src="https://i.imgur.com/i5HQ1Jt.png" width="500" height="350" /></p>
 <p>Assume $ U $ is unmeasured whereas $ X, M, Y $ can be measured. Notice that:</p>
 <ol>
 <li>All directed paths from $ X $ to $ Y $ flow through $ M $.</li>
@@ -132,18 +158,18 @@ P(y \mid do(x)) = \sum_{m \in M} P(m \mid x) \sum_{x&rsquo; \in X} P(y \mid m, x
 $$</p>
 <p>Intuitively, this is &lsquo;striking&rsquo; because it shows that we can identify the effect of a cause on an effect if we know the distribution of a mediator, <strong>even if</strong> there&rsquo;s unmeasured confounding between the cause and effect.</p>
 <p>As an exercise, I thought it would be fun to use the do-calculus to re-derive the front-door criterion (for a representative front-door graph).
-<!-- raw HTML omitted --><!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
+<label for="sidenote-69de1bd5552f4786efd2caa7668594d3-0" class="margin-toggle sidenote-number"></label>
+<input type="checkbox" id="sidenote-69de1bd5552f4786efd2caa7668594d3-0" class="margin-toggle"/>
+<span class="sidenote">
 <a href="http://www.michaelnielsen.org/ddi/if-correlation-doesnt-imply-causation-then-what-does/">If correlation doesn&rsquo;t imply causation, then what does?</a>
-<!-- raw HTML omitted --></p>
+</span></p>
 <h2 id="do-calculus-brief-refresher">Do-Calculus Brief Refresher</h2>
 <p>In this section, I quickly review the rules of the do-calculus and the intuition for them. For a more in depth but understandable presentation of the do-calculus, I recommend Michael Nielsen&rsquo;s article<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup> on the topic. For a &ldquo;classic&rdquo;, more technical presentation of the do-calculus, see Judea Pearl&rsquo;s &ldquo;The Do-Calculus Revisited<sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup>&rdquo;.
-<!-- raw HTML omitted --><!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
+<label for="sidenote-69de1bd5552f4786efd2caa7668594d3-1" class="margin-toggle sidenote-number"></label>
+<input type="checkbox" id="sidenote-69de1bd5552f4786efd2caa7668594d3-1" class="margin-toggle"/>
+<span class="sidenote">
 <a href="https://ftp.cs.ucla.edu/pub/stat_ser/r402.pdf">Primer by Pearl on the do-calculus</a>
-<!-- raw HTML omitted --></p>
+</span></p>
 <p>The do-calculus provides a complete<sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup> algebra for transforming causal quantities into observational ones. I.e., transforming probabilities that include $ \mathrm{do}(\cdot) $ terms into probabilities that only include normal conditional terms. Completeness means that a query ($ \mathrm{do} $ term) is identifiable if-and-only-if we can use do-calculus to compute its observational equivalent.</p>
 <h3 id="do-calculus-rules">Do-Calculus Rules</h3>
 <p>The actual calculus consists of three rules for transforming $ \mathrm{do} $ queries into observational ones. Since the rules are complete, they include a little extra baggage, but each one comes from an understandable intuition that I&rsquo;ll describe below.</p>
@@ -217,7 +243,7 @@ $$</p>
 	<div class="copyright">
 	<p>
     
-      &copy; 2020
+      &copy; 2021
     .
     All rights reserved.
     

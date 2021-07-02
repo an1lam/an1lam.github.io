@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+
+<head>
+<title>Stephen Malina - A personal post-mortem on almost giving very misleading advice</title>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="">
+<meta name="keywords" content="">
+<meta name="author" content="Stephen Malina">
+<meta name="generator" content="Hugo 0.74.3" />
+
+  
+  
+
+
+
+
+
+
+<link rel="stylesheet" href="https://unpkg.com/purecss@2.0.3/build/pure-min.css">
+
+
+    <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.3/build/grids-responsive-min.css">
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+
+<link rel="stylesheet" href="https://stephenmalina.com/css/tufte.css">
+<link rel="stylesheet" href="https://stephenmalina.com/css/hugo-tufte.css">
+<link rel="stylesheet" href="https://stephenmalina.com/css/hugo-tufte-override.css">
+
+  
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-187780632-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+
+  
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-187780632-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+</head>
+
+
+<body>
+<div id="layout" class="pure-g">
+<article class="pure-u-1">
+<header class="brand">
+  <h1>Stephen Malina</h1>
+  <h2>This is my blog. There are many others like it but this one is mine.</h2>
+  <nav class="menu">
+    <ul>
+    
+        <li><a href="https://stephenmalina.com/">Home</a></li>
+    
+        <li><a href="https://stephenmalina.com/about">About</a></li>
+    
+        <li><a href="https://stephenmalina.com/post">Post</a></li>
+    
+        <li><a href="https://stephenmalina.com/subscribe">Subscribe</a></li>
+    
+        <li><a href="https://stephenmalina.com/tags">Tags</a></li>
+    
+    </ul>
+</nav>
+
+</header>
+
+<section>
+<h1 class="content-title">
+  
+  <a href="https://stephenmalina.com/post/2021-03-06-bad-advice-near-miss/">A personal post-mortem on almost giving very misleading advice</a>
+  
+</h1>
+
+
+
+  <span class="content-meta">
+    
+
+
+    
+      <i class="fa fa-calendar"></i>
+      &nbsp;Mar 6, 2021
+    
+
+    
+      &nbsp;<i class="fa fa-clock-o"></i>
+      &nbsp;8 min read
+    
+
+    
+  </span>
+
+
+</section>
+
+
+
+<section><p>I recently had someone ask me what I felt helped me grow the most in my first few years working as a software engineer. Upon them asking me this, I initially drafted an answer that looked something like the following:</p>
+<blockquote>
+<p>A combination of building systems and seeing how they failed and then reading lots of code and books including: (list of programming books I&rsquo;ve read).</p>
+</blockquote>
+<p>However, upon writing this &ndash; and before sending it thankfully &ndash; I realized I was almost entirely misrepresenting the things that actually helped me grow. Building things and seeing how they broke was genuinely a huge factor, but, despite reading lots of programming books during my first few years as a software engineer, I think they played a relatively minor role in my growth (because <a href="https://andymatuschak.org/books/">books don&rsquo;t work</a>). Also, I (along with <a href="http://akkartik.name">Kartik</a>) wrote an entire post about how <a href="http://akkartik.name/post/comprehension">nobody <em>actually</em> reads code like a book</a>, so clearly I wasn&rsquo;t doing that much. Instead, I ended up writing a longer message which, in addition to building things, pointed to the following factors as encouraging my growth:</p>
+<ul>
+<li>Getting really lucky that a few senior people with high standards and different ways of thinking invested in my growth. I emphasized how being able to ask these people tons of questions, pairing with them on coding, and listening to them digress and complain about random programming things all helped me a ton.</li>
+<li>Procrastinating on real work by refactoring lots of stuff, sometimes unnecessarily.</li>
+<li>Making silly mistakes and seeing how they later came back to bite us.</li>
+<li>Being a person who likes to complain but then getting called on my tendency to BS and having to justify the things I was complaining about.</li>
+<li>Having rabbit hole-y debates in person and on code reviews with super detail oriented people who you&rsquo;d have to spend a long time convincing of things.</li>
+<li>Practicing for coding interviews a lot so I&rsquo;d be prepared when I went job searching (this is after all what helped me get a second job).</li>
+<li>Having the type of personality that gets really obsessed with theories of everything but then becoming disillusioned with each theory I&rsquo;d temporarily adopt. (I went through phases of &ldquo;OO is the best&rdquo;, &ldquo;make all the things functional style&rdquo;, &ldquo;microservices, yay!&rdquo;, etc.)</li>
+</ul>
+<h2 id="whyd-i-almost-give-bad-advice">Why&rsquo;d I almost give bad advice?</h2>
+<p>Realizing how I&rsquo;d almost just given incredibly misleading advice led me to reflect on how, even though I&rsquo;m aware of <a href="https://guzey.com/advice/#we-are-systematically-wrong-about-why-we-do-the-things-we-do">most advice being bad</a>, I&rsquo;d still come close to horribly misrepresenting my career growth.</p>
+<p>Reflecting on this further, I&rsquo;ve identified a few factors which I think contributed to me almost misrepresenting my career growth history:</p>
+<ul>
+<li>Social desirability bias</li>
+<li>Formal, legible activities being easier to remember</li>
+<li>My own insecurities influencing the advice I was willing to share</li>
+<li>Desire to self-validate</li>
+<li>Jumping to the first answer that came to mind
+<label for="sidenote-66063943f45f2fedcefbaed7a8277c41-0" class="margin-toggle sidenote-number"></label>
+<input type="checkbox" id="sidenote-66063943f45f2fedcefbaed7a8277c41-0" class="margin-toggle"/>
+<span class="sidenote"> An additional idea suggested by Matt Ritter is that I just have no idea what factors contributed to my growth and therefore that giving advice is hopeless in the first place. I&rsquo;m skeptical or at least hopeful that this isn&rsquo;t the case but it seemed worth mentioning as an additional hypothesis.</li>
+</ul>
+<p><a href="https://www.econlib.org/archives/2014/04/social_desirabi_1.html">Social desirability bias</a> is &ldquo;the tendency of respondents to answer questions in a manner that will be viewed favorably by others.&rdquo; In this case, I know that reading books and reading code are viewed as virtuous whereas getting lucky with mentors, procrastinating on work, and making silly mistakes are not, so I was tempted to emphasize the former even though they played a relatively minor role. What frightens me about this is that I felt such a strong temptation even though I was giving private advice to a single person! To give another example, having digressing discussions with mentors about the nuances of <a href="https://www.benkuhn.net/blub/">blub study</a> topics like when one should use streams in Java sounds much lamer than saying I took a coursera course on functional programming in Scala, even though I forgot everything from the Scala course but have heavily benefited from Java streams. Like in many arenas, when giving advice, social desirability bias pushes us to say what we think will make us sound good rather than the truth.</p>
+<p>When I use the term <a href="https://www.ribbonfarm.com/2010/07/26/a-big-little-idea-called-legibility/">legibility</a> in this context, I&rsquo;m drawing a distinction between activities which can provide clear measures of progress vs. not having an easy progression one can track. Reading books is legible under this definition because it&rsquo;s easy to track how many books one&rsquo;s read and log them in Goodreads. <label for="sidenote-66063943f45f2fedcefbaed7a8277c41-0" class="margin-toggle sidenote-number"></label>
+<input type="checkbox" id="sidenote-66063943f45f2fedcefbaed7a8277c41-0" class="margin-toggle"/>
+<span class="sidenote">Ignore that, for someone like me who likes seeing numbers go up, doing this leads to Goodhart-ing against the metric.</span>
+On the other hand, amount learned from code review and debates in meetings is very illegible. These discussions and threads are often adhoc and vary widely in their usefulness, making tracking of them silly. As a result, when remembering &ldquo;what things helped me learn&rdquo; it&rsquo;s much easier to tally up books read rather than reflect on how replying to John Smith on a random code review ended up forcing me to really understand how Python&rsquo;s global interpreter lock makes it so that the threading implementation I wrote to parallelize a CPU-heavy operation makes no sense or how really wanting to own Joe Schmoe in a design discussion forced me to spend hours really figuring out why I wanted us to use DynamoDB. Overall, a focus on legible things led me to initially emphasize easy to categorize and measure factors at the cost of the fuzzier factors that actually played a larger role.</p>
+<p>As evidenced by <a href="https://stephenmalina.com/post/2020-07-11-learning-to-love-thinking/">previous writing</a>, I have some insecurity about whether I&rsquo;m a good doer but an average thinker. In the advice-giving context, this combined with my insecurity about not finishing things seemingly pushed me to want to emphasize books I&rsquo;d read (and completed) rather than things I&rsquo;d actually done or mistakes I&rsquo;d made due to initially (perhaps) rushing and then coming back to things. In fact, while writing this paragraph, I noticed that, even after revising the advice I gave, I failed to include how learning to do things quickly <a href="http://jsomers.net/blog/speed-matters">sped up my growth</a> by enabling me to be exposed to more things.</p>
+<p>While I don&rsquo;t think this played a massive role in my near miss, the desire to self-validate is a common enough advice corrupter that I wanted to mention it. In my case, a desire to self-validate might push me to want to validate my decision to spend a lot of time reading books by viewing at as helpful in hindsight even if in reality the reading really didn&rsquo;t help me improve very much. Another very common example of self-validation which I didn&rsquo;t include here but feel obligated to include because it&rsquo;s so pervasive is telling someone they have to go through some long, difficult <del>hazing ritual</del>experience because you did and want to make yourself feel better about the toll it took on your (generating examples left as an exercise for the reader).</p>
+<p>As has been written <a href="https://fs.blog/2018/02/first-thought-not-best-thought/">about</a> <a href="https://fs.blog/2015/08/how-to-think/">extensively</a>, our first thoughts are often not our best thoughts, yet advice is often given in off-the-cuff settings with limited preparation. In this case, although the conversation was all via text, my initial answer was basically the first thing that came to mind, leading to it being influenced more strongly by the above factors.</p>
+<h2 id="how-to-improve">How to improve&hellip;</h2>
+<p><em>In which I go super meta and give advice about giving &amp; taking advice despite just telling you about how I almost gave terrible advice.</em></p>
+<p>Unsurprisingly given the <a href="https://stephenmalina.com/post/2021-02-21-ideas-not-mattering-is-a-psyop/">last post I contributed to</a>, I&rsquo;m a big believer that one&rsquo;s choices and decisions in life matter. While luck plays a role and the future is not entirely predictable, I am ultimately a <a href="https://blakemasters.com/post/23435743973/peter-thiels-cs183-startup-class-13-notes">definite optimist</a> in my outlook on careers. For this reason, I&rsquo;m frightened by the fact that I almost contributed to the epidemic of bad advice and am determined to avoid this in the future.</p>
+<p>While I haven&rsquo;t totally figured concrete steps I can take to avoid giving bad advice, I do have a few ideas (meta-idea: actually use this checklist):</p>
+<ol>
+<li>Whenever possible, follow a policy of insisting on spending time thinking before responding to requests for advice. Related to this, force myself to generate lots of ideas before whittling them down.  Although I don&rsquo;t have strong evidence of this, I suspect that not giving kneejerk answers is a key meta-strategy for improving advice quality because knee jerk answers tend to be <a href="https://www.readthesequences.com/Cached-Thoughts">cached thoughts</a>, which in the realm of advice giving, will be the least novel, most socially desirable, legible answers.</li>
+<li>Make being willing to give honest but low status advice (when applicable) part of my identity. I already have &ldquo;be willing to argue for low status or contrarian opinions&rdquo; as part of my identity so expanding this to advice will hopefully be relatively easy for me.</li>
+<li>Keep a career journal and <em>actually revisit</em> it before giving advice based on periods of one&rsquo;s career. Note that in order to be maximally useful, this journal should focus on documenting what I did and my view on it <em>at the time</em> rather than letting myself develop warped views in hindsight<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>. Even better, blog about it!</li>
+<li>Be willing to <a href="https://m.signalvnoise.com/giving-less-advice/#.l6cjhbot8">not give advice</a> if I don&rsquo;t feel like I know what I&rsquo;m talking about! (I am proud to report I kind of did this recently.)</li>
+</ol>
+<p>Given how important this is to me, I&rsquo;ll be very appreciative if anyone is willing to share (either privately or in the comments) either:</p>
+<ul>
+<li>ideas they have for dealing with these challenges, or</li>
+<li>experiences they&rsquo;ve had giving (good or bad) advice and the challenges they faced in keeping theirself honest.</li>
+</ul>
+<h2 id="acknowledgements">Acknowledgements</h2>
+<p><a href="https://www.forourposterity.com/">Leopold Aschenbrenner</a>, <a href="https://www.mattritter.me/">Matt Ritter</a>, <a href="guzey.com">Alexey Guzey</a>, and Jennifer Dalecki for reviewing this post and suggesting improvements.</p>
+<section class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1" role="doc-endnote">
+<p>Hat tip to <a href="https://pkb-howto.justinyan.com/activities/career">Justin Yan</a> for giving me this idea.
+</span> <a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</section>
+</section>
+<section>
+  
+  <div id="disqus_thread"></div>
+  <script type="text/javascript">
+
+  (function() {
+      
+      
+      if (window.location.hostname == "localhost")
+          return;
+
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      var disqus_shortname = 'an1lam-github-io';
+      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  <a href="http://disqus.com/" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+  <footer class="page-footer">
+		<hr>
+		<ul class="page-footer-menu">
+		
+      <li><a href="https://github.com/an1lam"><i class='fa fa-github fa-2x'></i> </a></li>
+		
+      <li><a href="https://twitter.com/an1lam"><i class='fa fa-twitter fa-2x'></i> </a></li>
+		
+      <li><a href="mailto:stephenmalina@gmail.com"><i class='fa fa-envelope fa-2x'></i> </a></li>
+		
+      <li><a href="https://stackoverflow.com/users/1631855/an1lam"><i class='fa fa-stack-overflow fa-2x'></i> </a></li>
+		
+		</ul>
+
+  
+    <p>
+      Powered by <a href="https://gohugo.io">Hugo</a> and the
+      <a href="https://github.com/shawnohare/hugo-tufte">Tufte theme</a>.
+    </p>
+  
+
+	<div class="copyright">
+	<p>
+    
+      &copy; 2021
+    .
+    All rights reserved.
+    
+  </p>
+</div>
+</footer>
+
+
+
+</section>
+</article>
+</div>
+</body>
+</html>
