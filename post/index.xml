@@ -6,10 +6,49 @@
     <description>Recent content in Posts on Stephen Malina</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 01 Jul 2021 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 01 Jan 2022 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://stephenmalina.com/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>2050 Predictions</title>
+      <link>https://stephenmalina.com/post/2022-01-01-2050-predictions/</link>
+      <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://stephenmalina.com/post/2022-01-01-2050-predictions/</guid>
+      <description>Introduction Along with a few internet blogger friends, inspired by Erik Hoel&amp;rsquo;s post (parts of which I disagree with, including the headline), I&amp;rsquo;ve decided to make predictions for 2050. The rest of this post discusses some meta aspects of making these predictions and then lists out the predictions. In case you&amp;rsquo;re waiting for my (hopefully) less speculative 2022 annual predictions, fear not! Those will be coming in the next few weeks.</description>
+    </item>
+    
+    <item>
+      <title>Scoring my 2021 Predictions</title>
+      <link>https://stephenmalina.com/post/2021-12-31-scoring-my-2021-predictions/</link>
+      <pubDate>Fri, 31 Dec 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://stephenmalina.com/post/2021-12-31-scoring-my-2021-predictions/</guid>
+      <description>At the beginning of last year, I made predictions for the year. Now it&amp;rsquo;s time to score them (before I make my 2022 predictions).
+Data &amp;amp; code Here is a spreadsheet containing my scored predictions. If you want to see my full analysis, you can look at my Jupyter notebook which contains Brier score calculations plus plotting.
+High level analysis The key metrics I looked at were my overall and by category Brier scores plus calibration.</description>
+    </item>
+    
+    <item>
+      <title>Beware silver bullets</title>
+      <link>https://stephenmalina.com/post/2021-12-05-beware-silver-bullets/</link>
+      <pubDate>Sat, 04 Dec 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://stephenmalina.com/post/2021-12-05-beware-silver-bullets/</guid>
+      <description>Note: This post was co-written with Uri Bram of The Browser, who deserves all credit for the good parts and no blame for the bad parts and inevitable mistakes (which things fall into which category is at your, the reader’s, discretion).
+A recurring problem I, and I think people similar to me, face is letting my excitement about something new transform from being based on curiosity and a sense of usefulness into viewing the thing as a Fully General Solution to All Problems.</description>
+    </item>
+    
+    <item>
+      <title>Crazy ideas for future synthetic biology &amp; bioengineering</title>
+      <link>https://stephenmalina.com/post/2021-11-crazy-synthetic-bio-ideas/</link>
+      <pubDate>Fri, 26 Nov 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://stephenmalina.com/post/2021-11-crazy-synthetic-bio-ideas/</guid>
+      <description>One thing I like about the synthetic biology community is that, from the early days, its participants have been willing to entertain &amp;ldquo;wild&amp;rdquo; ideas like building dragons. While this willingness comes with all of the risks associated with building a lot of hype around a nascent technology, against the backdrop of cultural indefinite pessimism, I still prefer it. In that vein, inspired by Milan Cwitkovic&amp;rsquo;s legendary listicles on Things you&amp;rsquo;re allowed to do and Market failures in science, I decided to make my own listicle of cool ideas for future synthetic biology &amp;amp; bioengineering projects.</description>
+    </item>
     
     <item>
       <title>Energetic Aliens</title>

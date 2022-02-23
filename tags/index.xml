@@ -6,10 +6,19 @@
     <description>Recent content in Tags on Stephen Malina</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 01 Apr 2021 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 01 Jan 2022 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://stephenmalina.com/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>predictions</title>
+      <link>https://stephenmalina.com/tags/predictions/</link>
+      <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://stephenmalina.com/tags/predictions/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>book-review</title>
@@ -53,15 +62,6 @@
       <pubDate>Thu, 01 Apr 2021 00:00:00 +0000</pubDate>
       
       <guid>https://stephenmalina.com/tags/productivity/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>predictions</title>
-      <link>https://stephenmalina.com/tags/predictions/</link>
-      <pubDate>Sat, 09 Jan 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://stephenmalina.com/tags/predictions/</guid>
       <description></description>
     </item>
     

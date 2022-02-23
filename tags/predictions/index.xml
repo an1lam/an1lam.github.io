@@ -6,10 +6,30 @@
     <description>Recent content in predictions on Stephen Malina</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 09 Jan 2021 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 01 Jan 2022 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://stephenmalina.com/tags/predictions/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>2050 Predictions</title>
+      <link>https://stephenmalina.com/post/2022-01-01-2050-predictions/</link>
+      <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://stephenmalina.com/post/2022-01-01-2050-predictions/</guid>
+      <description>Introduction Along with a few internet blogger friends, inspired by Erik Hoel&amp;rsquo;s post (parts of which I disagree with, including the headline), I&amp;rsquo;ve decided to make predictions for 2050. The rest of this post discusses some meta aspects of making these predictions and then lists out the predictions. In case you&amp;rsquo;re waiting for my (hopefully) less speculative 2022 annual predictions, fear not! Those will be coming in the next few weeks.</description>
+    </item>
+    
+    <item>
+      <title>Scoring my 2021 Predictions</title>
+      <link>https://stephenmalina.com/post/2021-12-31-scoring-my-2021-predictions/</link>
+      <pubDate>Fri, 31 Dec 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://stephenmalina.com/post/2021-12-31-scoring-my-2021-predictions/</guid>
+      <description>At the beginning of last year, I made predictions for the year. Now it&amp;rsquo;s time to score them (before I make my 2022 predictions).
+Data &amp;amp; code Here is a spreadsheet containing my scored predictions. If you want to see my full analysis, you can look at my Jupyter notebook which contains Brier score calculations plus plotting.
+High level analysis The key metrics I looked at were my overall and by category Brier scores plus calibration.</description>
+    </item>
     
     <item>
       <title>2021 Predictions</title>
