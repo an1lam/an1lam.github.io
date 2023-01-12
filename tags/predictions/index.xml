@@ -6,10 +6,30 @@
     <description>Recent content in predictions on Stephen Malina</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 01 Jan 2022 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 16 Nov 2022 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://stephenmalina.com/tags/predictions/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>GPT4 Predictions</title>
+      <link>https://stephenmalina.com/post/2022-11-16-gpt4-predictions/</link>
+      <pubDate>Wed, 16 Nov 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://stephenmalina.com/post/2022-11-16-gpt4-predictions/</guid>
+      <description>As a way to keep myself honest, I&amp;rsquo;m going to be recording GPT4 predictions here and archiving versions of the post so I can&amp;rsquo;t go back and change it without people knowing. Not that I would do this anyway, but it&amp;rsquo;s been a tough week for &amp;ldquo;trust me, I&amp;rsquo;m telling the truth&amp;rdquo; so I&amp;rsquo;m doing this in case readers want the receipts.
+I predict GPT4 won&amp;rsquo;t be able to&amp;hellip;  Write a blog post about gene therapy that I consider to be of equivalent quality to my own Write a scientific paper about machine learning.</description>
+    </item>
+    
+    <item>
+      <title>AI Omens: Signs of AI acceleration</title>
+      <link>https://stephenmalina.com/post/2022-09-17-ai-omens/</link>
+      <pubDate>Sat, 17 Sep 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://stephenmalina.com/post/2022-09-17-ai-omens/</guid>
+      <description>A friend recently asked me what my &amp;ldquo;AI timelines&amp;rdquo; were. Especially with recent progress in image generation, language modeling, code generation, robotics, protein folding, and other areas, this has become an increasingly popular question amongst those who are paying attention.
+However, I find trying to answer this question pretty frustrating. There already exist long, thorough reports (another) which build quantitative models and carefully define terms to make sure there&amp;rsquo;s as little ambiguity as possible.</description>
+    </item>
     
     <item>
       <title>2050 Predictions</title>
