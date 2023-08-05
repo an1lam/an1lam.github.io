@@ -4,21 +4,41 @@
   
   <url>
     <loc>https://stephenmalina.com/tags/biology/</loc>
-    <lastmod>2023-06-07T00:00:00+00:00</lastmod>
+    <lastmod>2023-08-05T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://stephenmalina.com/tags/gene-therapy/</loc>
-    <lastmod>2023-06-07T00:00:00+00:00</lastmod>
+    <loc>https://stephenmalina.com/tags/machine-learning/</loc>
+    <lastmod>2023-08-05T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://stephenmalina.com/post/</loc>
-    <lastmod>2023-06-07T00:00:00+00:00</lastmod>
+    <lastmod>2023-08-05T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://stephenmalina.com/post/2023-08-05-protein-language-models-part-2/</loc>
+    <lastmod>2023-08-05T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://stephenmalina.com/tags/proteins/</loc>
+    <lastmod>2023-08-05T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://stephenmalina.com/tags/</loc>
+    <lastmod>2023-08-05T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://stephenmalina.com/post/2023-07-22-protein-language-models-part-1/</loc>
+    <lastmod>2023-07-22T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://stephenmalina.com/tags/gene-therapy/</loc>
     <lastmod>2023-06-07T00:00:00+00:00</lastmod>
   </url>
   
@@ -254,11 +274,6 @@
   
   <url>
     <loc>https://stephenmalina.com/tags/genomics/</loc>
-    <lastmod>2019-11-16T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://stephenmalina.com/tags/machine-learning/</loc>
     <lastmod>2019-11-16T00:00:00+00:00</lastmod>
   </url>
   
@@ -694,6 +709,10 @@
   
   <url>
     <loc>https://stephenmalina.com/page/subscribe/</loc>
+  </url>
+  
+  <url>
+    <loc>https://stephenmalina.com/post/2023-08-05-protein-language-models-part-4/</loc>
   </url>
   
   <url>

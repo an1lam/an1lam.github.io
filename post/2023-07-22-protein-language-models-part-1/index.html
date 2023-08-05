@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+
+<head>
+<title>Stephen Malina - Protein Language Models (Part 1): Introduction &amp; Datasets</title>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="">
+<meta name="keywords" content="">
+<meta name="author" content="Stephen Malina">
+<meta name="generator" content="Hugo 0.68.3" />
+
+  
+  
+
+  <script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    displayMath: [['$$','$$'], ['\\[','\\]']],
+    processEscapes: true,
+    processEnvironments: true,
+    menuSettings: { zoom: "Double-Click" },
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+    TeX: { equationNumbers: { autoNumber: "AMS" },
+         extensions: ["AMSmath.js", "AMSsymbols.js"] }
+  }
+});
+</script>
+
+<script type="text/javascript"
+  src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+
+
+
+
+
+
+<link rel="stylesheet" href="https://unpkg.com/purecss@2.0.3/build/pure-min.css">
+
+
+    <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.3/build/grids-responsive-min.css">
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+
+<link rel="stylesheet" href="https://stephenmalina.com/css/tufte.css">
+<link rel="stylesheet" href="https://stephenmalina.com/css/hugo-tufte.css">
+<link rel="stylesheet" href="https://stephenmalina.com/css/hugo-tufte-override.css">
+
+  
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-187780632-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+
+  
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-187780632-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+</head>
+
+
+<body>
+<div id="layout" class="pure-g">
+<article class="pure-u-1">
+<header class="brand">
+  <h1>Stephen Malina</h1>
+  <h2>This is my blog. There are many others like it but this one is mine.</h2>
+  <nav class="menu">
+    <ul>
+    
+        <li><a href="https://stephenmalina.com/">Home</a></li>
+    
+        <li><a href="https://stephenmalina.com/about">About</a></li>
+    
+        <li><a href="https://stephenmalina.com/post">Post</a></li>
+    
+        <li><a href="https://stephenmalina.com/bets">Bets</a></li>
+    
+        <li><a href="https://stephenmalina.com/subscribe">Subscribe</a></li>
+    
+        <li><a href="https://stephenmalina.com/tags">Tags</a></li>
+    
+    </ul>
+</nav>
+
+</header>
+
+<section>
+<h1 class="content-title">
+  
+  <a href="https://stephenmalina.com/post/2023-07-22-protein-language-models-part-1/">Protein Language Models (Part 1): Introduction &amp; Datasets</a>
+  
+</h1>
+
+
+
+  <span class="content-meta">
+    
+
+
+    
+      <i class="fa fa-calendar"></i>
+      &nbsp;Jul 22, 2023
+    
+
+    
+      &nbsp;<i class="fa fa-clock-o"></i>
+      &nbsp;8 min read
+    
+
+    
+  </span>
+
+
+</section>
+
+
+<section>
+  <details closed class="toc">
+    <summary>Contents</summary>
+    <nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#transformers">Transformers</a></li>
+        <li><a href="#language-models">Language Models</a></li>
+        <li><a href="#scaling">Scaling</a></li>
+      </ul>
+    </li>
+  </ul>
+
+  <ul>
+    <li><a href="#sequence">Sequence</a>
+      <ul>
+        <li><a href="#clustering">Clustering</a></li>
+        <li><a href="#multiple-sequence-alignments-msas">Multiple Sequence Alignments (MSAs)</a></li>
+      </ul>
+    </li>
+    <li><a href="#structure">Structure</a></li>
+    <li><a href="#function">Function</a></li>
+  </ul>
+</nav>
+  </details>
+</section>
+
+
+<section><p><em>I&rsquo;m experimenting with <a href="https://lilianweng.github.io/posts/">Lilian Weng</a> style review blog posts on topics I wish I&rsquo;d had someone to explain to me when I got started in protein machine learning.</em></p>
+<p>Following the success of large sequence models in language and <a href="https://www.deepmind.com/publications/a-generalist-agent">other domain</a>,<label for="sidenote-f627d589707ed9c9ecc9c7ec41c802d9-0" class="margin-toggle sidenote-number"></label>
+<input type="checkbox" id="sidenote-f627d589707ed9c9ecc9c7ec41c802d9-0" class="margin-toggle"/>
+<span class="sidenote"> The terminology people use here is extremely confusing. &ldquo;Large language models&rdquo; often denote large sequence models trained on language <em>and</em> other modalities or in some cases just other modalities. In the rest of the post, I&rsquo; use &ldquo;large language models&rdquo; (LLMs) to refer to the cluster of ideas around large-scale pretraining combined with simple objectives as opposed to models that focus on <em>language</em> as a modality and &ldquo;protein language models&rdquo; (PLMs) to refer to large sequence models <em>of proteins</em>. </span>
+protein machine learning folks have been building and training language models on protein sequence data. While the category boundaries in terms of what exactly constitutes a PLM are necessarily fuzzy, PLMs use LLM-inspired pretraining strategies and architectures to model the distribution of protein sequences.</p>
+<p>This post is the first in a five part series on Protein Language Models. The other posts are (missing links will be added upon publishing):</p>
+<ol>
+<li><a href="https://stephenmalina.com/post/2023-07-22-protein-language-models-part-1">Protein Language Models (Part 1): Introduction &amp; Datasets</a></li>
+<li><a href="https://stephenmalina.com/post/2023-08-05-protein-language-models-part-2">Protein Language Models (Part 2): Models</a></li>
+<li>Protein Language Models (Part 3): Benchmarks &amp; Evaluation</li>
+<li>Protein Language Models (Part 4): Scaling</li>
+<li>Protein Language Models (Part 5): FAQ &amp; Conclusion</li>
+</ol>
+<p>This post covers the datasets and models used for training PLMs. The second will cover evaluation, use, and scaling of PLMs. The third will be an FAQ accumulating questions and answers that didn&rsquo;t fit cleanly into either of the prior posts.</p>
+<h1 id="background">Background</h1>
+<p>This series is not intended to introduce language models, transformers, or scaling from scratch. If you&rsquo;re looking for writing that does that, here are some resources I&rsquo;ve found helpful:</p>
+<h3 id="transformers">Transformers</h3>
+<ul>
+<li><a href="https://jalammar.github.io/illustrated-transformer/">The Illustrated Transformer</a></li>
+<li><a href="https://lilianweng.github.io/posts/2023-01-27-the-transformer-family-v2/">The Transformer Family (Version 2.0)</a></li>
+</ul>
+<h3 id="language-models">Language Models</h3>
+<ul>
+<li><a href="https://lilianweng.github.io/posts/2019-01-31-lm/">Generalized Language Models</a></li>
+</ul>
+<h3 id="scaling">Scaling</h3>
+<ul>
+<li><a href="https://gwern.net/scaling-hypothesis">The Scaling Hypothesis</a></li>
+</ul>
+<h1 id="datasets">Datasets</h1>
+<h2 id="sequence">Sequence</h2>
+<p>Protein language models are trained using unsupervised objectives on protein sequence data. For general language models, the most commonly used datasets are currently <a href="https://www.uniprot.org/help/uniref">UniRef</a> and <a href="https://bfd.mmseqs.com/">BFD</a>. Some papers have used or tested <a href="https://www.ebi.ac.uk/metagenomics">MGNify</a> and <a href="https://metaclust.mmseqs.com/">Metaclust</a> but UniRef and BFD dominate.</p>
+
+
+
+  
+    <figure class="fullwidth">
+  
+
+
+
+  
+  <img src="https://stephenmalina.com/images/prottrans-table1.png" >
+  
+  <figcaption>
+
+  
+  Table 1 from ProtTrans.
+  
+  
+  
+
+  </figcaption>
+
+
+
+
+</figure>
+
+
+<p><a href="https://www.uniprot.org/help/uniref">UniRef</a> (UniProt Reference Clusters) provides clustered sequences from the <a href="https://www.uniprot.org/help/uniprotkb">UniProt Knowledgebase</a>. Around 95% of the sequences in UniProt are derived from coding sequences and mostly excludes metagenomic data. UniRef includes three datasets &ndash; UniRef100, UniRef90, and UniRef50 &ndash; which correspond to clustering UniProt and UniParc at 100% (de-duplication and combining identical fragments), 90%, and 50% sequence identity.</p>
+<p><a href="https://bfd.mmseqs.com/">BFD</a> is a big fantastic database of clustered protein sequences that includes sequences from UniProt but also Metaclust and Soil Reference Catalog Marine Eukaryotic Reference Catalog assembled by <a href="https://github.com/soedinglab/plass">Plass</a>. This means that BFD has a lot of overlap with UniRef but also contains substantially more metagenomic data. As the above table shows, BFD contains ~10x more proteins than UniRef.</p>
+
+
+
+  
+    <figure >
+  
+
+
+
+  <label for="" class="margin-toggle">⊕</label>
+  <input type="checkbox" id="" class="margin-toggle">
+  <span class="marginnote">
+  
+
+  
+  ProtTrans Table 1: High level dataset statistics for UniRef50/100 and BFD.
+  
+  
+  
+
+  </span>
+
+
+  
+  <img src="https://stephenmalina.com/images/prottrans-table1.png" >
+  
+
+
+
+</figure>
+
+
+<p>As mentioned, MGNify and Metaclust only include metagenomic sequences. They&rsquo;re less popular presumably because BFD gives good coverage of their sequence space. In fact, the RITA paper <a href="https://arxiv.org/pdf/2205.05789v2.pdf#page=3">found</a> that training on UniRef100 produced better perplexity results on a hold out generated from a mix of UniRef100, Metaclust, and MGNify than training on either of the other two did.</p>
+<h3 id="clustering">Clustering</h3>
+<p>Protein databases such as UniRef offer versions that cluster based on sequence identity. The idea here is that for some (non-ML and) ML use-cases we may only want to see representative examples of proteins within certain families and genera vs. lots of similar variants. To support this, UniRef offers versions of its database clustered down to 50% and 90% in addition to the 100% one (just removes duplicates). If training PLMs on clustered datasets produces as good or better results, it would be a big win because we&rsquo;d be saving compute for training without degrading the quality of our results. Because of this, various papers have looked at the impact of clustering on performance.</p>
+<p>The ESM-1v authors evaluated the impact of different sequence identity clustering thresholds on zero-shot fitness prediction <label for="sidenote-f627d589707ed9c9ecc9c7ec41c802d9-3" class="margin-toggle sidenote-number"></label>
+<input type="checkbox" id="sidenote-f627d589707ed9c9ecc9c7ec41c802d9-3" class="margin-toggle"/>
+<span class="sidenote"> &ldquo;Zero-shot&rdquo; here refers to the fact that the model&rsquo;s predictions are being made without ever having seen labels for the benchmark. Instead, we typically use a model&rsquo;s likelihood or pseudo-likelihood (for masked language models) as a prediction under the assumption that likelihood will be a good general proxy for fitness. We&rsquo;ll discuss zero-shot benchmarks and the likelihood-to-fitness assumption more in the evaluation post. </span>
+performance. They found 50-90% to be the sweet spot, with models trained on datasets using higher or lower thresholds performing worse. The below figure shows this. The model trained with the 90% clustering threshold comes in with the highest average performance on downstream tasks, with the 70% and 50% models coming in second and third respectively, followed by a big drop-off for the 30% and 100% models. <label for="sidenote-f627d589707ed9c9ecc9c7ec41c802d9-4" class="margin-toggle sidenote-number"></label>
+<input type="checkbox" id="sidenote-f627d589707ed9c9ecc9c7ec41c802d9-4" class="margin-toggle"/>
+<span class="sidenote"> Weirdly, the 100% model actually does achieve performance close to the 50% model&rsquo;s earlier in training but then its performance degrades past ~50,000 updates. This is surprising because if anything I&rsquo;d expect the 100% model to climb the performance scale more slowly and be the least likely to overfit given that it takes the most updates per epoch. Clearly, my intuition is off here though! </span></p>
+
+
+
+  
+    <figure >
+  
+
+
+
+  <label for="" class="margin-toggle">⊕</label>
+  <input type="checkbox" id="" class="margin-toggle">
+  <span class="marginnote">
+  
+
+  
+  Spearman $\rho$ on downstream tasks as a function of # of training updates, colored by clustering threshold.
+  
+  
+  
+
+  </span>
+
+
+  
+  <img src="https://stephenmalina.com/images/esm1v-fig4.png" >
+  
+
+
+
+</figure>
+
+
+<p>More broadly, results so far have been mixed on whether clustering before training produces better results. The <a href="#prottrans">ProtTrans</a> and <a href="#ankh">Ankh</a> authors tentatively concluded that training on UniRef50 produced their best model but their overall results on the relationship between data and downstream task performance were more mixed. On the other hand, the <a href="https://arxiv.org/pdf/2205.05789v2.pdf#page=3">RITA</a> authors chose to use UniRef100 under the hypothesis that clustering reduces information given to the model but seemingly didn&rsquo;t have the opportunity to test this assumption. <a href="https://arxiv.org/pdf/2206.13517.pdf">Progen2</a> used UniRef90 combined with BFD but didn&rsquo;t test different clusterings. <a href="#transception">Transception</a> also tested different clustering thresholds and found that their UniRef100 models performed best.</p>
+<p>
+
+
+  
+    <figure >
+  
+
+
+
+  <label for="" class="margin-toggle">⊕</label>
+  <input type="checkbox" id="" class="margin-toggle">
+  <span class="marginnote">
+  
+
+  
+  
+  
+  
+  
+
+  </span>
+
+
+  
+  <img src="https://stephenmalina.com/images/transception-table6.png" >
+  
+
+
+
+</figure>
+
+
+Transception Table 6: Performance at different model sizes on different versions of UniRef.</p>
+<p>Given that LLM researchers have put thousands of cumulative research hours <a href="https://arxiv.org/pdf/2204.02311.pdf#page=71">into</a> cleaning, <a href="https://arxiv.org/abs/2305.10429">mixing</a>, and weighting LLM datasets, our prior is that these decisions will matter a lot. Increasingly the insights from this type of work are treated as trade secrets, but anecdotal and hard evidence points to dataset curation continuing to matter a lot for LLM performance.<label for="sidenote-f627d589707ed9c9ecc9c7ec41c802d9-7" class="margin-toggle sidenote-number"></label>
+<input type="checkbox" id="sidenote-f627d589707ed9c9ecc9c7ec41c802d9-7" class="margin-toggle"/>
+<span class="sidenote"> One thing that could change the game here would be if methods in the space of active learning and/or reinforcement learning allow models to guide their own training and data point selection. There are some interesting <a href="https://arxiv.org/abs/2211.01568">initial results</a> in this direction, but as far as I know, no major public results with SoTA performance on benchmarks (admittedly a lagging indicator). </span>
+But right now, the takeaways for PLMs seem ambiguous. Preliminarily, it seems like autoregressive models may do better without clustering whereas MLMs seem to do best with it but this conclusion comes from something closer to an informal meta-analysis versus a single controlled experiment and so could easily change as so many have if someone were to compare everything carefully together. All we can really say with confidence is that &ldquo;more work is needed.&rdquo;</p>
+<h3 id="multiple-sequence-alignments-msas">Multiple Sequence Alignments (MSAs)</h3>
+<h2 id="structure">Structure</h2>
+<p><a href="https://www.nature.com/articles/s41586-021-03819-2">AlphaFold 2</a> and <a href="https://www.science.org/doi/10.1126/science.abj8754">RoseTTAFold</a> both take multiple sequence alignments (MSAs) as inputs for structure prediction. Multiple more recent folding models &ndash; <a href="https://www.biorxiv.org/content/10.1101/2022.07.20.500902v1.full">ESMFold</a>, <a href="https://www.biorxiv.org/content/10.1101/2022.07.21.500999v1.abstract">OmegaFold</a>, and <a href="https://www.biorxiv.org/content/10.1101/2021.08.02.454840v1">RGN2</a> &ndash; that have achieved comparable or nearly as good performance replaced MSA retrieval with sequence embedding as the first step in their models. For training the structure module, these models use a <a href="https://www.biorxiv.org/content/10.1101/2022.07.20.500902v1.full#:~:text=1.1.2%20Structure%20Training%20Sets">very similar subset</a> of the structures in the protein databank (PDB).</p>
+<p>Another source of structure data is the Class, Architecture, Topology, Hierarchy (<a href="https://www.cathdb.info/">CATH</a>) database. CATH contains 151 million protein domains classified into 5,841 superfamilies (at time of writing). More relevant to this, it contains a set of ~16,000 sequence/structure protein domain pairs that have been used both for evaluation of PLMs and for training &ldquo;inverse folding&rdquo; models.</p>
+<p>Post-development of AlphaFold, Deepmind and EMBL worked together to generate predicted structures for 213M proteins in UniProp, resulting in <a href="https://github.com/deepmind/alphafold/blob/main/afdb/README.md">AlphaFold DB</a>. These predicted structures have since been used by &ldquo;inverse folding&rdquo; models like ESM-IF and ProstT5 to provide paired structure-sequence data for training and I expect more models will use them for similar purposes in the future. While using them comes with a risk of learning the wrong things from incorrectly predicted structures, initial indications from these models are that this risk can be mitigated.</p>
+<h2 id="function">Function</h2>
+<p>The post on models will discuss conditional models and when the one on evaluation will talk about predicting function as a downstream evaluations. Here, we briefly discuss the datasets used for both.</p>
+<p>When training conditional models, we use some sort of labels as either a prediction target or a conditioning token. The closest analogue to sequence and structure for function in terms of generality is taxonomy. For taxonomic labels, <a href="https://www.nature.com/articles/s41587-022-01618-2#data-availability">papers</a> have previously used <a href="https://www.ncbi.nlm.nih.gov/taxonomy">NCBI&rsquo;s taxonomy database</a> and <a href="https://pfam.xfam.org/">Pfam</a>.</p>
+<p>Datasets for more specific, quantitative functional labels vary much more by application and tend to be smaller. The <a href="https://www.biorxiv.org/content/10.1101/2021.11.09.467890v1">FLIP</a> paper collected labeled datasets for the purpose of evaluating prediction. <a href="https://arxiv.org/abs/2107.02968">Other papers</a> use synthetic datasets generated with <em>in silico</em> tools, although these tend to be more for demonstration than for downstream use. For antibodies, there are more labeled datasets such as the one used <a href="https://www.nature.com/articles/s41467-023-39022-2#data-availability">here</a>, but covering them in detail would require its own post.</p>
+<h1 id="conclusion">Conclusion</h1>
+<p>To summarize, most PLMs currently rely first and foremost on large sequence databases such as UniRef. More recently, models have started using structure alongside sequence for &ldquo;inverse folding&rdquo;, for which PDB and CATH provide a starting point but AlphaFold DB has enabled bigger performance jumps. Large labeled taxonomic datasets have also been used for training family-conditional models, but this area has been less explored. Finally, for more specific functions, datasets tend to be smaller or proprietary and so will vary more based on application.</p>
+</section>
+<section>
+  
+  <div id="disqus_thread"></div>
+  <script type="text/javascript">
+
+  (function() {
+      
+      
+      if (window.location.hostname == "localhost")
+          return;
+
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      var disqus_shortname = 'an1lam-github-io';
+      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  <a href="http://disqus.com/" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+  <footer class="page-footer">
+		<hr>
+		<ul class="page-footer-menu">
+		
+      <li><a href="https://github.com/an1lam"><i class='fa fa-github fa-2x'></i> </a></li>
+		
+      <li><a href="https://twitter.com/an1lam"><i class='fa fa-twitter fa-2x'></i> </a></li>
+		
+      <li><a href="mailto:stephenmalina@gmail.com"><i class='fa fa-envelope fa-2x'></i> </a></li>
+		
+      <li><a href="https://stackoverflow.com/users/1631855/an1lam"><i class='fa fa-stack-overflow fa-2x'></i> </a></li>
+		
+		</ul>
+
+  
+    <p>
+      Powered by <a href="https://gohugo.io">Hugo</a> and the
+      <a href="https://github.com/shawnohare/hugo-tufte">Tufte theme</a>.
+    </p>
+  
+
+	<div class="copyright">
+	<p>
+    
+      &copy; 2023
+    .
+    All rights reserved.
+    
+  </p>
+</div>
+</footer>
+
+
+
+</section>
+</article>
+</div>
+</body>
+</html>
