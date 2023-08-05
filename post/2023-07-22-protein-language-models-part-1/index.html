@@ -161,7 +161,6 @@ if (!doNotTrack) {
     <li><a href="#sequence">Sequence</a>
       <ul>
         <li><a href="#clustering">Clustering</a></li>
-        <li><a href="#multiple-sequence-alignments-msas">Multiple Sequence Alignments (MSAs)</a></li>
       </ul>
     </li>
     <li><a href="#structure">Structure</a></li>
@@ -345,7 +344,6 @@ Transception Table 6: Performance at different model sizes on different versions
 <input type="checkbox" id="sidenote-f627d589707ed9c9ecc9c7ec41c802d9-7" class="margin-toggle"/>
 <span class="sidenote"> One thing that could change the game here would be if methods in the space of active learning and/or reinforcement learning allow models to guide their own training and data point selection. There are some interesting <a href="https://arxiv.org/abs/2211.01568">initial results</a> in this direction, but as far as I know, no major public results with SoTA performance on benchmarks (admittedly a lagging indicator). </span>
 But right now, the takeaways for PLMs seem ambiguous. Preliminarily, it seems like autoregressive models may do better without clustering whereas MLMs seem to do best with it but this conclusion comes from something closer to an informal meta-analysis versus a single controlled experiment and so could easily change as so many have if someone were to compare everything carefully together. All we can really say with confidence is that &ldquo;more work is needed.&rdquo;</p>
-<h3 id="multiple-sequence-alignments-msas">Multiple Sequence Alignments (MSAs)</h3>
 <h2 id="structure">Structure</h2>
 <p><a href="https://www.nature.com/articles/s41586-021-03819-2">AlphaFold 2</a> and <a href="https://www.science.org/doi/10.1126/science.abj8754">RoseTTAFold</a> both take multiple sequence alignments (MSAs) as inputs for structure prediction. Multiple more recent folding models &ndash; <a href="https://www.biorxiv.org/content/10.1101/2022.07.20.500902v1.full">ESMFold</a>, <a href="https://www.biorxiv.org/content/10.1101/2022.07.21.500999v1.abstract">OmegaFold</a>, and <a href="https://www.biorxiv.org/content/10.1101/2021.08.02.454840v1">RGN2</a> &ndash; that have achieved comparable or nearly as good performance replaced MSA retrieval with sequence embedding as the first step in their models. For training the structure module, these models use a <a href="https://www.biorxiv.org/content/10.1101/2022.07.20.500902v1.full#:~:text=1.1.2%20Structure%20Training%20Sets">very similar subset</a> of the structures in the protein databank (PDB).</p>
 <p>Another source of structure data is the Class, Architecture, Topology, Hierarchy (<a href="https://www.cathdb.info/">CATH</a>) database. CATH contains 151 million protein domains classified into 5,841 superfamilies (at time of writing). More relevant to this, it contains a set of ~16,000 sequence/structure protein domain pairs that have been used both for evaluation of PLMs and for training &ldquo;inverse folding&rdquo; models.</p>
