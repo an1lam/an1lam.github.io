@@ -17,7 +17,8 @@
       <pubDate>Sat, 05 Aug 2023 00:00:00 +0000</pubDate>
       
       <guid>https://stephenmalina.com/post/2023-08-05-protein-language-models-part-2/</guid>
-      <description>_This is the second post in a series introducing protein language models. The other posts are:
+      <description>_I&amp;rsquo;m experimenting with Lilian Weng style review blog posts on topics I wish I&amp;rsquo;d had someone to explain to me when I got started in protein machine learning.
+This is the second post in a series introducing protein language models_. The other posts are:
  Protein Language Models (Part 1): Introduction &amp;amp; Datasets Protein Language Models (Part 2): Models Protein Language Models (Part 3): Benchmarks &amp;amp; Evaluation Protein Language Models (Part 4): Scaling Protein Language Models (Part 5): FAQ &amp;amp; Conclusion  This post focuses on the different types of PLMs with a specific focus on deviations from the standard LLM playbook.</description>
     </item>
     
