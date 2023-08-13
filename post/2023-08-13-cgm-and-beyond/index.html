@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en-us"><head>
+<title>CGM and Beyond: A mix of a dialogue and a debate - Stephen Malina</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description"
+    content="What are continuous glucose monitors good for? More broadly, what are continuous measures of physiology (CxM) good for?
+Similar to my Elliot and I&rsquo;s dialogue, this post has an unconventional format. It&rsquo;s both a synthesis of Willy&rsquo;s, Eryney&rsquo;s, and my opinions on continuous monitoring combined with a debate in places where we disagree. To try and make it clear which views are coming from each person, we&rsquo;ve annotated sections that come from a subset of us rather than all of us with e. ">
+<link rel="canonical" href="https://stephenmalina.com/post/2023-08-13-cgm-and-beyond/" />
+
+
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+
+
+
+
+
+
+
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="preload" as="style"
+      href="https://fonts.googleapis.com/css?family=Noto+Serif+SC|Noto+Emoji&display=swap" />
+<link rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Noto+Serif+SC|Noto+Emoji&display=swap"
+      media="print" onload="this.media='all'" />
+<noscript>
+<link rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Noto+Serif+SC&display=swap" />
+</noscript>
+
+
+
+
+
+
+<link rel="stylesheet" href="https://stephenmalina.com/css/hugo-tufte.min.css">
+
+
+
+<link rel="stylesheet" href="https://stephenmalina.com/css/hugo-tufte-options.min.css">
+
+<link rel="stylesheet" href="https://stephenmalina.com/css/hugo-tufte-override.css">
+
+</head>
+<body>
+
+
+<article id="main">
+  <section>
+<h1 class="content-title">CGM and Beyond: A mix of a dialogue and a debate</h1></section>
+
+  
+<section>
+  <details closed class="toc">
+    <summary>Table of Contents</summary>
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#cgms">CGMs</a></li>
+    <li><a href="#cgms-as-metaphor">CGMs as metaphor</a></li>
+    <li><a href="#the-future-of-cxm">The future of CxM</a></li>
+    <li><a href="#final-comments">Final comments</a></li>
+  </ul>
+</nav>
+  </details>
+</section>
+
+
+  <section><p>What are continuous glucose monitors good for? More broadly, what are continuous measures of physiology (<strong>CxM</strong>) good for?</p>
+<p><strong>Similar to my <a href="https://centuryofbio.com/">Elliot</a> and I&rsquo;s <a href="http://localhost:1313/post/2023-01-11-viriditas-dialogue/">dialogue</a>, this post has an unconventional format. It&rsquo;s both a synthesis of <a href="https://twitter.com/willyintheworld">Willy</a>&rsquo;s, <a href="">Eryney&rsquo;s</a>, and my opinions on continuous monitoring combined with a <a href="">debate</a> in places where we disagree. To try and make it clear which views are coming from each person, we&rsquo;ve annotated sections that come from a subset of us rather than all of us with e.g. &ldquo;Stephen&rsquo;s views&rdquo; or &ldquo;Willy&rsquo;s dissent&rdquo;.</strong></p>
+<h2 id="cgms">
+CGMs
+<a href="#cgms" class="heading-anchor">#</a>
+</h2>
+<p>First, a brief explanation of continuous glucose monitors (CGMs). CGMs are devices designed to supplement or replace the frequent blood sugar checks (done with a fingerstick device) that diabetics must perform several times daily. An even briefer primer on diabetes, of which there are two types:</p>
+<ol>
+<li>type 1 diabetes is effectively “insulin deficiency”, caused by autoimmune destruction of beta islet cells in the pancreas;</li>
+<li>type 2 diabetes is “insulin resistance” +/- varying degrees of insulin deficiency.</li>
+</ol>
+<p>The former must <em>always</em> supplement with insulin (“exogenous insulin”) to control their blood sugar and prevent ketoacidosis, since they don’t produce enough insulin; the latter, depending on many factors, can often avoid insulin use. Insulin use requires frequent, painful checking of blood sugar levels,  a large source of inconvenience for diabetics.</p>
+<p>The TL;DR on CGMs from a medical perspective is that they are useful for type 1 diabetics, and appear to allow for a lower <strong>average</strong> blood sugar level (usually measured through <a href="https://www.cdc.gov/diabetes/managing/managing-blood-sugar/a1c.html#:~:text=The%20A1C%20test%E2%80%94also%20known,care%20team%20manage%20your%20diabetes.">A1C</a>) while avoiding dangerously low blood sugar levels (hypoglycemia). Lower A1C, all else equal, tends to predict lower long-term complications of diabetes, subject to many caveats– for example, patients with low remaining life expectancy, like elderly patients or those with multiple comorbidities, are not advised to aim for low A1C, since the cost of getting there (higher rates of adverse effects like fainting from hypoglycemia) is higher, while the benefit is unlikely to be realized.</p>
+
+
+    <figure >
+  
+    <label for="marginfig-1" class="margin-toggle marginnote-ind">⊕</label>
+    <input type="checkbox" id="marginfig-1" class="margin-toggle"/>
+    <span class="marginnote">
+
+
+Source: <a href="https://diabetesjournals.org/care/article/44/Supplement_1/S73/30909/6-Glycemic-Targets-Standards-of-Medical-Care-in">https://diabetesjournals.org/care/article/44/Supplement_1/S73/30909/6-Glycemic-Targets-Standards-of-Medical-Care-in</a> (Fig. 6.2)
+
+
+
+</span>
+
+
+
+  
+  <img src="https://stephenmalina.com/images/glycemic-targets-fig6_2.jpeg" alt="Image">
+  
+
+
+
+
+</figure>
+
+
+<p>For type 2 diabetics, there is <a href="https://www.aafp.org/pubs/afp/issues/2020/0601/p646.html">debate</a> over whether there is <em>any</em> benefit of using CGMs, and many payers (government, insurance companies) place significant documentation barriers to obtaining them (<a href="https://www.cms.gov/medicare-coverage-database/view/lcd.aspx?lcdid=33822">ctrl + f CMS’s policy “to be eligible for coverage..”</a>), especially given their non-trivial cost.</p>
+<p><em><strong>Willy&rsquo;s view</strong></em>:  Enter CGMs for non-diabetics. Tracing this idea to its inception is difficult, but the most visible CGM company in this space is Levels. Why does Levels believe that non-diabetics will benefit from CGMs? Their <a href="https://www.levelshealth.com/blog/the-secret-levels-master-plan-just-between-you-and-me-cgm-glucose">“master plan” blog post</a> appears to hinge on behavioral change as the key, but also mixes in the possibility that better glucose control in non-diabetics has some impact as well:</p>
+<blockquote cite="">
+<p>Levels helps you see how food affects your health&hellip;there hasn’t been a way to quantify how your diet affects you&hellip;In the same way that everyone knows to get eight hours of sleep, and how Fitbit convinced people that walking 10,000 steps is a good target for exercise, we will show people that maintaining a flat glucose curve is optimal for lifestyle and long-term metabolic health&hellip;.We all know that eating a box of donuts is bad for us in a general, ill-defined sense, but without an immediate consequence like pain or death, it’s hard to feel compelled to overcome the powerful rewards of smell, texture, and taste.</p>
+<p>By quantifying the consequence of a choice in real-time, we can effectively close the loop on diet, connecting a specific action to the nature and degree of the reaction, and allowing us to continuously improve our choices.</p>
+<footer></footer>
+</blockquote>
+<p>In another blog post, they elaborate the argument on better glucose control more:</p>
+<blockquote cite="">
+<p>Frequent glucose spikes have also been linked to inflammation, <a href="https://cardiab.biomedcentral.com/articles/10.1186/1475-2840-8-23">blood vessel damage</a>, <a href="https://www.ncbi.nlm.nih.gov/pubmed/29295838">weight gain</a>, and other changes that predict poor long-term health. And though absolute glucose levels matter, studies show that large spikes and dips in blood sugar can <a href="https://www.ncbi.nlm.nih.gov/pubmed/18299315">damage tissues</a> more than high but stable numbers. Based on this research, we believe that glucose stability is critical to improving metabolic health.</p>
+<footer></footer>
+</blockquote>
+<p>An opinionated but abbreviated summary of the studies in that link is:</p>
+<ul>
+<li>On <a href="https://cardiab.biomedcentral.com/articles/10.1186/1475-2840-8-23">blood vessel damage</a>: there is suggestive evidence that measuring spikes of blood sugar after meals in diabetics (“post-prandial” hyperglycemia) may better predict health consequences like heart disease versus average blood sugar, and that medications that blunt that spike may work better than other diabetes meds, but this seems far from settled. More importantly, extrapolating this to non-diabetics, who, <a href="https://diabetes.org/diabetes/a1c/diagnosis">by definition</a>, cannot have post-prandial glucose spikes that exceed 199 mg/dL, is a <em>stretch</em>.</li>
+<li>On weight gain: The carbohydrate-insulin theory of obesity is far from obviously correct. At most, it is one of a few plausible theories to explain the obesity epidemic. Here is a <a href="https://twitter.com/sguyenet/status/1438925069888020483">good Twitter thread</a> from someone arguing against it, but with proponents of both sides linking to relevant evidence that is worth reading.</li>
+<li>On glucose oscillation <a href="https://diabetesjournals.org/diabetes/article/57/5/1349/13528/Oscillating-Glucose-Is-More-Deleterious-to">damaging tissues</a>: this study shows that intentionally varying blood glucose levels into spikes and dips increased markers of blood vessel dysfunction and oxidative stress more than a continually high blood sugar. The connection to long-term health is uncertain.</li>
+</ul>
+<p>A better summary of the literature is this <a href="https://peterattiamd.com/are-continuous-glucose-monitors-a-waste-of-time-for-people-without-diabetes/">Peter Attia blog post</a>, which cites several studies:</p>
+<blockquote cite="">
+<p>higher glucose variability and higher (and more) peak glucose levels are each independently associated with accelerated onset of disease and death, even in nondiabetics_&hellip;_In the vast majority of cases, today’s normal individual is tomorrow’s diabetic patient if something isn’t done to detect and prevent this slide. Not only that, but prospective studies also demonstrate a continuous increase in the associated risk for <a href="https://pubmed.ncbi.nlm.nih.gov/15381514/">cardiovascular disease</a>, <a href="https://pubmed.ncbi.nlm.nih.gov/23877989/">cardiovascular death</a>, and <a href="https://pubmed.ncbi.nlm.nih.gov/21584793/">deaths from all causes</a> throughout a broad range of HbA1c values beginning at 5.0%. Similar trends are observed for elevated HbA1c values and higher rates of <a href="https://pubmed.ncbi.nlm.nih.gov/30198309/">frailty</a>, <a href="https://pubmed.ncbi.nlm.nih.gov/23924004/">cognitive decline and dementia</a>, <a href="https://pubmed.ncbi.nlm.nih.gov/33063540/">COVID-19 hospitalizations and death</a>, and <a href="https://pubmed.ncbi.nlm.nih.gov/25216509/">cancer mortality</a>, suggesting that lowering your average glucose levels even when they might be deemed normal by traditional cutoff points can make a difference.”</p>
+<footer></footer>
+</blockquote>
+<p>In addition, there are very high-quality mouse studies done by the NIA ITP showing two different drugs that lower postprandial glucose peaks (<a href="https://pubmed.ncbi.nlm.nih.gov/24245565/">acarbose</a> and <a href="https://pubmed.ncbi.nlm.nih.gov/32990681/">canagliflozin)</a> improve male mouse lifespan.</p>
+<p>The overall finding from these epidemiological studies is that **even within non-diabetic populations, **a higher A1C tends to predict (years later) higher disease risk, and that higher glucose variability is an independent risk factor from higher average glucose. There aren’t any intervention studies in humans showing that lowering A1C outside of diabetics, or intervening on postprandial hyperglycemia, reduces risk. There are other explanations worth considering– for example, does poor overall health cause both more glucose variability and higher risk years later? – but I find this reasonably compelling.</p>
+<p>However, there’s no data that CGMs will modify that risk. In fact, the data that wearables (of which CGMs are a subset) have positive health effects at all is <a href="https://pubmed.ncbi.nlm.nih.gov/31302077/">pretty flimsy</a>. This makes sense, in that we should be skeptical of small things impacting individual behavior <a href="https://gwern.net/doc/sociology/1987-rossi#some-laws-of-evaluation">in general</a>. To their credit, Levels <a href="https://www.levelshealth.com/blog/research-studies-using-levels-to-learn-more-about-metabolic-health">appears to be</a> sponsoring a trial “Optimal Metabolic Health Through Continuous Glucose Monitoring” to try to answer this question, but <a href="https://classic.clinicaltrials.gov/ct2/show/NCT04920058">clinicals.gov page</a> doesn’t have an update since 2022 and a quick skim of the Principal Investigator’s <a href="https://pubmed.ncbi.nlm.nih.gov/?term=D%27Agostino+DP&amp;sort=date">pubmed page</a> didn’t show any sign of publications based on this trial. The number of secondary outcomes also doesn&rsquo;t inspire confidence, as unless all are reported in the follow-up papers, it allows for p-hacking.</p>
+<p>The dream study would directly answer the following question: <strong>In non-diabetics, does being randomly assigned a Levels device affect important behavior or health outcomes?</strong> In order of practicality:</p>
+<ol>
+<li>Studying some health outcomes in a non-diseased population would take an impractically large and/or long trial, since measuring something like heart attack risk, which would be very low in a healthy population, would require waiting a long time or using a huge sample to acquire enough events.</li>
+<li>Some outcomes, like weight loss, would be more practical, and would still be valuable to show– knowing that being randomly assigned a CGM caused weight loss would be quite valuable!</li>
+<li>Merely knowing that being randomly assigned a CGM reduced postprandial glucose spikes by, say, 10%, in non-diabetics, would still be valuable, though it would ultimately leave certain important question– do postprandial glucose spikes per se even matter, does that degree of glucose lowering have an effect on things we care about? – unanswered.</li>
+</ol>
+<p><em><strong>Stephen&rsquo;s dissent:</strong></em> While I&rsquo;m not a strong believer in the strong form of the carbohydrate-insulin hypothesis (e.g. I believe calories matter most for weight control), I think this overstates the evidence against CGMs. In linking <a href="https://pubmed.ncbi.nlm.nih.gov/31302077/">this study</a>, you conflates activity trackers (FitBits and mobile health apps) with CGMs. I view this as questionable given that most metabolic health problems in the US are at least largely dietary and therefore I&rsquo;d expect CGMs to have a much bigger impact on them than step trackers.</p>
+<p>On top of that, I suspect you and I just disagree on how much one should be willing to trade an imperfect proxy for faster feedback loops. As Max Hodak <a href="https://twitter.com/maxhodak_/status/1197580789497528325?s=20">puts</a> <a href="https://maxhodak.com/nonfiction/2016/10/26/fast-progress-requires-strong-gradients.html">it</a>, I view having &ldquo;strong gradients&rdquo; (aka directional fast feedback loops) as extremely important for progress and therefore view CGMs with a realtime UX to close the loop as a big step forward. I maybe wrongly place your view as closer to the medical one that places a lot of emphasis on not using the wrong metric. IMO, this view makes a lot of sense in the context of tests where subsequent interventions (e.g. surgery) can be extremely costly and dangerous but less in cases where behavioral change is cheap. Because of this, my summarized view is that as long as one doesn&rsquo;t use them as their <em>only metric</em> it&rsquo;s probably ok that CGMs are not a perfect biomarker for all-things-considered metabolic health and they&rsquo;re still probably valuable for many people who want to understand how food affects them to try.</p>
+<h2 id="cgms-as-metaphor">
+CGMs as metaphor
+<a href="#cgms-as-metaphor" class="heading-anchor">#</a>
+</h2>
+<p><em><strong>Willy, Stephen, and Eryney&rsquo;s shared view</strong></em></p>
+<p>The idea of a continuous glucose monitor suggests the idea of a CxM monitor– continuous (or highly frequent) monitors of many physiological variables. Here are some examples from clinical medicine:</p>
+<ol>
+<li><a href="https://www.ncbi.nlm.nih.gov/books/NBK556127/">Arterial line</a> to measure real-time and precise blood pressure</li>
+<li><a href="https://www.edwards.com/healthcare-professionals/products-services/hemodynamic-monitoring/flotrac">Flow-trac</a> to measure key cardiac variables in real-time</li>
+<li>Pulse oximeter to measure blood oxygen saturation</li>
+</ol>
+<p>Stepping back, current wearables have various sensors that directly measure or infer various physiological parameters, and then generate scores to summarize that data. In the <a href="https://ouraring.com/blog/ring-technology/">Oura ring</a> case, it measures heart rate, heart rate variability, respiration, body temperature, and movement, and then <a href="https://ouraring.com/blog/the-oura-difference/">generates</a> a sleep score, readiness score, and activity score.</p>
+<p>Without delving too deep into any specific wearable, wearables generally do a good job measuring what they purport to measure, but the connection to long-term health outcomes down the road is currently very tenuous. Most of the claims depend on behavioral change coming effectively for free along with more accurate measurement and self-knowledge, and I (<em><strong>Willy</strong></em>) am skeptical given the <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4209007/">failure of calorie labeling</a> to nudge the obesity needle.</p>
+<p>More importantly, the much better case for wearables should instead rely on the following arguments:</p>
+<ol>
+<li>Wearables are <strong>fun</strong>
+<ul>
+<li>Consumers appear to enjoy knowing more information about their health, even if it doesn&rsquo;t help them– in fact, they’re willing to pay hundreds of $ for this! Consumer freedom is good!</li>
+</ul>
+</li>
+<li>Wearables will <strong><em>probably</em> help research</strong>
+<ul>
+<li>“Big data works”: in the long-run, given the success of LLMs at getting smarter by hoovering up any and all text data, simply generating more data for future biology-oriented AI to train on seems like a sensible move. Other evidence along these lines is the success of the <a href="https://www.ukbiobank.ac.uk/learn-more-about-uk-biobank/our-impact/celebrating-15-years-of-uk-biobank">UK biobank</a> and other similar efforts that link genotype, phenotype measurements, and EHR (electronic health record) data.</li>
+<li>Biological research especially lacks strong sources of high quality temporal data</li>
+</ul>
+</li>
+<li>Wearables will <strong>probably get cheaper</strong>
+<ul>
+<li>While other medical data won’t, because the latter is much more dependent on skiller labor (to draw blood, physically run blood samples, etc.), and therefore subject to Baumol’s cost disease. By contrast, wearables have become more sophisticated while staying at roughly the same price point overtime. I expect this trend to continue, though I haven’t studied this question in-depth.</li>
+</ul>
+</li>
+<li>Wearables will <strong>probably get better</strong>:
+<ul>
+<li>Getting beyond the traditional biomarkers captured in blood-based assays is a critical component of generating deeper data to feed into powerful ML models. While much consumer technology today is focused on capturing vitals like heart rate and blood oxygenation, the next wave of wearables ought to focus on things that point to our health on a molecular level.</li>
+<li>Hormones seem like a promising next step, and presents a substantial opportunity beyond insulin. The early stage company <a href="https://eli.health/">Eli Health</a> is working on creating a consumer-targeted device for daily monitoring of various endocrine markers from saliva alone, with a specific goal of targeting reproductive health. A line can further be extended to integration into a wearable. Nothing quite as fun as licking a metal probe on your watch! Once the technology is there and a market is proven we’ll inevitably see movement into the men’s health space as well.</li>
+<li>We can’t get real time omics data on a cheap enough basis to make this feasible today, but the rapid progress of long read sequencing from companies like <a href="https://nanoporetech.com/applications/dna-nanopore-sequencing">Oxford Nanopore</a> will inevitably open up new possibilities with integration into wearables. While the timeline seems a little aggressive,<a href="https://johnkoetsier.com/wearable-dna-sequencing-devices-just-4-5-years-away-dr-roel-wuyts-principal-scientist-at-imec/"> researchers at IMEC</a> are currently working on bringing this vision to reality.</li>
+</ul>
+</li>
+<li>Wearables may allow for an <strong>end-run around siloed health data</strong>,
+<ul>
+<li>though the latter will have much more sophisticated (and non-overlapping) data, at least for the medium-term.</li>
+<li>This matters more for the US healthcare and research system, which has been underwhelming in its equivalent to the UK Biobank (eg, the NIH AllofUS and the Million Veterans program have not produced nearly as many papers as the UK Biobank)</li>
+</ul>
+</li>
+<li>Wearables <strong>might eventually be useful</strong> (to consumers, and not just researchers), if there’s data showing it actually changes behavior or outcomes we care about.</li>
+</ol>
+<p>Put together, these are reasons to be hopeful that recreational wearables, while currently of questionable utility to consumers, will probably get cheaper and better, generate useful data for researchers to train ML models on, might eventually translate into surrogate markers for trials, and could route around a broken health privacy regulatory system. This pattern of recreational excitement leading to genuine innovation in an unrelated field can be best captured when considering the GPU’s highest utility, for a very very long time, was purely for gaming. Enough iteration and ingenuity eventually got us to where we are today with scientific computing and AI.</p>
+<p>The best part about this is it highlights an underappreciated (but common) form of funding publically useful R&amp;D: make early products attractive to rich people, and as costs drop, adoption will scale correspondingly. If such products generate positive externalities, all the better!</p>
+<h2 id="the-future-of-cxm">
+The future of CxM
+<a href="#the-future-of-cxm" class="heading-anchor">#</a>
+</h2>
+<p><em><strong>Stephen and Eryney&rsquo;s view:</strong></em><br>
+Right now, wearables are limited by the readouts they focus on, which is mostly dictated by what humans can currently make sense of. While a good start, glucose, heart rate, and even blood oxygen levels provide coarse-grained snapshots of overall biological state that work better for flagging problems than for identifying root causes. All of the above treats the future of CxM as an incremental progression expanding into similar readouts.</p>
+<p>Instead, we can imagine a more radical future that, to be clear, assumes multiple engineering breakthroughs. To understand the full power of CxM, we should envision continuous monitoring that captures higher resolution biological variables such as transcriptomics, the full suite of hormones (cortisol, ghrelin, norepinephrine, testosterone, etc.), gut health, EEG, accelerometer, and potentially other important biological variables. At a certain point, a phase shift could happen where the scope of the measurements combined with the spatial and temporal resolution could make the data something closer to a comprehensive real time snapshot of biological state.</p>
+<p>For individual health, this could allow us to track the impact of a whole range of interventions more closely. As an example, this might look like tracking liver enzymes minute-by-minute after starting on a new prescription (at different doses no less) or monitoring how different forms of exercise shift your transcriptomics. Paired with ML, a nice UX, and other means of parsing the data, this would be a realtime dashboard for what’s going on in a person’s body.</p>
+<p>Having so much high resolution real time data could also improve research. Much of biological function emerges from dynamics, yet biological research often requires reconstructing temporal trajectories (see, for example, <a href="https://www.nature.com/articles/s41586-018-0414-6">RNA velocity</a>) using careful methods vs. observing them directly or relying on very coarse-grained snapshots at the level of days or even weeks rather than seconds, minutes, or hours. Measurements like transcriptomics currently require removing tissue and “freezing” it to get a snapshot of the molecular state at biospy. This means we rarely have concurrent readouts from multiple different types of measurements across scales (e.g. transcriptomics, hormones, heart rate, glucose, etc.) If research could instead start with data coming from high temporal resolution on a rich set of concurrent readouts, researchers could gain more information about how their target of study impacts biological systems.</p>
+<p>As a clinical example, imagine if Phase I-III trial collected these measurements on subjects throughout the trial. Just as real time monitoring of engineered systems can help avoid catastrophic outcomes, monitoring all this information in trials could help notice and avert expected and unexpected adverse events. And similar to how airplane black boxes allow reconstructing the important information that led to a crash, in cases where adverse events still occur, having the full history of these metrics could enable better root cause analysis of failures.</p>
+<p>Again, actually reaching this world requires many breakthroughs in our ability to noninvasively, nondestructively, and cheaply track so many markers and layers of biological state. However, achieving this goal would not just marginally improve health or research but would instead level up our ability to understand and manipulate human (and animal) biology.</p>
+<p><em><strong>Willy’s dissent:</strong></em></p>
+<p>I agree that a CxM would be very valuable in research for the reasons you mention, but I have serious reservations about its clinical utility. Apart from the hard technical problems that lie between current capabilities and this vision, the problem of “why does this real-time multi-dimensional data feed even matter” would need answering. The central problem, conditional on this impressive technical feat being achieved, is going from this to a clinically or individually actionable answer. One approach, consistent with the current regulatory and payer pathway for medical-grade CGMs, is running an RCT, looking at 1 or more clinical endpoints[^1] compared to standard-of-care, and approving (and insurance paying) on that basis. A looser alternative would be validating this health metric on a clinical endpoint– perhaps by conducting a trial as described before– and then letting that health metric be the basis of subsequent approvals (using the health metric as a “surrogate endpoint”). It&rsquo;s hard to imagine either of these approaches eventually scaling to a future CxM tracking overall “health” or biological age or “readiness score” with some ML model getting input from two dozen different data sources. If we assume this CxM can bypass FDA oversight as a “recreational&rsquo;&rsquo; wearable, we are still left wondering why we should trust that monitoring a “health” metric would improve our health. If my Oura ring or Eight Sleep mattress tells me I slept badly, but I feel fine, why should I trust it? If my workout tracker tells me my readiness score is low, but I hit a gym PR, who was right? Without external validation, these metrics quickly lose relevance.</p>
+<p>I agree that in the limit, high enough resolution biological monitoring should enable high resolution understanding, but between the present and that futurist vision, I’m unsure how useful CxM’s will be. A milestone that would push me towards “this CxM might be useful, and not require a trial demonstrating clinical utility for me to buy in&rsquo;&rsquo; is a CxM in a mouse that could reliably predict future aspects of a mouse’s health and anticipate the effects of interventions on it. Validating the importance of these real-time measurements in a mouse (whose lifespan is 2- 3 years) would be logistically feasible.</p>
+<h2 id="final-comments">
+Final comments
+<a href="#final-comments" class="heading-anchor">#</a>
+</h2>
+<p>Wearables today <em>may</em> provide value to users by making them more attuned to their health via metrics like heart rate and sleep patterns, as well as providing immediate information on responses to behavioral change, but these benefits are uncertain. For researchers, current wearable tech might provide modest value in aggregate. Over the longer-term, better and novel sensors, adopted at scale, might provide much more value– all helped along by the industry of “recreational wearables” whose R&amp;D is subsidized by wealthy and health-conscious users.</p>
+</section>
+  <section><footer class="page-footer">
+<hr />
+
+<div class="previous-post" style="display:inline-block;">
+  
+  <a class="link-reverse" href="https://stephenmalina.com/post/2023-06-07-editing-part-i/?ref=footer">« What are the bottlenecks to safe, repeatable edits...</a>
+  
+</div>
+
+<div class="next-post", style="display:inline-block;float:right;">
+  
+</div>
+
+<ul class="page-footer-menu">
+  
+  
+  <li><a href="https://twitter.com/an1lam">Twitter</a></li>
+  
+
+  
+  <li><a href="https://github.com/an1lam">GitHub</a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <li><a href="https://scholar.google.com/citations?user=Q6_3PJEAAAAJ">Google Scholar</a></li>
+  
+  
+  
+    <li><a href="https://github.com/an1lam"><i class='fa fa-github fa-2x'></i>  </a></li>
+  
+    <li><a href="https://twitter.com/an1lam"><i class='fa fa-twitter fa-2x'></i>  </a></li>
+  
+    <li><a href="mailto:stephenmalina@gmail.com"><i class='fa fa-envelope fa-2x'></i>  </a></li>
+  
+    <li><a href="https://stackoverflow.com/users/1631855/an1lam"><i class='fa fa-stack-overflow fa-2x'></i>  </a></li>
+  
+</ul>
+
+
+<p>
+  Powered by <a href="https://gohugo.io">Hugo</a> and the
+  <a href="https://github.com/loikein/hugo-tufte">Tufte theme</a>.
+</p>
+
+
+
+
+</footer>
+</section>
+  <section><nav class="menu">
+    <ul>
+    
+        <li><a href="https://stephenmalina.com/">Home</a></li>
+    
+        <li><a href="https://stephenmalina.com/about">About</a></li>
+    
+        <li><a href="https://stephenmalina.com/post">Post</a></li>
+    
+        <li><a href="https://stephenmalina.com/bets">Bets</a></li>
+    
+        <li><a href="https://stephenmalina.com/subscribe">Subscribe</a></li>
+    
+        <li><a href="https://stephenmalina.com/tags">Tags</a></li>
+    
+    </ul>
+</nav>
+</section>
+</article>
+
+
+
+
+
+
+
+  <script>(function(){var e,t,n,s=document.getElementsByTagName("code");for(n=0;n<s.length;){if(t=s[n],t.parentNode.tagName!=="PRE"&&t.childElementCount===0&&!t.classList.contains("nolatex")&&(e=t.textContent,/^\$[^$]/.test(e)&&/[^$]\$$/.test(e)&&(e=e.replace(/^\$/,"\\(").replace(/\$$/,"\\)"),t.textContent=e),/^\\\((.|\s)+\\\)$/.test(e)||/^\\\[(.|\s)+\\\]$/.test(e)||/^\$(.|\s)+\$$/.test(e)||/^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(e))){t.outerHTML=t.innerHTML;continue}n++}})()</script>
+
+
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.css" crossorigin="anonymous">
+<script defer src="//cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.js" crossorigin="anonymous"></script>
+<script defer src="//cdn.jsdelivr.net/npm/katex@0.16.4/dist/contrib/auto-render.min.js" crossorigin="anonymous"></script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        renderMathInElement(document.body, {
+            
+            
+            
+            
+            
+            
+            trust: (context) => ['\\htmlId', '\\href'].includes(context.command),
+            macros: {
+              "\\eqref": "\\href{###1}{(\\text{#1})}",
+              "\\ref": "\\href{###1}{\\text{#1}}",
+              "\\label": "\\htmlId{#1}{}"
+            }
+        });
+    });
+</script>
+
+
+
+</body>
+
+</html>

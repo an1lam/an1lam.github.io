@@ -1,28 +1,15 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
-
-<head>
-<title>Stephen Malina - Statistical Models - Theory and Practice</title>
-  <meta http-equiv="content-type" content="text/html; charset=utf-8">
-
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="">
-<meta name="keywords" content="">
-<meta name="author" content="Stephen Malina">
-<meta name="generator" content="Hugo 0.68.3" />
-
-  
-  
+<html lang="en-us"><head>
+<title>Statistical Models - Theory and Practice - Stephen Malina</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description"
+    content="Questions # What does the regression equation mean? Is the idea that we get bigger $ r $ values when $ x $ and $ y $ deviate together? What does it mean for a function to be convex beyond $ f((x &#43; y) / 2)) \leq (f(x) &#43; f(y)) / 2 $? Put another way, why is this the proof of convexity? $$ h\{son} = slope * h\{father} &#43; yint = 70. ">
+<link rel="canonical" href="https://stephenmalina.com/post/2018-06-12-statistical-models-ch-2/" />
 
 
 
-
-
-
-<link rel="stylesheet" href="https://unpkg.com/purecss@2.0.3/build/pure-min.css">
-
-
-    <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.3/build/grids-responsive-min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 
 
@@ -31,100 +18,46 @@
 
 
 
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
 
-<link rel="stylesheet" href="https://stephenmalina.com/css/tufte.css">
-<link rel="stylesheet" href="https://stephenmalina.com/css/hugo-tufte.css">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="preload" as="style"
+      href="https://fonts.googleapis.com/css?family=Noto+Serif+SC|Noto+Emoji&display=swap" />
+<link rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Noto+Serif+SC|Noto+Emoji&display=swap"
+      media="print" onload="this.media='all'" />
+<noscript>
+<link rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Noto+Serif+SC&display=swap" />
+</noscript>
+
+
+
+
+
+
+<link rel="stylesheet" href="https://stephenmalina.com/css/hugo-tufte.min.css">
+
+
+
+<link rel="stylesheet" href="https://stephenmalina.com/css/hugo-tufte-options.min.css">
+
 <link rel="stylesheet" href="https://stephenmalina.com/css/hugo-tufte-override.css">
 
-  
-<script type="application/javascript">
-var doNotTrack = false;
-if (!doNotTrack) {
-	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-	ga('create', 'UA-187780632-1', 'auto');
-	
-	ga('send', 'pageview');
-}
-</script>
-
-  
-<script type="application/javascript">
-var doNotTrack = false;
-if (!doNotTrack) {
-	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
-	ga('create', 'UA-187780632-1', 'auto');
-	
-	ga('send', 'pageview');
-}
-</script>
-<script async src='https://www.google-analytics.com/analytics.js'></script>
-
 </head>
-
-
 <body>
-<div id="layout" class="pure-g">
-<article class="pure-u-1">
-<header class="brand">
-  <h1>Stephen Malina</h1>
-  <h2>This is my blog. There are many others like it but this one is mine.</h2>
-  <nav class="menu">
-    <ul>
-    
-        <li><a href="https://stephenmalina.com/">Home</a></li>
-    
-        <li><a href="https://stephenmalina.com/about">About</a></li>
-    
-        <li><a href="https://stephenmalina.com/post">Post</a></li>
-    
-        <li><a href="https://stephenmalina.com/bets">Bets</a></li>
-    
-        <li><a href="https://stephenmalina.com/subscribe">Subscribe</a></li>
-    
-        <li><a href="https://stephenmalina.com/tags">Tags</a></li>
-    
-    </ul>
-</nav>
 
-</header>
 
-<section>
-<h1 class="content-title">
+<article id="main">
+  <section>
+<h1 class="content-title">Statistical Models - Theory and Practice</h1><p class=subtitle>Chapter 2 - Observational Studies and Experiments</p></section>
+
   
-  <a href="https://stephenmalina.com/post/2018-06-12-statistical-models-ch-2/">Statistical Models - Theory and Practice</a>
-  
+
+  <section><h1 id="questions">
+Questions
+<a href="#questions" class="heading-anchor">#</a>
 </h1>
-
-<p class=subtitle>Chapter 2 - Observational Studies and Experiments</p>
-
-  <span class="content-meta">
-    
-
-
-    
-      <i class="fa fa-calendar"></i>
-      &nbsp;Jun 12, 2018
-    
-
-    
-      &nbsp;<i class="fa fa-clock-o"></i>
-      &nbsp;8 min read
-    
-
-    
-  </span>
-
-
-</section>
-
-
-
-<section><h1 id="questions">Questions</h1>
 <ul>
 <li>What does the regression equation <em>mean</em>? Is the idea that we get bigger $ r $ values when $ x $ and $ y $ deviate together?</li>
 </ul>
@@ -132,8 +65,14 @@ if (!doNotTrack) {
 <li>What does it mean for a function to be convex beyond $ f((x + y) / 2)) \leq (f(x) + f(y)) / 2 $? Put another way, why is this the proof of convexity?</li>
 </ul>
 <p>$$ h\<em>{son} = slope * h\</em>{father} + yint = 70.908in $$</p>
-<h1 id="exercises">Exercises</h1>
-<h2 id="set-a">Set A</h2>
+<h1 id="exercises">
+Exercises
+<a href="#exercises" class="heading-anchor">#</a>
+</h1>
+<h2 id="set-a">
+Set A
+<a href="#set-a" class="heading-anchor">#</a>
+</h2>
 <ol>
 <li>
 <p>In the Pearson-Lee data, the average height of the fathers was 67.7 inches; the SD was 2.74 inches. The average height of the sons was 68.7 inches; the SD was 2.81 inches. The correlation was 0.501.
@@ -158,7 +97,10 @@ $$  RMSE = .008 cm $$</p>
 <p>The correlation coefficient is a good descriptive statistic for the first plot because its points closely approximate a line. The other two graphs approximate a curve and two disjoint clusters respectively.</p>
 </li>
 </ol>
-<h2 id="set-b">Set B</h2>
+<h2 id="set-b">
+Set B
+<a href="#set-b" class="heading-anchor">#</a>
+</h2>
 <ol>
 <li>
 <p>In Equation (1), variance applies to data, or random variables? What about correlation in Equation (4)?</p>
@@ -175,14 +117,14 @@ $$
 r = \frac{1}{n} \sum_{1}^{n}\frac{(x - \bar{x})}{s_x} * \frac{(y-\bar{y})}{s_y}
 $$</p>
 <p>$$
-\bar{y} = 439.208 \\\<br>
-\bar{x} = 4 \\\<br>
-s_y = \sqrt{\frac{1}{5} * (.04326 + .00744 + .000005 + .0104 + .03686)} \\\<br>
-s_y = \sqrt{.01966} = .14020 \\\<br>
-s_x = \sqrt{\frac{1}{5} * (16 + 4 + 0 + 4 + 16)} = \sqrt{8} = 2.82843 \\\<br>
-r = \frac{1}{5} * (2.09812 + .44383 + 0 + .51444 + 1.93672) = \frac{4.99312}{5} = .99862 \\\<br>
-\hat{b} = r * s_y / s_x = .04950 \\\<br>
-\hat{a} = 439.01 \\\<br>
+\bar{y} = 439.208 \\\
+\bar{x} = 4 \\\
+s_y = \sqrt{\frac{1}{5} * (.04326 + .00744 + .000005 + .0104 + .03686)} \\\
+s_y = \sqrt{.01966} = .14020 \\\
+s_x = \sqrt{\frac{1}{5} * (16 + 4 + 0 + 4 + 16)} = \sqrt{8} = 2.82843 \\\
+r = \frac{1}{5} * (2.09812 + .44383 + 0 + .51444 + 1.93672) = \frac{4.99312}{5} = .99862 \\\
+\hat{b} = r * s_y / s_x = .04950 \\\
+\hat{a} = 439.01 \\\
 $$</p>
 <p>So, our regression line is  $ y = 439.01 + .04950 * x $ .</p>
 </li>
@@ -199,8 +141,8 @@ $$</p>
 <p>A dice is rolled 180 times. Find the expected number of aces and the expected &ldquo;give or take&rdquo; of that number.</p>
 <p>Let  $ S = A_1 + A_2 + &hellip; + A_180 $  be a random variable that represents the total number of aces.
 $$
-E(S) = \sum_1^180 E(A_i) = \frac{1}{6} * 180 = 30 \<br>
-var(S) = var(A_1 + A_2 + &hellip; + A_180) = var(A_1) + var(A_2) + &hellip; var(A_180) = 180 * var(A_1) = 180 * (\frac{1}{6} * \frac{5}{6}) = \frac{180 * 5}{36} = 5 \<br>
+E(S) = \sum_1^180 E(A_i) = \frac{1}{6} * 180 = 30 \
+var(S) = var(A_1 + A_2 + &hellip; + A_180) = var(A_1) + var(A_2) + &hellip; var(A_180) = 180 * var(A_1) = 180 * (\frac{1}{6} * \frac{5}{6}) = \frac{180 * 5}{36} = 5 \
 $$</p>
 <p>Hence, we expect 30 aces, give or take 5 when rolling a fair dice 180 times.</p>
 </li>
@@ -220,7 +162,7 @@ $$</p>
 <p>Out of 100, we should expect 50 to be &ldquo;2&quot;s, 25 to be &ldquo;1&quot;s, and 25 to be &ldquo;5&quot;s. Hence, we can immediately eliminate &ldquo;1&rdquo; as an option.</p>
 <p>Let  $ S_2 = \sum_i^{100} A_i $  where  $ A_i $  is a random variable with value one for every roll that comes out as 2.</p>
 <p>$$
-var(S_2) = 100 * var(A_i) = 100 * \frac{1}{4} = 25 \<br>
+var(S_2) = 100 * var(A_i) = 100 * \frac{1}{4} = 25 \
 SE(S_2) = \sqrt{25} = 5
 $$</p>
 <p>Therefore, 54 &ldquo;2&quot;s is in fact .8 SEs above the expected value of 50 &ldquo;2&quot;s.</p>
@@ -228,7 +170,7 @@ $$</p>
 It&rsquo;s either the number of &ldquo;5&quot;s drawn or the sum of the draws.</p>
 <p>Let $S_5 = \sum_i^100 A_i$ where $A_i$ is a random variable representing the choice of a 5.
 $$
-var(S_5) = 100 * var(A_i) = 100 * (\frac{1}{4}) * (\frac{3}{4}) = \frac{75}{4} \<br>
+var(S_5) = 100 * var(A_i) = 100 * (\frac{1}{4}) * (\frac{3}{4}) = \frac{75}{4} \
 SE(S_5) = \sqrt{\frac{75}{4}} = 4.33
 $$</p>
 <p>Thus, the number of fives is less than 1 SE above the mean, meaning the sum of the draws must be 1.33 SEs above its expected value.</p>
@@ -259,45 +201,99 @@ The observed value of a random variable.</p>
 </ol>
 <p>&hellip; Last few exercises done on paper, will write up eventually.</p>
 </section>
-<section>
-  
+  <section><footer class="page-footer">
+<hr />
 
-  <footer class="page-footer">
-		<hr>
-		<ul class="page-footer-menu">
-		
-      <li><a href="https://github.com/an1lam"><i class='fa fa-github fa-2x'></i> </a></li>
-		
-      <li><a href="https://twitter.com/an1lam"><i class='fa fa-twitter fa-2x'></i> </a></li>
-		
-      <li><a href="mailto:stephenmalina@gmail.com"><i class='fa fa-envelope fa-2x'></i> </a></li>
-		
-      <li><a href="https://stackoverflow.com/users/1631855/an1lam"><i class='fa fa-stack-overflow fa-2x'></i> </a></li>
-		
-		</ul>
-
+<div class="previous-post" style="display:inline-block;">
   
-    <p>
-      Powered by <a href="https://gohugo.io">Hugo</a> and the
-      <a href="https://github.com/shawnohare/hugo-tufte">Tufte theme</a>.
-    </p>
+  <a class="link-reverse" href="https://stephenmalina.com/post/2018-06-09-statistical-models-ch-1/?ref=footer">« Statistical Models - Theory and Practice</a>
   
-
-	<div class="copyright">
-	<p>
-    
-      &copy; 2023
-    .
-    All rights reserved.
-    
-  </p>
 </div>
+
+<div class="next-post", style="display:inline-block;float:right;">
+  
+  <a class="link-reverse" href="https://stephenmalina.com/progress/?ref=footer">State of my Mind »</a>
+  
+</div>
+
+<ul class="page-footer-menu">
+  
+  
+  <li><a href="https://twitter.com/an1lam">Twitter</a></li>
+  
+
+  
+  <li><a href="https://github.com/an1lam">GitHub</a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <li><a href="https://scholar.google.com/citations?user=Q6_3PJEAAAAJ">Google Scholar</a></li>
+  
+  
+  
+    <li><a href="https://github.com/an1lam"><i class='fa fa-github fa-2x'></i>  </a></li>
+  
+    <li><a href="https://twitter.com/an1lam"><i class='fa fa-twitter fa-2x'></i>  </a></li>
+  
+    <li><a href="mailto:stephenmalina@gmail.com"><i class='fa fa-envelope fa-2x'></i>  </a></li>
+  
+    <li><a href="https://stackoverflow.com/users/1631855/an1lam"><i class='fa fa-stack-overflow fa-2x'></i>  </a></li>
+  
+</ul>
+
+
+<p>
+  Powered by <a href="https://gohugo.io">Hugo</a> and the
+  <a href="https://github.com/loikein/hugo-tufte">Tufte theme</a>.
+</p>
+
+
+
+
 </footer>
-
-
-
+</section>
+  <section><nav class="menu">
+    <ul>
+    
+        <li><a href="https://stephenmalina.com/">Home</a></li>
+    
+        <li><a href="https://stephenmalina.com/about">About</a></li>
+    
+        <li><a href="https://stephenmalina.com/post">Post</a></li>
+    
+        <li><a href="https://stephenmalina.com/bets">Bets</a></li>
+    
+        <li><a href="https://stephenmalina.com/subscribe">Subscribe</a></li>
+    
+        <li><a href="https://stephenmalina.com/tags">Tags</a></li>
+    
+    </ul>
+</nav>
 </section>
 </article>
-</div>
+
+
+
+
+
 </body>
+
 </html>

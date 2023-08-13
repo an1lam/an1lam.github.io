@@ -6,19 +6,14 @@
     <description>Recent content in linear-algebra on Stephen Malina</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 13 Aug 2019 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://stephenmalina.com/tags/linear-algebra/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Tue, 13 Aug 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://stephenmalina.com/tags/linear-algebra/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Matrix Potpourri</title>
       <link>https://stephenmalina.com/post/2019-09-07-matrix-potpourri/</link>
       <pubDate>Tue, 13 Aug 2019 00:00:00 +0000</pubDate>
       
       <guid>https://stephenmalina.com/post/2019-09-07-matrix-potpourri/</guid>
-      <description>Matrix Potpourri As part of reviewing Linear Algebra for my Machine Learning class, I&amp;rsquo;ve noticed there&amp;rsquo;s a bunch of matrix terminology that I didn&amp;rsquo;t encounter during my proof-based self-study of LA from Linear Algebra Done Right. This post is mostly intended to consolidate my own understanding and to act as a reference to future me, but if it also helps others in a similar position, that&amp;rsquo;s even better!
-Note: I list all the sources from which I drew while writing this post under the &amp;ldquo;Sources&amp;rdquo; heading at the bottom of this post.</description>
+      <description>Matrix Potpourri # As part of reviewing Linear Algebra for my Machine Learning class, I&amp;rsquo;ve noticed there&amp;rsquo;s a bunch of matrix terminology that I didn&amp;rsquo;t encounter during my proof-based self-study of LA from Linear Algebra Done Right. This post is mostly intended to consolidate my own understanding and to act as a reference to future me, but if it also helps others in a similar position, that&amp;rsquo;s even better!</description>
     </item>
     
   </channel>

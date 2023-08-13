@@ -6,30 +6,15 @@
     <description>Recent content on Stephen Malina</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 12 Oct 2018 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://stephenmalina.com/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Sun, 13 Aug 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://stephenmalina.com/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Protein Language Models (Part 2): Models</title>
-      <link>https://stephenmalina.com/post/2023-08-05-protein-language-models-part-2/</link>
-      <pubDate>Sat, 05 Aug 2023 00:00:00 +0000</pubDate>
+      <title>CGM and Beyond: A mix of a dialogue and a debate</title>
+      <link>https://stephenmalina.com/post/2023-08-13-cgm-and-beyond/</link>
+      <pubDate>Sun, 13 Aug 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://stephenmalina.com/post/2023-08-05-protein-language-models-part-2/</guid>
-      <description>_I&amp;rsquo;m experimenting with Lilian Weng style review blog posts on topics I wish I&amp;rsquo;d had someone to explain to me when I got started in protein machine learning.
-This is the second post in a series introducing protein language models_. The other posts are:
- Protein Language Models (Part 1): Introduction &amp;amp; Datasets Protein Language Models (Part 2): Models Protein Language Models (Part 3): Benchmarks &amp;amp; Evaluation Protein Language Models (Part 4): Scaling Protein Language Models (Part 5): FAQ &amp;amp; Conclusion  This post focuses on the different types of PLMs with a specific focus on deviations from the standard LLM playbook.</description>
-    </item>
-    
-    <item>
-      <title>Protein Language Models (Part 1): Introduction &amp; Datasets</title>
-      <link>https://stephenmalina.com/post/2023-07-22-protein-language-models-part-1/</link>
-      <pubDate>Sat, 22 Jul 2023 00:00:00 +0000</pubDate>
-      
-      <guid>https://stephenmalina.com/post/2023-07-22-protein-language-models-part-1/</guid>
-      <description>I&amp;rsquo;m experimenting with Lilian Weng style review blog posts on topics I wish I&amp;rsquo;d had someone to explain to me when I got started in protein machine learning.
-Following the success of large sequence models in language and other domain, The terminology people use here is extremely confusing. &amp;ldquo;Large language models&amp;rdquo; often denote large sequence models trained on language and other modalities or in some cases just other modalities. In the rest of the post, I&amp;rsquo; use &amp;ldquo;large language models&amp;rdquo; (LLMs) to refer to the cluster of ideas around large-scale pretraining combined with simple objectives as opposed to models that focus on language as a modality and &amp;ldquo;protein language models&amp;rdquo; (PLMs) to refer to large sequence models of proteins.</description>
+      <guid>https://stephenmalina.com/post/2023-08-13-cgm-and-beyond/</guid>
+      <description>What are continuous glucose monitors good for? More broadly, what are continuous measures of physiology (CxM) good for?
+Similar to my Elliot and I&amp;rsquo;s dialogue, this post has an unconventional format. It&amp;rsquo;s both a synthesis of Willy&amp;rsquo;s, Eryney&amp;rsquo;s, and my opinions on continuous monitoring combined with a debate in places where we disagree. To try and make it clear which views are coming from each person, we&amp;rsquo;ve annotated sections that come from a subset of us rather than all of us with e.</description>
     </item>
     
     <item>
@@ -38,7 +23,7 @@ Following the success of large sequence models in language and other domain, The
       <pubDate>Wed, 07 Jun 2023 00:00:00 +0000</pubDate>
       
       <guid>https://stephenmalina.com/post/2023-06-07-editing-part-i/</guid>
-      <description>Summary Gene editing has made a lot of progress over the past few decades. CRISPR-Cas9 sparked the recent fervor and won some of its early pioneers a Nobel Prize, and more recently Prime Editing and Cytosine/Adenine Base Editors (CBEs/ABEs) have further expanded the range of editing targets and types of edits that are possible while increasing efficiency and reducing the rate of off-target effects.
+      <description>Summary # Gene editing has made a lot of progress over the past few decades. CRISPR-Cas9 sparked the recent fervor and won some of its early pioneers a Nobel Prize, and more recently Prime Editing and Cytosine/Adenine Base Editors (CBEs/ABEs) have further expanded the range of editing targets and types of edits that are possible while increasing efficiency and reducing the rate of off-target effects.
 From the perspective of safe, ubiquitous editing in humans using these systems, a few major challenges for editing remain towards translating novel target discovery into clinical application:</description>
     </item>
     
@@ -48,7 +33,7 @@ From the perspective of safe, ubiquitous editing in humans using these systems, 
       <pubDate>Wed, 11 Jan 2023 00:00:00 +0000</pubDate>
       
       <guid>https://stephenmalina.com/post/2023-01-11-viriditas-dialogue/</guid>
-      <description>Introduction A few months ago, Elliot Hershberg, one of my favorite Substack writers, wrote apost laying out his personal mission. I really enjoyed his post and, as is customary in blogging, the best way I could think of to compliment it was to share some (hopefully constructively) critical thoughts on it.
+      <description>Introduction # A few months ago, Elliot Hershberg, one of my favorite Substack writers, wrote a post laying out his personal mission. I really enjoyed his post and, as is customary in blogging, the best way I could think of to compliment it was to share some (hopefully constructively) critical thoughts on it.
 After sending my post to Elliot, he proposed the great idea of us having a discussion of this over email, which we could then potentially publish.</description>
     </item>
     
@@ -59,7 +44,7 @@ After sending my post to Elliot, he proposed the great idea of us having a discu
       
       <guid>https://stephenmalina.com/post/2023-01-02-reflections-on-2022/</guid>
       <description>2022 was another exciting, fun year. To round it out, I wrote up some scattered reflections. Enjoy, or if you aren&amp;rsquo;t a fan of this genre of post, don&amp;rsquo;t! Also, each section is mostly self-contained and they&amp;rsquo;re not organized in any special order, so don&amp;rsquo;t hesitate to skip a section if it sounds boring.
-Writing 2022 felt like a productive year for blogging even though my post count dropped down from 11 in 2021 to 6.</description>
+Writing # 2022 felt like a productive year for blogging even though my post count dropped down from 11 in 2021 to 6.</description>
     </item>
     
     <item>
@@ -69,7 +54,7 @@ Writing 2022 felt like a productive year for blogging even though my post count 
       
       <guid>https://stephenmalina.com/post/2022-11-21-decentralization-of-atoms-is-underrated/</guid>
       <description>This post was co-authored with Austin Vernon.
-Summary While the internet often focuses its furious debate energy on decentralization in the realm of bits, in the realm of atoms, decentralization is currently underrated in terms of its feasibility and desirability. New technologies in areas like aviation, freight, and life sciences can and are shifting the scales towards decentralized models being possible. This has the potential to broaden access, reduce costs, and increase individual empowerment.</description>
+Summary # While the internet often focuses its furious debate energy on decentralization in the realm of bits, in the realm of atoms, decentralization is currently underrated in terms of its feasibility and desirability. New technologies in areas like aviation, freight, and life sciences can and are shifting the scales towards decentralized models being possible. This has the potential to broaden access, reduce costs, and increase individual empowerment.</description>
     </item>
     
     <item>
@@ -79,7 +64,7 @@ Summary While the internet often focuses its furious debate energy on decentrali
       
       <guid>https://stephenmalina.com/post/2022-11-16-gpt4-predictions/</guid>
       <description>As a way to keep myself honest, I&amp;rsquo;m going to be recording GPT4 predictions here and archiving versions of the post so I can&amp;rsquo;t go back and change it without people knowing. Not that I would do this anyway, but it&amp;rsquo;s been a tough week for &amp;ldquo;trust me, I&amp;rsquo;m telling the truth&amp;rdquo; so I&amp;rsquo;m doing this in case readers want the receipts.
-I predict GPT4 won&amp;rsquo;t be able to&amp;hellip;  Write a blog post about gene therapy that I consider to be of equivalent quality to my own Write a scientific paper about machine learning.</description>
+I predict GPT4 won&amp;rsquo;t be able to&amp;hellip; # Write a blog post about gene therapy that I consider to be of equivalent quality to my own Write a scientific paper about machine learning.</description>
     </item>
     
     <item>
@@ -108,7 +93,7 @@ The core reason I love TG:M is that it&amp;rsquo;s an unapologetic paean to exce
       <pubDate>Sun, 24 Apr 2022 00:00:00 +0000</pubDate>
       
       <guid>https://stephenmalina.com/post/2022-04-24-book-review-egamu/</guid>
-      <description>Introduction Generally when someone tells you they&amp;rsquo;ve invented an &amp;ldquo;art of mind-using&amp;rdquo; that involves lots of made-up words and comes packaged with a spiritual philosophy, you should tell them &amp;ldquo;no thanks&amp;rdquo; and walk away. But, what if that same would-be crackpot was also an incredibly successful inventor whose contemporaries considered a genius? Moreover, what if that would-be crackpot also ran careful, rigorous experiments to validate their theories? And so we have Elmer Gates.</description>
+      <description>Introduction # Generally when someone tells you they&amp;rsquo;ve invented an &amp;ldquo;art of mind-using&amp;rdquo; that involves lots of made-up words and comes packaged with a spiritual philosophy, you should tell them &amp;ldquo;no thanks&amp;rdquo; and walk away. But, what if that same would-be crackpot was also an incredibly successful inventor whose contemporaries considered a genius? Moreover, what if that would-be crackpot also ran careful, rigorous experiments to validate their theories? And so we have Elmer Gates.</description>
     </item>
     
     <item>
@@ -117,7 +102,7 @@ The core reason I love TG:M is that it&amp;rsquo;s an unapologetic paean to exce
       <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
       
       <guid>https://stephenmalina.com/post/2022-01-01-2050-predictions/</guid>
-      <description>Introduction Along with a few internet blogger friends, inspired by Erik Hoel&amp;rsquo;s post (parts of which I disagree with, including the headline), I&amp;rsquo;ve decided to make predictions for 2050. The rest of this post discusses some meta aspects of making these predictions and then lists out the predictions. In case you&amp;rsquo;re waiting for my (hopefully) less speculative 2022 annual predictions, fear not! Those will be coming in the next few weeks.</description>
+      <description>Introduction # Along with a few internet blogger friends, inspired by Erik Hoel&amp;rsquo;s post (parts of which I disagree with, including the headline), I&amp;rsquo;ve decided to make predictions for 2050. The rest of this post discusses some meta aspects of making these predictions and then lists out the predictions. In case you&amp;rsquo;re waiting for my (hopefully) less speculative 2022 annual predictions, fear not! Those will be coming in the next few weeks.</description>
     </item>
     
     <item>
@@ -127,8 +112,8 @@ The core reason I love TG:M is that it&amp;rsquo;s an unapologetic paean to exce
       
       <guid>https://stephenmalina.com/post/2021-12-31-scoring-my-2021-predictions/</guid>
       <description>At the beginning of last year, I made predictions for the year. Now it&amp;rsquo;s time to score them (before I make my 2022 predictions).
-Data &amp;amp; code Here is a spreadsheet containing my scored predictions. If you want to see my full analysis, you can look at my Jupyter notebook which contains Brier score calculations plus plotting.
-High level analysis The key metrics I looked at were my overall and by category Brier scores plus calibration.</description>
+Data &amp;amp; code # Here is a spreadsheet containing my scored predictions. If you want to see my full analysis, you can look at my Jupyter notebook which contains Brier score calculations plus plotting.
+High level analysis # The key metrics I looked at were my overall and by category Brier scores plus calibration.</description>
     </item>
     
     <item>
@@ -175,8 +160,8 @@ A recurring problem I, and I think people similar to me, face is letting my exci
       
       <guid>https://stephenmalina.com/post/2021-03-06-bad-advice-near-miss/</guid>
       <description>I recently had someone ask me what I felt helped me grow the most in my first few years working as a software engineer. Upon them asking me this, I initially drafted an answer that looked something like the following:
- A combination of building systems and seeing how they failed and then reading lots of code and books including: (list of programming books I&amp;rsquo;ve read).
- However, upon writing this &amp;ndash; and before sending it thankfully &amp;ndash; I realized I was almost entirely misrepresenting the things that actually helped me grow.</description>
+A combination of building systems and seeing how they failed and then reading lots of code and books including: (list of programming books I&amp;rsquo;ve read).
+However, upon writing this &amp;ndash; and before sending it thankfully &amp;ndash; I realized I was almost entirely misrepresenting the things that actually helped me grow.</description>
     </item>
     
     <item>
@@ -187,7 +172,7 @@ A recurring problem I, and I think people similar to me, face is letting my exci
       <guid>https://stephenmalina.com/post/2021-02-21-ideas-not-mattering-is-a-psyop/</guid>
       <description>Originally posted on Alexey&amp;rsquo;s blog.
 By Stephen Malina, Alexey Guzey, Leopold Aschenbrenner.
-Introduction Conventional startup and business wisdom has become “there are plenty of good ideas, all that matters is execution.” We don&amp;rsquo;t buy it. Empirically, all our aspiring founder friends are desperate for startup ideas, with few managing to land on something worthwhile, and all our scientist friends are desperate for research ideas. Good ideas are essential, even ones that seem obvious in retrospect were non-obvious ex ante, and in fact good execution itself depends critically on good ideas.</description>
+Introduction # Conventional startup and business wisdom has become “there are plenty of good ideas, all that matters is execution.” We don&amp;rsquo;t buy it. Empirically, all our aspiring founder friends are desperate for startup ideas, with few managing to land on something worthwhile, and all our scientist friends are desperate for research ideas. Good ideas are essential, even ones that seem obvious in retrospect were non-obvious ex ante, and in fact good execution itself depends critically on good ideas.</description>
     </item>
     
     <item>
@@ -197,7 +182,7 @@ Introduction Conventional startup and business wisdom has become “there are pl
       
       <guid>https://stephenmalina.com/post/2021-02-01-emotional-winter-walk/</guid>
       <description>I just went on a short nighttime mid-snow storm walk and it unexpectedly provoked three separate observations along with a desire to capture them.
-Reveling in the beauty of our creations Everyone loves to hate on Ayn Rand but noone else can give me ASMR writing about skyscrapers.
+Reveling in the beauty of our creations # Everyone loves to hate on Ayn Rand but noone else can give me ASMR writing about skyscrapers.
 I would give the greatest sunset in the world for one sight of New York&amp;rsquo;s skyline. Particularly when one can&amp;rsquo;t see the details.</description>
     </item>
     
@@ -236,8 +221,8 @@ I&amp;rsquo;m sort of surprised how much I liked this book. At times, it bordere
       
       <guid>https://stephenmalina.com/post/2020-10-20-maniac-week-review/</guid>
       <description>Previously: Upcoming Maniac Week.
-Summary Inspired by Nick Winter, Bethany Soule, Danny Reeves, Brent Yorgey, and Alex Strick, I undertook a &amp;ldquo;maniac week&amp;rdquo; from Friday, October 9th (9:00 AM) through Thursday, October 15th (12:00 PM). During my maniac week, I worked 11+ hours a day on schoolwork and my primary research project while avoiding social media and other internet distractions.
-By my own assessment, my maniac week was a success. Despite not working nearly as many hours as Nick Winter, I got everything I needed to done, learned that I could work as much as I did, and observed the challenges working a lot entails.</description>
+Summary # Inspired by Nick Winter, Bethany Soule, Danny Reeves, Brent Yorgey, and Alex Strick, I undertook a &amp;ldquo;maniac week&amp;rdquo; from Friday, October 9th (9:00 AM) through Thursday, October 15th (12:00 PM). During my maniac week, I worked 11+ hours a day on schoolwork and my primary research project while avoiding social media and other internet distractions.
+By my own assessment, my maniac week was a success.</description>
     </item>
     
     <item>
@@ -246,8 +231,8 @@ By my own assessment, my maniac week was a success. Despite not working nearly a
       <pubDate>Sat, 26 Sep 2020 00:00:00 +0000</pubDate>
       
       <guid>https://stephenmalina.com/post/2020-09-25-upcoming-maniac-week/</guid>
-      <description>Abstract Guy on internet decides to follow lead of other people on internet and pre-commits to working much more than usual . Plans to document whole thing under illusion people care about some guy on the internet working a more-than-average number of hours relative to his baseline.
-Summary From Friday, October 9th (9:00 AM) through Thursday, October 15th (2:00 PM), I&amp;rsquo;ll attempt to work 11+ hours a day on schoolwork and my primary research project.</description>
+      <description>Abstract # Guy on internet decides to follow lead of other people on internet and pre-commits to working much more than usual . Plans to document whole thing under illusion people care about some guy on the internet working a more-than-average number of hours relative to his baseline.
+Summary # From Friday, October 9th (9:00 AM) through Thursday, October 15th (2:00 PM), I&amp;rsquo;ll attempt to work 11+ hours a day on schoolwork and my primary research project.</description>
     </item>
     
     <item>
@@ -274,12 +259,12 @@ One commonality I&amp;rsquo;ve noticed amongst profiles of thinkers I respect&am
     <item>
       <title>Digital Reduction Experiment</title>
       <link>https://stephenmalina.com/post/2020-03-18-digital-minimalism-exp/</link>
-      <pubDate>Wed, 18 Mar 2020 00:00:00 -0400</pubDate>
+      <pubDate>Wed, 18 Mar 2020 00:00:00 +0000</pubDate>
       
       <guid>https://stephenmalina.com/post/2020-03-18-digital-minimalism-exp/</guid>
-      <description>Intro / Motivation I know I&amp;rsquo;m a walking millenial trope, but I&amp;rsquo;m starting a deliberate experiment to dramatically reduce my internet engagement. Especially while I&amp;rsquo;m quarantined for who knows how long, I want to almost entirely stop:
- checking Twitter; reading about the virus throughout the day; checking email; reading blogs frequently; and constantly texting with people (mostly about the virus).  Instead, I want to focus on:
- doing lots of (ML) research; schoolwork; spending time outside; exercising; video calls with friends; reading books; and writing more blog posts.</description>
+      <description>Intro / Motivation # I know I&amp;rsquo;m a walking millenial trope, but I&amp;rsquo;m starting a deliberate experiment to dramatically reduce my internet engagement. Especially while I&amp;rsquo;m quarantined for who knows how long, I want to almost entirely stop:
+checking Twitter; reading about the virus throughout the day; checking email; reading blogs frequently; and constantly texting with people (mostly about the virus). Instead, I want to focus on:
+doing lots of (ML) research; schoolwork; spending time outside; exercising; video calls with friends; reading books; and writing more blog posts.</description>
     </item>
     
     <item>
@@ -289,9 +274,9 @@ One commonality I&amp;rsquo;ve noticed amongst profiles of thinkers I respect&am
       
       <guid>https://stephenmalina.com/post/2020-03-09-front-door-do-calc-derivation/</guid>
       <description>Attention conservation notice: Narrow target audience - will only make sense to people somewhat familiar with causal inference who don&amp;rsquo;t find the result entirely boring.
-The Front-Door Criterion Suppose we have a causal graphical model that looks like the following.
+The Front-Door Criterion # Suppose we have a causal graphical model that looks like the following.
 Assume $ U $ is unmeasured whereas $ X, M, Y $ can be measured. Notice that:
- All directed paths from $ X $ to $ Y $ flow through $ M $.</description>
+All directed paths from $ X $ to $ Y $ flow through $ M $.</description>
     </item>
     
     <item>
@@ -300,7 +285,7 @@ Assume $ U $ is unmeasured whereas $ X, M, Y $ can be measured. Notice that:
       <pubDate>Sun, 01 Mar 2020 00:00:00 +0000</pubDate>
       
       <guid>https://stephenmalina.com/post/2020-03-01-coffee-rct/</guid>
-      <description>Abstract I conducted a two-week blinded, randomized experiment to test whether drinking regular vs. decaf coffee had a detectable effect on my mood and alertness. Each day, I drank one cup of coffee in the morning and immediately took a Quantified Mind test. I also tracked hours of sleep each night and measured subjective factors such as mood and alertness a few times throughout the day. Overall, the experiment was a success in terms of being able to follow my original plan.</description>
+      <description>Abstract # I conducted a two-week blinded, randomized experiment to test whether drinking regular vs. decaf coffee had a detectable effect on my mood and alertness. Each day, I drank one cup of coffee in the morning and immediately took a Quantified Mind test. I also tracked hours of sleep each night and measured subjective factors such as mood and alertness a few times throughout the day. Overall, the experiment was a success in terms of being able to follow my original plan.</description>
     </item>
     
     <item>
@@ -309,7 +294,7 @@ Assume $ U $ is unmeasured whereas $ X, M, Y $ can be measured. Notice that:
       <pubDate>Thu, 12 Dec 2019 00:00:00 +0000</pubDate>
       
       <guid>https://stephenmalina.com/learning/2019-12-12-all-of-statistics-ch3-notes/</guid>
-      <description>Selected Exercises 1. Suppose we play a game where we start with $ c $ dollars. On each play of the game you either double or halve your money, with equal probability. What is your expected fortune after $ n $ trials?
+      <description>Selected Exercises # 1. Suppose we play a game where we start with $ c $ dollars. On each play of the game you either double or halve your money, with equal probability. What is your expected fortune after $ n $ trials?
 I&amp;rsquo;m pretty sure we can use a trick that I&amp;rsquo;ve seen a lot in machine learning to solve this using plain old expectations. If I&amp;rsquo;m right, we let $ X \sim \text{Binomial}(n, \frac{1}{2}) $ and can create a new random variable, $ Z $, where</description>
     </item>
     
@@ -320,7 +305,7 @@ I&amp;rsquo;m pretty sure we can use a trick that I&amp;rsquo;ve seen a lot in m
       
       <guid>https://stephenmalina.com/post/2019-11-16-network-mendelian-randomization/</guid>
       <description>In which I record my thoughts on Network Mendelian Randomization by Burgess et al.
-What is this paper about? This paper describes a method for doing Mendelian Randomization (MR) in the presence of a potential mediating variable. In the typical MR setting, we have an instrumental variable which &amp;ldquo;instruments&amp;rdquo; an exposure that we believe causally influences the outcome we care about. True mediators &amp;ldquo;mediate&amp;rdquo; the causal influence of exposures on outcomes.</description>
+What is this paper about? # This paper describes a method for doing Mendelian Randomization (MR) in the presence of a potential mediating variable. In the typical MR setting, we have an instrumental variable which &amp;ldquo;instruments&amp;rdquo; an exposure that we believe causally influences the outcome we care about. True mediators &amp;ldquo;mediate&amp;rdquo; the causal influence of exposures on outcomes.</description>
     </item>
     
     <item>
@@ -329,7 +314,7 @@ What is this paper about? This paper describes a method for doing Mendelian Rand
       <pubDate>Fri, 15 Nov 2019 00:00:00 +0000</pubDate>
       
       <guid>https://stephenmalina.com/learning/2019-11-08-causal-inference/</guid>
-      <description>Causal Inference in Statistics Questions  Why is the causal effect identifiable in an IV DAG when the dependencies are linear (from an SCM perspective)?  I think this may relate to factor models.    Advanced Data Analysis from an Elementary Point of View (Ch. 18-23) Chapter 18 Exercises 18.2. Proof that every path must go through a collider:
+      <description>Causal Inference in Statistics # Questions # Why is the causal effect identifiable in an IV DAG when the dependencies are linear (from an SCM perspective)? I think this may relate to factor models. Advanced Data Analysis from an Elementary Point of View (Ch. 18-23) # Chapter 18 # Exercises # 18.2. Proof that every path must go through a collider:
 Observe that every path between two exogenous variables starts with variables going in the opposite direction.</description>
     </item>
     
@@ -339,8 +324,8 @@ Observe that every path between two exogenous variables starts with variables go
       <pubDate>Sun, 03 Nov 2019 00:00:00 +0000</pubDate>
       
       <guid>https://stephenmalina.com/learning/2019-11-02-ivs-mendelian-randomization/</guid>
-      <description>Summary Detailed Notes 3 IV Requirements  IV must have a direct influence on the treatment IV must not covary with the unmeasured confounding that impacts the outcome IV must not have a direct influence on the outcome  Relevant considerations for deciding whether to do an IV analysis   Is there any unmeasured confounding?
- If not, is the answer that we can just use a normal regression?    When is unmeasured confounding especially likely?</description>
+      <description>Summary # Detailed Notes # 3 IV Requirements # IV must have a direct influence on the treatment IV must not covary with the unmeasured confounding that impacts the outcome IV must not have a direct influence on the outcome Relevant considerations for deciding whether to do an IV analysis # Is there any unmeasured confounding?
+If not, is the answer that we can just use a normal regression? When is unmeasured confounding especially likely?</description>
     </item>
     
     <item>
@@ -349,8 +334,7 @@ Observe that every path between two exogenous variables starts with variables go
       <pubDate>Tue, 13 Aug 2019 00:00:00 +0000</pubDate>
       
       <guid>https://stephenmalina.com/post/2019-09-07-matrix-potpourri/</guid>
-      <description>Matrix Potpourri As part of reviewing Linear Algebra for my Machine Learning class, I&amp;rsquo;ve noticed there&amp;rsquo;s a bunch of matrix terminology that I didn&amp;rsquo;t encounter during my proof-based self-study of LA from Linear Algebra Done Right. This post is mostly intended to consolidate my own understanding and to act as a reference to future me, but if it also helps others in a similar position, that&amp;rsquo;s even better!
-Note: I list all the sources from which I drew while writing this post under the &amp;ldquo;Sources&amp;rdquo; heading at the bottom of this post.</description>
+      <description>Matrix Potpourri # As part of reviewing Linear Algebra for my Machine Learning class, I&amp;rsquo;ve noticed there&amp;rsquo;s a bunch of matrix terminology that I didn&amp;rsquo;t encounter during my proof-based self-study of LA from Linear Algebra Done Right. This post is mostly intended to consolidate my own understanding and to act as a reference to future me, but if it also helps others in a similar position, that&amp;rsquo;s even better!</description>
     </item>
     
     <item>
@@ -360,7 +344,7 @@ Note: I list all the sources from which I drew while writing this post under the
       
       <guid>https://stephenmalina.com/post/2019-08-08-deepsea/</guid>
       <description>In which I record my thoughts on DeepSEA.
-Terminology  ChIP-seq (Chromatin Immunoprecipitation Sequencing): Expression Quantitative Trait Locis (eQTLs) Cofactor Binding Sequences Histone Marks: modifications to histone proteins in the nucleosome that impact the shape of chromatin. gkm-SVMs: The gkm-SVM is the previous SOTA model for predicting transcription factor binding based on ChIP-seq data. Allele: variants of a gene at the same position on a chromosome.  What is this paper about?</description>
+Terminology # ChIP-seq (Chromatin Immunoprecipitation Sequencing): Expression Quantitative Trait Locis (eQTLs) Cofactor Binding Sequences Histone Marks: modifications to histone proteins in the nucleosome that impact the shape of chromatin. gkm-SVMs: The gkm-SVM is the previous SOTA model for predicting transcription factor binding based on ChIP-seq data. Allele: variants of a gene at the same position on a chromosome. What is this paper about?</description>
     </item>
     
     <item>
@@ -370,7 +354,7 @@ Terminology  ChIP-seq (Chromatin Immunoprecipitation Sequencing): Expression Qua
       
       <guid>https://stephenmalina.com/post/2019-08-05-basset/</guid>
       <description>In which I record my thoughts on Basset.
-Bio Background The genome consists of (broadly) two types of genes, coding genes and noncoding genes. Coding genes get translated into proteins (as laid down by the Central Dogma) and are what most of us learned about in bio class. Non-coding genes&amp;hellip; don&amp;rsquo;t. As I understand it, noncoding genes can do a bunch of different things, but part of their function is to regulate coding gene activity through a number of mechanisms.</description>
+Bio Background # The genome consists of (broadly) two types of genes, coding genes and noncoding genes. Coding genes get translated into proteins (as laid down by the Central Dogma) and are what most of us learned about in bio class. Non-coding genes&amp;hellip; don&amp;rsquo;t. As I understand it, noncoding genes can do a bunch of different things, but part of their function is to regulate coding gene activity through a number of mechanisms.</description>
     </item>
     
     <item>
@@ -380,7 +364,7 @@ Bio Background The genome consists of (broadly) two types of genes, coding genes
       
       <guid>https://stephenmalina.com/post/2019-07-26-deepbind/</guid>
       <description>In which I record my thoughts on DeepBind.
-What is this paper about? The authors of this paper designed a conv net model to predict how well different proteins will bind to sequences of DNA or RNA. They train one model per protein for many different sequences and show that these models can predict binding affinities for sequences well enough to produce insights regarding the impact of single nucleotide mutations. They then discuss different datasets and areas in which they tested their model and how it performed (often SOTA [as of 2015]).</description>
+What is this paper about? # The authors of this paper designed a conv net model to predict how well different proteins will bind to sequences of DNA or RNA. They train one model per protein for many different sequences and show that these models can predict binding affinities for sequences well enough to produce insights regarding the impact of single nucleotide mutations.</description>
     </item>
     
     <item>
@@ -389,7 +373,7 @@ What is this paper about? The authors of this paper designed a conv net model to
       <pubDate>Mon, 20 May 2019 00:00:00 +0000</pubDate>
       
       <guid>https://stephenmalina.com/learning/2019-05-20-linear-algebra-done-right-ch6-notes/</guid>
-      <description>Selected Exercises 6.B 1. (a) Suppose \( \theta \in \mathbf{R} \). Show that $ (\cos \theta, \sin \theta), (-\sin \theta, \cos \theta) $ and $ (\cos \theta, \sin \theta), (\sin \theta, -\cos \theta) $ are orthonormal bases of $ \mathbf{R}^2 $.
+      <description>Selected Exercises # 6.B # 1. (a) Suppose \( \theta \in \mathbf{R} \). Show that $ (\cos \theta, \sin \theta), (-\sin \theta, \cos \theta) $ and $ (\cos \theta, \sin \theta), (\sin \theta, -\cos \theta) $ are orthonormal bases of $ \mathbf{R}^2 $.
 (b) Show that each orthonormal basis of $ \mathbf{R}^2 $ is of the form given by one of the two possibilities of part (a).
 (a) First, we show that both lists of vectors are orthonormal (using the Euclidean inner product), i.</description>
     </item>
@@ -402,7 +386,7 @@ What is this paper about? The authors of this paper designed a conv net model to
       <guid>https://stephenmalina.com/post/2019-05-18-thoughts-on-stoicism/</guid>
       <description>Meta: While I originally set out to write this essay about why I no longer &amp;ldquo;endorse&amp;rdquo; Stoicism as an operating framework, re-reading a bunch of Stoic stuff led me to realize that I still agree with ~90% of Stoic principles.
 Peter Thiel recently talked about (in German) why he&amp;rsquo;s not a Stoic,
- Stoics, for example, are obsessed with death. However, I am the opposite of a stoic, I loathe the peace and have no sense in the countryside to live and meditate on the environment.</description>
+Stoics, for example, are obsessed with death. However, I am the opposite of a stoic, I loathe the peace and have no sense in the countryside to live and meditate on the environment.</description>
     </item>
     
     <item>
@@ -411,7 +395,7 @@ Peter Thiel recently talked about (in German) why he&amp;rsquo;s not a Stoic,
       <pubDate>Mon, 01 Apr 2019 00:00:00 +0000</pubDate>
       
       <guid>https://stephenmalina.com/learning/2019-04-01-linear-algebra-done-right-ch5-notes/</guid>
-      <description>Selected Exercises 5.A 12. Define $ T \in \mathcal L(\mathcal P_4(\mathbf{R})) $ by
+      <description>Selected Exercises # 5.A # 12. Define $ T \in \mathcal L(\mathcal P_4(\mathbf{R})) $ by
 $$ (Tp)(x) = xp&amp;rsquo;(x) $$
 for all $ x \in \mathbf{R} $. Find all eigenvalues and eigenvectors of $ T $.
 Observe that, if $ p = a_0 + a_1 x + a_2 x^2 + a_3 x^3 + a_4 x^4 $, then $$ x p&amp;rsquo;(x) = a_1 x + 2 a_2 x^2 + 3 a_3 x^3 + 4 a_4 x^4.</description>
@@ -423,7 +407,7 @@ Observe that, if $ p = a_0 + a_1 x + a_2 x^2 + a_3 x^3 + a_4 x^4 $, then $$ x p&
       <pubDate>Sun, 31 Mar 2019 00:00:00 +0000</pubDate>
       
       <guid>https://stephenmalina.com/learning/2019-03-31-linear-algebra-done-right-ch4-notes/</guid>
-      <description>Selected Exercises 4. Suppose $m$ and $n$ are positive integers with $ m \leq n $, and suppose $ \lambda_1, \dots, \lambda_m \in F $. Prove that there exists a polynomial $ p \in \mathcal P(\mathbf{F}) $ with $ \deg p = n $ such that $ 0 = p(\lambda_1) = \cdots = p(\lambda_m) $ and such that $ p $ has no other zeros.
+      <description>Selected Exercises # 4. Suppose $m$ and $n$ are positive integers with $ m \leq n $, and suppose $ \lambda_1, \dots, \lambda_m \in F $. Prove that there exists a polynomial $ p \in \mathcal P(\mathbf{F}) $ with $ \deg p = n $ such that $ 0 = p(\lambda_1) = \cdots = p(\lambda_m) $ and such that $ p $ has no other zeros.
 First, we can show that the polynomial $p&amp;rsquo;(z) = (z - \lambda_1) \cdots (z-\lambda_m) $ with $ \deg p&amp;rsquo; = m $ has $ 0 = p&amp;rsquo;(\lambda_1) = \cdots = p&amp;rsquo;(\lambda_m) $ and no other zeros.</description>
     </item>
     
@@ -433,7 +417,7 @@ First, we can show that the polynomial $p&amp;rsquo;(z) = (z - \lambda_1) \cdots
       <pubDate>Sat, 30 Mar 2019 00:00:00 +0000</pubDate>
       
       <guid>https://stephenmalina.com/learning/2019-03-30-linear-algebra-done-right-ch3-notes/</guid>
-      <description>Selected Exercises 3.D 7. Suppose $ V $ &amp;amp; $ W $ are finite-dimensional. Let $ v \in V $. Let $$ E = \{ T \in \mathcal L(V, W): T(v) = 0 \}. $$
+      <description>Selected Exercises # 3.D # 7. Suppose $ V $ &amp;amp; $ W $ are finite-dimensional. Let $ v \in V $. Let $$ E = \{ T \in \mathcal L(V, W): T(v) = 0 \}. $$
 (a) Show that $ E $ is a subspace of $ \mathcal L(V, W) $.
 (b) Suppose $ v \neq 0 $. What is $\dim E$?
 For (a), to show $ E $ is a subspace of $ \mathcal L(V, W) $, we need to show that $ E $ contains zero and is closed under both addition and multiplication.</description>
@@ -455,8 +439,8 @@ While I&amp;rsquo;m willing to swallow the bitter pill that feudal-ish structure
       <pubDate>Mon, 24 Dec 2018 00:00:00 +0000</pubDate>
       
       <guid>https://stephenmalina.com/learning/2018-12-24-linear-algebra-done-right-ch2-notes/</guid>
-      <description>Intro I&amp;rsquo;ve recently been making my way through Axler&amp;rsquo;s Linear Algebra Done Right and, as a way to motivate myself to continue, have decided to blog my notes and solutions for exercises as I go.
-Insights Section 2.A You can convert any linearly dependent list to a linearly independent list with the same span. By the linear dependence lemma, if you have a list that&amp;rsquo;s linearly dependenty, then you can remove one item without changing the list&amp;rsquo;s span.</description>
+      <description>Intro # I&amp;rsquo;ve recently been making my way through Axler&amp;rsquo;s Linear Algebra Done Right and, as a way to motivate myself to continue, have decided to blog my notes and solutions for exercises as I go.
+Insights # Section 2.A # You can convert any linearly dependent list to a linearly independent list with the same span. # By the linear dependence lemma, if you have a list that&amp;rsquo;s linearly dependenty, then you can remove one item without changing the list&amp;rsquo;s span.</description>
     </item>
     
     <item>
@@ -465,8 +449,8 @@ Insights Section 2.A You can convert any linearly dependent list to a linearly i
       <pubDate>Sun, 16 Dec 2018 00:00:00 +0000</pubDate>
       
       <guid>https://stephenmalina.com/post/2018-12-16-babble-learning/</guid>
-      <description>Babbling About Babble In a series of posts on his blog (or LessWrong if you prefer), alkjash writes about &amp;ldquo;babble&amp;rdquo; and &amp;ldquo;prune&amp;rdquo;, the two components of an adversarial model of knowledge production in humans. Alkjash describes babble and prune like this:
- Here’s a simplistic model of how this works. I try to build a coherent sentence. At each step, to pick the next word, I randomly generate words in the category (correct part of speech, relevance) and sound them out one by one to see which continues the sentence most coherently.</description>
+      <description>Babbling About Babble # In a series of posts on his blog (or LessWrong if you prefer), alkjash writes about &amp;ldquo;babble&amp;rdquo; and &amp;ldquo;prune&amp;rdquo;, the two components of an adversarial model of knowledge production in humans. Alkjash describes babble and prune like this:
+Here’s a simplistic model of how this works. I try to build a coherent sentence. At each step, to pick the next word, I randomly generate words in the category (correct part of speech, relevance) and sound them out one by one to see which continues the sentence most coherently.</description>
     </item>
     
     <item>
@@ -494,7 +478,7 @@ This is the first time I&amp;rsquo;ve posted on Facebook in &amp;hellip; long. H
       <pubDate>Tue, 12 Jun 2018 00:00:00 +0000</pubDate>
       
       <guid>https://stephenmalina.com/post/2018-06-12-statistical-models-ch-2/</guid>
-      <description>Questions  What does the regression equation mean? Is the idea that we get bigger $ r $ values when $ x $ and $ y $ deviate together?   What does it mean for a function to be convex beyond $ f((x + y) / 2)) \leq (f(x) + f(y)) / 2 $? Put another way, why is this the proof of convexity?  $$ h\{son} = slope * h\{father} + yint = 70.</description>
+      <description>Questions # What does the regression equation mean? Is the idea that we get bigger $ r $ values when $ x $ and $ y $ deviate together? What does it mean for a function to be convex beyond $ f((x + y) / 2)) \leq (f(x) + f(y)) / 2 $? Put another way, why is this the proof of convexity? $$ h\{son} = slope * h\{father} + yint = 70.</description>
     </item>
     
     <item>
@@ -503,7 +487,7 @@ This is the first time I&amp;rsquo;ve posted on Facebook in &amp;hellip; long. H
       <pubDate>Sat, 09 Jun 2018 00:00:00 +0000</pubDate>
       
       <guid>https://stephenmalina.com/post/2018-06-09-statistical-models-ch-1/</guid>
-      <description>Summary This chapter introduces basic terminology and describes three separate experiments to introduce us to statistical methods in action.
+      <description>Summary # This chapter introduces basic terminology and describes three separate experiments to introduce us to statistical methods in action.
 We learn about the difference between randomized controlled experiments and observational experiments. A randomized controlled experiment is an experiment in which subjects are randomly assigned to two groups: experiment and control. Members of the experimental group receive the &amp;ldquo;treatment&amp;rdquo;, whereas members of the control do not. We expect that randomized controlled experiments minimize confounding &amp;ndash; other factors seeping in to impact our results without us knowing &amp;ndash; because we expect members of the experimental and control group to be on average the same outside of whatever difference the treatment produces.</description>
     </item>
     
@@ -522,7 +506,7 @@ We learn about the difference between randomized controlled experiments and obse
       <pubDate>Sun, 06 Dec 2015 00:00:00 +0000</pubDate>
       
       <guid>https://stephenmalina.com/post/2015-12-06-nl12062016/</guid>
-      <description>Links Physics What is Spacetime, Really?
+      <description>Links # Physics # What is Spacetime, Really?
 Stephen Wolfram talks about the difficulty inherent to coming up with a universal theory about spacetime. In the same way Einstein&amp;rsquo;s theories brought Wolfram to awe, Wolfram&amp;rsquo;s ideas consistently bring me to awe. After reading Rudy Rucker&amp;rsquo;s The Lifebox, The Seashell, and The Soul, I&amp;rsquo;m increasingly drawn to computationalist theories of the universe, but reading this article has solidified my decision to read A New Kind of Science.</description>
     </item>
     
@@ -533,8 +517,7 @@ Stephen Wolfram talks about the difficulty inherent to coming up with a universa
       
       <guid>https://stephenmalina.com/post/2015-11-29-nl1/</guid>
       <description>This week, I&amp;rsquo;m going to try something a little different with the newsletter. I&amp;rsquo;m going to add 3 new categories to the newsletter: Books I&amp;rsquo;m Reading, Quotes I&amp;rsquo;ve Enjoyed, and People I&amp;rsquo;m Following. In case you&amp;rsquo;re worried about these polluting your newsletter experience, don&amp;rsquo;t worry. I&amp;rsquo;m putting these sections at the bottom after the normal newsletter content.
-Links Climate Change What Can A Technologist Do About Climate Change?
-Bret Victor, a world-class designer, uses his technical and design skills to create a compelling argument.</description>
+Links # Climate Change # What Can A Technologist Do About Climate Change?</description>
     </item>
     
     <item>
@@ -543,9 +526,9 @@ Bret Victor, a world-class designer, uses his technical and design skills to cre
       <pubDate>Sun, 22 Nov 2015 00:00:00 +0000</pubDate>
       
       <guid>https://stephenmalina.com/post/2015-11-22-nl/</guid>
-      <description>Education A Radical Way of Unleashing a Generation of Geniuses
+      <description>Education # A Radical Way of Unleashing a Generation of Geniuses
 Phenomenal piece that profiles an unconventional teacher in a poor Mexican border town. Uses this to broadly discuss the changing role and viewpoint on education. I&amp;rsquo;m a total convert to the idea that children need to be allowed to explore rather than have information forced down their throats.
-Business When Software Eats Bio
+Business # When Software Eats Bio
 The leader of Andreessen Horowitz new bio arm gives a Q&amp;amp;A about the motivations and direction they will take.</description>
     </item>
     
@@ -555,7 +538,7 @@ The leader of Andreessen Horowitz new bio arm gives a Q&amp;amp;A about the moti
       <pubDate>Sun, 15 Nov 2015 00:00:00 +0000</pubDate>
       
       <guid>https://stephenmalina.com/post/2015-11-15-nl/</guid>
-      <description>Brain Computer Interfaces Meet the Neuroscientist Who Installed an Implant in His Own Brain Profiles the risk-taking neuroscientist Phil Kennedy. Kennedy researches enabling locked-in patients to communicate using implanted electrodes. Kennedy took his research into his own hands after the FDA prevented him from continuing his work. Kennedy had a surgeon from Belize implant a set of electrodes in his head so that he could continue studying neuronal correlates of speech.</description>
+      <description>Brain Computer Interfaces # Meet the Neuroscientist Who Installed an Implant in His Own Brain Profiles the risk-taking neuroscientist Phil Kennedy. Kennedy researches enabling locked-in patients to communicate using implanted electrodes. Kennedy took his research into his own hands after the FDA prevented him from continuing his work. Kennedy had a surgeon from Belize implant a set of electrodes in his head so that he could continue studying neuronal correlates of speech.</description>
     </item>
     
     <item>
@@ -564,7 +547,7 @@ The leader of Andreessen Horowitz new bio arm gives a Q&amp;amp;A about the moti
       <pubDate>Sat, 14 Nov 2015 00:00:00 +0000</pubDate>
       
       <guid>https://stephenmalina.com/post/2015-11-14-sicp-1-1/</guid>
-      <description>Key Concepts  Environments, Syntax, Programming Languages v. Natural Languages, Applicative Order of Operations  Environments  Understanding meaning is a matter of combining primitives with context.  Syntax  Lisp programmers tend to eschew syntactic sugar in favor of building their own syntax. Procedures are noticeably more composable than other languages I&amp;rsquo;ve used previously. There&amp;rsquo;s little difference between user-defined and language-defined procedures  Comparison between programming and natural languages  We can define procedures (verbs) and use variables (pronouns) to build higher-level abstractions.</description>
+      <description>Key Concepts # Environments, Syntax, Programming Languages v. Natural Languages, Applicative Order of Operations Environments # Understanding meaning is a matter of combining primitives with context. Syntax # Lisp programmers tend to eschew syntactic sugar in favor of building their own syntax. Procedures are noticeably more composable than other languages I&amp;rsquo;ve used previously. There&amp;rsquo;s little difference between user-defined and language-defined procedures Comparison between programming and natural languages # We can define procedures (verbs) and use variables (pronouns) to build higher-level abstractions.</description>
     </item>
     
     <item>
@@ -574,7 +557,7 @@ The leader of Andreessen Horowitz new bio arm gives a Q&amp;amp;A about the moti
       
       <guid>https://stephenmalina.com/post/2015-11-08-nl11082015/</guid>
       <description>I&amp;rsquo;ve been reading more technical neuroscience / psychology papers recently, so the newsletter reflects that. I&amp;rsquo;m trying to better understand the variety and universality of mental imagery, and the only way to do that is to dive into the literature.
-Mental Imagery Representing Exact Numbers Visually
+Mental Imagery # Representing Exact Numbers Visually
 This journal article discusses mental abacus representations. Be forewarned, the paper is fairly technical and a bit dry. If you just want to get the take-aways of the paper, I recommend reading the Introduction until you feel like you&amp;rsquo;re in over your head and then skipping to page 13.</description>
     </item>
     
@@ -584,9 +567,9 @@ This journal article discusses mental abacus representations. Be forewarned, the
       <pubDate>Sun, 01 Nov 2015 00:00:00 +0000</pubDate>
       
       <guid>https://stephenmalina.com/post/2015-11-01-nl11012015/</guid>
-      <description>Journalism The Future of News is not an Article
+      <description>Journalism # The Future of News is not an Article
 A NY Times Labs writer argues that the future of news lies in smaller, contextually-aware primitives called particles. If you&amp;rsquo;ve never explored the NYT Labs website before, I highly recommend it. I particularly enjoy this infographic.
-Biography Genghis John
+Biography # Genghis John
 Paints a portrait of John Boyd, military theorist and legendary aircraft designer. Boyd&amp;rsquo;s devotion to his ideals and unconventional thinking resonates with me and I definitely intend to read his papers and books.</description>
     </item>
     
@@ -596,9 +579,9 @@ Paints a portrait of John Boyd, military theorist and legendary aircraft designe
       <pubDate>Sun, 25 Oct 2015 00:00:00 +0000</pubDate>
       
       <guid>https://stephenmalina.com/post/2015-10-25-nl10252015/</guid>
-      <description>The Blockchain Blockchains in Context
+      <description>The Blockchain # Blockchains in Context
 An easy to understand article about blockchains by a core contributor to Ethereum. Ethereum aims to create an understandable, general-purpose system for creating and enforcing contracts on the web. Potential applications of this system are more varied than you might initially expect. This picture breaks down areas in which Ethereum could prove an effective tool.
-Medicine and Biology Can we end the war on Cancer?</description>
+Medicine and Biology # Can we end the war on Cancer?</description>
     </item>
     
     <item>
@@ -607,7 +590,7 @@ Medicine and Biology Can we end the war on Cancer?</description>
       <pubDate>Sun, 18 Oct 2015 00:00:00 +0000</pubDate>
       
       <guid>https://stephenmalina.com/post/2015-10-18-nl10182015/</guid>
-      <description>Design UX and the Civilizing Process
+      <description>Design # UX and the Civilizing Process
 Another piece from the author of last week&amp;rsquo;s 4-part series that took us through the theories of Julian Jaynes. This piece focuses on similarities between User Experience design, which aims to create seamless interactions between humans and products, and etiquette. My super-secret goal for the newsletter has always been to find at least one article my sister will genuinely enjoy and I may actually have a winner with this one.</description>
     </item>
     
@@ -617,7 +600,7 @@ Another piece from the author of last week&amp;rsquo;s 4-part series that took u
       <pubDate>Sun, 11 Oct 2015 00:00:00 +0000</pubDate>
       
       <guid>https://stephenmalina.com/post/2015-10-11-nl10112015/</guid>
-      <description>Mind and Brain Below is a series of 4 articles that explore Julian Jaynes&amp;rsquo; theory of consciousness and its relationship to unusual minds. I found this series incredibly fascinating. It reminds me of Blindsight, a creepy sci-fi novel by Peter Watts that explores the relationship between self-awareness and intelligence. If you&amp;rsquo;ve ever questioned the nature of consciousness, you&amp;rsquo;ll enjoy this series. After reading this, I&amp;rsquo;m committing to reading Julian Jaynes&amp;rsquo; Origin of Consciousness in the Breakdown of the Bicaemral Mind.</description>
+      <description>Mind and Brain # Below is a series of 4 articles that explore Julian Jaynes&amp;rsquo; theory of consciousness and its relationship to unusual minds. I found this series incredibly fascinating. It reminds me of Blindsight, a creepy sci-fi novel by Peter Watts that explores the relationship between self-awareness and intelligence. If you&amp;rsquo;ve ever questioned the nature of consciousness, you&amp;rsquo;ll enjoy this series. After reading this, I&amp;rsquo;m committing to reading Julian Jaynes&amp;rsquo; Origin of Consciousness in the Breakdown of the Bicaemral Mind.</description>
     </item>
     
     <item>
@@ -626,9 +609,9 @@ Another piece from the author of last week&amp;rsquo;s 4-part series that took u
       <pubDate>Sun, 04 Oct 2015 00:00:00 +0000</pubDate>
       
       <guid>https://stephenmalina.com/post/2015-10-04-nl10042015/</guid>
-      <description>Biology and Computation Better Living Through Quantum Mechanics
+      <description>Biology and Computation # Better Living Through Quantum Mechanics
 Seth Lloyd, the first and only self-proclaimed quantum mechanical engineer from MIT, discusses new discoveries of quantum mechanical phenomena in plants and animals. I included this for the understandable metaphors used to explain quantum processes.
-Linguistics The Whistled Language of Northern Turkey
+Linguistics # The Whistled Language of Northern Turkey
 Profiles a language that conveys meaning through whistling and clicks. I loved this article. You&amp;rsquo;ll get twice as much out of it if you listen to the samples of the language.</description>
     </item>
     
@@ -638,7 +621,7 @@ Profiles a language that conveys meaning through whistling and clicks. I loved t
       <pubDate>Sun, 27 Sep 2015 00:00:00 +0000</pubDate>
       
       <guid>https://stephenmalina.com/post/2015-09-27-nl09272015/</guid>
-      <description>Neuroscience and Neurotech Hypnosis reaches the parts brain scans and neurosurgery cannot
+      <description>Neuroscience and Neurotech # Hypnosis reaches the parts brain scans and neurosurgery cannot
 A good, succint article about the use of hypnosis in real neuroscience. Makes me hope I&amp;rsquo;m in the 10% of people who are highly suggestible.
 Playing 20 Questions with the Mind
 Summarizes a new study in which two individuals in isolation played 20 questions using a brain-to-brain interface. This is a big first step towards more usable brain-to-brain interfaces.</description>
@@ -650,7 +633,7 @@ Summarizes a new study in which two individuals in isolation played 20 questions
       <pubDate>Sun, 20 Sep 2015 00:00:00 +0000</pubDate>
       
       <guid>https://stephenmalina.com/post/2015-09-20-nl09202015/</guid>
-      <description>Cryonics A Dying Young Woman’s Hope in Cryonics and a Future
+      <description>Cryonics # A Dying Young Woman’s Hope in Cryonics and a Future
 Cancer claimed Kim Suozzi at age 23, but she chose to have her brain preserved with the dream that neuroscience might one day revive her mind. I really enjoyed this article. Unlike many of the readers, I&amp;rsquo;ve considered signing up for cryonics and went so far as to ask for it for my birthday (a request which my mother politely denied).</description>
     </item>
     
@@ -660,9 +643,9 @@ Cancer claimed Kim Suozzi at age 23, but she chose to have her brain preserved w
       <pubDate>Sun, 13 Sep 2015 00:00:00 +0000</pubDate>
       
       <guid>https://stephenmalina.com/post/2015-09-13-nl09132015/</guid>
-      <description>Ethics The Philosopher Who Says We Should Play God
+      <description>Ethics # The Philosopher Who Says We Should Play God
 The following quote sums up the article well:
- So the idea that we could play god and tamper with the laws of nature, creating things that wouldn’t otherwise exist, is a red herring?
+So the idea that we could play god and tamper with the laws of nature, creating things that wouldn’t otherwise exist, is a red herring?
 We’re playing god every day. As the English philosopher Thomas Hobbes said, the natural state for human beings is a life that’s nasty, brutish, and short. We play god when we vaccinate.</description>
     </item>
     
@@ -672,7 +655,7 @@ We’re playing god every day. As the English philosopher Thomas Hobbes said, th
       <pubDate>Sun, 06 Sep 2015 00:00:00 +0000</pubDate>
       
       <guid>https://stephenmalina.com/post/2015-09-06-nl09062015/</guid>
-      <description>Nutrition and Health Starving Your Way to Vigor (see attached)
+      <description>Nutrition and Health # Starving Your Way to Vigor (see attached)
 A writer discusses his experience fasting for over a week. He cites scientific and historical sources showing the effectiveness of fasting in treating several ailments. My own understanding of nutrition supports this author’s claims. For a more scientific take on fasting, make your way through some of there (https://scholar.google.com/scholar?q=valter+longo+fasting&amp;amp;hl=en&amp;amp;as_sdt=0&amp;amp;as_vis=1&amp;amp;oi=scholart&amp;amp;sa=X&amp;amp;ved=0CBsQgQMwAGoVChMI1s3smvTjxwIVgZMeCh1FLQ6r) articles. If you&amp;rsquo;re interested in trying out fasting but don&amp;rsquo;t want to commit to a longer fast, I recommend Eat Stop Eat by Brad Pilon.</description>
     </item>
     
@@ -682,9 +665,9 @@ A writer discusses his experience fasting for over a week. He cites scientific a
       <pubDate>Sun, 30 Aug 2015 00:00:00 +0000</pubDate>
       
       <guid>https://stephenmalina.com/post/2015-08-30-nl08302015/</guid>
-      <description>Ambition and Achievement Sources of Power
+      <description>Ambition and Achievement # Sources of Power
 Argues that college applicants should seek out &amp;ldquo;sources of power&amp;rdquo; which improve their chances of acceptance by orders of magnitude. This article fits with my observations about the college process.
-Alternative Businesses The Cheese Board Collective
+Alternative Businesses # The Cheese Board Collective
 Profiles a cooperative cheese shop where all employees are owners. I&amp;rsquo;ve expressed my enthusiasm for business model experimentation and co-ops in particular before so I&amp;rsquo;ll refrain from doing so again now.</description>
     </item>
     
@@ -694,7 +677,7 @@ Profiles a cooperative cheese shop where all employees are owners. I&amp;rsquo;v
       <pubDate>Sun, 09 Aug 2015 00:00:00 +0000</pubDate>
       
       <guid>https://stephenmalina.com/post/2015-08-09-nl08092015/</guid>
-      <description>Future of Food The $200 Hydroponic Greenhouse You Control With a Smartphone
+      <description>Future of Food # The $200 Hydroponic Greenhouse You Control With a Smartphone
 Reports on a new product that promises to automate the process of hydroponic gardening such that individuals will be able to grow vegetables in their home with minimal effort and maximal control. This type of product, while different from Soylent, illustrates another viable direction for the future of food that focuses more on the decentralization and automation of food production.</description>
     </item>
     
@@ -704,9 +687,9 @@ Reports on a new product that promises to automate the process of hydroponic gar
       <pubDate>Sun, 02 Aug 2015 00:00:00 +0000</pubDate>
       
       <guid>https://stephenmalina.com/post/2015-08-02-nl08022015/</guid>
-      <description>Plant Genetics How Driscoll’s Is Hacking the Strawberry of the Future
+      <description>Plant Genetics # How Driscoll’s Is Hacking the Strawberry of the Future
 Profiles Phil Stewart, Driscoll&amp;rsquo;s chief strawberry geneticist. I enjoyed learning about the challenge of breeding an optimal set of characteristics into Driscoll&amp;rsquo;s strawberries.
-Education A College Without Classes
+Education # A College Without Classes
 Explores the recent phenomenon of online, competence-based university programs, which, rather than holding lectures, test their students periodically on competency in course topics. I view competence-based metrics for education as an important alternative to traditional grades.</description>
     </item>
     
@@ -716,11 +699,11 @@ Explores the recent phenomenon of online, competence-based university programs, 
       <pubDate>Sun, 26 Jul 2015 00:00:00 +0000</pubDate>
       
       <guid>https://stephenmalina.com/post/2015-07-26-nl07262015/</guid>
-      <description>Linguistics How to Say (Almost) Everything in a Hundred-Word Language
+      <description>Linguistics # How to Say (Almost) Everything in a Hundred-Word Language
 Explores Toki Pona, the world&amp;rsquo;s smallest language. Describes the linguistic idiosyncrasies that arise from the severely limited vocabulary of the language.
-Nature&amp;rsquo;s Algorithms Decoding the Remarkable Algorithms of Ants
+Nature&amp;rsquo;s Algorithms # Decoding the Remarkable Algorithms of Ants
 Interviews a scientist studying the swarm behavior of ants in an attempt to translate ant colony behavior into computer algorithms.
-Education A New Look at Apprenticeships as a Path to the Middle Class</description>
+Education # A New Look at Apprenticeships as a Path to the Middle Class</description>
     </item>
     
     <item>
@@ -729,11 +712,11 @@ Education A New Look at Apprenticeships as a Path to the Middle Class</descripti
       <pubDate>Sun, 19 Jul 2015 00:00:00 +0000</pubDate>
       
       <guid>https://stephenmalina.com/post/2015-07-19-nl07192015/</guid>
-      <description>Human Potential The Science of Mental Fitness
+      <description>Human Potential # The Science of Mental Fitness
 Aggregates recent research findings regarding the effect of visualization on skill learning and physical development.
-Biotech Your body, the battery: Powering gadgets from human &amp;ldquo;biofuel&amp;rdquo;
+Biotech # Your body, the battery: Powering gadgets from human &amp;ldquo;biofuel&amp;rdquo;
 Discusses the various ways in which the human body could be used to power electronics.
-Letters Why Explore Space?
+Letters # Why Explore Space?
 In this letter, Dr. Ernst Stuhlinger, the past director of science at a NASA facility, responded to a Zambia-based nun&amp;rsquo;s letter questioning the allocation of billions of dollars towards the space program with this letter.</description>
     </item>
     
@@ -752,9 +735,9 @@ In this letter, Dr. Ernst Stuhlinger, the past director of science at a NASA fac
       <pubDate>Sun, 12 Jul 2015 00:00:00 +0000</pubDate>
       
       <guid>https://stephenmalina.com/post/2015-07-12-nl07122015/</guid>
-      <description>Evolutionary Biology and Health To Stop Mosquito Bites, Silence Your Skin&amp;rsquo;s Bacteria
+      <description>Evolutionary Biology and Health # To Stop Mosquito Bites, Silence Your Skin&amp;rsquo;s Bacteria
 Discusses a technique which could prevent mosquitoes bites by silencing the communication between bacteria on human skin. Mosquitoes detect this communication on human skin and bite people after detecting it.
-Cognitive Science What&amp;rsquo;s the evidence on using rational arguments to change people&amp;rsquo;s minds?
+Cognitive Science # What&amp;rsquo;s the evidence on using rational arguments to change people&amp;rsquo;s minds?
 Argues that reason is more powerful than recent cognitive science research might lead us to believe.</description>
     </item>
     
@@ -764,8 +747,8 @@ Argues that reason is more powerful than recent cognitive science research might
       <pubDate>Sun, 14 Jun 2015 00:00:00 +0000</pubDate>
       
       <guid>https://stephenmalina.com/post/2015-06-14-nl06142015/</guid>
-      <description>I apologize for the short newsletter this week. Graduation has limited the amount of time I&amp;rsquo;ve been able to spend on it, and I &amp;lsquo;d rather shorten it than include lower quality articles.
-Biology and Physiology Lost Posture: Why Some Indigenous Cultures May Not Have Back Pain
+      <description>I apologize for the short newsletter this week. Graduation has limited the amount of time I&amp;rsquo;ve been able to spend on it, and I &amp;rsquo;d rather shorten it than include lower quality articles.
+Biology and Physiology # Lost Posture: Why Some Indigenous Cultures May Not Have Back Pain
 Discusses a hypothesis for widespread back pain and profiles Esther Gokhale, a woman who has studied indigenous cultures in an attempt to gain insight into why they don&amp;rsquo;t suffer from back pain.</description>
     </item>
     
@@ -775,11 +758,11 @@ Discusses a hypothesis for widespread back pain and profiles Esther Gokhale, a w
       <pubDate>Sun, 07 Jun 2015 00:00:00 +0000</pubDate>
       
       <guid>https://stephenmalina.com/post/2015-06-07-nl06072015/</guid>
-      <description>Neuroscience Researchers Find Missing Link Between Brain and Immune System
+      <description>Neuroscience # Researchers Find Missing Link Between Brain and Immune System
 Discusses a recently discovered vessel that connects the brain and the lymphatic system. Although this article&amp;rsquo;s not great, the discovery itself is a huge deal.
 Better not look down&amp;hellip;
 A neurosurgeon reflects on his career and the mistakes he made. An introspective piece.
-Droughts and Water Shortage To Save California, Read &amp;ldquo;Dune&amp;rdquo;
+Droughts and Water Shortage # To Save California, Read &amp;ldquo;Dune&amp;rdquo;
 Argues that Frank Herbert&amp;rsquo;s ideas from Dune are becoming a reality in California.</description>
     </item>
     
@@ -789,10 +772,9 @@ Argues that Frank Herbert&amp;rsquo;s ideas from Dune are becoming a reality in 
       <pubDate>Sun, 31 May 2015 00:00:00 +0000</pubDate>
       
       <guid>https://stephenmalina.com/post/2015-05-31-2015-nl05312015/</guid>
-      <description>Learning and Education How I Rewired My Brain to Become Fluent in Math
+      <description>Learning and Education # How I Rewired My Brain to Become Fluent in Math
 An engineering professor recounts how she went from being a language person without a college degree to an engineer with a doctorate. The author provides a unique perspective on the process of learning technical subjects and supplements her own experience with knowledge taken from her subsequent study of learning processes.
-How to learn 30 languages
-Explores the world of hyperpolyglots, individuals who typically speak between 10 and 20 languages fluently.</description>
+How to learn 30 languages</description>
     </item>
     
     <item>
@@ -801,7 +783,7 @@ Explores the world of hyperpolyglots, individuals who typically speak between 10
       <pubDate>Sun, 24 May 2015 00:00:00 +0000</pubDate>
       
       <guid>https://stephenmalina.com/post/2015-05-24-nl05242015/</guid>
-      <description>Psychology and Brain Science Is LSD about to return to polite society?
+      <description>Psychology and Brain Science # Is LSD about to return to polite society?
 Profiles the matriarch of the Beckley Foundation, an organization which aims to popularize scientific research focused on psychedelic therapies for addiction. Does a good job of presenting both sides of the issue.
 The meanings of life
 Famous psychologist and author of Willpower, Roy Baumeister, discusses the relationship between feelings of meaningfulness and happiness. Baumeister uses these topics as a jumping off point for a discussion of what factors contribute to individuals&amp;rsquo; feelings of meaning.</description>
@@ -813,9 +795,9 @@ Famous psychologist and author of Willpower, Roy Baumeister, discusses the relat
       <pubDate>Sun, 17 May 2015 00:00:00 +0000</pubDate>
       
       <guid>https://stephenmalina.com/post/2015-05-17-nl05172015/</guid>
-      <description>Public Health Why an iron fish can make you stronger
+      <description>Public Health # Why an iron fish can make you stronger
 Presents a simple but ingenious way to combat anaemia in Cambodia by giving villagers iron fish to put in their cooking pots.
-Osama Bin Laden Raid Questions I&amp;rsquo;m trying to cover this issue in depth since I think it sits at the intersection of a few key issues: balancing transparency and national security concerns, the efficacy of torture, and the treatment of journalists in the United States.</description>
+Osama Bin Laden Raid Questions # I&amp;rsquo;m trying to cover this issue in depth since I think it sits at the intersection of a few key issues: balancing transparency and national security concerns, the efficacy of torture, and the treatment of journalists in the United States.</description>
     </item>
     
     <item>
@@ -824,11 +806,11 @@ Osama Bin Laden Raid Questions I&amp;rsquo;m trying to cover this issue in depth
       <pubDate>Sun, 10 May 2015 00:00:00 +0000</pubDate>
       
       <guid>https://stephenmalina.com/post/2015-05-10-nl05102015/</guid>
-      <description>Police Brutality Why Cops Like Me Are Quiet
+      <description>Police Brutality # Why Cops Like Me Are Quiet
 A former NYPD officer discusses police brutality from an officer&amp;rsquo;s perspective.
-Neuroscience The Science of Craving
+Neuroscience # The Science of Craving
 Profiles Dr. Kent Berridge&amp;rsquo;s research into the science of craving. Presents an interesting perspective on the difference between desire and pleasure and discusses meditation, a favorite topic of mine.
-Medicine Overkill
+Medicine # Overkill
 Argues that the American health system encourages careless overtreatment of illness. I&amp;rsquo;m sympathetic to this view but wish the author had delved more into alternative payment models since it seems these models contribute to the problem.</description>
     </item>
     
@@ -849,7 +831,7 @@ As I mentioned last week, I&amp;rsquo;ve decided to mark this week as the 6 mont
       
       <guid>https://stephenmalina.com/post/2015-04-26-nl04262015/</guid>
       <description>Note: Next week will be the arbitrarily but mostly correctly determined 6th month anniversary of my newsletter. If you have any ideas for interesting things I could do for this, I&amp;rsquo;d love to hear them. So far, I&amp;rsquo;ve considered a &amp;ldquo;Best Of&amp;rdquo; week or piece written by me reflecting on the newsletter and explaining in detail why I put so much time into this.
-Languages Utopian for Beginners
+Languages # Utopian for Beginners
 Tells the story of one man&amp;rsquo;s created language and its journey into the world.</description>
     </item>
     
@@ -859,9 +841,9 @@ Tells the story of one man&amp;rsquo;s created language and its journey into the
       <pubDate>Sun, 19 Apr 2015 00:00:00 +0000</pubDate>
       
       <guid>https://stephenmalina.com/post/2015-04-19-nl04192015/</guid>
-      <description>Politics Clinton Begins the 2016 Campaign, And It&amp;rsquo;s a Toss-Up
+      <description>Politics # Clinton Begins the 2016 Campaign, And It&amp;rsquo;s a Toss-Up
 Nate Silver, renowned election results predictor and sports statistician, speculates on the likelihood of a Hilary Clinton victory in 2016, taking into account different scenarios and opposing candidates. I really enjoy Nate Silver&amp;rsquo;s logical, data-driven approach to prediction.
-Dolphins Dolphin Intelligence
+Dolphins # Dolphin Intelligence
 The author of Moonwalking with Einstein, Joshua Foer, explores the fascinating world of dolphin intelligence. Foer takes a cautiously optimistic approach to the field, speaking with multiple scientists about the prospects and obstacles of communicating with dolphins.</description>
     </item>
     
@@ -871,9 +853,9 @@ The author of Moonwalking with Einstein, Joshua Foer, explores the fascinating w
       <pubDate>Sun, 12 Apr 2015 00:00:00 +0000</pubDate>
       
       <guid>https://stephenmalina.com/post/2015-04-12-nl04122015/</guid>
-      <description>Mystery The Mystery of the Millionaire Metaphysician
+      <description>Mystery # The Mystery of the Millionaire Metaphysician
 A republishing of an old story, this piece recounts a writer&amp;rsquo;s search for the author of a mysterious metaphysics manuscript. I don&amp;rsquo;t want to spoil the story so you&amp;rsquo;ll have to read it to learn more.
-Psychological Warfare and Foreign Policy Inside the Kremlin&amp;rsquo;s hall of mirrors
+Psychological Warfare and Foreign Policy # Inside the Kremlin&amp;rsquo;s hall of mirrors
 Investigates the Kremlin&amp;rsquo;s disinformation campaign and questions its reach. I thought this article did a phenomenal job of explaining the theory that led to the Kremlin&amp;rsquo;s employment of these tactics.</description>
     </item>
     
@@ -883,10 +865,10 @@ Investigates the Kremlin&amp;rsquo;s disinformation campaign and questions its r
       <pubDate>Sun, 05 Apr 2015 00:00:00 +0000</pubDate>
       
       <guid>https://stephenmalina.com/post/2015-04-05-nl04052015/</guid>
-      <description>Mind and Brain Electrified
+      <description>Mind and Brain # Electrified
 Investigates the promises and perils of tDCS, the electrical stimulation of the brain proponents claim will help treat depression and other neurological disorders.
-Evolution Defending Darwin
-A biology professor at the University of Kentucky discusses his experiencing teaching evolution to a group largely composed of Creationists. This article interests me on two levels: 1) I come from an area where evolution is largely unchallenged. In school, I don&amp;rsquo;t ever recall one of my peers arguing with the teacher about evolution, so it&amp;rsquo;s interesting to read about a place where this is not the case.</description>
+Evolution # Defending Darwin
+A biology professor at the University of Kentucky discusses his experiencing teaching evolution to a group largely composed of Creationists. This article interests me on two levels: 1) I come from an area where evolution is largely unchallenged.</description>
     </item>
     
     <item>
@@ -895,9 +877,9 @@ A biology professor at the University of Kentucky discusses his experiencing tea
       <pubDate>Sun, 29 Mar 2015 00:00:00 +0000</pubDate>
       
       <guid>https://stephenmalina.com/post/2015-03-29-nl03292015/</guid>
-      <description>Books Rapt
+      <description>Books # Rapt
 Reviews H is for Hawk, a non-fiction book about grief, hawking, and T.H. White. Discusses grief and the quirkiness of hawks and hawking.
-Memory Memory in the Flesh
+Memory # Memory in the Flesh
 Explores research on the radical idea that memory can exist outside the brain in other parts of the body. This article&amp;rsquo;s interesting because it shows how political science can be. I&amp;rsquo;m always drawn to articles which challenge scientific dogma as I think innovation often arises from these challenges.</description>
     </item>
     
@@ -907,9 +889,9 @@ Explores research on the radical idea that memory can exist outside the brain in
       <pubDate>Sun, 22 Mar 2015 00:00:00 +0000</pubDate>
       
       <guid>https://stephenmalina.com/post/2015-03-22-nl03222015/</guid>
-      <description>Evolution Possible Creatures
+      <description>Evolution # Possible Creatures
 A professor of Evolutionary Biology discusses his work mapping &amp;ldquo;nature&amp;rsquo;s library&amp;rdquo; of proteins. He makes tenuous parallels to Platonism, but the work stands on its own whether you take those into account or not.
-Mind and Brain The Science of Near Death Experiences
+Mind and Brain # The Science of Near Death Experiences
 Explores the debate about the mechanism of near-death experiences between scientific materialists and spiritual believers. I surprisingly fall somewhere in the middle on this and other similar issues.</description>
     </item>
     
@@ -919,9 +901,9 @@ Explores the debate about the mechanism of near-death experiences between scient
       <pubDate>Sun, 15 Mar 2015 00:00:00 +0000</pubDate>
       
       <guid>https://stephenmalina.com/post/2015-03-15-nl03152015/</guid>
-      <description>Genocide Interview with a Torturer
+      <description>Genocide # Interview with a Torturer
 An author and survivor of the Khmer Rouge genocide in Cambodia attempts to come to terms with his experience. At times, this piece was hard to read at times, but I think that quality adds to its power. This quote really resonated with me:
- &amp;ldquo;There’s a contemporary notion that we’re all potential torturers. This fatalism tinged with smugness exercises literature, film, and certain intellectuals. After all what’s more exciting than a great criminal?</description>
+&amp;ldquo;There’s a contemporary notion that we’re all potential torturers. This fatalism tinged with smugness exercises literature, film, and certain intellectuals.</description>
     </item>
     
     <item>
@@ -930,9 +912,9 @@ An author and survivor of the Khmer Rouge genocide in Cambodia attempts to come 
       <pubDate>Sun, 08 Mar 2015 00:00:00 +0000</pubDate>
       
       <guid>https://stephenmalina.com/post/2015-03-08-nl03082015/</guid>
-      <description>Mental Health The voices in my head: Eleanor Longden&amp;rsquo;s &amp;lsquo;psychic civil war&amp;rsquo;
+      <description>Mental Health # The voices in my head: Eleanor Longden&amp;rsquo;s &amp;lsquo;psychic civil war&amp;rsquo;
 The Guardian interviews Elanor Longden, a woman who started hearing voices while in college. Longden discusses her ordeal and subsequent recovery, shedding light on the nature of her disease. One of the commenters on this article wrote a thoughtful comment, which I&amp;rsquo;ve included
- &amp;ldquo;It makes me wonder that we all have these voices to some degree, but that it&amp;rsquo;s rarer to have them be so articulate, so able to enunciate distinct aspects of our personalities.</description>
+&amp;ldquo;It makes me wonder that we all have these voices to some degree, but that it&amp;rsquo;s rarer to have them be so articulate, so able to enunciate distinct aspects of our personalities.</description>
     </item>
     
     <item>
@@ -941,7 +923,7 @@ The Guardian interviews Elanor Longden, a woman who started hearing voices while
       <pubDate>Sun, 01 Mar 2015 00:00:00 +0000</pubDate>
       
       <guid>https://stephenmalina.com/post/2015-03-01-nl03012015/</guid>
-      <description>Science and Technology Futures of Text
+      <description>Science and Technology # Futures of Text
 A survey of all the current innovation in text as a medium. Argues for the superiority of text-based communication and interaction over app-based communication and interaction.
 First human head transplant could happen in two years
 Discusses the prospects for transplanting a human head onto another body. Neglects to discuss from where the second body would come, but, otherwise does a good job of explaining the idea and the issues surrounding it.</description>
@@ -953,7 +935,7 @@ Discusses the prospects for transplanting a human head onto another body. Neglec
       <pubDate>Sun, 22 Feb 2015 00:00:00 +0000</pubDate>
       
       <guid>https://stephenmalina.com/post/2015-02-22-nl02222015/</guid>
-      <description>Technology How I Taught my Computer to Write its Own Music
+      <description>Technology # How I Taught my Computer to Write its Own Music
 Discusses a successful endeavor to create a computer-based entity that writes music. Mindblowing.
 Digital Reality
 Edge interviews Neil Gershenfeld, head of MIT&amp;rsquo;s Center for Bits and Atoms. He discusses the future of manufacturing and fabrication and its impact on the world economy. This is a long one, but I really enjoyed it.
@@ -967,7 +949,7 @@ Profiles E-nable and other groups focused on improving upon the process of creat
       <pubDate>Sun, 15 Feb 2015 00:00:00 +0000</pubDate>
       
       <guid>https://stephenmalina.com/post/2015-02-15-nl02152015/</guid>
-      <description>Philosophy Do Easy
+      <description>Philosophy # Do Easy
 The film and source essay (linked to at the bottom of the page) both convey a philosophy rooted in Taoism, but understandable for the modern American. It&amp;rsquo;s important to note that William S. Burroughs (the essay&amp;rsquo;s author and the author of Naked Lunch) struggled with a debilitating heroine addiction for much of his life. Looking at this essay in light of that, I found that many of the ideas took on a dual meaning.</description>
     </item>
     
@@ -977,9 +959,9 @@ The film and source essay (linked to at the bottom of the page) both convey a ph
       <pubDate>Sun, 08 Feb 2015 00:00:00 +0000</pubDate>
       
       <guid>https://stephenmalina.com/post/2015-02-08-nl02082015/</guid>
-      <description>Mind and Brain The Trip Treatment
+      <description>Mind and Brain # The Trip Treatment
 Reviews new research on psychedelics and their gradual integration into mainstream psychiatry. Recounts the effects of psychedelic treatment on patients suffering from addiction or nearing the end of their lives.
-Biographical Meet Walter Pitts, The Man Who Tried to Redeem the World With Logic
+Biographical # Meet Walter Pitts, The Man Who Tried to Redeem the World With Logic
 Profiles Walter Pitts, a mathematician who worked alongside the founders of modern information theory but eventually suffered a crippling breakdown.</description>
     </item>
     
@@ -989,11 +971,10 @@ Profiles Walter Pitts, a mathematician who worked alongside the founders of mode
       <pubDate>Sun, 01 Feb 2015 00:00:00 +0000</pubDate>
       
       <guid>https://stephenmalina.com/post/2015-02-01-nl02012015/</guid>
-      <description>Corporations Are We Ready For Companies That Run Themselves?
+      <description>Corporations # Are We Ready For Companies That Run Themselves?
 Covers the rise of autonomous corporations and discusses its underlying forces and technologies. Questions whether these corporations will liberate us from scarcity or further enslave us to it.
-Farming An Ex-Industrial Fisherman Rethinks His Job
-Reviews Bren Smith, an ocean farmer working to use sustainable farming methods on the sea to make a living and produce food and fuel.
-Seeds of Doubt</description>
+Farming # An Ex-Industrial Fisherman Rethinks His Job
+Reviews Bren Smith, an ocean farmer working to use sustainable farming methods on the sea to make a living and produce food and fuel.</description>
     </item>
     
     <item>
@@ -1002,7 +983,7 @@ Seeds of Doubt</description>
       <pubDate>Sun, 25 Jan 2015 00:00:00 +0000</pubDate>
       
       <guid>https://stephenmalina.com/post/2015-01-25-nl01252015/</guid>
-      <description>Human Potential Natural Born Heroes
+      <description>Human Potential # Natural Born Heroes
 Sometimes, when I read an article, I think it would be great for the newsletter because it calls into question a widely-held belief or delves deep into an esoteric topic in a profound way. This isn&amp;rsquo;t one of those articles &amp;ndash; this is an article that you read and think &amp;ldquo;this is awesome.&amp;rdquo; The article covers a few different groups reviving or creating new uses of the human form.</description>
     </item>
     
@@ -1012,9 +993,9 @@ Sometimes, when I read an article, I think it would be great for the newsletter 
       <pubDate>Sun, 18 Jan 2015 00:00:00 +0000</pubDate>
       
       <guid>https://stephenmalina.com/post/2015-01-18-nl01182015/</guid>
-      <description>Education The Unappreciated Success of Charter Schools
+      <description>Education # The Unappreciated Success of Charter Schools
 Convincingly argues for charter schools&amp;rsquo; effectiveness at educating underpriviliged students.
-Mind and Brain Postcards from the Edge of Consciousness
+Mind and Brain # Postcards from the Edge of Consciousness
 Describes the experience of sensory deprivation and the biological mechanisms it activates.
 Muscle Strength is in the Mind
 Summarizes a recent study with results indicating that imagining muscular contractions affects the strength of the muscles involved. I&amp;rsquo;ve skimmed through the original study paper, and the methodology seems sound.</description>
@@ -1026,7 +1007,7 @@ Summarizes a recent study with results indicating that imagining muscular contra
       <pubDate>Sun, 11 Jan 2015 00:00:00 +0000</pubDate>
       
       <guid>https://stephenmalina.com/post/2015-01-11-nl01112015/</guid>
-      <description>Foreign Policy Paris attacks: Millions rally for unity in France
+      <description>Foreign Policy # Paris attacks: Millions rally for unity in France
 Covers massive French rallies meant to demonstrate unity after the attacks on Charlie Hebdo.
 Je Suis Charlie (Until Je Get Scared)
 Asserts that many Westerners hold inconsistent views on free speech. Illustrates this with examples of newspapers blurring out the Charlie Hebdo comics and journalists subtly blaming Hebdo authors for publishing &amp;ldquo;inflammatory&amp;rdquo; content.
@@ -1039,7 +1020,7 @@ Is Saudi Arabia trying to cripple American fracking?</description>
       <pubDate>Sun, 04 Jan 2015 00:00:00 +0000</pubDate>
       
       <guid>https://stephenmalina.com/post/2015-01-04-nl01042015/</guid>
-      <description>Power of the Mind Secrets of a Mind Gamer
+      <description>Power of the Mind # Secrets of a Mind Gamer
 Narrates how a journalist won the U.S. Memory Championship. Summarizes the techniques used by memory athletes &amp;ndash; individuals who competitively memorize card sequences, digit strings, and poems. I&amp;rsquo;ve been discussing memory with a few newsletter readers, so I thought I&amp;rsquo;d include this piece. If you enjoy this piece, I highly recommend the author&amp;rsquo;s book on this topic, Moonwalking with Einstein: The Art and Science of Remembering Everything.</description>
     </item>
     
@@ -1049,7 +1030,7 @@ Narrates how a journalist won the U.S. Memory Championship. Summarizes the techn
       <pubDate>Sun, 28 Dec 2014 00:00:00 +0000</pubDate>
       
       <guid>https://stephenmalina.com/post/2014-12-28-nl12282014/</guid>
-      <description>Stoicism Stoicism has been at the forefront of my thoughts this break. I&amp;rsquo;m most of the way through Seneca&amp;rsquo;s Letters from a Stoic: Epistulae Morales AD Lucilium, a primary source for Stoic philosophy and recently finished Ryan Holiday&amp;rsquo;s The Obstacle Is the Way, which presents a simplified version of Stoicism that caters to modern audiences.
+      <description>Stoicism # Stoicism has been at the forefront of my thoughts this break. I&amp;rsquo;m most of the way through Seneca&amp;rsquo;s Letters from a Stoic: Epistulae Morales AD Lucilium, a primary source for Stoic philosophy and recently finished Ryan Holiday&amp;rsquo;s The Obstacle Is the Way, which presents a simplified version of Stoicism that caters to modern audiences.
 The first article about Stoicism in this newsletter, Indifference is a power, reveals Stoicism&amp;rsquo;s tenets and discusses its application both by its founders during Roman times and in modern cognitive behavioral therapy (the creator of Cognitive Behavioral Therapy struggled as a psychoanalyst until he remembered the teachings of ancient Stoicism, citation.</description>
     </item>
     
@@ -1059,7 +1040,7 @@ The first article about Stoicism in this newsletter, Indifference is a power, re
       <pubDate>Sun, 21 Dec 2014 00:00:00 +0000</pubDate>
       
       <guid>https://stephenmalina.com/post/2014-12-21-nl12212014/</guid>
-      <description>Psychology and Neuroscience A Meditation on the Art of Not Trying
+      <description>Psychology and Neuroscience # A Meditation on the Art of Not Trying
 Introduces wu wei, the art of effortless grace. Taoists use wu wei to express the Tao (translates to &amp;ldquo;The Way&amp;rdquo;), while Confucians use it to express the grace that results from intense study and practice. Moreover, wu wei also resembles a state of mind which modern psychologists label &amp;ldquo;flow&amp;rdquo;. In addition to defining wu wei, the article offers a compelling hypothesis for why alcohol frequently accompanies business deal dinners, a phenomenon which I had never thought to explain.</description>
     </item>
     
@@ -1069,7 +1050,7 @@ Introduces wu wei, the art of effortless grace. Taoists use wu wei to express th
       <pubDate>Sun, 14 Dec 2014 00:00:00 +0000</pubDate>
       
       <guid>https://stephenmalina.com/post/2014-12-14-nl12072014/</guid>
-      <description>On Writing Writing with the Master
+      <description>On Writing # Writing with the Master
 Profiles John McPhee, a staff writer for the New Yorker and professor at Princeton. Uses accounts from McPhee&amp;rsquo;s students to illustrate his erudition.
 The Patch by John McPhee
 As a companion to the profile of John McPhee, I&amp;rsquo;ve included this piece of his. In an attempt to understand better the reverence with which his students speak of him, I read three of his past New Yorker articles.</description>
@@ -1119,7 +1100,7 @@ Church does a good job of balancing technical explanations with interesting anec
       <pubDate>Sun, 23 Nov 2014 00:00:00 +0000</pubDate>
       
       <guid>https://stephenmalina.com/post/2014-11-23-nl11232014/</guid>
-      <description>Philosophy / History Response to &amp;ldquo;Did Zen create the Kamikaze?&amp;quot;
+      <description>Philosophy / History # Response to &amp;ldquo;Did Zen create the Kamikaze?&amp;rdquo;
 A regular reader of the newsletter, Will Baird, responds to one of the articles I included in last week&amp;rsquo;s newsletter. If I could pick one article in this newsletter for you to read, it would be this one. Will worked hard on this response, bringing an expert&amp;rsquo;s mind to his critique and pulling knowledge from a wellspring of related sources and scholarly work.</description>
     </item>
     
@@ -1140,7 +1121,7 @@ Existence is a sci-fi novel for the Internet Age.</description>
       
       <guid>https://stephenmalina.com/post/2014-11-17-response-to-nl11162014/</guid>
       <description>One of my readers, Will Baird, read the &amp;ldquo;Did Zen philosophy create the Kamikaze?&amp;rdquo; article in this past week&amp;rsquo;s newsletter, and, being a History buff, had a strong reaction to the article. Thus, he asked that I make his well though-out and well informed response available for my readers, as I have done below.
-History as Clickbait  In his article “Into nothingness” Christopher Harding asks, “Did Zen ideas create the kamikaze?</description>
+History as Clickbait # In his article “Into nothingness” Christopher Harding asks, “Did Zen ideas create the kamikaze?</description>
     </item>
     
     <item>
@@ -1149,11 +1130,11 @@ History as Clickbait  In his article “Into nothingness” Christopher Harding
       <pubDate>Sun, 16 Nov 2014 00:00:00 +0000</pubDate>
       
       <guid>https://stephenmalina.com/post/2014-11-16-nl11162014/</guid>
-      <description>Philosophy Did Zen philosophy create the Kamikaze?
+      <description>Philosophy # Did Zen philosophy create the Kamikaze?
 Pontificates on the relationship between WWII-era Zen philosophers and Japanese Jingoism.
 A murderer&amp;rsquo;s warped idealism
 Contrasts previous portrayals of Adolf Eichmann as &amp;ldquo;terrifyingly normal&amp;rdquo; and &amp;ldquo;banal&amp;rdquo; with stories of his devotion to &amp;ldquo;the Final Solution.&amp;rdquo;
-Our Miraculous Biosphere The Termite and the Architect
+Our Miraculous Biosphere # The Termite and the Architect
 Begins by talking about an architect&amp;rsquo;s attempt to mimic the way termites&amp;rsquo; mounds manage air flow, and then uses this example as an example of biomimicry.</description>
     </item>
     
@@ -1164,7 +1145,7 @@ Begins by talking about an architect&amp;rsquo;s attempt to mimic the way termit
       
       <guid>https://stephenmalina.com/post/2014-11-09-nl11092014/</guid>
       <description>Questions or Comments? Contact me at [stephenmalina@gmail.com](mailto: stephenmalina@gmail.com) or on Twitter.
-Philosophy Marathon Monks of Mt. Hiei
+Philosophy # Marathon Monks of Mt. Hiei
 Disclaimer: There is New-Agey-ness within this article. For a more accurate depiction of the Marathon Monks, I recommend this documentary or this book (I intend to consume both over winter break)
 Despite the above disclaimer, I included this because I mentioned the Marathon Monks to a friend yesterday. Upon doing so, I decided that their story is worthwhile to share.</description>
     </item>
@@ -1176,7 +1157,7 @@ Despite the above disclaimer, I included this because I mentioned the Marathon M
       
       <guid>https://stephenmalina.com/post/2014-11-02-nl11022014/</guid>
       <description>This is a weekly newsletter I publish each week that contains content I enjoyed and hope that you will enjoy. If you have questions or comments, you can find me at [stephenmalina@gmail.com](mailto: stephenmalina@gmail.com) or on Twitter.
-Technology and Human Augmentation A Spreadsheet Way of Knowledge
+Technology and Human Augmentation # A Spreadsheet Way of Knowledge
 A long, in-depth piece on the history of spreadsheet modeling. The two points that stick with me from this piece are the dismissive attitude people initially had towards the spreadsheet and the obsession with modeling people displayed (and continue to display).</description>
     </item>
     
@@ -1191,22 +1172,12 @@ A long, in-depth piece on the history of spreadsheet modeling. The two points th
     
     <item>
       <title></title>
-      <link>https://stephenmalina.com/page/subscribe/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://stephenmalina.com/page/subscribe/</guid>
-      <description>Thank you for reading my blog!
-Sign up for my email newsletter or use this RSS feed to get notified of new blog posts.</description>
-    </item>
-    
-    <item>
-      <title></title>
       <link>https://stephenmalina.com/post/2023-08-05-protein-language-models-part-4/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://stephenmalina.com/post/2023-08-05-protein-language-models-part-4/</guid>
-      <description>Scaling Some of the earliest evidence for PLM scaling behaving similar to LLM scaling came from ESM-1b. The following plot shows model performance as a function of (log10) number of parameters. As seen there, they also trained LSTM models at two different sizes as baselines.
-⊕ ESM-1b perplexity vs. log10(# of parameters) by model type on a held-out subset of UniRef50.   RITA provided even stronger evidence for PLMs following scaling laws.</description>
+      <description>Scaling # Some of the earliest evidence for PLM scaling behaving similar to LLM scaling came from ESM-1b. The following plot shows model performance as a function of (log10) number of parameters. As seen there, they also trained LSTM models at two different sizes as baselines.
+⊕ ESM-1b perplexity vs. log10(# of parameters) by model type on a held-out subset of UniRef50. RITA provided even stronger evidence for PLMs following scaling laws.</description>
     </item>
     
     <item>
@@ -1215,7 +1186,8 @@ Sign up for my email newsletter or use this RSS feed to get notified of new blog
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://stephenmalina.com/subscribe/</guid>
-      <description></description>
+      <description>Thank you for reading my blog!
+Sign up for my email newsletter or use this RSS feed to get notified of new blog posts.</description>
     </item>
     
     <item>
@@ -1229,24 +1201,13 @@ Before joining Dyno, I was a CS MS student at Columbia doing research at the int
     </item>
     
     <item>
-      <title>About me</title>
-      <link>https://stephenmalina.com/page/about/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://stephenmalina.com/page/about/</guid>
-      <description>My name is The Dude. I have the following qualities:
- I rock a great beard I&amp;rsquo;m extremely loyal to my friends I like bowling  That rug really tied the room together.
-my history To be honest, I&amp;rsquo;m having some trouble remembering right now, so why don&amp;rsquo;t you just watch my movie and it will answer all your questions.</description>
-    </item>
-    
-    <item>
       <title>Bets</title>
       <link>https://stephenmalina.com/bets/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://stephenmalina.com/bets/</guid>
       <description>Inspired by Jose, Bryan Caplan, and others, this is a page where I track my ongoing and resolved bets publicly. Remember, bets are not endorsements!
-Format Bet: What is/was the bet? For: Who is/was for in favor of the claim?
+Format # Bet: What is/was the bet? # For: Who is/was for in favor of the claim?
 Against: Who is/was against the claim?
 Amount: How much money (and in what currency) do/did the for/against person get paid by the other person if they won?
 Implied probabilities: What are the bettor&amp;rsquo;s (implied) probabilities in the direction of their &amp;ldquo;preferred&amp;rdquo; outcomes?</description>

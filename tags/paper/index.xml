@@ -6,11 +6,7 @@
     <description>Recent content in paper on Stephen Malina</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 16 Nov 2019 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://stephenmalina.com/tags/paper/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Sat, 16 Nov 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://stephenmalina.com/tags/paper/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Paper Review - Network Mendelian Randomization</title>
       <link>https://stephenmalina.com/post/2019-11-16-network-mendelian-randomization/</link>
@@ -18,7 +14,7 @@
       
       <guid>https://stephenmalina.com/post/2019-11-16-network-mendelian-randomization/</guid>
       <description>In which I record my thoughts on Network Mendelian Randomization by Burgess et al.
-What is this paper about? This paper describes a method for doing Mendelian Randomization (MR) in the presence of a potential mediating variable. In the typical MR setting, we have an instrumental variable which &amp;ldquo;instruments&amp;rdquo; an exposure that we believe causally influences the outcome we care about. True mediators &amp;ldquo;mediate&amp;rdquo; the causal influence of exposures on outcomes.</description>
+What is this paper about? # This paper describes a method for doing Mendelian Randomization (MR) in the presence of a potential mediating variable. In the typical MR setting, we have an instrumental variable which &amp;ldquo;instruments&amp;rdquo; an exposure that we believe causally influences the outcome we care about. True mediators &amp;ldquo;mediate&amp;rdquo; the causal influence of exposures on outcomes.</description>
     </item>
     
     <item>
@@ -28,7 +24,7 @@ What is this paper about? This paper describes a method for doing Mendelian Rand
       
       <guid>https://stephenmalina.com/post/2019-08-08-deepsea/</guid>
       <description>In which I record my thoughts on DeepSEA.
-Terminology  ChIP-seq (Chromatin Immunoprecipitation Sequencing): Expression Quantitative Trait Locis (eQTLs) Cofactor Binding Sequences Histone Marks: modifications to histone proteins in the nucleosome that impact the shape of chromatin. gkm-SVMs: The gkm-SVM is the previous SOTA model for predicting transcription factor binding based on ChIP-seq data. Allele: variants of a gene at the same position on a chromosome.  What is this paper about?</description>
+Terminology # ChIP-seq (Chromatin Immunoprecipitation Sequencing): Expression Quantitative Trait Locis (eQTLs) Cofactor Binding Sequences Histone Marks: modifications to histone proteins in the nucleosome that impact the shape of chromatin. gkm-SVMs: The gkm-SVM is the previous SOTA model for predicting transcription factor binding based on ChIP-seq data. Allele: variants of a gene at the same position on a chromosome. What is this paper about?</description>
     </item>
     
     <item>
@@ -38,7 +34,7 @@ Terminology  ChIP-seq (Chromatin Immunoprecipitation Sequencing): Expression Qua
       
       <guid>https://stephenmalina.com/post/2019-08-05-basset/</guid>
       <description>In which I record my thoughts on Basset.
-Bio Background The genome consists of (broadly) two types of genes, coding genes and noncoding genes. Coding genes get translated into proteins (as laid down by the Central Dogma) and are what most of us learned about in bio class. Non-coding genes&amp;hellip; don&amp;rsquo;t. As I understand it, noncoding genes can do a bunch of different things, but part of their function is to regulate coding gene activity through a number of mechanisms.</description>
+Bio Background # The genome consists of (broadly) two types of genes, coding genes and noncoding genes. Coding genes get translated into proteins (as laid down by the Central Dogma) and are what most of us learned about in bio class. Non-coding genes&amp;hellip; don&amp;rsquo;t. As I understand it, noncoding genes can do a bunch of different things, but part of their function is to regulate coding gene activity through a number of mechanisms.</description>
     </item>
     
     <item>
@@ -48,7 +44,7 @@ Bio Background The genome consists of (broadly) two types of genes, coding genes
       
       <guid>https://stephenmalina.com/post/2019-07-26-deepbind/</guid>
       <description>In which I record my thoughts on DeepBind.
-What is this paper about? The authors of this paper designed a conv net model to predict how well different proteins will bind to sequences of DNA or RNA. They train one model per protein for many different sequences and show that these models can predict binding affinities for sequences well enough to produce insights regarding the impact of single nucleotide mutations. They then discuss different datasets and areas in which they tested their model and how it performed (often SOTA [as of 2015]).</description>
+What is this paper about? # The authors of this paper designed a conv net model to predict how well different proteins will bind to sequences of DNA or RNA. They train one model per protein for many different sequences and show that these models can predict binding affinities for sequences well enough to produce insights regarding the impact of single nucleotide mutations.</description>
     </item>
     
   </channel>

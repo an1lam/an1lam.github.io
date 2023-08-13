@@ -1,28 +1,16 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
-
-<head>
-<title>Stephen Malina - What are the bottlenecks to safe, repeatable edits in humans? Part 1</title>
-  <meta http-equiv="content-type" content="text/html; charset=utf-8">
-
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="">
-<meta name="keywords" content="">
-<meta name="author" content="Stephen Malina">
-<meta name="generator" content="Hugo 0.68.3" />
-
-  
-  
+<html lang="en-us"><head>
+<title>What are the bottlenecks to safe, repeatable edits in humans? Part 1 - Stephen Malina</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description"
+    content="Summary # Gene editing has made a lot of progress over the past few decades. CRISPR-Cas9 sparked the recent fervor and won some of its early pioneers a Nobel Prize, and more recently Prime Editing and Cytosine/Adenine Base Editors (CBEs/ABEs) have further expanded the range of editing targets and types of edits that are possible while increasing efficiency and reducing the rate of off-target effects.
+From the perspective of safe, ubiquitous editing in humans using these systems, a few major challenges for editing remain towards translating novel target discovery into clinical application: ">
+<link rel="canonical" href="https://stephenmalina.com/post/2023-06-07-editing-part-i/" />
 
 
 
-
-
-
-<link rel="stylesheet" href="https://unpkg.com/purecss@2.0.3/build/pure-min.css">
-
-
-    <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.3/build/grids-responsive-min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 
 
@@ -31,101 +19,44 @@
 
 
 
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
 
-<link rel="stylesheet" href="https://stephenmalina.com/css/tufte.css">
-<link rel="stylesheet" href="https://stephenmalina.com/css/hugo-tufte.css">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="preload" as="style"
+      href="https://fonts.googleapis.com/css?family=Noto+Serif+SC|Noto+Emoji&display=swap" />
+<link rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Noto+Serif+SC|Noto+Emoji&display=swap"
+      media="print" onload="this.media='all'" />
+<noscript>
+<link rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Noto+Serif+SC&display=swap" />
+</noscript>
+
+
+
+
+
+
+<link rel="stylesheet" href="https://stephenmalina.com/css/hugo-tufte.min.css">
+
+
+
+<link rel="stylesheet" href="https://stephenmalina.com/css/hugo-tufte-options.min.css">
+
 <link rel="stylesheet" href="https://stephenmalina.com/css/hugo-tufte-override.css">
 
-  
-<script type="application/javascript">
-var doNotTrack = false;
-if (!doNotTrack) {
-	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-	ga('create', 'UA-187780632-1', 'auto');
-	
-	ga('send', 'pageview');
-}
-</script>
-
-  
-<script type="application/javascript">
-var doNotTrack = false;
-if (!doNotTrack) {
-	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
-	ga('create', 'UA-187780632-1', 'auto');
-	
-	ga('send', 'pageview');
-}
-</script>
-<script async src='https://www.google-analytics.com/analytics.js'></script>
-
 </head>
-
-
 <body>
-<div id="layout" class="pure-g">
-<article class="pure-u-1">
-<header class="brand">
-  <h1>Stephen Malina</h1>
-  <h2>This is my blog. There are many others like it but this one is mine.</h2>
-  <nav class="menu">
-    <ul>
-    
-        <li><a href="https://stephenmalina.com/">Home</a></li>
-    
-        <li><a href="https://stephenmalina.com/about">About</a></li>
-    
-        <li><a href="https://stephenmalina.com/post">Post</a></li>
-    
-        <li><a href="https://stephenmalina.com/bets">Bets</a></li>
-    
-        <li><a href="https://stephenmalina.com/subscribe">Subscribe</a></li>
-    
-        <li><a href="https://stephenmalina.com/tags">Tags</a></li>
-    
-    </ul>
-</nav>
 
-</header>
 
-<section>
-<h1 class="content-title">
+<article id="main">
+  <section>
+<h1 class="content-title">What are the bottlenecks to safe, repeatable edits in humans? Part 1</h1></section>
+
   
-  <a href="https://stephenmalina.com/post/2023-06-07-editing-part-i/">What are the bottlenecks to safe, repeatable edits in humans? Part 1</a>
-  
-</h1>
-
-
-
-  <span class="content-meta">
-    
-
-
-    
-      <i class="fa fa-calendar"></i>
-      &nbsp;Jun 7, 2023
-    
-
-    
-      &nbsp;<i class="fa fa-clock-o"></i>
-      &nbsp;23 min read
-    
-
-    
-  </span>
-
-
-</section>
-
-
 <section>
   <details closed class="toc">
-    <summary>Contents</summary>
+    <summary>Table of Contents</summary>
     <nav id="TableOfContents">
   <ul>
     <li><a href="#summary">Summary</a></li>
@@ -167,7 +98,10 @@ if (!doNotTrack) {
 </section>
 
 
-<section><h2 id="summary">Summary</h2>
+  <section><h2 id="summary">
+Summary
+<a href="#summary" class="heading-anchor">#</a>
+</h2>
 <p>Gene editing has made a lot of progress over the past few decades. CRISPR-Cas9 sparked the recent fervor and won some of its early pioneers a <a href="https://www.synthego.com/blog/gene-editing-nobel-prize#:~:text=Jennifer%20Doudna%20and%20Emmanuelle%20Charpentier%20have%20been%20awarded%20the%20ultimate,most%20powerful%20gene%2Dediting%20tool.">Nobel Prize</a>, and more recently Prime Editing and Cytosine/Adenine Base Editors (CBEs/ABEs) have further expanded the range of editing targets and types of edits that are possible while increasing efficiency and reducing the rate of off-target effects.</p>
 <p>From the perspective of safe, ubiquitous editing in humans using these systems, a few major challenges for editing remain towards translating novel target discovery into clinical application:</p>
 <ul>
@@ -177,45 +111,52 @@ if (!doNotTrack) {
 </ul>
 <p>We discuss this more in <a href="#future-directions-and-projects-we%E2%80%99re-excited-about">Future directions and projects we’re excited about</a> but at a high level we see 1) larger, open datasets designed for use by ML and other computational methods and 2) longitudinal/observational studies of the impact of edits <em>in vivo</em> as two of the most promising and neglected buckets for accelerating field-wide progress.</p>
 <p>Zooming out, other major challenges remain: deciding <em>what</em> changes to make, figuring out a regulatory regime that can accommodate such a powerful technology, scaling therapeutics up, and many more– all interesting problems in their own right, but not problems we will touch on in this piece.</p>
-<h2 id="motivation">Motivation</h2>
+<h2 id="motivation">
+Motivation
+<a href="#motivation" class="heading-anchor">#</a>
+</h2>
 <p>People have an interesting (to us) attitude towards genetic inequity. They often just accept that some people only need 4-6 <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2884988/">hours</a> <a href="https://www.science.org/doi/10.1126/scitranslmed.aax2014">of</a> <a href="http://cell.com/neuron/fulltext/S0896-6273(19)30652-X">sleep</a> with <a href="https://gwern.net/doc/www/www.thecut.com/0eb14a4e529541bc6bb8f9804d684f38efa7b27f.html">seemingly no downsides</a> (even accounting for pleiotropy) besides hyperactivity, others are nearly <a href="https://nintil.com/what-is-alzheimers#:~:text=Additionally%2C%20people%20with%20the%20so%20called%20Icelandic%20mutation%20(or%20A673T%2C%20an%20alanine%20to%20threonine%20replacement%20at%20position%20673%20in%20APP)%20don%27t%20develop%20Alzheimer%27s%2C%20perhaps%20because%20the%20conformation%20of%20APP%20resulting%20from%20the%20mutation%20makes%20BACE1%20cut%20preferentially%20at%20the%20%CE%B2%E2%80%B2%20site%2C%20which%20is%20not%20amyloidogenic">immune to Alzheimer&rsquo;s</a> or <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5976255/#R5">heart disease</a>, or use<a href="https://www.pnas.org/doi/abs/10.1073/pnas.1700527114"> oxygen</a> <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC46538/pdf/pnas01462-0175.pdf">much more efficiently</a>, among <a href="https://arep.med.harvard.edu/gmc/protect.html">many other examples</a> and even bristle at the idea that we should make these traits more widely available. While we agree it’s important to discuss the implications, we see the kneejerk anti- response as a status quo bias, especially since soon things won’t have to be this way.</p>
 <p>With the current rate of progress, it seems quite likely that in the next two decades, small <strong>somatic</strong> edits for common diseases and even trait modification may be possible. Right now, most research understandably focuses on fixing a single problem with a single administration per person. However, if our ultimate goal is control over our own genes, we need to look ahead to what will stop us from getting there.</p>
 <p>Why the focus on gene editing instead of other methods of improving health or changing traits, like traditional drug pharmacology? One key difference is genetic editing would theoretically be modular in a way that designing a new small molecule would not be; once a reliable process for editing a specific tissue is identified, different edits would require changes in the template DNA or RNA, but not redesign of the entire drug delivery system. Secondly, the presence of existing humans with various mutations effectively serves as (free) natural sources of discovery for what types of modifications are beneficial, and which are deleterious. Three, editing provides a much wider range of options for how we can reach our goals. Small molecules typically (although not always) operate by binding a protein thereby preventing its uptake or performing some form of inhibition. Editing, on the other hand, allows us to apply the full range of genetic interventions (knock-outs, upregulation, modification). Put a different way, genetic medicine ultimately succeeds where drug targeting fails because they target the exact things that are broken within us. All therapies start at a known mechanism, and work their way into technical feasibility. Most importantly, <a href="https://ashpublications.org/blood/article/140/25/2650/493775/Lifelong-gene-therapy-in-dogs-with-hemophilia-A">gene therapy can cure disease for a lifetime</a> – something that makes it stand much taller than its small molecule peers.</p>
 <p>This post outlines what we know works well about the tools at our disposal in our quest for safe somatic gene editing, and highlights areas that could benefit from more work, especially work that might be neglected by academia and industry. Mainly, this means focusing on what specific gaps prevent repeated, targeted delivery of engineered Cas constructs for non-life threatening diseases and trait modification. For simplicity we will define the problem with respect to small substitutions and deletions, leaving larger insertions for another post (though we want to acknowledge that a ton of incredible things are happening in this area right now).</p>
-<h2 id="delivery">Delivery</h2>
+<h2 id="delivery">
+Delivery
+<a href="#delivery" class="heading-anchor">#</a>
+</h2>
 <p>As mentioned in the introduction, any <em>in vivo</em> gene edits require a way of getting the editing components into the cell. There are numerous delivery vectors available, each with its own set of advantages and drawbacks. While we won&rsquo;t delve into the specifics of each vector in this post, we recommend checking out our <a href="https://www.dynotx.com/introduction-to-aav-as-a-gene-therapy-vector-part-1/">blog</a> <a href="https://www.dynotx.com/introduction-to-aav-as-a-gene-therapy-vector-part-2/">posts</a> on this topic for a more in-depth exploration. In the context of repeatable, safe gene editing, there are three primary challenges we must address: efficiency, immunogenicity, and packaging size.</p>
-<h3 id="efficiency-and-specificity">Efficiency and Specificity</h3>
+<h3 id="efficiency-and-specificity">
+Efficiency and Specificity
+<a href="#efficiency-and-specificity" class="heading-anchor">#</a>
+</h3>
 <p>A significant concern in gene editing is the ability to target specific tissues or even cell types while avoiding others. In many cases, we want to edit only certain tissues to minimize potential side effects and toxicity. Additionally, organs like the liver might take up too much vector, posing an additional risk of toxicity.</p>
 <p>For multiplex editing, the challenge is even greater. The amount of vector needed typically increases linearly with the number of distinct edits required, for example to accommodate multiple guide RNAs. This makes it more difficult to achieve efficient and specific gene editing compared to single-gene therapies.</p>
-<h3 id="immunogenicity-of-vectors">Immunogenicity of Vectors</h3>
+<h3 id="immunogenicity-of-vectors">
+Immunogenicity of Vectors
+<a href="#immunogenicity-of-vectors" class="heading-anchor">#</a>
+</h3>
 <p>In some instances, trading off efficiency for the ability to redose might be acceptable. However, redosing poses the risk of provoking an immune response. The immune system can react to both the vector and the editor, but in this context, we are primarily concerned with the vector’s immunogenicity. For a more detailed discussion on the challenges specific to adeno-associated virus (AAV) vectors and immunogenicity, see <a href="https://www.frontiersin.org/articles/10.3389/fimmu.2021.674021/full">here</a>.</p>
-<h3 id="vector-packaging-size">Vector Packaging Size</h3>
+<h3 id="vector-packaging-size">
+Vector Packaging Size
+<a href="#vector-packaging-size" class="heading-anchor">#</a>
+</h3>
 <p>
 
-
-  
     <figure >
   
 
 
 
-  <label for="" class="margin-toggle">⊕</label>
-  <input type="checkbox" id="" class="margin-toggle">
-  <span class="marginnote">
-  
 
-  
-  
-  
-  
-  
 
-  </span>
+
+
+
 
 
   
-  <img src="https://stephenmalina.com/images/viral-vector-features.png" >
+  <img src="https://stephenmalina.com/images/viral-vector-features.png" alt="Image">
   
+
 
 
 
@@ -225,30 +166,22 @@ if (!doNotTrack) {
 Figure source: <a href="https://onlinelibrary.wiley.com/doi/epdf/10.1002/adtp.202100040">Engineering Gene Therapy: Advances and Barriers</a>. <em>Note: more recent engineered Adenovirus variants can <a href="https://biovian.com/news/viral-vector-and-gene-therapy-basics-summarized/">actually package</a> up to 36kb payloads.</em></p>
 <p>
 
-
-  
     <figure >
   
 
 
 
-  <label for="" class="margin-toggle">⊕</label>
-  <input type="checkbox" id="" class="margin-toggle">
-  <span class="marginnote">
-  
 
-  
-  
-  
-  
-  
 
-  </span>
+
+
+
 
 
   
-  <img src="https://stephenmalina.com/images/summary-of-crispr-cas9-systems.png" >
+  <img src="https://stephenmalina.com/images/summary-of-crispr-cas9-systems.png" alt="Image">
   
+
 
 
 
@@ -257,10 +190,19 @@ Figure source: <a href="https://onlinelibrary.wiley.com/doi/epdf/10.1002/adtp.20
 
 Figure source: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6356701/pdf/viruses-11-00028.pdf">Viral Delivery Systems for CRISPR</a></p>
 <p>Different viral (and nonviral) vectors have very different packaging capacities, which trade off against other factors such as immunogenicity and efficiency. When we talk about packaging size here, we’re specifically focused on delivering nucleotides. Delivering proteins or other biological material directly could also be valuable, but we’re ignoring it in this section. Different variants of the Cas protein have genomes ranging in sizes of 3-5kb. Once you add in a gRNA, all the other gene regulatory machinery, and other miscellaneous genetic elements, the full therapeutic construct typically takes up at least 5kb. This means it’s larger than what a wild type AAV can package. Since AAV is attractive for other reasons, researchers have explored various strategies to reduce the size of the editing components, such as <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5374744/">deleting amino acids</a>, developing <a href="https://www.sciencedirect.com/science/article/pii/S1097276521006481">mini-Cas9</a> systems, or utilizing Cas9 with polyethylene glycol (PEG) modifications.</p>
-<h2 id="editing">Editing</h2>
-<h3 id="the-landscape-and-background-of-gene-editing-technologies">The Landscape and Background of Gene Editing Technologies</h3>
+<h2 id="editing">
+Editing
+<a href="#editing" class="heading-anchor">#</a>
+</h2>
+<h3 id="the-landscape-and-background-of-gene-editing-technologies">
+The Landscape and Background of Gene Editing Technologies
+<a href="#the-landscape-and-background-of-gene-editing-technologies" class="heading-anchor">#</a>
+</h3>
 <p>Even with great delivery systems, editing still remains a major barrier to repeated edits. The core technology has improved tremendously over the last few years, with several key technologies leading the way.</p>
-<h4 id="summary-table">Summary table</h4>
+<h4 id="summary-table">
+Summary table
+<a href="#summary-table" class="heading-anchor">#</a>
+</h4>
 <p>For those already in the know, or particularly impatient readers looking to save a couple minutes.</p>
 <table>
   <tr>
@@ -324,39 +266,46 @@ Figure source: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6356701/pdf
    </td>
   </tr>
 </table>
-<h3 id="pre-crispr-editors">Pre-CRISPR editors</h3>
-<h4 id="zfns-zinc-finger-nucleases">ZFNs (Zinc Finger Nucleases)</h4>
+<h3 id="pre-crispr-editors">
+Pre-CRISPR editors
+<a href="#pre-crispr-editors" class="heading-anchor">#</a>
+</h3>
+<h4 id="zfns-zinc-finger-nucleases">
+ZFNs (Zinc Finger Nucleases)
+<a href="#zfns-zinc-finger-nucleases" class="heading-anchor">#</a>
+</h4>
 <p>ZFNs are artificial restriction enzymes that combine a zinc finger DNA-binding domain with a FokI nuclease domain. Though the specific number varies, the <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3176093/">typical ZFN makes use of between three to six three-base pair recognition zinc finger domains</a>, which then work in complex to recognize an entire target gene. Once a targeted double stranded break is made by the cleavage domain, gene replacement can be done, albeit through natural cellular repair mechanisms. While <a href="https://www.nature.com/articles/s41587-022-01624-4">recent ML-guided design of ZFNs</a> may catalyze a renaissance, ZFNs currently play an insignificant role in the broader editing landscape because of the <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7880305/">high failure rate</a> resulting from biophysical constraints of the modular assembly method.</p>
-<h4 id="talens-transcription-activator-like-effector-nucleases">TALENs (Transcription Activator-Like Effector Nucleases)</h4>
+<h4 id="talens-transcription-activator-like-effector-nucleases">
+TALENs (Transcription Activator-Like Effector Nucleases)
+<a href="#talens-transcription-activator-like-effector-nucleases" class="heading-anchor">#</a>
+</h4>
 <p>TALENs are customizable nucleases that <a href="https://www.nature.com/articles/nbt.1767">combine a transcription activator-like effector (TALE) DNA-binding domain and a FokI nuclease (N) domain</a>. The DNA-binding domain is composed of tandem repeats, each of which recognizes a single base pair in the target DNA sequence. The specificity of TALENs can be enhanced by designing longer DNA-binding domains, which reduces the likelihood of off-target binding. Though still sometimes found in niche <a href="https://www.nature.com/articles/s41467-020-20672-5">basic science research applications</a> where multiple edits – which are possible with CRISPR systems – are not needed, TALENs has largely fallen out of favor in the editing space in recent years due to its technical limitations, namely the inability to target multiple sites and complexity in designing the constructs themselves.</p>
-<h3 id="new-era-editors">New era editors</h3>
-<h4 id="crispr-cas9-clustered-regularly-interspaced-short-palindromic-repeats-and-crispr-associated-protein-9">CRISPR-Cas9 (Clustered Regularly Interspaced Short Palindromic Repeats and CRISPR-associated protein 9)</h4>
+<h3 id="new-era-editors">
+New era editors
+<a href="#new-era-editors" class="heading-anchor">#</a>
+</h3>
+<h4 id="crispr-cas9-clustered-regularly-interspaced-short-palindromic-repeats-and-crispr-associated-protein-9">
+CRISPR-Cas9 (Clustered Regularly Interspaced Short Palindromic Repeats and CRISPR-associated protein 9)
+<a href="#crispr-cas9-clustered-regularly-interspaced-short-palindromic-repeats-and-crispr-associated-protein-9" class="heading-anchor">#</a>
+</h4>
 
 
-
-  
     <figure >
   
 
 
 
-  <label for="" class="margin-toggle">⊕</label>
-  <input type="checkbox" id="" class="margin-toggle">
-  <span class="marginnote">
-  
 
-  
-  
-  
-  
-  
 
-  </span>
+
+
+
 
 
   
-  <img src="https://stephenmalina.com/images/crispr-mechanism-block2.jpg" >
+  <img src="https://stephenmalina.com/images/crispr-mechanism-block2.jpg" alt="Image">
   
+
 
 
 
@@ -365,33 +314,28 @@ Figure source: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6356701/pdf
 
 <p>Figure source: <a href="https://www.umassmed.edu/rti/biology/crispr-cas9/">UMass RNA Therapeutics Institute</a></p>
 <p>CRISPR-Cas9 is a versatile gene editing system that behaves like a molecular scissor tailor-made for a specific gene of interest. Genome editing is carried out via the <a href="https://www.science.org/doi/10.1126/science.1225829">Type II CRISPR-Cas9 system</a>, which can be generalized into three main parts: a single guide RNA (gRNA), a Cas9 nuclease, and a repair template. First, the gRNA recognizes and directs the CRISPR-system, which includes the Cas9 nuclease itself, to the gene of interest. A critical piece of the CRISPR-Cas9 system is the presence of a protospacer adjacent motif (PAM) directly adjacent to the targeted gene in the host genome, which serves as the recognition site for the Cas9 nuclease itself. Once bound to the 20 bp PAM sequence, Cas9 begins to introduce double-stranded breaks, resulting in two possible fates: <a href="https://www.cell.com/trends/genetics/fulltext/S0168-9525(18)30089-1?_returnURL=https%3A%2F%2Flinkinghub.elsevier.com%2Fretrieve%2Fpii%2FS0168952518300891%3Fshowall%3Dtrue">homology-directed repair (HDR – good!) and non-homologous end joining (NHEJ – bad!)</a>. HDR utilizes exogenous DNA included in the CRISPR construct to serve as a template for repair once a double stranded break is recognized by the cell’s natural machinery. In the cases where HDR is not possible, the cell simply fixes the gap in the original, now-cut gene by splicing the open ends together, resulting in a deletion. There are many potential issues with type II CRISPR-Cas9 systems in the context of gene editing, namely via potential for unwanted off-target binding stemming from the single guided nature of the system and / or NHEJ, which will be discussed later.</p>
-<h4 id="cytosine-adenine-base-editors">Cytosine/Adenine Base Editors</h4>
+<h4 id="cytosine-adenine-base-editors">
+Cytosine/Adenine Base Editors
+<a href="#cytosine-adenine-base-editors" class="heading-anchor">#</a>
+</h4>
 <p>
 
-
-  
     <figure >
   
 
 
 
-  <label for="" class="margin-toggle">⊕</label>
-  <input type="checkbox" id="" class="margin-toggle">
-  <span class="marginnote">
-  
 
-  
-  
-  
-  
-  
 
-  </span>
+
+
+
 
 
   
-  <img src="https://stephenmalina.com/images/cbe-abe-diagram.png" >
+  <img src="https://stephenmalina.com/images/cbe-abe-diagram.png" alt="Image">
   
+
 
 
 
@@ -403,33 +347,28 @@ Figure source: <a href="https://biotech.ucdavis.edu/news/dna-base-editors-genome
 <p>As with all other Cas systems, the host-complementary sgRNA is designed to recognize and direct the base editing machinery to the target site within the genome. Once at the target site, the Cas9n binds to the DNA, though this time, it does not introduce a break of any kind. Instead, the base editing deaminase, which is fused to the Cas9n, facilitates the direct conversion of a specific base pair. For example, cytidine deaminases can convert cytosine (C) to uracil (U), which is then read as thymine (T) by the cellular machinery, while adenosine deaminases convert adenine (A) to inosine (I), which is read as guanine (G).</p>
 <p>Base editing thus allows for targeted single base pair substitutions without introducing double-stranded breaks or relying on the cellular repair pathways, reducing the likelihood of unintended insertions or deletions. Though this might seem like a rather minor advancement for the field, prime editors actually present significant advantages when considering the challenge of correcting the<a href="https://onlinelibrary.wiley.com/doi/epdf/10.1002/humu.10212"> nearly-80% of human genetic diseases caused by point mutations</a>. Additionally, a number of target genes are just a point mutation away from enhanced functionality (like <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1877876/">increased muscle mass via myostatin inhibition</a> or <a href="https://med.stanford.edu/news/all-news/2022/05/gene-mutation-alzheimers.html">Alzheimer’s resistance stemming from single amino acid change in ApoE)</a>.</p>
 <p>Each of these technologies offers its unique advantages and challenges for researchers and clinicians. By understanding the mechanisms of action and optimizing the design of these gene editing tools, scientists can enhance their specificity and reduce the likelihood of off-target effects. In practice, the latter 3 – all Cas-based – dominate the editing landscape, and are what we focus on throughout the rest of the article.</p>
-<h4 id="prime-editing">Prime Editing</h4>
+<h4 id="prime-editing">
+Prime Editing
+<a href="#prime-editing" class="heading-anchor">#</a>
+</h4>
 <p>
 
-
-  
     <figure >
   
 
 
 
-  <label for="" class="margin-toggle">⊕</label>
-  <input type="checkbox" id="" class="margin-toggle">
-  <span class="marginnote">
-  
 
-  
-  
-  
-  
-  
 
-  </span>
+
+
+
 
 
   
-  <img src="https://stephenmalina.com/images/prime-editing-diagram.png" >
+  <img src="https://stephenmalina.com/images/prime-editing-diagram.png" alt="Image">
   
+
 
 
 
@@ -439,12 +378,24 @@ Figure source: <a href="https://biotech.ucdavis.edu/news/dna-base-editors-genome
 Figure source: <a href="https://en.wikipedia.org/wiki/Prime_editing#/media/File:Prime_editing_mechanism.png">Wikipedia</a></p>
 <p>A novel gene editing technique, <a href="https://www.nature.com/articles/s41586-019-1711-4">prime editing</a> provides a refined approach for making precise alterations to DNA sequences, circumventing some of the issues associated with CRISPR-Cas9 systems. The prime editing system consists of three key elements: a prime editing guide RNA (pegRNA) complementary to a region in the host genome and includes the RNA template to be inserted, an impaired Cas9 nickase (nCas9) incapable of double-stranded breaks, and Moloney Murine Leukemia Virus reverse transcription enzyme (M-MLV RT, abbreviated as RT going forward).</p>
 <p>Similar to traditional gRNAs, pegRNA is designed to recognize and guide the prime editing machinery to the desired target site within the genome. Upon reaching the target site, the nCas9 enzyme creates a single-stranded break, or &ldquo;nick,&rdquo; in the DNA. The RT enzyme then synthesizes a new DNA strand, using the pegRNA as a template containing the intended edit. The modified strand is subsequently incorporated into the host genome to “fill the gap” created by the nickase, with the final step being the replacement of the now-mismatched original host genome segment via cellular mismatch repair. Unlike CRISPR-Cas9, prime editing allows for targeted insertions, deletions, and, uniquely, single base substitutions (more on this later), thereby allowing a much more <a href="https://www.frontiersin.org/articles/10.3389/fgene.2020.00528/full">diverse array of allowable edit types</a>. Areas for improvement of prime editor complexes mainly revolve around improving editing efficiency and optimization of pegRNA design.</p>
-<h2 id="the-challenges-in-gene-editing-and-possible-solutions">The Challenges in Gene Editing and Possible Solutions</h2>
-<h3 id="off-target-edits">Off-target edits</h3>
+<h2 id="the-challenges-in-gene-editing-and-possible-solutions">
+The Challenges in Gene Editing and Possible Solutions
+<a href="#the-challenges-in-gene-editing-and-possible-solutions" class="heading-anchor">#</a>
+</h2>
+<h3 id="off-target-edits">
+Off-target edits
+<a href="#off-target-edits" class="heading-anchor">#</a>
+</h3>
 <p>The biggest hurdle facing Cas editing systems is the risk of off-target edits – unintentional edits to additional or alternative bases, resulting in deleterious edits in untargeted regions of the genome. These accidental alterations can have harmful consequences, in particular the activation of oncogenes that trigger cancer.  As such, researchers are tirelessly working to improve the specificity of Cas editing systems to minimize the occurrence of off-target edits. Right now, a lot of progress is being made but inconsistent evaluations and experimental conditions make assessing the state of things and ensuring progress builds on itself difficult.</p>
-<h4 id="how-high-is-off-target-edit-risk-for-existing-editors">How high is off-target edit risk for existing editors?</h4>
+<h4 id="how-high-is-off-target-edit-risk-for-existing-editors">
+How high is off-target edit risk for existing editors?
+<a href="#how-high-is-off-target-edit-risk-for-existing-editors" class="heading-anchor">#</a>
+</h4>
 <p>While all Cas editors come with some risk of off-target edits, the actual rate of occurrence relative to natural cell-mediated processes (see this Appendix section for some loose estimates of the natural mutation rate) is unknown. If we knew this rate, it could act as a useful benchmark to potentially increase our confidence in editor(s). Even <em>in vitro</em>, knowing that an editor had an off-target edit rate substantially lower than that of cell division even <em>in vitro</em> (and doesn’t preferentially edit oncogenes or other harmful regions) would provide a helpful complement to trials and animal studies alone.</p>
-<h4 id="how-do-different-editing-systems-stack-up-in-terms-of-off-target-edit-risk">How do different editing systems stack up in terms of off-target edit risk?</h4>
+<h4 id="how-do-different-editing-systems-stack-up-in-terms-of-off-target-edit-risk">
+How do different editing systems stack up in terms of off-target edit risk?
+<a href="#how-do-different-editing-systems-stack-up-in-terms-of-off-target-edit-risk" class="heading-anchor">#</a>
+</h4>
 <p>Given this uncertainty, it’s hard to get a precise answer to the question of which editor has the lowest off-target edit rate. As best as we can tell, mainly according to <a href="https://www.nature.com/articles/s41434-021-00263-9#:~:text=Three%20different%20ABE/gRNAs%20combinations%20were%20tested%20and%20bystander%20editing%20of%20neighbouring%20A%E2%80%99s%20occurred%20at%20a%20higher%20level%20that%20the%20target%20A.%20In%20contrast%2C%20PE%20corrected%20the%20mutation%20with%20no%20detectable%20bystander%20effect%2C%20despite%20the%20overall%20efficiency%20being%20lower%20than%20editing%20with%20ABE.">this paper</a>, the most correct ordering from lowest to highest is:</p>
 <ol>
 <li>Prime editor: Prime editors have the lowest off-target edit rates of the three technologies.</li>
@@ -452,7 +403,10 @@ Figure source: <a href="https://en.wikipedia.org/wiki/Prime_editing#/media/File:
 <li>CRISPR-Cas9: CRISPR-Cas9 has the highest off-target edit rate of the three technologies.</li>
 </ol>
 <p>Again though, there are tons of papers discussing this so these are very tentative general rankings. It’s also important to remember that the off-target edit rate of each technology can vary depending on the specific application and that these rankings are coming from the “standard” version of each of these technologies.</p>
-<h4 id="types-of-off-target-edits">Types of off-target edits</h4>
+<h4 id="types-of-off-target-edits">
+Types of off-target edits
+<a href="#types-of-off-target-edits" class="heading-anchor">#</a>
+</h4>
 <p>Cas editing systems’ off-target effects fall into two broad categories: “distal” and “proximal” (<a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6535181/#:~:text=As%20with%20all,yet%20been%20reported.">source of terminology</a>). An edit is proximal if it falls &lt;200bp from the intended target site and distal if it falls outside that window.</p>
 <p>Distal edits have two sub-categories: guide-dependent and guide-independent off-target edits. Guide-dependent off-target edits result from off-target binding of a guide RNA (gRNA) to the wrong region, either because of an exact complementarity or, more commonly, a close enough but not exact complementarity to the guide.</p>
 <p>Proximal edits occur within the editing window and include:</p>
@@ -460,23 +414,44 @@ Figure source: <a href="https://en.wikipedia.org/wiki/Prime_editing#/media/File:
 <li>Bystander edits: additional or alternative unintended mutation to a base near the target. One of the more common off-target edit types for cytosine/adenine base editors.</li>
 <li>Deletions caused by NHEJ: as mentioned already, CRISPR-Cas9’s double-strand breaks come with the risk of the two cut ends joining directly rather than the desired homology-directed repair.</li>
 </ul>
-<h4 id="strategies-for-reducing-off-target-edits">Strategies for reducing off-target edits</h4>
+<h4 id="strategies-for-reducing-off-target-edits">
+Strategies for reducing off-target edits
+<a href="#strategies-for-reducing-off-target-edits" class="heading-anchor">#</a>
+</h4>
 <p>Off-target gRNA binding is a problem for all three of CRISPR-Cas9, prime editing, and cytosine/adenine base editors, meaning gRNA design is an especially valuable topic to work on. Progress today primarily involves designing guides that are less likely to accidentally bind to an off-target region of the genome and will edit the target region with higher efficiency. There are different approaches to this but because it’s ultimately a sequence design problem, we are most excited about approaches that leverage ML and large datasets. Early methods that design guide RNAs like <a href="https://genomebiology.biomedcentral.com/articles/10.1186/s13059-018-1459-4">DeepCRISPR</a>, Microsoft Research’s <a href="https://www.microsoft.com/en-us/research/project/crispr/">Azimuth/Elevation</a>, and, more recently, <a href="https://www.cell.com/cell/fulltext/S0092-8674(23)00331-8?_returnURL=https%3A%2F%2Flinkinghub.elsevier.com%2Fretrieve%2Fpii%2FS0092867423003318%3Fshowall%3Dtrue">DeepPrime</a> show promising progress towards being able to predict off-target binding. However, these papers only evaluate prediction of known off-target sites <em>in vitro</em> so we don’t yet understand how much of a benefit they deliver in a clinical setting. That said, like many areas where more data is being generated at lower costs, we can expect methods to continue to improve here.</p>
 <p>Engineering the Cas protein for higher sequence specificity also benefits all three Cas-based systems and has the potential to reduce <em>both</em> distal and proximal off-target edits. In <a href="https://www.nature.com/articles/s41467-018-05477-x">this</a> and <a href="https://www.nature.com/articles/s41589-023-01279-5">follow-up work</a>, Kim et al. designed (the extremely cool-ly named) Sniper family of Cas9 variants which maintain on-target efficiency while reducing off-target double-strand breaks via a clever directed evolution scheme in <em>E. coli</em>. In an unbiased genome-wide screen, Multiple of the Sniper Cas9 variants cleaved far fewer sites than WT Cas9. Furthermore, when paired with BE3, a base editor, Sniper-Cas9 had a 2-16 fold lower off-target edit rate than the wild type. The fact that editing Cas9 enabled gains for both CRISPR and CBE/ABE specificity suggests that improvements to the Cas protein may generalize across editing systems, which would make Cas engineering even more valuable. In the future, we expect ML-guided protein design to help design even better, more specific Cas9 variants. We’re also optimistic that gains made towards editing vanilla Cas9 will be translatable to dCas9 and nCas9.</p>
 <p>Because CRISPR-Cas9 is increasingly being replaced by CBEs/ABEs and prime editing, most of the work we are aware of on reducing bystander edits focuses on CBEs/ABEs. <a href="https://www.nature.com/articles/s41467-022-32157-8#Sec2">Multiple</a> <a href="https://www.nature.com/articles/s41587-022-01533-6">papers</a> have <a href="https://www.nature.com/articles/s41587-020-0414-6">reported</a> on variants of one or both editors with engineered deaminases that maintain or improve on-target efficiency while lowering off-target deaminase activity via directed evolution (TadCBE) or rational protein engineering of the deaminase. This sometimes comes with the additional benefit of reduced off-target distal activity. Both <a href="https://www.nature.com/articles/nbt.4199">this paper</a>, which replaced the commonly used cytidine deaminase in CBEs with a more sequence specific one, and TadCBE found that improved specificity also reduced distal off-target effects.</p>
 <p>Stepping back, while off-target effects remain a major problem for editing systems, we’re confident that the combined progress from improving guide design, the Cas protein, and system-specific components can combine to drive rapid progress towards the goal of negligible off-target effects. Rather than progress along individual axes, we see lack of comprehensive datasets and measurement experiments as bigger obstacles towards actually translating off-target effect mitigations to clinical settings. In What’s Next?, we propose some ideas for eliminating this bottleneck.</p>
-<h3 id="immunogenicity-of-editors">Immunogenicity of Editors</h3>
+<h3 id="immunogenicity-of-editors">
+Immunogenicity of Editors
+<a href="#immunogenicity-of-editors" class="heading-anchor">#</a>
+</h3>
 <p>Another challenge specific to Cas editing systems is immunogenicity, which occurs when a therapeutic agent is blocked by the host immune system by clearance or neutralization – distinct from immunogenicity to viral vectors (covered earlier). Because the most common Cas orthologs stem from _S. aureus _and <em>S. pyogenes</em>, the dominant concern when thinking about immunogenicity is a response that comes from natural exposure to bacterial proteins at some point prior to therapeutic delivery. Though the specific numbers differ across studies, it’s clear that many individuals possess natural antibodies to SpCas9, the enzyme utilized in CRISPR-Cas9 gene editing, with occurrence of <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7199589/">anti-Cas antibodies at potentially as high as 78%</a> to <a href="https://www.nature.com/articles/s41591-022-01848-6">95%</a>. When the <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5374744/">Cas9 protein</a> or <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5848615/">RNA</a> is introduced into the body, these pre-existing antibodies may provoke an immune response specific to editing elements themselves that can complicate and potentially limit the ability to perform subsequent edits. Evidence in preclinical studies demonstrates that <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6492962/">immune response to Cas9 is a legitimate concern</a>, though it is unclear how vector-independent immunogenicity will influence therapeutic efficacy.</p>
 <p>If adverse reactions to cutting enzymes themselves pose a risk to treatments there are fortunately a few ways to make a less immunogenic Cas. The first, least palatable option – which is possible now – is to simply serially undergo multiple treatments that depend on different CRISPR effector proteins. This would look like round 1 of treatment relying on <em>S. aureus</em>-derived Cas, while round 2 uses <em>C. jejuni</em>, as <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6783354/">antibody-specific responses are not cross reactive between species</a>. Though doable today, this solution is not ideal due to the reliance on naturally occurring enzymes, especially if the goal is to achieve either concurrent dosing of different therapies, or many sequential rounds of treatments for different targets. For the orthogonal effectors that do have some overlap, <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9808800/">use of immunosuppresants</a> could allow for more tolerable intake of therapies, though that comes with its own challenges.</p>
 <p>Engineering of various CRISPR effector proteins remains the best approach to solving the immunogenicity issue. One approach involves engineering Cas proteins to generate more orthologs that can be serially or concurrently delivered to the same patient. Though much of the work in machine guided design for enzymatic editors revolves around <a href="https://www.nature.com/articles/s41467-022-29874-5">improving cutting efficiency and specificity</a>, much of the same principles could be applied to design around motifs involved in immune response. In the same vein, another promising strategy involves rational design strategies to mask specific epitopes to prevent immune responses. A group in China managed to avoid toxicity from the Cas protein itself by first identifying problematic sources of immune responses to Cas9, then engineering the enzyme with a simple <a href="https://pubmed.ncbi.nlm.nih.gov/35686980/">R338G substitution to avoid B cell immunogenicity</a>.</p>
 <p>Again, relative to negative immune responses to delivery vectors themselves, which is certainly a real and known issue in the field, it really is not known how critical immunogencity concerns are for successful repeatable edits, but it’s worth covering options once the field develops a clearer picture for the problem (more on that later in What’s Next?).</p>
-<h3 id="universality">Universality</h3>
+<h3 id="universality">
+Universality
+<a href="#universality" class="heading-anchor">#</a>
+</h3>
 <p>Lastly, a more general challenge in the field of gene editing is developing techniques that work efficiently and flexibly across the entire human genome. Whether in its inactive base editor form or vanilla CRISPR-Cas9 mode, the reliance on PAM recognition as part of the Cas mechanism acts as a potential barrier to target selection, since it limits gRNA binding to locations that have a suitable PAM sequence the right distance from the target itself. The good news is help is definitely on the way to solve this problem! Academics have made great strides to create more flexibility by <a href="https://pubmed.ncbi.nlm.nih.gov/26098369/">engineering CRISPR-Cas9 nucleases with altered PAM specificities</a>, and in some cases, have even<a href="https://pubmed.ncbi.nlm.nih.gov/32217751/"> generated near-PAMless variants</a>, allowing for unconstrained target selection. As far as issues go with editing, this one seems the closest to being fully solved. Great job, everyone!</p>
-<h1 id="acknowledgments">Acknowledgments</h1>
+<h1 id="acknowledgments">
+Acknowledgments
+<a href="#acknowledgments" class="heading-anchor">#</a>
+</h1>
 <p>Thanks to <a href="https://twitter.com/Willyintheworld">Willy Chertman</a> and <a href="https://milan.cvitkovic.net/about/">Milan Cvitkovik</a> for their in depth and thoughtful feedback on the post.</p>
-<h1 id="appendix">Appendix</h1>
-<h2 id="establishing-a-natural-mutation-rate-baseline">Establishing a natural mutation rate baseline</h2>
-<h3 id="helpful-numbers--estimates">Helpful numbers / estimates</h3>
+<h1 id="appendix">
+Appendix
+<a href="#appendix" class="heading-anchor">#</a>
+</h1>
+<h2 id="establishing-a-natural-mutation-rate-baseline">
+Establishing a natural mutation rate baseline
+<a href="#establishing-a-natural-mutation-rate-baseline" class="heading-anchor">#</a>
+</h2>
+<h3 id="helpful-numbers--estimates">
+Helpful numbers / estimates
+<a href="#helpful-numbers--estimates" class="heading-anchor">#</a>
+</h3>
 <ul>
 <li>Number of cells in a human body: 4e13</li>
 <li>Number of DNA damage events per cell per day (<a href="https://bionumbers.hms.harvard.edu/bionumber.aspx?s=n&amp;v=2&amp;id=106953">source</a>): &gt;10,000</li>
@@ -500,10 +475,16 @@ Figure source: <a href="https://en.wikipedia.org/wiki/Prime_editing#/media/File:
 </ul>
 </li>
 </ul>
-<h3 id="loose-bounds-on-acceptable-number-of-mutations-from-editors">Loose bounds on acceptable number of mutations from editors</h3>
+<h3 id="loose-bounds-on-acceptable-number-of-mutations-from-editors">
+Loose bounds on acceptable number of mutations from editors
+<a href="#loose-bounds-on-acceptable-number-of-mutations-from-editors" class="heading-anchor">#</a>
+</h3>
 <p>Let’s take as an assumption that if our off-target edit rate is on average below the ongoing mutation rate of normal body processes than we’d be happy. Using our number of 3e11 cell divisions in a human per day and 1 mutation per cell division, we get a very hand-wavey estimate of 3e11 mutations per day as part of ongoing biological processes. If we assume an edit we want to apply will edit a good fraction of all cells (a very conservative assumption), then this suggests we want to keep our off-target rate below 1e-2 in order to match the total number of mutations from a day of cell divisions.</p>
 <p>Alternatively, if we just compare editing to a cell division event directly, we could argue that the per cell off-target rate should be at or below 0.1 mutations per cell.</p>
-<h3 id="caveats">Caveats</h3>
+<h3 id="caveats">
+Caveats
+<a href="#caveats" class="heading-anchor">#</a>
+</h3>
 <p>There are lots of reasons why this estimate is naive and doesn’t actually work. It should be taken only as a very loose guess to hopefully be supplanted by <a href="#longitudinal-observational-studies-in-model-systems">Longitudinal / observational studies in model systems</a> in the future. To name just a few of these reasons:</p>
 <ul>
 <li>Most editing interventions won’t actually aim to edit all human cells.</li>
@@ -511,63 +492,99 @@ Figure source: <a href="https://en.wikipedia.org/wiki/Prime_editing#/media/File:
 <li>Some of these numbers may not account for DNA repair machinery which protects against dangerous mutations during DNA copying but may not work as well for off-target edits.</li>
 </ul>
 </section>
-<section>
+  <section><footer class="page-footer">
+<hr />
+
+<div class="previous-post" style="display:inline-block;">
   
-  <div id="disqus_thread"></div>
-  <script type="text/javascript">
-
-  (function() {
-      
-      
-      if (window.location.hostname == "localhost")
-          return;
-
-      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-      var disqus_shortname = 'an1lam-github-io';
-      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-  })();
-  </script>
-  <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-  <a href="http://disqus.com/" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
-
-
-  <footer class="page-footer">
-		<hr>
-		<ul class="page-footer-menu">
-		
-      <li><a href="https://github.com/an1lam"><i class='fa fa-github fa-2x'></i> </a></li>
-		
-      <li><a href="https://twitter.com/an1lam"><i class='fa fa-twitter fa-2x'></i> </a></li>
-		
-      <li><a href="mailto:stephenmalina@gmail.com"><i class='fa fa-envelope fa-2x'></i> </a></li>
-		
-      <li><a href="https://stackoverflow.com/users/1631855/an1lam"><i class='fa fa-stack-overflow fa-2x'></i> </a></li>
-		
-		</ul>
-
+  <a class="link-reverse" href="https://stephenmalina.com/post/2023-01-11-viriditas-dialogue/?ref=footer">« Dialogue on Viriditas</a>
   
-    <p>
-      Powered by <a href="https://gohugo.io">Hugo</a> and the
-      <a href="https://github.com/shawnohare/hugo-tufte">Tufte theme</a>.
-    </p>
-  
-
-	<div class="copyright">
-	<p>
-    
-      &copy; 2023
-    .
-    All rights reserved.
-    
-  </p>
 </div>
+
+<div class="next-post", style="display:inline-block;float:right;">
+  
+  <a class="link-reverse" href="https://stephenmalina.com/post/2023-08-13-cgm-and-beyond/?ref=footer">CGM and Beyond: A mix of a dialogue and a debate »</a>
+  
+</div>
+
+<ul class="page-footer-menu">
+  
+  
+  <li><a href="https://twitter.com/an1lam">Twitter</a></li>
+  
+
+  
+  <li><a href="https://github.com/an1lam">GitHub</a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <li><a href="https://scholar.google.com/citations?user=Q6_3PJEAAAAJ">Google Scholar</a></li>
+  
+  
+  
+    <li><a href="https://github.com/an1lam"><i class='fa fa-github fa-2x'></i>  </a></li>
+  
+    <li><a href="https://twitter.com/an1lam"><i class='fa fa-twitter fa-2x'></i>  </a></li>
+  
+    <li><a href="mailto:stephenmalina@gmail.com"><i class='fa fa-envelope fa-2x'></i>  </a></li>
+  
+    <li><a href="https://stackoverflow.com/users/1631855/an1lam"><i class='fa fa-stack-overflow fa-2x'></i>  </a></li>
+  
+</ul>
+
+
+<p>
+  Powered by <a href="https://gohugo.io">Hugo</a> and the
+  <a href="https://github.com/loikein/hugo-tufte">Tufte theme</a>.
+</p>
+
+
+
+
 </footer>
-
-
-
+</section>
+  <section><nav class="menu">
+    <ul>
+    
+        <li><a href="https://stephenmalina.com/">Home</a></li>
+    
+        <li><a href="https://stephenmalina.com/about">About</a></li>
+    
+        <li><a href="https://stephenmalina.com/post">Post</a></li>
+    
+        <li><a href="https://stephenmalina.com/bets">Bets</a></li>
+    
+        <li><a href="https://stephenmalina.com/subscribe">Subscribe</a></li>
+    
+        <li><a href="https://stephenmalina.com/tags">Tags</a></li>
+    
+    </ul>
+</nav>
 </section>
 </article>
-</div>
+
+
+
+
+
 </body>
+
 </html>

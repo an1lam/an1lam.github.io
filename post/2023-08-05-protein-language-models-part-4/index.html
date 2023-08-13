@@ -1,28 +1,16 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
-
-<head>
-<title>Stephen Malina - </title>
-  <meta http-equiv="content-type" content="text/html; charset=utf-8">
-
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="">
-<meta name="keywords" content="">
-<meta name="author" content="Stephen Malina">
-<meta name="generator" content="Hugo 0.68.3" />
-
-  
-  
+<html lang="en-us"><head>
+<title> - Stephen Malina</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description"
+    content="Scaling # Some of the earliest evidence for PLM scaling behaving similar to LLM scaling came from ESM-1b. The following plot shows model performance as a function of (log10) number of parameters. As seen there, they also trained LSTM models at two different sizes as baselines.
+⊕ ESM-1b perplexity vs. log10(# of parameters) by model type on a held-out subset of UniRef50. RITA provided even stronger evidence for PLMs following scaling laws. ">
+<link rel="canonical" href="https://stephenmalina.com/post/2023-08-05-protein-language-models-part-4/" />
 
 
 
-
-
-
-<link rel="stylesheet" href="https://unpkg.com/purecss@2.0.3/build/pure-min.css">
-
-
-    <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.3/build/grids-responsive-min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 
 
@@ -31,127 +19,68 @@
 
 
 
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
 
-<link rel="stylesheet" href="https://stephenmalina.com/css/tufte.css">
-<link rel="stylesheet" href="https://stephenmalina.com/css/hugo-tufte.css">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="preload" as="style"
+      href="https://fonts.googleapis.com/css?family=Noto+Serif+SC|Noto+Emoji&display=swap" />
+<link rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Noto+Serif+SC|Noto+Emoji&display=swap"
+      media="print" onload="this.media='all'" />
+<noscript>
+<link rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Noto+Serif+SC&display=swap" />
+</noscript>
+
+
+
+
+
+
+<link rel="stylesheet" href="https://stephenmalina.com/css/hugo-tufte.min.css">
+
+
+
+<link rel="stylesheet" href="https://stephenmalina.com/css/hugo-tufte-options.min.css">
+
 <link rel="stylesheet" href="https://stephenmalina.com/css/hugo-tufte-override.css">
 
-  
-<script type="application/javascript">
-var doNotTrack = false;
-if (!doNotTrack) {
-	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-	ga('create', 'UA-187780632-1', 'auto');
-	
-	ga('send', 'pageview');
-}
-</script>
-
-  
-<script type="application/javascript">
-var doNotTrack = false;
-if (!doNotTrack) {
-	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
-	ga('create', 'UA-187780632-1', 'auto');
-	
-	ga('send', 'pageview');
-}
-</script>
-<script async src='https://www.google-analytics.com/analytics.js'></script>
-
 </head>
-
-
 <body>
-<div id="layout" class="pure-g">
-<article class="pure-u-1">
-<header class="brand">
-  <h1>Stephen Malina</h1>
-  <h2>This is my blog. There are many others like it but this one is mine.</h2>
-  <nav class="menu">
-    <ul>
-    
-        <li><a href="https://stephenmalina.com/">Home</a></li>
-    
-        <li><a href="https://stephenmalina.com/about">About</a></li>
-    
-        <li><a href="https://stephenmalina.com/post">Post</a></li>
-    
-        <li><a href="https://stephenmalina.com/bets">Bets</a></li>
-    
-        <li><a href="https://stephenmalina.com/subscribe">Subscribe</a></li>
-    
-        <li><a href="https://stephenmalina.com/tags">Tags</a></li>
-    
-    </ul>
-</nav>
 
-</header>
 
-<section>
-<h1 class="content-title">
+<article id="main">
+  <section>
+<h1 class="content-title"></h1></section>
+
   
-  <a href="https://stephenmalina.com/post/2023-08-05-protein-language-models-part-4/"></a>
-  
-</h1>
 
-
-
-  <span class="content-meta">
-    
-
-
-    
-      <i class="fa fa-calendar"></i>
-      &nbsp;Jan 1, 0001
-    
-
-    
-      &nbsp;<i class="fa fa-clock-o"></i>
-      &nbsp;2 min read
-    
-
-    
-  </span>
-
-
-</section>
-
-
-
-<section><h2 id="scaling">Scaling</h2>
+  <section><h2 id="scaling">
+Scaling
+<a href="#scaling" class="heading-anchor">#</a>
+</h2>
 <p>Some of the earliest evidence for PLM scaling behaving similar to LLM scaling came from ESM-1b. The following plot shows model performance as a function of (log10) number of parameters. As seen there, they also trained LSTM models at two different sizes as baselines.</p>
 
 
-
-  
     <figure >
   
+    <label for="marginfig-1" class="margin-toggle marginnote-ind">⊕</label>
+    <input type="checkbox" id="marginfig-1" class="margin-toggle"/>
+    <span class="marginnote">
+
+
+ESM-1b perplexity vs. log10(# of parameters) by model type on a held-out subset of UniRef50.
 
 
 
-  <label for="" class="margin-toggle">⊕</label>
-  <input type="checkbox" id="" class="margin-toggle">
-  <span class="marginnote">
-  
+</span>
 
-  
-  ESM-1b perplexity vs. log10(# of parameters) by model type on a held-out subset of UniRef50.
-  
-  
-  
-
-  </span>
 
 
   
-  <img src="https://stephenmalina.com/images/esm1b-custom-scaling-1.png" >
+  <img src="https://stephenmalina.com/images/esm1b-custom-scaling-1.png" alt="Image">
   
+
 
 
 
@@ -162,25 +91,22 @@ if (!doNotTrack) {
 <p>As LLM papers often do, the ESM-1b paper used perplexity (exponent of the entropy) to evaluate the impact of model size on performance. Much of perplexity&rsquo;s value in NLP comes from its strong correlation with performance on a wide range of practical tasks. We don&rsquo;t have nearly as strong an understanding of the relationship between PLM perplexity and downstream task performance but preliminary evidence points to a relationship.</p>
 
 
-
-  
     <figure class="fullwidth">
   
-
-
-
   
-  <img src="https://stephenmalina.com/images/esm1v-fig9.gif" >
+  <img src="https://stephenmalina.com/images/esm1v-fig9.gif" alt="Image">
   
   <figcaption>
 
-  
-  ESM-1v Figure 9: Performance of different sized models on downstream tasks. We see a clear relationship between model size and downstream task performance. Combined with the results from ESM-1b on the relationship between model size and ECE, this transitively points to a strong relationship between LM loss and downstream task performance.
-  
-  
-  
+
+ESM-1v Figure 9: Performance of different sized models on downstream tasks. We see a clear relationship between model size and downstream task performance. Combined with the results from ESM-1b on the relationship between model size and ECE, this transitively points to a strong relationship between LM loss and downstream task performance.
+
+
+
 
   </figcaption>
+
+
 
 
 
@@ -191,30 +117,25 @@ if (!doNotTrack) {
 <p>ProtTrans furnished additional evidence for a scaling relationship, in this case between the number of data points seen during training and performance on a different set of downstream tasks. Even if we ignore the data points for the three T5 models because of the size confounder, the trend of seeing more data points improving performance on the 3-state secondary structure classification task remains strong.</p>
 
 
-
-  
     <figure >
   
+    <label for="marginfig-3" class="margin-toggle marginnote-ind">⊕</label>
+    <input type="checkbox" id="marginfig-3" class="margin-toggle"/>
+    <span class="marginnote">
+
+
+ProtTrans Figure 7: <code>$ \log_{10}(\textrm{Number of samples}) $</code> vs. performance on NEW364 secondary structure prediction. Even confounded by different model architectures, we see a high correlation between number of samples seen during training and downstream task performance.
 
 
 
-  <label for="" class="margin-toggle">⊕</label>
-  <input type="checkbox" id="" class="margin-toggle">
-  <span class="marginnote">
-  
+</span>
 
-  
-  ProtTrans Figure 7: $ \log_{10}(\textrm{Number of samples}) $ vs. performance on NEW364 secondary structure prediction. Even confounded by different model architectures, we see a high correlation between number of samples seen during training and downstream task performance.
-  
-  
-  
-
-  </span>
 
 
   
-  <img src="https://stephenmalina.com/images/prottrans-fig7.png" >
+  <img src="https://stephenmalina.com/images/prottrans-fig7.png" alt="Image">
   
+
 
 
 
@@ -235,45 +156,99 @@ if (!doNotTrack) {
 </li>
 </ul>
 </section>
-<section>
-  
+  <section><footer class="page-footer">
+<hr />
 
-  <footer class="page-footer">
-		<hr>
-		<ul class="page-footer-menu">
-		
-      <li><a href="https://github.com/an1lam"><i class='fa fa-github fa-2x'></i> </a></li>
-		
-      <li><a href="https://twitter.com/an1lam"><i class='fa fa-twitter fa-2x'></i> </a></li>
-		
-      <li><a href="mailto:stephenmalina@gmail.com"><i class='fa fa-envelope fa-2x'></i> </a></li>
-		
-      <li><a href="https://stackoverflow.com/users/1631855/an1lam"><i class='fa fa-stack-overflow fa-2x'></i> </a></li>
-		
-		</ul>
-
+<div class="previous-post" style="display:inline-block;">
   
-    <p>
-      Powered by <a href="https://gohugo.io">Hugo</a> and the
-      <a href="https://github.com/shawnohare/hugo-tufte">Tufte theme</a>.
-    </p>
+  <a class="link-reverse" href="https://stephenmalina.com/subscribe/?ref=footer">« </a>
   
-
-	<div class="copyright">
-	<p>
-    
-      &copy; 2023
-    .
-    All rights reserved.
-    
-  </p>
 </div>
+
+<div class="next-post", style="display:inline-block;float:right;">
+  
+  <a class="link-reverse" href="https://stephenmalina.com/home/?ref=footer"> »</a>
+  
+</div>
+
+<ul class="page-footer-menu">
+  
+  
+  <li><a href="https://twitter.com/an1lam">Twitter</a></li>
+  
+
+  
+  <li><a href="https://github.com/an1lam">GitHub</a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <li><a href="https://scholar.google.com/citations?user=Q6_3PJEAAAAJ">Google Scholar</a></li>
+  
+  
+  
+    <li><a href="https://github.com/an1lam"><i class='fa fa-github fa-2x'></i>  </a></li>
+  
+    <li><a href="https://twitter.com/an1lam"><i class='fa fa-twitter fa-2x'></i>  </a></li>
+  
+    <li><a href="mailto:stephenmalina@gmail.com"><i class='fa fa-envelope fa-2x'></i>  </a></li>
+  
+    <li><a href="https://stackoverflow.com/users/1631855/an1lam"><i class='fa fa-stack-overflow fa-2x'></i>  </a></li>
+  
+</ul>
+
+
+<p>
+  Powered by <a href="https://gohugo.io">Hugo</a> and the
+  <a href="https://github.com/loikein/hugo-tufte">Tufte theme</a>.
+</p>
+
+
+
+
 </footer>
-
-
-
+</section>
+  <section><nav class="menu">
+    <ul>
+    
+        <li><a href="https://stephenmalina.com/">Home</a></li>
+    
+        <li><a href="https://stephenmalina.com/about">About</a></li>
+    
+        <li><a href="https://stephenmalina.com/post">Post</a></li>
+    
+        <li><a href="https://stephenmalina.com/bets">Bets</a></li>
+    
+        <li><a href="https://stephenmalina.com/subscribe">Subscribe</a></li>
+    
+        <li><a href="https://stephenmalina.com/tags">Tags</a></li>
+    
+    </ul>
+</nav>
 </section>
 </article>
-</div>
+
+
+
+
+
 </body>
+
 </html>

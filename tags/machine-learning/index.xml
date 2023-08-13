@@ -6,30 +6,15 @@
     <description>Recent content in machine-learning on Stephen Malina</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 05 Aug 2023 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://stephenmalina.com/tags/machine-learning/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Sun, 13 Aug 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://stephenmalina.com/tags/machine-learning/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Protein Language Models (Part 2): Models</title>
-      <link>https://stephenmalina.com/post/2023-08-05-protein-language-models-part-2/</link>
-      <pubDate>Sat, 05 Aug 2023 00:00:00 +0000</pubDate>
+      <title>CGM and Beyond: A mix of a dialogue and a debate</title>
+      <link>https://stephenmalina.com/post/2023-08-13-cgm-and-beyond/</link>
+      <pubDate>Sun, 13 Aug 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://stephenmalina.com/post/2023-08-05-protein-language-models-part-2/</guid>
-      <description>_I&amp;rsquo;m experimenting with Lilian Weng style review blog posts on topics I wish I&amp;rsquo;d had someone to explain to me when I got started in protein machine learning.
-This is the second post in a series introducing protein language models_. The other posts are:
- Protein Language Models (Part 1): Introduction &amp;amp; Datasets Protein Language Models (Part 2): Models Protein Language Models (Part 3): Benchmarks &amp;amp; Evaluation Protein Language Models (Part 4): Scaling Protein Language Models (Part 5): FAQ &amp;amp; Conclusion  This post focuses on the different types of PLMs with a specific focus on deviations from the standard LLM playbook.</description>
-    </item>
-    
-    <item>
-      <title>Protein Language Models (Part 1): Introduction &amp; Datasets</title>
-      <link>https://stephenmalina.com/post/2023-07-22-protein-language-models-part-1/</link>
-      <pubDate>Sat, 22 Jul 2023 00:00:00 +0000</pubDate>
-      
-      <guid>https://stephenmalina.com/post/2023-07-22-protein-language-models-part-1/</guid>
-      <description>I&amp;rsquo;m experimenting with Lilian Weng style review blog posts on topics I wish I&amp;rsquo;d had someone to explain to me when I got started in protein machine learning.
-Following the success of large sequence models in language and other domain, The terminology people use here is extremely confusing. &amp;ldquo;Large language models&amp;rdquo; often denote large sequence models trained on language and other modalities or in some cases just other modalities. In the rest of the post, I&amp;rsquo; use &amp;ldquo;large language models&amp;rdquo; (LLMs) to refer to the cluster of ideas around large-scale pretraining combined with simple objectives as opposed to models that focus on language as a modality and &amp;ldquo;protein language models&amp;rdquo; (PLMs) to refer to large sequence models of proteins.</description>
+      <guid>https://stephenmalina.com/post/2023-08-13-cgm-and-beyond/</guid>
+      <description>What are continuous glucose monitors good for? More broadly, what are continuous measures of physiology (CxM) good for?
+Similar to my Elliot and I&amp;rsquo;s dialogue, this post has an unconventional format. It&amp;rsquo;s both a synthesis of Willy&amp;rsquo;s, Eryney&amp;rsquo;s, and my opinions on continuous monitoring combined with a debate in places where we disagree. To try and make it clear which views are coming from each person, we&amp;rsquo;ve annotated sections that come from a subset of us rather than all of us with e.</description>
     </item>
     
     <item>
@@ -39,7 +24,7 @@ Following the success of large sequence models in language and other domain, The
       
       <guid>https://stephenmalina.com/post/2019-11-16-network-mendelian-randomization/</guid>
       <description>In which I record my thoughts on Network Mendelian Randomization by Burgess et al.
-What is this paper about? This paper describes a method for doing Mendelian Randomization (MR) in the presence of a potential mediating variable. In the typical MR setting, we have an instrumental variable which &amp;ldquo;instruments&amp;rdquo; an exposure that we believe causally influences the outcome we care about. True mediators &amp;ldquo;mediate&amp;rdquo; the causal influence of exposures on outcomes.</description>
+What is this paper about? # This paper describes a method for doing Mendelian Randomization (MR) in the presence of a potential mediating variable. In the typical MR setting, we have an instrumental variable which &amp;ldquo;instruments&amp;rdquo; an exposure that we believe causally influences the outcome we care about. True mediators &amp;ldquo;mediate&amp;rdquo; the causal influence of exposures on outcomes.</description>
     </item>
     
     <item>
@@ -48,8 +33,7 @@ What is this paper about? This paper describes a method for doing Mendelian Rand
       <pubDate>Tue, 13 Aug 2019 00:00:00 +0000</pubDate>
       
       <guid>https://stephenmalina.com/post/2019-09-07-matrix-potpourri/</guid>
-      <description>Matrix Potpourri As part of reviewing Linear Algebra for my Machine Learning class, I&amp;rsquo;ve noticed there&amp;rsquo;s a bunch of matrix terminology that I didn&amp;rsquo;t encounter during my proof-based self-study of LA from Linear Algebra Done Right. This post is mostly intended to consolidate my own understanding and to act as a reference to future me, but if it also helps others in a similar position, that&amp;rsquo;s even better!
-Note: I list all the sources from which I drew while writing this post under the &amp;ldquo;Sources&amp;rdquo; heading at the bottom of this post.</description>
+      <description>Matrix Potpourri # As part of reviewing Linear Algebra for my Machine Learning class, I&amp;rsquo;ve noticed there&amp;rsquo;s a bunch of matrix terminology that I didn&amp;rsquo;t encounter during my proof-based self-study of LA from Linear Algebra Done Right. This post is mostly intended to consolidate my own understanding and to act as a reference to future me, but if it also helps others in a similar position, that&amp;rsquo;s even better!</description>
     </item>
     
     <item>
@@ -59,7 +43,7 @@ Note: I list all the sources from which I drew while writing this post under the
       
       <guid>https://stephenmalina.com/post/2019-08-08-deepsea/</guid>
       <description>In which I record my thoughts on DeepSEA.
-Terminology  ChIP-seq (Chromatin Immunoprecipitation Sequencing): Expression Quantitative Trait Locis (eQTLs) Cofactor Binding Sequences Histone Marks: modifications to histone proteins in the nucleosome that impact the shape of chromatin. gkm-SVMs: The gkm-SVM is the previous SOTA model for predicting transcription factor binding based on ChIP-seq data. Allele: variants of a gene at the same position on a chromosome.  What is this paper about?</description>
+Terminology # ChIP-seq (Chromatin Immunoprecipitation Sequencing): Expression Quantitative Trait Locis (eQTLs) Cofactor Binding Sequences Histone Marks: modifications to histone proteins in the nucleosome that impact the shape of chromatin. gkm-SVMs: The gkm-SVM is the previous SOTA model for predicting transcription factor binding based on ChIP-seq data. Allele: variants of a gene at the same position on a chromosome. What is this paper about?</description>
     </item>
     
     <item>
@@ -69,7 +53,7 @@ Terminology  ChIP-seq (Chromatin Immunoprecipitation Sequencing): Expression Qua
       
       <guid>https://stephenmalina.com/post/2019-08-05-basset/</guid>
       <description>In which I record my thoughts on Basset.
-Bio Background The genome consists of (broadly) two types of genes, coding genes and noncoding genes. Coding genes get translated into proteins (as laid down by the Central Dogma) and are what most of us learned about in bio class. Non-coding genes&amp;hellip; don&amp;rsquo;t. As I understand it, noncoding genes can do a bunch of different things, but part of their function is to regulate coding gene activity through a number of mechanisms.</description>
+Bio Background # The genome consists of (broadly) two types of genes, coding genes and noncoding genes. Coding genes get translated into proteins (as laid down by the Central Dogma) and are what most of us learned about in bio class. Non-coding genes&amp;hellip; don&amp;rsquo;t. As I understand it, noncoding genes can do a bunch of different things, but part of their function is to regulate coding gene activity through a number of mechanisms.</description>
     </item>
     
     <item>
@@ -79,7 +63,7 @@ Bio Background The genome consists of (broadly) two types of genes, coding genes
       
       <guid>https://stephenmalina.com/post/2019-07-26-deepbind/</guid>
       <description>In which I record my thoughts on DeepBind.
-What is this paper about? The authors of this paper designed a conv net model to predict how well different proteins will bind to sequences of DNA or RNA. They train one model per protein for many different sequences and show that these models can predict binding affinities for sequences well enough to produce insights regarding the impact of single nucleotide mutations. They then discuss different datasets and areas in which they tested their model and how it performed (often SOTA [as of 2015]).</description>
+What is this paper about? # The authors of this paper designed a conv net model to predict how well different proteins will bind to sequences of DNA or RNA. They train one model per protein for many different sequences and show that these models can predict binding affinities for sequences well enough to produce insights regarding the impact of single nucleotide mutations.</description>
     </item>
     
   </channel>

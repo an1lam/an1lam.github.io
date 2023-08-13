@@ -1,742 +1,437 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  
   <url>
     <loc>https://stephenmalina.com/tags/biology/</loc>
-    <lastmod>2023-08-05T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+    <lastmod>2023-08-13T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://stephenmalina.com/post/2023-08-13-cgm-and-beyond/</loc>
+    <lastmod>2023-08-13T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://stephenmalina.com/tags/continuous-monitoring/</loc>
+    <lastmod>2023-08-13T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://stephenmalina.com/tags/health/</loc>
+    <lastmod>2023-08-13T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://stephenmalina.com/tags/machine-learning/</loc>
-    <lastmod>2023-08-05T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+    <lastmod>2023-08-13T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://stephenmalina.com/post/</loc>
-    <lastmod>2023-08-05T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://stephenmalina.com/post/2023-08-05-protein-language-models-part-2/</loc>
-    <lastmod>2023-08-05T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://stephenmalina.com/tags/proteins/</loc>
-    <lastmod>2023-08-05T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+    <lastmod>2023-08-13T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://stephenmalina.com/</loc>
+    <lastmod>2023-08-13T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://stephenmalina.com/tags/</loc>
-    <lastmod>2023-08-05T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://stephenmalina.com/post/2023-07-22-protein-language-models-part-1/</loc>
-    <lastmod>2023-07-22T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+    <lastmod>2023-08-13T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://stephenmalina.com/tags/gene-therapy/</loc>
     <lastmod>2023-06-07T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://stephenmalina.com/post/2023-06-07-editing-part-i/</loc>
     <lastmod>2023-06-07T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://stephenmalina.com/tags/annual-review/</loc>
     <lastmod>2023-01-11T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://stephenmalina.com/post/2023-01-11-viriditas-dialogue/</loc>
     <lastmod>2023-01-11T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://stephenmalina.com/tags/narcissism/</loc>
     <lastmod>2023-01-11T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://stephenmalina.com/post/2023-01-02-reflections-on-2022/</loc>
     <lastmod>2023-01-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://stephenmalina.com/tags/decentralization/</loc>
     <lastmod>2022-11-21T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://stephenmalina.com/post/2022-11-21-decentralization-of-atoms-is-underrated/</loc>
     <lastmod>2022-11-21T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://stephenmalina.com/tags/ai/</loc>
     <lastmod>2022-11-16T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://stephenmalina.com/post/2022-11-16-gpt4-predictions/</loc>
     <lastmod>2022-11-16T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://stephenmalina.com/tags/predictions/</loc>
     <lastmod>2022-11-16T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://stephenmalina.com/post/2022-09-17-ai-omens/</loc>
     <lastmod>2022-09-17T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://stephenmalina.com/tags/movie/</loc>
     <lastmod>2022-06-07T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://stephenmalina.com/post/2022-06-07-top-gun-maverick-review/</loc>
     <lastmod>2022-06-07T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://stephenmalina.com/tags/review/</loc>
     <lastmod>2022-06-07T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://stephenmalina.com/post/2022-04-24-book-review-egamu/</loc>
     <lastmod>2022-04-24T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://stephenmalina.com/tags/book-review/</loc>
     <lastmod>2022-04-24T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://stephenmalina.com/post/2022-01-01-2050-predictions/</loc>
     <lastmod>2022-01-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://stephenmalina.com/post/2021-12-31-scoring-my-2021-predictions/</loc>
     <lastmod>2021-12-31T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://stephenmalina.com/post/2021-12-05-beware-silver-bullets/</loc>
     <lastmod>2021-12-04T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://stephenmalina.com/post/2021-11-crazy-synthetic-bio-ideas/</loc>
     <lastmod>2021-11-26T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://stephenmalina.com/post/2021-07-01-energetic-aliens-among-us/</loc>
     <lastmod>2021-07-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://stephenmalina.com/post/2021-04-01-world-without-email-review/</loc>
     <lastmod>2021-04-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://stephenmalina.com/tags/business/</loc>
     <lastmod>2021-04-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://stephenmalina.com/tags/cal-newport/</loc>
     <lastmod>2021-04-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://stephenmalina.com/tags/deep-work/</loc>
     <lastmod>2021-04-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://stephenmalina.com/tags/productivity/</loc>
     <lastmod>2021-04-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://stephenmalina.com/post/2021-03-06-bad-advice-near-miss/</loc>
     <lastmod>2021-03-06T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://stephenmalina.com/post/2021-02-21-ideas-not-mattering-is-a-psyop/</loc>
     <lastmod>2021-02-21T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://stephenmalina.com/post/2021-02-01-emotional-winter-walk/</loc>
     <lastmod>2021-02-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://stephenmalina.com/post/2021-01-23-book-review-the-art-of-learning/</loc>
     <lastmod>2021-01-20T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://stephenmalina.com/post/2021-01-20-internet-writing-tier-list/</loc>
     <lastmod>2021-01-20T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://stephenmalina.com/post/2021-01-09-2021-predictions/</loc>
     <lastmod>2021-01-09T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://stephenmalina.com/post/2020-10-20-maniac-week-review/</loc>
     <lastmod>2020-10-20T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://stephenmalina.com/post/2020-09-25-upcoming-maniac-week/</loc>
     <lastmod>2020-09-26T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://stephenmalina.com/post/2020-07-11-learning-to-love-thinking/</loc>
     <lastmod>2020-07-11T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://stephenmalina.com/post/2020-05-15-ci-course-review/</loc>
     <lastmod>2020-05-15T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://stephenmalina.com/post/2020-03-18-digital-minimalism-exp/</loc>
-    <lastmod>2020-03-18T00:00:00-04:00</lastmod>
-  </url>
-  
-  <url>
+    <lastmod>2020-03-18T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://stephenmalina.com/tags/causal-inference/</loc>
     <lastmod>2020-03-09T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://stephenmalina.com/tags/derivation/</loc>
     <lastmod>2020-03-09T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://stephenmalina.com/post/2020-03-09-front-door-do-calc-derivation/</loc>
     <lastmod>2020-03-09T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://stephenmalina.com/tags/math/</loc>
     <lastmod>2020-03-09T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://stephenmalina.com/post/2020-03-01-coffee-rct/</loc>
     <lastmod>2020-03-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://stephenmalina.com/tags/all-of-statistics/</loc>
     <lastmod>2019-12-12T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://stephenmalina.com/learning/2019-12-12-all-of-statistics-ch3-notes/</loc>
     <lastmod>2019-12-12T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://stephenmalina.com/learning/</loc>
     <lastmod>2019-12-12T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://stephenmalina.com/tags/notes/</loc>
     <lastmod>2019-12-12T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://stephenmalina.com/tags/genomics/</loc>
     <lastmod>2019-11-16T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://stephenmalina.com/tags/paper/</loc>
     <lastmod>2019-11-16T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://stephenmalina.com/post/2019-11-16-network-mendelian-randomization/</loc>
     <lastmod>2019-11-16T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://stephenmalina.com/learning/2019-11-08-causal-inference/</loc>
     <lastmod>2019-11-15T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://stephenmalina.com/tags/causality/</loc>
     <lastmod>2019-11-15T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://stephenmalina.com/learning/2019-11-02-ivs-mendelian-randomization/</loc>
     <lastmod>2019-11-03T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://stephenmalina.com/tags/statistics/</loc>
     <lastmod>2019-11-03T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://stephenmalina.com/tags/linear-algebra/</loc>
     <lastmod>2019-08-13T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://stephenmalina.com/post/2019-09-07-matrix-potpourri/</loc>
     <lastmod>2019-08-13T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://stephenmalina.com/post/2019-08-08-deepsea/</loc>
     <lastmod>2019-08-08T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://stephenmalina.com/post/2019-08-05-basset/</loc>
     <lastmod>2019-08-05T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://stephenmalina.com/post/2019-07-26-deepbind/</loc>
     <lastmod>2019-07-26T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://stephenmalina.com/tags/linear-algebra-done-right/</loc>
     <lastmod>2019-05-20T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://stephenmalina.com/learning/2019-05-20-linear-algebra-done-right-ch6-notes/</loc>
     <lastmod>2019-05-20T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://stephenmalina.com/post/2019-05-18-thoughts-on-stoicism/</loc>
     <lastmod>2019-05-18T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://stephenmalina.com/learning/2019-04-01-linear-algebra-done-right-ch5-notes/</loc>
     <lastmod>2019-04-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://stephenmalina.com/learning/2019-03-31-linear-algebra-done-right-ch4-notes/</loc>
     <lastmod>2019-03-31T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://stephenmalina.com/learning/2019-03-30-linear-algebra-done-right-ch3-notes/</loc>
     <lastmod>2019-03-30T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://stephenmalina.com/post/2019-03-22-internal-prediction-markets-for-better-institutions/</loc>
     <lastmod>2019-03-22T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://stephenmalina.com/learning/2018-12-24-linear-algebra-done-right-ch2-notes/</loc>
     <lastmod>2018-12-24T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://stephenmalina.com/post/2018-12-16-babble-learning/</loc>
     <lastmod>2018-12-16T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://stephenmalina.com/post/2018-12-02-movember/</loc>
     <lastmod>2018-12-02T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://stephenmalina.com/progress/</loc>
     <lastmod>2018-10-12T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://stephenmalina.com/</loc>
-    <lastmod>2018-10-12T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://stephenmalina.com/post/2018-06-12-statistical-models-ch-2/</loc>
     <lastmod>2018-06-12T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://stephenmalina.com/post/2018-06-09-statistical-models-ch-1/</loc>
     <lastmod>2018-06-09T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://stephenmalina.com/post/2018-02-24-jit-reading/</loc>
     <lastmod>2018-02-24T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://stephenmalina.com/post/2015-12-06-nl12062016/</loc>
     <lastmod>2015-12-06T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://stephenmalina.com/post/2015-11-29-nl1/</loc>
     <lastmod>2015-11-29T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://stephenmalina.com/post/2015-11-22-nl/</loc>
     <lastmod>2015-11-22T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://stephenmalina.com/post/2015-11-15-nl/</loc>
     <lastmod>2015-11-15T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://stephenmalina.com/post/2015-11-14-sicp-1-1/</loc>
     <lastmod>2015-11-14T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://stephenmalina.com/post/2015-11-08-nl11082015/</loc>
     <lastmod>2015-11-08T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://stephenmalina.com/post/2015-11-01-nl11012015/</loc>
     <lastmod>2015-11-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://stephenmalina.com/post/2015-10-25-nl10252015/</loc>
     <lastmod>2015-10-25T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://stephenmalina.com/post/2015-10-18-nl10182015/</loc>
     <lastmod>2015-10-18T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://stephenmalina.com/post/2015-10-11-nl10112015/</loc>
     <lastmod>2015-10-11T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://stephenmalina.com/post/2015-10-04-nl10042015/</loc>
     <lastmod>2015-10-04T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://stephenmalina.com/post/2015-09-27-nl09272015/</loc>
     <lastmod>2015-09-27T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://stephenmalina.com/post/2015-09-20-nl09202015/</loc>
     <lastmod>2015-09-20T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://stephenmalina.com/post/2015-09-13-nl09132015/</loc>
     <lastmod>2015-09-13T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://stephenmalina.com/post/2015-09-06-nl09062015/</loc>
     <lastmod>2015-09-06T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://stephenmalina.com/post/2015-08-30-nl08302015/</loc>
     <lastmod>2015-08-30T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://stephenmalina.com/post/2015-08-09-nl08092015/</loc>
     <lastmod>2015-08-09T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://stephenmalina.com/post/2015-08-02-nl08022015/</loc>
     <lastmod>2015-08-02T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://stephenmalina.com/post/2015-07-26-nl07262015/</loc>
     <lastmod>2015-07-26T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://stephenmalina.com/post/2015-07-19-nl07192015/</loc>
     <lastmod>2015-07-19T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://stephenmalina.com/post/2015-07-12-themythofthearchofjustice/</loc>
     <lastmod>2015-07-12T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://stephenmalina.com/post/2015-07-12-nl07122015/</loc>
     <lastmod>2015-07-12T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://stephenmalina.com/post/2015-06-14-nl06142015/</loc>
     <lastmod>2015-06-14T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://stephenmalina.com/post/2015-06-07-nl06072015/</loc>
     <lastmod>2015-06-07T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://stephenmalina.com/post/2015-05-31-2015-nl05312015/</loc>
     <lastmod>2015-05-31T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://stephenmalina.com/post/2015-05-24-nl05242015/</loc>
     <lastmod>2015-05-24T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://stephenmalina.com/post/2015-05-17-nl05172015/</loc>
     <lastmod>2015-05-17T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://stephenmalina.com/post/2015-05-10-nl05102015/</loc>
     <lastmod>2015-05-10T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://stephenmalina.com/post/2015-05-03-nl05032015/</loc>
     <lastmod>2015-05-03T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://stephenmalina.com/post/2015-04-26-nl04262015/</loc>
     <lastmod>2015-04-26T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://stephenmalina.com/post/2015-04-19-nl04192015/</loc>
     <lastmod>2015-04-19T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://stephenmalina.com/post/2015-04-12-nl04122015/</loc>
     <lastmod>2015-04-12T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://stephenmalina.com/post/2015-04-05-nl04052015/</loc>
     <lastmod>2015-04-05T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://stephenmalina.com/post/2015-03-29-nl03292015/</loc>
     <lastmod>2015-03-29T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://stephenmalina.com/post/2015-03-22-nl03222015/</loc>
     <lastmod>2015-03-22T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://stephenmalina.com/post/2015-03-15-nl03152015/</loc>
     <lastmod>2015-03-15T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://stephenmalina.com/post/2015-03-08-nl03082015/</loc>
     <lastmod>2015-03-08T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://stephenmalina.com/post/2015-03-01-nl03012015/</loc>
     <lastmod>2015-03-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://stephenmalina.com/post/2015-02-22-nl02222015/</loc>
     <lastmod>2015-02-22T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://stephenmalina.com/post/2015-02-15-nl02152015/</loc>
     <lastmod>2015-02-15T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://stephenmalina.com/post/2015-02-08-nl02082015/</loc>
     <lastmod>2015-02-08T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://stephenmalina.com/post/2015-02-01-nl02012015/</loc>
     <lastmod>2015-02-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://stephenmalina.com/post/2015-01-25-nl01252015/</loc>
     <lastmod>2015-01-25T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://stephenmalina.com/post/2015-01-18-nl01182015/</loc>
     <lastmod>2015-01-18T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://stephenmalina.com/post/2015-01-11-nl01112015/</loc>
     <lastmod>2015-01-11T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://stephenmalina.com/post/2015-01-04-nl01042015/</loc>
     <lastmod>2015-01-04T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://stephenmalina.com/post/2014-12-28-nl12282014/</loc>
     <lastmod>2014-12-28T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://stephenmalina.com/post/2014-12-21-nl12212014/</loc>
     <lastmod>2014-12-21T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://stephenmalina.com/post/2014-12-14-nl12072014/</loc>
     <lastmod>2014-12-14T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://stephenmalina.com/post/2014-12-07-nl12072014/</loc>
     <lastmod>2014-12-07T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://stephenmalina.com/post/2014-11-30-nl11302014/</loc>
     <lastmod>2014-11-30T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://stephenmalina.com/post/2014-11-26-regenesis-book-review/</loc>
     <lastmod>2014-11-26T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://stephenmalina.com/post/2014-11-25-winter-break-reading/</loc>
     <lastmod>2014-11-25T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://stephenmalina.com/post/2014-11-23-nl11232014/</loc>
     <lastmod>2014-11-23T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://stephenmalina.com/post/2014-11-18-existence-david-brin-review/</loc>
     <lastmod>2014-11-18T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://stephenmalina.com/post/2014-11-17-response-to-nl11162014/</loc>
     <lastmod>2014-11-17T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://stephenmalina.com/post/2014-11-16-nl11162014/</loc>
     <lastmod>2014-11-16T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://stephenmalina.com/post/2014-11-09-nl11092014/</loc>
     <lastmod>2014-11-09T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://stephenmalina.com/post/2014-11-02-nl11022014/</loc>
     <lastmod>2014-11-02T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://stephenmalina.com/home/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://stephenmalina.com/page/subscribe/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://stephenmalina.com/post/2023-08-05-protein-language-models-part-4/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://stephenmalina.com/subscribe/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://stephenmalina.com/about/</loc>
-  </url>
-  
-  <url>
-    <loc>https://stephenmalina.com/page/about/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://stephenmalina.com/bets/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://stephenmalina.com/categories/</loc>
   </url>
-  
-  <url>
-    <loc>https://stephenmalina.com/page/</loc>
-  </url>
-  
 </urlset>

@@ -1,48 +1,17 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
-
-<head>
-<title>Stephen Malina - Scoring my 2021 Predictions</title>
-  <meta http-equiv="content-type" content="text/html; charset=utf-8">
-
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="">
-<meta name="keywords" content="">
-<meta name="author" content="Stephen Malina">
-<meta name="generator" content="Hugo 0.68.3" />
-
-  
-  
-
-  <script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-  tex2jax: {
-    inlineMath: [['$','$'], ['\\(','\\)']],
-    displayMath: [['$$','$$'], ['\\[','\\]']],
-    processEscapes: true,
-    processEnvironments: true,
-    menuSettings: { zoom: "Double-Click" },
-    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
-    TeX: { equationNumbers: { autoNumber: "AMS" },
-         extensions: ["AMSmath.js", "AMSsymbols.js"] }
-  }
-});
-</script>
-
-<script type="text/javascript"
-  src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
-</script>
+<html lang="en-us"><head>
+<title>Scoring my 2021 Predictions - Stephen Malina</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description"
+    content="At the beginning of last year, I made predictions for the year. Now it&rsquo;s time to score them (before I make my 2022 predictions).
+Data &amp; code # Here is a spreadsheet containing my scored predictions. If you want to see my full analysis, you can look at my Jupyter notebook which contains Brier score calculations plus plotting.
+High level analysis # The key metrics I looked at were my overall and by category Brier scores plus calibration. ">
+<link rel="canonical" href="https://stephenmalina.com/post/2021-12-31-scoring-my-2021-predictions/" />
 
 
 
-
-
-
-
-<link rel="stylesheet" href="https://unpkg.com/purecss@2.0.3/build/pure-min.css">
-
-
-    <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.3/build/grids-responsive-min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 
 
@@ -51,101 +20,44 @@ MathJax.Hub.Config({
 
 
 
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
 
-<link rel="stylesheet" href="https://stephenmalina.com/css/tufte.css">
-<link rel="stylesheet" href="https://stephenmalina.com/css/hugo-tufte.css">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="preload" as="style"
+      href="https://fonts.googleapis.com/css?family=Noto+Serif+SC|Noto+Emoji&display=swap" />
+<link rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Noto+Serif+SC|Noto+Emoji&display=swap"
+      media="print" onload="this.media='all'" />
+<noscript>
+<link rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Noto+Serif+SC&display=swap" />
+</noscript>
+
+
+
+
+
+
+<link rel="stylesheet" href="https://stephenmalina.com/css/hugo-tufte.min.css">
+
+
+
+<link rel="stylesheet" href="https://stephenmalina.com/css/hugo-tufte-options.min.css">
+
 <link rel="stylesheet" href="https://stephenmalina.com/css/hugo-tufte-override.css">
 
-  
-<script type="application/javascript">
-var doNotTrack = false;
-if (!doNotTrack) {
-	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-	ga('create', 'UA-187780632-1', 'auto');
-	
-	ga('send', 'pageview');
-}
-</script>
-
-  
-<script type="application/javascript">
-var doNotTrack = false;
-if (!doNotTrack) {
-	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
-	ga('create', 'UA-187780632-1', 'auto');
-	
-	ga('send', 'pageview');
-}
-</script>
-<script async src='https://www.google-analytics.com/analytics.js'></script>
-
 </head>
-
-
 <body>
-<div id="layout" class="pure-g">
-<article class="pure-u-1">
-<header class="brand">
-  <h1>Stephen Malina</h1>
-  <h2>This is my blog. There are many others like it but this one is mine.</h2>
-  <nav class="menu">
-    <ul>
-    
-        <li><a href="https://stephenmalina.com/">Home</a></li>
-    
-        <li><a href="https://stephenmalina.com/about">About</a></li>
-    
-        <li><a href="https://stephenmalina.com/post">Post</a></li>
-    
-        <li><a href="https://stephenmalina.com/bets">Bets</a></li>
-    
-        <li><a href="https://stephenmalina.com/subscribe">Subscribe</a></li>
-    
-        <li><a href="https://stephenmalina.com/tags">Tags</a></li>
-    
-    </ul>
-</nav>
 
-</header>
 
-<section>
-<h1 class="content-title">
+<article id="main">
+  <section>
+<h1 class="content-title">Scoring my 2021 Predictions</h1></section>
+
   
-  <a href="https://stephenmalina.com/post/2021-12-31-scoring-my-2021-predictions/">Scoring my 2021 Predictions</a>
-  
-</h1>
-
-
-
-  <span class="content-meta">
-    
-
-
-    
-      <i class="fa fa-calendar"></i>
-      &nbsp;Dec 31, 2021
-    
-
-    
-      &nbsp;<i class="fa fa-clock-o"></i>
-      &nbsp;11 min read
-    
-
-    
-  </span>
-
-
-</section>
-
-
 <section>
   <details closed class="toc">
-    <summary>Contents</summary>
+    <summary>Table of Contents</summary>
     <nav id="TableOfContents">
   <ul>
     <li><a href="#data--code">Data &amp; code</a></li>
@@ -162,15 +74,21 @@ if (!doNotTrack) {
 </section>
 
 
-<section><p>At the beginning of last year, I <a href="https://stephenmalina.com/post/2021-01-09-2021-predictions/">made predictions</a> for the year. Now it&rsquo;s time to score them (before I make my 2022 predictions).</p>
-<h2 id="data--code">Data &amp; code</h2>
+  <section><p>At the beginning of last year, I <a href="https://stephenmalina.com/post/2021-01-09-2021-predictions/">made predictions</a> for the year. Now it&rsquo;s time to score them (before I make my 2022 predictions).</p>
+<h2 id="data--code">
+Data &amp; code
+<a href="#data--code" class="heading-anchor">#</a>
+</h2>
 <p><a href="https://docs.google.com/spreadsheets/d/1YQZfLKDxxsfawwuvWLWkeoxoj9jRfUCOCQbshtE0EwM/edit?usp=sharing">Here</a> is a spreadsheet containing my scored predictions. If you want to see my full analysis, you can look at my <a href="https://github.com/an1lam/predictions/blob/main/notebooks/2021%20Predictions%20Scoring.ipynb">Jupyter notebook</a> which contains Brier score calculations plus plotting.</p>
-<h2 id="high-level-analysis">High level analysis</h2>
+<h2 id="high-level-analysis">
+High level analysis
+<a href="#high-level-analysis" class="heading-anchor">#</a>
+</h2>
 <p>The key metrics I looked at were my overall and by category <a href="https://en.wikipedia.org/wiki/Brier_score">Brier scores</a> plus calibration. My overall Brier score was .18.
-<label for="sidenote-07cb4ea86e3013652f09a74ace51eb86-0" class="margin-toggle sidenote-number"></label>
-<input type="checkbox" id="sidenote-07cb4ea86e3013652f09a74ace51eb86-0" class="margin-toggle"/>
+<label for="sidenote-1" class="margin-toggle sidenote-number">(1)</label>
+<input type="checkbox" id="sidenote-1" class="margin-toggle"/>
 <span class="sidenote">
-As a refresher, the Brier score is the mean squared error of a set of predictions vs. the true outcomes. So, for example, if I predict something will happen with probability .2 and something else will happen with probability .4 and then both happen, my Brier score for this pair of events is $ ((1-.2)^2 + (1-.4)^2)/2 = .5$. This means that lower Brier scores are better, with the best possible Brier score being 0 and the worst 1. The Brier score is a <a href="https://en.wikipedia.org/wiki/Scoring_rule#StrictlyProperScoringRules">strictly proper scoring rule</a>, which means that it will always be maximized by the true probabilities (assuming they were known) for a set of events. Note that despite this, Brier scores are <a href="https://en.wikipedia.org/wiki/Brier_score#Shortcomings">not ideal</a> for very rare events. The intuition for why this can be true despite them being strictly proper scoring rules boils down to the strictly proper condition only requiring that the score decrease as the result of any one prediction diverging from the probability of the event rather than dictating by <em>how much</em>.
+<span class="sidenote-number">(1)</span>As a refresher, the Brier score is the mean squared error of a set of predictions vs. the true outcomes. So, for example, if I predict something will happen with probability .2 and something else will happen with probability .4 and then both happen, my Brier score for this pair of events is $ ((1-.2)^2 + (1-.4)^2)/2 = .5$. This means that lower Brier scores are better, with the best possible Brier score being 0 and the worst 1. The Brier score is a <a href="https://en.wikipedia.org/wiki/Scoring_rule#StrictlyProperScoringRules">strictly proper scoring rule</a>, which means that it will always be maximized by the true probabilities (assuming they were known) for a set of events. Note that despite this, Brier scores are <a href="https://en.wikipedia.org/wiki/Brier_score#Shortcomings">not ideal</a> for very rare events. The intuition for why this can be true despite them being strictly proper scoring rules boils down to the strictly proper condition only requiring that the score decrease as the result of any one prediction diverging from the probability of the event rather than dictating by <em>how much</em>.
 </span></p>
 <p>In addition to my overall Brier score, I&rsquo;ve included by category Brier scores below.</p>
 <p align="center">
@@ -184,18 +102,36 @@ As a refresher, the Brier score is the mean squared error of a set of prediction
 </p>
 <p>The left plot shows calibration relative to perfect calibration (orange line) and the right plot shows the number of predictions I made in each bucket. Perfect calibration would have all points on the orange line, which would mean that my resolved frequencies match my assigned probabilities perfectly. As a more realistic point of comparison, I recommend checking out Gwern&rsquo;s <a href="https://predictionbook.com/users/gwern">PredictionBook calibration plot</a>. His looks almost perfect except for a bit of under-confidence in the 100% bucket. You can also compare to mine on <a href="https://predictionbook.com/users/krazemon">PredictionBook</a>, which don&rsquo;t look great. Mine for this year look quite a bit better than mine on PredictionBook but still worse than Gwern&rsquo;s there. I&rsquo;m happy about this because it suggests I&rsquo;m becoming more calibrated over time. Failing to outperform Gwern doesn&rsquo;t bother me too much because he&rsquo;s Gwern and the plots here are based on fewer predictions. I definitely have a bit of room to improve in terms of being over-confident for highly uncertain predictions but overall I&rsquo;m satisfied.</p>
 <p>Finally, one of my (best) readers, <a href="https://sites.google.com/view/ericneyman">Eric Neyman</a> took me up on my offer to score others&rsquo; predictions and sent me predictions for a subset of the events I made predictions for. As a more head-to-head comparison, I computed Brier scores for <a href="https://docs.google.com/spreadsheets/d/1YQZfLKDxxsfawwuvWLWkeoxoj9jRfUCOCQbshtE0EwM/edit#gid=1581068514">Eric&rsquo;s</a> and my predictions on the subset of events we both predicted on. For these events, our Brier scores were basically identical, both equaling ~.2. This is a big ego boost for me because I view Eric as a very level-headed careful forecaster, so the fact that I was able to match his accuracy on this admittedly small set of events is exciting!</p>
-<h2 id="reflections">Reflections</h2>
-<h3 id="lessons-from-this-years-predictions-and-results">Lessons from this year&rsquo;s predictions and results</h3>
+<h2 id="reflections">
+Reflections
+<a href="#reflections" class="heading-anchor">#</a>
+</h2>
+<h3 id="lessons-from-this-years-predictions-and-results">
+Lessons from this year&rsquo;s predictions and results
+<a href="#lessons-from-this-years-predictions-and-results" class="heading-anchor">#</a>
+</h3>
 <p>Overall, I&rsquo;m disappointed by little actionable feedback I got from seeing the results for last year&rsquo;s predictions. Having done the above analysis, I don&rsquo;t feel particularly equipped to improve my predictions for 2022. That said, there are a few lessons from this year&rsquo;s predictions I&rsquo;m going to keep in mind going forward.</p>
-<h4 id="the-planning-fallacy-is-real">The planning fallacy is real</h4>
+<h4 id="the-planning-fallacy-is-real">
+The planning fallacy is real
+<a href="#the-planning-fallacy-is-real" class="heading-anchor">#</a>
+</h4>
 <p>While my &ldquo;Personal&rdquo; by category Brier score doesn&rsquo;t look much worse than my COVID one, if you look at the actual predictions, you&rsquo;ll see that I was less accurate on the (IMO) more important Personal things I predicted about. Concretely, I didn&rsquo;t lose as much weight as I expected and am still polishing a paper I really thought I&rsquo;d have on Arxiv by now. Beyond suggesting that maybe I should spend less time on blog posts, this suggests that I am subject to <a href="https://en.wikipedia.org/wiki/Planning_fallacy">the planning fallacy</a> just like everyone else. (On the bright side, it also means I don&rsquo;t have to worry too much about self-fulfilling prophecy issues when making personal predictions I guess.) I&rsquo;d like to try and improve on this in the future, but figuring out how and actually running experiments to see whether I can improve probably deserves more attention than I can give it in this post.</p>
-<h4 id="tracking-predictions-helps-combat-revisionist-optimism-and-pessimism">Tracking predictions helps combat revisionist optimism and pessimism</h4>
+<h4 id="tracking-predictions-helps-combat-revisionist-optimism-and-pessimism">
+Tracking predictions helps combat revisionist optimism and pessimism
+<a href="#tracking-predictions-helps-combat-revisionist-optimism-and-pessimism" class="heading-anchor">#</a>
+</h4>
 <p>My track record on COVID provided an empirical counterpoint to my general feeling of <a href="https://thezvi.wordpress.com/2020/08/27/covid-8-27-the-fall-of-the-cdc/">cynicism</a> about how our <a href="https://marginalrevolution.com/marginalrevolution/2021/06/the-cdc-is-broken-our-regulatory-state-has-been-failing-us.html">institutions</a> have handled COVID in the past year. I overestimated the number of cases we&rsquo;d have in the US by March 31st and significantly underestimated how quickly we&rsquo;d roll out the first 100 million vaccines. I still think there&rsquo;s incredible dysfunction within our regulatory apparatus, but this is a good reminder that a year ago, I expected things to go even worse than they did.</p>
-<h4 id="finding-reliable-data-sources-is-hard">Finding reliable data sources is hard</h4>
+<h4 id="finding-reliable-data-sources-is-hard">
+Finding reliable data sources is hard
+<a href="#finding-reliable-data-sources-is-hard" class="heading-anchor">#</a>
+</h4>
 <p>I struggled more than I otherwise would have in scoring my predictions in part because several of the sources I&rsquo;d used either no longer existed or seemed unreliable.</p>
 <p>The primary example of this is the Good Judgement Project&rsquo;s COVID dashboard disappearing and providing no link to see what the results were. The dashboard&rsquo;s disappearance left me struggling to score some of my COVID vaccine distribution predictions according to the criteria I&rsquo;d originally set out (see cells 31 through 34 <a href="https://docs.google.com/spreadsheets/d/1YQZfLKDxxsfawwuvWLWkeoxoj9jRfUCOCQbshtE0EwM/edit#gid=0">here</a>). In the end, I ended up using the <a href="https://covid.cdc.gov/covid-data-tracker/#vaccination-trends_vacctrends-total-cum">CDC&rsquo;s cumulative vaccinations dashboard</a> to score these instead but had this not existed, I would&rsquo;ve been in trouble.</p>
 <p>A secondary example of this is that (thanks to <a href="https://sites.google.com/view/ericneyman/">Eric Neyman</a> for pointing this out) my initial number for total number of people in the world living in extreme poverty (<a href="https://worldpoverty.io/headline">source</a>) was significantly higher (750M) than what Eric saw when he looked a few days later (650M). I have to assume this involved a temporary glitch on their end since the current number, 705M, is much more aligned with my overall prior that global poverty is continuing to robustly decline plus the decline in poverty trends the realtime metrics on the site point towards. Had I instead only looked when Eric looked, I might have been misled and come to a very different conclusion about both my prediction and world poverty trends. Granted, I would&rsquo;ve gone back and checked other sources, but this still highlights the importance of reliable, consistent data sources for accurately scoring predictions.</p>
-<h4 id="focus-on-process-over-results">Focus on process over results</h4>
+<h4 id="focus-on-process-over-results">
+Focus on process over results
+<a href="#focus-on-process-over-results" class="heading-anchor">#</a>
+</h4>
 <p>Last year, I only recorded my predictions and not the justifications for them. This means that in cases where my predictions are especially wrong in hindsight, I often don&rsquo;t remember why I predicted so confidently in the first place.</p>
 <p>An especially egregious example of this is my 4% prediction that that there would be fewer than 40M estimated in the US by March 31st. <a href="https://covid.cdc.gov/covid-data-tracker/#trends_totalcases">According to the CDC</a>, the number of cumulative cases in the US as of March 31st was 30M, quite a bit below 40M. Looking back, I&rsquo;m not sure whether 1) I was just underestimating the speed of the vaccine rollout and overestimating for how long COVID&rsquo;s spread would continue at its January 2021 rate or 2) the CDC went back and revised their estimates. As evidence for hypothesis 1, I did underestimate the speed of the vaccine rollout so it&rsquo;s possible my confidence in this prediction almost entirely came from that. On the other hand, if I naively extrapolate from the January 17, 2021 trend line forward to March 31st, 2021 assuming fixed growth in cases, it seems roughly 50/50 whether the line would cross 40M by then. It&rsquo;s possible at the time I assumed continued exponential rather than linear growth which led me to predict more confidently than linear extrapolation would suggest but I&rsquo;m not sure.</p>
 <p>This is all to say that I&rsquo;d be able to learn much more from my mistakes had I wrote down my justifications for predictions rather than just recording credences. Thankfully, I&rsquo;ve already started to this for bets and <a href="https://kalshi.com/join/smalina">Kalshi</a> and plan to do the same for 2022 predictions and future predictions I make on <a href="metaculus.com">Metaculus</a>.</p>
@@ -203,12 +139,21 @@ As a refresher, the Brier score is the mean squared error of a set of prediction
 <img src="https://stephenmalina.com/images/kalshi_bets_tracking_screenshot.png" width="500" height="100" />
 </p>
 <p>I do expect that this means I&rsquo;ll make fewer predictions overall, but this seems worth it if my goal is to actually improve.</p>
-<h4 id="find-faster-feedback-loops">Find faster feedback loops</h4>
+<h4 id="find-faster-feedback-loops">
+Find faster feedback loops
+<a href="#find-faster-feedback-loops" class="heading-anchor">#</a>
+</h4>
 <p>Another challenge with annual predictions is that the feedback loops are slow. I&rsquo;m already mitigating this by making more predictions on the other platforms I&rsquo;ve mentioned and tracking justifications in addition to credences, but I also plan to include more shorter time-horizon &ndash; 1 month or 1 quarter &ndash; predictions in my 2022 predictions than I did for 2021.</p>
-<h4 id="lack-of-benchmarks-and-points-of-comparisons">Lack of benchmarks and points of comparisons</h4>
+<h4 id="lack-of-benchmarks-and-points-of-comparisons">
+Lack of benchmarks and points of comparisons
+<a href="#lack-of-benchmarks-and-points-of-comparisons" class="heading-anchor">#</a>
+</h4>
 <p>While I did compare to Gwern&rsquo;s and a superforecasters Brier score as benchmarks, these are (as mentioned) unsatisfying because they&rsquo;re not scored against the same predictions. My comparison to Eric was much more informative and I wish I had a similar option available for all my predictions.</p>
 <p>Going forward, I may try two things to provide better points of comparison for my accuracy and calibration. The first is (again) making more predictions on Kalshi and Metaculus. In the case of the former, I get feedback in the form of how much money I make or lose. In the case of the latter, I can compare myself to both individual forecasters, the community predictions, and the algorithmic Metaculus prediction. The second is potentially experimenting with recording two predictions, one &ldquo;naive&rdquo; and one &ldquo;all-things-considered&rdquo;, for certain questions and then comparing the accuracy of the two strategies. As described <a href="https://fantasticanachronism.com/2021/11/18/how-i-made-10k-predicting-which-papers-will-replicate/#Early-Steps-A-Simple-Model">elsewhere</a>, simple algorithms often outperform human judgement so in cases where applicable, this will involve using as-simple-as-possible extrapolation algorithms and then comparing them to the results from me updating on inside view considerations or other alternative ways of assessing a question (potentially with ensembling). Doing this will have the added benefit of giving me more reps building simple models relatively quickly, which I suspect may also help me makie more money on Kalshi.</p>
-<h2 id="conclusion">Conclusion</h2>
+<h2 id="conclusion">
+Conclusion
+<a href="#conclusion" class="heading-anchor">#</a>
+</h2>
 <p>Despite some frustration about struggling to interpret my results, I continue to benefit from making predictions and tracking the results. Among other things, doing so has provided me with a tacit understanding of much of what <a href="https://aiimpacts.org/evidence-on-good-forecasting-practices-from-the-good-judgment-project-an-accompanying-blog-post/">Tetlock</a>, <a href="https://www.gwern.net/Prediction-markets">Gwern</a>, and others have discussed:</p>
 <ul>
 <li>The gap between making general claims about trends and pinpointing expected quantitative outcomes. This is a big part of the reason why &ldquo;<a href="https://marginalrevolution.com/marginalrevolution/2012/11/a-bet-is-a-tax-on-bullshit.html">a bet is a tax on bullshit</a>.&rdquo;</li>
@@ -220,63 +165,129 @@ As a refresher, the Brier score is the mean squared error of a set of prediction
 <p>Last, I&rsquo;ve gained an (even) greater respect for <a href="https://en.wikipedia.org/wiki/Superforecaster">Superforecasters&rsquo;</a> (<a href="https://goodjudgment.com/">see also</a>) ability to consistently make such accurate predictions through seeing how hard improving or even maintaining a good track record can be.</p>
 <p>See you all in 2022!</p>
 </section>
-<section>
+  <section><footer class="page-footer">
+<hr />
+
+<div class="previous-post" style="display:inline-block;">
   
-  <div id="disqus_thread"></div>
-  <script type="text/javascript">
-
-  (function() {
-      
-      
-      if (window.location.hostname == "localhost")
-          return;
-
-      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-      var disqus_shortname = 'an1lam-github-io';
-      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-  })();
-  </script>
-  <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-  <a href="http://disqus.com/" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
-
-
-  <footer class="page-footer">
-		<hr>
-		<ul class="page-footer-menu">
-		
-      <li><a href="https://github.com/an1lam"><i class='fa fa-github fa-2x'></i> </a></li>
-		
-      <li><a href="https://twitter.com/an1lam"><i class='fa fa-twitter fa-2x'></i> </a></li>
-		
-      <li><a href="mailto:stephenmalina@gmail.com"><i class='fa fa-envelope fa-2x'></i> </a></li>
-		
-      <li><a href="https://stackoverflow.com/users/1631855/an1lam"><i class='fa fa-stack-overflow fa-2x'></i> </a></li>
-		
-		</ul>
-
+  <a class="link-reverse" href="https://stephenmalina.com/post/2021-12-05-beware-silver-bullets/?ref=footer">« Beware silver bullets</a>
   
-    <p>
-      Powered by <a href="https://gohugo.io">Hugo</a> and the
-      <a href="https://github.com/shawnohare/hugo-tufte">Tufte theme</a>.
-    </p>
-  
-
-	<div class="copyright">
-	<p>
-    
-      &copy; 2023
-    .
-    All rights reserved.
-    
-  </p>
 </div>
+
+<div class="next-post", style="display:inline-block;float:right;">
+  
+  <a class="link-reverse" href="https://stephenmalina.com/post/2022-01-01-2050-predictions/?ref=footer">2050 Predictions »</a>
+  
+</div>
+
+<ul class="page-footer-menu">
+  
+  
+  <li><a href="https://twitter.com/an1lam">Twitter</a></li>
+  
+
+  
+  <li><a href="https://github.com/an1lam">GitHub</a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <li><a href="https://scholar.google.com/citations?user=Q6_3PJEAAAAJ">Google Scholar</a></li>
+  
+  
+  
+    <li><a href="https://github.com/an1lam"><i class='fa fa-github fa-2x'></i>  </a></li>
+  
+    <li><a href="https://twitter.com/an1lam"><i class='fa fa-twitter fa-2x'></i>  </a></li>
+  
+    <li><a href="mailto:stephenmalina@gmail.com"><i class='fa fa-envelope fa-2x'></i>  </a></li>
+  
+    <li><a href="https://stackoverflow.com/users/1631855/an1lam"><i class='fa fa-stack-overflow fa-2x'></i>  </a></li>
+  
+</ul>
+
+
+<p>
+  Powered by <a href="https://gohugo.io">Hugo</a> and the
+  <a href="https://github.com/loikein/hugo-tufte">Tufte theme</a>.
+</p>
+
+
+
+
 </footer>
-
-
-
+</section>
+  <section><nav class="menu">
+    <ul>
+    
+        <li><a href="https://stephenmalina.com/">Home</a></li>
+    
+        <li><a href="https://stephenmalina.com/about">About</a></li>
+    
+        <li><a href="https://stephenmalina.com/post">Post</a></li>
+    
+        <li><a href="https://stephenmalina.com/bets">Bets</a></li>
+    
+        <li><a href="https://stephenmalina.com/subscribe">Subscribe</a></li>
+    
+        <li><a href="https://stephenmalina.com/tags">Tags</a></li>
+    
+    </ul>
+</nav>
 </section>
 </article>
-</div>
+
+
+
+
+
+
+
+  <script>(function(){var e,t,n,s=document.getElementsByTagName("code");for(n=0;n<s.length;){if(t=s[n],t.parentNode.tagName!=="PRE"&&t.childElementCount===0&&!t.classList.contains("nolatex")&&(e=t.textContent,/^\$[^$]/.test(e)&&/[^$]\$$/.test(e)&&(e=e.replace(/^\$/,"\\(").replace(/\$$/,"\\)"),t.textContent=e),/^\\\((.|\s)+\\\)$/.test(e)||/^\\\[(.|\s)+\\\]$/.test(e)||/^\$(.|\s)+\$$/.test(e)||/^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(e))){t.outerHTML=t.innerHTML;continue}n++}})()</script>
+
+
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.css" crossorigin="anonymous">
+<script defer src="//cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.js" crossorigin="anonymous"></script>
+<script defer src="//cdn.jsdelivr.net/npm/katex@0.16.4/dist/contrib/auto-render.min.js" crossorigin="anonymous"></script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        renderMathInElement(document.body, {
+            
+            
+            
+            
+            
+            
+            trust: (context) => ['\\htmlId', '\\href'].includes(context.command),
+            macros: {
+              "\\eqref": "\\href{###1}{(\\text{#1})}",
+              "\\ref": "\\href{###1}{\\text{#1}}",
+              "\\label": "\\htmlId{#1}{}"
+            }
+        });
+    });
+</script>
+
+
+
 </body>
+
 </html>

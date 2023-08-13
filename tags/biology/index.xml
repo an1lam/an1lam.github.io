@@ -6,30 +6,15 @@
     <description>Recent content in biology on Stephen Malina</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 05 Aug 2023 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://stephenmalina.com/tags/biology/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Sun, 13 Aug 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://stephenmalina.com/tags/biology/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Protein Language Models (Part 2): Models</title>
-      <link>https://stephenmalina.com/post/2023-08-05-protein-language-models-part-2/</link>
-      <pubDate>Sat, 05 Aug 2023 00:00:00 +0000</pubDate>
+      <title>CGM and Beyond: A mix of a dialogue and a debate</title>
+      <link>https://stephenmalina.com/post/2023-08-13-cgm-and-beyond/</link>
+      <pubDate>Sun, 13 Aug 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://stephenmalina.com/post/2023-08-05-protein-language-models-part-2/</guid>
-      <description>_I&amp;rsquo;m experimenting with Lilian Weng style review blog posts on topics I wish I&amp;rsquo;d had someone to explain to me when I got started in protein machine learning.
-This is the second post in a series introducing protein language models_. The other posts are:
- Protein Language Models (Part 1): Introduction &amp;amp; Datasets Protein Language Models (Part 2): Models Protein Language Models (Part 3): Benchmarks &amp;amp; Evaluation Protein Language Models (Part 4): Scaling Protein Language Models (Part 5): FAQ &amp;amp; Conclusion  This post focuses on the different types of PLMs with a specific focus on deviations from the standard LLM playbook.</description>
-    </item>
-    
-    <item>
-      <title>Protein Language Models (Part 1): Introduction &amp; Datasets</title>
-      <link>https://stephenmalina.com/post/2023-07-22-protein-language-models-part-1/</link>
-      <pubDate>Sat, 22 Jul 2023 00:00:00 +0000</pubDate>
-      
-      <guid>https://stephenmalina.com/post/2023-07-22-protein-language-models-part-1/</guid>
-      <description>I&amp;rsquo;m experimenting with Lilian Weng style review blog posts on topics I wish I&amp;rsquo;d had someone to explain to me when I got started in protein machine learning.
-Following the success of large sequence models in language and other domain, The terminology people use here is extremely confusing. &amp;ldquo;Large language models&amp;rdquo; often denote large sequence models trained on language and other modalities or in some cases just other modalities. In the rest of the post, I&amp;rsquo; use &amp;ldquo;large language models&amp;rdquo; (LLMs) to refer to the cluster of ideas around large-scale pretraining combined with simple objectives as opposed to models that focus on language as a modality and &amp;ldquo;protein language models&amp;rdquo; (PLMs) to refer to large sequence models of proteins.</description>
+      <guid>https://stephenmalina.com/post/2023-08-13-cgm-and-beyond/</guid>
+      <description>What are continuous glucose monitors good for? More broadly, what are continuous measures of physiology (CxM) good for?
+Similar to my Elliot and I&amp;rsquo;s dialogue, this post has an unconventional format. It&amp;rsquo;s both a synthesis of Willy&amp;rsquo;s, Eryney&amp;rsquo;s, and my opinions on continuous monitoring combined with a debate in places where we disagree. To try and make it clear which views are coming from each person, we&amp;rsquo;ve annotated sections that come from a subset of us rather than all of us with e.</description>
     </item>
     
     <item>
@@ -38,7 +23,7 @@ Following the success of large sequence models in language and other domain, The
       <pubDate>Wed, 07 Jun 2023 00:00:00 +0000</pubDate>
       
       <guid>https://stephenmalina.com/post/2023-06-07-editing-part-i/</guid>
-      <description>Summary Gene editing has made a lot of progress over the past few decades. CRISPR-Cas9 sparked the recent fervor and won some of its early pioneers a Nobel Prize, and more recently Prime Editing and Cytosine/Adenine Base Editors (CBEs/ABEs) have further expanded the range of editing targets and types of edits that are possible while increasing efficiency and reducing the rate of off-target effects.
+      <description>Summary # Gene editing has made a lot of progress over the past few decades. CRISPR-Cas9 sparked the recent fervor and won some of its early pioneers a Nobel Prize, and more recently Prime Editing and Cytosine/Adenine Base Editors (CBEs/ABEs) have further expanded the range of editing targets and types of edits that are possible while increasing efficiency and reducing the rate of off-target effects.
 From the perspective of safe, ubiquitous editing in humans using these systems, a few major challenges for editing remain towards translating novel target discovery into clinical application:</description>
     </item>
     

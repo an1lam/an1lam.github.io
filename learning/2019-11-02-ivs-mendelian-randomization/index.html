@@ -1,48 +1,16 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
-
-<head>
-<title>Stephen Malina - Paper Review - IVs and Mendelian Randomization</title>
-  <meta http-equiv="content-type" content="text/html; charset=utf-8">
-
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="">
-<meta name="keywords" content="">
-<meta name="author" content="Stephen Malina">
-<meta name="generator" content="Hugo 0.68.3" />
-
-  
-  
-
-  <script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-  tex2jax: {
-    inlineMath: [['$','$'], ['\\(','\\)']],
-    displayMath: [['$$','$$'], ['\\[','\\]']],
-    processEscapes: true,
-    processEnvironments: true,
-    menuSettings: { zoom: "Double-Click" },
-    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
-    TeX: { equationNumbers: { autoNumber: "AMS" },
-         extensions: ["AMSmath.js", "AMSsymbols.js"] }
-  }
-});
-</script>
-
-<script type="text/javascript"
-  src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
-</script>
+<html lang="en-us"><head>
+<title>Paper Review - IVs and Mendelian Randomization - Stephen Malina</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description"
+    content="Summary # Detailed Notes # 3 IV Requirements # IV must have a direct influence on the treatment IV must not covary with the unmeasured confounding that impacts the outcome IV must not have a direct influence on the outcome Relevant considerations for deciding whether to do an IV analysis # Is there any unmeasured confounding?
+If not, is the answer that we can just use a normal regression? When is unmeasured confounding especially likely? ">
+<link rel="canonical" href="https://stephenmalina.com/learning/2019-11-02-ivs-mendelian-randomization/" />
 
 
 
-
-
-
-
-<link rel="stylesheet" href="https://unpkg.com/purecss@2.0.3/build/pure-min.css">
-
-
-    <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.3/build/grids-responsive-min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 
 
@@ -51,91 +19,63 @@ MathJax.Hub.Config({
 
 
 
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
 
-<link rel="stylesheet" href="https://stephenmalina.com/css/tufte.css">
-<link rel="stylesheet" href="https://stephenmalina.com/css/hugo-tufte.css">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="preload" as="style"
+      href="https://fonts.googleapis.com/css?family=Noto+Serif+SC|Noto+Emoji&display=swap" />
+<link rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Noto+Serif+SC|Noto+Emoji&display=swap"
+      media="print" onload="this.media='all'" />
+<noscript>
+<link rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Noto+Serif+SC&display=swap" />
+</noscript>
+
+
+
+
+
+
+<link rel="stylesheet" href="https://stephenmalina.com/css/hugo-tufte.min.css">
+
+
+
+<link rel="stylesheet" href="https://stephenmalina.com/css/hugo-tufte-options.min.css">
+
 <link rel="stylesheet" href="https://stephenmalina.com/css/hugo-tufte-override.css">
 
-  
-<script type="application/javascript">
-var doNotTrack = false;
-if (!doNotTrack) {
-	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-	ga('create', 'UA-187780632-1', 'auto');
-	
-	ga('send', 'pageview');
-}
-</script>
-
-  
-<script type="application/javascript">
-var doNotTrack = false;
-if (!doNotTrack) {
-	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
-	ga('create', 'UA-187780632-1', 'auto');
-	
-	ga('send', 'pageview');
-}
-</script>
-<script async src='https://www.google-analytics.com/analytics.js'></script>
-
 </head>
-
-
 <body>
-<div id="layout" class="pure-g">
-<article class="pure-u-1">
-<header class="brand">
-  <h1>Stephen Malina</h1>
-  <h2>This is my blog. There are many others like it but this one is mine.</h2>
-  <nav class="menu">
-    <ul>
-    
-        <li><a href="https://stephenmalina.com/">Home</a></li>
-    
-        <li><a href="https://stephenmalina.com/about">About</a></li>
-    
-        <li><a href="https://stephenmalina.com/post">Post</a></li>
-    
-        <li><a href="https://stephenmalina.com/bets">Bets</a></li>
-    
-        <li><a href="https://stephenmalina.com/subscribe">Subscribe</a></li>
-    
-        <li><a href="https://stephenmalina.com/tags">Tags</a></li>
-    
-    </ul>
-</nav>
 
-</header>
 
-<section>
-<h1 class="content-title">
+<article id="main">
+  <section>
+<h1 class="content-title">Paper Review - IVs and Mendelian Randomization</h1></section>
+
   
-  <a href="https://stephenmalina.com/learning/2019-11-02-ivs-mendelian-randomization/">Paper Review - IVs and Mendelian Randomization</a>
-  
+
+  <section><h1 id="summary">
+Summary
+<a href="#summary" class="heading-anchor">#</a>
 </h1>
-
-
-
-
-</section>
-
-
-
-<section><h1 id="summary">Summary</h1>
-<h1 id="detailed-notes">Detailed Notes</h1>
-<h2 id="3-iv-requirements">3 IV Requirements</h2>
+<h1 id="detailed-notes">
+Detailed Notes
+<a href="#detailed-notes" class="heading-anchor">#</a>
+</h1>
+<h2 id="3-iv-requirements">
+3 IV Requirements
+<a href="#3-iv-requirements" class="heading-anchor">#</a>
+</h2>
 <ol>
 <li>IV must have a direct influence on the treatment</li>
 <li>IV must not covary with the unmeasured confounding that impacts the outcome</li>
 <li>IV must not have a direct influence on the outcome</li>
 </ol>
-<h2 id="relevant-considerations-for-deciding-whether-to-do-an-iv-analysis">Relevant considerations for deciding whether to do an IV analysis</h2>
+<h2 id="relevant-considerations-for-deciding-whether-to-do-an-iv-analysis">
+Relevant considerations for deciding whether to do an IV analysis
+<a href="#relevant-considerations-for-deciding-whether-to-do-an-iv-analysis" class="heading-anchor">#</a>
+</h2>
 <ul>
 <li>
 <p>Is there any unmeasured confounding?</p>
@@ -167,8 +107,14 @@ if (!doNotTrack) {
 </ul>
 </li>
 </ul>
-<h2 id="examples-of-common-ivs">Examples of common IVs</h2>
-<h3 id="ex-1-random-encouragement-trials">Ex. 1: Random Encouragement Trials</h3>
+<h2 id="examples-of-common-ivs">
+Examples of common IVs
+<a href="#examples-of-common-ivs" class="heading-anchor">#</a>
+</h2>
+<h3 id="ex-1-random-encouragement-trials">
+Ex. 1: Random Encouragement Trials
+<a href="#ex-1-random-encouragement-trials" class="heading-anchor">#</a>
+</h3>
 <ul>
 <li>Doing an experiment to measure impact of smoking during pregnancy on birthweight</li>
 <li>Staff person encourages subset of mothers who smoke to stop smoking using pamphlets, guidance, etc.</li>
@@ -181,7 +127,10 @@ if (!doNotTrack) {
 </ol>
 </li>
 </ul>
-<h3 id="ex-2-distance-to-specialty-care-provider">Ex. 2: Distance to Specialty Care Provider</h3>
+<h3 id="ex-2-distance-to-specialty-care-provider">
+Ex. 2: Distance to Specialty Care Provider
+<a href="#ex-2-distance-to-specialty-care-provider" class="heading-anchor">#</a>
+</h3>
 <ul>
 <li>Say you want to understand how going to a specialist doctor vs. a general practitioner affects outcomes</li>
 <li>You can use the fact that people will tend to go to closer doctors and select distance to each as an IV</li>
@@ -199,12 +148,18 @@ if (!doNotTrack) {
 </ol>
 </li>
 </ul>
-<h3 id="ex-3-preference-based-ivs">Ex. 3: Preference-Based IVs</h3>
+<h3 id="ex-3-preference-based-ivs">
+Ex. 3: Preference-Based IVs
+<a href="#ex-3-preference-based-ivs" class="heading-anchor">#</a>
+</h3>
 <ul>
 <li>Take advantage of variation in medical practice patterns between groups</li>
 <li>Ex: surgery vs. endovascular therapy for aneurysms using hospital as the IV</li>
 </ul>
-<h3 id="ex-4-genes-as-ivs-mendelian-randomization">Ex. 4: Genes as IVs (Mendelian Randomization)</h3>
+<h3 id="ex-4-genes-as-ivs-mendelian-randomization">
+Ex. 4: Genes as IVs (Mendelian Randomization)
+<a href="#ex-4-genes-as-ivs-mendelian-randomization" class="heading-anchor">#</a>
+</h3>
 <ul>
 <li>
 <p><strong>This is the reason we&rsquo;re interested in this</strong></p>
@@ -249,8 +204,14 @@ if (!doNotTrack) {
 </ul>
 </li>
 </ul>
-<h2 id="formal-iv-assumptions-and-estimation-for-binary-ivs-and-treatments">Formal IV Assumptions and Estimation for Binary IVs and Treatments</h2>
-<h3 id="setting">Setting</h3>
+<h2 id="formal-iv-assumptions-and-estimation-for-binary-ivs-and-treatments">
+Formal IV Assumptions and Estimation for Binary IVs and Treatments
+<a href="#formal-iv-assumptions-and-estimation-for-binary-ivs-and-treatments" class="heading-anchor">#</a>
+</h2>
+<h3 id="setting">
+Setting
+<a href="#setting" class="heading-anchor">#</a>
+</h3>
 <ul>
 <li>Notation note: bolded characters are vectors</li>
 <li>\( N \): # of subjects</li>
@@ -272,7 +233,10 @@ if (!doNotTrack) {
 </li>
 <li>\( \mathbf{X} \in \mathbb{R}^{N \times \dots} \): observed covariates for subjects</li>
 </ul>
-<h3 id="5-formal-iv-assumptions">5 Formal IV Assumptions</h3>
+<h3 id="5-formal-iv-assumptions">
+5 Formal IV Assumptions
+<a href="#5-formal-iv-assumptions" class="heading-anchor">#</a>
+</h3>
 <ol>
 <li>Stable Unit Treatment Value Assumption</li>
 <li>Criteria 1</li>
@@ -281,13 +245,19 @@ if (!doNotTrack) {
 <li>Monotonicity
 <strong>Note to self: Are these easier to encode in causal DAGs?</strong></li>
 </ol>
-<h3 id="stable-unit-treatment-value-assumption-sutva">Stable Unit Treatment Value Assumption (SUTVA)</h3>
+<h3 id="stable-unit-treatment-value-assumption-sutva">
+Stable Unit Treatment Value Assumption (SUTVA)
+<a href="#stable-unit-treatment-value-assumption-sutva" class="heading-anchor">#</a>
+</h3>
 <ul>
 <li>Formal statement:
-\[ \mathbf{z}_i = \mathbf{z}'_i \rightarrow D^{\mathbf{z}}_i = D^{\mathbf{z&rsquo;}}_i \land \mathbf{d}_i = \mathbf{d}'_i \rightarrow \mathbf{Y}^{(\mathbf{z, d})}_i = \mathbf{Y}^{(\mathbf{z&rsquo;, d&rsquo;})}_i \]</li>
+\[ \mathbf{z}_i = \mathbf{z}&rsquo;_i \rightarrow D^{\mathbf{z}}_i = D^{\mathbf{z&rsquo;}}_i \land \mathbf{d}_i = \mathbf{d}&rsquo;_i \rightarrow \mathbf{Y}^{(\mathbf{z, d})}_i = \mathbf{Y}^{(\mathbf{z&rsquo;, d&rsquo;})}_i \]</li>
 <li>Plain English: if the IV assignments are the same, then the treatment assignments have to be the same. And if the treatment assignments are the same, then the potential outcomes have to be the same.</li>
 </ul>
-<h3 id="formal-versions-of-three-criteria">Formal Versions of Three Criteria</h3>
+<h3 id="formal-versions-of-three-criteria">
+Formal Versions of Three Criteria
+<a href="#formal-versions-of-three-criteria" class="heading-anchor">#</a>
+</h3>
 <ol>
 <li>IV positive correlated with treatment:
 \[ \mathbb{E}[D^1 \mid \mathbf{X}] &gt; \mathbb{E}[D^0 \mid \mathbf{X}] \]
@@ -301,7 +271,10 @@ if (!doNotTrack) {
 <ul>
 <li>These alone allow effect bounds to be determined but not point identified</li>
 </ul>
-<h3 id="compliance-classes-and-point-identification">Compliance classes and point identification</h3>
+<h3 id="compliance-classes-and-point-identification">
+Compliance classes and point identification
+<a href="#compliance-classes-and-point-identification" class="heading-anchor">#</a>
+</h3>
 <ul>
 <li>Always-takers, compliers, defiers, never-takers (self-explanatory)</li>
 <li>How do you know if someone&rsquo;s a complier? Estimate them from other factors, presumably the covariates?</li>
@@ -314,7 +287,10 @@ if (!doNotTrack) {
 </ul>
 </li>
 </ul>
-<h4 id="approach-1-to-enabling-point-identification-assume-monotonicity">Approach 1 to enabling point identification: assume monotonicity</h4>
+<h4 id="approach-1-to-enabling-point-identification-assume-monotonicity">
+Approach 1 to enabling point identification: assume monotonicity
+<a href="#approach-1-to-enabling-point-identification-assume-monotonicity" class="heading-anchor">#</a>
+</h4>
 <ul>
 <li>Monotonicity means there are no defiers
 <ul>
@@ -328,12 +304,18 @@ if (!doNotTrack) {
 </li>
 <li>Average effect for compliers and always takers is identifiable in this approach (compliance average causal effect, CACE / LATE): \( \mathbb{E}(Y^1_i - Y^0_i \mid C_i = \text{complier}) \)</li>
 </ul>
-<h4 id="approach-2-to-enabling-point-identification-assume-effects-same-across-compliance-classes">Approach 2 to enabling point identification: assume effects same across compliance classes</h4>
+<h4 id="approach-2-to-enabling-point-identification-assume-effects-same-across-compliance-classes">
+Approach 2 to enabling point identification: assume effects same across compliance classes
+<a href="#approach-2-to-enabling-point-identification-assume-effects-same-across-compliance-classes" class="heading-anchor">#</a>
+</h4>
 <ul>
 <li>Strongest version: assume expectation of difference between \( Y^0 \) and \( Y^1 \) uniform across compliance classes</li>
 <li>In other words, treatment effects same amongst always takers and compliers conditional on the covariates</li>
 </ul>
-<h3 id="iv-estimation">IV Estimation</h3>
+<h3 id="iv-estimation">
+IV Estimation
+<a href="#iv-estimation" class="heading-anchor">#</a>
+</h3>
 <ul>
 <li>Horribly typeset proof that CACE is identified as described in approach 1</li>
 <li>Can determine CASE using a 2-stage least squares (2SLS) process
@@ -355,8 +337,14 @@ if (!doNotTrack) {
 </ul>
 </li>
 </ul>
-<h2 id="case-studies">Case Studies</h2>
-<h3 id="ex-2-treatment-in-a-randomized-trial-with-nonadherence">Ex. 2: Treatment in a randomized trial with nonadherence</h3>
+<h2 id="case-studies">
+Case Studies
+<a href="#case-studies" class="heading-anchor">#</a>
+</h2>
+<h3 id="ex-2-treatment-in-a-randomized-trial-with-nonadherence">
+Ex. 2: Treatment in a randomized trial with nonadherence
+<a href="#ex-2-treatment-in-a-randomized-trial-with-nonadherence" class="heading-anchor">#</a>
+</h3>
 <ul>
 <li>Intention to treat (ITT) effect: effect of being assigned treatment vs. not</li>
 <li>Nonadherence means ITT does not equal effect of <strong>receiving</strong> treatment vs. control</li>
@@ -385,45 +373,129 @@ if (!doNotTrack) {
 </li>
 </ul>
 </section>
-<section>
-  
+  <section><footer class="page-footer">
+<hr />
 
-  <footer class="page-footer">
-		<hr>
-		<ul class="page-footer-menu">
-		
-      <li><a href="https://github.com/an1lam"><i class='fa fa-github fa-2x'></i> </a></li>
-		
-      <li><a href="https://twitter.com/an1lam"><i class='fa fa-twitter fa-2x'></i> </a></li>
-		
-      <li><a href="mailto:stephenmalina@gmail.com"><i class='fa fa-envelope fa-2x'></i> </a></li>
-		
-      <li><a href="https://stackoverflow.com/users/1631855/an1lam"><i class='fa fa-stack-overflow fa-2x'></i> </a></li>
-		
-		</ul>
-
+<div class="previous-post" style="display:inline-block;">
   
-    <p>
-      Powered by <a href="https://gohugo.io">Hugo</a> and the
-      <a href="https://github.com/shawnohare/hugo-tufte">Tufte theme</a>.
-    </p>
+  <a class="link-reverse" href="https://stephenmalina.com/post/2019-09-07-matrix-potpourri/?ref=footer">« Matrix Potpourri</a>
   
-
-	<div class="copyright">
-	<p>
-    
-      &copy; 2023
-    .
-    All rights reserved.
-    
-  </p>
 </div>
+
+<div class="next-post", style="display:inline-block;float:right;">
+  
+  <a class="link-reverse" href="https://stephenmalina.com/learning/2019-11-08-causal-inference/?ref=footer">Causal Inference Notes »</a>
+  
+</div>
+
+<ul class="page-footer-menu">
+  
+  
+  <li><a href="https://twitter.com/an1lam">Twitter</a></li>
+  
+
+  
+  <li><a href="https://github.com/an1lam">GitHub</a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <li><a href="https://scholar.google.com/citations?user=Q6_3PJEAAAAJ">Google Scholar</a></li>
+  
+  
+  
+    <li><a href="https://github.com/an1lam"><i class='fa fa-github fa-2x'></i>  </a></li>
+  
+    <li><a href="https://twitter.com/an1lam"><i class='fa fa-twitter fa-2x'></i>  </a></li>
+  
+    <li><a href="mailto:stephenmalina@gmail.com"><i class='fa fa-envelope fa-2x'></i>  </a></li>
+  
+    <li><a href="https://stackoverflow.com/users/1631855/an1lam"><i class='fa fa-stack-overflow fa-2x'></i>  </a></li>
+  
+</ul>
+
+
+<p>
+  Powered by <a href="https://gohugo.io">Hugo</a> and the
+  <a href="https://github.com/loikein/hugo-tufte">Tufte theme</a>.
+</p>
+
+
+
+
 </footer>
-
-
-
+</section>
+  <section><nav class="menu">
+    <ul>
+    
+        <li><a href="https://stephenmalina.com/">Home</a></li>
+    
+        <li><a href="https://stephenmalina.com/about">About</a></li>
+    
+        <li><a href="https://stephenmalina.com/post">Post</a></li>
+    
+        <li><a href="https://stephenmalina.com/bets">Bets</a></li>
+    
+        <li><a href="https://stephenmalina.com/subscribe">Subscribe</a></li>
+    
+        <li><a href="https://stephenmalina.com/tags">Tags</a></li>
+    
+    </ul>
+</nav>
 </section>
 </article>
-</div>
+
+
+
+
+
+
+
+  <script>(function(){var e,t,n,s=document.getElementsByTagName("code");for(n=0;n<s.length;){if(t=s[n],t.parentNode.tagName!=="PRE"&&t.childElementCount===0&&!t.classList.contains("nolatex")&&(e=t.textContent,/^\$[^$]/.test(e)&&/[^$]\$$/.test(e)&&(e=e.replace(/^\$/,"\\(").replace(/\$$/,"\\)"),t.textContent=e),/^\\\((.|\s)+\\\)$/.test(e)||/^\\\[(.|\s)+\\\]$/.test(e)||/^\$(.|\s)+\$$/.test(e)||/^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(e))){t.outerHTML=t.innerHTML;continue}n++}})()</script>
+
+
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.css" crossorigin="anonymous">
+<script defer src="//cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.js" crossorigin="anonymous"></script>
+<script defer src="//cdn.jsdelivr.net/npm/katex@0.16.4/dist/contrib/auto-render.min.js" crossorigin="anonymous"></script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        renderMathInElement(document.body, {
+            
+            
+            
+            
+            
+            
+            trust: (context) => ['\\htmlId', '\\href'].includes(context.command),
+            macros: {
+              "\\eqref": "\\href{###1}{(\\text{#1})}",
+              "\\ref": "\\href{###1}{\\text{#1}}",
+              "\\label": "\\htmlId{#1}{}"
+            }
+        });
+    });
+</script>
+
+
+
 </body>
+
 </html>

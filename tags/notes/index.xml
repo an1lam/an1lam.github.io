@@ -6,18 +6,14 @@
     <description>Recent content in Notes on Stephen Malina</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 12 Dec 2019 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://stephenmalina.com/tags/notes/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Thu, 12 Dec 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://stephenmalina.com/tags/notes/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>All of Statistics - Chapter 3</title>
       <link>https://stephenmalina.com/learning/2019-12-12-all-of-statistics-ch3-notes/</link>
       <pubDate>Thu, 12 Dec 2019 00:00:00 +0000</pubDate>
       
       <guid>https://stephenmalina.com/learning/2019-12-12-all-of-statistics-ch3-notes/</guid>
-      <description>Selected Exercises 1. Suppose we play a game where we start with $ c $ dollars. On each play of the game you either double or halve your money, with equal probability. What is your expected fortune after $ n $ trials?
+      <description>Selected Exercises # 1. Suppose we play a game where we start with $ c $ dollars. On each play of the game you either double or halve your money, with equal probability. What is your expected fortune after $ n $ trials?
 I&amp;rsquo;m pretty sure we can use a trick that I&amp;rsquo;ve seen a lot in machine learning to solve this using plain old expectations. If I&amp;rsquo;m right, we let $ X \sim \text{Binomial}(n, \frac{1}{2}) $ and can create a new random variable, $ Z $, where</description>
     </item>
     
@@ -28,7 +24,7 @@ I&amp;rsquo;m pretty sure we can use a trick that I&amp;rsquo;ve seen a lot in m
       
       <guid>https://stephenmalina.com/post/2019-11-16-network-mendelian-randomization/</guid>
       <description>In which I record my thoughts on Network Mendelian Randomization by Burgess et al.
-What is this paper about? This paper describes a method for doing Mendelian Randomization (MR) in the presence of a potential mediating variable. In the typical MR setting, we have an instrumental variable which &amp;ldquo;instruments&amp;rdquo; an exposure that we believe causally influences the outcome we care about. True mediators &amp;ldquo;mediate&amp;rdquo; the causal influence of exposures on outcomes.</description>
+What is this paper about? # This paper describes a method for doing Mendelian Randomization (MR) in the presence of a potential mediating variable. In the typical MR setting, we have an instrumental variable which &amp;ldquo;instruments&amp;rdquo; an exposure that we believe causally influences the outcome we care about. True mediators &amp;ldquo;mediate&amp;rdquo; the causal influence of exposures on outcomes.</description>
     </item>
     
     <item>
@@ -37,7 +33,7 @@ What is this paper about? This paper describes a method for doing Mendelian Rand
       <pubDate>Fri, 15 Nov 2019 00:00:00 +0000</pubDate>
       
       <guid>https://stephenmalina.com/learning/2019-11-08-causal-inference/</guid>
-      <description>Causal Inference in Statistics Questions  Why is the causal effect identifiable in an IV DAG when the dependencies are linear (from an SCM perspective)?  I think this may relate to factor models.    Advanced Data Analysis from an Elementary Point of View (Ch. 18-23) Chapter 18 Exercises 18.2. Proof that every path must go through a collider:
+      <description>Causal Inference in Statistics # Questions # Why is the causal effect identifiable in an IV DAG when the dependencies are linear (from an SCM perspective)? I think this may relate to factor models. Advanced Data Analysis from an Elementary Point of View (Ch. 18-23) # Chapter 18 # Exercises # 18.2. Proof that every path must go through a collider:
 Observe that every path between two exogenous variables starts with variables going in the opposite direction.</description>
     </item>
     
@@ -47,8 +43,8 @@ Observe that every path between two exogenous variables starts with variables go
       <pubDate>Sun, 03 Nov 2019 00:00:00 +0000</pubDate>
       
       <guid>https://stephenmalina.com/learning/2019-11-02-ivs-mendelian-randomization/</guid>
-      <description>Summary Detailed Notes 3 IV Requirements  IV must have a direct influence on the treatment IV must not covary with the unmeasured confounding that impacts the outcome IV must not have a direct influence on the outcome  Relevant considerations for deciding whether to do an IV analysis   Is there any unmeasured confounding?
- If not, is the answer that we can just use a normal regression?    When is unmeasured confounding especially likely?</description>
+      <description>Summary # Detailed Notes # 3 IV Requirements # IV must have a direct influence on the treatment IV must not covary with the unmeasured confounding that impacts the outcome IV must not have a direct influence on the outcome Relevant considerations for deciding whether to do an IV analysis # Is there any unmeasured confounding?
+If not, is the answer that we can just use a normal regression? When is unmeasured confounding especially likely?</description>
     </item>
     
     <item>
@@ -58,7 +54,7 @@ Observe that every path between two exogenous variables starts with variables go
       
       <guid>https://stephenmalina.com/post/2019-08-08-deepsea/</guid>
       <description>In which I record my thoughts on DeepSEA.
-Terminology  ChIP-seq (Chromatin Immunoprecipitation Sequencing): Expression Quantitative Trait Locis (eQTLs) Cofactor Binding Sequences Histone Marks: modifications to histone proteins in the nucleosome that impact the shape of chromatin. gkm-SVMs: The gkm-SVM is the previous SOTA model for predicting transcription factor binding based on ChIP-seq data. Allele: variants of a gene at the same position on a chromosome.  What is this paper about?</description>
+Terminology # ChIP-seq (Chromatin Immunoprecipitation Sequencing): Expression Quantitative Trait Locis (eQTLs) Cofactor Binding Sequences Histone Marks: modifications to histone proteins in the nucleosome that impact the shape of chromatin. gkm-SVMs: The gkm-SVM is the previous SOTA model for predicting transcription factor binding based on ChIP-seq data. Allele: variants of a gene at the same position on a chromosome. What is this paper about?</description>
     </item>
     
     <item>
@@ -68,7 +64,7 @@ Terminology  ChIP-seq (Chromatin Immunoprecipitation Sequencing): Expression Qua
       
       <guid>https://stephenmalina.com/post/2019-08-05-basset/</guid>
       <description>In which I record my thoughts on Basset.
-Bio Background The genome consists of (broadly) two types of genes, coding genes and noncoding genes. Coding genes get translated into proteins (as laid down by the Central Dogma) and are what most of us learned about in bio class. Non-coding genes&amp;hellip; don&amp;rsquo;t. As I understand it, noncoding genes can do a bunch of different things, but part of their function is to regulate coding gene activity through a number of mechanisms.</description>
+Bio Background # The genome consists of (broadly) two types of genes, coding genes and noncoding genes. Coding genes get translated into proteins (as laid down by the Central Dogma) and are what most of us learned about in bio class. Non-coding genes&amp;hellip; don&amp;rsquo;t. As I understand it, noncoding genes can do a bunch of different things, but part of their function is to regulate coding gene activity through a number of mechanisms.</description>
     </item>
     
     <item>
@@ -78,7 +74,7 @@ Bio Background The genome consists of (broadly) two types of genes, coding genes
       
       <guid>https://stephenmalina.com/post/2019-07-26-deepbind/</guid>
       <description>In which I record my thoughts on DeepBind.
-What is this paper about? The authors of this paper designed a conv net model to predict how well different proteins will bind to sequences of DNA or RNA. They train one model per protein for many different sequences and show that these models can predict binding affinities for sequences well enough to produce insights regarding the impact of single nucleotide mutations. They then discuss different datasets and areas in which they tested their model and how it performed (often SOTA [as of 2015]).</description>
+What is this paper about? # The authors of this paper designed a conv net model to predict how well different proteins will bind to sequences of DNA or RNA. They train one model per protein for many different sequences and show that these models can predict binding affinities for sequences well enough to produce insights regarding the impact of single nucleotide mutations.</description>
     </item>
     
     <item>
@@ -87,7 +83,7 @@ What is this paper about? The authors of this paper designed a conv net model to
       <pubDate>Mon, 20 May 2019 00:00:00 +0000</pubDate>
       
       <guid>https://stephenmalina.com/learning/2019-05-20-linear-algebra-done-right-ch6-notes/</guid>
-      <description>Selected Exercises 6.B 1. (a) Suppose \( \theta \in \mathbf{R} \). Show that $ (\cos \theta, \sin \theta), (-\sin \theta, \cos \theta) $ and $ (\cos \theta, \sin \theta), (\sin \theta, -\cos \theta) $ are orthonormal bases of $ \mathbf{R}^2 $.
+      <description>Selected Exercises # 6.B # 1. (a) Suppose \( \theta \in \mathbf{R} \). Show that $ (\cos \theta, \sin \theta), (-\sin \theta, \cos \theta) $ and $ (\cos \theta, \sin \theta), (\sin \theta, -\cos \theta) $ are orthonormal bases of $ \mathbf{R}^2 $.
 (b) Show that each orthonormal basis of $ \mathbf{R}^2 $ is of the form given by one of the two possibilities of part (a).
 (a) First, we show that both lists of vectors are orthonormal (using the Euclidean inner product), i.</description>
     </item>
@@ -98,7 +94,7 @@ What is this paper about? The authors of this paper designed a conv net model to
       <pubDate>Mon, 01 Apr 2019 00:00:00 +0000</pubDate>
       
       <guid>https://stephenmalina.com/learning/2019-04-01-linear-algebra-done-right-ch5-notes/</guid>
-      <description>Selected Exercises 5.A 12. Define $ T \in \mathcal L(\mathcal P_4(\mathbf{R})) $ by
+      <description>Selected Exercises # 5.A # 12. Define $ T \in \mathcal L(\mathcal P_4(\mathbf{R})) $ by
 $$ (Tp)(x) = xp&amp;rsquo;(x) $$
 for all $ x \in \mathbf{R} $. Find all eigenvalues and eigenvectors of $ T $.
 Observe that, if $ p = a_0 + a_1 x + a_2 x^2 + a_3 x^3 + a_4 x^4 $, then $$ x p&amp;rsquo;(x) = a_1 x + 2 a_2 x^2 + 3 a_3 x^3 + 4 a_4 x^4.</description>
@@ -110,7 +106,7 @@ Observe that, if $ p = a_0 + a_1 x + a_2 x^2 + a_3 x^3 + a_4 x^4 $, then $$ x p&
       <pubDate>Sun, 31 Mar 2019 00:00:00 +0000</pubDate>
       
       <guid>https://stephenmalina.com/learning/2019-03-31-linear-algebra-done-right-ch4-notes/</guid>
-      <description>Selected Exercises 4. Suppose $m$ and $n$ are positive integers with $ m \leq n $, and suppose $ \lambda_1, \dots, \lambda_m \in F $. Prove that there exists a polynomial $ p \in \mathcal P(\mathbf{F}) $ with $ \deg p = n $ such that $ 0 = p(\lambda_1) = \cdots = p(\lambda_m) $ and such that $ p $ has no other zeros.
+      <description>Selected Exercises # 4. Suppose $m$ and $n$ are positive integers with $ m \leq n $, and suppose $ \lambda_1, \dots, \lambda_m \in F $. Prove that there exists a polynomial $ p \in \mathcal P(\mathbf{F}) $ with $ \deg p = n $ such that $ 0 = p(\lambda_1) = \cdots = p(\lambda_m) $ and such that $ p $ has no other zeros.
 First, we can show that the polynomial $p&amp;rsquo;(z) = (z - \lambda_1) \cdots (z-\lambda_m) $ with $ \deg p&amp;rsquo; = m $ has $ 0 = p&amp;rsquo;(\lambda_1) = \cdots = p&amp;rsquo;(\lambda_m) $ and no other zeros.</description>
     </item>
     
@@ -120,7 +116,7 @@ First, we can show that the polynomial $p&amp;rsquo;(z) = (z - \lambda_1) \cdots
       <pubDate>Sat, 30 Mar 2019 00:00:00 +0000</pubDate>
       
       <guid>https://stephenmalina.com/learning/2019-03-30-linear-algebra-done-right-ch3-notes/</guid>
-      <description>Selected Exercises 3.D 7. Suppose $ V $ &amp;amp; $ W $ are finite-dimensional. Let $ v \in V $. Let $$ E = \{ T \in \mathcal L(V, W): T(v) = 0 \}. $$
+      <description>Selected Exercises # 3.D # 7. Suppose $ V $ &amp;amp; $ W $ are finite-dimensional. Let $ v \in V $. Let $$ E = \{ T \in \mathcal L(V, W): T(v) = 0 \}. $$
 (a) Show that $ E $ is a subspace of $ \mathcal L(V, W) $.
 (b) Suppose $ v \neq 0 $. What is $\dim E$?
 For (a), to show $ E $ is a subspace of $ \mathcal L(V, W) $, we need to show that $ E $ contains zero and is closed under both addition and multiplication.</description>
