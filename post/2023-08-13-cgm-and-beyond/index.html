@@ -82,20 +82,17 @@ CGMs
 </ol>
 <p>The former must <em>always</em> supplement with insulin (“exogenous insulin”) to control their blood sugar and prevent ketoacidosis, since they don’t produce enough insulin; the latter, depending on many factors, can often avoid insulin use. Insulin use requires frequent, painful checking of blood sugar levels,  a large source of inconvenience for diabetics.</p>
 <p>The TL;DR on CGMs from a medical perspective is that they are useful for type 1 diabetics, and appear to allow for a lower <strong>average</strong> blood sugar level (usually measured through <a href="https://www.cdc.gov/diabetes/managing/managing-blood-sugar/a1c.html#:~:text=The%20A1C%20test%E2%80%94also%20known,care%20team%20manage%20your%20diabetes.">A1C</a>) while avoiding dangerously low blood sugar levels (hypoglycemia). Lower A1C, all else equal, tends to predict lower long-term complications of diabetes, subject to many caveats– for example, patients with low remaining life expectancy, like elderly patients or those with multiple comorbidities, are not advised to aim for low A1C, since the cost of getting there (higher rates of adverse effects like fainting from hypoglycemia) is higher, while the benefit is unlikely to be realized.</p>
-
+<p>
 
     <figure >
   
-    <label for="marginfig-1" class="margin-toggle marginnote-ind">⊕</label>
-    <input type="checkbox" id="marginfig-1" class="margin-toggle"/>
-    <span class="marginnote">
-
-
-Source: <a href="https://diabetesjournals.org/care/article/44/Supplement_1/S73/30909/6-Glycemic-Targets-Standards-of-Medical-Care-in">https://diabetesjournals.org/care/article/44/Supplement_1/S73/30909/6-Glycemic-Targets-Standards-of-Medical-Care-in</a> (Fig. 6.2)
 
 
 
-</span>
+
+
+
+
 
 
 
@@ -109,6 +106,7 @@ Source: <a href="https://diabetesjournals.org/care/article/44/Supplement_1/S73/3
 </figure>
 
 
+<a href="https://diabetesjournals.org/care/article/44/Supplement_1/S73/30909/6-Glycemic-Targets-Standards-of-Medical-Care-in">Source</a> (Fig. 6.2)</p>
 <p>For type 2 diabetics, there is <a href="https://www.aafp.org/pubs/afp/issues/2020/0601/p646.html">debate</a> over whether there is <em>any</em> benefit of using CGMs, and many payers (government, insurance companies) place significant documentation barriers to obtaining them (<a href="https://www.cms.gov/medicare-coverage-database/view/lcd.aspx?lcdid=33822">ctrl + f CMS’s policy “to be eligible for coverage..”</a>), especially given their non-trivial cost.</p>
 <p><em><strong>Willy&rsquo;s view</strong></em>:  Enter CGMs for non-diabetics. Tracing this idea to its inception is difficult, but the most visible CGM company in this space is Levels. Why does Levels believe that non-diabetics will benefit from CGMs? Their <a href="https://www.levelshealth.com/blog/the-secret-levels-master-plan-just-between-you-and-me-cgm-glucose">“master plan” blog post</a> appears to hinge on behavioral change as the key, but also mixes in the possibility that better glucose control in non-diabetics has some impact as well:</p>
 <blockquote cite="">
@@ -203,7 +201,12 @@ Right now, wearables are limited by the readouts they focus on, which is mostly 
 <p>As a clinical example, imagine if Phase I-III trial collected these measurements on subjects throughout the trial. Just as real time monitoring of engineered systems can help avoid catastrophic outcomes, monitoring all this information in trials could help notice and avert expected and unexpected adverse events. And similar to how airplane black boxes allow reconstructing the important information that led to a crash, in cases where adverse events still occur, having the full history of these metrics could enable better root cause analysis of failures.</p>
 <p>Again, actually reaching this world requires many breakthroughs in our ability to noninvasively, nondestructively, and cheaply track so many markers and layers of biological state. However, achieving this goal would not just marginally improve health or research but would instead level up our ability to understand and manipulate human (and animal) biology.</p>
 <p><em><strong>Willy’s dissent:</strong></em></p>
-<p>I agree that a CxM would be very valuable in research for the reasons you mention, but I have serious reservations about its clinical utility. Apart from the hard technical problems that lie between current capabilities and this vision, the problem of “why does this real-time multi-dimensional data feed even matter” would need answering. The central problem, conditional on this impressive technical feat being achieved, is going from this to a clinically or individually actionable answer. One approach, consistent with the current regulatory and payer pathway for medical-grade CGMs, is running an RCT, looking at 1 or more clinical endpoints[^1] compared to standard-of-care, and approving (and insurance paying) on that basis. A looser alternative would be validating this health metric on a clinical endpoint– perhaps by conducting a trial as described before– and then letting that health metric be the basis of subsequent approvals (using the health metric as a “surrogate endpoint”). It&rsquo;s hard to imagine either of these approaches eventually scaling to a future CxM tracking overall “health” or biological age or “readiness score” with some ML model getting input from two dozen different data sources. If we assume this CxM can bypass FDA oversight as a “recreational&rsquo;&rsquo; wearable, we are still left wondering why we should trust that monitoring a “health” metric would improve our health. If my Oura ring or Eight Sleep mattress tells me I slept badly, but I feel fine, why should I trust it? If my workout tracker tells me my readiness score is low, but I hit a gym PR, who was right? Without external validation, these metrics quickly lose relevance.</p>
+<p>I agree that a CxM would be very valuable in research for the reasons you mention, but I have serious reservations about its clinical utility. Apart from the hard technical problems that lie between current capabilities and this vision, the problem of “why does this real-time multi-dimensional data feed even matter” would need answering. The central problem, conditional on this impressive technical feat being achieved, is going from this to a clinically or individually actionable answer. One approach, consistent with the current regulatory and payer pathway for medical-grade CGMs, is running an RCT, looking at 1 or more clinical endpoints<label for="sidenote-1" class="margin-toggle sidenote-number">(1)</label>
+<input type="checkbox" id="sidenote-1" class="margin-toggle"/>
+<span class="sidenote">
+<span class="sidenote-number">(1)</span>Clinical endpoint is some outcome that we care about for its own sake: survival, self-reported quality of life score, avoidance of heart attacks or strokes, etc. This is contrast to a surrogate endpoint: a biomarker of no intrinsic interest, but which correlates with a clinical endpoint, and whose change is thought to predict a chance in a clinical endpoint: LDL cholesterol is one example.
+</span>
+compared to standard-of-care, and approving (and insurance paying) on that basis. A looser alternative would be validating this health metric on a clinical endpoint– perhaps by conducting a trial as described before– and then letting that health metric be the basis of subsequent approvals (using the health metric as a “surrogate endpoint”). It&rsquo;s hard to imagine either of these approaches eventually scaling to a future CxM tracking overall “health” or biological age or “readiness score” with some ML model getting input from two dozen different data sources. If we assume this CxM can bypass FDA oversight as a “recreational&rsquo;&rsquo; wearable, we are still left wondering why we should trust that monitoring a “health” metric would improve our health. If my Oura ring or Eight Sleep mattress tells me I slept badly, but I feel fine, why should I trust it? If my workout tracker tells me my readiness score is low, but I hit a gym PR, who was right? Without external validation, these metrics quickly lose relevance.</p>
 <p>I agree that in the limit, high enough resolution biological monitoring should enable high resolution understanding, but between the present and that futurist vision, I’m unsure how useful CxM’s will be. A milestone that would push me towards “this CxM might be useful, and not require a trial demonstrating clinical utility for me to buy in&rsquo;&rsquo; is a CxM in a mouse that could reliably predict future aspects of a mouse’s health and anticipate the effects of interventions on it. Validating the importance of these real-time measurements in a mouse (whose lifespan is 2- 3 years) would be logistically feasible.</p>
 <h2 id="final-comments">
 Final comments
