@@ -83,15 +83,19 @@
         <li><a href="#examples-1">Examples</a></li>
       </ul>
     </li>
-    <li><a href="#debug-with-the-idealized-scientific-method">Debug with the idealized scientific method</a></li>
-    <li><a href="#you-can-often-just-edit-library-code">You can (often) just edit library code</a>
+    <li><a href="#debug-with-the-idealized-scientific-method">Debug with the idealized scientific method</a>
       <ul>
         <li><a href="#examples-2">Examples</a></li>
       </ul>
     </li>
-    <li><a href="#speed-up-your-iteration-loop">Speed up your iteration loop</a>
+    <li><a href="#you-can-often-just-edit-library-code">You can (often) just edit library code</a>
       <ul>
         <li><a href="#examples-3">Examples</a></li>
+      </ul>
+    </li>
+    <li><a href="#speed-up-your-iteration-loop">Speed up your iteration loop</a>
+      <ul>
+        <li><a href="#examples-4">Examples</a></li>
       </ul>
     </li>
   </ul>
@@ -202,6 +206,14 @@ Debug with the idealized scientific method
 <p>This approach forces you to slow down and think more clearly, which often reveals assumptions you didn&rsquo;t even realize you were making. It also prevents you from repeating the same tests with slight variations, which is a common trap.</p>
 <p>Admittedly, I often find that once I do this, I don&rsquo;t resolve the issue by exploring every tree but instead have a realization that it&rsquo;s some, usually dumb, other thing, but going through the process still seems to play a key role in realizing the issue in these cases.</p>
 <p>This more structured approach is particularly valuable when you&rsquo;ve already tried the quick wins from <a href="#actually-read-logs--errors">reading logs carefully</a> and <a href="#log-a-ton-of-stuff">adding more logging</a> but still don&rsquo;t have a clear direction.</p>
+<h3 id="examples-2">
+Examples
+<a href="#examples-2" class="heading-anchor">#</a>
+</h3>
+<p>I know I&rsquo;ve had success with this, but I have been especially bad about recording cases when I have.</p>
+<ul>
+<li>I was collaborating to debug a failure that spanned multiple systems, including a search index and a few services that relied on it. We got stuck for a while and then eventually mapped out the system and enumerated our hypotheses for what was happening. This helped, although I unfortunately don&rsquo;t remember what the actual resolution was.</li>
+</ul>
 <h2 id="you-can-often-just-edit-library-code">
 You can (often) just edit library code
 <a href="#you-can-often-just-edit-library-code" class="heading-anchor">#</a>
@@ -214,9 +226,9 @@ This may seem intimidating, and it can go wrong &ndash; Git won&rsquo;t save you
 <li>Reproducing the issue requires long cycle times and running remotely, e.g. in a web server, a large-scale training job, etc.</li>
 <li>The issue isn&rsquo;t hidden by layers of library code.</li>
 </ul>
-<h3 id="examples-2">
+<h3 id="examples-3">
 Examples
-<a href="#examples-2" class="heading-anchor">#</a>
+<a href="#examples-3" class="heading-anchor">#</a>
 </h3>
 <ul>
 <li>I kept having issues using torch checkpointing with some other features for a model we were training. Debugging was tricky because I couldn&rsquo;t tell where exactly the failure was first occurring. Eventually, I got this running on a development box, went into the intermediate library, and logged when the training process hit certain points. This let me see exactly where the failure was occurring and resolve the issue.</li>
@@ -226,9 +238,9 @@ Speed up your iteration loop
 <a href="#speed-up-your-iteration-loop" class="heading-anchor">#</a>
 </h2>
 <p>I hesitated to even include this because it&rsquo;s repeated all over the place, but I&rsquo;d rather err on the side of capturing everything that&rsquo;s worked well for me. Even though it&rsquo;s obvious, it&rsquo;s so easy to be lazy about speeding up debugging iteration loops. To this day, I still often wait too long to take a long-running remote job that&rsquo;s triggering an error and put in the work to create a setup where I can rapidly trigger the bug in a controlled environment. Because this is a form of hyperbolic discounting, what I&rsquo;ve found works best is having a trigger in my head that asks, &ldquo;if someone were watching me, would they tell me I&rsquo;m wasting tons of time waiting because I&rsquo;m too lazy to speed things up&rdquo;?</p>
-<h3 id="examples-3">
+<h3 id="examples-4">
 Examples
-<a href="#examples-3" class="heading-anchor">#</a>
+<a href="#examples-4" class="heading-anchor">#</a>
 </h3>
 <ul>
 <li>Nearly every ML bug I have debugged benefited from finding the smallest scale situation in which it was possible to reproduce and iterating there vs. in the large scale regime. In some cases, small scale may still mean complicated, such as if the issue requires training on multiple nodes. But even then, outside of cases where the issue is obvious, I don&rsquo;t think I&rsquo;ve ever regretted finding a smaller, more controlled scope in which an issue still occurs and debugging there.</li>
