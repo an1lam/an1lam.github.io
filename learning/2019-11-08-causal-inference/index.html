@@ -4,20 +4,41 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="description"
-    content="Causal Inference in Statistics # Questions # Why is the causal effect identifiable in an IV DAG when the dependencies are linear (from an SCM perspective)? I think this may relate to factor models. Advanced Data Analysis from an Elementary Point of View (Ch. 18-23) # Chapter 18 # Exercises # 18.2. Proof that every path must go through a collider:
-Observe that every path between two exogenous variables starts with variables going in the opposite direction. ">
+    content="
+Causal Inference in Statistics
+#
+
+
+Questions
+#
+
+
+Why is the causal effect identifiable in an IV DAG when the dependencies are linear (from an SCM perspective)?
+
+I think this may relate to factor models.
+
+
+
+
+Advanced Data Analysis from an Elementary Point of View (Ch. 18-23)
+#
+
+
+Chapter 18
+#
+
+
+Exercises
+#
+
+18.2.
+Proof that every path must go through a collider:
+Observe that every path between two exogenous variables starts with variables going in the opposite direction. Thus, if we imagine walking the path from one exogenous variable to another, we see that the direction of the arrows has to switch at a node, which will be a collider. ">
 <link rel="canonical" href="https://stephenmalina.com/learning/2019-11-08-causal-inference/" />
 
 
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-
-
-
-
-
-
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 
 
@@ -33,15 +54,26 @@ Observe that every path between two exogenous variables starts with variables go
 </noscript>
 
 
+  
+  
+    
+      
+        <link rel="stylesheet" href="https://stephenmalina.com/css/hugo-tufte.min.501b334050bf0c6cb2483ec40debea9453e83d461ef681f15b5009d07c834d9d.css" integrity="sha256-UBszQFC/DGyySD7EDevqlFPoPUYe9oHxW1AJ0HyDTZ0=" crossorigin="anonymous">
+      
+    
+  
 
 
 
+  
+  
+    
+      
+        <link rel="stylesheet" href="https://stephenmalina.com/css/hugo-tufte-options.min.e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css" integrity="sha256-47DEQpj8HBSa&#43;/TImW&#43;5JCeuQeRkm5NMpJWZG3hSuFU=" crossorigin="anonymous">
+      
+    
+  
 
-<link rel="stylesheet" href="https://stephenmalina.com/css/hugo-tufte.min.css">
-
-
-
-<link rel="stylesheet" href="https://stephenmalina.com/css/hugo-tufte-options.min.css">
 
 <link rel="stylesheet" href="https://stephenmalina.com/css/hugo-tufte-override.css">
 
@@ -93,8 +125,7 @@ Chapter 19
 <p>I found this quote very helpful:</p>
 <blockquote>
 <p>Now suppose we want to ask what the effect would be, causally, of setting \( X_c \) to a particular value \( x_c \) . We represent this by “doing surgery on the graph”: we (i) eliminate any arrows coming in to nodes in \( X_c \) , (ii) fix their values to \( x_c \) , and (iii) calculate the resulting distribution for X e in the new graph. By steps (i) and (ii), we imagine suspending or switching off the mechanisms which ordinarily set \( X_c \) . The other mechanisms in the assemblage are left alone, however, and so step (iii) propagates the fixed values of \( X_c \) through them. We are not selecting a sub-population, but producing a new one.
-If setting \( X_c \) to different values, say \( x_c \) and \( x&rsquo;_c \) , leads to different distributions for \( X_e \) , then we say that \( X_c \) has an effect on \( X_e \) — or, slightly redundantly, has a causal effect on \( X_e \) . Sometimes 4 “the effect of switching from \( x_c \) to \( x&rsquo;_c \) ” specifically refers to a change in the expected value of \( X_e \) , but since profoundly different distributions can have the same mean, this seems needlessly restrictive. If one is interested in average effects of this sort, they are computed by the same procedure.</p>
-</blockquote>
+If setting \( X_c \) to different values, say \( x_c \) and \( x&rsquo;_c \) , leads to different distributions for \( X_e \) , then we say that \( X_c \) has an effect on \( X_e \) — or, slightly redundantly, has a causal effect on \( X_e \) . Sometimes 4 “the effect of switching from \( x_c \) to \( x&rsquo;_c \) ” specifically refers to a change in the expected value of \( X_e \) , but since profoundly different distributions can have the same mean, this seems needlessly restrictive. If one is interested in average effects of this sort, they are computed by the same procedure.</p></blockquote>
 <h4 id="exercises-1">
 Exercises
 <a href="#exercises-1" class="heading-anchor">#</a>
@@ -107,8 +138,7 @@ Chapter 20
 </h3>
 <p>Another helpful quote:</p>
 <blockquote>
-<p>The reason these are different is that the latter represents taking the original population, as it is, and just filtering it to get the sub-population where \( X = x \).  The processes which set \( X \) to that value may also have influenced \( Y \) through other channels, and so this distribution will not, typically, really tell us what would happen if we reached in and manipulated \( X \).</p>
-</blockquote>
+<p>The reason these are different is that the latter represents taking the original population, as it is, and just filtering it to get the sub-population where \( X = x \).  The processes which set \( X \) to that value may also have influenced \( Y \) through other channels, and so this distribution will not, typically, really tell us what would happen if we reached in and manipulated \( X \).</p></blockquote>
 <p><strong>Note</strong>: Shalizi&rsquo;s coverage of IV calculations is apparently wrong and should therefore be ignored.</p>
 <h4 id="exercises-2">
 Exercises
@@ -144,6 +174,8 @@ The causal graph for a randomized controlled includes 4 nodes, \( A \), \( T \),
   
   
   <li><a href="https://twitter.com/an1lam">Twitter</a></li>
+  
+  
   
 
   

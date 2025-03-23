@@ -5,20 +5,26 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="description"
     content="At the beginning of last year, I made predictions for the year. Now it&rsquo;s time to score them (before I make my 2022 predictions).
-Data &amp; code # Here is a spreadsheet containing my scored predictions. If you want to see my full analysis, you can look at my Jupyter notebook which contains Brier score calculations plus plotting.
-High level analysis # The key metrics I looked at were my overall and by category Brier scores plus calibration. ">
+
+Data &amp; code
+#
+
+Here is a spreadsheet containing my scored predictions. If you want to see my full analysis, you can look at my Jupyter notebook which contains Brier score calculations plus plotting.
+
+High level analysis
+#
+
+The key metrics I looked at were my overall and by category Brier scores plus calibration. My overall Brier score was .18.
+(1)
+
+
+(1)As a refresher, the Brier score is the mean squared error of a set of predictions vs. the true outcomes. So, for example, if I predict something will happen with probability .2 and something else will happen with probability .4 and then both happen, my Brier score for this pair of events is $ ((1-.2)^2 &#43; (1-.4)^2)/2 = .5$. This means that lower Brier scores are better, with the best possible Brier score being 0 and the worst 1. The Brier score is a strictly proper scoring rule, which means that it will always be maximized by the true probabilities (assuming they were known) for a set of events. Note that despite this, Brier scores are not ideal for very rare events. The intuition for why this can be true despite them being strictly proper scoring rules boils down to the strictly proper condition only requiring that the score decrease as the result of any one prediction diverging from the probability of the event rather than dictating by how much.
+ ">
 <link rel="canonical" href="https://stephenmalina.com/post/2021-12-31-scoring-my-2021-predictions/" />
 
 
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-
-
-
-
-
-
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 
 
@@ -34,15 +40,26 @@ High level analysis # The key metrics I looked at were my overall and by categor
 </noscript>
 
 
+  
+  
+    
+      
+        <link rel="stylesheet" href="https://stephenmalina.com/css/hugo-tufte.min.501b334050bf0c6cb2483ec40debea9453e83d461ef681f15b5009d07c834d9d.css" integrity="sha256-UBszQFC/DGyySD7EDevqlFPoPUYe9oHxW1AJ0HyDTZ0=" crossorigin="anonymous">
+      
+    
+  
 
 
 
+  
+  
+    
+      
+        <link rel="stylesheet" href="https://stephenmalina.com/css/hugo-tufte-options.min.e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css" integrity="sha256-47DEQpj8HBSa&#43;/TImW&#43;5JCeuQeRkm5NMpJWZG3hSuFU=" crossorigin="anonymous">
+      
+    
+  
 
-<link rel="stylesheet" href="https://stephenmalina.com/css/hugo-tufte.min.css">
-
-
-
-<link rel="stylesheet" href="https://stephenmalina.com/css/hugo-tufte-options.min.css">
 
 <link rel="stylesheet" href="https://stephenmalina.com/css/hugo-tufte-override.css">
 
@@ -184,6 +201,8 @@ Conclusion
   
   
   <li><a href="https://twitter.com/an1lam">Twitter</a></li>
+  
+  
   
 
   

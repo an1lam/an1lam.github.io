@@ -5,21 +5,24 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="description"
     content="Attention conservation notice: Narrow target audience - will only make sense to people somewhat familiar with causal inference who don&rsquo;t find the result entirely boring.
-The Front-Door Criterion # Suppose we have a causal graphical model that looks like the following.
+
+The Front-Door Criterion
+#
+
+Suppose we have a causal graphical model that looks like the following.
+
 Assume $ U $ is unmeasured whereas $ X, M, Y $ can be measured. Notice that:
-All directed paths from $ X $ to $ Y $ flow through $ M $. ">
+
+All directed paths from $ X $ to $ Y $ flow through $ M $.
+$ X $ blocks all back-door paths from $ M $ to $ Y $.
+There are no unblocked back-door paths from $ X $ to $ M $.
+
+One of the most striking results in early causal inference literature, called the front-door criterion, states that, for all graphs like ours which satisfy these three criteria, the causal effect $ P(y \mid \mathrm{do}(x)) $ is identifiable by the formula (assume discrete variables for convenience) ">
 <link rel="canonical" href="https://stephenmalina.com/post/2020-03-09-front-door-do-calc-derivation/" />
 
 
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-
-
-
-
-
-
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 
 
@@ -35,15 +38,26 @@ All directed paths from $ X $ to $ Y $ flow through $ M $. ">
 </noscript>
 
 
+  
+  
+    
+      
+        <link rel="stylesheet" href="https://stephenmalina.com/css/hugo-tufte.min.501b334050bf0c6cb2483ec40debea9453e83d461ef681f15b5009d07c834d9d.css" integrity="sha256-UBszQFC/DGyySD7EDevqlFPoPUYe9oHxW1AJ0HyDTZ0=" crossorigin="anonymous">
+      
+    
+  
 
 
 
+  
+  
+    
+      
+        <link rel="stylesheet" href="https://stephenmalina.com/css/hugo-tufte-options.min.e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css" integrity="sha256-47DEQpj8HBSa&#43;/TImW&#43;5JCeuQeRkm5NMpJWZG3hSuFU=" crossorigin="anonymous">
+      
+    
+  
 
-<link rel="stylesheet" href="https://stephenmalina.com/css/hugo-tufte.min.css">
-
-
-
-<link rel="stylesheet" href="https://stephenmalina.com/css/hugo-tufte-options.min.css">
 
 <link rel="stylesheet" href="https://stephenmalina.com/css/hugo-tufte-override.css">
 
@@ -174,6 +188,8 @@ $$</p>
   
   
   <li><a href="https://twitter.com/an1lam">Twitter</a></li>
+  
+  
   
 
   

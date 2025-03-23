@@ -1,70 +1,54 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>machine-learning on Stephen Malina</title>
+    <title>Machine-Learning on Stephen Malina</title>
     <link>https://stephenmalina.com/tags/machine-learning/</link>
-    <description>Recent content in machine-learning on Stephen Malina</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <description>Recent content in Machine-Learning on Stephen Malina</description>
+    <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 13 Aug 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://stephenmalina.com/tags/machine-learning/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 13 Aug 2023 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://stephenmalina.com/tags/machine-learning/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Continuous glucose monitors (CGM) and beyond: A dialogue</title>
       <link>https://stephenmalina.com/post/2023-08-13-cgm-and-beyond/</link>
       <pubDate>Sun, 13 Aug 2023 00:00:00 +0000</pubDate>
-      
       <guid>https://stephenmalina.com/post/2023-08-13-cgm-and-beyond/</guid>
-      <description>What are continuous glucose monitors good for? More broadly, what are continuous measures of physiology (CxM) good for?
-Similar to Elliot and I&amp;rsquo;s dialogue, this post has an unconventional format. It&amp;rsquo;s both a synthesis of Willy&amp;rsquo;s, Eryney&amp;rsquo;s, and my opinions on continuous monitoring combined with a debate in places where we disagree. To try and make it clear which views are coming from each person, we&amp;rsquo;ve annotated sections that come from a subset of us rather than all of us with e.</description>
+      <description>&lt;p&gt;What are continuous glucose monitors good for? More broadly, what are continuous measures of physiology (&lt;strong&gt;CxM&lt;/strong&gt;) good for?&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Similar to &lt;a href=&#34;https://centuryofbio.com/&#34;&gt;Elliot&lt;/a&gt; and I&amp;rsquo;s &lt;a href=&#34;http://localhost:1313/post/2023-01-11-viriditas-dialogue/&#34;&gt;dialogue&lt;/a&gt;, this post has an unconventional format. It&amp;rsquo;s both a synthesis of &lt;a href=&#34;https://twitter.com/willyintheworld&#34;&gt;Willy&lt;/a&gt;&amp;rsquo;s, &lt;a href=&#34;https://twitter.com/eryney_ok&#34;&gt;Eryney&amp;rsquo;s&lt;/a&gt;, and my opinions on continuous monitoring combined with a debate in places where we disagree. To try and make it clear which views are coming from each person, we&amp;rsquo;ve annotated sections that come from a subset of us rather than all of us with e.g. &amp;ldquo;Stephen&amp;rsquo;s views&amp;rdquo; or &amp;ldquo;Willy&amp;rsquo;s dissent&amp;rdquo;.&lt;/strong&gt;&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Paper Review - Network Mendelian Randomization</title>
       <link>https://stephenmalina.com/post/2019-11-16-network-mendelian-randomization/</link>
       <pubDate>Sat, 16 Nov 2019 00:00:00 +0000</pubDate>
-      
       <guid>https://stephenmalina.com/post/2019-11-16-network-mendelian-randomization/</guid>
-      <description>In which I record my thoughts on Network Mendelian Randomization by Burgess et al.
-What is this paper about? # This paper describes a method for doing Mendelian Randomization (MR) in the presence of a potential mediating variable. In the typical MR setting, we have an instrumental variable which &amp;ldquo;instruments&amp;rdquo; an exposure that we believe causally influences the outcome we care about. True mediators &amp;ldquo;mediate&amp;rdquo; the causal influence of exposures on outcomes.</description>
+      <description>&lt;p&gt;In which I record my thoughts on &lt;a href=&#34;https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4469795/&#34;&gt;Network Mendelian Randomization&lt;/a&gt; by Burgess et al.&lt;/p&gt;&#xA;&lt;h2 id=&#34;what-is-this-paper-about&#34;&gt;&#xA;What is this paper about?&#xA;&lt;a href=&#34;#what-is-this-paper-about&#34; class=&#34;heading-anchor&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;p&gt;This paper describes a method for doing Mendelian Randomization (MR) in the presence of a potential mediating variable. In the typical MR setting, we have an instrumental variable which &amp;ldquo;instruments&amp;rdquo; an exposure that we believe causally influences the outcome we care about. True mediators &amp;ldquo;mediate&amp;rdquo; the causal influence of exposures on outcomes. In other words, if we&amp;rsquo;re trying to understand the causal influence of some factor on another factor, it&amp;rsquo;s possible there&amp;rsquo;s a factor (mediator) that the exposure influences that then influences the outcome.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Matrix Potpourri</title>
       <link>https://stephenmalina.com/post/2019-09-07-matrix-potpourri/</link>
       <pubDate>Tue, 13 Aug 2019 00:00:00 +0000</pubDate>
-      
       <guid>https://stephenmalina.com/post/2019-09-07-matrix-potpourri/</guid>
-      <description>Matrix Potpourri # As part of reviewing Linear Algebra for my Machine Learning class, I&amp;rsquo;ve noticed there&amp;rsquo;s a bunch of matrix terminology that I didn&amp;rsquo;t encounter during my proof-based self-study of LA from Linear Algebra Done Right. This post is mostly intended to consolidate my own understanding and to act as a reference to future me, but if it also helps others in a similar position, that&amp;rsquo;s even better!</description>
+      <description>&lt;h1 id=&#34;matrix-potpourri&#34;&gt;&#xA;Matrix Potpourri&#xA;&lt;a href=&#34;#matrix-potpourri&#34; class=&#34;heading-anchor&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h1&gt;&#xA;&lt;p&gt;As part of reviewing Linear Algebra for my Machine Learning class, I&amp;rsquo;ve noticed there&amp;rsquo;s a bunch of matrix terminology that I didn&amp;rsquo;t encounter during my proof-based self-study of LA from &lt;a href=&#34;https://www.amazon.com/Programmers-Introduction-Mathematics-Dr-Jeremy/dp/1727125452/ref=asc_df_1727125452/?tag=hyprod-20&amp;amp;linkCode=df0&amp;amp;hvadid=312168166316&amp;amp;hvpos=1o1&amp;amp;hvnetw=g&amp;amp;hvrand=8153319341318076586&amp;amp;hvpone=&amp;amp;hvptwo=&amp;amp;hvqmt=&amp;amp;hvdev=c&amp;amp;hvdvcmdl=&amp;amp;hvlocint=&amp;amp;hvlocphy=9067609&amp;amp;hvtargid=aud-801381245258:pla-582015251962&amp;amp;psc=1&#34;&gt;&lt;em&gt;Linear Algebra Done Right&lt;/em&gt;&lt;/a&gt;. This post is mostly intended to consolidate my own understanding and to act as a reference to future me, but if it also helps others in a similar position, that&amp;rsquo;s even better!&lt;/p&gt;&#xA;&lt;p&gt;&lt;em&gt;Note&lt;/em&gt;: I list all the sources from which I drew while writing this post under the &amp;ldquo;Sources&amp;rdquo; heading at the bottom of this post.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Paper Review - DeepSEA</title>
       <link>https://stephenmalina.com/post/2019-08-08-deepsea/</link>
       <pubDate>Thu, 08 Aug 2019 00:00:00 +0000</pubDate>
-      
       <guid>https://stephenmalina.com/post/2019-08-08-deepsea/</guid>
-      <description>In which I record my thoughts on DeepSEA.
-Terminology # ChIP-seq (Chromatin Immunoprecipitation Sequencing): Expression Quantitative Trait Locis (eQTLs) Cofactor Binding Sequences Histone Marks: modifications to histone proteins in the nucleosome that impact the shape of chromatin. gkm-SVMs: The gkm-SVM is the previous SOTA model for predicting transcription factor binding based on ChIP-seq data. Allele: variants of a gene at the same position on a chromosome. What is this paper about?</description>
+      <description>&lt;p&gt;In which I record my thoughts on &lt;a href=&#34;https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4768299/pdf/nihms757739.pdf&#34;&gt;DeepSEA&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;h2 id=&#34;terminology&#34;&gt;&#xA;Terminology&#xA;&lt;a href=&#34;#terminology&#34; class=&#34;heading-anchor&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;ChIP-seq (Chromatin Immunoprecipitation Sequencing):&lt;/li&gt;&#xA;&lt;li&gt;Expression Quantitative Trait Locis (eQTLs)&lt;/li&gt;&#xA;&lt;li&gt;Cofactor Binding Sequences&lt;/li&gt;&#xA;&lt;li&gt;Histone Marks: modifications to histone proteins in the nucleosome that impact the shape of chromatin.&lt;/li&gt;&#xA;&lt;li&gt;gkm-SVMs: The gkm-SVM is the previous SOTA model for predicting transcription factor binding based on ChIP-seq data.&lt;/li&gt;&#xA;&lt;li&gt;Allele: variants of a gene at the same position on a chromosome.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;what-is-this-paper-about&#34;&gt;&#xA;What is this paper about?&#xA;&lt;a href=&#34;#what-is-this-paper-about&#34; class=&#34;heading-anchor&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;p&gt;This paper trains a CNN to predict the presence of 919 &amp;ldquo;chromatin features&amp;rdquo;&amp;ndash;different TF binding sites, DHSs, and histone marks&amp;ndash;from 1000bp DNA sequences. It then tests this model by using a functional significance score based on its output to train a logistic regression classifier to predict whether SNPs will be present in a few different catalog of SNPs known to impact different biological functions, e.g. a GWAS catalog of disease-related SNPs.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Paper Review - Basset</title>
       <link>https://stephenmalina.com/post/2019-08-05-basset/</link>
       <pubDate>Mon, 05 Aug 2019 00:00:00 +0000</pubDate>
-      
       <guid>https://stephenmalina.com/post/2019-08-05-basset/</guid>
-      <description>In which I record my thoughts on Basset.
-Bio Background # The genome consists of (broadly) two types of genes, coding genes and noncoding genes. Coding genes get translated into proteins (as laid down by the Central Dogma) and are what most of us learned about in bio class. Non-coding genes&amp;hellip; don&amp;rsquo;t. As I understand it, noncoding genes can do a bunch of different things, but part of their function is to regulate coding gene activity through a number of mechanisms.</description>
+      <description>&lt;p&gt;In which I record my thoughts on &lt;a href=&#34;https://genome.cshlp.org/content/26/7/990.full&#34;&gt;Basset&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;h2 id=&#34;bio-background&#34;&gt;&#xA;Bio Background&#xA;&lt;a href=&#34;#bio-background&#34; class=&#34;heading-anchor&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;p&gt;The genome consists of (broadly) two types of genes, coding genes and noncoding genes. Coding genes get translated into proteins (as laid down by the Central Dogma) and are what most of us learned about in bio class. Non-coding genes&amp;hellip; don&amp;rsquo;t. As I understand it, noncoding genes can do a bunch of different things, but part of their function is to regulate coding gene activity through a number of mechanisms.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Paper Review - DeepBind</title>
       <link>https://stephenmalina.com/post/2019-07-26-deepbind/</link>
       <pubDate>Fri, 26 Jul 2019 00:00:00 +0000</pubDate>
-      
       <guid>https://stephenmalina.com/post/2019-07-26-deepbind/</guid>
-      <description>In which I record my thoughts on DeepBind.
-What is this paper about? # The authors of this paper designed a conv net model to predict how well different proteins will bind to sequences of DNA or RNA. They train one model per protein for many different sequences and show that these models can predict binding affinities for sequences well enough to produce insights regarding the impact of single nucleotide mutations.</description>
+      <description>&lt;p&gt;In which I record my thoughts on &lt;a href=&#34;https://www.nature.com/articles/nbt.3300.pdf&#34;&gt;DeepBind&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;h2 id=&#34;what-is-this-paper-about&#34;&gt;&#xA;What is this paper about?&#xA;&lt;a href=&#34;#what-is-this-paper-about&#34; class=&#34;heading-anchor&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;p&gt;The authors of this paper designed a conv net model to predict how well different proteins will bind to sequences of DNA or RNA. They train one model per protein for many different sequences and show that these models can predict binding affinities for sequences well enough to produce insights regarding the impact of single nucleotide mutations. They then discuss different datasets and areas in which they tested their model and how it performed (often SOTA [as of 2015]).&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

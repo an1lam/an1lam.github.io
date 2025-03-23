@@ -4,20 +4,18 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="description"
-    content="Babbling About Babble # In a series of posts on his blog (or LessWrong if you prefer), alkjash writes about &ldquo;babble&rdquo; and &ldquo;prune&rdquo;, the two components of an adversarial model of knowledge production in humans. Alkjash describes babble and prune like this:
-Here’s a simplistic model of how this works. I try to build a coherent sentence. At each step, to pick the next word, I randomly generate words in the category (correct part of speech, relevance) and sound them out one by one to see which continues the sentence most coherently. ">
+    content="
+Babbling About Babble
+#
+
+In a series of posts on his blog (or LessWrong if you prefer), alkjash writes about &ldquo;babble&rdquo; and &ldquo;prune&rdquo;, the two components of an adversarial model of knowledge production in humans. Alkjash describes babble and prune like this:
+
+Here’s a simplistic model of how this works. I try to build a coherent sentence. At each step, to pick the next word, I randomly generate words in the category (correct part of speech, relevance) and sound them out one by one to see which continues the sentence most coherently. So, instead of deliberately and carefully generating sentences in one go, the algorithm is something like: ">
 <link rel="canonical" href="https://stephenmalina.com/post/2018-12-16-babble-learning/" />
 
 
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-
-
-
-
-
-
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 
 
@@ -33,15 +31,26 @@ Here’s a simplistic model of how this works. I try to build a coherent sentenc
 </noscript>
 
 
+  
+  
+    
+      
+        <link rel="stylesheet" href="https://stephenmalina.com/css/hugo-tufte.min.501b334050bf0c6cb2483ec40debea9453e83d461ef681f15b5009d07c834d9d.css" integrity="sha256-UBszQFC/DGyySD7EDevqlFPoPUYe9oHxW1AJ0HyDTZ0=" crossorigin="anonymous">
+      
+    
+  
 
 
 
+  
+  
+    
+      
+        <link rel="stylesheet" href="https://stephenmalina.com/css/hugo-tufte-options.min.e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css" integrity="sha256-47DEQpj8HBSa&#43;/TImW&#43;5JCeuQeRkm5NMpJWZG3hSuFU=" crossorigin="anonymous">
+      
+    
+  
 
-<link rel="stylesheet" href="https://stephenmalina.com/css/hugo-tufte.min.css">
-
-
-
-<link rel="stylesheet" href="https://stephenmalina.com/css/hugo-tufte-options.min.css">
 
 <link rel="stylesheet" href="https://stephenmalina.com/css/hugo-tufte-override.css">
 
@@ -65,8 +74,7 @@ Babbling About Babble
 <ol>
 <li>Babble. Use a weak and local filter to randomly generate a lot of possibilities. Is the word the right part of speech? Does it lie in the same region of thingspace? Does it fit the context?</li>
 <li>Prune. Use a strong and global filter to test for the best, or at least a satisfactory, choice. With this word in the blank, do I actually believe this sentence? Does the word have the right connotations? Does the whole thought read smoothly?</li>
-</ol>
-</blockquote>
+</ol></blockquote>
 <p>In <a href="https://radimentary.wordpress.com/2018/01/11/more-babble/">More Babble</a>, alkjash expands the idea of babble, describing concepts and words as bound together in a massive graph which babbling explores. While this metaphor breaks down if you poke at it too hard, I&rsquo;ve recently found it very useful for modeling and troubleshooting my own learning process.</p>
 <h3 id="the-three-stages-of-babble-for-learning">
 The Three Stages of Babble for Learning
@@ -78,9 +86,9 @@ The Three Stages of Babble for Learning
 <p>The last step in this process is one that I paradoxically find very helpful but have historically done a bad job of consistently taking while learning. In this last step, pithily described as self-splaining, I go back and structure what I&rsquo;ve learned into a narrative of sorts. In the case of vector spaces, this would involve starting with axioms and explaining (usually with my internal monologue) how these axioms imply important, useful facts about vector spaces and reviewing important problems which I&rsquo;ve solved while trying to condense their solutions into the essentials. From the inside, this feels like strengthening connections between and finding metaphors for higher-level clusters in my babble graph. This step also involves compression of clusters into more compact representations, often described as <a href="https://en.wikipedia.org/wiki/Practice_(learning_method)#Deliberate_practice">chunks</a> in the deliberate practice literature. Having the concepts of babble and prune available to me, I now view chunking as a form of pruning where a cluster of nodes and edges get compacted into a more efficient representation. This metaphor leaves out a lot of details but manages to capture the dual nature of chunks as atomic concepts and pointers to collections of facts and associations in a way that I haven&rsquo;t seen elsewhere.</p>
 <p>While the above description portrays learning as divided into discrete phases, my actual learning process is much messier. As a lazy, impatient millenial, I tend to jump from the first phase to the second before I have a sufficient grasp of atomic facts. As a result, I often bounce back from phase 2 to 1 multiple times before becoming capable of narrativizing my learning in phase 3. Additionally, within each phase, recursive iterations of all three phases can occur for smaller sub-concepts. My impression is that a significant fraction of higher math (group theory, category theory) revolves around treating entire classes of objects as atomic facts and reasoning about their properties, which can be viewed as a higher-level version of the three-phased process I described.</p>
 <p>Furthermore, this model&rsquo;s speculative enough that one might rightfully question why I bothered writing about it in the first place. It&rsquo;s not detailed or empirical enough to develop into an actual scientific model and I&rsquo;m mostly using it to describe a process which has likely been described in other learning literature. In spite of this, I&rsquo;ve gotten value out using it and the general concept of babble as intuition pumps for getting myself unstuck while learning. Furthermore, I hope that describing phase 3 in terms of compression will help me overcome the impatience that often arises while I&rsquo;m self-splaining.</p>
-<h3 id="beware-the-typical-mind-fallacyhttpswwwlesswrongcompostsbatwmegr42pash9qjgeneralizing-from-one-example">
+<h3 id="beware-the-typical-mind-fallacy">
 Beware The <a href="https://www.lesswrong.com/posts/baTWMegR42PAsH9qJ/generalizing-from-one-example">Typical Mind Fallacy</a>
-<a href="#beware-the-typical-mind-fallacyhttpswwwlesswrongcompostsbatwmegr42pash9qjgeneralizing-from-one-example" class="heading-anchor">#</a>
+<a href="#beware-the-typical-mind-fallacy" class="heading-anchor">#</a>
 </h3>
 <p>I question how much the above model generalizes to different thinking styles. In his original post, alkjash mentions that the verbal internal monologue dominates his thinking, and it dominates mine as well. Images and motor sensations also play a role, but my internal monologue drives these other forms of imagery even when they are present. To put it another way, I lack the ability to think productively without some form of words guiding my thinking.</p>
 <p>Pointing in the direction of the babble model generalizing is the widespread endorsement of the value of talking through something as a way of reducing confusion or solving a problem. Examples of this include:</p>
@@ -94,8 +102,7 @@ Beware The <a href="https://www.lesswrong.com/posts/baTWMegR42PAsH9qJ/generalizi
 <blockquote>
 <p>It wasn&rsquo;t until I went to college that I realized some people are completely verbal and think only in words. I first suspected this when I read an article in a science magazine about the development of tool use in prehistoric humans. Some renowned scientist speculated that humans had to develop language before they could develop tools. I thought this was ridiculous, and this article gave me the first inkling that my thought processes were truly different from those of many other people. When I invent things, I do not use language. Some other people think in vividly detailed pictures, but most think in a combination of words and vague, generalized pictures.</p>
 <p>For example, many people see a generalized generic church rather than specific churches and steeples when they read or hear the word &ldquo;steeple.&rdquo; Their thought patterns move from a general concept to specific examples. I used to become very frustrated when a verbal thinker could not understand something I was trying to express because he or she couldn&rsquo;t see the picture that was crystal clear to me. Further, my mind constantly revises general concepts as I add new information to my memory library. It&rsquo;s like getting a new version of software for the computer. My mind readily accepts the new &ldquo;software,&rdquo; though I have observed that some people often do not readily accept new information.</p>
-<p>Unlike those of most people, my thoughts move from video like, specific images to generalization and concepts. For example, my concept of dogs is inextricably linked to every dog I&rsquo;ve ever known. It&rsquo;s as if I have a card catalog of dogs I have seen, complete with pictures, which continually grows as I add more examples to my video library. If I think about Great Danes, the first memory that pops into my head is Dansk, the Great Dane owned by the headmaster at my high school. The next Great Dane I visualize is Helga, who was Dansk&rsquo;s replacement. The next is my aunt&rsquo;s dog in Arizona, and my final image comes from an advertisement for Fitwell seat covers that featured that kind of dog. My memories usually appear in my imagination in strict chronological order, and the images I visualize are always specific. There is no generic, generalized Great Dane.</p>
-</blockquote>
+<p>Unlike those of most people, my thoughts move from video like, specific images to generalization and concepts. For example, my concept of dogs is inextricably linked to every dog I&rsquo;ve ever known. It&rsquo;s as if I have a card catalog of dogs I have seen, complete with pictures, which continually grows as I add more examples to my video library. If I think about Great Danes, the first memory that pops into my head is Dansk, the Great Dane owned by the headmaster at my high school. The next Great Dane I visualize is Helga, who was Dansk&rsquo;s replacement. The next is my aunt&rsquo;s dog in Arizona, and my final image comes from an advertisement for Fitwell seat covers that featured that kind of dog. My memories usually appear in my imagination in strict chronological order, and the images I visualize are always specific. There is no generic, generalized Great Dane.</p></blockquote>
 <p>Temple Grandin would find my description of babble totally alien to her internal experience. And although she&rsquo;s on the extreme end of the visual thinking spectrum, I suspect there&rsquo;s a large group of visually dominant thinkers who would share her confusion.</p>
 <p>Based on my brief investigation, babble captures an important aspect of what thinking feels like for verbally-dominant thinkers but doesn&rsquo;t generalize to all forms of thinking and thinkers.</p>
 <h3 id="conclusion">
@@ -125,6 +132,8 @@ Conclusion
   
   
   <li><a href="https://twitter.com/an1lam">Twitter</a></li>
+  
+  
   
 
   

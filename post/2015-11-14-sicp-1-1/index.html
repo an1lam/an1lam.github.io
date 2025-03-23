@@ -4,19 +4,70 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="description"
-    content="Key Concepts # Environments, Syntax, Programming Languages v. Natural Languages, Applicative Order of Operations Environments # Understanding meaning is a matter of combining primitives with context. Syntax # Lisp programmers tend to eschew syntactic sugar in favor of building their own syntax. Procedures are noticeably more composable than other languages I&rsquo;ve used previously. There&rsquo;s little difference between user-defined and language-defined procedures Comparison between programming and natural languages # We can define procedures (verbs) and use variables (pronouns) to build higher-level abstractions. ">
+    content="
+Key Concepts
+#
+
+
+Environments, Syntax, Programming Languages v. Natural Languages, Applicative Order of Operations
+
+
+Environments
+#
+
+
+Understanding meaning is a matter of combining primitives with context.
+
+
+Syntax
+#
+
+
+Lisp programmers tend to eschew syntactic sugar in favor of building their own syntax.
+Procedures are noticeably more composable than other languages I&rsquo;ve used previously.
+There&rsquo;s little difference between user-defined and language-defined procedures
+
+
+Comparison between programming and natural languages
+#
+
+
+We can define procedures (verbs) and use variables (pronouns)  to build higher-level abstractions.
+
+
+Operator Evaluation Order
+#
+
+
+We tend to use a substitution model when thinking about how interpreters evaluate operations.
+Often, this model doesn&rsquo;t match how an interpreter functions
+
+In a lazy model, interpreters don&rsquo;t evaluate the result of operations until the operands were needed
+In our substitution model, we combine results of operations from the bottom up.
+I struggled to understand this until I realized that the difference is how greedily we get results of operations.
+
+In the lazy model, we&rsquo;re not greedy about getting results, whereas in the substitution modles, we evaluation operation results ASAP
+
+
+
+
+normal-order = lazy; applicative-order = substitution;
+Haskell uses normal-order evaluation, while Scheme uses applicative-order evaluation.
+
+
+Conditional Expressions / Predicates
+#
+
+
+Exercise 1.1
+#
+
+Q:   Below is a sequence of expressions. What is the result printed by the interpreter in response to each expression? Assume that the sequence is to be evaluated in the order in which it is presented. ">
 <link rel="canonical" href="https://stephenmalina.com/post/2015-11-14-sicp-1-1/" />
 
 
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-
-
-
-
-
-
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 
 
@@ -32,15 +83,26 @@
 </noscript>
 
 
+  
+  
+    
+      
+        <link rel="stylesheet" href="https://stephenmalina.com/css/hugo-tufte.min.501b334050bf0c6cb2483ec40debea9453e83d461ef681f15b5009d07c834d9d.css" integrity="sha256-UBszQFC/DGyySD7EDevqlFPoPUYe9oHxW1AJ0HyDTZ0=" crossorigin="anonymous">
+      
+    
+  
 
 
 
+  
+  
+    
+      
+        <link rel="stylesheet" href="https://stephenmalina.com/css/hugo-tufte-options.min.e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css" integrity="sha256-47DEQpj8HBSa&#43;/TImW&#43;5JCeuQeRkm5NMpJWZG3hSuFU=" crossorigin="anonymous">
+      
+    
+  
 
-<link rel="stylesheet" href="https://stephenmalina.com/css/hugo-tufte.min.css">
-
-
-
-<link rel="stylesheet" href="https://stephenmalina.com/css/hugo-tufte-options.min.css">
 
 <link rel="stylesheet" href="https://stephenmalina.com/css/hugo-tufte-override.css">
 
@@ -215,6 +277,8 @@ Exercise 1.5
   
   
   <li><a href="https://twitter.com/an1lam">Twitter</a></li>
+  
+  
   
 
   

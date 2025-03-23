@@ -4,20 +4,41 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="description"
-    content="Summary # Detailed Notes # 3 IV Requirements # IV must have a direct influence on the treatment IV must not covary with the unmeasured confounding that impacts the outcome IV must not have a direct influence on the outcome Relevant considerations for deciding whether to do an IV analysis # Is there any unmeasured confounding?
-If not, is the answer that we can just use a normal regression? When is unmeasured confounding especially likely? ">
+    content="
+Summary
+#
+
+
+Detailed Notes
+#
+
+
+3 IV Requirements
+#
+
+
+IV must have a direct influence on the treatment
+IV must not covary with the unmeasured confounding that impacts the outcome
+IV must not have a direct influence on the outcome
+
+
+Relevant considerations for deciding whether to do an IV analysis
+#
+
+
+
+Is there any unmeasured confounding?
+
+If not, is the answer that we can just use a normal regression?
+
+
+
+When is unmeasured confounding especially likely? ">
 <link rel="canonical" href="https://stephenmalina.com/learning/2019-11-02-ivs-mendelian-randomization/" />
 
 
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-
-
-
-
-
-
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 
 
@@ -33,15 +54,26 @@ If not, is the answer that we can just use a normal regression? When is unmeasur
 </noscript>
 
 
+  
+  
+    
+      
+        <link rel="stylesheet" href="https://stephenmalina.com/css/hugo-tufte.min.501b334050bf0c6cb2483ec40debea9453e83d461ef681f15b5009d07c834d9d.css" integrity="sha256-UBszQFC/DGyySD7EDevqlFPoPUYe9oHxW1AJ0HyDTZ0=" crossorigin="anonymous">
+      
+    
+  
 
 
 
+  
+  
+    
+      
+        <link rel="stylesheet" href="https://stephenmalina.com/css/hugo-tufte-options.min.e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css" integrity="sha256-47DEQpj8HBSa&#43;/TImW&#43;5JCeuQeRkm5NMpJWZG3hSuFU=" crossorigin="anonymous">
+      
+    
+  
 
-<link rel="stylesheet" href="https://stephenmalina.com/css/hugo-tufte.min.css">
-
-
-
-<link rel="stylesheet" href="https://stephenmalina.com/css/hugo-tufte-options.min.css">
 
 <link rel="stylesheet" href="https://stephenmalina.com/css/hugo-tufte-override.css">
 
@@ -97,8 +129,7 @@ Relevant considerations for deciding whether to do an IV analysis
 <li>Ensembling IVs and finding results pointing in the same direction in all cases provides better evidence than controlling for one measured confounder in each study (because of unknown unknowns).</li>
 </ul>
 <blockquote>
-<p>when different IVs are used, each IV identifies the average treatment effect for a different subgroup, so that we would only expect that findings from the different IVs would agree in direction if the average treatment effects for the different subgroups have the same direction</p>
-</blockquote>
+<p>when different IVs are used, each IV identifies the average treatment effect for a different subgroup, so that we would only expect that findings from the different IVs would agree in direction if the average treatment effects for the different subgroups have the same direction</p></blockquote>
 </li>
 <li>
 <p>Strength of the IVs</p>
@@ -167,8 +198,7 @@ Ex. 4: Genes as IVs (Mendelian Randomization)
 <li>
 <p>Ex:</p>
 <blockquote>
-<p>Another example is that [32] studied the effect of maternal smoking on orofacial clefts in babies using genetic variants that increase the probability that a mother smokes as IVs.</p>
-</blockquote>
+<p>Another example is that [32] studied the effect of maternal smoking on orofacial clefts in babies using genetic variants that increase the probability that a mother smokes as IVs.</p></blockquote>
 </li>
 <li>
 <p><strong>Genes have to satisfy additional criteria to work as IVs</strong></p>
@@ -364,8 +394,7 @@ Ex. 2: Treatment in a randomized trial with nonadherence
 </li>
 <li>Why?
 <blockquote>
-<p>the denominator of (4) is an estimate of the proportion of compliers.</p>
-</blockquote>
+<p>the denominator of (4) is an estimate of the proportion of compliers.</p></blockquote>
 <ul>
 <li>Isn&rsquo;t the estimate of proportion of compliers really
 \[ \frac{1}{2}(\hat{\mathbb{E}}[D_i \mid Z_i = 1] + (1-\hat{\mathbb{E}}[D_i \mid Z_i = 1])) \]</li>
@@ -392,6 +421,8 @@ Ex. 2: Treatment in a randomized trial with nonadherence
   
   
   <li><a href="https://twitter.com/an1lam">Twitter</a></li>
+  
+  
   
 
   

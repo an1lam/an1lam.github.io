@@ -1,31 +1,26 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>narcissism on Stephen Malina</title>
+    <title>Narcissism on Stephen Malina</title>
     <link>https://stephenmalina.com/tags/narcissism/</link>
-    <description>Recent content in narcissism on Stephen Malina</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <description>Recent content in Narcissism on Stephen Malina</description>
+    <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 11 Jan 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://stephenmalina.com/tags/narcissism/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 11 Jan 2023 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://stephenmalina.com/tags/narcissism/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Dialogue on Viriditas</title>
       <link>https://stephenmalina.com/post/2023-01-11-viriditas-dialogue/</link>
       <pubDate>Wed, 11 Jan 2023 00:00:00 +0000</pubDate>
-      
       <guid>https://stephenmalina.com/post/2023-01-11-viriditas-dialogue/</guid>
-      <description>Introduction # A few months ago, Elliot Hershberg, one of my favorite Substack writers, wrote a post laying out his personal mission. I really enjoyed his post and, as is customary in blogging, the best way I could think of to compliment it was to share some (hopefully constructively) critical thoughts on it.
-After sending my post to Elliot, he proposed the great idea of us having a discussion of this over email, which we could then potentially publish.</description>
+      <description>&lt;!-- Output copied to clipboard! --&gt;&#xA;&lt;h1 id=&#34;introduction&#34;&gt;&#xA;Introduction&#xA;&lt;a href=&#34;#introduction&#34; class=&#34;heading-anchor&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h1&gt;&#xA;&lt;p&gt;A few months ago, Elliot Hershberg, one of my favorite Substack writers, wrote a&lt;a href=&#34;https://centuryofbio.substack.com/p/viriditas&#34;&gt; post&lt;/a&gt; laying out his personal mission. I really enjoyed his post and, as is customary in blogging, the best way I could think of to compliment it was to share some (hopefully constructively) critical thoughts on it.&lt;/p&gt;&#xA;&lt;p&gt;After sending my post to Elliot, he proposed the great idea of us having a discussion of this over email, which we could then potentially publish. The Follow-up section here contains a lightly edited form of this back-and-forth. This back-and-forth helped me clarify my views and moved me more in the direction of Elliot’s views than I started out. As a result of this and other discussions/observations I’ve made since then, I feel a lot more uncertain than the views and tone expressed in the original post sound.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Reflections on 2022</title>
       <link>https://stephenmalina.com/post/2023-01-02-reflections-on-2022/</link>
       <pubDate>Sun, 01 Jan 2023 00:00:00 +0000</pubDate>
-      
       <guid>https://stephenmalina.com/post/2023-01-02-reflections-on-2022/</guid>
-      <description>2022 was another exciting, fun year. To round it out, I wrote up some scattered reflections. Enjoy, or if you aren&amp;rsquo;t a fan of this genre of post, don&amp;rsquo;t! Also, each section is mostly self-contained and they&amp;rsquo;re not organized in any special order, so don&amp;rsquo;t hesitate to skip a section if it sounds boring.
-Writing # 2022 felt like a productive year for blogging even though my post count dropped down from 11 in 2021 to 6.</description>
+      <description>&lt;p&gt;2022 was another exciting, fun year. To round it out, I wrote up some scattered reflections. Enjoy, or if you aren&amp;rsquo;t a fan of this genre of post, don&amp;rsquo;t! Also, each section is mostly self-contained and they&amp;rsquo;re not organized in any special order, so don&amp;rsquo;t hesitate to skip a section if it sounds boring.&lt;/p&gt;&#xA;&lt;h2 id=&#34;writing&#34;&gt;&#xA;Writing&#xA;&lt;a href=&#34;#writing&#34; class=&#34;heading-anchor&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;p&gt;2022 felt like a productive year for blogging even though my post count dropped down from 11 in 2021 to 6. I&amp;rsquo;m thrilled with how my and Austin&amp;rsquo;s &lt;a href=&#34;https://stephenmalina.com/post/2022-11-21-decentralization-of-atoms-is-underrated/&#34;&gt;decentralization post&lt;/a&gt; came out. The topic&amp;rsquo;s something I&amp;rsquo;d thought about a lot but been unable to put into writing until Austin and I hashed it out together. Collaborating with Austin also reminded me how much I enjoy collaborating. It&amp;rsquo;s also a strength of the medium and so I hope to do more of it in 2022.&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

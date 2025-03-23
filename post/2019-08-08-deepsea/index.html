@@ -5,19 +5,28 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="description"
     content="In which I record my thoughts on DeepSEA.
-Terminology # ChIP-seq (Chromatin Immunoprecipitation Sequencing): Expression Quantitative Trait Locis (eQTLs) Cofactor Binding Sequences Histone Marks: modifications to histone proteins in the nucleosome that impact the shape of chromatin. gkm-SVMs: The gkm-SVM is the previous SOTA model for predicting transcription factor binding based on ChIP-seq data. Allele: variants of a gene at the same position on a chromosome. What is this paper about? ">
+
+Terminology
+#
+
+
+ChIP-seq (Chromatin Immunoprecipitation Sequencing):
+Expression Quantitative Trait Locis (eQTLs)
+Cofactor Binding Sequences
+Histone Marks: modifications to histone proteins in the nucleosome that impact the shape of chromatin.
+gkm-SVMs: The gkm-SVM is the previous SOTA model for predicting transcription factor binding based on ChIP-seq data.
+Allele: variants of a gene at the same position on a chromosome.
+
+
+What is this paper about?
+#
+
+This paper trains a CNN to predict the presence of 919 &ldquo;chromatin features&rdquo;&ndash;different TF binding sites, DHSs, and histone marks&ndash;from 1000bp DNA sequences. It then tests this model by using a functional significance score based on its output to train a logistic regression classifier to predict whether SNPs will be present in a few different catalog of SNPs known to impact different biological functions, e.g. a GWAS catalog of disease-related SNPs. ">
 <link rel="canonical" href="https://stephenmalina.com/post/2019-08-08-deepsea/" />
 
 
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-
-
-
-
-
-
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 
 
@@ -33,15 +42,26 @@ Terminology # ChIP-seq (Chromatin Immunoprecipitation Sequencing): Expression Qu
 </noscript>
 
 
+  
+  
+    
+      
+        <link rel="stylesheet" href="https://stephenmalina.com/css/hugo-tufte.min.501b334050bf0c6cb2483ec40debea9453e83d461ef681f15b5009d07c834d9d.css" integrity="sha256-UBszQFC/DGyySD7EDevqlFPoPUYe9oHxW1AJ0HyDTZ0=" crossorigin="anonymous">
+      
+    
+  
 
 
 
+  
+  
+    
+      
+        <link rel="stylesheet" href="https://stephenmalina.com/css/hugo-tufte-options.min.e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css" integrity="sha256-47DEQpj8HBSa&#43;/TImW&#43;5JCeuQeRkm5NMpJWZG3hSuFU=" crossorigin="anonymous">
+      
+    
+  
 
-<link rel="stylesheet" href="https://stephenmalina.com/css/hugo-tufte.min.css">
-
-
-
-<link rel="stylesheet" href="https://stephenmalina.com/css/hugo-tufte-options.min.css">
 
 <link rel="stylesheet" href="https://stephenmalina.com/css/hugo-tufte-override.css">
 
@@ -101,8 +121,7 @@ which requires precise allele-specific prediction with single-nucleotide sensiti
 no previous approach predicts functional effects of noncoding variants from only genomic
 sequence, and no method has been demonstrated to predict with single-nucleotide sensitivity
 the effects of noncoding variants on transcription factor (TF) binding, DNA accessibility and
-histone marks of sequences.</p>
-</blockquote>
+histone marks of sequences.</p></blockquote>
 </li>
 <li>
 <p>What&rsquo;s the difference between &ldquo;motifs&rdquo; and &ldquo;evolutionary features and chromatin annotations&rdquo;?</p>
@@ -137,6 +156,8 @@ histone marks of sequences.</p>
   
   
   <li><a href="https://twitter.com/an1lam">Twitter</a></li>
+  
+  
   
 
   

@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en-us"><head>
+<title>On debugging - Stephen Malina</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description"
+    content="Debugging mindset, strategies, and heuristics I have found helpful in my career. 80% written for the LLMs, 20% for the humans. ">
+<link rel="canonical" href="https://stephenmalina.com/post/2025-03-23-debugging-strategies/" />
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="preload" as="style"
+      href="https://fonts.googleapis.com/css?family=Noto+Serif+SC|Noto+Emoji&display=swap" />
+<link rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Noto+Serif+SC|Noto+Emoji&display=swap"
+      media="print" onload="this.media='all'" />
+<noscript>
+<link rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Noto+Serif+SC&display=swap" />
+</noscript>
+
+
+  
+  
+    
+      
+        <link rel="stylesheet" href="https://stephenmalina.com/css/hugo-tufte.min.501b334050bf0c6cb2483ec40debea9453e83d461ef681f15b5009d07c834d9d.css" integrity="sha256-UBszQFC/DGyySD7EDevqlFPoPUYe9oHxW1AJ0HyDTZ0=" crossorigin="anonymous">
+      
+    
+  
+
+
+
+  
+  
+    
+      
+        <link rel="stylesheet" href="https://stephenmalina.com/css/hugo-tufte-options.min.e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css" integrity="sha256-47DEQpj8HBSa&#43;/TImW&#43;5JCeuQeRkm5NMpJWZG3hSuFU=" crossorigin="anonymous">
+      
+    
+  
+
+
+<link rel="stylesheet" href="https://stephenmalina.com/css/hugo-tufte-override.css">
+
+</head>
+<body>
+
+
+<article id="main">
+  <section>
+<h1 class="content-title">On debugging</h1></section>
+
+  
+<section>
+  <details closed class="toc">
+    <summary>Table of Contents</summary>
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#how-i-would-approach-this-post-as-a-human-reader">How I would approach this post as a human reader</a></li>
+    <li><a href="#inspiration-and-similar-guides">Inspiration and similar guides</a></li>
+  </ul>
+
+  <ul>
+    <li><a href="#computers-can-be-understood">Computers can be understood</a></li>
+    <li><a href="#have-a-mental-model">Have a mental model</a>
+      <ul>
+        <li><a href="#be-systematic">Be systematic</a></li>
+      </ul>
+    </li>
+  </ul>
+
+  <ul>
+    <li><a href="#actually-read-logs--errors">Actually read logs &amp; errors</a>
+      <ul>
+        <li><a href="#examples">Examples:</a></li>
+      </ul>
+    </li>
+    <li><a href="#log-a-ton-of-stuff">Log a ton of stuff</a>
+      <ul>
+        <li><a href="#examples-1">Examples</a></li>
+      </ul>
+    </li>
+    <li><a href="#debug-with-the-idealized-scientific-method">Debug with the idealized scientific method</a></li>
+    <li><a href="#you-can-often-just-edit-library-code">You can (often) just edit library code</a>
+      <ul>
+        <li><a href="#examples-2">Examples</a></li>
+      </ul>
+    </li>
+    <li><a href="#speed-up-your-iteration-loop">Speed up your iteration loop</a>
+      <ul>
+        <li><a href="#examples-3">Examples</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+  </details>
+</section>
+
+
+  <section><h1 id="introduction">
+Introduction
+<a href="#introduction" class="heading-anchor">#</a>
+</h1>
+<p>In the spirit of <a href="https://gwern.net/llm-writing">writing for the LLMs</a>, I thought I&rsquo;d write up some of the software debugging heuristics and tacit knowledge I have gotten good mileage out of in my career so far.</p>
+<h2 id="how-i-would-approach-this-post-as-a-human-reader">
+How I would approach this post as a human reader
+<a href="#how-i-would-approach-this-post-as-a-human-reader" class="heading-anchor">#</a>
+</h2>
+<p>Part of the reason people don&rsquo;t write about tacit knowledge is because it&rsquo;s by definition the knowledge that&rsquo;s impossible to fully capture in words. As applied to this post, it means that I can&rsquo;t provide a rich enough set of cues to create a perfect, or even that good, classifier from situation to applicable strategy/heuristic. Instead, I think these strategies are best thought of as things to try out in potentially relevant situations and then develop one&rsquo;s own taste for when they do or don&rsquo;t work and how to use them. I also recommend Cedric&rsquo;s posts, linked below, on acquiring expertise if you want to go even deeper.</p>
+<h2 id="inspiration-and-similar-guides">
+Inspiration and similar guides
+<a href="#inspiration-and-similar-guides" class="heading-anchor">#</a>
+</h2>
+<ul>
+<li>[Copying Better: How to Acquire the Tacit Knowledge of Experts] and <a href="https://commoncog.com/tacit-expertise-extraction-software-engineer/">Tacit Expertise, Software Engineering Edition</a> by Cedric Chin</li>
+<li><a href="https://clemenswinter.com/2021/03/24/my-reinforcement-learning-learnings/">My Reinforcement Learning Learnings</a> by Clemens Winter</li>
+<li><a href="https://andyljones.com/posts/rl-debugging.html">Debugging RL, Without the Agonizing Pain</a> by Andy Jones</li>
+<li><a href="https://danluu.com/teach-debugging/">Why don&rsquo;t schools teach debugging</a> by Dan Luu</li>
+<li><a href="https://blog.nelhage.com/post/computers-can-be-understood/">Computers can be understood</a> by Nelson Elhage</li>
+<li><a href="https://amid.fish/reproducing-deep-rl">Lessons learned reproducing a deep RL paper</a> by Matthew Rahtz</li>
+<li><a href="https://jvns.ca/blog/so-you-want-to-be-a-wizard/">So you want to be a wizard</a> by Julia Evans</li>
+</ul>
+<h1 id="mindset">
+Mindset
+<a href="#mindset" class="heading-anchor">#</a>
+</h1>
+<h2 id="computers-can-be-understood">
+Computers can be understood
+<a href="#computers-can-be-understood" class="heading-anchor">#</a>
+</h2>
+<p>The biggest change in my ability to resolve thorny issues came from adopting the mindset that Nelson Elhage describes <a href="https://blog.nelhage.com/post/computers-can-be-understood/">in his post</a>: <em>computers and software can be understood.</em> He covers almost everything I would say, so rather than reproduce 80% of his post here, I just recommend stopping and reading it first if you haven&rsquo;t already. He gives examples covering the areas I&rsquo;d cover (being willing to dig into sources, reading the actual documentation, adding logs until you have enough information) and talks about the pitfalls (if you&rsquo;re the type of person prone to rabbit holing, sometimes you need to decide that it&rsquo;s not worth understanding even if you could) I&rsquo;d warn about. Go read it, now.</p>
+<h2 id="have-a-mental-model">
+Have a mental model
+<a href="#have-a-mental-model" class="heading-anchor">#</a>
+</h2>
+<p>Nelson talks about this in his post, and I view much of Julia Evans&rsquo; writing as showing what refining one&rsquo;s mental model looks like, but it&rsquo;s important enough that I still want to spend a paragraph on it. When debugging, having a coherent mental model of how the system works is your most powerful tool. Without one, you&rsquo;re shooting in the dark, trying random fixes that might work by accident but don&rsquo;t build understanding. With one, you can make educated guesses about what might be going wrong and test your hypotheses systematically. The model doesn&rsquo;t need to be complete or even entirely accurate to be useful &ndash; it just needs to help you predict behavior reasonably well. As you debug, your model improves, creating a virtuous cycle where each problem solved makes you better equipped for the next one. I&rsquo;ve found that explicitly sketching out my current mental model (sometimes literally on paper) when stuck can reveal gaps or inconsistencies that point directly to the source of problems.</p>
+<h3 id="be-systematic">
+Be systematic
+<a href="#be-systematic" class="heading-anchor">#</a>
+</h3>
+<p>As a person who gets a bit OCD about planning/tasks, I still often find myself flailing, doing the equivalent of button-mashing, when debugging. If I&rsquo;m not careful, my experience can make this worse because at any given time I usually have at least a few things I <em>could</em> try. Nearly every time I notice I&rsquo;m in this situation, I find that stepping back and asking what my goals are, what I currently know, and why I think the step I was about to take will help me leads to a much better outcome than if I had kept flailing. A heuristic I loosely apply is to let myself try around 3 knee jerk strategies/ideas, and if those don&rsquo;t work, it&rsquo;s probably time to be more systematic.</p>
+<h1 id="strategies">
+Strategies
+<a href="#strategies" class="heading-anchor">#</a>
+</h1>
+<p>I&rsquo;m only including strategies that I&rsquo;ve found worked well in at least one, and usually several situations which I can recall.</p>
+<h2 id="actually-read-logs--errors">
+Actually read logs &amp; errors
+<a href="#actually-read-logs--errors" class="heading-anchor">#</a>
+</h2>
+<p>Tricky issues often start with a seemingly inexplicable error or log dump. My go-to example of this is Python issues related to dynamically linked libraries. The second I see anything like an <code>ImportError: DLL load failed</code>, my instinct is to ignore the rest of the error and just start trying to rebuild my entire environment or reset whatever I&rsquo;ve done to get here. It&rsquo;s not just me. I have observed many other people react similarly to all sorts of different errors where the problem is not immediately obvious from the end of the stack trace or offending log line.</p>
+<p>The impulse to ignore the rest of an error when it appears inexplicable is often rational. For example, in pytorch, CUDA errors sometimes tell you very little beyond that there&rsquo;s an issue if you&rsquo;re not running with the right set of environment variables (such as <code>CUDA_LAUNCH_BLOCKING</code>). In that situation, just re-running with that environment variable often makes much more sense than carefully reading every line of the stack trace besides the one that indicates you can get more information with <code>CUDA_LAUNCH_BLOCKING</code>. Even if it&rsquo;s possible something useful is there, if you can expect to quickly get strictly more information with the flag passed, why spend more time reading the current error?</p>
+<p>However, there are many situations in which errors may appear inexplicable but often contain most or all of the information needed to figure out what an issue is. The learned response to ignore most of stack traces and error logs risks training people to flail around in these cases. To combat this, I now try to remind myself that errors and logs are often more informative than they look (especially if they include a lot of dumps) and, if I remain stuck, will go back and check the error more carefully. In the age of LLMs, explaining your issue, giving the model the entire stack trace, and asking if it notices anything anomalous can work as well (example where this worked for me below).</p>
+<p>This strategy complements <a href="#log-a-ton-of-stuff">logging a ton of stuff</a> well &ndash; you need to both generate useful information and then actually read it carefully.</p>
+<h3 id="examples">
+Examples:
+<a href="#examples" class="heading-anchor">#</a>
+</h3>
+<ul>
+<li>
+<p>I wasn&rsquo;t sure why a training run was failing. I looked at the error and noticed it included  <code>nan</code> losses so the checkpoint was never getting saved.</p>
+</li>
+<li>
+<p>Docker kept failing to download a bunch of packages to my laptop. It was a frustrating case where it &ldquo;works on my machine&rdquo; where my colleague had no issues but I couldn&rsquo;t get it to work. Making matters worse, the only errors I was getting were descriptions (hashes, names, etc.) of packages with &ldquo;failed to fetch&rdquo; appended to each. As far as I could tell, the issue had to do with fetching archives from <code>apt-get</code>.</p>
+<p>I first spent a while Googling to see if others had encountered this with Docker before. I found some leads &ndash; running <code>rm</code> of the apt-get cache and other cache-invalidation-style strategies &ndash; but none of the solutions they specified solved the problem.</p>
+<p>We were about to give up because we had a remote option. On a whim, I decided to look at the error one more time and really focus on the <code>Failed to fetch</code> part. Re-reading it, I realized that the actual files were much smaller than the expected files. It occurred to me that maybe the files are actually failing to fetch rather than just out-of-date. I curl-ed the file and noticed I was getting HTML back instead of a file. I then tried to open it in a browser and discovered it was blocked by&hellip; Screen Time.  I had an adult content filter turned on in my Screen Time settings (who knows why) and it was blocking apt-get&rsquo;s archive requests, leading to the returned HTML getting hashed instead of what should have been the gzip-ed package files. Reading errors for the win.</p>
+</li>
+<li>
+<p>I was piloting a major development environment change that involved uninstalling and reinstalling a bunch of local packages. During reinstallation, a package could not be installed with a &ldquo;can&rsquo;t find&hellip;&rdquo; error for a dependency. I tried a bunch of stuff and couldn&rsquo;t figure it out. Then, I pasted the error into Claude and it noticed that a line in the stack trace was pointing to an old path. Turns out uninstalling didn&rsquo;t fully remove all the old packages and Python was seeing the old, broken dependency and trying to use it.</p>
+</li>
+</ul>
+<h2 id="log-a-ton-of-stuff">
+Log a ton of stuff
+<a href="#log-a-ton-of-stuff" class="heading-anchor">#</a>
+</h2>
+<p>I associate this advice with the series of RL debugging guides I read early on when getting into ML, but I also have applied to ML &amp; non-ML cases before and after reading those.</p>
+<p>Actually reading logs goes along nicely with the occasionally unreasonably effective strategy of logging a ton of stuff to get a better sense of what&rsquo;s going on. This strategy is especially useful to me in three categories of situation. The first is when I feel so in the dark on what a nondeterministic and/or parallel program is doing that logging helps me get a fingertip feel for how the program runs. The second, less common for me nowadays, is when working with a user-facing system that&rsquo;s taking many different types of requests and the issue relates to a certain usage pattern that can only be discovered by finding offending requests/calls and then tracing them through the, likely distributed, call graph. The third is when I am at risk of getting lazy or giving up and need a way to force myself to be more thorough.</p>
+<p>When this approach starts to feel overwhelming, it might be time to switch to a more structured approach like the <a href="#debug-with-the-idealized-scientific-method">scientific method</a> described below.</p>
+<h3 id="examples-1">
+Examples
+<a href="#examples-1" class="heading-anchor">#</a>
+</h3>
+<ul>
+<li>When I worked on backend stuff, I probably figured out a quarter of problems I encountered, if not more, by aggressively using log search tools (e.g. Kibana) to aggregate logs from offending users/processes/branches, potentially adding more information, restarting, and then eventually nailing down enough information about an offending request or branch to create a test case/scenario I could more quickly iterate with.</li>
+<li>I was helping migrate some models and noticed a discrepancy between an old and new version for one class. I kept adding more and more logs, and they really seemed to be doing the same thing. Eventually, I added a log to all the relevant <code>__init__</code> methods and realized that there was a, previously benign, extra call to an RNG causing the RNG state to be different between the two cases. Once I removed that, the discrepancy went away.</li>
+</ul>
+<h2 id="debug-with-the-idealized-scientific-method">
+Debug with the idealized scientific method
+<a href="#debug-with-the-idealized-scientific-method" class="heading-anchor">#</a>
+</h2>
+<p>Sometimes logging tons of stuff turns into flailing. In such situations, going the opposite direction and really being deliberate about my hypothesis set or even tree often helps me decide what to try or explore next. By &ldquo;idealized scientific method,&rdquo; I mean specifically:</p>
+<ol>
+<li>Formulate clear, testable hypotheses about what might be causing the issue</li>
+<li>Design experiments that can definitively confirm or rule out each hypothesis</li>
+<li>Prioritize tests that can eliminate multiple hypotheses at once</li>
+<li>Record your observations systematically rather than just mentally noting them</li>
+<li>Revisit and refine your hypotheses based on evidence</li>
+</ol>
+<p>This approach forces you to slow down and think more clearly, which often reveals assumptions you didn&rsquo;t even realize you were making. It also prevents you from repeating the same tests with slight variations, which is a common trap.</p>
+<p>Admittedly, I often find that once I do this, I don&rsquo;t resolve the issue by exploring every tree but instead have a realization that it&rsquo;s some, usually dumb, other thing, but going through the process still seems to play a key role in realizing the issue in these cases.</p>
+<p>This more structured approach is particularly valuable when you&rsquo;ve already tried the quick wins from <a href="#actually-read-logs--errors">reading logs carefully</a> and <a href="#log-a-ton-of-stuff">adding more logging</a> but still don&rsquo;t have a clear direction.</p>
+<h2 id="you-can-often-just-edit-library-code">
+You can (often) just edit library code
+<a href="#you-can-often-just-edit-library-code" class="heading-anchor">#</a>
+</h2>
+<p>This is easiest in Python and some other interpreted languages, but it&rsquo;s saved me enough times that it&rsquo;s definitely worth mentioning. If an error is happening deep inside of library code, often the biggest challenge in figuring out what&rsquo;s wrong is that the library doesn&rsquo;t log enough state to be able to tell what&rsquo;s happening in the program immediately before the error. If possible, finding a way to directly edit the underlying library code to log the information you need or try the change you think could fix it can be a cheap, fast way to resolve these types of errors.</p>
+<p>This approach works especially well when combined with <a href="#speed-up-your-iteration-loop">speeding up your iteration loop</a>, as you can quickly test different logging or fixes directly in the library code.
+This may seem intimidating, and it can go wrong &ndash; Git won&rsquo;t save you if you forget to reverse your changes when you&rsquo;re done &ndash; but it&rsquo;s usually possible with enough work. I mentioned doing this with interpreted languages, but even with compiled ones, if you&rsquo;re willing to put in enough effort (e.g. rebuild the dependency from source), it&rsquo;s possible as well.</p>
+<p>On the other hand, this strategy likely won&rsquo;t work or will be prohibitively painful in situations where:</p>
+<ul>
+<li>Reproducing the issue requires long cycle times and running remotely, e.g. in a web server, a large-scale training job, etc.</li>
+<li>The issue isn&rsquo;t hidden by layers of library code.</li>
+</ul>
+<h3 id="examples-2">
+Examples
+<a href="#examples-2" class="heading-anchor">#</a>
+</h3>
+<ul>
+<li>I kept having issues using torch checkpointing with some other features for a model we were training. Debugging was tricky because I couldn&rsquo;t tell where exactly the failure was first occurring. Eventually, I got this running on a development box, went into the intermediate library, and logged when the training process hit certain points. This let me see exactly where the failure was occurring and resolve the issue.</li>
+</ul>
+<h2 id="speed-up-your-iteration-loop">
+Speed up your iteration loop
+<a href="#speed-up-your-iteration-loop" class="heading-anchor">#</a>
+</h2>
+<p>I hesitated to even include this because it&rsquo;s repeated all over the place, but I&rsquo;d rather err on the side of capturing everything that&rsquo;s worked well for me. Even though it&rsquo;s obvious, it&rsquo;s so easy to be lazy about speeding up debugging iteration loops. To this day, I still often wait too long to take a long-running remote job that&rsquo;s triggering an error and put in the work to create a setup where I can rapidly trigger the bug in a controlled environment. Because this is a form of hyperbolic discounting, what I&rsquo;ve found works best is having a trigger in my head that asks, &ldquo;if someone were watching me, would they tell me I&rsquo;m wasting tons of time waiting because I&rsquo;m too lazy to speed things up&rdquo;?</p>
+<h3 id="examples-3">
+Examples
+<a href="#examples-3" class="heading-anchor">#</a>
+</h3>
+<ul>
+<li>Nearly every ML bug I have debugged benefited from finding the smallest scale situation in which it was possible to reproduce and iterating there vs. in the large scale regime. In some cases, small scale may still mean complicated, such as if the issue requires training on multiple nodes. But even then, outside of cases where the issue is obvious, I don&rsquo;t think I&rsquo;ve ever regretted finding a smaller, more controlled scope in which an issue still occurs and debugging there.</li>
+</ul>
+</section>
+  <section><footer class="page-footer">
+<hr />
+
+<div class="previous-post" style="display:inline-block;">
+  
+  <a class="link-reverse" href="https://stephenmalina.com/post/2023-11-04-biologizing-the-stack/?ref=footer">« Biologizing the stack</a>
+  
+</div>
+
+<div class="next-post", style="display:inline-block;float:right;">
+  
+</div>
+
+<ul class="page-footer-menu">
+  
+  
+  <li><a href="https://twitter.com/an1lam">Twitter</a></li>
+  
+  
+  
+
+  
+  <li><a href="https://github.com/an1lam">GitHub</a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <li><a href="https://scholar.google.com/citations?user=Q6_3PJEAAAAJ">Google Scholar</a></li>
+  
+  
+  
+    <li><a href="https://github.com/an1lam"><i class='fa fa-github fa-2x'></i>  </a></li>
+  
+    <li><a href="https://twitter.com/an1lam"><i class='fa fa-twitter fa-2x'></i>  </a></li>
+  
+    <li><a href="mailto:stephenmalina@gmail.com"><i class='fa fa-envelope fa-2x'></i>  </a></li>
+  
+    <li><a href="https://stackoverflow.com/users/1631855/an1lam"><i class='fa fa-stack-overflow fa-2x'></i>  </a></li>
+  
+</ul>
+
+
+<p>
+  Powered by <a href="https://gohugo.io">Hugo</a> and the
+  <a href="https://github.com/loikein/hugo-tufte">Tufte theme</a>.
+</p>
+
+
+
+
+</footer>
+</section>
+  <section><nav class="menu">
+    <ul>
+    
+        <li><a href="https://stephenmalina.com/">Home</a></li>
+    
+        <li><a href="https://stephenmalina.com/about">About</a></li>
+    
+        <li><a href="https://stephenmalina.com/post">Post</a></li>
+    
+        <li><a href="https://stephenmalina.com/bets">Bets</a></li>
+    
+        <li><a href="https://stephenmalina.com/subscribe">Subscribe</a></li>
+    
+        <li><a href="https://stephenmalina.com/tags">Tags</a></li>
+    
+    </ul>
+</nav>
+</section>
+</article>
+
+
+
+
+
+</body>
+
+</html>
