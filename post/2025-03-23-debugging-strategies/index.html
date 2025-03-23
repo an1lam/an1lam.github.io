@@ -68,11 +68,8 @@
 
   <ul>
     <li><a href="#computers-can-be-understood">Computers can be understood</a></li>
-    <li><a href="#have-a-mental-model">Have a mental model</a>
-      <ul>
-        <li><a href="#be-systematic">Be systematic</a></li>
-      </ul>
-    </li>
+    <li><a href="#have-a-mental-model">Have a mental model</a></li>
+    <li><a href="#be-systematic">Be systematic</a></li>
   </ul>
 
   <ul>
@@ -140,10 +137,10 @@ Have a mental model
 <a href="#have-a-mental-model" class="heading-anchor">#</a>
 </h2>
 <p>Nelson talks about this in his post, and I view much of Julia Evans&rsquo; writing as showing what refining one&rsquo;s mental model looks like, but it&rsquo;s important enough that I still want to spend a paragraph on it. When debugging, having a coherent mental model of how the system works is your most powerful tool. Without one, you&rsquo;re shooting in the dark, trying random fixes that might work by accident but don&rsquo;t build understanding. With one, you can make educated guesses about what might be going wrong and test your hypotheses systematically. The model doesn&rsquo;t need to be complete or even entirely accurate to be useful &ndash; it just needs to help you predict behavior reasonably well. As you debug, your model improves, creating a virtuous cycle where each problem solved makes you better equipped for the next one. I&rsquo;ve found that explicitly sketching out my current mental model (sometimes literally on paper) when stuck can reveal gaps or inconsistencies that point directly to the source of problems.</p>
-<h3 id="be-systematic">
+<h2 id="be-systematic">
 Be systematic
 <a href="#be-systematic" class="heading-anchor">#</a>
-</h3>
+</h2>
 <p>As a person who gets a bit OCD about planning/tasks, I still often find myself flailing, doing the equivalent of button-mashing, when debugging. If I&rsquo;m not careful, my experience can make this worse because at any given time I usually have at least a few things I <em>could</em> try. Nearly every time I notice I&rsquo;m in this situation, I find that stepping back and asking what my goals are, what I currently know, and why I think the step I was about to take will help me leads to a much better outcome than if I had kept flailing. A heuristic I loosely apply is to let myself try around 3 knee jerk strategies/ideas, and if those don&rsquo;t work, it&rsquo;s probably time to be more systematic.</p>
 <h1 id="strategies">
 Strategies
