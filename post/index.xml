@@ -282,20 +282,6 @@
       <description>&lt;p&gt;(Cross-posted from &lt;a href=&#34;https://www.facebook.com/stephen.malina/posts/10156908362592930?notif_id=1543807162428983&amp;amp;notif_t=feedback_reaction_generic&amp;amp;ref=notif&#34;&gt;Facebook&lt;/a&gt;.)&lt;/p&gt;&#xA;&lt;p&gt;This is the first time I&amp;rsquo;ve posted on Facebook in &amp;hellip; long. However, at the encouragement of a few friends, I&amp;rsquo;ve decided to leverage my no-shave November stunt as an opportunity to urge people to donate to one of the many worthwhile causes out there. Technically, my friends said I should do &amp;ldquo;the Movember thing&amp;rdquo; but this long-winded post is my characteristically difficult, verbose interpretation of that.&lt;/p&gt;&#xA;&lt;p&gt;Note that what follows comes with a huge caveat that I&amp;rsquo;m generally opposed to people donating money to causes for signaling reasons and/or guilt, so I encourage you not to donate to one of the causes I describe below unless you&amp;rsquo;re convinced doing so would actually be effective by the standards of whatever moral system you endorse.&lt;/p&gt;</description>
     </item>
     <item>
-      <title>Statistical Models - Theory and Practice</title>
-      <link>https://stephenmalina.com/post/2018-06-12-statistical-models-ch-2/</link>
-      <pubDate>Tue, 12 Jun 2018 00:00:00 +0000</pubDate>
-      <guid>https://stephenmalina.com/post/2018-06-12-statistical-models-ch-2/</guid>
-      <description>&lt;h1 id=&#34;questions&#34;&gt;&#xA;Questions&#xA;&lt;a href=&#34;#questions&#34; class=&#34;heading-anchor&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h1&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;What does the regression equation &lt;em&gt;mean&lt;/em&gt;? Is the idea that we get bigger $ r $ values when $ x $ and $ y $ deviate together?&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;What does it mean for a function to be convex beyond $ f((x + y) / 2)) \leq (f(x) + f(y)) / 2 $? Put another way, why is this the proof of convexity?&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;$$ h\&lt;em&gt;{son} = slope * h\&lt;/em&gt;{father} + yint = 70.908in $$&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Statistical Models - Theory and Practice</title>
-      <link>https://stephenmalina.com/post/2018-06-09-statistical-models-ch-1/</link>
-      <pubDate>Sat, 09 Jun 2018 00:00:00 +0000</pubDate>
-      <guid>https://stephenmalina.com/post/2018-06-09-statistical-models-ch-1/</guid>
-      <description>&lt;h1 id=&#34;summary&#34;&gt;&#xA;Summary&#xA;&lt;a href=&#34;#summary&#34; class=&#34;heading-anchor&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h1&gt;&#xA;&lt;p&gt;This chapter introduces basic terminology and describes three separate experiments to introduce us to statistical methods in action.&lt;/p&gt;&#xA;&lt;p&gt;We learn about the difference between randomized controlled experiments and observational experiments.  A randomized controlled experiment is an experiment in which subjects are randomly assigned to two groups: experiment and control. Members of the experimental group receive the &amp;ldquo;treatment&amp;rdquo;, whereas members of the control do not. We expect that randomized controlled experiments minimize confounding &amp;ndash; other factors seeping in to impact our results without us knowing &amp;ndash; because we expect members of the experimental and control group to be on average the same outside of whatever difference the treatment produces.&lt;/p&gt;</description>
-    </item>
-    <item>
       <title>JIT Reading</title>
       <link>https://stephenmalina.com/post/2018-02-24-jit-reading/</link>
       <pubDate>Sat, 24 Feb 2018 00:00:00 +0000</pubDate>

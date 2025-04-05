@@ -345,20 +345,6 @@
       <description>&lt;p&gt;This page tracks things about which I&amp;rsquo;ve changed my mind over time and things about which I&amp;rsquo;m still confused. For some things, there was one moment or event that caused me to revise my view. For others, it was just a slow process of evidence accumulating and then me retroactively realizing I no longer believed what I once did. Interestingly enough, none of the mind shifts listed here came about through me setting out to change my view. The only other trend I&amp;rsquo;ve noticed is that in most cases, I didn&amp;rsquo;t go from one extreme view to another. Instead, I mostly started at a more extreme view and drifted to a more nuanced one.&lt;/p&gt;</description>
     </item>
     <item>
-      <title>Statistical Models - Theory and Practice</title>
-      <link>https://stephenmalina.com/post/2018-06-12-statistical-models-ch-2/</link>
-      <pubDate>Tue, 12 Jun 2018 00:00:00 +0000</pubDate>
-      <guid>https://stephenmalina.com/post/2018-06-12-statistical-models-ch-2/</guid>
-      <description>&lt;h1 id=&#34;questions&#34;&gt;&#xA;Questions&#xA;&lt;a href=&#34;#questions&#34; class=&#34;heading-anchor&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h1&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;What does the regression equation &lt;em&gt;mean&lt;/em&gt;? Is the idea that we get bigger $ r $ values when $ x $ and $ y $ deviate together?&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;What does it mean for a function to be convex beyond $ f((x + y) / 2)) \leq (f(x) + f(y)) / 2 $? Put another way, why is this the proof of convexity?&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;$$ h\&lt;em&gt;{son} = slope * h\&lt;/em&gt;{father} + yint = 70.908in $$&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Statistical Models - Theory and Practice</title>
-      <link>https://stephenmalina.com/post/2018-06-09-statistical-models-ch-1/</link>
-      <pubDate>Sat, 09 Jun 2018 00:00:00 +0000</pubDate>
-      <guid>https://stephenmalina.com/post/2018-06-09-statistical-models-ch-1/</guid>
-      <description>&lt;h1 id=&#34;summary&#34;&gt;&#xA;Summary&#xA;&lt;a href=&#34;#summary&#34; class=&#34;heading-anchor&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h1&gt;&#xA;&lt;p&gt;This chapter introduces basic terminology and describes three separate experiments to introduce us to statistical methods in action.&lt;/p&gt;&#xA;&lt;p&gt;We learn about the difference between randomized controlled experiments and observational experiments.  A randomized controlled experiment is an experiment in which subjects are randomly assigned to two groups: experiment and control. Members of the experimental group receive the &amp;ldquo;treatment&amp;rdquo;, whereas members of the control do not. We expect that randomized controlled experiments minimize confounding &amp;ndash; other factors seeping in to impact our results without us knowing &amp;ndash; because we expect members of the experimental and control group to be on average the same outside of whatever difference the treatment produces.&lt;/p&gt;</description>
-    </item>
-    <item>
       <title>JIT Reading</title>
       <link>https://stephenmalina.com/post/2018-02-24-jit-reading/</link>
       <pubDate>Sat, 24 Feb 2018 00:00:00 +0000</pubDate>

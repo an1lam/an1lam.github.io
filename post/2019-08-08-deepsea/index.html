@@ -4,24 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="description"
-    content="In which I record my thoughts on DeepSEA.
-
-Terminology
-#
-
-
-ChIP-seq (Chromatin Immunoprecipitation Sequencing):
-Expression Quantitative Trait Locis (eQTLs)
-Cofactor Binding Sequences
-Histone Marks: modifications to histone proteins in the nucleosome that impact the shape of chromatin.
-gkm-SVMs: The gkm-SVM is the previous SOTA model for predicting transcription factor binding based on ChIP-seq data.
-Allele: variants of a gene at the same position on a chromosome.
-
-
-What is this paper about?
-#
-
-This paper trains a CNN to predict the presence of 919 &ldquo;chromatin features&rdquo;&ndash;different TF binding sites, DHSs, and histone marks&ndash;from 1000bp DNA sequences. It then tests this model by using a functional significance score based on its output to train a logistic regression classifier to predict whether SNPs will be present in a few different catalog of SNPs known to impact different biological functions, e.g. a GWAS catalog of disease-related SNPs. ">
+    content="A review of the DeepSEA paper, which uses convolutional neural networks to predict chromatin features from DNA sequences and evaluate the functional significance of non-coding variants. ">
 <link rel="canonical" href="https://stephenmalina.com/post/2019-08-08-deepsea/" />
 
 

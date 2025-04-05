@@ -4,20 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="description"
-    content="Attention conservation notice: Narrow target audience - will only make sense to people somewhat familiar with causal inference who don&rsquo;t find the result entirely boring.
-
-The Front-Door Criterion
-#
-
-Suppose we have a causal graphical model that looks like the following.
-
-Assume $ U $ is unmeasured whereas $ X, M, Y $ can be measured. Notice that:
-
-All directed paths from $ X $ to $ Y $ flow through $ M $.
-$ X $ blocks all back-door paths from $ M $ to $ Y $.
-There are no unblocked back-door paths from $ X $ to $ M $.
-
-One of the most striking results in early causal inference literature, called the front-door criterion, states that, for all graphs like ours which satisfy these three criteria, the causal effect $ P(y \mid \mathrm{do}(x)) $ is identifiable by the formula (assume discrete variables for convenience) ">
+    content="A step-by-step mathematical derivation of the front-door criterion in causal inference using the do-calculus, demonstrating how to identify causal effects even with unmeasured confounding. ">
 <link rel="canonical" href="https://stephenmalina.com/post/2020-03-09-front-door-do-calc-derivation/" />
 
 
