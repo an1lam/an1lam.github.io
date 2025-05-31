@@ -1,132 +1,69 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+<html lang="en-us"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+<title>Coursera ML - Stephen Malina</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description"
+    content="Notes on Coursera&#39;s Machine Learning course covering large-scale machine learning techniques, including stochastic gradient descent, mini-batch methods, and online learning algorithms. ">
+<link rel="canonical" href="http://localhost:1313/post/2018-06-04-machine-learning-week-10/" />
 
-<head>
-<title>Stephen Malina - Coursera ML</title>
-  <meta http-equiv="content-type" content="text/html; charset=utf-8">
 
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="">
-<meta name="keywords" content="">
-<meta name="author" content="Stephen Malina">
-<meta name="generator" content="Hugo 0.68.3" />
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="preload" as="style"
+      href="https://fonts.googleapis.com/css?family=Noto+Serif+SC|Noto+Emoji&display=swap" />
+<link rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Noto+Serif+SC|Noto+Emoji&display=swap"
+      media="print" onload="this.media='all'" />
+<noscript>
+<link rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Noto+Serif+SC&display=swap" />
+</noscript>
+
 
   
   
+    
+      <link rel="stylesheet" href="http://localhost:1313/css/hugo-tufte.min.css">
+    
+  
 
 
-
-
-
-
-<link rel="stylesheet" href="https://unpkg.com/purecss@2.0.3/build/pure-min.css">
-
-
-    <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.3/build/grids-responsive-min.css">
-
-
-
-
-
-
-
-
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-
-
-<link rel="stylesheet" href="https://stephenmalina.com/css/tufte.css">
-<link rel="stylesheet" href="https://stephenmalina.com/css/hugo-tufte.css">
-<link rel="stylesheet" href="https://stephenmalina.com/css/hugo-tufte-override.css">
 
   
-<script type="application/javascript">
-var doNotTrack = false;
-if (!doNotTrack) {
-	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-	ga('create', 'UA-187780632-1', 'auto');
-	
-	ga('send', 'pageview');
-}
-</script>
-
   
-<script type="application/javascript">
-var doNotTrack = false;
-if (!doNotTrack) {
-	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
-	ga('create', 'UA-187780632-1', 'auto');
-	
-	ga('send', 'pageview');
-}
-</script>
-<script async src='https://www.google-analytics.com/analytics.js'></script>
+    
+      <link rel="stylesheet" href="http://localhost:1313/css/hugo-tufte-options.min.css">
+    
+  
+
+
+<link rel="stylesheet" href="http://localhost:1313/css/hugo-tufte-override.css">
 
 </head>
-
-
 <body>
-<div id="layout" class="pure-g">
-<article class="pure-u-1">
-<header class="brand">
-  <h1>Stephen Malina</h1>
-  <h2>This is my blog. There are many others like it but this one is mine.</h2>
-  <nav class="menu">
-    <ul>
-    
-        <li><a href="https://stephenmalina.com/">Home</a></li>
-    
-        <li><a href="https://stephenmalina.com/about">About</a></li>
-    
-        <li><a href="https://stephenmalina.com/post">Post</a></li>
-    
-        <li><a href="https://stephenmalina.com/subscribe">Subscribe</a></li>
-    
-        <li><a href="https://stephenmalina.com/tags">Tags</a></li>
-    
-    </ul>
-</nav>
 
-</header>
 
-<section>
-<h1 class="content-title">
+<article id="main">
+  <section>
+<h1 class="content-title">Coursera ML&nbsp;:: Draft</h1><p class=subtitle>Week 10 - Large Scale Machine Learning</p></section>
+
   
-  <a href="https://stephenmalina.com/post/2018-06-04-machine-learning-week-10/">Coursera ML :: Draft </a>
-  
+
+  <section><h1 id="large-scale-machine-learning">
+Large Scale Machine Learning
+<a href="#large-scale-machine-learning" class="heading-anchor">#</a>
 </h1>
-
-<p class=subtitle>Week 10 - Large Scale Machine Learning</p>
-
-  <span class="content-meta">
-    
-
-
-    
-      <i class="fa fa-calendar"></i>
-      &nbsp;Jun 4, 2018
-    
-
-    
-      &nbsp;<i class="fa fa-clock-o"></i>
-      &nbsp;4 min read
-    
-
-    
-  </span>
-
-
-</section>
-
-
-
-<section><h1 id="large-scale-machine-learning">Large Scale Machine Learning</h1>
-<h2 id="gradient-descent-with-large-datasets">Gradient Descent With Large Datasets</h2>
+<h2 id="gradient-descent-with-large-datasets">
+Gradient Descent With Large Datasets
+<a href="#gradient-descent-with-large-datasets" class="heading-anchor">#</a>
+</h2>
 <blockquote>
-<p>It&rsquo;s not who has the best algorithm that wins. It&rsquo;s who has the most data.</p>
-</blockquote>
+<p>It&rsquo;s not who has the best algorithm that wins. It&rsquo;s who has the most data.</p></blockquote>
 <ul>
 <li>
 <p>We want to be able to learn with large datasets. This rings very true with my experience. Data scientists at Compass were handicapped by the lack of large datasets.</p>
@@ -138,15 +75,26 @@ if (!doNotTrack) {
 <p>How do we sanity check if a smaller training set will do just as well? If we have high variance with a small training set, then it&rsquo;s worth trying our algorithm on a bigger dataset. High variance often means there&rsquo;s too little structure so we&rsquo;re capturing surface-level features.</p>
 </li>
 </ul>
-<h3 id="stochastic-gradient-descent">Stochastic Gradient Descent</h3>
+<h3 id="stochastic-gradient-descent">
+Stochastic Gradient Descent
+<a href="#stochastic-gradient-descent" class="heading-anchor">#</a>
+</h3>
 <blockquote>
-<p>The danger of the race to the bottom is that you race to the wrong bottom.</p>
-</blockquote>
-<h4 id="my-pre-watch-prediction">My Pre-Watch Prediction</h4>
+<p>The danger of the race to the bottom is that you race to the wrong bottom.</p></blockquote>
+<h4 id="my-pre-watch-prediction">
+My Pre-Watch Prediction
+<a href="#my-pre-watch-prediction" class="heading-anchor">#</a>
+</h4>
 <p>For stochastic gradient descent, the goal is to avoid local minima. We therefore need a way to jump from one hill in our cost manifold to another. I can imagine doing this by occasionally randomly moving $$\theta_j$$ while we&rsquo;re descending.</p>
-<h4 id="review-of-batch-gradient-descent">Review of Batch Gradient Descent</h4>
+<h4 id="review-of-batch-gradient-descent">
+Review of Batch Gradient Descent
+<a href="#review-of-batch-gradient-descent" class="heading-anchor">#</a>
+</h4>
 <p>Batch gradient descent is O(m) for each gradient adjustment. That&rsquo;s really slow.</p>
-<h4 id="stochastic-gradient-descent-1">Stochastic Gradient Descent</h4>
+<h4 id="stochastic-gradient-descent-1">
+Stochastic Gradient Descent
+<a href="#stochastic-gradient-descent-1" class="heading-anchor">#</a>
+</h4>
 <p>$$
 cost(\theta, (x^{(i)}, y^{(i)})) = \dfrac{1}{2}(h_{theta}(x^{(i)}) - y^{(i)})^2
 $$</p>
@@ -156,7 +104,7 @@ $$</p>
 <p>For posterity, the stochastic gradient descent algorithm is:</p>
 <pre><code>repeat {
   for i := 1,...,m {
-    update gradient
+  	update gradient
   }
 }
 </code></pre>
@@ -164,26 +112,40 @@ $$</p>
 <p>$$
 \theta_j := \theta_j - \alpha(h_{\theta}(x^{(i)}) - y^{(i)})x_{j}^{(i)}
 $$</p>
-<h3 id="mini-batch-gradient-descent">Mini-Batch Gradient Descent</h3>
+<h3 id="mini-batch-gradient-descent">
+Mini-Batch Gradient Descent
+<a href="#mini-batch-gradient-descent" class="heading-anchor">#</a>
+</h3>
 <p>Mini-batch gradient descent is a compromise between full-on batch and stochastic gradient descent. For each outer loop, we use a small number, $$b$$, examples to update $$\theta_j$$.</p>
 <p>Mini-batch gradient descent maximizes the benefits of parallelization of vectorized operations by optimizing batch sizes to match parallel limits of processors.</p>
-<h3 id="stochastic-gradient-descent-convergence">Stochastic Gradient Descent Convergence</h3>
+<h3 id="stochastic-gradient-descent-convergence">
+Stochastic Gradient Descent Convergence
+<a href="#stochastic-gradient-descent-convergence" class="heading-anchor">#</a>
+</h3>
 <blockquote>
-<p>So that he who wanders does not become lost.</p>
-</blockquote>
+<p>So that he who wanders does not become lost.</p></blockquote>
 <p>For normal batch gradient descent, we&rsquo;d plot $$J_{train}(\theta)$$ as a function of the number of iterations of gradient descent. This was too slow to do in realtime however, because computing $$J_{train}$$ required computing the sum of the output of a function of all of our $$m$$ inputs.</p>
 <p>For stochastic gradient descent, computing $$cost(\theta, (x^{(i)}, y^{(i)}))$$ is cheap enough that we can compute it as we&rsquo;re updating $$\theta$$.</p>
 <p>Here&rsquo;s what I don&rsquo;t understand. He&rsquo;s showing all these plots, but I don&rsquo;t see how we can comfortably monitor $$J_{train}$$ as we adjust $$\theta$$ in real time because we don&rsquo;t have a way to know what granularity of trend we can reliably act upon.</p>
 <p>If we&rsquo;re worried about convergence, we can slowly decrease $$\alpha$$ over time. For example, $$ \alpha = \dfrac{const1}{iterationNumber + const2} $$. Obviously, we have to finick with the constants.</p>
-<h2 id="advanced-topics">Advanced Topics</h2>
-<h3 id="online-learning">Online Learning</h3>
+<h2 id="advanced-topics">
+Advanced Topics
+<a href="#advanced-topics" class="heading-anchor">#</a>
+</h2>
+<h3 id="online-learning">
+Online Learning
+<a href="#online-learning" class="heading-anchor">#</a>
+</h3>
 <p>Oh yeah, this is my stuff! I&rsquo;ve been curiuos about this for so long. How do we update our algorithm&rsquo;s features using data streaming in from our product&rsquo;s activity?</p>
-<h4 id="shipping-service-example">Shipping Service Example</h4>
+<h4 id="shipping-service-example">
+Shipping Service Example
+<a href="#shipping-service-example" class="heading-anchor">#</a>
+</h4>
 <p>An example of an online learning problem: shipping service website where user gets a quote for shipping an item and does or doesn&rsquo;t decide to ship their item using our service.</p>
 <p>Features: $$x$$ captures the properties of user, of origin/destination, and of asking price. We want to learn $$p(y = 1|x;\theta)$$ to optimize price.</p>
 <p>To model this, we can start by using logistic regression.</p>
 <p>Assume our website data capture and online learning algorithm is:</p>
-<pre><code>repeat forever {
+<pre tabindex="0"><code>repeat forever {
   get (x, y) corresponding to user
   update theta using (x, y)
 }
@@ -194,7 +156,10 @@ $$</p>
 <p>Notice we don&rsquo;t have $$x^{(i)}$$ because we&rsquo;re updating our gradient one item at a time.</p>
 <p>This is surprisingly simple!</p>
 <p>An interesting property of this online learning algorithm is that it can adapt to changing user preferences.</p>
-<h4 id="product-search-example">Product Search Example</h4>
+<h4 id="product-search-example">
+Product Search Example
+<a href="#product-search-example" class="heading-anchor">#</a>
+</h4>
 <p>We&rsquo;re selling cell phones. Users come to our site and search for them. Our search returns 10 results out of the 100 we have in store.</p>
 <p>Features:</p>
 <ul>
@@ -203,45 +168,103 @@ $$</p>
 <li>Learn $$p(y = 1|x;\theta)$$. This is known as the problem of learning the predicted click-through rate (CTR). We can use this to show the user the 10 phones they&rsquo;re most likely to click on.</li>
 </ul>
 </section>
-<section>
-  
+  <section><footer class="page-footer">
+<hr />
 
-  <footer class="page-footer">
-		<hr>
-		<ul class="page-footer-menu">
-		
-      <li><a href="https://github.com/an1lam"><i class='fa fa-github fa-2x'></i> </a></li>
-		
-      <li><a href="https://twitter.com/an1lam"><i class='fa fa-twitter fa-2x'></i> </a></li>
-		
-      <li><a href="mailto:stephenmalina@gmail.com"><i class='fa fa-envelope fa-2x'></i> </a></li>
-		
-      <li><a href="https://stackoverflow.com/users/1631855/an1lam"><i class='fa fa-stack-overflow fa-2x'></i> </a></li>
-		
-		</ul>
-
+<div class="previous-post" style="display:inline-block;">
   
-    <p>
-      Powered by <a href="https://gohugo.io">Hugo</a> and the
-      <a href="https://github.com/shawnohare/hugo-tufte">Tufte theme</a>.
-    </p>
+  <a class="link-reverse" href="http://localhost:1313/post/2018-06-03-math-test/?ref=footer">« Math Test</a>
   
-
-	<div class="copyright">
-	<p>
-    
-      &copy; 2021
-    .
-    All rights reserved.
-    
-  </p>
 </div>
+
+<div class="next-post", style="display:inline-block;float:right;">
+  
+  <a class="link-reverse" href="http://localhost:1313/post/2018-06-09-statistical-models-ch-1/?ref=footer">Statistical Models - Theory and Practice »</a>
+  
+</div>
+
+<ul class="page-footer-menu">
+  
+  
+  <li><a href="https://twitter.com/an1lam">Twitter</a></li>
+  
+  
+  
+
+  
+  <li><a href="https://github.com/an1lam">GitHub</a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <li><a href="https://scholar.google.com/citations?user=Q6_3PJEAAAAJ">Google Scholar</a></li>
+  
+  
+  
+    <li><a href="https://github.com/an1lam"><i class='fa fa-github fa-2x'></i>  </a></li>
+  
+    <li><a href="https://twitter.com/an1lam"><i class='fa fa-twitter fa-2x'></i>  </a></li>
+  
+    <li><a href="mailto:stephenmalina@gmail.com"><i class='fa fa-envelope fa-2x'></i>  </a></li>
+  
+    <li><a href="https://stackoverflow.com/users/1631855/an1lam"><i class='fa fa-stack-overflow fa-2x'></i>  </a></li>
+  
+</ul>
+
+
+<p>
+  Powered by <a href="https://gohugo.io">Hugo</a> and the
+  <a href="https://github.com/loikein/hugo-tufte">Tufte theme</a>.
+</p>
+
+
+
+
 </footer>
-
-
-
+</section>
+  <section><nav class="menu">
+    <ul>
+    
+        <li><a href="http://localhost:1313/">Home</a></li>
+    
+        <li><a href="http://localhost:1313/about">About</a></li>
+    
+        <li><a href="http://localhost:1313/post">Post</a></li>
+    
+        <li><a href="http://localhost:1313/bets">Bets</a></li>
+    
+        <li><a href="http://localhost:1313/greatest-hits">Greatest Hits</a></li>
+    
+        <li><a href="http://localhost:1313/subscribe">Subscribe</a></li>
+    
+        <li><a href="http://localhost:1313/tags">Tags</a></li>
+    
+    </ul>
+</nav>
 </section>
 </article>
-</div>
+
+
+
+
+
 </body>
+
 </html>

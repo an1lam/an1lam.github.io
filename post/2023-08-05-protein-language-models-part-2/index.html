@@ -1,151 +1,70 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+<html lang="en-us"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+<title>Protein Language Models (Part 2): Models - Stephen Malina</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description"
+    content="I&rsquo;m experimenting with Lilian Weng style review blog posts on topics I wish I&rsquo;d had someone to explain to me when I got started in protein machine learning.
+This is the second post in a series introducing protein language models. The other posts are:
 
-<head>
-<title>Stephen Malina - Protein Language Models (Part 2): Models</title>
-  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+Protein Language Models (Part 1): Introduction &amp; Datasets
+Protein Language Models (Part 2): Models
+Protein Language Models (Part 3): Benchmarks &amp; Evaluation
+Protein Language Models (Part 4): Scaling
+Protein Language Models (Part 5): FAQ &amp; Conclusion
 
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="">
-<meta name="keywords" content="">
-<meta name="author" content="Stephen Malina">
-<meta name="generator" content="Hugo 0.68.3" />
+This post focuses on the different types of PLMs with a specific focus on deviations from the standard LLM playbook. ">
+<link rel="canonical" href="http://localhost:1313/post/2023-08-05-protein-language-models-part-2/" />
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="preload" as="style"
+      href="https://fonts.googleapis.com/css?family=Noto+Serif+SC|Noto+Emoji&display=swap" />
+<link rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Noto+Serif+SC|Noto+Emoji&display=swap"
+      media="print" onload="this.media='all'" />
+<noscript>
+<link rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Noto+Serif+SC&display=swap" />
+</noscript>
+
 
   
   
-
-  <script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-  tex2jax: {
-    inlineMath: [['$','$'], ['\\(','\\)']],
-    displayMath: [['$$','$$'], ['\\[','\\]']],
-    processEscapes: true,
-    processEnvironments: true,
-    menuSettings: { zoom: "Double-Click" },
-    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
-    TeX: { equationNumbers: { autoNumber: "AMS" },
-         extensions: ["AMSmath.js", "AMSsymbols.js"] }
-  }
-});
-</script>
-
-<script type="text/javascript"
-  src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
-</script>
+    
+      <link rel="stylesheet" href="http://localhost:1313/css/hugo-tufte.min.css">
+    
+  
 
 
-
-
-
-
-
-<link rel="stylesheet" href="https://unpkg.com/purecss@2.0.3/build/pure-min.css">
-
-
-    <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.3/build/grids-responsive-min.css">
-
-
-
-
-
-
-
-
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-
-
-<link rel="stylesheet" href="https://stephenmalina.com/css/tufte.css">
-<link rel="stylesheet" href="https://stephenmalina.com/css/hugo-tufte.css">
-<link rel="stylesheet" href="https://stephenmalina.com/css/hugo-tufte-override.css">
 
   
-<script type="application/javascript">
-var doNotTrack = false;
-if (!doNotTrack) {
-	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-	ga('create', 'UA-187780632-1', 'auto');
-	
-	ga('send', 'pageview');
-}
-</script>
-
   
-<script type="application/javascript">
-var doNotTrack = false;
-if (!doNotTrack) {
-	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
-	ga('create', 'UA-187780632-1', 'auto');
-	
-	ga('send', 'pageview');
-}
-</script>
-<script async src='https://www.google-analytics.com/analytics.js'></script>
+    
+      <link rel="stylesheet" href="http://localhost:1313/css/hugo-tufte-options.min.css">
+    
+  
+
+
+<link rel="stylesheet" href="http://localhost:1313/css/hugo-tufte-override.css">
 
 </head>
-
-
 <body>
-<div id="layout" class="pure-g">
-<article class="pure-u-1">
-<header class="brand">
-  <h1>Stephen Malina</h1>
-  <h2>This is my blog. There are many others like it but this one is mine.</h2>
-  <nav class="menu">
-    <ul>
-    
-        <li><a href="https://stephenmalina.com/">Home</a></li>
-    
-        <li><a href="https://stephenmalina.com/about">About</a></li>
-    
-        <li><a href="https://stephenmalina.com/post">Post</a></li>
-    
-        <li><a href="https://stephenmalina.com/bets">Bets</a></li>
-    
-        <li><a href="https://stephenmalina.com/subscribe">Subscribe</a></li>
-    
-        <li><a href="https://stephenmalina.com/tags">Tags</a></li>
-    
-    </ul>
-</nav>
 
-</header>
 
-<section>
-<h1 class="content-title">
+<article id="main">
+  <section>
+<h1 class="content-title">Protein Language Models (Part 2): Models&nbsp;:: Draft</h1></section>
+
   
-  <a href="https://stephenmalina.com/post/2023-08-05-protein-language-models-part-2/">Protein Language Models (Part 2): Models</a>
-  
-</h1>
-
-
-
-  <span class="content-meta">
-    
-
-
-    
-      <i class="fa fa-calendar"></i>
-      &nbsp;Aug 5, 2023
-    
-
-    
-      &nbsp;<i class="fa fa-clock-o"></i>
-      &nbsp;16 min read
-    
-
-    
-  </span>
-
-
-</section>
-
-
 <section>
   <details closed class="toc">
-    <summary>Contents</summary>
+    <summary>Table of Contents</summary>
     <nav id="TableOfContents">
   <ul>
     <li><a href="#single-sequence-models">Single Sequence Models</a>
@@ -158,19 +77,19 @@ if (!doNotTrack) {
     </li>
     <li><a href="#structuresequence-models">Structure/sequence models</a>
       <ul>
-        <li><a href="#esm-ifhttpswwwbiorxivorgcontent10110120220410487779v2"><a href="https://www.biorxiv.org/content/10.1101/2022.04.10.487779v2">ESM-IF</a></a></li>
-        <li><a href="#prostt5httpswwwbiorxivorgcontent10110120230723550085v1"><a href="https://www.biorxiv.org/content/10.1101/2023.07.23.550085v1">ProstT5</a></a></li>
+        <li><a href="#esm-if"><a href="https://www.biorxiv.org/content/10.1101/2022.04.10.487779v2">ESM-IF</a></a></li>
+        <li><a href="#prostt5"><a href="https://www.biorxiv.org/content/10.1101/2023.07.23.550085v1">ProstT5</a></a></li>
       </ul>
     </li>
     <li><a href="#family-based-retrieval-models">Family-based retrieval models</a>
       <ul>
-        <li><a href="#msa-transformerhttpsproceedingsmlrpressv139rao21ahtml"><a href="(https://proceedings.mlr.press/v139/rao21a.html)">MSA Transformer</a></a></li>
-        <li><a href="#transceptionhttpsarxivorgabs220513760"><a href="https://arxiv.org/abs/2205.13760">Transception</a></a></li>
+        <li><a href="#msa-transformer"><a href="(https://proceedings.mlr.press/v139/rao21a.html)">MSA Transformer</a></a></li>
+        <li><a href="#transception"><a href="https://arxiv.org/abs/2205.13760">Transception</a></a></li>
       </ul>
     </li>
     <li><a href="#conditional-models">Conditional models</a>
       <ul>
-        <li><a href="#progenhttpswwwnaturecomarticless41587-022-01618-2"><a href="https://www.nature.com/articles/s41587-022-01618-2">Progen</a></a></li>
+        <li><a href="#progen"><a href="https://www.nature.com/articles/s41587-022-01618-2">Progen</a></a></li>
       </ul>
     </li>
     <li><a href="#conclusion">Conclusion</a></li>
@@ -189,49 +108,59 @@ if (!doNotTrack) {
 </section>
 
 
-<section><p>_I&rsquo;m experimenting with <a href="https://lilianweng.github.io/posts/">Lilian Weng</a> style review blog posts on topics I wish I&rsquo;d had someone to explain to me when I got started in protein machine learning.</p>
-<p>This is the second post in a series introducing protein language models_. The other posts are:</p>
+  <section><p><em>I&rsquo;m experimenting with <a href="https://lilianweng.github.io/posts/">Lilian Weng</a> style review blog posts on topics I wish I&rsquo;d had someone to explain to me when I got started in protein machine learning.</em></p>
+<p><em>This is the second post in a series introducing protein language models</em>. The other posts are:</p>
 <ol>
-<li><a href="https://stephenmalina.com/post/2023-07-22-protein-language-models-part-1">Protein Language Models (Part 1): Introduction &amp; Datasets</a></li>
-<li><a href="https://stephenmalina.com/post/2023-07-22-protein-language-models-part-2">Protein Language Models (Part 2): Models</a></li>
+<li><a href="http://localhost:1313/post/2023-07-22-protein-language-models-part-1">Protein Language Models (Part 1): Introduction &amp; Datasets</a></li>
+<li><a href="http://localhost:1313/post/2023-07-22-protein-language-models-part-2">Protein Language Models (Part 2): Models</a></li>
 <li>Protein Language Models (Part 3): Benchmarks &amp; Evaluation</li>
 <li>Protein Language Models (Part 4): Scaling</li>
 <li>Protein Language Models (Part 5): FAQ &amp; Conclusion</li>
 </ol>
 <p>This post focuses on the different types of PLMs with a specific focus on deviations from the standard LLM playbook.</p>
-<h2 id="single-sequence-models">Single Sequence Models</h2>
+<h2 id="single-sequence-models">
+Single Sequence Models
+<a href="#single-sequence-models" class="heading-anchor">#</a>
+</h2>
 <p>The most common type of PLM takes single sequences as input and learns to predict their probability. These models are the most common in the PLM world and so are a good place to start.</p>
-<h3 id="architectures">Architectures</h3>
-<p>Early work on protein language models such as <a href="https://www.biorxiv.org/content/10.1101/589333v1">UniRep</a> employed various RNN architectures. More recently, the <a href="https://www.biorxiv.org/content/10.1101/2022.05.19.492714v1">CARP paper</a> argued that convolutional models could perform competitively with Transformers on both pretraining metrics and downstream tasks. Other papers, such as the ESM-InverseFolding (ESM-IF) paper, have used Graph Neural Networks (GNNs). However, as of July 2023, Transformers have the most momentum<label for="sidenote-ed438fd929edf4affb490e25b73d956d-0" class="margin-toggle sidenote-number"></label>
-<input type="checkbox" id="sidenote-ed438fd929edf4affb490e25b73d956d-0" class="margin-toggle"/>
-<span class="sidenote"> The <a href="https://hazyresearch.stanford.edu/">Hazy Research</a> group at Stanford has recently put out a flurry of papers that purportedly improve on various aspects of Transformers. Benefiting from careful investigation of how attention works, the <a href="https://hazyresearch.stanford.edu/blog/2023-03-07-hyena">Hyena</a> architecture overcomes attention&rsquo;s quadratic bottleneck while potentially maintaining its performance. (A slew of sub-quadratic attention variants have claimed to do this, but people I trust seemingly put more stock in Hyena actually achieving it at scale than other candidates.) Combined with the more recent <a href="https://hazyresearch.stanford.edu/blog/2023-07-25-m2-bert">Monarch Mixer</a>, which tackles the MLP efficiency bottleneck, I assign &gt;40% probability that SoTA models no longer use attention in 5 years. </span>
+<h3 id="architectures">
+Architectures
+<a href="#architectures" class="heading-anchor">#</a>
+</h3>
+<p>Early work on protein language models such as <a href="https://www.biorxiv.org/content/10.1101/589333v1">UniRep</a> employed various RNN architectures. More recently, the <a href="https://www.biorxiv.org/content/10.1101/2022.05.19.492714v1">CARP paper</a> argued that convolutional models could perform competitively with Transformers on both pretraining metrics and downstream tasks. Other papers, such as the ESM-InverseFolding (ESM-IF) paper, have used Graph Neural Networks (GNNs). However, as of July 2023, Transformers have the most momentum<label for="sidenote-1" class="margin-toggle sidenote-number">(1)</label>
+<input type="checkbox" id="sidenote-1" class="margin-toggle"/>
+<span class="sidenote">
+<span class="sidenote-number">(1)</span>The <a href="https://hazyresearch.stanford.edu/">Hazy Research</a> group at Stanford has recently put out a flurry of papers that purportedly improve on various aspects of Transformers. Benefiting from careful investigation of how attention works, the <a href="https://hazyresearch.stanford.edu/blog/2023-03-07-hyena">Hyena</a> architecture overcomes attention’s quadratic bottleneck while potentially maintaining its performance. (A slew of sub-quadratic attention variants have claimed to do this, but people I trust seemingly put more stock in Hyena actually achieving it at scale than other candidates.) Combined with the more recent <a href="https://hazyresearch.stanford.edu/blog/2023-07-25-m2-bert">Monarch Mixer</a>, which tackles the MLP efficiency bottleneck, I assign &gt;40% probability that SoTA models no longer use attention in 5 years.
+</span>
 behind them in the PLM world. I believe this will continue to hold unless another architecture shows better holistic performance and replaces transformers more broadly. Models from the ESM lineage, [<a href="https://paperswithcode.com/paper/rita-a-study-on-scaling-up-generative-protein">RITA</a>, <a href="https://www.biorxiv.org/content/10.1101/2020.03.07.982272v1?ref=blog.salesforceairesearch.com">ProGen 1</a> and <a href="https://arxiv.org/abs/2206.13517">2</a>, <a href="https://ieeexplore.ieee.org/document/9477085?denied=">ProtTrans</a>&rsquo; various models, and <a href="https://arxiv.org/abs/2301.06568">Ankh</a> all use transformer variants.</p>
-<h3 id="prottrans">ProtTrans</h3>
+<h3 id="prottrans">
+ProtTrans
+<a href="#prottrans" class="heading-anchor">#</a>
+</h3>
 <p>Prominent PLMs use a mix of model structures and losses &ndash; encoder-only MLM, encoder-decoder seq2seq MLM, decoder-only autoregressive &ndash; first explored by the NLP community. <a href="https://arxiv.org/abs/2007.06225">ProtTrans</a> investigated the impact of these choices on downstream task performance by training models with different setups using comparable parameter counts.</p>
-<p><label for="marginnote-ed438fd929edf4affb490e25b73d956d-1" class="margin-toggle">⊕</label>
-<input type="checkbox" id="marginnote-ed438fd929edf4affb490e25b73d956d-1" class="margin-toggle"/>
-<span class="marginnote">Differences between proteins and language might lead us to different priors about which losses make the most sense. Relative to language with its temporal structure, proteins have less inherent left-to-right structure. Ribosomes translate from left (N-terminus) to right (C-terminus), but protein function depends much more on spatial location and contiguity than order in the sequence. For that reason, we could imagine that masked or other bidirectional losses make more sense for protein language models. Admittedly though, people made similar arguments for why autoregressive losses would be insufficient for powerful language models and were wrong, so rather than speculate, we&rsquo;d like to these questions empirically. </span></p>
+<p><label for="marginnote-1" class="margin-toggle marginnote-ind">⊕</label>
+<input type="checkbox" id="marginnote-1" class="margin-toggle"/>
+<span class="marginnote">
+Differences between proteins and language might lead us to different priors about which losses make the most sense. Relative to language with its temporal structure, proteins have less inherent left-to-right structure. Ribosomes translate from left (N-terminus) to right (C-terminus), but protein function depends much more on spatial location and contiguity than order in the sequence. For that reason, we could imagine that masked or other bidirectional losses make more sense for protein language models. Admittedly though, people made similar arguments for why autoregressive losses would be insufficient for powerful language models and were wrong, so rather than speculate, we’d like to these questions empirically.
+</span></p>
 <p>
 
-
-  
     <figure class="fullwidth">
   
-
-
-
   
-  <img src="https://stephenmalina.com/images/prottrans-fig1.png" >
+  <img src="http://localhost:1313/images/prottrans-fig1.png" alt="Image">
   
   <figcaption>
 
-  
-  
-  
-  
-  
+
+
+
+
+
 
   </figcaption>
+
+
 
 
 
@@ -243,59 +172,54 @@ ProtTrans Figure 1: Using pretrained LMs as feature extractors for per-residue a
 <p>They looked at both a per-residue task (secondary structure prediction) and two per-protein classification tasks (membrane vs. soluble and subcellular localization). Of the models trained on the same dataset (UniRef100) with roughly equivalent parameter counts, ProtBert performs best, suggesting that simple encoder-only models combined with MLM losses work well in proteins (as they do in NLP). However, this conclusion isn&rsquo;t as strong as it could be because the paper lacks a similarly sized seq2seq (T5-style) model to compare to, even though the larger T5 models consistently perform best.</p>
 
 
-
-  
     <figure >
   
+    <label for="marginfig-4" class="margin-toggle marginnote-ind">⊕</label>
+    <input type="checkbox" id="marginfig-4" class="margin-toggle"/>
+    <span class="marginnote">
+
+
+ProtTrans Table 3: Performance of different models on per-residue secondary structure prediction datasets with a CNN top model.
 
 
 
-  <label for="" class="margin-toggle">⊕</label>
-  <input type="checkbox" id="" class="margin-toggle">
-  <span class="marginnote">
-  
+</span>
 
-  
-  ProtTrans Table 3: Performance of different models on per-residue secondary structure prediction datasets with a CNN top model.
-  
-  
-  
-
-  </span>
 
 
   
-  <img src="https://stephenmalina.com/images/prottrans-table3.png" >
+  <img src="http://localhost:1313/images/prottrans-table3.png" alt="Image">
   
+
 
 
 
 </figure>
 
 
-<h3 id="ankh">Ankh</h3>
+<h3 id="ankh">
+Ankh
+<a href="#ankh" class="heading-anchor">#</a>
+</h3>
 <p>Taking insights from ProtTrans, the Ankh authors (many of whom also worked on ProtTrans) wrote a follow-up <a href="https://arxiv.org/pdf/2301.06568.pdf">paper</a> that used careful experiments with pretraining to find a setup that enabled them to train smaller models that performed better on average than much larger ProtTrans and ESM models on downstream tasks. For their experiments, they included the downstream tasks used by ProtTrans but also additional structure and fitness tasks.</p>
 
 
-
-  
     <figure class="fullwidth">
   
-
-
-
   
-  <img src="https://stephenmalina.com/images/ankh-table1.png" >
+  <img src="http://localhost:1313/images/ankh-table1.png" alt="Image">
   
   <figcaption>
 
-  
-  Ankh Table 1: Comparing Ankh (1.15B parameters) and Ankh_Base (450M parameters).
-  
-  
-  
+
+Ankh Table 1: Comparing Ankh (1.15B parameters) and Ankh_Base (450M parameters).
+
+
+
 
   </figcaption>
+
+
 
 
 
@@ -304,8 +228,8 @@ ProtTrans Figure 1: Using pretrained LMs as feature extractors for per-residue a
 
 
 <blockquote cite="">
-   On average, Ankh improved the PLM SOTA performance by 4.8% while Ankh base improved it by 3.4% with <10% & 3% of the training parameters and 30% & 15% of the embedding dimension, for Ankh and Ankh base respectively. 
-  <footer></footer>
+<p>On average, Ankh improved the PLM SOTA performance by 4.8% while Ankh base improved it by 3.4% with &lt;10% &amp; 3% of the training parameters and 30% &amp; 15% of the embedding dimension, for Ankh and Ankh base respectively.</p>
+<footer></footer>
 </blockquote>
 <p>To map out the effect of architectural and loss decisions, they performed 22 numbered experiments controlled for number of parameters and evaluated them using performance across downstream tasks. I&rsquo;d recommend at least skimming them as no other PLM paper shows the same level of rigor and care, but here I&rsquo;ll highlight a few key takeaways. Following ProtTrans&rsquo; finding that the T5 model performed best (although as mentioned that conclusion suffers from not controlling for scale), all their experiments used a seq2seq encoder-decoder model:</p>
 <ul>
@@ -313,43 +237,47 @@ ProtTrans Figure 1: Using pretrained LMs as feature extractors for per-residue a
 <li>An encoder 2x bigger than the decoder works just as well and saves compute: Experiments 10-12 cover their investigation of varying relative encoder vs. decoder size. They found that using a larger encoder usually produces the best performance on downstream tasks, intuitively because doing so results in better embeddings.</li>
 <li>In general, differences from architectural choices proved small: More of a meta point, but the tables for each of these individual experiments typically show small performance differences on downstream tasks, usually within a percent or two on any individual task. Masking strategy had the highest effect sizes, but even those generally fall in the range of 2-3% relative to the next best strategy for any given task.</li>
 </ul>
-<h3 id="other-models">Other Models</h3>
+<h3 id="other-models">
+Other Models
+<a href="#other-models" class="heading-anchor">#</a>
+</h3>
 <ul>
 <li><a href="https://www.pnas.org/doi/10.1073/pnas.2016239118">ESM-1b</a>, <a href="https://www.biorxiv.org/content/10.1101/2021.07.09.450648v1.full">ESM-1v</a>, and <a href="https://www.biorxiv.org/content/10.1101/2022.07.20.500902v1.full">ESM-2</a>: Three sets of masked language models ranging in size from 30M parameters to 15B parameters. The ESM-1b and ESM-1v models deserve credit for demonstrating the potential of scaled up masked language models for both zero-shot fitness and contact prediction. The largest ESM-2 model was used to train [ESMFold], one of the early demonstrations that a PLM could replace the MSA input and layers in a structure prediction model and perform competitively to the state-of-the-art (Alphafold 2 at the time).</li>
 <li><a href="https://arxiv.org/abs/2206.13517">Progen 2</a>: Set of auto-regressive models ranging size from 151M to 6.4B parameters. Relative to other PLM papers, focused more heavily on testing the model&rsquo;s ability to generate proteins, although they also tested zero-shot fitness prediction and performed better than other existing single sequence models at the time. Progen 2 will come up again in the generation section of the evaluation post.</li>
 <li><a href="https://paperswithcode.com/paper/rita-a-study-on-scaling-up-generative-protein">RITA</a>: Set of four auto-regressive models trained at various sizes (the largest at 1.2B parameters). This is the first PLM paper I&rsquo;m aware of that actually mapped out scaling laws and used them to train compute-optimal models. RITA will feature heavily in the scaling post.</li>
 <li><a href="https://www.nature.com/articles/s41467-022-32007-7">ProtGPT2</a>: Early example of an auto-regressive PLM trained using the GPT2 architecture. Has largely been superseded by bigger, better models but deserves credit for demonstrating just applying the GPT recipe to proteins could work.</li>
 </ul>
-<h2 id="structuresequence-models">Structure/sequence models</h2>
+<h2 id="structuresequence-models">
+Structure/sequence models
+<a href="#structuresequence-models" class="heading-anchor">#</a>
+</h2>
 <p>Besides sequence, structure presents a natural modality for PLMs to incorporate. Structure &ndash; if you count dynamics as part of structure &ndash; directly mediates nearly all of protein function and so injecting structural knowledge into PLMs may help them perform and generalize better. PLMs have started to incorporate structure via the &ldquo;inverse folding&rdquo; task. Inverse folding conditions generation on structure, such that the model learns $ p(\textrm{sequence} | \textrm{structure}) $ rather than just $ p(\textrm{sequence}) $.</p>
-<h3 id="esm-ifhttpswwwbiorxivorgcontent10110120220410487779v2"><a href="https://www.biorxiv.org/content/10.1101/2022.04.10.487779v2">ESM-IF</a></h3>
+<h3 id="esm-if">
+<a href="https://www.biorxiv.org/content/10.1101/2022.04.10.487779v2">ESM-IF</a>
+<a href="#esm-if" class="heading-anchor">#</a>
+</h3>
 <p>ESM-IF was one of the early inverse folding models. ESM-IF was trained on a mix of sequence/structure pairs from AlphaFold DB (12M) and CATH (~16,000) and uses an encoder-decoder architecture that takes structures as inputs to the encoder and autoregressively decodes sequences conditioned on structural encodings. As seen below, it also uses an auxiliary span masking loss to train the encoder on structures. In order to handle structures as input, it uses rotation-equivariant layers called Geometric Vector Perceptron layers. At inference time, ESM-IF can generate sequences given a fixed backbone structure.</p>
 
 
-
-  
     <figure >
   
+    <label for="marginfig-7" class="margin-toggle marginnote-ind">⊕</label>
+    <input type="checkbox" id="marginfig-7" class="margin-toggle"/>
+    <span class="marginnote">
+
+
+ESM-IF Figure 1: ESM-IF&rsquo;s encoder-decoder architecture.
 
 
 
-  <label for="" class="margin-toggle">⊕</label>
-  <input type="checkbox" id="" class="margin-toggle">
-  <span class="marginnote">
-  
+</span>
 
-  
-  ESM-IF Figure 1: ESM-IF&#39;s encoder-decoder architecture.
-  
-  
-  
-
-  </span>
 
 
   
-  <img src="https://stephenmalina.com/images/esmif-fig1.png" >
+  <img src="http://localhost:1313/images/esmif-fig1.png" alt="Image">
   
+
 
 
 
@@ -359,25 +287,22 @@ ProtTrans Figure 1: Using pretrained LMs as feature extractors for per-residue a
 <p>ESM-IF improvement on prior inverse folding models primarily came from using AlphaFold DB rather than just CATH. As discussed in <a href="#datasets">Dataset</a>, AlphaFold DB contains ~1000x more sequence/structure pairs than CATH, providing a much richer dataset for learning inverse folding even with the caveat that some of its predicted structures have errors. By using a a larger model than previously (both for its GNN and Transformer versions), ESM-IF benefited from this scale, as shown in the following figure.</p>
 
 
-
-  
     <figure class="fullwidth">
   
-
-
-
   
-  <img src="https://stephenmalina.com/images/esmif-fig6.png" >
+  <img src="http://localhost:1313/images/esmif-fig6.png" alt="Image">
   
   <figcaption>
 
-  
-  ESM-IF Figure 6: The left plot shows perplexity as a function of dataset size for the ESM-IF Transformer model and a larger GNN model vs. the smaller GNN (previous SoTA). The right plot shows performance as a function of number of model parameters on the full dataset, where again we see that bigger is better.
-  
-  
-  
+
+ESM-IF Figure 6: The left plot shows perplexity as a function of dataset size for the ESM-IF Transformer model and a larger GNN model vs. the smaller GNN (previous SoTA). The right plot shows performance as a function of number of model parameters on the full dataset, where again we see that bigger is better.
+
+
+
 
   </figcaption>
+
+
 
 
 
@@ -385,46 +310,54 @@ ProtTrans Figure 1: Using pretrained LMs as feature extractors for per-residue a
 </figure>
 
 
-<h3 id="prostt5httpswwwbiorxivorgcontent10110120230723550085v1"><a href="https://www.biorxiv.org/content/10.1101/2023.07.23.550085v1">ProstT5</a></h3>
+<h3 id="prostt5">
+<a href="https://www.biorxiv.org/content/10.1101/2023.07.23.550085v1">ProstT5</a>
+<a href="#prostt5" class="heading-anchor">#</a>
+</h3>
 <p>ProstT5 also does inverse folding. Similar to ESM-IF, it was trained on sequence/structure pairs from AlphaFold DB (but not CATH), but it differs from ESM-IF in two ways. First, it&rsquo;s a structure and sequence to sequence model rather than only a structure to sequence model. Second, the authors adopted a much simpler, clever strategy for encoding structure, taking advantage of the 1D structural encoding used by <a href="https://www.nature.com/articles/s41587-023-01773-0">Foldseek</a> in order to be able to encode structures as sequences. Because of this, ProstT5 was trained by just fine-tuning an existing PLM (ProtT5) on structures encoded as tokens. This allows it to be used for inverse folding while maintaining its ability to embed sequences and extending it to structures. On an inverse folding benchmark, ProtT5 approaches but doesn&rsquo;t yet SoTA models&rsquo; performance. Its training process also seems to cause performance degradation on downstream tasks sequence-based tasks, so there&rsquo;s still room to improve. On the flip side, the fact that it works at all combined with our prior based on the naive approach of just feeding everything into a language model working well in other domains suggests the general is still promising.</p>
-<h2 id="family-based-retrieval-models">Family-based retrieval models</h2>
-<p>Multiple sequence alignments (MSAs) were arguably the earliest form of retrieval augmentation, coming around decades before <a href="https://openreview.net/forum?id=jh7wH2AzKK&amp;referrer=%5BTMLR%255D%28%252Fgroup%253Fid%253DTMLR%29">retrieval-augmented language models</a> entered the scene. Pre-language model era, protein researchers would often train <a href="https://en.wikipedia.org/wiki/Potts_model">Potts models</a> <label for="sidenote-ed438fd929edf4affb490e25b73d956d-8" class="margin-toggle sidenote-number"></label>
-<input type="checkbox" id="sidenote-ed438fd929edf4affb490e25b73d956d-8" class="margin-toggle"/>
-<span class="sidenote"> From an ML perspective, a Potts model is an unsupervised generative model trained with a maximum likelihood estimation objective using first and second-order interaction terms to learn covariance statistics. </span>
+<h2 id="family-based-retrieval-models">
+Family-based retrieval models
+<a href="#family-based-retrieval-models" class="heading-anchor">#</a>
+</h2>
+<p>Multiple sequence alignments (MSAs) were arguably the earliest form of retrieval augmentation, coming around decades before <a href="https://openreview.net/forum?id=jh7wH2AzKK&amp;referrer=%5BTMLR%255D%28%252Fgroup%253Fid%253DTMLR%29">retrieval-augmented language models</a> entered the scene. Pre-language model era, protein researchers would often train <a href="https://en.wikipedia.org/wiki/Potts_model">Potts models</a> <label for="sidenote-2" class="margin-toggle sidenote-number">(2)</label>
+<input type="checkbox" id="sidenote-2" class="margin-toggle"/>
+<span class="sidenote">
+<span class="sidenote-number">(2)</span>From an ML perspective, a Potts model is an unsupervised generative model trained with a maximum likelihood estimation objective using first and second-order interaction terms to learn covariance statistics.
+</span>
 on sequences from a protein family&rsquo;s MSA in order to learn residue covariation statistics. Similar to PLMs, Potts models were then used to predict protein contacts and sometimes fitness.</p>
-<p>With the advent of deep learning for proteins, PLMs have started to replace Potts Models due to their ability to handle unaligned sequences and learn representations from proteins across the entire tree of life. <label for="sidenote-ed438fd929edf4affb490e25b73d956d-9" class="margin-toggle sidenote-number"></label>
-<input type="checkbox" id="sidenote-ed438fd929edf4affb490e25b73d956d-9" class="margin-toggle"/>
-<span class="sidenote"> There&rsquo;s been interesting <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8752338/">work</a> showing how attention-based models relate to Potts models and proposing an attention variant, Factored Attention, that interpolates between the standard attention mechanism and Potts models. </span>
+<p>With the advent of deep learning for proteins, PLMs have started to replace Potts Models due to their ability to handle unaligned sequences and learn representations from proteins across the entire tree of life. <label for="sidenote-3" class="margin-toggle sidenote-number">(3)</label>
+<input type="checkbox" id="sidenote-3" class="margin-toggle"/>
+<span class="sidenote">
+<span class="sidenote-number">(3)</span>There’s been interesting <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8752338/">work</a> showing how attention-based models relate to Potts models and proposing an attention variant, Factored Attention, that interpolates between the standard attention mechanism and Potts models.
+</span>
 While standard PLMs aim to learn homology entirely from single sequence, researchers have experimented with setups that explicitly provide homology information as part of their input. Similar to how retrieval augmentation may allow for models to perform as well while using orders-of-magnitude fewer parameters, the hope here is that providing homology information can allow PLMs to perform as well or better with fewer parameters.</p>
-<h3 id="msa-transformerhttpsproceedingsmlrpressv139rao21ahtml"><a href="(https://proceedings.mlr.press/v139/rao21a.html)">MSA Transformer</a></h3>
+<h3 id="msa-transformer">
+<a href="(https://proceedings.mlr.press/v139/rao21a.html)">MSA Transformer</a>
+<a href="#msa-transformer" class="heading-anchor">#</a>
+</h3>
 <p>The MSA Transformer does masked language modeling but augments single sequence inputs with sequences from their MSAs.</p>
 <p>The MSA Transformer bucks the trend of PLMs not innovating on attention architectures with their invention of interleaved column and row attention (subsequently used by AlphaFold 2), which enables them to attend to an entire MSA without running into pains due to naive attention&rsquo;s quadratic bottleneck.
 
 
-
-  
     <figure >
   
+    <label for="marginfig-11" class="margin-toggle marginnote-ind">⊕</label>
+    <input type="checkbox" id="marginfig-11" class="margin-toggle"/>
+    <span class="marginnote">
+
+
+Figure 1 from MSA Transformer showing the structure of the column and row attention matrices.
 
 
 
-  <label for="" class="margin-toggle">⊕</label>
-  <input type="checkbox" id="" class="margin-toggle">
-  <span class="marginnote">
-  
+</span>
 
-  
-  Figure 1 from MSA Transformer showing the structure of the column and row attention matrices.
-  
-  
-  
-
-  </span>
 
 
   
-  <img src="https://stephenmalina.com/images/msatransformer-fig1.png" >
+  <img src="http://localhost:1313/images/msatransformer-fig1.png" alt="Image">
   
+
 
 
 
@@ -435,30 +368,25 @@ While standard PLMs aim to learn homology entirely from single sequence, researc
 <p>As evidence for MSA retrieval improving performance, they compared a 100M MSA Transformer&rsquo;s performance on downstream tasks to the 650M parameter ESM-1b model&rsquo;s performance and found that MSA Transformer outperformed despite having ~6x fewer parameters.</p>
 
 
-
-  
     <figure >
   
+    <label for="marginfig-12" class="margin-toggle marginnote-ind">⊕</label>
+    <input type="checkbox" id="marginfig-12" class="margin-toggle"/>
+    <span class="marginnote">
+
+
+MSA Transformer Figure 2: MSA Transformer (100M) vs. ESM-1b (650M) and a Potts model&rsquo;s performance on contact prediction measured by P@L (Precision@Length). Left shows Top-L long range contact prediction performance at different lengths, colored by MSA depth. Right shows the same butas a function of binned MSA depth.Overall we see MSA Transformer outperform across the board with especially marked improvement at lower MSA depths.
 
 
 
-  <label for="" class="margin-toggle">⊕</label>
-  <input type="checkbox" id="" class="margin-toggle">
-  <span class="marginnote">
-  
+</span>
 
-  
-  MSA Transformer Figure 2: MSA Transformer (100M) vs. ESM-1b (650M) and a Potts model&#39;s performance on contact prediction measured by P@L (Precision@Length). Left shows Top-L long range contact prediction performance at different lengths, colored by MSA depth. Right shows the same butas a function of binned MSA depth.Overall we see MSA Transformer outperform across the board with especially marked improvement at lower MSA depths.
-  
-  
-  
-
-  </span>
 
 
   
-  <img src="https://stephenmalina.com/images/msatransformer-fig2.png" >
+  <img src="http://localhost:1313/images/msatransformer-fig2.png" alt="Image">
   
+
 
 
 
@@ -466,37 +394,37 @@ While standard PLMs aim to learn homology entirely from single sequence, researc
 
 
 <p>On top of that, they found that even a smaller MSA Transformer model outperforms the 650M ESM-1b model at contact prediction. Subsequent results on <a href="https://www.proteingym.org/substitutions">ProteinGym</a> zero-shot fitness prediction bolstered this result, with MSA Transformer outperforming all the single sequence models already mentioned. Combined with a bunch of careful experiments they did to show that the MSA information was actually being used, this suggests that retrieval currently provides a big boost for PLM performance, although with the cost of requiring infrastructure for doing MSA retrieval at inference time.</p>
-<h3 id="transceptionhttpsarxivorgabs220513760"><a href="https://arxiv.org/abs/2205.13760">Transception</a></h3>
-<p>Transception took a different approach from MSA Transformer&rsquo;s. Rather than explicitly attend to sequences in the MSA, Transception trained an autoregressive model that computes average weights on amino acids from the MSA at each position and then uses the weights at a given position combined with the left context to predict its amino acid.<label for="sidenote-ed438fd929edf4affb490e25b73d956d-12" class="margin-toggle sidenote-number"></label>
-<input type="checkbox" id="sidenote-ed438fd929edf4affb490e25b73d956d-12" class="margin-toggle"/>
-<span class="sidenote"> Transception also used a novel attention variant and positional encoding scheme but I&rsquo;m not going to cover those here. </span>
+<h3 id="transception">
+<a href="https://arxiv.org/abs/2205.13760">Transception</a>
+<a href="#transception" class="heading-anchor">#</a>
+</h3>
+<p>Transception took a different approach from MSA Transformer&rsquo;s. Rather than explicitly attend to sequences in the MSA, Transception trained an autoregressive model that computes average weights on amino acids from the MSA at each position and then uses the weights at a given position combined with the left context to predict its amino acid.<label for="sidenote-4" class="margin-toggle sidenote-number">(4)</label>
+<input type="checkbox" id="sidenote-4" class="margin-toggle"/>
+<span class="sidenote">
+<span class="sidenote-number">(4)</span>Transception also used a novel attention variant and positional encoding scheme but I’m not going to cover those here.
+</span>
 The tradeoff this makes is that it means the model can only uses the relative frequency of amino acids at each position to inform its predictions rather than the full MSA.</p>
 
 
-
-  
     <figure >
   
+    <label for="marginfig-14" class="margin-toggle marginnote-ind">⊕</label>
+    <input type="checkbox" id="marginfig-14" class="margin-toggle"/>
+    <span class="marginnote">
+
+
+Transception Figure 3: Shows Transception&rsquo;s inference setup, combining averaged positional information from the MSA with left context of the individual sequence.
 
 
 
-  <label for="" class="margin-toggle">⊕</label>
-  <input type="checkbox" id="" class="margin-toggle">
-  <span class="marginnote">
-  
+</span>
 
-  
-  Transception Figure 3: Shows Transception&#39;s inference setup, combining averaged positional information from the MSA with left context of the individual sequence.
-  
-  
-  
-
-  </span>
 
 
   
-  <img src="https://stephenmalina.com/images/transception-fig3.png" >
+  <img src="http://localhost:1313/images/transception-fig3.png" alt="Image">
   
+
 
 
 
@@ -506,30 +434,22 @@ The tradeoff this makes is that it means the model can only uses the relative fr
 <p>For evaluation, they compared Transception&rsquo;s models&rsquo; performance to sequence-only models of various sizes&rsquo; performance and to MSA Transformer&rsquo;s on zero-shot prediction. They use a benchmark called ProteinGym, which we&rsquo;ll return to again in the next post when discussing benchmarks and evaluation. At a high level, ProteinGym collects a large number of different deep mutational scan datasets and makes it easy to evaluate models&rsquo; performance on them via zero-shot prediction.</p>
 <p>
 
-
-  
     <figure >
   
 
 
 
-  <label for="" class="margin-toggle">⊕</label>
-  <input type="checkbox" id="" class="margin-toggle">
-  <span class="marginnote">
-  
 
-  
-  
-  
-  
-  
 
-  </span>
+
+
+
 
 
   
-  <img src="https://stephenmalina.com/images/transception-table2.png" >
+  <img src="http://localhost:1313/images/transception-table2.png" alt="Image">
   
+
 
 
 
@@ -541,30 +461,22 @@ Transception Table 2: Average Spearman&rsquo;s $ \rho $ on ProteinGym benchmarks
 <p>Focusing on the PLMs, Transception (with retrieval) outperformed MSA Transformer and all other single sequence models across the board. This may come as a bit of a surprise because MSA Transformer&rsquo;s retrieval component is strictly more expressive than Transception&rsquo;s. The authors speculate and run some experiments to test the hypothesis that Transception&rsquo;s retrieval mechanism and weighting scheme is more robust to shallow alignments and mutations in the sequence, explaining why it especially outperforms on the low MSA depth subset.</p>
 <p>
 
-
-  
     <figure >
   
 
 
 
-  <label for="" class="margin-toggle">⊕</label>
-  <input type="checkbox" id="" class="margin-toggle">
-  <span class="marginnote">
-  
 
-  
-  
-  
-  
-  
 
-  </span>
+
+
+
 
 
   
-  <img src="https://stephenmalina.com/images/transception-fig4.png" >
+  <img src="http://localhost:1313/images/transception-fig4.png" alt="Image">
   
+
 
 
 
@@ -575,30 +487,22 @@ Transception Figure 4: Average performance as a function of minimum % similarity
 <p>They also argue that Transception performs better on proteins with larger sets of mutations, comparing Transception&rsquo;s performance to other models&rsquo; broken down by &ldquo;mutation depth&rdquo; (edit distance).</p>
 <p>
 
-
-  
     <figure >
   
 
 
 
-  <label for="" class="margin-toggle">⊕</label>
-  <input type="checkbox" id="" class="margin-toggle">
-  <span class="marginnote">
-  
 
-  
-  
-  
-  
-  
 
-  </span>
+
+
+
 
 
   
-  <img src="https://stephenmalina.com/images/transception-table3.png" >
+  <img src="http://localhost:1313/images/transception-table3.png" alt="Image">
   
+
 
 
 
@@ -607,77 +511,168 @@ Transception Figure 4: Average performance as a function of minimum % similarity
 
 Transception Table 3: Average Spearman&rsquo;s $ \rho $ as a function of mutation depth.</p>
 <p>Finally, Transception works on proteins with indels, whereas MSA Transformer does not.</p>
-<h2 id="conditional-models">Conditional models</h2>
+<h2 id="conditional-models">
+Conditional models
+<a href="#conditional-models" class="heading-anchor">#</a>
+</h2>
 <p>The final class of PLMs is conditional models. Conditional models take some sort of auxiliary token(s) as input to guide their predictions (at training time) and generation (at inference time). Conditioning allows directly guiding models towards a specific sub-region of the overall learned distribution vs. having to do so purely by providing contextual sequence information.</p>
-<h3 id="progenhttpswwwnaturecomarticless41587-022-01618-2"><a href="https://www.nature.com/articles/s41587-022-01618-2">Progen</a></h3>
+<h3 id="progen">
+<a href="https://www.nature.com/articles/s41587-022-01618-2">Progen</a>
+<a href="#progen" class="heading-anchor">#</a>
+</h3>
 <p>The original Progen paper described autoregressive models that could do conditional generation using taxonomic labels as control tokens. To allow this, they conditioned each sequence on its taxonomic information during training as originally done for NLP in <a href="https://arxiv.org/abs/1909.05858">CTRL</a>. Their paper focused much more on the application side of things, showing that they could generate functional proteins (which they actually measured in the lab). As part of this, they do demonstrate that control labels can effectively guide a model towards generating proteins that look similar to those of a specific family.</p>
-<h2 id="conclusion">Conclusion</h2>
+<h2 id="conclusion">
+Conclusion
+<a href="#conclusion" class="heading-anchor">#</a>
+</h2>
 <p>Protein language models started by experimenting with architectures and setups very similar to NLP. In doing so, they found that many of the insights from NLP largely replicated. Larger models perform better on language modeling and on downstream tasks (discussed more in the Scaling post) and seq2seq models (of the T5 flavor) work especially well. As the field&rsquo;s matured, researchers have also explored more protein-specific setups such as <a href="#family-based-retrieval-models">Family-based retrieval</a>, which for now seems to work better than single-sequence models. While at a more nascent stage, going forward it&rsquo;ll be interesting to see whether <a href="#structuresequence-models">Sequence/structure models</a> also start showing better parameter-for-parameter performance and whether even more multimodal models show interesting capabilities or performance.</p>
-<h1 id="appendix">Appendix</h1>
-<h2 id="other-modeling-decisions">Other modeling decisions</h2>
-<h3 id="context-windows">Context windows</h3>
-<p>While context length limitations are not as acute for proteins as for language or genomes, extending models&rsquo; context windows may also provide a benefit for proteins. While a 2k context is large enough for <a href="https://genomebiology.biomedcentral.com/articles/10.1186/s13059-023-02973-2#Fig1">most proteins</a>, it precludes modeling the sequences of the longest proteins such as Titin (33k residues), complexes, and certain viral assemblies (such as <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7998265/">Adenovirus</a>) together. Some papers such as Ankh use relative positional embeddings, which allow models to handle longer proteins than appeared in their training dataset, but I haven&rsquo;t seen rigorous evaluations of how well these models can actually deal with longer lengths. Longer context windows via improvements such as <a href="https://arxiv.org/abs/2307.08691">FlashAttention</a> or entirely new architectures like <a href="https://hazyresearch.stanford.edu/blog/2023-03-07-hyena">Hyena</a>&lsquo;s could also enable naive implementations of models like the MSA Transformer that use sets of sequences as inputs.</p>
-<h3 id="tokenization--embeddings">Tokenization &amp; embeddings</h3>
+<h1 id="appendix">
+Appendix
+<a href="#appendix" class="heading-anchor">#</a>
+</h1>
+<h2 id="other-modeling-decisions">
+Other modeling decisions
+<a href="#other-modeling-decisions" class="heading-anchor">#</a>
+</h2>
+<h3 id="context-windows">
+Context windows
+<a href="#context-windows" class="heading-anchor">#</a>
+</h3>
+<p>While context length limitations are not as acute for proteins as for language or genomes, extending models&rsquo; context windows may also provide a benefit for proteins. While a 2k context is large enough for <a href="https://genomebiology.biomedcentral.com/articles/10.1186/s13059-023-02973-2#Fig1">most proteins</a>, it precludes modeling the sequences of the longest proteins such as Titin (33k residues), complexes, and certain viral assemblies (such as <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7998265/">Adenovirus</a>) together. Some papers such as Ankh use relative positional embeddings, which allow models to handle longer proteins than appeared in their training dataset, but I haven&rsquo;t seen rigorous evaluations of how well these models can actually deal with longer lengths. Longer context windows via improvements such as <a href="https://arxiv.org/abs/2307.08691">FlashAttention</a> or entirely new architectures like <a href="https://hazyresearch.stanford.edu/blog/2023-03-07-hyena">Hyena</a>&rsquo;s could also enable naive implementations of models like the MSA Transformer that use sets of sequences as inputs.</p>
+<h3 id="tokenization--embeddings">
+Tokenization &amp; embeddings
+<a href="#tokenization--embeddings" class="heading-anchor">#</a>
+</h3>
 <p>Given the ease of using existing frameworks like Huggingface&rsquo;s for training, some papers (Progen2) analogize amino acids to letters and tokenize them using <a href="https://en.wikipedia.org/wiki/Byte_pair_encoding">Byte Pair Encodings</a> (BPEs). Others (both the RITA and ESM models for example) instead embed amino acids directly, giving them an embedding alphabet size of 20. In favor of this, the RITA authors argue that the analogy between amino acids and language fails here (and I agree). The analogy fails because proteins lack a concept of words, which provide natural boundaries for common tokenizations. Tokenizing by amino acid also makes assessing biochemical understanding easier, because we can directly evaluate how well embeddings encode known biochemical properties of each amino acid. Given this, I currently expect that tokenizing each amino acid individually will become standard, but we&rsquo;ll see.</p>
 <p>Existing PLMs use positional embedding setups drawn from NLP such as relative positional embeddings. However, this seems like an area where PLMs might benefit from more protein-specific encodings that, for example, map to structural position rather than just sequence position.</p>
 </section>
-<section>
+  <section><footer class="page-footer">
+<hr />
+
+<div class="previous-post" style="display:inline-block;">
   
-  <div id="disqus_thread"></div>
-  <script type="text/javascript">
-
-  (function() {
-      
-      
-      if (window.location.hostname == "localhost")
-          return;
-
-      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-      var disqus_shortname = 'an1lam-github-io';
-      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-  })();
-  </script>
-  <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-  <a href="http://disqus.com/" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
-
-
-  <footer class="page-footer">
-		<hr>
-		<ul class="page-footer-menu">
-		
-      <li><a href="https://github.com/an1lam"><i class='fa fa-github fa-2x'></i> </a></li>
-		
-      <li><a href="https://twitter.com/an1lam"><i class='fa fa-twitter fa-2x'></i> </a></li>
-		
-      <li><a href="mailto:stephenmalina@gmail.com"><i class='fa fa-envelope fa-2x'></i> </a></li>
-		
-      <li><a href="https://stackoverflow.com/users/1631855/an1lam"><i class='fa fa-stack-overflow fa-2x'></i> </a></li>
-		
-		</ul>
-
+  <a class="link-reverse" href="http://localhost:1313/post/2023-08-05-protein-language-models-part-3/?ref=footer">« Protein Language Models (Part 3): Evaluation &amp;...</a>
   
-    <p>
-      Powered by <a href="https://gohugo.io">Hugo</a> and the
-      <a href="https://github.com/shawnohare/hugo-tufte">Tufte theme</a>.
-    </p>
-  
-
-	<div class="copyright">
-	<p>
-    
-      &copy; 2023
-    .
-    All rights reserved.
-    
-  </p>
 </div>
+
+<div class="next-post", style="display:inline-block;float:right;">
+  
+  <a class="link-reverse" href="http://localhost:1313/post/2023-08-13-cgm-and-beyond/?ref=footer">Continuous glucose monitors (CGM) and beyond: A... »</a>
+  
+</div>
+
+<ul class="page-footer-menu">
+  
+  
+  <li><a href="https://twitter.com/an1lam">Twitter</a></li>
+  
+  
+  
+
+  
+  <li><a href="https://github.com/an1lam">GitHub</a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <li><a href="https://scholar.google.com/citations?user=Q6_3PJEAAAAJ">Google Scholar</a></li>
+  
+  
+  
+    <li><a href="https://github.com/an1lam"><i class='fa fa-github fa-2x'></i>  </a></li>
+  
+    <li><a href="https://twitter.com/an1lam"><i class='fa fa-twitter fa-2x'></i>  </a></li>
+  
+    <li><a href="mailto:stephenmalina@gmail.com"><i class='fa fa-envelope fa-2x'></i>  </a></li>
+  
+    <li><a href="https://stackoverflow.com/users/1631855/an1lam"><i class='fa fa-stack-overflow fa-2x'></i>  </a></li>
+  
+</ul>
+
+
+<p>
+  Powered by <a href="https://gohugo.io">Hugo</a> and the
+  <a href="https://github.com/loikein/hugo-tufte">Tufte theme</a>.
+</p>
+
+
+
+
 </footer>
-
-
-
+</section>
+  <section><nav class="menu">
+    <ul>
+    
+        <li><a href="http://localhost:1313/">Home</a></li>
+    
+        <li><a href="http://localhost:1313/about">About</a></li>
+    
+        <li><a href="http://localhost:1313/post">Post</a></li>
+    
+        <li><a href="http://localhost:1313/bets">Bets</a></li>
+    
+        <li><a href="http://localhost:1313/greatest-hits">Greatest Hits</a></li>
+    
+        <li><a href="http://localhost:1313/subscribe">Subscribe</a></li>
+    
+        <li><a href="http://localhost:1313/tags">Tags</a></li>
+    
+    </ul>
+</nav>
 </section>
 </article>
-</div>
+
+
+
+
+
+
+
+  <script>(function(){var e,t,n,s=document.getElementsByTagName("code");for(n=0;n<s.length;){if(t=s[n],t.parentNode.tagName!=="PRE"&&t.childElementCount===0&&!t.classList.contains("nolatex")&&(e=t.textContent,/^\$[^$]/.test(e)&&/[^$]\$$/.test(e)&&(e=e.replace(/^\$/,"\\(").replace(/\$$/,"\\)"),t.textContent=e),/^\\\((.|\s)+\\\)$/.test(e)||/^\\\[(.|\s)+\\\]$/.test(e)||/^\$(.|\s)+\$$/.test(e)||/^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(e))){t.outerHTML=t.innerHTML;continue}n++}})()</script>
+
+
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.css" crossorigin="anonymous">
+<script defer src="//cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.js" crossorigin="anonymous"></script>
+<script defer src="//cdn.jsdelivr.net/npm/katex@0.16.4/dist/contrib/auto-render.min.js" crossorigin="anonymous"></script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        renderMathInElement(document.body, {
+            
+            
+            
+            
+            
+            
+            trust: (context) => ['\\htmlId', '\\href'].includes(context.command),
+            macros: {
+              "\\eqref": "\\href{###1}{(\\text{#1})}",
+              "\\ref": "\\href{###1}{\\text{#1}}",
+              "\\label": "\\htmlId{#1}{}"
+            }
+        });
+    });
+</script>
+
+
+
 </body>
+
 </html>

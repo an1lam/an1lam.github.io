@@ -1,36 +1,40 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>proteins on Stephen Malina</title>
-    <link>https://stephenmalina.com/tags/proteins/</link>
-    <description>Recent content in proteins on Stephen Malina</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <title>Proteins on Stephen Malina</title>
+    <link>http://localhost:1313/tags/proteins/</link>
+    <description>Recent content in Proteins on Stephen Malina</description>
+    <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 05 Aug 2023 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://stephenmalina.com/tags/proteins/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <atom:link href="http://localhost:1313/tags/proteins/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Protein Language Models (Part 2): Models</title>
-      <link>https://stephenmalina.com/post/2023-08-05-protein-language-models-part-2/</link>
+      <link>http://localhost:1313/post/2023-08-05-protein-language-models-part-2/</link>
       <pubDate>Sat, 05 Aug 2023 00:00:00 +0000</pubDate>
-      
-      <guid>https://stephenmalina.com/post/2023-08-05-protein-language-models-part-2/</guid>
-      <description>_I&amp;rsquo;m experimenting with Lilian Weng style review blog posts on topics I wish I&amp;rsquo;d had someone to explain to me when I got started in protein machine learning.
-This is the second post in a series introducing protein language models_. The other posts are:
- Protein Language Models (Part 1): Introduction &amp;amp; Datasets Protein Language Models (Part 2): Models Protein Language Models (Part 3): Benchmarks &amp;amp; Evaluation Protein Language Models (Part 4): Scaling Protein Language Models (Part 5): FAQ &amp;amp; Conclusion  This post focuses on the different types of PLMs with a specific focus on deviations from the standard LLM playbook.</description>
+      <guid>http://localhost:1313/post/2023-08-05-protein-language-models-part-2/</guid>
+      <description>&lt;p&gt;&lt;em&gt;I&amp;rsquo;m experimenting with &lt;a href=&#34;https://lilianweng.github.io/posts/&#34;&gt;Lilian Weng&lt;/a&gt; style review blog posts on topics I wish I&amp;rsquo;d had someone to explain to me when I got started in protein machine learning.&lt;/em&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;em&gt;This is the second post in a series introducing protein language models&lt;/em&gt;. The other posts are:&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&lt;a href=&#34;http://localhost:1313/post/2023-07-22-protein-language-models-part-1&#34;&gt;Protein Language Models (Part 1): Introduction &amp;amp; Datasets&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;http://localhost:1313/post/2023-07-22-protein-language-models-part-2&#34;&gt;Protein Language Models (Part 2): Models&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;Protein Language Models (Part 3): Benchmarks &amp;amp; Evaluation&lt;/li&gt;&#xA;&lt;li&gt;Protein Language Models (Part 4): Scaling&lt;/li&gt;&#xA;&lt;li&gt;Protein Language Models (Part 5): FAQ &amp;amp; Conclusion&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;This post focuses on the different types of PLMs with a specific focus on deviations from the standard LLM playbook.&lt;/p&gt;</description>
     </item>
-    
+    <item>
+      <title>Protein Language Models (Part 3): Evaluation &amp; Benchmarks</title>
+      <link>http://localhost:1313/post/2023-08-05-protein-language-models-part-3/</link>
+      <pubDate>Sat, 05 Aug 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/post/2023-08-05-protein-language-models-part-3/</guid>
+      <description>&lt;h2 id=&#34;what-do-plms-learn&#34;&gt;&#xA;What do PLMs learn?&#xA;&lt;a href=&#34;#what-do-plms-learn&#34; class=&#34;heading-anchor&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;p&gt;Unlike with LLMs, we can&amp;rsquo;t rely on our native perceptual hardware to evaluate samples from PLMs.&lt;label for=&#34;sidenote-1&#34; class=&#34;margin-toggle sidenote-number&#34;&gt;(1)&lt;/label&gt;&#xA;&lt;input type=&#34;checkbox&#34; id=&#34;sidenote-1&#34; class=&#34;margin-toggle&#34;/&gt;&#xA;&lt;span class=&#34;sidenote&#34;&gt;&#xA;&lt;span class=&#34;sidenote-number&#34;&gt;(1)&lt;/span&gt;Our intuitive evaluations of language model samples often precede benchmark results showing differences between them. In early-to-mid 2023, many became convinced that open source models trained on samples from OpenAI’s GPT models could perform as well or better than these proprietary models. While benchmarks &lt;a href=&#34;https://arxiv.org/abs/2305.15717&#34;&gt;eventually&lt;/a&gt; caught up, &lt;a href=&#34;https://twitter.com/tshevl/status/1636683815950196741?s=20&#34;&gt;random&lt;/a&gt; &lt;a href=&#34;https://twitter.com/KevinAFischer/status/1642935719483277312?s=20&#34;&gt;ML-adjacent&lt;/a&gt; Twitter users playing with both sets of models were the first to realize that the open source models lagged far behind OpenAI’s in terms of generality and skill breadth.&#xA;&lt;/span&gt;&#xA;Instead, we have to find other ways to build intuition about when and how much we can trust our models outside of summary metrics.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Protein Language Models (Part 5): Conclusion &amp; FAQ</title>
+      <link>http://localhost:1313/post/2023-08-05-protein-language-models-part-5/</link>
+      <pubDate>Sat, 05 Aug 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/post/2023-08-05-protein-language-models-part-5/</guid>
+      <description>&lt;h2 id=&#34;faq&#34;&gt;&#xA;FAQ&#xA;&lt;a href=&#34;#faq&#34; class=&#34;heading-anchor&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;h3 id=&#34;i-want-to-use-a-plm-which-one-should-i-use&#34;&gt;&#xA;I want to use a PLM, which one should I use?&#xA;&lt;a href=&#34;#i-want-to-use-a-plm-which-one-should-i-use&#34; class=&#34;heading-anchor&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h3&gt;&#xA;&lt;h3 id=&#34;why-didnt-you-mention-the-model--paper-i-worked-on&#34;&gt;&#xA;Why didn&amp;rsquo;t you mention the model / paper I worked on?&#xA;&lt;a href=&#34;#why-didnt-you-mention-the-model--paper-i-worked-on&#34; class=&#34;heading-anchor&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h3&gt;</description>
+    </item>
     <item>
       <title>Protein Language Models (Part 1): Introduction &amp; Datasets</title>
-      <link>https://stephenmalina.com/post/2023-07-22-protein-language-models-part-1/</link>
+      <link>http://localhost:1313/post/2023-07-22-protein-language-models-part-1/</link>
       <pubDate>Sat, 22 Jul 2023 00:00:00 +0000</pubDate>
-      
-      <guid>https://stephenmalina.com/post/2023-07-22-protein-language-models-part-1/</guid>
-      <description>I&amp;rsquo;m experimenting with Lilian Weng style review blog posts on topics I wish I&amp;rsquo;d had someone to explain to me when I got started in protein machine learning.
-Following the success of large sequence models in language and other domain, The terminology people use here is extremely confusing. &amp;ldquo;Large language models&amp;rdquo; often denote large sequence models trained on language and other modalities or in some cases just other modalities. In the rest of the post, I&amp;rsquo; use &amp;ldquo;large language models&amp;rdquo; (LLMs) to refer to the cluster of ideas around large-scale pretraining combined with simple objectives as opposed to models that focus on language as a modality and &amp;ldquo;protein language models&amp;rdquo; (PLMs) to refer to large sequence models of proteins.</description>
+      <guid>http://localhost:1313/post/2023-07-22-protein-language-models-part-1/</guid>
+      <description>&lt;p&gt;&lt;em&gt;I&amp;rsquo;m experimenting with &lt;a href=&#34;https://lilianweng.github.io/posts/&#34;&gt;Lilian Weng&lt;/a&gt; style review blog posts on topics I wish I&amp;rsquo;d had someone to explain to me when I got started in protein machine learning.&lt;/em&gt;&lt;/p&gt;&#xA;&lt;p&gt;Following the success of large sequence models in language and &lt;a href=&#34;https://www.deepmind.com/publications/a-generalist-agent&#34;&gt;other domain&lt;/a&gt;,&lt;label for=&#34;sidenote-1&#34; class=&#34;margin-toggle sidenote-number&#34;&gt;(1)&lt;/label&gt;&#xA;&lt;input type=&#34;checkbox&#34; id=&#34;sidenote-1&#34; class=&#34;margin-toggle&#34;/&gt;&#xA;&lt;span class=&#34;sidenote&#34;&gt;&#xA;&lt;span class=&#34;sidenote-number&#34;&gt;(1)&lt;/span&gt;The terminology people use here is extremely confusing. “Large language models” often denote large sequence models trained on language &lt;em&gt;and&lt;/em&gt; other modalities or in some cases just other modalities. In the rest of the post, I’ use “large language models” (LLMs) to refer to the cluster of ideas around large-scale pretraining combined with simple objectives as opposed to models that focus on &lt;em&gt;language&lt;/em&gt; as a modality and “protein language models” (PLMs) to refer to large sequence models &lt;em&gt;of proteins&lt;/em&gt;.&#xA;&lt;/span&gt;&#xA;protein machine learning folks have been building and training language models on protein sequence data. While the category boundaries in terms of what exactly constitutes a PLM are necessarily fuzzy, PLMs use LLM-inspired pretraining strategies and architectures to model the distribution of protein sequences.&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

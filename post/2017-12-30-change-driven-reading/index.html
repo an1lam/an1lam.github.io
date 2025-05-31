@@ -1,128 +1,60 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+<html lang="en-us"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+<title>Change-Driven Code Reading - Stephen Malina</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description"
+    content="An exploration of why having a specific change in mind is the most effective way to read and understand unfamiliar codebases, using the metaphor of forest path exploration. ">
+<link rel="canonical" href="http://localhost:1313/post/2017-12-30-change-driven-reading/" />
 
-<head>
-<title>Stephen Malina - Change-Driven Code Reading</title>
-  <meta http-equiv="content-type" content="text/html; charset=utf-8">
 
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="">
-<meta name="keywords" content="">
-<meta name="author" content="Stephen Malina">
-<meta name="generator" content="Hugo 0.68.3" />
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="preload" as="style"
+      href="https://fonts.googleapis.com/css?family=Noto+Serif+SC|Noto+Emoji&display=swap" />
+<link rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Noto+Serif+SC|Noto+Emoji&display=swap"
+      media="print" onload="this.media='all'" />
+<noscript>
+<link rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Noto+Serif+SC&display=swap" />
+</noscript>
+
 
   
   
+    
+      <link rel="stylesheet" href="http://localhost:1313/css/hugo-tufte.min.css">
+    
+  
 
 
-
-
-
-
-<link rel="stylesheet" href="https://unpkg.com/purecss@2.0.3/build/pure-min.css">
-
-
-    <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.3/build/grids-responsive-min.css">
-
-
-
-
-
-
-
-
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-
-
-<link rel="stylesheet" href="https://stephenmalina.com/css/tufte.css">
-<link rel="stylesheet" href="https://stephenmalina.com/css/hugo-tufte.css">
-<link rel="stylesheet" href="https://stephenmalina.com/css/hugo-tufte-override.css">
 
   
-<script type="application/javascript">
-var doNotTrack = false;
-if (!doNotTrack) {
-	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-	ga('create', 'UA-187780632-1', 'auto');
-	
-	ga('send', 'pageview');
-}
-</script>
-
   
-<script type="application/javascript">
-var doNotTrack = false;
-if (!doNotTrack) {
-	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
-	ga('create', 'UA-187780632-1', 'auto');
-	
-	ga('send', 'pageview');
-}
-</script>
-<script async src='https://www.google-analytics.com/analytics.js'></script>
+    
+      <link rel="stylesheet" href="http://localhost:1313/css/hugo-tufte-options.min.css">
+    
+  
+
+
+<link rel="stylesheet" href="http://localhost:1313/css/hugo-tufte-override.css">
 
 </head>
-
-
 <body>
-<div id="layout" class="pure-g">
-<article class="pure-u-1">
-<header class="brand">
-  <h1>Stephen Malina</h1>
-  <h2>This is my blog. There are many others like it but this one is mine.</h2>
-  <nav class="menu">
-    <ul>
-    
-        <li><a href="https://stephenmalina.com/">Home</a></li>
-    
-        <li><a href="https://stephenmalina.com/about">About</a></li>
-    
-        <li><a href="https://stephenmalina.com/post">Post</a></li>
-    
-        <li><a href="https://stephenmalina.com/subscribe">Subscribe</a></li>
-    
-        <li><a href="https://stephenmalina.com/tags">Tags</a></li>
-    
-    </ul>
-</nav>
 
-</header>
 
-<section>
-<h1 class="content-title">
+<article id="main">
+  <section>
+<h1 class="content-title">Change-Driven Code Reading&nbsp;:: Draft</h1></section>
+
   
-  <a href="https://stephenmalina.com/post/2017-12-30-change-driven-reading/">Change-Driven Code Reading :: Draft </a>
-  
-</h1>
 
-
-
-  <span class="content-meta">
-    
-
-
-    
-      <i class="fa fa-calendar"></i>
-      &nbsp;Dec 30, 2017
-    
-
-    
-      &nbsp;<i class="fa fa-clock-o"></i>
-      &nbsp;7 min read
-    
-
-    
-  </span>
-
-
-</section>
-
-
-
-<section><p>That none of us read enough code is one of the few things on which programmers agree. Taken
+  <section><p>That none of us read enough code is one of the few things on which programmers agree. Taken
 together, the interviews in Peter Seibel&rsquo;s book, <a href="http://amzn.to/2zjbCUE">Coders At Work</a> and on his
 <a href="http://www.gigamonkeys.com/code-quarterly/2011/hal-abelson/">blog</a>, highlight a comical
 contradiction: almost all the programmers interviewed by Seibel recommend that others read code for fun,
@@ -133,8 +65,7 @@ but none of them routinely does so themselves. After noticing this, Seibel even 
 read code. Yet when I ask what code have you read for fun or edification, you—also like many other
 people—answer that you read students’ code, which is your job, and review code at Google, which is
 also your job. But it doesn’t sound like you sit down of an evening with a nice printout and read
-it.</p>
-</blockquote>
+it.</p></blockquote>
 <p><a href="http://www.gigamonkeys.com/code-reading/">Seibel</a>, <a href="http://prog21.dadgum.com/194.html">James
 Hague</a>, and <a href="http://disq.us/p/qvter6">others</a> have all tried to
 justify why code reading is so uncommon (see
@@ -154,8 +85,7 @@ they want to make to the codebase while they read. In his words:</p>
 browser window. But I&rsquo;m starting to realize that it&rsquo;s not enough to just be bouncing around inside
 Vim or whatever. If you don&rsquo;t have a concrete desire you want to see manifested in the codebase,
 you probably aren&rsquo;t motivated to run the program, run at individual layers, compare the tangled
-output at different layers to see how they fit together, etc.</p>
-</blockquote>
+output at different layers to see how they fit together, etc.</p></blockquote>
 <p>In thinking about change-driven reading on my own after our conversation, I concluded that I&rsquo;d
 never achieved a satisfactory understanding of an existing codebase without making (or at least
 imagining making) changes to it either. This led me to seriously consider that purposeful
@@ -185,8 +115,8 @@ continuously as we read.</p>
 <p>Having a change to make to a codebase in mind while reading provides one such strategy for
 successful codebase exploration. A change to make guides our reading by posing a simple high-level
 question, &ldquo;do I need to understand this in order to make my change?&rdquo; and more granular lower-level
-questions, &ldquo;how much do I need to know about X to do Y?&quot;, &ldquo;can this commit show me how to do
-something I don&rsquo;t know how to do?&quot;, and &ldquo;could this line have caused the bug I&rsquo;m trying to fix?&rdquo; As
+questions, &ldquo;how much do I need to know about X to do Y?&rdquo;, &ldquo;can this commit show me how to do
+something I don&rsquo;t know how to do?&rdquo;, and &ldquo;could this line have caused the bug I&rsquo;m trying to fix?&rdquo; As
 a concrete example, let&rsquo;s say I&rsquo;m tasked with adding the <code>open</code> syscall to the Linux kernel. Even
 without knowing much about the Linux kernel codebase, I can confidently filter out a majority of
 the codebase as irrelevant at the data flow level. I don&rsquo;t need to know how the kernel communicates
@@ -213,7 +143,10 @@ practical discussion of how to do this for a later post.</p>
 <p>Back to my original point, we now have some intuition for why change-driven reading can work better
 in situations where the challenge of filtering irrelevant information overshadows the challenge of
 understanding functionally isolated modules.</p>
-<h1 id="postscript">Postscript</h1>
+<h1 id="postscript">
+Postscript
+<a href="#postscript" class="heading-anchor">#</a>
+</h1>
 <p>When I initially went to write this post, I had a whole follow-up section here about applying
 change-driven reading in practice, since I never discussed how to decide what change make good
 reading guides! In this section, I would&rsquo;ve discussed sequencing changes from smaller to larger
@@ -231,45 +164,103 @@ trying to find logical holes or exploits for them. So if you&rsquo;re stumped on
 change to guide your reading, read these posts and then <a href="mailto:stephenmalina@gmail.com">let me
 know</a> if you&rsquo;re still stumped after that.</p>
 </section>
-<section>
-  
+  <section><footer class="page-footer">
+<hr />
 
-  <footer class="page-footer">
-		<hr>
-		<ul class="page-footer-menu">
-		
-      <li><a href="https://github.com/an1lam"><i class='fa fa-github fa-2x'></i> </a></li>
-		
-      <li><a href="https://twitter.com/an1lam"><i class='fa fa-twitter fa-2x'></i> </a></li>
-		
-      <li><a href="mailto:stephenmalina@gmail.com"><i class='fa fa-envelope fa-2x'></i> </a></li>
-		
-      <li><a href="https://stackoverflow.com/users/1631855/an1lam"><i class='fa fa-stack-overflow fa-2x'></i> </a></li>
-		
-		</ul>
-
+<div class="previous-post" style="display:inline-block;">
   
-    <p>
-      Powered by <a href="https://gohugo.io">Hugo</a> and the
-      <a href="https://github.com/shawnohare/hugo-tufte">Tufte theme</a>.
-    </p>
+  <a class="link-reverse" href="http://localhost:1313/post/2017-10-12-book-review-effortless-mastery/?ref=footer">« Book Review of Effortless Mastery</a>
   
-
-	<div class="copyright">
-	<p>
-    
-      &copy; 2021
-    .
-    All rights reserved.
-    
-  </p>
 </div>
+
+<div class="next-post", style="display:inline-block;float:right;">
+  
+  <a class="link-reverse" href="http://localhost:1313/post/2018-01-25-godel-escher-bach/?ref=footer">Marginalia - Gödel, Escher, Bach »</a>
+  
+</div>
+
+<ul class="page-footer-menu">
+  
+  
+  <li><a href="https://twitter.com/an1lam">Twitter</a></li>
+  
+  
+  
+
+  
+  <li><a href="https://github.com/an1lam">GitHub</a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <li><a href="https://scholar.google.com/citations?user=Q6_3PJEAAAAJ">Google Scholar</a></li>
+  
+  
+  
+    <li><a href="https://github.com/an1lam"><i class='fa fa-github fa-2x'></i>  </a></li>
+  
+    <li><a href="https://twitter.com/an1lam"><i class='fa fa-twitter fa-2x'></i>  </a></li>
+  
+    <li><a href="mailto:stephenmalina@gmail.com"><i class='fa fa-envelope fa-2x'></i>  </a></li>
+  
+    <li><a href="https://stackoverflow.com/users/1631855/an1lam"><i class='fa fa-stack-overflow fa-2x'></i>  </a></li>
+  
+</ul>
+
+
+<p>
+  Powered by <a href="https://gohugo.io">Hugo</a> and the
+  <a href="https://github.com/loikein/hugo-tufte">Tufte theme</a>.
+</p>
+
+
+
+
 </footer>
-
-
-
+</section>
+  <section><nav class="menu">
+    <ul>
+    
+        <li><a href="http://localhost:1313/">Home</a></li>
+    
+        <li><a href="http://localhost:1313/about">About</a></li>
+    
+        <li><a href="http://localhost:1313/post">Post</a></li>
+    
+        <li><a href="http://localhost:1313/bets">Bets</a></li>
+    
+        <li><a href="http://localhost:1313/greatest-hits">Greatest Hits</a></li>
+    
+        <li><a href="http://localhost:1313/subscribe">Subscribe</a></li>
+    
+        <li><a href="http://localhost:1313/tags">Tags</a></li>
+    
+    </ul>
+</nav>
 </section>
 </article>
-</div>
+
+
+
+
+
 </body>
+
 </html>

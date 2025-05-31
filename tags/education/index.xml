@@ -1,24 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>education on Stephen Malina</title>
-    <link>https://stephenmalina.com/tags/education/</link>
-    <description>Recent content in education on Stephen Malina</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <title>Education on Stephen Malina</title>
+    <link>http://localhost:1313/tags/education/</link>
+    <description>Recent content in Education on Stephen Malina</description>
+    <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 13 Aug 2019 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://stephenmalina.com/tags/education/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <atom:link href="http://localhost:1313/tags/education/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Against Athletic Recruiting</title>
-      <link>https://stephenmalina.com/post/2019-08-13-against-athletic-recruiting/</link>
+      <link>http://localhost:1313/post/2019-08-13-against-athletic-recruiting/</link>
       <pubDate>Tue, 13 Aug 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://stephenmalina.com/post/2019-08-13-against-athletic-recruiting/</guid>
-      <description>Introduction Given recent discussions of admissions quotas for certain groups at elite universities, I&amp;rsquo;ve been surprised to see little discussion of athlete admissions and athletic recruiting at schools like Harvard. I&amp;rsquo;m especially surprised to see so little discussion of this in my Twitter-sphere, which consists of ~0 former recruited athletes as far as I know. So, in this post, I will make the case for eliminating athletic recruiting at &amp;ldquo;elite&amp;rdquo; universities.</description>
+      <guid>http://localhost:1313/post/2019-08-13-against-athletic-recruiting/</guid>
+      <description>&lt;h1 id=&#34;introduction&#34;&gt;&#xA;Introduction&#xA;&lt;a href=&#34;#introduction&#34; class=&#34;heading-anchor&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h1&gt;&#xA;&lt;p&gt;Given recent discussions of admissions quotas for certain groups at elite universities, I&amp;rsquo;ve been surprised to see little discussion of athlete admissions and athletic recruiting at schools like Harvard. I&amp;rsquo;m especially surprised to see so little discussion of this in my Twitter-sphere, which consists of ~0 former recruited athletes as far as I know. So, in this post, I will make the case for eliminating athletic recruiting at &amp;ldquo;elite&amp;rdquo; universities.&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

@@ -1,58 +1,40 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>example on Stephen Malina</title>
-    <link>https://stephenmalina.com/tags/example/</link>
-    <description>Recent content in example on Stephen Malina</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <title>Example on Stephen Malina</title>
+    <link>http://localhost:1313/tags/example/</link>
+    <description>Recent content in Example on Stephen Malina</description>
+    <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 07 Mar 2017 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://stephenmalina.com/tags/example/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <atom:link href="http://localhost:1313/tags/example/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Big Image Sample</title>
-      <link>https://stephenmalina.com/post/2017-03-07-bigimg-sample/</link>
+      <link>http://localhost:1313/post/2017-03-07-bigimg-sample/</link>
       <pubDate>Tue, 07 Mar 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://stephenmalina.com/post/2017-03-07-bigimg-sample/</guid>
+      <guid>http://localhost:1313/post/2017-03-07-bigimg-sample/</guid>
       <description>&lt;p&gt;The image banners at the top of the page are refered to as &amp;ldquo;bigimg&amp;rdquo; in this theme. They are optional, and one more more can be specified. If more than one is specified, the images rotate every 10 seconds. In the front matter, bigimgs are specified using an array of hashes.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Math Sample</title>
-      <link>https://stephenmalina.com/post/2017-03-05-math-sample/</link>
+      <link>http://localhost:1313/post/2017-03-05-math-sample/</link>
       <pubDate>Sun, 05 Mar 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://stephenmalina.com/post/2017-03-05-math-sample/</guid>
-      <description>&lt;p&gt;KaTeX can be used to generate complex math formulas server-side.&lt;/p&gt;
-&lt;p&gt;$$
-\phi = \frac{(1+\sqrt{5})}{2} = 1.6180339887\cdots
-$$&lt;/p&gt;
-&lt;p&gt;Additional details can be found on &lt;a href=&#34;https://github.com/Khan/KaTeX&#34;&gt;GitHub&lt;/a&gt; or on the &lt;a href=&#34;http://tiddlywiki.com/plugins/tiddlywiki/katex/&#34;&gt;Wiki&lt;/a&gt;.&lt;/p&gt;</description>
+      <guid>http://localhost:1313/post/2017-03-05-math-sample/</guid>
+      <description>&lt;p&gt;KaTeX can be used to generate complex math formulas server-side.&lt;/p&gt;&#xA;&lt;p&gt;$$&#xA;\phi = \frac{(1+\sqrt{5})}{2} = 1.6180339887\cdots&#xA;$$&lt;/p&gt;&#xA;&lt;p&gt;Additional details can be found on &lt;a href=&#34;https://github.com/Khan/KaTeX&#34;&gt;GitHub&lt;/a&gt; or on the &lt;a href=&#34;http://tiddlywiki.com/plugins/tiddlywiki/katex/&#34;&gt;Wiki&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Code Sample</title>
-      <link>https://stephenmalina.com/post/2016-03-08-code-sample/</link>
+      <link>http://localhost:1313/post/2016-03-08-code-sample/</link>
       <pubDate>Tue, 08 Mar 2016 00:00:00 +0000</pubDate>
-      
-      <guid>https://stephenmalina.com/post/2016-03-08-code-sample/</guid>
+      <guid>http://localhost:1313/post/2016-03-08-code-sample/</guid>
       <description>&lt;p&gt;The following are two code samples using syntax highlighting.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Test markdown</title>
-      <link>https://stephenmalina.com/post/2015-02-20-test-markdown/</link>
+      <link>http://localhost:1313/post/2015-02-20-test-markdown/</link>
       <pubDate>Fri, 20 Feb 2015 00:00:00 +0000</pubDate>
-      
-      <guid>https://stephenmalina.com/post/2015-02-20-test-markdown/</guid>
-      <description>You can write regular markdown here and Jekyll will automatically convert it to a nice webpage. I strongly encourage you to take 5 minutes to learn how to write in markdown - it&amp;rsquo;ll teach you how to transform regular text into bold/italics/headings/tables/etc.
-Here is some bold text
-Here is a secondary heading Here&amp;rsquo;s a useless table:
-   Number Next number Previous number     Five Six Four   Ten Eleven Nine   Seven Eight Six   Two Three One    How about a yummy crepe?</description>
+      <guid>http://localhost:1313/post/2015-02-20-test-markdown/</guid>
+      <description>&lt;p&gt;You can write regular &lt;a href=&#34;http://markdowntutorial.com/&#34;&gt;markdown&lt;/a&gt; here and Jekyll will automatically convert it to a nice webpage.  I strongly encourage you to &lt;a href=&#34;http://markdowntutorial.com/&#34;&gt;take 5 minutes to learn how to write in markdown&lt;/a&gt; - it&amp;rsquo;ll teach you how to transform regular text into bold/italics/headings/tables/etc.&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Here is some bold text&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;here-is-a-secondary-heading&#34;&gt;&#xA;Here is a secondary heading&#xA;&lt;a href=&#34;#here-is-a-secondary-heading&#34; class=&#34;heading-anchor&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;p&gt;Here&amp;rsquo;s a useless table:&lt;/p&gt;&#xA;&lt;table&gt;&#xA;  &lt;thead&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;th style=&#34;text-align: left&#34;&gt;Number&lt;/th&gt;&#xA;          &lt;th style=&#34;text-align: left&#34;&gt;Next number&lt;/th&gt;&#xA;          &lt;th style=&#34;text-align: left&#34;&gt;Previous number&lt;/th&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/thead&gt;&#xA;  &lt;tbody&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td style=&#34;text-align: left&#34;&gt;Five&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: left&#34;&gt;Six&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: left&#34;&gt;Four&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td style=&#34;text-align: left&#34;&gt;Ten&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: left&#34;&gt;Eleven&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: left&#34;&gt;Nine&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td style=&#34;text-align: left&#34;&gt;Seven&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: left&#34;&gt;Eight&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: left&#34;&gt;Six&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td style=&#34;text-align: left&#34;&gt;Two&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: left&#34;&gt;Three&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: left&#34;&gt;One&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/tbody&gt;&#xA;&lt;/table&gt;&#xA;&lt;p&gt;How about a yummy crepe?&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

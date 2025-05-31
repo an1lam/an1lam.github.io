@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en-us"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+<title>Protein Language Models (Part 3): Evaluation &amp; Benchmarks - Stephen Malina</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description"
+    content="
+What do PLMs learn?
+#
+
+Unlike with LLMs, we can&rsquo;t rely on our native perceptual hardware to evaluate samples from PLMs.(1)
+
+
+(1)Our intuitive evaluations of language model samples often precede benchmark results showing differences between them. In early-to-mid 2023, many became convinced that open source models trained on samples from OpenAI’s GPT models could perform as well or better than these proprietary models. While benchmarks eventually caught up, random ML-adjacent Twitter users playing with both sets of models were the first to realize that the open source models lagged far behind OpenAI’s in terms of generality and skill breadth.
+
+Instead, we have to find other ways to build intuition about when and how much we can trust our models outside of summary metrics. ">
+<link rel="canonical" href="http://localhost:1313/post/2023-08-05-protein-language-models-part-3/" />
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="preload" as="style"
+      href="https://fonts.googleapis.com/css?family=Noto+Serif+SC|Noto+Emoji&display=swap" />
+<link rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Noto+Serif+SC|Noto+Emoji&display=swap"
+      media="print" onload="this.media='all'" />
+<noscript>
+<link rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Noto+Serif+SC&display=swap" />
+</noscript>
+
+
+  
+  
+    
+      <link rel="stylesheet" href="http://localhost:1313/css/hugo-tufte.min.css">
+    
+  
+
+
+
+  
+  
+    
+      <link rel="stylesheet" href="http://localhost:1313/css/hugo-tufte-options.min.css">
+    
+  
+
+
+<link rel="stylesheet" href="http://localhost:1313/css/hugo-tufte-override.css">
+
+</head>
+<body>
+
+
+<article id="main">
+  <section>
+<h1 class="content-title">Protein Language Models (Part 3): Evaluation &amp; Benchmarks&nbsp;:: Draft</h1></section>
+
+  
+<section>
+  <details closed class="toc">
+    <summary>Table of Contents</summary>
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#what-do-plms-learn">What do PLMs learn?</a>
+      <ul>
+        <li><a href="#evolutionary-knowledge">Evolutionary knowledge</a></li>
+        <li><a href="#structural-knowledge">Structural knowledge</a></li>
+      </ul>
+    </li>
+    <li><a href="#benchmarks">Benchmarks</a>
+      <ul>
+        <li><a href="#structure">Structure</a></li>
+        <li><a href="#function-prediction">Function (Prediction)</a></li>
+        <li><a href="#generation">Generation</a></li>
+        <li><a href="#taxonomy">Taxonomy</a></li>
+      </ul>
+    </li>
+    <li><a href="#summary">Summary</a></li>
+  </ul>
+</nav>
+  </details>
+</section>
+
+
+  <section><h2 id="what-do-plms-learn">
+What do PLMs learn?
+<a href="#what-do-plms-learn" class="heading-anchor">#</a>
+</h2>
+<p>Unlike with LLMs, we can&rsquo;t rely on our native perceptual hardware to evaluate samples from PLMs.<label for="sidenote-1" class="margin-toggle sidenote-number">(1)</label>
+<input type="checkbox" id="sidenote-1" class="margin-toggle"/>
+<span class="sidenote">
+<span class="sidenote-number">(1)</span>Our intuitive evaluations of language model samples often precede benchmark results showing differences between them. In early-to-mid 2023, many became convinced that open source models trained on samples from OpenAI’s GPT models could perform as well or better than these proprietary models. While benchmarks <a href="https://arxiv.org/abs/2305.15717">eventually</a> caught up, <a href="https://twitter.com/tshevl/status/1636683815950196741?s=20">random</a> <a href="https://twitter.com/KevinAFischer/status/1642935719483277312?s=20">ML-adjacent</a> Twitter users playing with both sets of models were the first to realize that the open source models lagged far behind OpenAI’s in terms of generality and skill breadth.
+</span>
+Instead, we have to find other ways to build intuition about when and how much we can trust our models outside of summary metrics.</p>
+<h3 id="evolutionary-knowledge">
+Evolutionary knowledge
+<a href="#evolutionary-knowledge" class="heading-anchor">#</a>
+</h3>
+<p>Our first intuition comes from the source of PLM&rsquo;s training data. By training PLMs on datasets of sequences that survived the gauntlet of millions of years of evolutionary competition, we expect to instill an understanding of evolutionary fitness and even phylogeny into our models. Finding this knowledge inside a PLM provides evidence that it&rsquo;s learning the underlying patterns in its training data.</p>
+
+
+    <figure >
+  
+    <label for="marginfig-2" class="margin-toggle marginnote-ind">⊕</label>
+    <input type="checkbox" id="marginfig-2" class="margin-toggle"/>
+    <span class="marginnote">
+
+
+t-SNE projection of ProtT5-U50 sequence embeddings with colors denoting the kingdom of origin before pretraining (top) and after (bottom).
+
+
+
+</span>
+
+
+
+  
+  <img src="http://localhost:1313/images/prottrans-fig4c.png" alt="Image">
+  
+
+
+
+
+</figure>
+
+
+<p>ProtTrans&rsquo; authors examined whether ProtT5-U50&rsquo;s learned embeddings cluster proteins by their evolutionary kingdoms of origin. Visually, the pretrained embeddings cluster much more in terms of evolutionary kingdom, providing a nice sanity check that the pretraining process instills taxonomic evolutionary understanding.</p>
+<p>Arguably even stronger evidence for PLMs encoding evolutionary knowledge comes from results on zero-shot fitness prediction across multiple deep mutational scans (DMS). DMSs measure the impact of small numbers of mutations away from wild type on protein fitness. We call the prediction zero-shot because it involves using a PLM&rsquo;s likelihoods or some variant of them to predict variant fitness. No additional training involved. Across models and datasets, we see that when data&rsquo;s a constraint, PLM likelihoods can predict fitness nearly as well as models that use labels for training. We revisit these results in more detail in <a href="#application-to-downstream-tasks-and-use-cases">the next section</a> but the fact that PLM likelihoods predict fitness reasonably competitively shows that these models&rsquo; learned sequence likelihoods capture evolutionary fitness.</p>
+<h3 id="structural-knowledge">
+Structural knowledge
+<a href="#structural-knowledge" class="heading-anchor">#</a>
+</h3>
+<p>For PLMs to deliver their promise, we want them to do more than learn evolutionary fitness though. Ideally, these models learn representations that capture biochemical and other physical properties. Protein structure directly mediates much of their function and so acts as a natural starting point for interrogating their knowledge.</p>
+<p>Lowest in the structure hierarchy, we have amino acid level biochemical knowledge emboded in a model&rsquo;s learned embeddings.</p>
+
+
+    <figure >
+  
+    <label for="marginfig-3" class="margin-toggle marginnote-ind">⊕</label>
+    <input type="checkbox" id="marginfig-3" class="margin-toggle"/>
+    <span class="marginnote">
+
+
+ESM-1b&rsquo;s learned embeddings colored and marked by biological property.
+
+
+
+</span>
+
+
+
+  
+  <img src="http://localhost:1313/images/esm1b-fig1.jpg" alt="Image">
+  
+
+
+
+
+</figure>
+
+
+<p>Across multiple models, we see this structure encoded by embeddings. In the above dimensionality reduced display of ESM-1b&rsquo;s embeddings, we see strong clustering by charge and of hydrophobicity and aromaticity. It&rsquo;s less clear whether amino acid embeddings cluster by size, but the clustering by other properties provides evidence that PLMs learn biochemical features in their embeddings.</p>
+<p>Next up in the hierarchy, we have secondary aka local structure.</p>
+<p>At the top of the hierarchy, we have tertiary structure. We can first assess a model&rsquo;s structural knowledge via examining how well its representations encode protein contacts and/or distance.</p>
+<h2 id="benchmarks">
+Benchmarks
+<a href="#benchmarks" class="heading-anchor">#</a>
+</h2>
+<p>Beyond scientific interest, we want investment in PLMs to yield higher performance on important tasks and to enable novel protein design, function prediction, and other capabilities. As observed in other areas of machine learning, benchmarks and proxy tasks help bridge the gap between individual applications and capabilities and over-simplified metrics like loss. Currently, PLM papers use a wide range of benchmarks and downstream task evaluations that span structure prediction, function prediction, generation (design), and taxonomy.</p>
+<h3 id="structure">
+Structure
+<a href="#structure" class="heading-anchor">#</a>
+</h3>
+<p>We&rsquo;ve already established that PLM representations encode structural information, but for usage on real tasks, we care about maximum performance rather than knowledge and want more fine-grained structural information. For this, contact map and atom-level structure prediction from sequence serve as good benchmarks to test PLMs against. Newly solved structures are the gold standard here.</p>
+<h3 id="function-prediction">
+Function (Prediction)
+<a href="#function-prediction" class="heading-anchor">#</a>
+</h3>
+<p>In addition to informing our beliefs about evolutionary knowledge encoded in PLM representations, average zero-shot fitness performance has often been treated as a proxy for overall PLM quality. Under the assumptions that PLMs learn to approximate evolutionary fitness and insofar as variant-level fitness correlates with evolutionary fitness, we&rsquo;d expect a better PLM to do better on this task. And we do in fact see this correlation across multiple papers. As we scale models up or improve them in other ways, we see a strong although not perfect trend of improvement in zero-shot fitness performance.</p>
+<p><strong>ProteinGym results</strong></p>
+<p><a href="https://www.biorxiv.org/content/10.1101/2022.01.29.478324v1.full">Recent work</a> casts doubt on the simple story that supposedly explains this. I&rsquo;m over-simplifying but the paper shows with theory and experiments that perfect density estimation will not correspond to perfect fitness prediction. It instead argues that PLMs perform well at fitness estimation partly in spite of their statistical objective. Practically, this mismatch means that improvements on language modeling loss may eventually stop translating to improvements on zero-shot fitness prediction.</p>
+<p>Where does that leave us with using zero-shot fitness prediction as a benchmark for PLMs? Models that take MSAs but use identical losses still outperform single sequence models, indicating we haven&rsquo;t yet maxed out single sequence model performance. Until we reach parity, we presumably won&rsquo;t&rsquo;t need to worry about this mismatch. Once we reach parity though, we should be wary of mistaking lack of further improvement on zero-shot fitness performance for a broader PLM quality plateau.</p>
+<p>Supervised benchmarks</p>
+<p>While the proliferation of benchmarks allows us to evaluate PLMs on a broad range of supervised tasks, inconsistent benchmark and baseline usage hampers faster, more robust progress. I hoped that, with the publishing of FLIP, evaluating on their full suite of datasets and splits against the baselines they include would become table stakes for claiming improvements on supervised fitness prediction.  Instead, I still see many papers that only evaluate on random splits or a subset of the splits / datasets they provide.</p>
+<p>Inconsistent choice and use of benchmarks hamper our understanding of PLM progress and PLM&rsquo;s value for various applications.</p>
+<h3 id="generation">
+Generation
+<a href="#generation" class="heading-anchor">#</a>
+</h3>
+<p>Testing generation is hardest because, outside of datasets like GB1, we typically lack measurements for even a fraction of possible generated sequences and so have to resort to proxies.</p>
+<h3 id="taxonomy">
+Taxonomy
+<a href="#taxonomy" class="heading-anchor">#</a>
+</h3>
+<h2 id="summary">
+Summary
+<a href="#summary" class="heading-anchor">#</a>
+</h2>
+<p>Giant table of benchmarks</p>
+</section>
+  <section><footer class="page-footer">
+<hr />
+
+<div class="previous-post" style="display:inline-block;">
+  
+  <a class="link-reverse" href="http://localhost:1313/post/2023-08-05-protein-language-models-part-5/?ref=footer">« Protein Language Models (Part 5): Conclusion &amp; FAQ</a>
+  
+</div>
+
+<div class="next-post", style="display:inline-block;float:right;">
+  
+  <a class="link-reverse" href="http://localhost:1313/post/2023-08-05-protein-language-models-part-2/?ref=footer">Protein Language Models (Part 2): Models »</a>
+  
+</div>
+
+<ul class="page-footer-menu">
+  
+  
+  <li><a href="https://twitter.com/an1lam">Twitter</a></li>
+  
+  
+  
+
+  
+  <li><a href="https://github.com/an1lam">GitHub</a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <li><a href="https://scholar.google.com/citations?user=Q6_3PJEAAAAJ">Google Scholar</a></li>
+  
+  
+  
+    <li><a href="https://github.com/an1lam"><i class='fa fa-github fa-2x'></i>  </a></li>
+  
+    <li><a href="https://twitter.com/an1lam"><i class='fa fa-twitter fa-2x'></i>  </a></li>
+  
+    <li><a href="mailto:stephenmalina@gmail.com"><i class='fa fa-envelope fa-2x'></i>  </a></li>
+  
+    <li><a href="https://stackoverflow.com/users/1631855/an1lam"><i class='fa fa-stack-overflow fa-2x'></i>  </a></li>
+  
+</ul>
+
+
+<p>
+  Powered by <a href="https://gohugo.io">Hugo</a> and the
+  <a href="https://github.com/loikein/hugo-tufte">Tufte theme</a>.
+</p>
+
+
+
+
+</footer>
+</section>
+  <section><nav class="menu">
+    <ul>
+    
+        <li><a href="http://localhost:1313/">Home</a></li>
+    
+        <li><a href="http://localhost:1313/about">About</a></li>
+    
+        <li><a href="http://localhost:1313/post">Post</a></li>
+    
+        <li><a href="http://localhost:1313/bets">Bets</a></li>
+    
+        <li><a href="http://localhost:1313/greatest-hits">Greatest Hits</a></li>
+    
+        <li><a href="http://localhost:1313/subscribe">Subscribe</a></li>
+    
+        <li><a href="http://localhost:1313/tags">Tags</a></li>
+    
+    </ul>
+</nav>
+</section>
+</article>
+
+
+
+
+
+
+
+  <script>(function(){var e,t,n,s=document.getElementsByTagName("code");for(n=0;n<s.length;){if(t=s[n],t.parentNode.tagName!=="PRE"&&t.childElementCount===0&&!t.classList.contains("nolatex")&&(e=t.textContent,/^\$[^$]/.test(e)&&/[^$]\$$/.test(e)&&(e=e.replace(/^\$/,"\\(").replace(/\$$/,"\\)"),t.textContent=e),/^\\\((.|\s)+\\\)$/.test(e)||/^\\\[(.|\s)+\\\]$/.test(e)||/^\$(.|\s)+\$$/.test(e)||/^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(e))){t.outerHTML=t.innerHTML;continue}n++}})()</script>
+
+
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.css" crossorigin="anonymous">
+<script defer src="//cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.js" crossorigin="anonymous"></script>
+<script defer src="//cdn.jsdelivr.net/npm/katex@0.16.4/dist/contrib/auto-render.min.js" crossorigin="anonymous"></script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        renderMathInElement(document.body, {
+            
+            
+            
+            
+            
+            
+            trust: (context) => ['\\htmlId', '\\href'].includes(context.command),
+            macros: {
+              "\\eqref": "\\href{###1}{(\\text{#1})}",
+              "\\ref": "\\href{###1}{\\text{#1}}",
+              "\\label": "\\htmlId{#1}{}"
+            }
+        });
+    });
+</script>
+
+
+
+</body>
+
+</html>

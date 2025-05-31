@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Protein-Design on Stephen Malina</title>
+    <link>http://localhost:1313/tags/protein-design/</link>
+    <description>Recent content in Protein-Design on Stephen Malina</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 18 Dec 2022 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/protein-design/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Introduction to protein design: Overview and history</title>
+      <link>http://localhost:1313/post/2022-12-18-annotated-ml-protein-design-bibliography/</link>
+      <pubDate>Sun, 18 Dec 2022 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/post/2022-12-18-annotated-ml-protein-design-bibliography/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Status&lt;/strong&gt;: Work in progress.&lt;/p&gt;&#xA;&lt;h2 id=&#34;introduction&#34;&gt;&#xA;Introduction&#xA;&lt;a href=&#34;#introduction&#34; class=&#34;heading-anchor&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;p&gt;Protein design is the art of creating new protein sequences and structures that have specific properties or functions. Proteins are made up of strings of amino acids and are essential to many biological processes. They serve a wide range of roles in the body, including catalyzing chemical reactions, transporting molecules, and providing structural support. Proteins have numerous practical therapeutic applications, such as viral vectors for gene therapy, mini proteins for targeting specific molecules, and improved antibodies for fighting diseases. Proteins also have applications outside of therapeutics. Enzymes are used in a huge and growing fraction of industrial chemical processes and also play a key role in sustainable potential replacements for existing processes.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

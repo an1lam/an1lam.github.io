@@ -1,173 +1,167 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+<html lang="en-us"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+<title>Using NPM as a build system - Stephen Malina</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description"
+    content="When we started building Repcoin, Matt and I were relatively inexperienced with Node and React. We didn&rsquo;t have experience setting up and maintaining build systems for large Javascript projects. Gulp and Grunt are standard in the industry, so we decided to go with Gulp, since it seemed newer and flashier.
+Before I go on, I want to make a disclaimer: I&rsquo;m not a Gulp expert and will only discuss it in this article to the extent to which it illustrates why we switched to NPM as our build system. ">
+<link rel="canonical" href="http://localhost:1313/post/2015-04-02-using-npm-as-a-build-system/" />
 
-<head>
-<title>Stephen Malina - Using NPM as a build system</title>
-  <meta http-equiv="content-type" content="text/html; charset=utf-8">
 
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="">
-<meta name="keywords" content="">
-<meta name="author" content="Stephen Malina">
-<meta name="generator" content="Hugo 0.68.3" />
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="preload" as="style"
+      href="https://fonts.googleapis.com/css?family=Noto+Serif+SC|Noto+Emoji&display=swap" />
+<link rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Noto+Serif+SC|Noto+Emoji&display=swap"
+      media="print" onload="this.media='all'" />
+<noscript>
+<link rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Noto+Serif+SC&display=swap" />
+</noscript>
+
 
   
   
+    
+      <link rel="stylesheet" href="http://localhost:1313/css/hugo-tufte.min.css">
+    
+  
 
 
-
-
-
-
-<link rel="stylesheet" href="https://unpkg.com/purecss@2.0.3/build/pure-min.css">
-
-
-    <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.3/build/grids-responsive-min.css">
-
-
-
-
-
-
-
-
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-
-
-<link rel="stylesheet" href="https://stephenmalina.com/css/tufte.css">
-<link rel="stylesheet" href="https://stephenmalina.com/css/hugo-tufte.css">
-<link rel="stylesheet" href="https://stephenmalina.com/css/hugo-tufte-override.css">
 
   
-<script type="application/javascript">
-var doNotTrack = false;
-if (!doNotTrack) {
-	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-	ga('create', 'UA-187780632-1', 'auto');
-	
-	ga('send', 'pageview');
-}
-</script>
-
   
-<script type="application/javascript">
-var doNotTrack = false;
-if (!doNotTrack) {
-	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
-	ga('create', 'UA-187780632-1', 'auto');
-	
-	ga('send', 'pageview');
-}
-</script>
-<script async src='https://www.google-analytics.com/analytics.js'></script>
+    
+      <link rel="stylesheet" href="http://localhost:1313/css/hugo-tufte-options.min.css">
+    
+  
+
+
+<link rel="stylesheet" href="http://localhost:1313/css/hugo-tufte-override.css">
 
 </head>
-
-
 <body>
-<div id="layout" class="pure-g">
-<article class="pure-u-1">
-<header class="brand">
-  <h1>Stephen Malina</h1>
-  <h2>This is my blog. There are many others like it but this one is mine.</h2>
-  <nav class="menu">
-    <ul>
-    
-        <li><a href="https://stephenmalina.com/">Home</a></li>
-    
-        <li><a href="https://stephenmalina.com/about">About</a></li>
-    
-        <li><a href="https://stephenmalina.com/post">Post</a></li>
-    
-        <li><a href="https://stephenmalina.com/subscribe">Subscribe</a></li>
-    
-        <li><a href="https://stephenmalina.com/tags">Tags</a></li>
-    
-    </ul>
-</nav>
 
-</header>
 
-<section>
-<h1 class="content-title">
+<article id="main">
+  <section>
+<h1 class="content-title">Using NPM as a build system&nbsp;:: Draft</h1></section>
+
   
-  <a href="https://stephenmalina.com/post/2015-04-02-using-npm-as-a-build-system/">Using NPM as a build system :: Draft </a>
-  
-</h1>
 
-
-
-  <span class="content-meta">
-    
-
-
-    
-      <i class="fa fa-calendar"></i>
-      &nbsp;Apr 2, 2015
-    
-
-    
-      &nbsp;<i class="fa fa-clock-o"></i>
-      &nbsp;2 min read
-    
-
-    
-  </span>
-
-
-</section>
-
-
-
-<section><p>When we started building <a href="http://repcoin.com">Repcoin</a>, <a href="www.mattritter.me">Matt</a> and I were relatively inexperienced with <a href="https://nodejs.org/">Node</a> and <a href="https://facebook.github.io/react/">React</a>. We didn&rsquo;t have experience setting up and maintaining build systems for large Javascript projects. <a href="">Gulp</a> and <a href="">Grunt</a> are standard in the industry, so we decided to go with Gulp, since it seemed newer and flashier.</p>
+  <section><p>When we started building <a href="http://repcoin.com">Repcoin</a>, <a href="www.mattritter.me">Matt</a> and I were relatively inexperienced with <a href="https://nodejs.org/">Node</a> and <a href="https://facebook.github.io/react/">React</a>. We didn&rsquo;t have experience setting up and maintaining build systems for large Javascript projects. <a href="">Gulp</a> and <a href="">Grunt</a> are standard in the industry, so we decided to go with Gulp, since it seemed newer and flashier.</p>
 <p>Before I go on, I want to make a disclaimer: <em>I&rsquo;m not a Gulp expert and will only discuss it in this article to the extent to which it illustrates why we switched to NPM as our build system.</em></p>
 <p>Unfortunately, our inexperience led us to struggle with Gulp. Gulp uses streams as its unifying abstraction and we found this difficult to understand and work with. We just wanted to get our frontend and backend up and running as quickly as possible. Although we finally got the project up and running with Gulp, we quickly ran into more problems, primarily due to our lack of understanding of the Gulp framework. In addition, we couldn&rsquo;t find Gulp-compatible plugins for certain modules.</p>
 <p>As the primary manager of our build system, I eventually decided to seek out an alternative to Gulp. We thought about using Grunt, but the prospect of translating our now sizeable Gulpfile into a Gruntfile was off-putting to say the least. So, I sought out alternatives and found <a href="http://blog.keithcirkel.co.uk/how-to-use-npm-as-a-build-tool/">this blog post</a>.</p>
 <p>Since finding this blog post, we&rsquo;ve learned a ton. I intend to detail what we&rsquo;ve learned in this post.</p>
-<h1 id="running-the-site">Running the Site</h1>
+<h1 id="running-the-site">
+Running the Site
+<a href="#running-the-site" class="heading-anchor">#</a>
+</h1>
 </section>
-<section>
-  
+  <section><footer class="page-footer">
+<hr />
 
-  <footer class="page-footer">
-		<hr>
-		<ul class="page-footer-menu">
-		
-      <li><a href="https://github.com/an1lam"><i class='fa fa-github fa-2x'></i> </a></li>
-		
-      <li><a href="https://twitter.com/an1lam"><i class='fa fa-twitter fa-2x'></i> </a></li>
-		
-      <li><a href="mailto:stephenmalina@gmail.com"><i class='fa fa-envelope fa-2x'></i> </a></li>
-		
-      <li><a href="https://stackoverflow.com/users/1631855/an1lam"><i class='fa fa-stack-overflow fa-2x'></i> </a></li>
-		
-		</ul>
-
+<div class="previous-post" style="display:inline-block;">
   
-    <p>
-      Powered by <a href="https://gohugo.io">Hugo</a> and the
-      <a href="https://github.com/shawnohare/hugo-tufte">Tufte theme</a>.
-    </p>
+  <a class="link-reverse" href="http://localhost:1313/post/2015-03-29-nl03292015/?ref=footer">« Weekly Newsletter</a>
   
-
-	<div class="copyright">
-	<p>
-    
-      &copy; 2021
-    .
-    All rights reserved.
-    
-  </p>
 </div>
+
+<div class="next-post", style="display:inline-block;float:right;">
+  
+  <a class="link-reverse" href="http://localhost:1313/post/2015-04-05-nl04052015/?ref=footer">Weekly Newsletter »</a>
+  
+</div>
+
+<ul class="page-footer-menu">
+  
+  
+  <li><a href="https://twitter.com/an1lam">Twitter</a></li>
+  
+  
+  
+
+  
+  <li><a href="https://github.com/an1lam">GitHub</a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <li><a href="https://scholar.google.com/citations?user=Q6_3PJEAAAAJ">Google Scholar</a></li>
+  
+  
+  
+    <li><a href="https://github.com/an1lam"><i class='fa fa-github fa-2x'></i>  </a></li>
+  
+    <li><a href="https://twitter.com/an1lam"><i class='fa fa-twitter fa-2x'></i>  </a></li>
+  
+    <li><a href="mailto:stephenmalina@gmail.com"><i class='fa fa-envelope fa-2x'></i>  </a></li>
+  
+    <li><a href="https://stackoverflow.com/users/1631855/an1lam"><i class='fa fa-stack-overflow fa-2x'></i>  </a></li>
+  
+</ul>
+
+
+<p>
+  Powered by <a href="https://gohugo.io">Hugo</a> and the
+  <a href="https://github.com/loikein/hugo-tufte">Tufte theme</a>.
+</p>
+
+
+
+
 </footer>
-
-
-
+</section>
+  <section><nav class="menu">
+    <ul>
+    
+        <li><a href="http://localhost:1313/">Home</a></li>
+    
+        <li><a href="http://localhost:1313/about">About</a></li>
+    
+        <li><a href="http://localhost:1313/post">Post</a></li>
+    
+        <li><a href="http://localhost:1313/bets">Bets</a></li>
+    
+        <li><a href="http://localhost:1313/greatest-hits">Greatest Hits</a></li>
+    
+        <li><a href="http://localhost:1313/subscribe">Subscribe</a></li>
+    
+        <li><a href="http://localhost:1313/tags">Tags</a></li>
+    
+    </ul>
+</nav>
 </section>
 </article>
-</div>
+
+
+
+
+
 </body>
+
 </html>
