@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="description"
-    content="Earlier today (on August 7th), I realized that I was about to miss a golden opportunity to quickly test how calibrated I was about AI progress by predicting some GPT-5 benchmark scores. Upon realizing this, I dashed off some quick predictions based on a combination of then-current top benchmark scores and my intuition about how big a jump GPT-5 would be over o3, Grok 4, Claude Opus 4, and Gemini 2.5 Pro. I suspect many people just want the editorializing, so I put the full set of predictions at the end of the post after the analysis. In one sentence, I’d describe their underlying sentiment as “progress continues apace along the trendline but without a discontinuous jump.” ">
+    content="Earlier today (on August 7th), I realized that I was about to miss a golden opportunity to quickly test how calibrated I was about AI progress by predicting some GPT-5 benchmark scores. Upon realizing this, I dashed off some quick predictions based on a combination of then-current top benchmark scores and my intuition about how big a jump GPT-5 would be over o3, Grok 4, Claude Opus 4, and Gemini 2.5 Pro. You can see the predictions and current resolutions in the next section. My one sentence summary of their underlying sentiment is “progress continues apace along the trendline but without a discontinuous jump.” ">
 <link rel="canonical" href="https://stephenmalina.com/post/2025-08-07-reviewing-my-gpt5-predictions/" />
 
 
@@ -58,7 +58,60 @@
 
   
 
-  <section><p>Earlier today (on August 7th), I realized that I was about to miss a golden opportunity to quickly test how calibrated I was about AI progress by predicting some GPT-5 benchmark scores. Upon realizing this, I dashed off some quick predictions based on a combination of then-current top benchmark scores and my intuition about how big a jump GPT-5 would be over o3, Grok 4, Claude Opus 4, and Gemini 2.5 Pro. I suspect many people just want the editorializing, so I put the full set of predictions at the end of the post after the analysis. In one sentence, I’d describe their underlying sentiment as “progress continues apace along the trendline but without a discontinuous jump.”</p>
+  <section><p>Earlier today (on August 7th), I realized that I was about to miss a golden opportunity to quickly test how calibrated I was about AI progress by predicting some GPT-5 benchmark scores. Upon realizing this, I dashed off some quick predictions based on a combination of then-current top benchmark scores and my intuition about how big a jump GPT-5 would be over o3, Grok 4, Claude Opus 4, and Gemini 2.5 Pro. You can see the predictions and current resolutions in the next section. My one sentence summary of their underlying sentiment is “progress continues apace along the trendline but without a discontinuous jump.”</p>
+<h2 id="my-predictions">
+My predictions
+<a href="#my-predictions" class="heading-anchor">#</a>
+</h2>
+<p>If I had more time, I would’ve predicted on even more things. I especially regret not predicting METR’s time horizon benchmark <a href="https://metr.github.io/autonomy-evals-guide/gpt-5-report/">results</a>. But, as they say, done is better than perfect, so here’s what we ended up with.</p>
+<table>
+  <thead>
+      <tr>
+          <th>Benchmark</th>
+          <th>My Prediction</th>
+          <th>GPT-5 Result</th>
+          <th>Outcome</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>ARC-AGI 2</strong></td>
+          <td>10% for &gt;50%</td>
+          <td>9.9%</td>
+          <td>✅ Correct (low probability event didn&rsquo;t occur)</td>
+      </tr>
+      <tr>
+          <td><strong>SWE-Bench Verified</strong></td>
+          <td><strong>70-80%: 64%</strong> / 80-90%: 30% / Other: 6%</td>
+          <td>74.9%</td>
+          <td>✅ Direct hit on highest probability range</td>
+      </tr>
+      <tr>
+          <td><strong>FrontierMath</strong></td>
+          <td>20-30%: 45% / <strong>30-40%: 40%</strong> / 40-100%: 10% / &lt;20%: 5%</td>
+          <td>32.1% (OpenAI) <br> 24.8% (<a href="https://x.com/EpochAIResearch/status/1953615906535313664">Epoch</a>)</td>
+          <td>⚠️ Second-highest probability range</td>
+      </tr>
+      <tr>
+          <td><strong>NYT Connections</strong></td>
+          <td>68% to top leaderboard</td>
+          <td><em>Pending</em></td>
+          <td>⏳ Currently 7th place</td>
+      </tr>
+      <tr>
+          <td><strong>Creative Writing</strong></td>
+          <td>75% to top leaderboard</td>
+          <td><em>Pending</em></td>
+          <td>⏳ Awaiting results</td>
+      </tr>
+      <tr>
+          <td><strong>CodeForces ELO</strong></td>
+          <td>40% for top 10</td>
+          <td><em>Pending</em></td>
+          <td>⏳ Unlikely to resolve</td>
+      </tr>
+  </tbody>
+</table>
 <h2 id="analysis--takeaways">
 Analysis &amp; takeaways
 <a href="#analysis--takeaways" class="heading-anchor">#</a>
@@ -69,7 +122,7 @@ How did I do?
 </h3>
 <p>Even without all my predictions having defined resolutions, I feel comfortable concluding that I did fairly well. As you can see below, I predicted meaningful, but incremental progress, on SWE-Bench Verified and FrontierMath (tiers 1-3). In the first case, my maximum probability range turned out to contain GPT-5’s actual performance right in the middle. For FrontierMath, GPT-5 just made it into my second most likely, slightly higher range when using “pro” mode and tools. Finally, I predicted that GPT-5 wouldn’t make a massive jump on ARC-AGI 2 from Grok 4 and was correct. For the unresolved predictions, my current bet is that GPT-5 will top the creative writing leaderboard, is a toss up for the connections one, and will not place top 10 in the world on CodeForces. So no major whiffs, although I may have over-estimated progress on NYT Connections a bit.</p>
 <p>As mentioned above, I generated my predictions via hand-wavey trend line extrapolation. For each, I basically looked at how the most recent top models did relative to their predecessors and used that to make a rough guess of how much better GPT-5 would be assuming a similar trend. With the caveat that n=3 is very small, this methodology worked reasonably well for predicting GPT-5’s performance.</p>
-<p>In terms of what this implies about AI progress, my main takeaway is kind of boring - GPT-5 is another impressive, on trend, step on a fast but predictable climb across a range of coding, math, and agentic benchmarks.<a href="https://an1lam.substack.com/p/reviewing-my-gpt5-predictions#footnote-1-170408586">1</a> It’s not a 0-1, game-changing inflection point, but it’s also not a sign of the brick wall we’ve been hearing about for years.</p>
+<p>In terms of what this implies about AI progress, my main takeaway is kind of boring - GPT-5 is another impressive, on trend, step on a fast but predictable climb across a range of coding, math, and agentic benchmarks. It’s not a 0-1, game-changing inflection point, but it’s also not a sign of the brick wall we’ve been hearing about for years.</p>
 <p>If we look beyond the benchmarks I made predictions for, the story is a bit more mixed, but overall holds up. On certain benchmarks not captured by my predictions, like Health Bench and economically important tasks, it made bigger jumps.</p>
 <p><a href="https://substackcdn.com/image/fetch/$s_!oIrL!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fbec31872-1d73-4e14-9265-84275a4b51d4_632x876.png"><img src="https://substackcdn.com/image/fetch/$s_!oIrL!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fbec31872-1d73-4e14-9265-84275a4b51d4_632x876.png" alt=""></a>Source: <a href="https://openai.com/index/introducing-gpt-5/">OpenAI’s announcement post</a>.</p>
 <p>On others, like OpenAI PRs, it didn’t significantly improve on o3 and ChatGPT agent.</p>
@@ -86,72 +139,35 @@ Going meta
 <p>Philip Tetlock and others have written about how making prediction helps forecasters filter out the noise and really focus on what they concretely expect, and that resonates here. It’s very easy for me to get caught up in the fervor of how back we are or how over it is with every launch, but stepping back and focusing on predictions can help me escape the all-or-nothing mindset. For that reason, while I suspect this specific instance was not that valuable in isolation, the habit of making these sorts of predictions and reflecting on them <em>feels</em> valuable.</p>
 <p>On the other hand, if I’m going to do such exercises in the future, I’ll spend more time picking prediction targets whose resolution can meaningfully move my views. As is probably clear from the above, my “on trend” conclusion didn’t provide <em>zero</em> new information, but it certainly didn’t maximize my information gain either.</p>
 <p>Finally, when it comes down to it, if nothing else, making these predictions lets me feel superior to all the people who talk about how right they were in hindsight without showing the epistemic virtue of predicting beforehand! That’s priceless. (Kidding, mostly…)</p>
-<h2 id="appendix-predictions--results">
-Appendix: Predictions &amp; results
-<a href="#appendix-predictions--results" class="heading-anchor">#</a>
+<h2 id="appendix-calibration-plot">
+Appendix: Calibration Plot
+<a href="#appendix-calibration-plot" class="heading-anchor">#</a>
 </h2>
-<p>If I had more time, I would’ve predicted on even more things. I especially regret not predicting METR’s time horizon benchmark <a href="https://metr.github.io/autonomy-evals-guide/gpt-5-report/">results</a>. But, as they say, done is better than perfect, so here’s what we ended up with.</p>
-<p><a href="https://substackcdn.com/image/fetch/$s_!hcf7!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F3a11bc21-cfa6-4801-a736-4e473a1547f4_383x417.png"><img src="https://substackcdn.com/image/fetch/$s_!hcf7!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F3a11bc21-cfa6-4801-a736-4e473a1547f4_383x417.png" alt=""></a>Too few predictions to really read much into this. At best, we can say that, of resolved Qs so far, I did decently well if you treat &gt;50% as a classifier for yes vs. no.</p>
-<h4 id="resolved">
-Resolved
-<a href="#resolved" class="heading-anchor">#</a>
-</h4>
-<ul>
-<li>Will any version of GPT5 exceed 50% on ARC-AGI 2?
-<ul>
-<li>Prediction: 10%</li>
-<li>Resolution: <strong>No</strong> , <a href="https://arcprize.org/leaderboard">source</a> shows 9.9%</li>
-</ul>
-</li>
-<li>What will GPT5&rsquo;s top pass@1 SWE-Bench Verified score be?
-<ul>
-<li>Predictions:
-<ul>
-<li></li>
-<li>[70%, 80%): 64%</li>
-<li>[80%, 90%): 30%</li>
-<li>[90%, 100%] 5%</li>
-</ul>
-</li>
-<li>Resolution: [70%, 80%) with 74.9% according to <a href="https://openai.com/index/introducing-gpt-5/">OpenAI’s announcement</a>.</li>
-</ul>
-</li>
-<li>What will GPT 5 pro&rsquo;s FrontierMath tier 1-3 score be?
-<ul>
-<li>[0.1, 0.2): 5%</li>
-<li>[0.2, 0.3): 45%</li>
-<li>[0.3, 0.4): 40%</li>
-<li></li>
-<li>Resolution: <strong>[0.3, 0.4)</strong> with 0.321 according to <a href="https://openai.com/index/introducing-gpt-5/">OpenAI’s announcement</a>.</li>
-</ul>
-</li>
-</ul>
-<h4 id="not-yet-resolved">
-Not yet resolved
-<a href="#not-yet-resolved" class="heading-anchor">#</a>
-</h4>
-<ul>
-<li>Will any version of GPT5 top Lech Mazur&rsquo;s <a href="https://github.com/lechmazur/nyt-connections">NYT connections benchmark</a> upon release?
-<ul>
-<li>Prediction: 68%</li>
-<li>Resolution: Not yet known. Medium is currently only in 7th place below o3 medium, so the GPT5 medium → pro gap would have to be a bigger jump than o3 medium → pro to beat out Grok 4. In other words, I suspect 68% was a bit high.</li>
-</ul>
-</li>
-<li>Will any version of GPT5 top Lech Mazur&rsquo;s <a href="https://github.com/lechmazur/writing">creative writing benchmark</a> upon release and testing?
-<ul>
-<li>Prediction: 75%</li>
-<li>Resolution: Not yet known. I’m still holding out hope for this one!</li>
-</ul>
-</li>
-<li>Will any version of GPT5, including a new version of Codex, be in the top 10 for CodeForces ELO at time of announcement?
-<ul>
-<li>Prediction: 40%</li>
-<li>Resolution: Not yet known, but I think it’s unlikely we get an update here so will likely resolve to “No”.</li>
-</ul>
-</li>
-</ul>
-<p><a href="https://an1lam.substack.com/p/reviewing-my-gpt5-predictions#footnote-anchor-1-170408586">1</a></p>
-<p>It’s a good model, sir.</p>
+
+
+    <figure class="fullwidth">
+  
+  
+  <img src="https://substackcdn.com/image/fetch/$s_!hcf7!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F3a11bc21-cfa6-4801-a736-4e473a1547f4_383x417.png" alt="Image">
+  
+  <figcaption>
+
+
+Too few predictions to really read much into this. At best, we can say that, of resolved Qs so far, I did decently well if you treat &gt;50% as a classifier for yes vs. no.
+
+
+
+
+  </figcaption>
+
+
+
+
+
+
+</figure>
+
+
 </section>
   <section><footer class="page-footer">
 <hr />
