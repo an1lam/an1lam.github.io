@@ -6,8 +6,15 @@
     <description>Recent content in Predictions on Stephen Malina</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 31 May 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 07 Aug 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://stephenmalina.com/tags/predictions/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Reviewing my GPT-5 predictions</title>
+      <link>https://stephenmalina.com/post/2025-08-07-reviewing-my-gpt5-predictions/</link>
+      <pubDate>Thu, 07 Aug 2025 00:00:00 +0000</pubDate>
+      <guid>https://stephenmalina.com/post/2025-08-07-reviewing-my-gpt5-predictions/</guid>
+      <description>&lt;p&gt;Earlier today (on August 7th), I realized that I was about to miss a golden opportunity to quickly test how calibrated I was about AI progress by predicting some GPT-5 benchmark scores. Upon realizing this, I dashed off some quick predictions based on a combination of then-current top benchmark scores and my intuition about how big a jump GPT-5 would be over o3, Grok 4, Claude Opus 4, and Gemini 2.5 Pro. I suspect many people just want the editorializing, so I put the full set of predictions at the end of the post after the analysis. In one sentence, I’d describe their underlying sentiment as “progress continues apace along the trendline but without a discontinuous jump.”&lt;/p&gt;</description>
+    </item>
     <item>
       <title>AI Omens: 2&#43; Years Later</title>
       <link>https://stephenmalina.com/post/2025-05-31-reflecting-on-ai-omens/</link>
