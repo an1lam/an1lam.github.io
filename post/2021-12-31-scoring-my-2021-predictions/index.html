@@ -44,7 +44,7 @@ The key metrics I looked at were my overall and by category Brier scores plus ca
   
     
       
-        <link rel="stylesheet" href="/css/hugo-tufte.min.501b334050bf0c6cb2483ec40debea9453e83d461ef681f15b5009d07c834d9d.css" integrity="sha256-UBszQFC/DGyySD7EDevqlFPoPUYe9oHxW1AJ0HyDTZ0=" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://stephenmalina.com/css/hugo-tufte.min.501b334050bf0c6cb2483ec40debea9453e83d461ef681f15b5009d07c834d9d.css" integrity="sha256-UBszQFC/DGyySD7EDevqlFPoPUYe9oHxW1AJ0HyDTZ0=" crossorigin="anonymous">
       
     
   
@@ -55,13 +55,13 @@ The key metrics I looked at were my overall and by category Brier scores plus ca
   
     
       
-        <link rel="stylesheet" href="/css/hugo-tufte-options.min.e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css" integrity="sha256-47DEQpj8HBSa&#43;/TImW&#43;5JCeuQeRkm5NMpJWZG3hSuFU=" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://stephenmalina.com/css/hugo-tufte-options.min.e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css" integrity="sha256-47DEQpj8HBSa&#43;/TImW&#43;5JCeuQeRkm5NMpJWZG3hSuFU=" crossorigin="anonymous">
       
     
   
 
 
-<link rel="stylesheet" href="/css/hugo-tufte-override.css">
+<link rel="stylesheet" href="https://stephenmalina.com/css/hugo-tufte-override.css">
 
 </head>
 <body>
@@ -109,13 +109,13 @@ High level analysis
 </span></p>
 <p>In addition to my overall Brier score, I&rsquo;ve included by category Brier scores below.</p>
 <p align="center">
-<img src="/images/2021_category_brier_scores.png" width="900" height="350" />
+<img src="https://stephenmalina.com/images/2021_category_brier_scores.png" width="900" height="350" />
 </p>
 <p>These by category Brier scores should be taking with a grain of salt because I made very few predictions for some categories. For example, although my Brier score for &ldquo;Internet&rdquo; looks great, in reality, I made one correct high confidence prediction about Scott Alexander starting a Substack.</p>
 <p>I used three numbers as a benchmark for my Brier score. The first is my <a href="https://predictionbook.com/users/krazemon">PredictionBook Brier score</a> of .17. My takeaway from this is that my 2021 predictions were about as accurate as my historical predictions on PredictionBook overall. The other two numbers are <a href="https://predictionbook.com/users/gwern">Gwern&rsquo;s PredictionBook Brier score</a> of .16 and the example Superforecaster Brier score from <a href="https://aiimpacts.org/evidence-on-good-forecasting-practices-from-the-good-judgment-project-an-accompanying-blog-post/">this post</a> of .14. Note that, as benchmarks, these are imperfect because they&rsquo;re being evaluated against entirely different sets of predictions and therefore can&rsquo;t tell us how much better (or worse) someone would have done on the same predictions.</p>
 <p>The Brier score measures both calibration and accuracy whereas a calibration plot only focuses on the former. In layman&rsquo;s terms, it tells me how well I &ldquo;know what I do/don&rsquo;t know&rdquo;. My calibration plots also look pretty good this year!</p>
 <p align="center">
-<img src="/images/2021_calibration_plot.png" width="900" height="350" />
+<img src="https://stephenmalina.com/images/2021_calibration_plot.png" width="900" height="350" />
 </p>
 <p>The left plot shows calibration relative to perfect calibration (orange line) and the right plot shows the number of predictions I made in each bucket. Perfect calibration would have all points on the orange line, which would mean that my resolved frequencies match my assigned probabilities perfectly. As a more realistic point of comparison, I recommend checking out Gwern&rsquo;s <a href="https://predictionbook.com/users/gwern">PredictionBook calibration plot</a>. His looks almost perfect except for a bit of under-confidence in the 100% bucket. You can also compare to mine on <a href="https://predictionbook.com/users/krazemon">PredictionBook</a>, which don&rsquo;t look great. Mine for this year look quite a bit better than mine on PredictionBook but still worse than Gwern&rsquo;s there. I&rsquo;m happy about this because it suggests I&rsquo;m becoming more calibrated over time. Failing to outperform Gwern doesn&rsquo;t bother me too much because he&rsquo;s Gwern and the plots here are based on fewer predictions. I definitely have a bit of room to improve in terms of being over-confident for highly uncertain predictions but overall I&rsquo;m satisfied.</p>
 <p>Finally, one of my (best) readers, <a href="https://sites.google.com/view/ericneyman">Eric Neyman</a> took me up on my offer to score others&rsquo; predictions and sent me predictions for a subset of the events I made predictions for. As a more head-to-head comparison, I computed Brier scores for <a href="https://docs.google.com/spreadsheets/d/1YQZfLKDxxsfawwuvWLWkeoxoj9jRfUCOCQbshtE0EwM/edit#gid=1581068514">Eric&rsquo;s</a> and my predictions on the subset of events we both predicted on. For these events, our Brier scores were basically identical, both equaling ~.2. This is a big ego boost for me because I view Eric as a very level-headed careful forecaster, so the fact that I was able to match his accuracy on this admittedly small set of events is exciting!</p>
@@ -153,7 +153,7 @@ Focus on process over results
 <p>An especially egregious example of this is my 4% prediction that that there would be fewer than 40M estimated in the US by March 31st. <a href="https://covid.cdc.gov/covid-data-tracker/#trends_totalcases">According to the CDC</a>, the number of cumulative cases in the US as of March 31st was 30M, quite a bit below 40M. Looking back, I&rsquo;m not sure whether 1) I was just underestimating the speed of the vaccine rollout and overestimating for how long COVID&rsquo;s spread would continue at its January 2021 rate or 2) the CDC went back and revised their estimates. As evidence for hypothesis 1, I did underestimate the speed of the vaccine rollout so it&rsquo;s possible my confidence in this prediction almost entirely came from that. On the other hand, if I naively extrapolate from the January 17, 2021 trend line forward to March 31st, 2021 assuming fixed growth in cases, it seems roughly 50/50 whether the line would cross 40M by then. It&rsquo;s possible at the time I assumed continued exponential rather than linear growth which led me to predict more confidently than linear extrapolation would suggest but I&rsquo;m not sure.</p>
 <p>This is all to say that I&rsquo;d be able to learn much more from my mistakes had I wrote down my justifications for predictions rather than just recording credences. Thankfully, I&rsquo;ve already started to this for bets and <a href="https://kalshi.com/join/smalina">Kalshi</a> and plan to do the same for 2022 predictions and future predictions I make on <a href="metaculus.com">Metaculus</a>.</p>
 <p align="center">
-<img src="/images/kalshi_bets_tracking_screenshot.png" width="500" height="100" />
+<img src="https://stephenmalina.com/images/kalshi_bets_tracking_screenshot.png" width="500" height="100" />
 </p>
 <p>I do expect that this means I&rsquo;ll make fewer predictions overall, but this seems worth it if my goal is to actually improve.</p>
 <h4 id="find-faster-feedback-loops">
@@ -256,19 +256,19 @@ Conclusion
   <section><nav class="menu">
     <ul>
     
-        <li><a href="/">Home</a></li>
+        <li><a href="https://stephenmalina.com/">Home</a></li>
     
-        <li><a href="/about">About</a></li>
+        <li><a href="https://stephenmalina.com/about">About</a></li>
     
-        <li><a href="/post">Post</a></li>
+        <li><a href="https://stephenmalina.com/post">Post</a></li>
     
-        <li><a href="/bets">Bets</a></li>
+        <li><a href="https://stephenmalina.com/bets">Bets</a></li>
     
-        <li><a href="/fiction">Fiction</a></li>
+        <li><a href="https://stephenmalina.com/fiction">Fiction</a></li>
     
-        <li><a href="/greatest-hits">Greatest Hits</a></li>
+        <li><a href="https://stephenmalina.com/greatest-hits">Greatest Hits</a></li>
     
-        <li><a href="/tags">Tags</a></li>
+        <li><a href="https://stephenmalina.com/tags">Tags</a></li>
     
     </ul>
 </nav></section>
