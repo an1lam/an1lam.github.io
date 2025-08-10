@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Probability on Stephen Malina</title>
-    <link>http://localhost:1313/tags/probability/</link>
+    <link>http://localhost:57852/tags/probability/</link>
     <description>Recent content in Probability on Stephen Malina</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 01 Nov 2019 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/probability/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:57852/tags/probability/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Let&#39;s Derive - Baum-Welch for HMMs</title>
-      <link>http://localhost:1313/post/2019-11-01-baum-welch/</link>
+      <link>http://localhost:57852/post/2019-11-01-baum-welch/</link>
       <pubDate>Fri, 01 Nov 2019 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/post/2019-11-01-baum-welch/</guid>
+      <guid>http://localhost:57852/post/2019-11-01-baum-welch/</guid>
       <description>&lt;p&gt;I&amp;rsquo;ve gotten so tired of reading other people&amp;rsquo;s descriptions of Baum Welch that don&amp;rsquo;t seem to help me understand it better so I&amp;rsquo;ve decided to write my own. Hopefully, this makes it so that I never have to read anyone else&amp;rsquo;s description again.&lt;/p&gt;&#xA;&lt;h1 id=&#34;reader-assumptions&#34;&gt;&#xA;Reader Assumptions&#xA;&lt;a href=&#34;#reader-assumptions&#34; class=&#34;heading-anchor&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h1&gt;&#xA;&lt;p&gt;Since I&amp;rsquo;m writing this for myself, I&amp;rsquo;m going to assume a lot of knowledge. If you&amp;rsquo;ve never heard of an HMM, this post&amp;rsquo;s probably not for you.&lt;/p&gt;</description>
     </item>
   </channel>
