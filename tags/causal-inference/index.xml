@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Causal-Inference on Stephen Malina</title>
-    <link>https://stephenmalina.com/tags/causal-inference/</link>
+    <link>http://localhost:1314/tags/causal-inference/</link>
     <description>Recent content in Causal-Inference on Stephen Malina</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 09 Mar 2020 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://stephenmalina.com/tags/causal-inference/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1314/tags/causal-inference/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Deriving the front-door criterion with the do-calculus</title>
-      <link>https://stephenmalina.com/post/2020-03-09-front-door-do-calc-derivation/</link>
+      <link>http://localhost:1314/post/2020-03-09-front-door-do-calc-derivation/</link>
       <pubDate>Mon, 09 Mar 2020 00:00:00 +0000</pubDate>
-      <guid>https://stephenmalina.com/post/2020-03-09-front-door-do-calc-derivation/</guid>
+      <guid>http://localhost:1314/post/2020-03-09-front-door-do-calc-derivation/</guid>
       <description>&lt;p&gt;&lt;em&gt;Attention conservation notice:&lt;/em&gt; Narrow target audience - will only make sense to people somewhat familiar with causal inference who don&amp;rsquo;t find the result entirely boring.&lt;/p&gt;&#xA;&lt;h2 id=&#34;the-front-door-criterion&#34;&gt;&#xA;The Front-Door Criterion&#xA;&lt;a href=&#34;#the-front-door-criterion&#34; class=&#34;heading-anchor&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;p&gt;Suppose we have a causal graphical model that looks like the following.&lt;/p&gt;&#xA;&lt;img src=&#34;https://i.imgur.com/i5HQ1Jt.png&#34; width=&#34;500&#34; height=&#34;350&#34; /&gt;&#xA;&lt;p&gt;Assume $ U $ is unmeasured whereas $ X, M, Y $ can be measured. Notice that:&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;All directed paths from $ X $ to $ Y $ flow through $ M $.&lt;/li&gt;&#xA;&lt;li&gt;$ X $ blocks all back-door paths from $ M $ to $ Y $.&lt;/li&gt;&#xA;&lt;li&gt;There are no unblocked back-door paths from $ X $ to $ M $.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;One of the most striking results in early causal inference literature, called the front-door criterion, states that, for all graphs like ours which satisfy these three criteria, the causal effect $ P(y \mid \mathrm{do}(x)) $ is identifiable by the formula (assume discrete variables for convenience)&lt;/p&gt;</description>
     </item>
     <item>
       <title>Causal Inference Notes</title>
-      <link>https://stephenmalina.com/learning/2019-11-08-causal-inference/</link>
+      <link>http://localhost:1314/learning/2019-11-08-causal-inference/</link>
       <pubDate>Fri, 15 Nov 2019 00:00:00 +0000</pubDate>
-      <guid>https://stephenmalina.com/learning/2019-11-08-causal-inference/</guid>
+      <guid>http://localhost:1314/learning/2019-11-08-causal-inference/</guid>
       <description>&lt;h2 id=&#34;causal-inference-in-statistics&#34;&gt;&#xA;Causal Inference in Statistics&#xA;&lt;a href=&#34;#causal-inference-in-statistics&#34; class=&#34;heading-anchor&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;h3 id=&#34;questions&#34;&gt;&#xA;Questions&#xA;&lt;a href=&#34;#questions&#34; class=&#34;heading-anchor&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Why is the causal effect identifiable in an IV DAG when the dependencies are linear (from an SCM perspective)?&#xA;&lt;ul&gt;&#xA;&lt;li&gt;I think this may relate to factor models.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;advanced-data-analysis-from-an-elementary-point-of-view-ch-18-23&#34;&gt;&#xA;Advanced Data Analysis from an Elementary Point of View (Ch. 18-23)&#xA;&lt;a href=&#34;#advanced-data-analysis-from-an-elementary-point-of-view-ch-18-23&#34; class=&#34;heading-anchor&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;h3 id=&#34;chapter-18&#34;&gt;&#xA;Chapter 18&#xA;&lt;a href=&#34;#chapter-18&#34; class=&#34;heading-anchor&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h3&gt;&#xA;&lt;h4 id=&#34;exercises&#34;&gt;&#xA;Exercises&#xA;&lt;a href=&#34;#exercises&#34; class=&#34;heading-anchor&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h4&gt;&#xA;&lt;p&gt;&lt;strong&gt;18.2.&lt;/strong&gt;&#xA;&lt;em&gt;Proof that every path must go through a collider:&lt;/em&gt;&lt;/p&gt;&#xA;&lt;p&gt;Observe that every path between two exogenous variables starts with variables going in the opposite direction. Thus, if we imagine walking the path from one exogenous variable to another, we see that the direction of the arrows has to switch at a node, which will be a collider.&lt;/p&gt;</description>
     </item>
   </channel>

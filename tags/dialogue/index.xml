@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Dialogue on Stephen Malina</title>
-    <link>https://stephenmalina.com/tags/dialogue/</link>
+    <link>http://localhost:1314/tags/dialogue/</link>
     <description>Recent content in Dialogue on Stephen Malina</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 11 Jan 2023 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://stephenmalina.com/tags/dialogue/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1314/tags/dialogue/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Dialogue on Viriditas</title>
-      <link>https://stephenmalina.com/post/2023-01-11-viriditas-dialogue/</link>
+      <link>http://localhost:1314/post/2023-01-11-viriditas-dialogue/</link>
       <pubDate>Wed, 11 Jan 2023 00:00:00 +0000</pubDate>
-      <guid>https://stephenmalina.com/post/2023-01-11-viriditas-dialogue/</guid>
+      <guid>http://localhost:1314/post/2023-01-11-viriditas-dialogue/</guid>
       <description>&lt;!-- Output copied to clipboard! --&gt;&#xA;&lt;h1 id=&#34;introduction&#34;&gt;&#xA;Introduction&#xA;&lt;a href=&#34;#introduction&#34; class=&#34;heading-anchor&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h1&gt;&#xA;&lt;p&gt;A few months ago, Elliot Hershberg, one of my favorite Substack writers, wrote a&lt;a href=&#34;https://centuryofbio.substack.com/p/viriditas&#34;&gt; post&lt;/a&gt; laying out his personal mission. I really enjoyed his post and, as is customary in blogging, the best way I could think of to compliment it was to share some (hopefully constructively) critical thoughts on it.&lt;/p&gt;&#xA;&lt;p&gt;After sending my post to Elliot, he proposed the great idea of us having a discussion of this over email, which we could then potentially publish. The Follow-up section here contains a lightly edited form of this back-and-forth. This back-and-forth helped me clarify my views and moved me more in the direction of Elliot’s views than I started out. As a result of this and other discussions/observations I’ve made since then, I feel a lot more uncertain than the views and tone expressed in the original post sound.&lt;/p&gt;</description>
     </item>
   </channel>

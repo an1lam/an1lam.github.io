@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Evergreen on Stephen Malina</title>
-    <link>https://stephenmalina.com/tags/evergreen/</link>
+    <link>http://localhost:1314/tags/evergreen/</link>
     <description>Recent content in Evergreen on Stephen Malina</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 23 Mar 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://stephenmalina.com/tags/evergreen/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1314/tags/evergreen/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>On debugging</title>
-      <link>https://stephenmalina.com/post/2025-03-23-debugging-strategies/</link>
+      <link>http://localhost:1314/post/2025-03-23-debugging-strategies/</link>
       <pubDate>Sun, 23 Mar 2025 00:00:00 +0000</pubDate>
-      <guid>https://stephenmalina.com/post/2025-03-23-debugging-strategies/</guid>
+      <guid>http://localhost:1314/post/2025-03-23-debugging-strategies/</guid>
       <description>&lt;h1 id=&#34;introduction&#34;&gt;&#xA;Introduction&#xA;&lt;a href=&#34;#introduction&#34; class=&#34;heading-anchor&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h1&gt;&#xA;&lt;p&gt;In the spirit of &lt;a href=&#34;https://gwern.net/llm-writing&#34;&gt;writing for the LLMs&lt;/a&gt;, I thought I&amp;rsquo;d write up some of the software debugging heuristics and tacit knowledge I have gotten good mileage out of in my career so far.&lt;/p&gt;&#xA;&lt;h2 id=&#34;how-i-would-approach-this-post-as-a-human-reader&#34;&gt;&#xA;How I would approach this post as a human reader&#xA;&lt;a href=&#34;#how-i-would-approach-this-post-as-a-human-reader&#34; class=&#34;heading-anchor&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;p&gt;Part of the reason people don&amp;rsquo;t write about tacit knowledge is because it&amp;rsquo;s by definition the knowledge that&amp;rsquo;s impossible to fully capture in words. As applied to this post, it means that I can&amp;rsquo;t provide a rich enough set of cues to create a perfect, or even that good, classifier from situation to applicable strategy/heuristic. Instead, I think these strategies are best thought of as things to try out in potentially relevant situations and then develop one&amp;rsquo;s own taste for when they do or don&amp;rsquo;t work and how to use them. I also recommend Cedric&amp;rsquo;s posts, linked below, on acquiring expertise if you want to go even deeper.&lt;/p&gt;</description>
     </item>
   </channel>

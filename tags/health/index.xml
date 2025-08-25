@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Health on Stephen Malina</title>
-    <link>https://stephenmalina.com/tags/health/</link>
+    <link>http://localhost:1314/tags/health/</link>
     <description>Recent content in Health on Stephen Malina</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 13 Aug 2023 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://stephenmalina.com/tags/health/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1314/tags/health/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Continuous glucose monitors (CGM) and beyond: A dialogue</title>
-      <link>https://stephenmalina.com/post/2023-08-13-cgm-and-beyond/</link>
+      <link>http://localhost:1314/post/2023-08-13-cgm-and-beyond/</link>
       <pubDate>Sun, 13 Aug 2023 00:00:00 +0000</pubDate>
-      <guid>https://stephenmalina.com/post/2023-08-13-cgm-and-beyond/</guid>
+      <guid>http://localhost:1314/post/2023-08-13-cgm-and-beyond/</guid>
       <description>&lt;p&gt;What are continuous glucose monitors good for? More broadly, what are continuous measures of physiology (&lt;strong&gt;CxM&lt;/strong&gt;) good for?&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Similar to &lt;a href=&#34;https://centuryofbio.com/&#34;&gt;Elliot&lt;/a&gt; and I&amp;rsquo;s &lt;a href=&#34;http://localhost:1313/post/2023-01-11-viriditas-dialogue/&#34;&gt;dialogue&lt;/a&gt;, this post has an unconventional format. It&amp;rsquo;s both a synthesis of &lt;a href=&#34;https://twitter.com/willyintheworld&#34;&gt;Willy&lt;/a&gt;&amp;rsquo;s, &lt;a href=&#34;https://twitter.com/eryney_ok&#34;&gt;Eryney&amp;rsquo;s&lt;/a&gt;, and my opinions on continuous monitoring combined with a debate in places where we disagree. To try and make it clear which views are coming from each person, we&amp;rsquo;ve annotated sections that come from a subset of us rather than all of us with e.g. &amp;ldquo;Stephen&amp;rsquo;s views&amp;rdquo; or &amp;ldquo;Willy&amp;rsquo;s dissent&amp;rdquo;.&lt;/strong&gt;&lt;/p&gt;</description>
     </item>
   </channel>

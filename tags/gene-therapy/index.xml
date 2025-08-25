@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Gene-Therapy on Stephen Malina</title>
-    <link>https://stephenmalina.com/tags/gene-therapy/</link>
+    <link>http://localhost:1314/tags/gene-therapy/</link>
     <description>Recent content in Gene-Therapy on Stephen Malina</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 07 Jun 2023 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://stephenmalina.com/tags/gene-therapy/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1314/tags/gene-therapy/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>What are the bottlenecks to safe, repeatable edits in humans? Part 1</title>
-      <link>https://stephenmalina.com/post/2023-06-07-editing-part-i/</link>
+      <link>http://localhost:1314/post/2023-06-07-editing-part-i/</link>
       <pubDate>Wed, 07 Jun 2023 00:00:00 +0000</pubDate>
-      <guid>https://stephenmalina.com/post/2023-06-07-editing-part-i/</guid>
+      <guid>http://localhost:1314/post/2023-06-07-editing-part-i/</guid>
       <description>&lt;h2 id=&#34;summary&#34;&gt;&#xA;Summary&#xA;&lt;a href=&#34;#summary&#34; class=&#34;heading-anchor&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;p&gt;Gene editing has made a lot of progress over the past few decades. CRISPR-Cas9 sparked the recent fervor and won some of its early pioneers a &lt;a href=&#34;https://www.synthego.com/blog/gene-editing-nobel-prize#:~:text=Jennifer%20Doudna%20and%20Emmanuelle%20Charpentier%20have%20been%20awarded%20the%20ultimate,most%20powerful%20gene%2Dediting%20tool.&#34;&gt;Nobel Prize&lt;/a&gt;, and more recently Prime Editing and Cytosine/Adenine Base Editors (CBEs/ABEs) have further expanded the range of editing targets and types of edits that are possible while increasing efficiency and reducing the rate of off-target effects.&lt;/p&gt;&#xA;&lt;p&gt;From the perspective of safe, ubiquitous editing in humans using these systems, a few major challenges for editing remain towards translating novel target discovery into clinical application:&lt;/p&gt;</description>
     </item>
   </channel>

@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en-us"><head>
+<html lang="en-us"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1314&amp;path=livereload" data-no-instant defer></script>
 <title>Course Review - Causal Inference - Stephen Malina</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="description"
     content="A review of Professor Elias Bareinboim&#39;s causal inference course, highlighting key concepts like structural causal models, identifiability, and the algorithmic approach to causality through examples and counterexamples. ">
-<link rel="canonical" href="https://stephenmalina.com/post/2020-05-15-ci-course-review/" />
+<link rel="canonical" href="http://localhost:1314/post/2020-05-15-ci-course-review/" />
 
 
 
@@ -28,9 +28,7 @@
   
   
     
-      
-        <link rel="stylesheet" href="https://stephenmalina.com/css/hugo-tufte.min.501b334050bf0c6cb2483ec40debea9453e83d461ef681f15b5009d07c834d9d.css" integrity="sha256-UBszQFC/DGyySD7EDevqlFPoPUYe9oHxW1AJ0HyDTZ0=" crossorigin="anonymous">
-      
+      <link rel="stylesheet" href="http://localhost:1314/css/hugo-tufte.min.css">
     
   
 
@@ -39,14 +37,12 @@
   
   
     
-      
-        <link rel="stylesheet" href="https://stephenmalina.com/css/hugo-tufte-options.min.e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css" integrity="sha256-47DEQpj8HBSa&#43;/TImW&#43;5JCeuQeRkm5NMpJWZG3hSuFU=" crossorigin="anonymous">
-      
+      <link rel="stylesheet" href="http://localhost:1314/css/hugo-tufte-options.min.css">
     
   
 
 
-<link rel="stylesheet" href="https://stephenmalina.com/css/hugo-tufte-override.css">
+<link rel="stylesheet" href="http://localhost:1314/css/hugo-tufte-override.css">
 
 </head>
 <body>
@@ -64,7 +60,7 @@ Brief Course Content Overview
 <a href="#brief-course-content-overview" class="heading-anchor">#</a>
 </h1>
 <p>The course was organized along the rungs of the ladder of causation. As depicted below, the first rung of the ladder is association. Since many of the students, including myself, taking this course have a background in machine learning, we didn&rsquo;t spend much time on this rung. We reviewed some of the results from the probabilistic graphical models literature and then recast them from a causal perspective. I&rsquo;ll talk more about what this recasting looks like in the next section. The second rung of the ladder is intervention. This is about understanding how feasible manipulation of variables impacts overall systems. The bulk of our time in the course was spent on this rung. Specifically, we spent a lot of time talking about and going over the key results for identifying interventional quantities (\( \text{do}(\cdot) \) probabilities. After that, we spent some time diving into more recent results such as the <a href="https://www.aaai.org/Papers/AAAI/2020GB/AAAI-CorreaJ.8051.pdf">stochastic calculus</a> and <a href="https://causalai.net/r25.pdf">causal reinforcement learning</a> (also see <a href="https://www.youtube.com/watch?v=W20GWMzME5w&amp;feature=youtu.be">this talk</a>) that leverage and extend these results. From there, we broadened our focus to what Elias calls the &ldquo;Data Fusion&rdquo; problem, which is broadly about solving the problem of answering questions across the rungs. Finally, we jumped up to the third rung, counterfactuals, which is often analogized to imagination and retrospection. That is, answering the question &ldquo;what would have happened if &hellip;?&rdquo;</p>
-<img src="https://stephenmalina.com/images/ladder-of-causation.png" width=500 />
+<img src="http://localhost:1314/images/ladder-of-causation.png" width=500 />
 <h1 id="themes">
 Themes
 <a href="#themes" class="heading-anchor">#</a>
@@ -101,11 +97,11 @@ Finally, let&rsquo;s suppose that we can model our unobservables as normally dis
 <span class="sidenote-number">(3)</span>While this may seem a little weird, it’s actually not as crazy as it may seem. If you’re familiar with regression from statistics, we can think of this as a linear model with normally distributed noise ($ U $) and make some argument about it being a reasonable approximation with large sample sizes.
 </span></p>
 <p>It turns out that the combination of the distribution over the unobservables combined with the functional relationships also induces a graph that looks like the following.</p>
-<img src="https://stephenmalina.com/images/tree-graph.png" width=300 />
+<img src="http://localhost:1314/images/tree-graph.png" width=300 />
 <p>Furthermore, just by looking at the graph, we can deduce that the impact of fertilizer application on tree growth in the observed distribution is equal to the impact of intervening by adding fertilizer. This may not seem surprising because we explicitly randomized the process of fertilizer application, but where this gets interesting is that we can also obtain similar interventional quantities from observational data where it might initially seem impossible. <label for="sidenote-4" class="margin-toggle sidenote-number">(4)</label>
 <input type="checkbox" id="sidenote-4" class="margin-toggle"/>
 <span class="sidenote">
-<span class="sidenote-number">(4)</span>For a classic example, see <a href="https://stephenmalina.com/2020-03-09-front-door-do-calc-derivation.md">my post</a> on deriving the front-door criterion.
+<span class="sidenote-number">(4)</span>For a classic example, see <a href="http://localhost:1314/2020-03-09-front-door-do-calc-derivation.md">my post</a> on deriving the front-door criterion.
 </span>
 There&rsquo;s lots more I could say about this, but I insetad recommend looking at other resources such as <a href="http://www.michaelnielsen.org/ddi/if-correlation-doesnt-imply-causation-then-what-does/">Michael Nielsen&rsquo;s post</a>, <a href="https://www.youtube.com/watch?v=nWaM6XmQEmU">this talk by Pearl</a>, and <a href="https://www.amazon.com/dp/B075DCKP7V/ref=dp-kindle-redirect?_encoding=UTF8&amp;btkr=1">The Book of Why</a> for more on the details.</p>
 <h2 id="construct-a-counterexample">
@@ -124,7 +120,7 @@ Simple(st) Identifiability Counterexample
 </span>
 is identifiable if all the all models that induce the graph $ \mathcal{G} $ and joint distribution over observables $ P(\mathbf{V}) $, produce the same value for $ P(y \mid \text{do}(x)) $. To be totally honest, I&rsquo;d read this definition in a bunch of different places before I took this course but didn&rsquo;t really grok it because it wasn&rsquo;t clear to me what <strong>wasn&rsquo;t</strong> identifiable. Hopefully this counterexample is as helpful for others as it was for me.</p>
 <p>Consider the following graph (often called the &ldquo;bow graph&rdquo;), in which we&rsquo;ll show that $ P(y \mid \text{do}(x)) $ is identifiable.</p>
-<img src="https://stephenmalina.com/images/bow-graph.png" width=500 />
+<img src="http://localhost:1314/images/bow-graph.png" width=500 />
 <p>It has two binary observed variables, $ X $ and $ Y $, and one binary unobserved confounding variable $ U $. Here are two SCMs ($ \mathcal{M}_0 $, $ \mathcal{M}_1 $) that induce this same graph.
 $$
 \begin{aligned}
@@ -199,13 +195,13 @@ Conclusion
 
 <div class="previous-post" style="display:inline-block;">
   
-  <a class="link-reverse" href="https://stephenmalina.com/post/2020-03-18-digital-minimalism-exp/?ref=footer">« Digital Reduction Experiment</a>
+  <a class="link-reverse" href="http://localhost:1314/post/2020-03-18-digital-minimalism-exp/?ref=footer">« Digital Reduction Experiment</a>
   
 </div>
 
 <div class="next-post", style="display:inline-block;float:right;">
   
-  <a class="link-reverse" href="https://stephenmalina.com/post/2020-07-11-learning-to-love-thinking/?ref=footer">Becoming a more playful, deeper thinker »</a>
+  <a class="link-reverse" href="http://localhost:1314/post/2020-07-11-learning-to-love-thinking/?ref=footer">Becoming a more playful, deeper thinker »</a>
   
 </div>
 
@@ -268,17 +264,17 @@ Conclusion
   <section><nav class="menu">
     <ul>
     
-        <li><a href="https://stephenmalina.com/">Home</a></li>
+        <li><a href="http://localhost:1314/">Home</a></li>
     
-        <li><a href="https://stephenmalina.com/about">About</a></li>
+        <li><a href="http://localhost:1314/about">About</a></li>
     
-        <li><a href="https://stephenmalina.com/post">Post</a></li>
+        <li><a href="http://localhost:1314/post">Post</a></li>
     
-        <li><a href="https://stephenmalina.com/bets">Bets</a></li>
+        <li><a href="http://localhost:1314/bets">Bets</a></li>
     
-        <li><a href="https://stephenmalina.com/greatest-hits">Greatest Hits</a></li>
+        <li><a href="http://localhost:1314/greatest-hits">Greatest Hits</a></li>
     
-        <li><a href="https://stephenmalina.com/tags">Tags</a></li>
+        <li><a href="http://localhost:1314/tags">Tags</a></li>
     
     </ul>
 </nav>

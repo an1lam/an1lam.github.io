@@ -2,248 +2,248 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Stephen Malina</title>
-    <link>https://stephenmalina.com/tags/</link>
+    <link>http://localhost:1314/tags/</link>
     <description>Recent content in Tags on Stephen Malina</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 07 Aug 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://stephenmalina.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1314/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>AI</title>
-      <link>https://stephenmalina.com/tags/ai/</link>
+      <link>http://localhost:1314/tags/ai/</link>
       <pubDate>Thu, 07 Aug 2025 00:00:00 +0000</pubDate>
-      <guid>https://stephenmalina.com/tags/ai/</guid>
+      <guid>http://localhost:1314/tags/ai/</guid>
       <description></description>
     </item>
     <item>
       <title>Predictions</title>
-      <link>https://stephenmalina.com/tags/predictions/</link>
+      <link>http://localhost:1314/tags/predictions/</link>
       <pubDate>Thu, 07 Aug 2025 00:00:00 +0000</pubDate>
-      <guid>https://stephenmalina.com/tags/predictions/</guid>
+      <guid>http://localhost:1314/tags/predictions/</guid>
       <description></description>
     </item>
     <item>
       <title>Annual-Review</title>
-      <link>https://stephenmalina.com/tags/annual-review/</link>
+      <link>http://localhost:1314/tags/annual-review/</link>
       <pubDate>Sat, 31 May 2025 00:00:00 +0000</pubDate>
-      <guid>https://stephenmalina.com/tags/annual-review/</guid>
+      <guid>http://localhost:1314/tags/annual-review/</guid>
       <description></description>
     </item>
     <item>
       <title>Evergreen</title>
-      <link>https://stephenmalina.com/tags/evergreen/</link>
+      <link>http://localhost:1314/tags/evergreen/</link>
       <pubDate>Sun, 23 Mar 2025 00:00:00 +0000</pubDate>
-      <guid>https://stephenmalina.com/tags/evergreen/</guid>
+      <guid>http://localhost:1314/tags/evergreen/</guid>
       <description></description>
     </item>
     <item>
       <title>Programming</title>
-      <link>https://stephenmalina.com/tags/programming/</link>
+      <link>http://localhost:1314/tags/programming/</link>
       <pubDate>Sun, 23 Mar 2025 00:00:00 +0000</pubDate>
-      <guid>https://stephenmalina.com/tags/programming/</guid>
+      <guid>http://localhost:1314/tags/programming/</guid>
       <description></description>
     </item>
     <item>
       <title>Tacit-Knowledge</title>
-      <link>https://stephenmalina.com/tags/tacit-knowledge/</link>
+      <link>http://localhost:1314/tags/tacit-knowledge/</link>
       <pubDate>Sun, 23 Mar 2025 00:00:00 +0000</pubDate>
-      <guid>https://stephenmalina.com/tags/tacit-knowledge/</guid>
+      <guid>http://localhost:1314/tags/tacit-knowledge/</guid>
       <description></description>
     </item>
     <item>
       <title>Biology</title>
-      <link>https://stephenmalina.com/tags/biology/</link>
+      <link>http://localhost:1314/tags/biology/</link>
       <pubDate>Sat, 04 Nov 2023 00:00:00 +0000</pubDate>
-      <guid>https://stephenmalina.com/tags/biology/</guid>
+      <guid>http://localhost:1314/tags/biology/</guid>
       <description></description>
     </item>
     <item>
       <title>Galaxy-Brain</title>
-      <link>https://stephenmalina.com/tags/galaxy-brain/</link>
+      <link>http://localhost:1314/tags/galaxy-brain/</link>
       <pubDate>Sat, 04 Nov 2023 00:00:00 +0000</pubDate>
-      <guid>https://stephenmalina.com/tags/galaxy-brain/</guid>
+      <guid>http://localhost:1314/tags/galaxy-brain/</guid>
       <description></description>
     </item>
     <item>
       <title>Short-Post</title>
-      <link>https://stephenmalina.com/tags/short-post/</link>
+      <link>http://localhost:1314/tags/short-post/</link>
       <pubDate>Sat, 04 Nov 2023 00:00:00 +0000</pubDate>
-      <guid>https://stephenmalina.com/tags/short-post/</guid>
+      <guid>http://localhost:1314/tags/short-post/</guid>
       <description></description>
     </item>
     <item>
       <title>Continuous-Monitoring</title>
-      <link>https://stephenmalina.com/tags/continuous-monitoring/</link>
+      <link>http://localhost:1314/tags/continuous-monitoring/</link>
       <pubDate>Sun, 13 Aug 2023 00:00:00 +0000</pubDate>
-      <guid>https://stephenmalina.com/tags/continuous-monitoring/</guid>
+      <guid>http://localhost:1314/tags/continuous-monitoring/</guid>
       <description></description>
     </item>
     <item>
       <title>Health</title>
-      <link>https://stephenmalina.com/tags/health/</link>
+      <link>http://localhost:1314/tags/health/</link>
       <pubDate>Sun, 13 Aug 2023 00:00:00 +0000</pubDate>
-      <guid>https://stephenmalina.com/tags/health/</guid>
+      <guid>http://localhost:1314/tags/health/</guid>
       <description></description>
     </item>
     <item>
       <title>Machine-Learning</title>
-      <link>https://stephenmalina.com/tags/machine-learning/</link>
+      <link>http://localhost:1314/tags/machine-learning/</link>
       <pubDate>Sun, 13 Aug 2023 00:00:00 +0000</pubDate>
-      <guid>https://stephenmalina.com/tags/machine-learning/</guid>
+      <guid>http://localhost:1314/tags/machine-learning/</guid>
       <description></description>
     </item>
     <item>
       <title>Gene-Therapy</title>
-      <link>https://stephenmalina.com/tags/gene-therapy/</link>
+      <link>http://localhost:1314/tags/gene-therapy/</link>
       <pubDate>Wed, 07 Jun 2023 00:00:00 +0000</pubDate>
-      <guid>https://stephenmalina.com/tags/gene-therapy/</guid>
+      <guid>http://localhost:1314/tags/gene-therapy/</guid>
       <description></description>
     </item>
     <item>
       <title>Dialogue</title>
-      <link>https://stephenmalina.com/tags/dialogue/</link>
+      <link>http://localhost:1314/tags/dialogue/</link>
       <pubDate>Wed, 11 Jan 2023 00:00:00 +0000</pubDate>
-      <guid>https://stephenmalina.com/tags/dialogue/</guid>
+      <guid>http://localhost:1314/tags/dialogue/</guid>
       <description></description>
     </item>
     <item>
       <title>Narcissism</title>
-      <link>https://stephenmalina.com/tags/narcissism/</link>
+      <link>http://localhost:1314/tags/narcissism/</link>
       <pubDate>Sun, 01 Jan 2023 00:00:00 +0000</pubDate>
-      <guid>https://stephenmalina.com/tags/narcissism/</guid>
+      <guid>http://localhost:1314/tags/narcissism/</guid>
       <description></description>
     </item>
     <item>
       <title>Decentralization</title>
-      <link>https://stephenmalina.com/tags/decentralization/</link>
+      <link>http://localhost:1314/tags/decentralization/</link>
       <pubDate>Mon, 21 Nov 2022 00:00:00 +0000</pubDate>
-      <guid>https://stephenmalina.com/tags/decentralization/</guid>
+      <guid>http://localhost:1314/tags/decentralization/</guid>
       <description></description>
     </item>
     <item>
       <title>Movie</title>
-      <link>https://stephenmalina.com/tags/movie/</link>
+      <link>http://localhost:1314/tags/movie/</link>
       <pubDate>Tue, 07 Jun 2022 00:00:00 +0000</pubDate>
-      <guid>https://stephenmalina.com/tags/movie/</guid>
+      <guid>http://localhost:1314/tags/movie/</guid>
       <description></description>
     </item>
     <item>
       <title>Review</title>
-      <link>https://stephenmalina.com/tags/review/</link>
+      <link>http://localhost:1314/tags/review/</link>
       <pubDate>Tue, 07 Jun 2022 00:00:00 +0000</pubDate>
-      <guid>https://stephenmalina.com/tags/review/</guid>
+      <guid>http://localhost:1314/tags/review/</guid>
       <description></description>
     </item>
     <item>
       <title>Book-Review</title>
-      <link>https://stephenmalina.com/tags/book-review/</link>
+      <link>http://localhost:1314/tags/book-review/</link>
       <pubDate>Sun, 24 Apr 2022 00:00:00 +0000</pubDate>
-      <guid>https://stephenmalina.com/tags/book-review/</guid>
+      <guid>http://localhost:1314/tags/book-review/</guid>
       <description></description>
     </item>
     <item>
       <title>Business</title>
-      <link>https://stephenmalina.com/tags/business/</link>
+      <link>http://localhost:1314/tags/business/</link>
       <pubDate>Thu, 01 Apr 2021 00:00:00 +0000</pubDate>
-      <guid>https://stephenmalina.com/tags/business/</guid>
+      <guid>http://localhost:1314/tags/business/</guid>
       <description></description>
     </item>
     <item>
       <title>Cal-Newport</title>
-      <link>https://stephenmalina.com/tags/cal-newport/</link>
+      <link>http://localhost:1314/tags/cal-newport/</link>
       <pubDate>Thu, 01 Apr 2021 00:00:00 +0000</pubDate>
-      <guid>https://stephenmalina.com/tags/cal-newport/</guid>
+      <guid>http://localhost:1314/tags/cal-newport/</guid>
       <description></description>
     </item>
     <item>
       <title>Deep-Work</title>
-      <link>https://stephenmalina.com/tags/deep-work/</link>
+      <link>http://localhost:1314/tags/deep-work/</link>
       <pubDate>Thu, 01 Apr 2021 00:00:00 +0000</pubDate>
-      <guid>https://stephenmalina.com/tags/deep-work/</guid>
+      <guid>http://localhost:1314/tags/deep-work/</guid>
       <description></description>
     </item>
     <item>
       <title>Productivity</title>
-      <link>https://stephenmalina.com/tags/productivity/</link>
+      <link>http://localhost:1314/tags/productivity/</link>
       <pubDate>Thu, 01 Apr 2021 00:00:00 +0000</pubDate>
-      <guid>https://stephenmalina.com/tags/productivity/</guid>
+      <guid>http://localhost:1314/tags/productivity/</guid>
       <description></description>
     </item>
     <item>
       <title>Causal-Inference</title>
-      <link>https://stephenmalina.com/tags/causal-inference/</link>
+      <link>http://localhost:1314/tags/causal-inference/</link>
       <pubDate>Mon, 09 Mar 2020 00:00:00 +0000</pubDate>
-      <guid>https://stephenmalina.com/tags/causal-inference/</guid>
+      <guid>http://localhost:1314/tags/causal-inference/</guid>
       <description></description>
     </item>
     <item>
       <title>Derivation</title>
-      <link>https://stephenmalina.com/tags/derivation/</link>
+      <link>http://localhost:1314/tags/derivation/</link>
       <pubDate>Mon, 09 Mar 2020 00:00:00 +0000</pubDate>
-      <guid>https://stephenmalina.com/tags/derivation/</guid>
+      <guid>http://localhost:1314/tags/derivation/</guid>
       <description></description>
     </item>
     <item>
       <title>Math</title>
-      <link>https://stephenmalina.com/tags/math/</link>
+      <link>http://localhost:1314/tags/math/</link>
       <pubDate>Mon, 09 Mar 2020 00:00:00 +0000</pubDate>
-      <guid>https://stephenmalina.com/tags/math/</guid>
+      <guid>http://localhost:1314/tags/math/</guid>
       <description></description>
     </item>
     <item>
       <title>All of Statistics</title>
-      <link>https://stephenmalina.com/tags/all-of-statistics/</link>
+      <link>http://localhost:1314/tags/all-of-statistics/</link>
       <pubDate>Thu, 12 Dec 2019 00:00:00 +0000</pubDate>
-      <guid>https://stephenmalina.com/tags/all-of-statistics/</guid>
+      <guid>http://localhost:1314/tags/all-of-statistics/</guid>
       <description></description>
     </item>
     <item>
       <title>Notes</title>
-      <link>https://stephenmalina.com/tags/notes/</link>
+      <link>http://localhost:1314/tags/notes/</link>
       <pubDate>Thu, 12 Dec 2019 00:00:00 +0000</pubDate>
-      <guid>https://stephenmalina.com/tags/notes/</guid>
+      <guid>http://localhost:1314/tags/notes/</guid>
       <description></description>
     </item>
     <item>
       <title>Genomics</title>
-      <link>https://stephenmalina.com/tags/genomics/</link>
+      <link>http://localhost:1314/tags/genomics/</link>
       <pubDate>Sat, 16 Nov 2019 00:00:00 +0000</pubDate>
-      <guid>https://stephenmalina.com/tags/genomics/</guid>
+      <guid>http://localhost:1314/tags/genomics/</guid>
       <description></description>
     </item>
     <item>
       <title>Paper</title>
-      <link>https://stephenmalina.com/tags/paper/</link>
+      <link>http://localhost:1314/tags/paper/</link>
       <pubDate>Sat, 16 Nov 2019 00:00:00 +0000</pubDate>
-      <guid>https://stephenmalina.com/tags/paper/</guid>
+      <guid>http://localhost:1314/tags/paper/</guid>
       <description></description>
     </item>
     <item>
       <title>Causality</title>
-      <link>https://stephenmalina.com/tags/causality/</link>
+      <link>http://localhost:1314/tags/causality/</link>
       <pubDate>Fri, 15 Nov 2019 00:00:00 +0000</pubDate>
-      <guid>https://stephenmalina.com/tags/causality/</guid>
+      <guid>http://localhost:1314/tags/causality/</guid>
       <description></description>
     </item>
     <item>
       <title>Statistics</title>
-      <link>https://stephenmalina.com/tags/statistics/</link>
+      <link>http://localhost:1314/tags/statistics/</link>
       <pubDate>Sun, 03 Nov 2019 00:00:00 +0000</pubDate>
-      <guid>https://stephenmalina.com/tags/statistics/</guid>
+      <guid>http://localhost:1314/tags/statistics/</guid>
       <description></description>
     </item>
     <item>
       <title>Linear-Algebra</title>
-      <link>https://stephenmalina.com/tags/linear-algebra/</link>
+      <link>http://localhost:1314/tags/linear-algebra/</link>
       <pubDate>Tue, 13 Aug 2019 00:00:00 +0000</pubDate>
-      <guid>https://stephenmalina.com/tags/linear-algebra/</guid>
+      <guid>http://localhost:1314/tags/linear-algebra/</guid>
       <description></description>
     </item>
     <item>
       <title>Linear Algebra Done Right</title>
-      <link>https://stephenmalina.com/tags/linear-algebra-done-right/</link>
+      <link>http://localhost:1314/tags/linear-algebra-done-right/</link>
       <pubDate>Mon, 20 May 2019 00:00:00 +0000</pubDate>
-      <guid>https://stephenmalina.com/tags/linear-algebra-done-right/</guid>
+      <guid>http://localhost:1314/tags/linear-algebra-done-right/</guid>
       <description></description>
     </item>
   </channel>

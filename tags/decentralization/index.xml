@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Decentralization on Stephen Malina</title>
-    <link>https://stephenmalina.com/tags/decentralization/</link>
+    <link>http://localhost:1314/tags/decentralization/</link>
     <description>Recent content in Decentralization on Stephen Malina</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 21 Nov 2022 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://stephenmalina.com/tags/decentralization/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1314/tags/decentralization/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Decentralization of Atoms is Underrated</title>
-      <link>https://stephenmalina.com/post/2022-11-21-decentralization-of-atoms-is-underrated/</link>
+      <link>http://localhost:1314/post/2022-11-21-decentralization-of-atoms-is-underrated/</link>
       <pubDate>Mon, 21 Nov 2022 00:00:00 +0000</pubDate>
-      <guid>https://stephenmalina.com/post/2022-11-21-decentralization-of-atoms-is-underrated/</guid>
+      <guid>http://localhost:1314/post/2022-11-21-decentralization-of-atoms-is-underrated/</guid>
       <description>&lt;p&gt;&lt;em&gt;This post was co-authored with &lt;a href=&#34;https://austinvernon.site/&#34;&gt;Austin Vernon&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;summary&#34;&gt;&#xA;Summary&#xA;&lt;a href=&#34;#summary&#34; class=&#34;heading-anchor&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;p&gt;While the internet often focuses its furious debate energy on decentralization in the realm of bits, in the realm of atoms, decentralization is currently underrated in terms of its feasibility and desirability. New technologies in areas like aviation, freight, and life sciences can and are shifting the scales towards decentralized models being possible. This has the potential to broaden access, reduce costs, and increase individual empowerment.&lt;/p&gt;</description>
     </item>
   </channel>

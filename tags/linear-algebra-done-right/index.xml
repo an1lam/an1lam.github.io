@@ -2,45 +2,45 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Linear Algebra Done Right on Stephen Malina</title>
-    <link>https://stephenmalina.com/tags/linear-algebra-done-right/</link>
+    <link>http://localhost:1314/tags/linear-algebra-done-right/</link>
     <description>Recent content in Linear Algebra Done Right on Stephen Malina</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 20 May 2019 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://stephenmalina.com/tags/linear-algebra-done-right/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1314/tags/linear-algebra-done-right/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Linear Algebra Done Right - Chapter 6</title>
-      <link>https://stephenmalina.com/learning/2019-05-20-linear-algebra-done-right-ch6-notes/</link>
+      <link>http://localhost:1314/learning/2019-05-20-linear-algebra-done-right-ch6-notes/</link>
       <pubDate>Mon, 20 May 2019 00:00:00 +0000</pubDate>
-      <guid>https://stephenmalina.com/learning/2019-05-20-linear-algebra-done-right-ch6-notes/</guid>
+      <guid>http://localhost:1314/learning/2019-05-20-linear-algebra-done-right-ch6-notes/</guid>
       <description>&lt;h1 id=&#34;selected-exercises&#34;&gt;&#xA;Selected Exercises&#xA;&lt;a href=&#34;#selected-exercises&#34; class=&#34;heading-anchor&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h1&gt;&#xA;&lt;h2 id=&#34;6b&#34;&gt;&#xA;6.B&#xA;&lt;a href=&#34;#6b&#34; class=&#34;heading-anchor&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;p&gt;&lt;strong&gt;1.&lt;/strong&gt; (a) Suppose \( \theta \in \mathbf{R} \). Show that $ (\cos \theta, \sin \theta), (-\sin \theta, \cos \theta) $ and $ (\cos \theta, \sin \theta), (\sin \theta, -\cos \theta) $ are orthonormal bases of $ \mathbf{R}^2 $.&lt;br&gt;&#xA;(b) Show that each orthonormal basis of $ \mathbf{R}^2 $ is of the form given by one of the two possibilities of part (a).&lt;/p&gt;&#xA;&lt;p&gt;(a) First, we show that both lists of vectors are orthonormal (using the Euclidean inner product), i.e. that the inner product of the two vectors equals 0 and that the inner product of each with itself equals 1.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Linear Algebra Done Right - Chapter 5</title>
-      <link>https://stephenmalina.com/learning/2019-04-01-linear-algebra-done-right-ch5-notes/</link>
+      <link>http://localhost:1314/learning/2019-04-01-linear-algebra-done-right-ch5-notes/</link>
       <pubDate>Mon, 01 Apr 2019 00:00:00 +0000</pubDate>
-      <guid>https://stephenmalina.com/learning/2019-04-01-linear-algebra-done-right-ch5-notes/</guid>
+      <guid>http://localhost:1314/learning/2019-04-01-linear-algebra-done-right-ch5-notes/</guid>
       <description>&lt;h1 id=&#34;selected-exercises&#34;&gt;&#xA;Selected Exercises&#xA;&lt;a href=&#34;#selected-exercises&#34; class=&#34;heading-anchor&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h1&gt;&#xA;&lt;h2 id=&#34;5a&#34;&gt;&#xA;5.A&#xA;&lt;a href=&#34;#5a&#34; class=&#34;heading-anchor&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;p&gt;&lt;strong&gt;12.&lt;/strong&gt; Define $ T \in \mathcal L(\mathcal P_4(\mathbf{R})) $ by&lt;/p&gt;&#xA;&lt;p&gt;$$&#xA;(Tp)(x) = xp&amp;rsquo;(x)&#xA;$$&lt;/p&gt;&#xA;&lt;p&gt;for all $ x \in \mathbf{R} $. Find all eigenvalues and eigenvectors of $ T $.&lt;/p&gt;&#xA;&lt;p&gt;Observe that, if $ p = a_0 + a_1 x + a_2 x^2 + a_3 x^3 + a_4 x^4 $, then&#xA;$$&#xA;x p&amp;rsquo;(x) = a_1 x + 2 a_2 x^2 + 3 a_3 x^3 + 4 a_4 x^4.&#xA;$$&lt;/p&gt;</description>
     </item>
     <item>
       <title>Linear Algebra Done Right - Chapter 4</title>
-      <link>https://stephenmalina.com/learning/2019-03-31-linear-algebra-done-right-ch4-notes/</link>
+      <link>http://localhost:1314/learning/2019-03-31-linear-algebra-done-right-ch4-notes/</link>
       <pubDate>Sun, 31 Mar 2019 00:00:00 +0000</pubDate>
-      <guid>https://stephenmalina.com/learning/2019-03-31-linear-algebra-done-right-ch4-notes/</guid>
+      <guid>http://localhost:1314/learning/2019-03-31-linear-algebra-done-right-ch4-notes/</guid>
       <description>&lt;h1 id=&#34;selected-exercises&#34;&gt;&#xA;Selected Exercises&#xA;&lt;a href=&#34;#selected-exercises&#34; class=&#34;heading-anchor&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h1&gt;&#xA;&lt;p&gt;&lt;strong&gt;4.&lt;/strong&gt; Suppose $m$ and $n$ are positive integers with $ m \leq n $, and suppose $ \lambda_1, \dots, \lambda_m \in F $. Prove that there exists a polynomial $ p \in \mathcal P(\mathbf{F}) $ with $ \deg p = n $ such that $ 0 = p(\lambda_1) = \cdots = p(\lambda_m) $ and such that $ p $ has no other zeros.&lt;/p&gt;&#xA;&lt;p&gt;First, we can show that the polynomial $p&amp;rsquo;(z) = (z - \lambda_1) \cdots (z-\lambda_m) $ with $ \deg p&amp;rsquo; = m $ has $ 0 = p&amp;rsquo;(\lambda_1) = \cdots = p&amp;rsquo;(\lambda_m) $ and no other zeros. By 4.12, we know that $ p&amp;rsquo; $ has at most $ m $ zeros and therefore has no other zeros besides $ \lambda_1, \dots, \lambda_m $.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Linear Algebra Done Right - Chapter 3</title>
-      <link>https://stephenmalina.com/learning/2019-03-30-linear-algebra-done-right-ch3-notes/</link>
+      <link>http://localhost:1314/learning/2019-03-30-linear-algebra-done-right-ch3-notes/</link>
       <pubDate>Sat, 30 Mar 2019 00:00:00 +0000</pubDate>
-      <guid>https://stephenmalina.com/learning/2019-03-30-linear-algebra-done-right-ch3-notes/</guid>
+      <guid>http://localhost:1314/learning/2019-03-30-linear-algebra-done-right-ch3-notes/</guid>
       <description>&lt;h1 id=&#34;selected-exercises&#34;&gt;&#xA;Selected Exercises&#xA;&lt;a href=&#34;#selected-exercises&#34; class=&#34;heading-anchor&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h1&gt;&#xA;&lt;h2 id=&#34;3d&#34;&gt;&#xA;3.D&#xA;&lt;a href=&#34;#3d&#34; class=&#34;heading-anchor&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;p&gt;&lt;strong&gt;7.&lt;/strong&gt; Suppose $ V $ &amp;amp; $ W $ are finite-dimensional. Let $ v \in V $. Let&#xA;$$&#xA;E = \{ T \in \mathcal L(V, W): T(v) = 0 \}.&#xA;$$&lt;/p&gt;&#xA;&lt;p&gt;(a)  Show that $ E $ is a subspace of $ \mathcal L(V, W) $.&lt;br&gt;&#xA;(b)  Suppose $ v \neq 0 $. What is $\dim E$?&lt;/p&gt;&#xA;&lt;p&gt;For (a), to show $ E $ is a subspace of $ \mathcal L(V, W) $, we need to show that $ E $ contains zero and is closed under both addition and multiplication.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Linear Algebra Done Right - Chapter 2</title>
-      <link>https://stephenmalina.com/learning/2018-12-24-linear-algebra-done-right-ch2-notes/</link>
+      <link>http://localhost:1314/learning/2018-12-24-linear-algebra-done-right-ch2-notes/</link>
       <pubDate>Mon, 24 Dec 2018 00:00:00 +0000</pubDate>
-      <guid>https://stephenmalina.com/learning/2018-12-24-linear-algebra-done-right-ch2-notes/</guid>
+      <guid>http://localhost:1314/learning/2018-12-24-linear-algebra-done-right-ch2-notes/</guid>
       <description>&lt;h1 id=&#34;intro&#34;&gt;&#xA;Intro&#xA;&lt;a href=&#34;#intro&#34; class=&#34;heading-anchor&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h1&gt;&#xA;&lt;p&gt;I&amp;rsquo;ve recently been making my way through Axler&amp;rsquo;s &lt;em&gt;Linear Algebra Done Right&lt;/em&gt; and, as a way to motivate myself to continue, have decided to blog my notes and solutions for exercises as I go.&lt;/p&gt;&#xA;&lt;h1 id=&#34;insights&#34;&gt;&#xA;Insights&#xA;&lt;a href=&#34;#insights&#34; class=&#34;heading-anchor&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h1&gt;&#xA;&lt;h2 id=&#34;section-2a&#34;&gt;&#xA;Section 2.A&#xA;&lt;a href=&#34;#section-2a&#34; class=&#34;heading-anchor&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;h4 id=&#34;you-can-convert-any-linearly-dependent-list-to-a-linearly-independent-list-with-the-same-span&#34;&gt;&#xA;You can convert any linearly dependent list to a linearly independent list with the same span.&#xA;&lt;a href=&#34;#you-can-convert-any-linearly-dependent-list-to-a-linearly-independent-list-with-the-same-span&#34; class=&#34;heading-anchor&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h4&gt;&#xA;&lt;p&gt;By the linear dependence lemma, if you have a list that&amp;rsquo;s linearly dependenty, then you can remove one item without changing the list&amp;rsquo;s span. By inductive hand-waving, that means we can remove one item repeatedly while not changing the list&amp;rsquo;s span until the list becomes linearly independent. This seems like it might be useful by analogy to compression, if we assume the span captures some essential property of a list of vectors, we can remove items from a linearly dependent list without changing its final representation.&lt;/p&gt;</description>
     </item>
   </channel>
