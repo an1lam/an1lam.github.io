@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Movie on Stephen Malina</title>
-    <link>http://localhost:1314/tags/movie/</link>
+    <link>https://stephenmalina.com/tags/movie/</link>
     <description>Recent content in Movie on Stephen Malina</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 07 Jun 2022 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1314/tags/movie/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://stephenmalina.com/tags/movie/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Movie Review - Top Gun: Maverick</title>
-      <link>http://localhost:1314/post/2022-06-07-top-gun-maverick-review/</link>
+      <link>https://stephenmalina.com/post/2022-06-07-top-gun-maverick-review/</link>
       <pubDate>Tue, 07 Jun 2022 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1314/post/2022-06-07-top-gun-maverick-review/</guid>
+      <guid>https://stephenmalina.com/post/2022-06-07-top-gun-maverick-review/</guid>
       <description>&lt;p&gt;Since I&amp;rsquo;ve been going around telling everyone how Top Gun: Maverick (TG:M) is one of the best action movies of our generation, I&amp;rsquo;d figured I&amp;rsquo;d try and write down some of my thoughts while they&amp;rsquo;re still fresh.&lt;/p&gt;&#xA;&lt;p&gt;The core reason I love TG:M is that it&amp;rsquo;s an unapologetic paean to excellence, Captain Pete &amp;ldquo;Maverick&amp;rdquo; Mitchell (Maverick) embodies excellence as a fighter pilot and teacher, pushing both himself and his students to exceed their perceived limits and their planes&amp;rsquo;. The rest of this post focuses on TG:M&amp;rsquo;s portrayal of excellence and the lessons it imparts.&lt;/p&gt;</description>
     </item>
   </channel>

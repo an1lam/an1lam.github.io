@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Annual-Review on Stephen Malina</title>
-    <link>http://localhost:1314/tags/annual-review/</link>
+    <link>https://stephenmalina.com/tags/annual-review/</link>
     <description>Recent content in Annual-Review on Stephen Malina</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 31 May 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1314/tags/annual-review/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://stephenmalina.com/tags/annual-review/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>AI Omens: 2&#43; Years Later</title>
-      <link>http://localhost:1314/post/2025-05-31-reflecting-on-ai-omens/</link>
+      <link>https://stephenmalina.com/post/2025-05-31-reflecting-on-ai-omens/</link>
       <pubDate>Sat, 31 May 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1314/post/2025-05-31-reflecting-on-ai-omens/</guid>
+      <guid>https://stephenmalina.com/post/2025-05-31-reflecting-on-ai-omens/</guid>
       <description>&lt;p&gt;In September 2022, I wrote a &lt;a href=&#34;https://stephenmalina.com/post/2022-09-17-ai-omens/&#34;&gt;post&lt;/a&gt; describing a set of &amp;ldquo;omens&amp;rdquo; that, if observed, would indicate faster-than-expected AI progress. I framed many of these in the context of 0-5 years, but obviously AI moves too fast to wait until 2027 to review these. Consider this post an arbitrarily timed intermediate check in triggered by my sense that many of my omens had come to pass.&lt;/p&gt;&#xA;&lt;p&gt;&lt;em&gt;The rest of this post assumes you&amp;rsquo;ve skimmed the omens post, so if you haven&amp;rsquo;t already, I recommend doing that now.&lt;/em&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Reflections on 2022</title>
-      <link>http://localhost:1314/post/2023-01-02-reflections-on-2022/</link>
+      <link>https://stephenmalina.com/post/2023-01-02-reflections-on-2022/</link>
       <pubDate>Sun, 01 Jan 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1314/post/2023-01-02-reflections-on-2022/</guid>
+      <guid>https://stephenmalina.com/post/2023-01-02-reflections-on-2022/</guid>
       <description>&lt;p&gt;2022 was another exciting, fun year. To round it out, I wrote up some scattered reflections. Enjoy, or if you aren&amp;rsquo;t a fan of this genre of post, don&amp;rsquo;t! Also, each section is mostly self-contained and they&amp;rsquo;re not organized in any special order, so don&amp;rsquo;t hesitate to skip a section if it sounds boring.&lt;/p&gt;&#xA;&lt;h2 id=&#34;writing&#34;&gt;&#xA;Writing&#xA;&lt;a href=&#34;#writing&#34; class=&#34;heading-anchor&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;p&gt;2022 felt like a productive year for blogging even though my post count dropped down from 11 in 2021 to 6. I&amp;rsquo;m thrilled with how my and Austin&amp;rsquo;s &lt;a href=&#34;https://stephenmalina.com/post/2022-11-21-decentralization-of-atoms-is-underrated/&#34;&gt;decentralization post&lt;/a&gt; came out. The topic&amp;rsquo;s something I&amp;rsquo;d thought about a lot but been unable to put into writing until Austin and I hashed it out together. Collaborating with Austin also reminded me how much I enjoy collaborating. It&amp;rsquo;s also a strength of the medium and so I hope to do more of it in 2022.&lt;/p&gt;</description>
     </item>
   </channel>

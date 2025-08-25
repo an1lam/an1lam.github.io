@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Linear-Algebra on Stephen Malina</title>
-    <link>http://localhost:1314/tags/linear-algebra/</link>
+    <link>https://stephenmalina.com/tags/linear-algebra/</link>
     <description>Recent content in Linear-Algebra on Stephen Malina</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 13 Aug 2019 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1314/tags/linear-algebra/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://stephenmalina.com/tags/linear-algebra/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Matrix Potpourri</title>
-      <link>http://localhost:1314/post/2019-09-07-matrix-potpourri/</link>
+      <link>https://stephenmalina.com/post/2019-09-07-matrix-potpourri/</link>
       <pubDate>Tue, 13 Aug 2019 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1314/post/2019-09-07-matrix-potpourri/</guid>
+      <guid>https://stephenmalina.com/post/2019-09-07-matrix-potpourri/</guid>
       <description>&lt;h1 id=&#34;matrix-potpourri&#34;&gt;&#xA;Matrix Potpourri&#xA;&lt;a href=&#34;#matrix-potpourri&#34; class=&#34;heading-anchor&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h1&gt;&#xA;&lt;p&gt;As part of reviewing Linear Algebra for my Machine Learning class, I&amp;rsquo;ve noticed there&amp;rsquo;s a bunch of matrix terminology that I didn&amp;rsquo;t encounter during my proof-based self-study of LA from &lt;a href=&#34;https://www.amazon.com/Programmers-Introduction-Mathematics-Dr-Jeremy/dp/1727125452/ref=asc_df_1727125452/?tag=hyprod-20&amp;amp;linkCode=df0&amp;amp;hvadid=312168166316&amp;amp;hvpos=1o1&amp;amp;hvnetw=g&amp;amp;hvrand=8153319341318076586&amp;amp;hvpone=&amp;amp;hvptwo=&amp;amp;hvqmt=&amp;amp;hvdev=c&amp;amp;hvdvcmdl=&amp;amp;hvlocint=&amp;amp;hvlocphy=9067609&amp;amp;hvtargid=aud-801381245258:pla-582015251962&amp;amp;psc=1&#34;&gt;&lt;em&gt;Linear Algebra Done Right&lt;/em&gt;&lt;/a&gt;. This post is mostly intended to consolidate my own understanding and to act as a reference to future me, but if it also helps others in a similar position, that&amp;rsquo;s even better!&lt;/p&gt;&#xA;&lt;p&gt;&lt;em&gt;Note&lt;/em&gt;: I list all the sources from which I drew while writing this post under the &amp;ldquo;Sources&amp;rdquo; heading at the bottom of this post.&lt;/p&gt;</description>
     </item>
   </channel>

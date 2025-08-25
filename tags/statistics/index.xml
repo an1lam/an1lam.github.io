@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Statistics on Stephen Malina</title>
-    <link>http://localhost:1314/tags/statistics/</link>
+    <link>https://stephenmalina.com/tags/statistics/</link>
     <description>Recent content in Statistics on Stephen Malina</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 03 Nov 2019 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1314/tags/statistics/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://stephenmalina.com/tags/statistics/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Paper Review - IVs and Mendelian Randomization</title>
-      <link>http://localhost:1314/learning/2019-11-02-ivs-mendelian-randomization/</link>
+      <link>https://stephenmalina.com/learning/2019-11-02-ivs-mendelian-randomization/</link>
       <pubDate>Sun, 03 Nov 2019 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1314/learning/2019-11-02-ivs-mendelian-randomization/</guid>
+      <guid>https://stephenmalina.com/learning/2019-11-02-ivs-mendelian-randomization/</guid>
       <description>&lt;h1 id=&#34;summary&#34;&gt;&#xA;Summary&#xA;&lt;a href=&#34;#summary&#34; class=&#34;heading-anchor&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h1&gt;&#xA;&lt;h1 id=&#34;detailed-notes&#34;&gt;&#xA;Detailed Notes&#xA;&lt;a href=&#34;#detailed-notes&#34; class=&#34;heading-anchor&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h1&gt;&#xA;&lt;h2 id=&#34;3-iv-requirements&#34;&gt;&#xA;3 IV Requirements&#xA;&lt;a href=&#34;#3-iv-requirements&#34; class=&#34;heading-anchor&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;IV must have a direct influence on the treatment&lt;/li&gt;&#xA;&lt;li&gt;IV must not covary with the unmeasured confounding that impacts the outcome&lt;/li&gt;&#xA;&lt;li&gt;IV must not have a direct influence on the outcome&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;relevant-considerations-for-deciding-whether-to-do-an-iv-analysis&#34;&gt;&#xA;Relevant considerations for deciding whether to do an IV analysis&#xA;&lt;a href=&#34;#relevant-considerations-for-deciding-whether-to-do-an-iv-analysis&#34; class=&#34;heading-anchor&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Is there any unmeasured confounding?&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;If not, is the answer that we can just use a normal regression?&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;When is unmeasured confounding especially likely?&lt;/p&gt;</description>
     </item>
   </channel>

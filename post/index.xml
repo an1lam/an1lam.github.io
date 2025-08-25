@@ -2,725 +2,725 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on Stephen Malina</title>
-    <link>http://localhost:1314/post/</link>
+    <link>https://stephenmalina.com/post/</link>
     <description>Recent content in Posts on Stephen Malina</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 07 Aug 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1314/post/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://stephenmalina.com/post/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Reviewing my GPT-5 predictions</title>
-      <link>http://localhost:1314/post/2025-08-07-reviewing-my-gpt5-predictions/</link>
+      <link>https://stephenmalina.com/post/2025-08-07-reviewing-my-gpt5-predictions/</link>
       <pubDate>Thu, 07 Aug 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1314/post/2025-08-07-reviewing-my-gpt5-predictions/</guid>
+      <guid>https://stephenmalina.com/post/2025-08-07-reviewing-my-gpt5-predictions/</guid>
       <description>&lt;p&gt;Earlier today (on August 7th), I realized that I was about to miss a golden opportunity to quickly test how calibrated I was about AI progress by predicting some GPT-5 benchmark scores. Upon realizing this, I dashed off some quick predictions based on a combination of then-current top benchmark scores and my intuition about how big a jump GPT-5 would be over o3, Grok 4, Claude Opus 4, and Gemini 2.5 Pro. You can see the predictions and current resolutions in the next section. My one sentence summary of their underlying sentiment is “progress continues apace along the trendline but without a discontinuous jump.”&lt;/p&gt;</description>
     </item>
     <item>
       <title>AI Omens: 2&#43; Years Later</title>
-      <link>http://localhost:1314/post/2025-05-31-reflecting-on-ai-omens/</link>
+      <link>https://stephenmalina.com/post/2025-05-31-reflecting-on-ai-omens/</link>
       <pubDate>Sat, 31 May 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1314/post/2025-05-31-reflecting-on-ai-omens/</guid>
+      <guid>https://stephenmalina.com/post/2025-05-31-reflecting-on-ai-omens/</guid>
       <description>&lt;p&gt;In September 2022, I wrote a &lt;a href=&#34;https://stephenmalina.com/post/2022-09-17-ai-omens/&#34;&gt;post&lt;/a&gt; describing a set of &amp;ldquo;omens&amp;rdquo; that, if observed, would indicate faster-than-expected AI progress. I framed many of these in the context of 0-5 years, but obviously AI moves too fast to wait until 2027 to review these. Consider this post an arbitrarily timed intermediate check in triggered by my sense that many of my omens had come to pass.&lt;/p&gt;&#xA;&lt;p&gt;&lt;em&gt;The rest of this post assumes you&amp;rsquo;ve skimmed the omens post, so if you haven&amp;rsquo;t already, I recommend doing that now.&lt;/em&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>On debugging</title>
-      <link>http://localhost:1314/post/2025-03-23-debugging-strategies/</link>
+      <link>https://stephenmalina.com/post/2025-03-23-debugging-strategies/</link>
       <pubDate>Sun, 23 Mar 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1314/post/2025-03-23-debugging-strategies/</guid>
+      <guid>https://stephenmalina.com/post/2025-03-23-debugging-strategies/</guid>
       <description>&lt;h1 id=&#34;introduction&#34;&gt;&#xA;Introduction&#xA;&lt;a href=&#34;#introduction&#34; class=&#34;heading-anchor&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h1&gt;&#xA;&lt;p&gt;In the spirit of &lt;a href=&#34;https://gwern.net/llm-writing&#34;&gt;writing for the LLMs&lt;/a&gt;, I thought I&amp;rsquo;d write up some of the software debugging heuristics and tacit knowledge I have gotten good mileage out of in my career so far.&lt;/p&gt;&#xA;&lt;h2 id=&#34;how-i-would-approach-this-post-as-a-human-reader&#34;&gt;&#xA;How I would approach this post as a human reader&#xA;&lt;a href=&#34;#how-i-would-approach-this-post-as-a-human-reader&#34; class=&#34;heading-anchor&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;p&gt;Part of the reason people don&amp;rsquo;t write about tacit knowledge is because it&amp;rsquo;s by definition the knowledge that&amp;rsquo;s impossible to fully capture in words. As applied to this post, it means that I can&amp;rsquo;t provide a rich enough set of cues to create a perfect, or even that good, classifier from situation to applicable strategy/heuristic. Instead, I think these strategies are best thought of as things to try out in potentially relevant situations and then develop one&amp;rsquo;s own taste for when they do or don&amp;rsquo;t work and how to use them. I also recommend Cedric&amp;rsquo;s posts, linked below, on acquiring expertise if you want to go even deeper.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Biologizing the stack</title>
-      <link>http://localhost:1314/post/2023-11-04-biologizing-the-stack/</link>
+      <link>https://stephenmalina.com/post/2023-11-04-biologizing-the-stack/</link>
       <pubDate>Sat, 04 Nov 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1314/post/2023-11-04-biologizing-the-stack/</guid>
+      <guid>https://stephenmalina.com/post/2023-11-04-biologizing-the-stack/</guid>
       <description>&lt;p&gt;&lt;em&gt;I&amp;rsquo;m experimenting with writing some shorter, less polished posts. These come with the disclaimer that I&amp;rsquo;m optimizing for getting thoughts out there while they&amp;rsquo;re still crystallizing rather than achieving maximum rigor. For this post in particular, I&amp;rsquo;m not arguing that this direction is definitely worth pursuing so much as exploring a frame/idea to see where it gets me.&lt;/em&gt;&lt;/p&gt;&#xA;&lt;p&gt;A while ago, a friend asked me why I like the idea of working with cells better than cell-free systems and I gave some hand-wavy answer about cells being cool. Some of Elliot Hershberg&amp;rsquo;s &lt;a href=&#34;https://centuryofbio.substack.com/p/atoms-are-local/comments&#34;&gt;not so recent&lt;/a&gt; &lt;a href=&#34;https://www.notboring.co/p/medicines-endgame&#34;&gt;and more recent posts&lt;/a&gt; got me thinking about this question again and I think I&amp;rsquo;ve figured out a more satisfying answer that also captures the theme in some of the ideas in both &lt;a href=&#34;https://stephenmalina.com/post/2021-11-crazy-synthetic-bio-ideas/&#34;&gt;my&lt;/a&gt; and Arye&amp;rsquo;s old &lt;a href=&#34;https://arye.substack.com/p/set-biotech-free-&#34;&gt;post&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Continuous glucose monitors (CGM) and beyond: A dialogue</title>
-      <link>http://localhost:1314/post/2023-08-13-cgm-and-beyond/</link>
+      <link>https://stephenmalina.com/post/2023-08-13-cgm-and-beyond/</link>
       <pubDate>Sun, 13 Aug 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1314/post/2023-08-13-cgm-and-beyond/</guid>
+      <guid>https://stephenmalina.com/post/2023-08-13-cgm-and-beyond/</guid>
       <description>&lt;p&gt;What are continuous glucose monitors good for? More broadly, what are continuous measures of physiology (&lt;strong&gt;CxM&lt;/strong&gt;) good for?&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Similar to &lt;a href=&#34;https://centuryofbio.com/&#34;&gt;Elliot&lt;/a&gt; and I&amp;rsquo;s &lt;a href=&#34;http://localhost:1313/post/2023-01-11-viriditas-dialogue/&#34;&gt;dialogue&lt;/a&gt;, this post has an unconventional format. It&amp;rsquo;s both a synthesis of &lt;a href=&#34;https://twitter.com/willyintheworld&#34;&gt;Willy&lt;/a&gt;&amp;rsquo;s, &lt;a href=&#34;https://twitter.com/eryney_ok&#34;&gt;Eryney&amp;rsquo;s&lt;/a&gt;, and my opinions on continuous monitoring combined with a debate in places where we disagree. To try and make it clear which views are coming from each person, we&amp;rsquo;ve annotated sections that come from a subset of us rather than all of us with e.g. &amp;ldquo;Stephen&amp;rsquo;s views&amp;rdquo; or &amp;ldquo;Willy&amp;rsquo;s dissent&amp;rdquo;.&lt;/strong&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>What are the bottlenecks to safe, repeatable edits in humans? Part 1</title>
-      <link>http://localhost:1314/post/2023-06-07-editing-part-i/</link>
+      <link>https://stephenmalina.com/post/2023-06-07-editing-part-i/</link>
       <pubDate>Wed, 07 Jun 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1314/post/2023-06-07-editing-part-i/</guid>
+      <guid>https://stephenmalina.com/post/2023-06-07-editing-part-i/</guid>
       <description>&lt;h2 id=&#34;summary&#34;&gt;&#xA;Summary&#xA;&lt;a href=&#34;#summary&#34; class=&#34;heading-anchor&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;p&gt;Gene editing has made a lot of progress over the past few decades. CRISPR-Cas9 sparked the recent fervor and won some of its early pioneers a &lt;a href=&#34;https://www.synthego.com/blog/gene-editing-nobel-prize#:~:text=Jennifer%20Doudna%20and%20Emmanuelle%20Charpentier%20have%20been%20awarded%20the%20ultimate,most%20powerful%20gene%2Dediting%20tool.&#34;&gt;Nobel Prize&lt;/a&gt;, and more recently Prime Editing and Cytosine/Adenine Base Editors (CBEs/ABEs) have further expanded the range of editing targets and types of edits that are possible while increasing efficiency and reducing the rate of off-target effects.&lt;/p&gt;&#xA;&lt;p&gt;From the perspective of safe, ubiquitous editing in humans using these systems, a few major challenges for editing remain towards translating novel target discovery into clinical application:&lt;/p&gt;</description>
     </item>
     <item>
       <title>Dialogue on Viriditas</title>
-      <link>http://localhost:1314/post/2023-01-11-viriditas-dialogue/</link>
+      <link>https://stephenmalina.com/post/2023-01-11-viriditas-dialogue/</link>
       <pubDate>Wed, 11 Jan 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1314/post/2023-01-11-viriditas-dialogue/</guid>
+      <guid>https://stephenmalina.com/post/2023-01-11-viriditas-dialogue/</guid>
       <description>&lt;!-- Output copied to clipboard! --&gt;&#xA;&lt;h1 id=&#34;introduction&#34;&gt;&#xA;Introduction&#xA;&lt;a href=&#34;#introduction&#34; class=&#34;heading-anchor&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h1&gt;&#xA;&lt;p&gt;A few months ago, Elliot Hershberg, one of my favorite Substack writers, wrote a&lt;a href=&#34;https://centuryofbio.substack.com/p/viriditas&#34;&gt; post&lt;/a&gt; laying out his personal mission. I really enjoyed his post and, as is customary in blogging, the best way I could think of to compliment it was to share some (hopefully constructively) critical thoughts on it.&lt;/p&gt;&#xA;&lt;p&gt;After sending my post to Elliot, he proposed the great idea of us having a discussion of this over email, which we could then potentially publish. The Follow-up section here contains a lightly edited form of this back-and-forth. This back-and-forth helped me clarify my views and moved me more in the direction of Elliot’s views than I started out. As a result of this and other discussions/observations I’ve made since then, I feel a lot more uncertain than the views and tone expressed in the original post sound.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Reflections on 2022</title>
-      <link>http://localhost:1314/post/2023-01-02-reflections-on-2022/</link>
+      <link>https://stephenmalina.com/post/2023-01-02-reflections-on-2022/</link>
       <pubDate>Sun, 01 Jan 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1314/post/2023-01-02-reflections-on-2022/</guid>
+      <guid>https://stephenmalina.com/post/2023-01-02-reflections-on-2022/</guid>
       <description>&lt;p&gt;2022 was another exciting, fun year. To round it out, I wrote up some scattered reflections. Enjoy, or if you aren&amp;rsquo;t a fan of this genre of post, don&amp;rsquo;t! Also, each section is mostly self-contained and they&amp;rsquo;re not organized in any special order, so don&amp;rsquo;t hesitate to skip a section if it sounds boring.&lt;/p&gt;&#xA;&lt;h2 id=&#34;writing&#34;&gt;&#xA;Writing&#xA;&lt;a href=&#34;#writing&#34; class=&#34;heading-anchor&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;p&gt;2022 felt like a productive year for blogging even though my post count dropped down from 11 in 2021 to 6. I&amp;rsquo;m thrilled with how my and Austin&amp;rsquo;s &lt;a href=&#34;https://stephenmalina.com/post/2022-11-21-decentralization-of-atoms-is-underrated/&#34;&gt;decentralization post&lt;/a&gt; came out. The topic&amp;rsquo;s something I&amp;rsquo;d thought about a lot but been unable to put into writing until Austin and I hashed it out together. Collaborating with Austin also reminded me how much I enjoy collaborating. It&amp;rsquo;s also a strength of the medium and so I hope to do more of it in 2022.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Decentralization of Atoms is Underrated</title>
-      <link>http://localhost:1314/post/2022-11-21-decentralization-of-atoms-is-underrated/</link>
+      <link>https://stephenmalina.com/post/2022-11-21-decentralization-of-atoms-is-underrated/</link>
       <pubDate>Mon, 21 Nov 2022 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1314/post/2022-11-21-decentralization-of-atoms-is-underrated/</guid>
+      <guid>https://stephenmalina.com/post/2022-11-21-decentralization-of-atoms-is-underrated/</guid>
       <description>&lt;p&gt;&lt;em&gt;This post was co-authored with &lt;a href=&#34;https://austinvernon.site/&#34;&gt;Austin Vernon&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;summary&#34;&gt;&#xA;Summary&#xA;&lt;a href=&#34;#summary&#34; class=&#34;heading-anchor&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;p&gt;While the internet often focuses its furious debate energy on decentralization in the realm of bits, in the realm of atoms, decentralization is currently underrated in terms of its feasibility and desirability. New technologies in areas like aviation, freight, and life sciences can and are shifting the scales towards decentralized models being possible. This has the potential to broaden access, reduce costs, and increase individual empowerment.&lt;/p&gt;</description>
     </item>
     <item>
       <title>GPT4 Predictions</title>
-      <link>http://localhost:1314/post/2022-11-16-gpt4-predictions/</link>
+      <link>https://stephenmalina.com/post/2022-11-16-gpt4-predictions/</link>
       <pubDate>Wed, 16 Nov 2022 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1314/post/2022-11-16-gpt4-predictions/</guid>
+      <guid>https://stephenmalina.com/post/2022-11-16-gpt4-predictions/</guid>
       <description>&lt;p&gt;As a way to keep myself honest, I&amp;rsquo;m going to be recording GPT4 predictions here and archiving versions of the post so I can&amp;rsquo;t go back and change it without people knowing. Not that I would do this anyway, but it&amp;rsquo;s been a tough week for &amp;ldquo;trust me, I&amp;rsquo;m telling the truth&amp;rdquo; so I&amp;rsquo;m doing this in case readers want the receipts.&lt;/p&gt;&#xA;&lt;h2 id=&#34;i-predict-gpt4-wont-be-able-to&#34;&gt;&#xA;I predict GPT4 won&amp;rsquo;t be able to&amp;hellip;&#xA;&lt;a href=&#34;#i-predict-gpt4-wont-be-able-to&#34; class=&#34;heading-anchor&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Write a blog post about gene therapy that I consider to be of equivalent quality to my own&lt;/li&gt;&#xA;&lt;li&gt;Write a scientific paper about machine learning. As many prompts as possible allowed but the entire paper&amp;rsquo;s text needs to be written by the model with no editing.&lt;/li&gt;&#xA;&lt;li&gt;Solve three problems from a recent programming competition on Leetcode (&lt;a href=&#34;https://manifold.markets/StephenMalina/out-of-three-randomly-chosen-leetco-49075ae75696&#34;&gt;Manifold market&lt;/a&gt;)&lt;/li&gt;&#xA;&lt;li&gt;Describe the analogy between different framings of machine learning concepts&#xA;&lt;ul&gt;&#xA;&lt;li&gt;E.g. describe the Bayesian perspective on training deep learning models&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;Correctly solve 10 randomly chosen problems from &lt;em&gt;Linear Algebra Done Right&lt;/em&gt; without chain-of-thought prompting or few-shot examples.&lt;/li&gt;&#xA;&lt;li&gt;Describe a coherent design for a machine learning model training platform and answer my questions about it&lt;/li&gt;&#xA;&lt;li&gt;Find the solution to an unsolved as of its deployment scientific problem.&lt;/li&gt;&#xA;&lt;li&gt;Play Nethack better than &lt;a href=&#34;https://www.reddit.com/r/reinforcementlearning/comments/rtp5ts/nethack_2021_neurips_challenge_winning_agent/&#34;&gt;the winner of 2021&amp;rsquo;s NeurIPS Nethack challenge&lt;/a&gt;.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;i-predict-gpt4-will-be-able-to&#34;&gt;&#xA;I predict GPT4 will be able to&amp;hellip;&#xA;&lt;a href=&#34;#i-predict-gpt4-will-be-able-to&#34; class=&#34;heading-anchor&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Solve &amp;gt;18/20 multiplication problems I come up with that have between 3-6 digits in the multiplicands.&lt;/li&gt;&#xA;&lt;li&gt;Write internet marketing-style blog posts about relatively popular topics&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Ex: &amp;ldquo;You&amp;rsquo;re marketing a new product that tracks my keyboard presses to determine where I&amp;rsquo;m spending my time. The following is copy for a press release about it.&amp;rdquo;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;appendix&#34;&gt;&#xA;Appendix&#xA;&lt;a href=&#34;#appendix&#34; class=&#34;heading-anchor&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;h3 id=&#34;gpt3s-current-attempts-at-some-of-these-tasks&#34;&gt;&#xA;GPT3&amp;rsquo;s current attempts at some of these tasks&#xA;&lt;a href=&#34;#gpt3s-current-attempts-at-some-of-these-tasks&#34; class=&#34;heading-anchor&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h3&gt;&#xA;&lt;p&gt;&lt;em&gt;Requires GPT3 API access.&lt;/em&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>AI Omens: Signs of AI acceleration</title>
-      <link>http://localhost:1314/post/2022-09-17-ai-omens/</link>
+      <link>https://stephenmalina.com/post/2022-09-17-ai-omens/</link>
       <pubDate>Sat, 17 Sep 2022 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1314/post/2022-09-17-ai-omens/</guid>
+      <guid>https://stephenmalina.com/post/2022-09-17-ai-omens/</guid>
       <description>&lt;p&gt;A friend recently asked me what my &amp;ldquo;&lt;a href=&#34;https://www.cold-takes.com/where-ai-forecasting-stands-today/&#34;&gt;AI timelines&lt;/a&gt;&amp;rdquo; were. Especially with recent progress in &lt;a href=&#34;https://openai.com/dall-e-2/&#34;&gt;image&lt;/a&gt; &lt;a href=&#34;https://parti.research.google/&#34;&gt;generation&lt;/a&gt;, &lt;a href=&#34;https://openai.com/api/&#34;&gt;language&lt;/a&gt; &lt;a href=&#34;https://arxiv.org/abs/2203.15556&#34;&gt;modeling&lt;/a&gt;, &lt;a href=&#34;https://openai.com/blog/openai-codex/&#34;&gt;code generation&lt;/a&gt;, &lt;a href=&#34;https://sites.research.google/palm-saycan&#34;&gt;robotics&lt;/a&gt;, &lt;a href=&#34;https://www.nature.com/articles/s41586-021-03819-2&#34;&gt;protein folding&lt;/a&gt;, and &lt;a href=&#34;https://www.adept.ai/act&#34;&gt;other&lt;/a&gt; areas, this has become an increasingly popular question amongst those who are paying attention.&lt;/p&gt;&#xA;&lt;p&gt;However, I find trying to answer this question pretty frustrating. There already exist &lt;a href=&#34;https://www.alignmentforum.org/posts/KrJfoZzpSDpnrv9va/draft-report-on-ai-timelines&#34;&gt;long, thorough reports&lt;/a&gt; (&lt;a href=&#34;https://www.openphilanthropy.org/research/report-on-whether-ai-could-drive-explosive-economic-growth/&#34;&gt;another&lt;/a&gt;) which build quantitative models and carefully define terms to make sure there&amp;rsquo;s as little ambiguity as possible. These reports then get carefully debated (&lt;a href=&#34;https://www.lesswrong.com/posts/ax695frGJEzGxFBK4/biology-inspired-agi-timelines-the-trick-that-never-works&#34;&gt;here&lt;/a&gt;, &lt;a href=&#34;https://www.alignmentforum.org/posts/qnjDGitKxYaesbsem/a-comment-on-ajeya-cotra-s-draft-report-on-ai-timelines#My_core_contention&#34;&gt;here&lt;/a&gt; and &lt;a href=&#34;https://nostalgebraist.tumblr.com/post/693718279721730048/on-bio-anchors&#34;&gt;here&lt;/a&gt;). I genuinely admire the authors of these reports and critiques for putting in so much time and energy into answering this question, but as someone who doesn&amp;rsquo;t work directly on advancing &amp;ldquo;pure&amp;rdquo; AI, I find it emotionally difficult to get myself to invest the time required to develop an opinion on them and then have them inform my own mythical personal timelines estimate. I recognize all that shouldn&amp;rsquo;t stop me because it&amp;rsquo;s important, but I suspect some of my aversion also comes from feeling like it&amp;rsquo;s also overrated as an activity, especially by certain sects of the internet.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Movie Review - Top Gun: Maverick</title>
-      <link>http://localhost:1314/post/2022-06-07-top-gun-maverick-review/</link>
+      <link>https://stephenmalina.com/post/2022-06-07-top-gun-maverick-review/</link>
       <pubDate>Tue, 07 Jun 2022 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1314/post/2022-06-07-top-gun-maverick-review/</guid>
+      <guid>https://stephenmalina.com/post/2022-06-07-top-gun-maverick-review/</guid>
       <description>&lt;p&gt;Since I&amp;rsquo;ve been going around telling everyone how Top Gun: Maverick (TG:M) is one of the best action movies of our generation, I&amp;rsquo;d figured I&amp;rsquo;d try and write down some of my thoughts while they&amp;rsquo;re still fresh.&lt;/p&gt;&#xA;&lt;p&gt;The core reason I love TG:M is that it&amp;rsquo;s an unapologetic paean to excellence, Captain Pete &amp;ldquo;Maverick&amp;rdquo; Mitchell (Maverick) embodies excellence as a fighter pilot and teacher, pushing both himself and his students to exceed their perceived limits and their planes&amp;rsquo;. The rest of this post focuses on TG:M&amp;rsquo;s portrayal of excellence and the lessons it imparts.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Book Review - Elmer Gates and the Art of Mind-using</title>
-      <link>http://localhost:1314/post/2022-04-24-book-review-egamu/</link>
+      <link>https://stephenmalina.com/post/2022-04-24-book-review-egamu/</link>
       <pubDate>Sun, 24 Apr 2022 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1314/post/2022-04-24-book-review-egamu/</guid>
+      <guid>https://stephenmalina.com/post/2022-04-24-book-review-egamu/</guid>
       <description>&lt;h2 id=&#34;introduction&#34;&gt;&#xA;Introduction&#xA;&lt;a href=&#34;#introduction&#34; class=&#34;heading-anchor&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;p&gt;Generally when someone tells you they&amp;rsquo;ve invented an &amp;ldquo;art of mind-using&amp;rdquo; that involves lots of made-up words and comes packaged with a spiritual philosophy, you should tell them &amp;ldquo;no thanks&amp;rdquo; and walk away. But, what if that same would-be crackpot was also an incredibly successful inventor whose contemporaries considered a genius? Moreover, what if that would-be crackpot also ran careful, rigorous experiments to validate their theories? And so we have Elmer Gates.&lt;/p&gt;</description>
     </item>
     <item>
       <title>2050 Predictions</title>
-      <link>http://localhost:1314/post/2022-01-01-2050-predictions/</link>
+      <link>https://stephenmalina.com/post/2022-01-01-2050-predictions/</link>
       <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1314/post/2022-01-01-2050-predictions/</guid>
+      <guid>https://stephenmalina.com/post/2022-01-01-2050-predictions/</guid>
       <description>&lt;h2 id=&#34;introduction&#34;&gt;&#xA;Introduction&#xA;&lt;a href=&#34;#introduction&#34; class=&#34;heading-anchor&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;p&gt;Along with a few internet blogger friends, inspired by Erik Hoel&amp;rsquo;s &lt;a href=&#34;https://erikhoel.substack.com/p/futurists-have-their-heads-in-the&#34;&gt;post&lt;/a&gt; (parts of which I disagree with, including the headline), I&amp;rsquo;ve decided to make predictions for 2050. The rest of this post discusses some meta aspects of making these predictions and then lists out the predictions. In case you&amp;rsquo;re waiting for my (hopefully) less speculative 2022 annual predictions, fear not! Those will be coming in the next few weeks.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Scoring my 2021 Predictions</title>
-      <link>http://localhost:1314/post/2021-12-31-scoring-my-2021-predictions/</link>
+      <link>https://stephenmalina.com/post/2021-12-31-scoring-my-2021-predictions/</link>
       <pubDate>Fri, 31 Dec 2021 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1314/post/2021-12-31-scoring-my-2021-predictions/</guid>
+      <guid>https://stephenmalina.com/post/2021-12-31-scoring-my-2021-predictions/</guid>
       <description>&lt;p&gt;At the beginning of last year, I &lt;a href=&#34;https://stephenmalina.com/post/2021-01-09-2021-predictions/&#34;&gt;made predictions&lt;/a&gt; for the year. Now it&amp;rsquo;s time to score them (before I make my 2022 predictions).&lt;/p&gt;&#xA;&lt;h2 id=&#34;data--code&#34;&gt;&#xA;Data &amp;amp; code&#xA;&lt;a href=&#34;#data--code&#34; class=&#34;heading-anchor&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://docs.google.com/spreadsheets/d/1YQZfLKDxxsfawwuvWLWkeoxoj9jRfUCOCQbshtE0EwM/edit?usp=sharing&#34;&gt;Here&lt;/a&gt; is a spreadsheet containing my scored predictions. If you want to see my full analysis, you can look at my &lt;a href=&#34;https://github.com/an1lam/predictions/blob/main/notebooks/2021%20Predictions%20Scoring.ipynb&#34;&gt;Jupyter notebook&lt;/a&gt; which contains Brier score calculations plus plotting.&lt;/p&gt;&#xA;&lt;h2 id=&#34;high-level-analysis&#34;&gt;&#xA;High level analysis&#xA;&lt;a href=&#34;#high-level-analysis&#34; class=&#34;heading-anchor&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;p&gt;The key metrics I looked at were my overall and by category &lt;a href=&#34;https://en.wikipedia.org/wiki/Brier_score&#34;&gt;Brier scores&lt;/a&gt; plus calibration. My overall Brier score was .18.&#xA;&lt;label for=&#34;sidenote-1&#34; class=&#34;margin-toggle sidenote-number&#34;&gt;(1)&lt;/label&gt;&#xA;&lt;input type=&#34;checkbox&#34; id=&#34;sidenote-1&#34; class=&#34;margin-toggle&#34;/&gt;&#xA;&lt;span class=&#34;sidenote&#34;&gt;&#xA;&lt;span class=&#34;sidenote-number&#34;&gt;(1)&lt;/span&gt;As a refresher, the Brier score is the mean squared error of a set of predictions vs. the true outcomes. So, for example, if I predict something will happen with probability .2 and something else will happen with probability .4 and then both happen, my Brier score for this pair of events is $ ((1-.2)^2 + (1-.4)^2)/2 = .5$. This means that lower Brier scores are better, with the best possible Brier score being 0 and the worst 1. The Brier score is a &lt;a href=&#34;https://en.wikipedia.org/wiki/Scoring_rule#StrictlyProperScoringRules&#34;&gt;strictly proper scoring rule&lt;/a&gt;, which means that it will always be maximized by the true probabilities (assuming they were known) for a set of events. Note that despite this, Brier scores are &lt;a href=&#34;https://en.wikipedia.org/wiki/Brier_score#Shortcomings&#34;&gt;not ideal&lt;/a&gt; for very rare events. The intuition for why this can be true despite them being strictly proper scoring rules boils down to the strictly proper condition only requiring that the score decrease as the result of any one prediction diverging from the probability of the event rather than dictating by &lt;em&gt;how much&lt;/em&gt;.&#xA;&lt;/span&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Beware silver bullets</title>
-      <link>http://localhost:1314/post/2021-12-05-beware-silver-bullets/</link>
+      <link>https://stephenmalina.com/post/2021-12-05-beware-silver-bullets/</link>
       <pubDate>Sat, 04 Dec 2021 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1314/post/2021-12-05-beware-silver-bullets/</guid>
+      <guid>https://stephenmalina.com/post/2021-12-05-beware-silver-bullets/</guid>
       <description>&lt;p&gt;&lt;em&gt;Note: This post was co-written with &lt;a href=&#34;https://uribram.com/&#34;&gt;Uri Bram&lt;/a&gt; of &lt;a href=&#34;https://thebrowser.com/archive/&#34;&gt;The Browser&lt;/a&gt;, who deserves all credit for the good parts and no blame for the bad parts and inevitable mistakes (which things fall into which category is at your, the reader’s, discretion).&lt;/em&gt;&lt;/p&gt;&#xA;&lt;p&gt;A recurring problem I, and I think people similar to me, face is letting my excitement about something new transform from being based on curiosity and a sense of usefulness into viewing the thing as a Fully General Solution to All Problems. While the latter feeling can provide good motivation for getting over the initial hump over learning difficulty, I’ve come to realize through experience that it consistently backfires. The rest of this post covers some examples of this pattern, which I’ve coined the &lt;em&gt;silver bullet cycle&lt;/em&gt;, and its effects in my own life and then describes how I’ve tried to deal with it.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Crazy ideas for future synthetic biology &amp; bioengineering</title>
-      <link>http://localhost:1314/post/2021-11-crazy-synthetic-bio-ideas/</link>
+      <link>https://stephenmalina.com/post/2021-11-crazy-synthetic-bio-ideas/</link>
       <pubDate>Fri, 26 Nov 2021 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1314/post/2021-11-crazy-synthetic-bio-ideas/</guid>
+      <guid>https://stephenmalina.com/post/2021-11-crazy-synthetic-bio-ideas/</guid>
       <description>&lt;p&gt;One thing I like about the synthetic biology community is that, from the early days, its participants have been willing to entertain &amp;ldquo;wild&amp;rdquo; ideas like &lt;a href=&#34;https://www.nature.com/articles/d41586-019-02468-w&#34;&gt;building dragons&lt;/a&gt;. While this willingness comes with all of the risks associated with building a lot of hype around a nascent technology, against the backdrop of cultural indefinite pessimism, I still prefer it. In that vein, inspired by Milan Cwitkovic&amp;rsquo;s legendary listicles on &lt;a href=&#34;https://milan.cvitkovic.net/writing/things_youre_allowed_to_do/&#34;&gt;Things you&amp;rsquo;re allowed to do&lt;/a&gt; and &lt;a href=&#34;https://milan.cvitkovic.net/writing/market_failures_in_science/&#34;&gt;Market failures in science&lt;/a&gt;, I decided to make my own listicle of cool ideas for future synthetic biology &amp;amp; bioengineering projects. If you have additional ideas that you want me add (with credit) don&amp;rsquo;t hesitate to &lt;a href=&#34;mailto:stephenmalina@gmail.com&#34;&gt;reach out&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Energetic Aliens</title>
-      <link>http://localhost:1314/post/2021-07-01-energetic-aliens-among-us/</link>
+      <link>https://stephenmalina.com/post/2021-07-01-energetic-aliens-among-us/</link>
       <pubDate>Thu, 01 Jul 2021 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1314/post/2021-07-01-energetic-aliens-among-us/</guid>
+      <guid>https://stephenmalina.com/post/2021-07-01-energetic-aliens-among-us/</guid>
       <description>&lt;p&gt;Reading biographies and observing friends, family, and colleagues has led me to become interested in what factors drive the variance in cognitive stamina and observed levels of energy between individuals. Identifying the biological, environmental, or motivational factors which produce this difference seems important and neglected. Understanding this is a research agenda&amp;rsquo;s worth of work, so my contribution will be to draw a conceptual boundary around the idea of an &amp;ldquo;energetic alien&amp;rdquo; and explore some (not selected i.i.d.) examples of eminent energetic aliens from different fields, discuss some hypotheses about the energetic alien phenomenon, and then put forth some ideas for how we non-energetic aliens can compensate.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Book Review - A World Without Email</title>
-      <link>http://localhost:1314/post/2021-04-01-world-without-email-review/</link>
+      <link>https://stephenmalina.com/post/2021-04-01-world-without-email-review/</link>
       <pubDate>Thu, 01 Apr 2021 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1314/post/2021-04-01-world-without-email-review/</guid>
+      <guid>https://stephenmalina.com/post/2021-04-01-world-without-email-review/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;www.amazon.com/world-without-email-reimagining-communication/dp/0525536558?c=90c759ee-a68d-48d7-ac21-7da8138e05d2&#34;&gt;A World Without Email&lt;/a&gt; (AWWE) is Cal Newport&amp;rsquo;s new book arguing for an overhaul in our workplace communication and project management style. This topic is a natural follow up to Newport&amp;rsquo;s previous two books &amp;ndash; Deep Work and Digital Minimalism. These books focused on the individual benefits of hard focused effort and deliberate technology reduction respectively. This book applies a similar lens to the modern frenetic knowledge economy workplace. According to Newport, priortizing responsiveness and heavily relying on general purpose communication tools in the workplace is making us miserable and unproductive. Newport instead argues that we should design workflows and processes that maximize knowledge worker productivity by enabling single-tasking and moving communications out of all-purpose, optimized for rapid response tools.&lt;/p&gt;</description>
     </item>
     <item>
       <title>A personal post-mortem on almost giving very misleading advice</title>
-      <link>http://localhost:1314/post/2021-03-06-bad-advice-near-miss/</link>
+      <link>https://stephenmalina.com/post/2021-03-06-bad-advice-near-miss/</link>
       <pubDate>Sat, 06 Mar 2021 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1314/post/2021-03-06-bad-advice-near-miss/</guid>
+      <guid>https://stephenmalina.com/post/2021-03-06-bad-advice-near-miss/</guid>
       <description>&lt;p&gt;I recently had someone ask me what I felt helped me grow the most in my first few years working as a software engineer. Upon them asking me this, I initially drafted an answer that looked something like the following:&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;A combination of building systems and seeing how they failed and then reading lots of code and books including: (list of programming books I&amp;rsquo;ve read).&lt;/p&gt;&lt;/blockquote&gt;&#xA;&lt;p&gt;However, upon writing this &amp;ndash; and before sending it thankfully &amp;ndash; I realized I was almost entirely misrepresenting the things that actually helped me grow. Building things and seeing how they broke was genuinely a huge factor, but, despite reading lots of programming books during my first few years as a software engineer, I think they played a relatively minor role in my growth (because &lt;a href=&#34;https://andymatuschak.org/books/&#34;&gt;books don&amp;rsquo;t work&lt;/a&gt;). Also, I (along with &lt;a href=&#34;http://akkartik.name&#34;&gt;Kartik&lt;/a&gt;) wrote an entire post about how &lt;a href=&#34;http://akkartik.name/post/comprehension&#34;&gt;nobody &lt;em&gt;actually&lt;/em&gt; reads code like a book&lt;/a&gt;, so clearly I wasn&amp;rsquo;t doing that much. Instead, I ended up writing a longer message which, in addition to building things, pointed to the following factors as encouraging my growth:&lt;/p&gt;</description>
     </item>
     <item>
       <title>Ideas not mattering is a psyop</title>
-      <link>http://localhost:1314/post/2021-02-21-ideas-not-mattering-is-a-psyop/</link>
+      <link>https://stephenmalina.com/post/2021-02-21-ideas-not-mattering-is-a-psyop/</link>
       <pubDate>Sun, 21 Feb 2021 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1314/post/2021-02-21-ideas-not-mattering-is-a-psyop/</guid>
+      <guid>https://stephenmalina.com/post/2021-02-21-ideas-not-mattering-is-a-psyop/</guid>
       <description>&lt;p&gt;&lt;em&gt;&lt;a href=&#34;https://guzey.com/ideas-not-mattering-is-a-psyop/&#34;&gt;Originally posted&lt;/a&gt; on Alexey&amp;rsquo;s blog.&lt;/em&gt;&lt;/p&gt;&#xA;&lt;p&gt;By &lt;a href=&#34;https://stephenmalina.com/&#34;&gt;Stephen Malina&lt;/a&gt;, &lt;a href=&#34;https://guzey.com/&#34;&gt;Alexey Guzey&lt;/a&gt;, &lt;a href=&#34;https://www.forourposterity.com/&#34;&gt;Leopold Aschenbrenner&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;h2 id=&#34;introduction&#34;&gt;&#xA;Introduction&#xA;&lt;a href=&#34;#introduction&#34; class=&#34;heading-anchor&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;p&gt;Conventional startup and business wisdom has become “there are plenty of good ideas, all that matters is execution.” We don&amp;rsquo;t buy it.&#xA;Empirically, all our aspiring founder friends are desperate for startup ideas, with few managing to land on something worthwhile, and all our scientist friends are desperate for research ideas.&#xA;Good ideas are essential, even ones that seem obvious in retrospect were non-obvious ex ante, and in fact good execution itself depends critically on good ideas.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Three observations from a surprisingly emotionally evocative winter walk</title>
-      <link>http://localhost:1314/post/2021-02-01-emotional-winter-walk/</link>
+      <link>https://stephenmalina.com/post/2021-02-01-emotional-winter-walk/</link>
       <pubDate>Mon, 01 Feb 2021 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1314/post/2021-02-01-emotional-winter-walk/</guid>
+      <guid>https://stephenmalina.com/post/2021-02-01-emotional-winter-walk/</guid>
       <description>&lt;p&gt;I just went on a short nighttime mid-snow storm walk and it unexpectedly provoked&#xA;three separate observations along with a desire to capture them.&lt;/p&gt;&#xA;&lt;h1 id=&#34;reveling-in-the-beauty-of-our-creations&#34;&gt;&#xA;Reveling in the beauty of our creations&#xA;&lt;a href=&#34;#reveling-in-the-beauty-of-our-creations&#34; class=&#34;heading-anchor&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h1&gt;&#xA;&lt;p&gt;Everyone loves to hate on Ayn Rand but noone else can give me ASMR writing&#xA;about skyscrapers.&lt;/p&gt;&#xA;&lt;blockquote cite=&#34;&#34;&gt;&#xA;&lt;p&gt;I would give the greatest sunset in the world for one sight of New York&amp;rsquo;s&#xA;skyline. Particularly when one can&amp;rsquo;t see the details. Just the shapes. The&#xA;shapes and the thought that made them. The sky over New York and the will of&#xA;man made visible. What other religion do we need? And then people tell me about&#xA;pilgrimages to some dank pesthole in a jungle where they go to do homage to a&#xA;crumbling temple, to a leering stone monster with a pot belly, created by some&#xA;leprous savage. Is it beauty and genius they want to see? Do they seek a sense&#xA;of the sublime? Let them come to New York, stand on the shore of the Hudson,&#xA;look and kneel. When I see the city from my window - no, I don&amp;rsquo;t feel how small&#xA;I am - but I feel that if a war came to threaten this, I would throw myself&#xA;into space, over the city, and protect these buildings with my body.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Book Review - The Art of Learning</title>
-      <link>http://localhost:1314/post/2021-01-23-book-review-the-art-of-learning/</link>
+      <link>https://stephenmalina.com/post/2021-01-23-book-review-the-art-of-learning/</link>
       <pubDate>Wed, 20 Jan 2021 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1314/post/2021-01-23-book-review-the-art-of-learning/</guid>
+      <guid>https://stephenmalina.com/post/2021-01-23-book-review-the-art-of-learning/</guid>
       <description>&lt;p&gt;&lt;em&gt;This is a review of &lt;a href=&#34;https://www.amazon.com/dp/B00BORI118/ref=dp-kindle-redirect?_encoding=UTF8&amp;amp;btkr=1&#34;&gt;The Art of Learning: A Journey in the Pursuit of Excellence&lt;/a&gt; by Joshua Waitzkin.&lt;/em&gt;&lt;/p&gt;&#xA;&lt;p&gt;I&amp;rsquo;m sort of surprised how much I liked this book. At times, it bordered on self-help, spiritual BS but Waitzkin&amp;rsquo;s undeniable competitive success and tempering of the more spiritually flavored advice with insightful musing on how to master a domain or understand one&amp;rsquo;s opponent elevated it far above the self-help morass.&lt;/p&gt;&#xA;&lt;p&gt;In this review, I summarize the book while musing on how well Waitzkin&amp;rsquo;s insights apply to the areas in which I&amp;rsquo;m interested. As I&amp;rsquo;m sure the summary components illustrates, I lack Waitzkin&amp;rsquo;s ability to describe technical insights into skill development in reverent, lyrical terms that highlight their profundity, so I highly recommend reading the actual book if you enjoy the quotes I&amp;rsquo;ve included in my summary. Before going on, I do want to add a disclaimer that this review is not especially critical of the book. While I have no problem with critical reviews (I am friends with &lt;a href=&#34;guzey.com&#34;&gt;Alexey&lt;/a&gt; after all), in this case my goal is to extract insights that apply to my own pursuits, so I only apply a critical lens to Waitzkin&amp;rsquo;s lessons insofar as it&amp;rsquo;s relevant to achieving this goal.&lt;/p&gt;</description>
     </item>
     <item>
       <title>My favorite random internet writing - A tier list</title>
-      <link>http://localhost:1314/post/2021-01-20-internet-writing-tier-list/</link>
+      <link>https://stephenmalina.com/post/2021-01-20-internet-writing-tier-list/</link>
       <pubDate>Wed, 20 Jan 2021 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1314/post/2021-01-20-internet-writing-tier-list/</guid>
+      <guid>https://stephenmalina.com/post/2021-01-20-internet-writing-tier-list/</guid>
       <description>&lt;p&gt;As someone who has and continues to derive tremendous value from writing on the internet, I&amp;rsquo;ve recently felt an urge to share some of my favorite semi-esoteric internet writing in part so that I have a post to refer back to instead of resending the same articles to friends over and over again.&#xA;Since many of these articles resist easy categorization, I&amp;rsquo;m organizing this in the form of a &lt;a href=&#34;https://en.wikipedia.org/wiki/Tier_list&#34;&gt;tier list&lt;/a&gt; (inspirational examples: &lt;a href=&#34;https://thume.ca/2020/07/19/my-youtube-tier-list/&#34;&gt;1&lt;/a&gt;, &lt;a href=&#34;https://thinkingcomplete.blogspot.com/2020/11/my-intellectual-influences.html&#34;&gt;2&lt;/a&gt;). Like Richard (link #2), instead of just ranking things by how &amp;ldquo;good&amp;rdquo; they are, I&amp;rsquo;ve ordered them by how influential they were on me.&lt;/p&gt;</description>
     </item>
     <item>
       <title>2021 Predictions</title>
-      <link>http://localhost:1314/post/2021-01-09-2021-predictions/</link>
+      <link>https://stephenmalina.com/post/2021-01-09-2021-predictions/</link>
       <pubDate>Sat, 09 Jan 2021 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1314/post/2021-01-09-2021-predictions/</guid>
+      <guid>https://stephenmalina.com/post/2021-01-09-2021-predictions/</guid>
       <description>&lt;p&gt;For the past two years, my friends have had a tradition of making predictions and scoring them at the end of the year. This year, I decided why not just post my predictions on my blog and score them publicly (with a few redacted)? This will hopefully incentivize me to be more thoughtful about them and also will help direct my endless desire for internet acclaim towards something that has a positive side effect.&lt;/p&gt;</description>
     </item>
     <item>
       <title>My Maniac Week - A Review</title>
-      <link>http://localhost:1314/post/2020-10-20-maniac-week-review/</link>
+      <link>https://stephenmalina.com/post/2020-10-20-maniac-week-review/</link>
       <pubDate>Tue, 20 Oct 2020 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1314/post/2020-10-20-maniac-week-review/</guid>
-      <description>&lt;p&gt;Previously: &lt;a href=&#34;http://localhost:1314/post/2020-09-25-upcoming-maniac-week&#34;&gt;Upcoming Maniac Week&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;h1 id=&#34;summary&#34;&gt;&#xA;Summary&#xA;&lt;a href=&#34;#summary&#34; class=&#34;heading-anchor&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h1&gt;&#xA;&lt;p&gt;Inspired by &lt;a href=&#34;https://blog.nickwinter.net/posts/the-120-hour-workweek-epic-coding-time-lapse&#34;&gt;Nick Winter&lt;/a&gt;, &lt;a href=&#34;https://blog.beeminder.com/maniac/&#34;&gt;Bethany Soule&lt;/a&gt;, &lt;a href=&#34;https://www.youtube.com/watch?v=giBIJW-2hro&amp;amp;feature=youtu.be&#34;&gt;Danny Reeves&lt;/a&gt;, &lt;a href=&#34;https://byorgey.wordpress.com/2014/08/04/maniac-week/&#34;&gt;Brent Yorgey&lt;/a&gt;, and &lt;a href=&#34;https://www.alexstrick.com/blog/2015/11/upcoming-maniac-week&#34;&gt;Alex Strick&lt;/a&gt;, I undertook a &amp;ldquo;maniac week&amp;rdquo; from Friday, October 9th (9:00 AM) through Thursday, October 15th (12:00 PM). During my maniac week, I worked 11+ hours a day on schoolwork and my primary research project while avoiding social media and other internet distractions.&lt;/p&gt;&#xA;&lt;p&gt;By my own assessment, my maniac week was a success. Despite not working nearly as many hours as Nick Winter, I got everything I needed to done, learned that I could work as much as I did, and observed the challenges working a lot entails. Equally important, I enjoyed myself in the process, both in the type 1 and type 2 fun senses.&lt;/p&gt;</description>
+      <guid>https://stephenmalina.com/post/2020-10-20-maniac-week-review/</guid>
+      <description>&lt;p&gt;Previously: &lt;a href=&#34;https://stephenmalina.com/post/2020-09-25-upcoming-maniac-week&#34;&gt;Upcoming Maniac Week&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;h1 id=&#34;summary&#34;&gt;&#xA;Summary&#xA;&lt;a href=&#34;#summary&#34; class=&#34;heading-anchor&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h1&gt;&#xA;&lt;p&gt;Inspired by &lt;a href=&#34;https://blog.nickwinter.net/posts/the-120-hour-workweek-epic-coding-time-lapse&#34;&gt;Nick Winter&lt;/a&gt;, &lt;a href=&#34;https://blog.beeminder.com/maniac/&#34;&gt;Bethany Soule&lt;/a&gt;, &lt;a href=&#34;https://www.youtube.com/watch?v=giBIJW-2hro&amp;amp;feature=youtu.be&#34;&gt;Danny Reeves&lt;/a&gt;, &lt;a href=&#34;https://byorgey.wordpress.com/2014/08/04/maniac-week/&#34;&gt;Brent Yorgey&lt;/a&gt;, and &lt;a href=&#34;https://www.alexstrick.com/blog/2015/11/upcoming-maniac-week&#34;&gt;Alex Strick&lt;/a&gt;, I undertook a &amp;ldquo;maniac week&amp;rdquo; from Friday, October 9th (9:00 AM) through Thursday, October 15th (12:00 PM). During my maniac week, I worked 11+ hours a day on schoolwork and my primary research project while avoiding social media and other internet distractions.&lt;/p&gt;&#xA;&lt;p&gt;By my own assessment, my maniac week was a success. Despite not working nearly as many hours as Nick Winter, I got everything I needed to done, learned that I could work as much as I did, and observed the challenges working a lot entails. Equally important, I enjoyed myself in the process, both in the type 1 and type 2 fun senses.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Upcoming Maniac Week</title>
-      <link>http://localhost:1314/post/2020-09-25-upcoming-maniac-week/</link>
+      <link>https://stephenmalina.com/post/2020-09-25-upcoming-maniac-week/</link>
       <pubDate>Sat, 26 Sep 2020 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1314/post/2020-09-25-upcoming-maniac-week/</guid>
+      <guid>https://stephenmalina.com/post/2020-09-25-upcoming-maniac-week/</guid>
       <description>&lt;h1 id=&#34;abstract&#34;&gt;&#xA;Abstract&#xA;&lt;a href=&#34;#abstract&#34; class=&#34;heading-anchor&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h1&gt;&#xA;&lt;p&gt;&lt;em&gt;Guy on internet decides to follow lead of other people on internet and pre-commits to working much more than usual . Plans to document whole thing under illusion people care about some guy on the internet working a more-than-average number of hours relative to his baseline.&lt;/em&gt;&lt;/p&gt;&#xA;&lt;h1 id=&#34;summary&#34;&gt;&#xA;Summary&#xA;&lt;a href=&#34;#summary&#34; class=&#34;heading-anchor&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h1&gt;&#xA;&lt;p&gt;From Friday, October 9th (9:00 AM) through Thursday, October 15th (2:00 PM), I&amp;rsquo;ll attempt to work 11+ hours a day on schoolwork and my primary research project. During this period, I&amp;rsquo;ll track my work hours and activities. Afterwards, I&amp;rsquo;ll write a postmortem that will include:&lt;/p&gt;</description>
     </item>
     <item>
       <title>Becoming a more playful, deeper thinker</title>
-      <link>http://localhost:1314/post/2020-07-11-learning-to-love-thinking/</link>
+      <link>https://stephenmalina.com/post/2020-07-11-learning-to-love-thinking/</link>
       <pubDate>Sat, 11 Jul 2020 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1314/post/2020-07-11-learning-to-love-thinking/</guid>
+      <guid>https://stephenmalina.com/post/2020-07-11-learning-to-love-thinking/</guid>
       <description>&lt;p&gt;Note: Ignore the weird Markdown formatting, it’s because I copied this from the blog source code.&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Inspiration&lt;/strong&gt;: &lt;a href=&#34;https://nabeelqu.co/understanding&#34;&gt;Understanding&lt;/a&gt; by Nabeel Qureshi, David Deutsch&amp;rsquo;s &lt;em&gt;The Beginning of Infinity&lt;/em&gt; and &lt;a href=&#34;https://www.youtube.com/watch?v=idvGlr0aT3c&#34;&gt;Fun Criterion&lt;/a&gt;.&lt;br&gt;&#xA;&lt;strong&gt;Meta&lt;/strong&gt;: This is an experimental post in which I dissect something about myself rather than write about some technical topic. Feedback and criticism encouraged as always!&lt;/p&gt;&#xA;&lt;p&gt;One commonality I&amp;rsquo;ve noticed amongst profiles of thinkers I respect&amp;ndash;Richard Feynman, John Von Neumann, David Deutsch, Donald Knuth, George Church&amp;ndash;is that these folks enjoy(ed) “thinking as play”. Concrete examples include:&lt;/p&gt;</description>
     </item>
     <item>
       <title>Course Review - Causal Inference</title>
-      <link>http://localhost:1314/post/2020-05-15-ci-course-review/</link>
+      <link>https://stephenmalina.com/post/2020-05-15-ci-course-review/</link>
       <pubDate>Fri, 15 May 2020 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1314/post/2020-05-15-ci-course-review/</guid>
+      <guid>https://stephenmalina.com/post/2020-05-15-ci-course-review/</guid>
       <description>&lt;p&gt;This semester, I had the pleasure of taking a course on Causal Inference with &lt;a href=&#34;https://causalai.net/&#34;&gt;Professor Elias Bareinboim&lt;/a&gt;, one of Judea Pearl&amp;rsquo;s former students and author of some &lt;a href=&#34;https://arxiv.org/pdf/1312.7485.pdf&#34;&gt;seminal&lt;/a&gt; &lt;a href=&#34;https://www.pnas.org/content/113/27/7345&#34;&gt;results&lt;/a&gt; in Causal Inference. I feel like this course highlighted not only the content Causal Inference researchers consider important but also the types of understanding they value. In this review, I&amp;rsquo;ll focus on the latter. I hope to write some blog posts in the future about the former but have learned from past experience not to promise future posts unless I have time during which I know I can write them.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Digital Reduction Experiment</title>
-      <link>http://localhost:1314/post/2020-03-18-digital-minimalism-exp/</link>
+      <link>https://stephenmalina.com/post/2020-03-18-digital-minimalism-exp/</link>
       <pubDate>Wed, 18 Mar 2020 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1314/post/2020-03-18-digital-minimalism-exp/</guid>
+      <guid>https://stephenmalina.com/post/2020-03-18-digital-minimalism-exp/</guid>
       <description>&lt;h2 id=&#34;intro--motivation&#34;&gt;&#xA;Intro / Motivation&#xA;&lt;a href=&#34;#intro--motivation&#34; class=&#34;heading-anchor&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;p&gt;I know I&amp;rsquo;m a walking millenial trope, but I&amp;rsquo;m starting a deliberate experiment to dramatically reduce my internet engagement. Especially while I&amp;rsquo;m quarantined for who knows how long, I want to almost entirely stop:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;checking Twitter;&lt;/li&gt;&#xA;&lt;li&gt;reading about the virus &lt;strong&gt;throughout the day&lt;/strong&gt;;&lt;/li&gt;&#xA;&lt;li&gt;checking email;&lt;/li&gt;&#xA;&lt;li&gt;reading blogs frequently; and&lt;/li&gt;&#xA;&lt;li&gt;constantly texting with people (mostly about the virus).&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;Instead, I want to focus on:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;doing lots of (ML) research;&lt;/li&gt;&#xA;&lt;li&gt;schoolwork;&lt;/li&gt;&#xA;&lt;li&gt;spending time outside;&lt;/li&gt;&#xA;&lt;li&gt;exercising;&lt;/li&gt;&#xA;&lt;li&gt;video calls with friends;&lt;/li&gt;&#xA;&lt;li&gt;reading books; and&lt;/li&gt;&#xA;&lt;li&gt;writing more blog posts.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;This is largely inspired by Cal Newport&amp;rsquo;s writing, in particular &lt;a href=&#34;https://www.amazon.com/dp/B07DBRBP7G/ref=dp-kindle-redirect?_encoding=UTF8&amp;amp;btkr=1&#34;&gt;&lt;em&gt;Digital Minimalism&lt;/em&gt;&lt;/a&gt;. As he discusses, I hope limiting my mindless browsing and procrastination options will force me to spend more time thinking and even being bored. While I expect I&amp;rsquo;ll also be more productive, I&amp;rsquo;m explicitly not setting increased productivity as a goal since I want to give myself freedom to avoid my usual procrastination sources without feeling like I&amp;rsquo;m forcing myself to just work all the time.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Deriving the front-door criterion with the do-calculus</title>
-      <link>http://localhost:1314/post/2020-03-09-front-door-do-calc-derivation/</link>
+      <link>https://stephenmalina.com/post/2020-03-09-front-door-do-calc-derivation/</link>
       <pubDate>Mon, 09 Mar 2020 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1314/post/2020-03-09-front-door-do-calc-derivation/</guid>
+      <guid>https://stephenmalina.com/post/2020-03-09-front-door-do-calc-derivation/</guid>
       <description>&lt;p&gt;&lt;em&gt;Attention conservation notice:&lt;/em&gt; Narrow target audience - will only make sense to people somewhat familiar with causal inference who don&amp;rsquo;t find the result entirely boring.&lt;/p&gt;&#xA;&lt;h2 id=&#34;the-front-door-criterion&#34;&gt;&#xA;The Front-Door Criterion&#xA;&lt;a href=&#34;#the-front-door-criterion&#34; class=&#34;heading-anchor&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;p&gt;Suppose we have a causal graphical model that looks like the following.&lt;/p&gt;&#xA;&lt;img src=&#34;https://i.imgur.com/i5HQ1Jt.png&#34; width=&#34;500&#34; height=&#34;350&#34; /&gt;&#xA;&lt;p&gt;Assume $ U $ is unmeasured whereas $ X, M, Y $ can be measured. Notice that:&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;All directed paths from $ X $ to $ Y $ flow through $ M $.&lt;/li&gt;&#xA;&lt;li&gt;$ X $ blocks all back-door paths from $ M $ to $ Y $.&lt;/li&gt;&#xA;&lt;li&gt;There are no unblocked back-door paths from $ X $ to $ M $.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;One of the most striking results in early causal inference literature, called the front-door criterion, states that, for all graphs like ours which satisfy these three criteria, the causal effect $ P(y \mid \mathrm{do}(x)) $ is identifiable by the formula (assume discrete variables for convenience)&lt;/p&gt;</description>
     </item>
     <item>
       <title>Decaf vs. regular coffee blinded experiment</title>
-      <link>http://localhost:1314/post/2020-03-01-coffee-rct/</link>
+      <link>https://stephenmalina.com/post/2020-03-01-coffee-rct/</link>
       <pubDate>Sun, 01 Mar 2020 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1314/post/2020-03-01-coffee-rct/</guid>
+      <guid>https://stephenmalina.com/post/2020-03-01-coffee-rct/</guid>
       <description>&lt;h1 id=&#34;abstract&#34;&gt;&#xA;Abstract&#xA;&lt;a href=&#34;#abstract&#34; class=&#34;heading-anchor&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h1&gt;&#xA;&lt;p&gt;I conducted a two-week blinded, randomized experiment to test whether drinking regular vs. decaf coffee had a detectable effect on my mood and alertness. Each day, I drank one cup of coffee in the morning and immediately took a &lt;a href=&#34;http://www.quantified-mind.com/&#34;&gt;Quantified Mind&lt;/a&gt; test. I also tracked hours of sleep each night and measured subjective factors such as mood and alertness a few times throughout the day. Overall, the experiment was a success in terms of being able to follow my original plan. It did end up being only mostly blinded because I got caffeine withdrawal headaches after two consecutive decaf days.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Paper Review - Network Mendelian Randomization</title>
-      <link>http://localhost:1314/post/2019-11-16-network-mendelian-randomization/</link>
+      <link>https://stephenmalina.com/post/2019-11-16-network-mendelian-randomization/</link>
       <pubDate>Sat, 16 Nov 2019 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1314/post/2019-11-16-network-mendelian-randomization/</guid>
+      <guid>https://stephenmalina.com/post/2019-11-16-network-mendelian-randomization/</guid>
       <description>&lt;p&gt;In which I record my thoughts on &lt;a href=&#34;https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4469795/&#34;&gt;Network Mendelian Randomization&lt;/a&gt; by Burgess et al.&lt;/p&gt;&#xA;&lt;h2 id=&#34;what-is-this-paper-about&#34;&gt;&#xA;What is this paper about?&#xA;&lt;a href=&#34;#what-is-this-paper-about&#34; class=&#34;heading-anchor&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;p&gt;This paper describes a method for doing Mendelian Randomization (MR) in the presence of a potential mediating variable. In the typical MR setting, we have an instrumental variable which &amp;ldquo;instruments&amp;rdquo; an exposure that we believe causally influences the outcome we care about. True mediators &amp;ldquo;mediate&amp;rdquo; the causal influence of exposures on outcomes. In other words, if we&amp;rsquo;re trying to understand the causal influence of some factor on another factor, it&amp;rsquo;s possible there&amp;rsquo;s a factor (mediator) that the exposure influences that then influences the outcome.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Matrix Potpourri</title>
-      <link>http://localhost:1314/post/2019-09-07-matrix-potpourri/</link>
+      <link>https://stephenmalina.com/post/2019-09-07-matrix-potpourri/</link>
       <pubDate>Tue, 13 Aug 2019 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1314/post/2019-09-07-matrix-potpourri/</guid>
+      <guid>https://stephenmalina.com/post/2019-09-07-matrix-potpourri/</guid>
       <description>&lt;h1 id=&#34;matrix-potpourri&#34;&gt;&#xA;Matrix Potpourri&#xA;&lt;a href=&#34;#matrix-potpourri&#34; class=&#34;heading-anchor&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h1&gt;&#xA;&lt;p&gt;As part of reviewing Linear Algebra for my Machine Learning class, I&amp;rsquo;ve noticed there&amp;rsquo;s a bunch of matrix terminology that I didn&amp;rsquo;t encounter during my proof-based self-study of LA from &lt;a href=&#34;https://www.amazon.com/Programmers-Introduction-Mathematics-Dr-Jeremy/dp/1727125452/ref=asc_df_1727125452/?tag=hyprod-20&amp;amp;linkCode=df0&amp;amp;hvadid=312168166316&amp;amp;hvpos=1o1&amp;amp;hvnetw=g&amp;amp;hvrand=8153319341318076586&amp;amp;hvpone=&amp;amp;hvptwo=&amp;amp;hvqmt=&amp;amp;hvdev=c&amp;amp;hvdvcmdl=&amp;amp;hvlocint=&amp;amp;hvlocphy=9067609&amp;amp;hvtargid=aud-801381245258:pla-582015251962&amp;amp;psc=1&#34;&gt;&lt;em&gt;Linear Algebra Done Right&lt;/em&gt;&lt;/a&gt;. This post is mostly intended to consolidate my own understanding and to act as a reference to future me, but if it also helps others in a similar position, that&amp;rsquo;s even better!&lt;/p&gt;&#xA;&lt;p&gt;&lt;em&gt;Note&lt;/em&gt;: I list all the sources from which I drew while writing this post under the &amp;ldquo;Sources&amp;rdquo; heading at the bottom of this post.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Paper Review - DeepSEA</title>
-      <link>http://localhost:1314/post/2019-08-08-deepsea/</link>
+      <link>https://stephenmalina.com/post/2019-08-08-deepsea/</link>
       <pubDate>Thu, 08 Aug 2019 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1314/post/2019-08-08-deepsea/</guid>
+      <guid>https://stephenmalina.com/post/2019-08-08-deepsea/</guid>
       <description>&lt;p&gt;In which I record my thoughts on &lt;a href=&#34;https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4768299/pdf/nihms757739.pdf&#34;&gt;DeepSEA&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;h2 id=&#34;terminology&#34;&gt;&#xA;Terminology&#xA;&lt;a href=&#34;#terminology&#34; class=&#34;heading-anchor&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;ChIP-seq (Chromatin Immunoprecipitation Sequencing):&lt;/li&gt;&#xA;&lt;li&gt;Expression Quantitative Trait Locis (eQTLs)&lt;/li&gt;&#xA;&lt;li&gt;Cofactor Binding Sequences&lt;/li&gt;&#xA;&lt;li&gt;Histone Marks: modifications to histone proteins in the nucleosome that impact the shape of chromatin.&lt;/li&gt;&#xA;&lt;li&gt;gkm-SVMs: The gkm-SVM is the previous SOTA model for predicting transcription factor binding based on ChIP-seq data.&lt;/li&gt;&#xA;&lt;li&gt;Allele: variants of a gene at the same position on a chromosome.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;what-is-this-paper-about&#34;&gt;&#xA;What is this paper about?&#xA;&lt;a href=&#34;#what-is-this-paper-about&#34; class=&#34;heading-anchor&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;p&gt;This paper trains a CNN to predict the presence of 919 &amp;ldquo;chromatin features&amp;rdquo;&amp;ndash;different TF binding sites, DHSs, and histone marks&amp;ndash;from 1000bp DNA sequences. It then tests this model by using a functional significance score based on its output to train a logistic regression classifier to predict whether SNPs will be present in a few different catalog of SNPs known to impact different biological functions, e.g. a GWAS catalog of disease-related SNPs.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Paper Review - Basset</title>
-      <link>http://localhost:1314/post/2019-08-05-basset/</link>
+      <link>https://stephenmalina.com/post/2019-08-05-basset/</link>
       <pubDate>Mon, 05 Aug 2019 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1314/post/2019-08-05-basset/</guid>
+      <guid>https://stephenmalina.com/post/2019-08-05-basset/</guid>
       <description>&lt;p&gt;In which I record my thoughts on &lt;a href=&#34;https://genome.cshlp.org/content/26/7/990.full&#34;&gt;Basset&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;h2 id=&#34;bio-background&#34;&gt;&#xA;Bio Background&#xA;&lt;a href=&#34;#bio-background&#34; class=&#34;heading-anchor&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;p&gt;The genome consists of (broadly) two types of genes, coding genes and noncoding genes. Coding genes get translated into proteins (as laid down by the Central Dogma) and are what most of us learned about in bio class. Non-coding genes&amp;hellip; don&amp;rsquo;t. As I understand it, noncoding genes can do a bunch of different things, but part of their function is to regulate coding gene activity through a number of mechanisms.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Paper Review - DeepBind</title>
-      <link>http://localhost:1314/post/2019-07-26-deepbind/</link>
+      <link>https://stephenmalina.com/post/2019-07-26-deepbind/</link>
       <pubDate>Fri, 26 Jul 2019 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1314/post/2019-07-26-deepbind/</guid>
+      <guid>https://stephenmalina.com/post/2019-07-26-deepbind/</guid>
       <description>&lt;p&gt;In which I record my thoughts on &lt;a href=&#34;https://www.nature.com/articles/nbt.3300.pdf&#34;&gt;DeepBind&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;h2 id=&#34;what-is-this-paper-about&#34;&gt;&#xA;What is this paper about?&#xA;&lt;a href=&#34;#what-is-this-paper-about&#34; class=&#34;heading-anchor&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;p&gt;The authors of this paper designed a conv net model to predict how well different proteins will bind to sequences of DNA or RNA. They train one model per protein for many different sequences and show that these models can predict binding affinities for sequences well enough to produce insights regarding the impact of single nucleotide mutations. They then discuss different datasets and areas in which they tested their model and how it performed (often SOTA [as of 2015]).&lt;/p&gt;</description>
     </item>
     <item>
       <title>Current Thoughts on Stoicism</title>
-      <link>http://localhost:1314/post/2019-05-18-thoughts-on-stoicism/</link>
+      <link>https://stephenmalina.com/post/2019-05-18-thoughts-on-stoicism/</link>
       <pubDate>Sat, 18 May 2019 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1314/post/2019-05-18-thoughts-on-stoicism/</guid>
+      <guid>https://stephenmalina.com/post/2019-05-18-thoughts-on-stoicism/</guid>
       <description>&lt;p&gt;&lt;em&gt;Meta: While I originally set out to write this essay about why I no longer &amp;ldquo;endorse&amp;rdquo; Stoicism as an operating framework, re-reading a bunch of Stoic stuff led me to realize that I still agree with ~90% of Stoic principles.&lt;/em&gt;&lt;/p&gt;&#xA;&lt;p&gt;Peter Thiel &lt;a href=&#34;https://www.nzz.ch/feuilleton/peter-thiel-donald-trump-handelt-fuer-mich-zu-wenig-disruptiv-ld.1471818&#34;&gt;recently talked about&lt;/a&gt; (in German) why he&amp;rsquo;s not a Stoic,&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;Stoics, for example, are obsessed with death. However, I am the opposite of a stoic, I loathe the peace and have no sense in the countryside to live and meditate on the environment. And neither am I an Epicurean who in the face of death concludes that he best enjoys every moment because the end can always overtake him. Bullshit! To be honest, I would not invest a cent in companies that are stoically or epicurean. I do not want to just accept this random, crazy world because I can not change it anyway. No, I want to change it, I want to shape it, and I have a hell of a lot of fun with it. The overcoming of death is not the downfall of the West!&lt;/p&gt;</description>
     </item>
     <item>
       <title>Better Project Planning With Prediction Markets</title>
-      <link>http://localhost:1314/post/2019-03-22-internal-prediction-markets-for-better-institutions/</link>
+      <link>https://stephenmalina.com/post/2019-03-22-internal-prediction-markets-for-better-institutions/</link>
       <pubDate>Fri, 22 Mar 2019 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1314/post/2019-03-22-internal-prediction-markets-for-better-institutions/</guid>
+      <guid>https://stephenmalina.com/post/2019-03-22-internal-prediction-markets-for-better-institutions/</guid>
       <description>&lt;p&gt;As I understand it, much of &lt;a href=&#34;https://en.wikipedia.org/wiki/Theory_of_the_firm&#34;&gt;Coase&amp;rsquo;s work&lt;/a&gt; focuses on why companies&amp;rsquo; internal structures don&amp;rsquo;t resemble markets all that much. Instead, most firms have feudal-ish structures. The CEO has, at the discretion of the board, final decision making power on nearly all decisions, and then their power trickles down recursively to their subordinates for decisions in which they&amp;rsquo;re not involved.&lt;/p&gt;&#xA;&lt;p&gt;While I&amp;rsquo;m willing to swallow the bitter pill that feudal-ish structures are actually more efficient for many company functions than democratic ones would be, in my own experience, I&amp;rsquo;ve observed a few places where I think market-based decision making systems could improve both company efficiency and employee satisfaction. In this post, I&amp;rsquo;ll discuss two problems that seems common in large corporations and how I think &lt;a href=&#34;https://en.wikipedia.org/wiki/Prediction_market&#34;&gt;prediction markets&lt;/a&gt; can help solve them.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Babble, Learning, and the Typical Mind Fallacy</title>
-      <link>http://localhost:1314/post/2018-12-16-babble-learning/</link>
+      <link>https://stephenmalina.com/post/2018-12-16-babble-learning/</link>
       <pubDate>Sun, 16 Dec 2018 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1314/post/2018-12-16-babble-learning/</guid>
+      <guid>https://stephenmalina.com/post/2018-12-16-babble-learning/</guid>
       <description>&lt;h3 id=&#34;babbling-about-babble&#34;&gt;&#xA;Babbling About Babble&#xA;&lt;a href=&#34;#babbling-about-babble&#34; class=&#34;heading-anchor&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h3&gt;&#xA;&lt;p&gt;In a &lt;a href=&#34;https://radimentary.wordpress.com/2018/01/10/babble/&#34;&gt;series&lt;/a&gt; &lt;a href=&#34;https://radimentary.wordpress.com/2018/01/12/prune/&#34;&gt;of&lt;/a&gt; &lt;a href=&#34;https://radimentary.wordpress.com/2018/01/11/more-babble/&#34;&gt;posts&lt;/a&gt; &lt;a href=&#34;https://radimentary.wordpress.com/2018/01/28/write/&#34;&gt;on&lt;/a&gt; his blog (or &lt;a href=&#34;https://www.lesswrong.com/s/pC6DYFLPMTCbEwH8W&#34;&gt;LessWrong&lt;/a&gt; if you prefer), alkjash writes about &amp;ldquo;babble&amp;rdquo; and &amp;ldquo;prune&amp;rdquo;, the two components of an adversarial model of knowledge production in humans. Alkjash describes babble and prune like this:&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;Here’s a simplistic model of how this works. I try to build a coherent sentence. At each step, to pick the next word, I randomly generate words in the category (correct part of speech, relevance) and sound them out one by one to see which continues the sentence most coherently. So, instead of deliberately and carefully generating sentences in one go, the algorithm is something like:&lt;/p&gt;</description>
     </item>
     <item>
       <title>My Interpretation of Movember</title>
-      <link>http://localhost:1314/post/2018-12-02-movember/</link>
+      <link>https://stephenmalina.com/post/2018-12-02-movember/</link>
       <pubDate>Sun, 02 Dec 2018 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1314/post/2018-12-02-movember/</guid>
+      <guid>https://stephenmalina.com/post/2018-12-02-movember/</guid>
       <description>&lt;p&gt;(Cross-posted from &lt;a href=&#34;https://www.facebook.com/stephen.malina/posts/10156908362592930?notif_id=1543807162428983&amp;amp;notif_t=feedback_reaction_generic&amp;amp;ref=notif&#34;&gt;Facebook&lt;/a&gt;.)&lt;/p&gt;&#xA;&lt;p&gt;This is the first time I&amp;rsquo;ve posted on Facebook in &amp;hellip; long. However, at the encouragement of a few friends, I&amp;rsquo;ve decided to leverage my no-shave November stunt as an opportunity to urge people to donate to one of the many worthwhile causes out there. Technically, my friends said I should do &amp;ldquo;the Movember thing&amp;rdquo; but this long-winded post is my characteristically difficult, verbose interpretation of that.&lt;/p&gt;&#xA;&lt;p&gt;Note that what follows comes with a huge caveat that I&amp;rsquo;m generally opposed to people donating money to causes for signaling reasons and/or guilt, so I encourage you not to donate to one of the causes I describe below unless you&amp;rsquo;re convinced doing so would actually be effective by the standards of whatever moral system you endorse.&lt;/p&gt;</description>
     </item>
     <item>
       <title>JIT Reading</title>
-      <link>http://localhost:1314/post/2018-02-24-jit-reading/</link>
+      <link>https://stephenmalina.com/post/2018-02-24-jit-reading/</link>
       <pubDate>Sat, 24 Feb 2018 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1314/post/2018-02-24-jit-reading/</guid>
+      <guid>https://stephenmalina.com/post/2018-02-24-jit-reading/</guid>
       <description>&lt;p&gt;Seibel, James Hague and others have all tried to justify why code reading is so uncommon, and they&#xA;make good points. But perhaps the conversation is led astray by use of the word read. I wonder if&#xA;Abelson and the others would have had more examples if Seibel had asked them what code they had&#xA;learned about for fun. Perhaps the word &amp;ldquo;read&amp;rdquo; put them in a passive frame of mind, caused them to&#xA;filter out programs they&amp;rsquo;d hacked on?&lt;/p&gt;</description>
     </item>
     <item>
       <title>Weekly Newsletter</title>
-      <link>http://localhost:1314/post/2015-12-06-nl12062016/</link>
+      <link>https://stephenmalina.com/post/2015-12-06-nl12062016/</link>
       <pubDate>Sun, 06 Dec 2015 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1314/post/2015-12-06-nl12062016/</guid>
+      <guid>https://stephenmalina.com/post/2015-12-06-nl12062016/</guid>
       <description>&lt;h1 id=&#34;links&#34;&gt;&#xA;Links&#xA;&lt;a href=&#34;#links&#34; class=&#34;heading-anchor&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h1&gt;&#xA;&lt;h2 id=&#34;physics&#34;&gt;&#xA;Physics&#xA;&lt;a href=&#34;#physics&#34; class=&#34;heading-anchor&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://blog.stephenwolfram.com/2015/12/what-is-spacetime-really/&#34;&gt;What is Spacetime, Really?&lt;/a&gt;&lt;br&gt;&#xA;Stephen Wolfram talks about the difficulty inherent to coming up with a&#xA;universal theory about spacetime. In the same way Einstein&amp;rsquo;s theories brought&#xA;Wolfram to awe, Wolfram&amp;rsquo;s ideas consistently bring me to awe. After reading&#xA;Rudy Rucker&amp;rsquo;s&#xA;&lt;a href=&#34;http://www.rudyrucker.com/lifebox/&#34;&gt;The Lifebox, The Seashell, and The Soul&lt;/a&gt;,&#xA;I&amp;rsquo;m increasingly drawn to computationalist theories of the universe, but reading&#xA;this article has solidified my decision to read&#xA;&lt;a href=&#34;http://www.amazon.com/New-Kind-Science-Stephen-Wolfram/dp/1579550088/ref=sr_1_1?s=books&amp;amp;ie=UTF8&amp;amp;qid=1449455390&amp;amp;sr=1-1&amp;amp;tag=stepmali-20&#34;&gt;A New Kind of Science&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Weekly Newsletter</title>
-      <link>http://localhost:1314/post/2015-11-29-nl1/</link>
+      <link>https://stephenmalina.com/post/2015-11-29-nl1/</link>
       <pubDate>Sun, 29 Nov 2015 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1314/post/2015-11-29-nl1/</guid>
+      <guid>https://stephenmalina.com/post/2015-11-29-nl1/</guid>
       <description>&lt;p&gt;This week, I&amp;rsquo;m going to try something a little different with the newsletter.&#xA;I&amp;rsquo;m going to add 3 new categories to the newsletter: &lt;em&gt;Books I&amp;rsquo;m Reading&lt;/em&gt;,&#xA;&lt;em&gt;Quotes I&amp;rsquo;ve Enjoyed&lt;/em&gt;, and &lt;em&gt;People I&amp;rsquo;m Following&lt;/em&gt;. In case you&amp;rsquo;re worried about&#xA;these polluting your newsletter experience, don&amp;rsquo;t worry. I&amp;rsquo;m putting these&#xA;sections at the bottom after the normal newsletter content.&lt;/p&gt;&#xA;&lt;h1 id=&#34;links&#34;&gt;&#xA;Links&#xA;&lt;a href=&#34;#links&#34; class=&#34;heading-anchor&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h1&gt;&#xA;&lt;h2 id=&#34;climate-change&#34;&gt;&#xA;Climate Change&#xA;&lt;a href=&#34;#climate-change&#34; class=&#34;heading-anchor&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://worrydream.com/ClimateChange/&#34;&gt;What Can A Technologist Do About Climate Change?&lt;/a&gt;&lt;br&gt;&#xA;Bret Victor, a world-class designer,  uses his technical and design skills to create a compelling argument. I&amp;rsquo;ve previously stated my belief that media needs to and will become more interactive than it currently is, and this piece bolsters that belief. Even if you disagree with Victor&amp;rsquo;s argument, you can&amp;rsquo;t help but be impressed by the technology underlying this piece.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Weekly Newsletter</title>
-      <link>http://localhost:1314/post/2015-11-22-nl/</link>
+      <link>https://stephenmalina.com/post/2015-11-22-nl/</link>
       <pubDate>Sun, 22 Nov 2015 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1314/post/2015-11-22-nl/</guid>
+      <guid>https://stephenmalina.com/post/2015-11-22-nl/</guid>
       <description>&lt;h2 id=&#34;education&#34;&gt;&#xA;Education&#xA;&lt;a href=&#34;#education&#34; class=&#34;heading-anchor&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://www.wired.com/2013/10/free-thinkers/&#34;&gt;A Radical Way of Unleashing a Generation of Geniuses&lt;/a&gt;&lt;br&gt;&#xA;Phenomenal piece that profiles an unconventional teacher in a poor Mexican border town. Uses this to broadly discuss the changing role and viewpoint on education. I&amp;rsquo;m a total convert to the idea that children need to be allowed to explore rather than have information forced down their throats.&lt;/p&gt;&#xA;&lt;h2 id=&#34;business&#34;&gt;&#xA;Business&#xA;&lt;a href=&#34;#business&#34; class=&#34;heading-anchor&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://a16z.com/2015/11/18/bio-fund/&#34;&gt;When Software Eats Bio&lt;/a&gt;&lt;br&gt;&#xA;The leader of Andreessen Horowitz new bio arm gives a Q&amp;amp;A about the motivations and direction they will take.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Weekly Newsletter</title>
-      <link>http://localhost:1314/post/2015-11-15-nl/</link>
+      <link>https://stephenmalina.com/post/2015-11-15-nl/</link>
       <pubDate>Sun, 15 Nov 2015 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1314/post/2015-11-15-nl/</guid>
+      <guid>https://stephenmalina.com/post/2015-11-15-nl/</guid>
       <description>&lt;h2 id=&#34;brain-computer-interfaces&#34;&gt;&#xA;Brain Computer Interfaces&#xA;&lt;a href=&#34;#brain-computer-interfaces&#34; class=&#34;heading-anchor&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://bit.ly/20GYVwn&#34;&gt;Meet the Neuroscientist Who Installed an Implant in His Own Brain&lt;/a&gt;&#xA;Profiles the risk-taking neuroscientist Phil Kennedy. Kennedy researches enabling locked-in patients to communicate using implanted electrodes. Kennedy took his research into his own hands after the FDA prevented him from continuing his work. Kennedy had a surgeon from Belize implant a set of electrodes in his head so that he could continue studying neuronal correlates of speech. With a few bumps along the way, Kennedy managed to implant the electrodes in his head and get a few weeks of good data before the electrodes had to be removed. This piece raises questions about the value and ethics of self-experimentation. Members of the scientific community seem split in their opinions on the ethics of Kennedy&amp;rsquo;s experiment. In my mind, we all have the right to do whatever we want to our bodies and minds as long as others aren&amp;rsquo;t put in danger.&lt;/p&gt;</description>
     </item>
     <item>
       <title>SICP 1.1</title>
-      <link>http://localhost:1314/post/2015-11-14-sicp-1-1/</link>
+      <link>https://stephenmalina.com/post/2015-11-14-sicp-1-1/</link>
       <pubDate>Sat, 14 Nov 2015 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1314/post/2015-11-14-sicp-1-1/</guid>
+      <guid>https://stephenmalina.com/post/2015-11-14-sicp-1-1/</guid>
       <description>&lt;h2 id=&#34;key-concepts&#34;&gt;&#xA;Key Concepts&#xA;&lt;a href=&#34;#key-concepts&#34; class=&#34;heading-anchor&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Environments, Syntax, Programming Languages v. Natural Languages, Applicative Order of Operations&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;environments&#34;&gt;&#xA;Environments&#xA;&lt;a href=&#34;#environments&#34; class=&#34;heading-anchor&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Understanding meaning is a matter of combining primitives with context.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;syntax&#34;&gt;&#xA;Syntax&#xA;&lt;a href=&#34;#syntax&#34; class=&#34;heading-anchor&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Lisp programmers tend to eschew syntactic sugar in favor of building their own syntax.&lt;/li&gt;&#xA;&lt;li&gt;Procedures are noticeably more composable than other languages I&amp;rsquo;ve used previously.&lt;/li&gt;&#xA;&lt;li&gt;There&amp;rsquo;s little difference between user-defined and language-defined procedures&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;comparison-between-programming-and-natural-languages&#34;&gt;&#xA;Comparison between programming and natural languages&#xA;&lt;a href=&#34;#comparison-between-programming-and-natural-languages&#34; class=&#34;heading-anchor&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;We can define procedures (verbs) and use variables (pronouns)  to build higher-level abstractions.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;operator-evaluation-order&#34;&gt;&#xA;Operator Evaluation Order&#xA;&lt;a href=&#34;#operator-evaluation-order&#34; class=&#34;heading-anchor&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;We tend to use a substitution model when thinking about how interpreters evaluate operations.&lt;/li&gt;&#xA;&lt;li&gt;Often, this model doesn&amp;rsquo;t match how an interpreter functions&#xA;&lt;ul&gt;&#xA;&lt;li&gt;In a lazy model, interpreters don&amp;rsquo;t evaluate the result of operations until the operands were needed&lt;/li&gt;&#xA;&lt;li&gt;In our substitution model, we combine results of operations from the bottom up.&lt;/li&gt;&#xA;&lt;li&gt;I struggled to understand this until I realized that the difference is how greedily we get results of operations.&#xA;&lt;ul&gt;&#xA;&lt;li&gt;In the lazy model, we&amp;rsquo;re not greedy about getting results, whereas in the substitution modles, we evaluation operation results ASAP&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;normal-order = lazy; applicative-order = substitution;&lt;/li&gt;&#xA;&lt;li&gt;Haskell uses normal-order evaluation, while Scheme uses applicative-order evaluation.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;conditional-expressions--predicates&#34;&gt;&#xA;Conditional Expressions / Predicates&#xA;&lt;a href=&#34;#conditional-expressions--predicates&#34; class=&#34;heading-anchor&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;h1 id=&#34;exercise-11&#34;&gt;&#xA;Exercise 1.1&#xA;&lt;a href=&#34;#exercise-11&#34; class=&#34;heading-anchor&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h1&gt;&#xA;&lt;p&gt;Q:   Below is a sequence of expressions. What is the result printed by the interpreter in response to each expression? Assume that the sequence is to be evaluated in the order in which it is presented.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Weekly Newsletter</title>
-      <link>http://localhost:1314/post/2015-11-08-nl11082015/</link>
+      <link>https://stephenmalina.com/post/2015-11-08-nl11082015/</link>
       <pubDate>Sun, 08 Nov 2015 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1314/post/2015-11-08-nl11082015/</guid>
+      <guid>https://stephenmalina.com/post/2015-11-08-nl11082015/</guid>
       <description>&lt;p&gt;I&amp;rsquo;ve been reading more technical neuroscience / psychology papers&#xA;recently, so the newsletter reflects that. I&amp;rsquo;m trying to better understand the&#xA;variety and universality of mental imagery, and the only way to do that is to&#xA;dive into the literature.&lt;/p&gt;&#xA;&lt;h2 id=&#34;mental-imagery&#34;&gt;&#xA;Mental Imagery&#xA;&lt;a href=&#34;#mental-imagery&#34; class=&#34;heading-anchor&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://langcog.stanford.edu/papers/FB-jepg2011.pdf&#34;&gt;Representing Exact Numbers&#xA;Visually&lt;/a&gt;&lt;br&gt;&#xA;This journal article discusses mental abacus representations. Be forewarned,&#xA;the paper is fairly technical and a bit dry. If you just want to get the&#xA;take-aways of the paper, I recommend reading the Introduction until you feel&#xA;like you&amp;rsquo;re in over your head and then skipping to page 13. I&amp;rsquo;m fascinated by&#xA;the mental abacus phenomenon. I&amp;rsquo;m convinced that this human ability can be&#xA;exploited in other ways beyond just for arithmetic, but I&amp;rsquo;m not sure how just yet.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Weekly Newsletter</title>
-      <link>http://localhost:1314/post/2015-11-01-nl11012015/</link>
+      <link>https://stephenmalina.com/post/2015-11-01-nl11012015/</link>
       <pubDate>Sun, 01 Nov 2015 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1314/post/2015-11-01-nl11012015/</guid>
+      <guid>https://stephenmalina.com/post/2015-11-01-nl11012015/</guid>
       <description>&lt;h2 id=&#34;journalism&#34;&gt;&#xA;Journalism&#xA;&lt;a href=&#34;#journalism&#34; class=&#34;heading-anchor&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://nytlabs.com/blog/2015/10/20/particles/&#34;&gt;The Future of News is not an&#xA;Article&lt;/a&gt;&lt;br&gt;&#xA;A NY Times Labs writer argues that the future of news lies in smaller,&#xA;contextually-aware primitives called particles. If you&amp;rsquo;ve never explored the NYT&#xA;Labs website before, I highly recommend it. I particularly enjoy&#xA;&lt;a href=&#34;http://nytlabs.com/projects/chronicle.html&#34;&gt;this&lt;/a&gt; infographic.&lt;/p&gt;&#xA;&lt;h2 id=&#34;biography&#34;&gt;&#xA;Biography&#xA;&lt;a href=&#34;#biography&#34; class=&#34;heading-anchor&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://dl.dropboxusercontent.com/u/52781209/Publications/Genghis%20John.pdf&#34;&gt;Genghis&#xA;John&lt;/a&gt;&lt;br&gt;&#xA;Paints a portrait of John Boyd, military theorist and legendary aircraft&#xA;designer. Boyd&amp;rsquo;s devotion to his ideals and unconventional thinking resonates&#xA;with me and I definitely intend to read his papers and books. I expect the more&#xA;I learn about Boyd&amp;rsquo;s ideas the more I will be able to use his framework for&#xA;thinking for my own purposes.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Weekly Newsletter</title>
-      <link>http://localhost:1314/post/2015-10-25-nl10252015/</link>
+      <link>https://stephenmalina.com/post/2015-10-25-nl10252015/</link>
       <pubDate>Sun, 25 Oct 2015 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1314/post/2015-10-25-nl10252015/</guid>
+      <guid>https://stephenmalina.com/post/2015-10-25-nl10252015/</guid>
       <description>&lt;h2 id=&#34;the-blockchain&#34;&gt;&#xA;The Blockchain&#xA;&lt;a href=&#34;#the-blockchain&#34; class=&#34;heading-anchor&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://bit.ly/1Wcrtsp&#34;&gt;Blockchains in Context&lt;/a&gt;&lt;br&gt;&#xA;An easy to understand article about blockchains by a core&#xA;contributor to Ethereum. Ethereum aims to create an understandable,&#xA;general-purpose system for creating and enforcing contracts on the web.&#xA;Potential applications of this system are more varied than you might initially&#xA;expect. &lt;a href=&#34;http://i.imgur.com/mh7b0Vy.png&#34;&gt;This picture&lt;/a&gt; breaks down areas in&#xA;which Ethereum could prove an effective tool.&lt;/p&gt;&#xA;&lt;h2 id=&#34;medicine-and-biology&#34;&gt;&#xA;Medicine and Biology&#xA;&lt;a href=&#34;#medicine-and-biology&#34; class=&#34;heading-anchor&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://bit.ly/1Gy87w4&#34;&gt;Can we end the war on Cancer?&lt;/a&gt;&lt;br&gt;&#xA;The author of this piece answers the title question with an optimistic outlook.&#xA;Argues that the primary barriers to defeating cancer are institutional, not&#xA;scientific.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Weekly Newsletter</title>
-      <link>http://localhost:1314/post/2015-10-18-nl10182015/</link>
+      <link>https://stephenmalina.com/post/2015-10-18-nl10182015/</link>
       <pubDate>Sun, 18 Oct 2015 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1314/post/2015-10-18-nl10182015/</guid>
+      <guid>https://stephenmalina.com/post/2015-10-18-nl10182015/</guid>
       <description>&lt;h2 id=&#34;design&#34;&gt;&#xA;Design&#xA;&lt;a href=&#34;#design&#34; class=&#34;heading-anchor&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://www.meltingasphalt.com/ux-and-the-civilizing-process/&#34;&gt;UX and the Civilizing Process&lt;/a&gt;&lt;br&gt;&#xA;Another piece from the author of last week&amp;rsquo;s 4-part series that took us through the theories of Julian Jaynes. This piece focuses on similarities between User Experience design, which aims to create seamless interactions between humans and products, and etiquette. My super-secret goal for the newsletter has always been to find at least one article my sister will genuinely enjoy and I may actually have a winner with this one.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Weekly Newsletter</title>
-      <link>http://localhost:1314/post/2015-10-11-nl10112015/</link>
+      <link>https://stephenmalina.com/post/2015-10-11-nl10112015/</link>
       <pubDate>Sun, 11 Oct 2015 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1314/post/2015-10-11-nl10112015/</guid>
+      <guid>https://stephenmalina.com/post/2015-10-11-nl10112015/</guid>
       <description>&lt;h2 id=&#34;mind-and-brain&#34;&gt;&#xA;Mind and Brain&#xA;&lt;a href=&#34;#mind-and-brain&#34; class=&#34;heading-anchor&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;p&gt;Below is a series of 4 articles that explore Julian Jaynes&amp;rsquo; theory of consciousness and its relationship to unusual minds. I found this series incredibly fascinating. It reminds me of &lt;a href=&#34;http://www.amazon.com/gp/product/0765319640/ref=as_li_tl?ie=UTF8&amp;amp;camp=1789&amp;amp;creative=9325&amp;amp;creativeASIN=0765319640&amp;amp;linkCode=as2&amp;amp;tag=stepmali-20&amp;amp;linkId=QBNI7BCOVI2SZTPM&#34;&gt;Blindsight&lt;/a&gt;, a creepy sci-fi novel by Peter Watts that explores the relationship between self-awareness and intelligence. If you&amp;rsquo;ve ever questioned the nature of consciousness, you&amp;rsquo;ll enjoy this series. After reading this, I&amp;rsquo;m committing to reading Julian Jaynes&amp;rsquo; &lt;a href=&#34;http://www.amazon.com/gp/product/B009MBTRHA/ref=as_li_tl?ie=UTF8&amp;amp;camp=1789&amp;amp;creative=9325&amp;amp;creativeASIN=B009MBTRHA&amp;amp;linkCode=as2&amp;amp;tag=stepmali-20&amp;amp;linkId=X5CVEW4NOGRWZED4&#34;&gt;Origin of Consciousness in the Breakdown of the Bicaemral Mind&lt;/a&gt;.&lt;br&gt;&#xA;&lt;strong&gt;Article 1&lt;/strong&gt;: &lt;a href=&#34;http://www.meltingasphalt.com/mr-jaynes-wild-ride/&#34;&gt;Mr. Jaynes&amp;rsquo; Wild Ride&lt;/a&gt;&lt;br&gt;&#xA;&lt;strong&gt;Article 2&lt;/strong&gt;: &lt;a href=&#34;http://www.meltingasphalt.com/accepting-deviant-minds/&#34;&gt;Accepting Deviant Mind&lt;/a&gt;&lt;br&gt;&#xA;&lt;strong&gt;Article 3&lt;/strong&gt;: &lt;a href=&#34;http://www.meltingasphalt.com/hallucinated-gods/&#34;&gt;Hallucinated Gods&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Weekly Newsletter</title>
-      <link>http://localhost:1314/post/2015-10-04-nl10042015/</link>
+      <link>https://stephenmalina.com/post/2015-10-04-nl10042015/</link>
       <pubDate>Sun, 04 Oct 2015 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1314/post/2015-10-04-nl10042015/</guid>
+      <guid>https://stephenmalina.com/post/2015-10-04-nl10042015/</guid>
       <description>&lt;h2 id=&#34;biology-and-computation&#34;&gt;&#xA;Biology and Computation&#xA;&lt;a href=&#34;#biology-and-computation&#34; class=&#34;heading-anchor&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://www.pbs.org/wgbh/nova/blogs/physics/2014/03/quantum-life/&#34;&gt;Better Living Through Quantum Mechanics&lt;/a&gt;&lt;br&gt;&#xA;Seth Lloyd, the first and only self-proclaimed quantum mechanical engineer from MIT, discusses new discoveries of quantum mechanical phenomena in plants and animals. I included this for the understandable metaphors used to explain quantum processes.&lt;/p&gt;&#xA;&lt;h2 id=&#34;linguistics&#34;&gt;&#xA;Linguistics&#xA;&lt;a href=&#34;#linguistics&#34; class=&#34;heading-anchor&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://www.newyorker.com/tech/elements/the-whistled-language-of-northern-turkey&#34;&gt;The Whistled Language of Northern Turkey&lt;/a&gt;&lt;br&gt;&#xA;Profiles a language that conveys meaning through whistling and clicks. I loved this article. You&amp;rsquo;ll get twice as much out of it if you listen to the samples of the language.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Weekly Newsletter</title>
-      <link>http://localhost:1314/post/2015-09-27-nl09272015/</link>
+      <link>https://stephenmalina.com/post/2015-09-27-nl09272015/</link>
       <pubDate>Sun, 27 Sep 2015 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1314/post/2015-09-27-nl09272015/</guid>
+      <guid>https://stephenmalina.com/post/2015-09-27-nl09272015/</guid>
       <description>&lt;h2 id=&#34;neuroscience-and-neurotech&#34;&gt;&#xA;Neuroscience and Neurotech&#xA;&lt;a href=&#34;#neuroscience-and-neurotech&#34; class=&#34;heading-anchor&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://www.theguardian.com/science/blog/2010/sep/30/hypnosis-neuroscience-psychology&#34;&gt;Hypnosis reaches the parts brain scans and neurosurgery cannot&lt;/a&gt;&lt;br&gt;&#xA;A good, succint article about the use of hypnosis in real neuroscience. Makes me hope I&amp;rsquo;m in the 10% of people who are highly suggestible.&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0137303&#34;&gt;Playing 20 Questions with the Mind&lt;/a&gt;&lt;br&gt;&#xA;Summarizes a new study in which two individuals in isolation played 20 questions using a brain-to-brain interface. This is a big first step towards more usable brain-to-brain interfaces. I dream of the day when two people can put on headsets and communicate with each other at the speed of thought.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Weekly Newsletter</title>
-      <link>http://localhost:1314/post/2015-09-20-nl09202015/</link>
+      <link>https://stephenmalina.com/post/2015-09-20-nl09202015/</link>
       <pubDate>Sun, 20 Sep 2015 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1314/post/2015-09-20-nl09202015/</guid>
+      <guid>https://stephenmalina.com/post/2015-09-20-nl09202015/</guid>
       <description>&lt;h2 id=&#34;cryonics&#34;&gt;&#xA;Cryonics&#xA;&lt;a href=&#34;#cryonics&#34; class=&#34;heading-anchor&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://www.nytimes.com/2015/09/13/us/cancer-immortality-cryogenics.html&#34;&gt;A Dying Young Woman’s Hope in Cryonics and a Future&lt;/a&gt;&lt;br&gt;&#xA;Cancer claimed Kim Suozzi at age 23, but she chose to have her brain preserved with the dream that neuroscience might one day revive her mind. I really enjoyed this article. Unlike many of the readers, I&amp;rsquo;ve considered signing up for cryonics and went so far as to ask for it for my birthday (a request which my mother politely denied). I share Souzzi&amp;rsquo;s sentiments almost entirely, so it was touching to see the support she gathered on the internet. Despite this, I&amp;rsquo;ve had discussions with friends and family members who disagree with me strongly, so I understand the other perspective. Given this, I wanted to provide two articles that present my own and the opposing perspective on this topic. The following two articles dig deeper into scientific and philosophical views on this issue.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Weekly Newsletter</title>
-      <link>http://localhost:1314/post/2015-09-13-nl09132015/</link>
+      <link>https://stephenmalina.com/post/2015-09-13-nl09132015/</link>
       <pubDate>Sun, 13 Sep 2015 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1314/post/2015-09-13-nl09132015/</guid>
+      <guid>https://stephenmalina.com/post/2015-09-13-nl09132015/</guid>
       <description>&lt;h2 id=&#34;ethics&#34;&gt;&#xA;Ethics&#xA;&lt;a href=&#34;#ethics&#34; class=&#34;heading-anchor&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://nautil.us/issue/28/2050/the-philosopher-who-says-we-should-play-god&#34;&gt;The Philosopher Who Says We Should Play God&lt;/a&gt;&lt;br&gt;&#xA;The following quote sums up the article well:&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;So the idea that we could play god and tamper with the laws of nature,&#xA;creating things that wouldn’t otherwise exist, is a red herring?&lt;/p&gt;&#xA;&lt;p&gt;We’re playing god every day. As the English philosopher Thomas Hobbes said,&#xA;the natural state for human beings is a life that’s nasty, brutish, and short.&#xA;We play god when we vaccinate. We play god when we give women pain relief&#xA;during labor. The challenge is to decide how to change the course of nature,&#xA;not whether to change it. Our whole life is entirely unnatural. The correction&#xA;of infertility is interfering in nature. Contraception is interfering in the&#xA;most fundamental aspect of nature.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Weekly Newsletter</title>
-      <link>http://localhost:1314/post/2015-09-06-nl09062015/</link>
+      <link>https://stephenmalina.com/post/2015-09-06-nl09062015/</link>
       <pubDate>Sun, 06 Sep 2015 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1314/post/2015-09-06-nl09062015/</guid>
+      <guid>https://stephenmalina.com/post/2015-09-06-nl09062015/</guid>
       <description>&lt;h2 id=&#34;nutrition-and-health&#34;&gt;&#xA;Nutrition and Health&#xA;&lt;a href=&#34;#nutrition-and-health&#34; class=&#34;heading-anchor&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;p&gt;&lt;strong&gt;Starving Your Way to Vigor&lt;/strong&gt; (see attached)&lt;br&gt;&#xA;A writer discusses his experience fasting for over a week. He cites scientific and historical sources showing the effectiveness of fasting in treating several ailments. My own understanding of nutrition supports this author’s claims. For a more scientific take on fasting, make your way through some of there (&lt;a href=&#34;https://scholar.google.com/scholar?q=valter+longo+fasting&amp;amp;hl=en&amp;amp;as_sdt=0&amp;amp;as_vis=1&amp;amp;oi=scholart&amp;amp;sa=X&amp;amp;ved=0CBsQgQMwAGoVChMI1s3smvTjxwIVgZMeCh1FLQ6r&#34;&gt;https://scholar.google.com/scholar?q=valter+longo+fasting&amp;amp;hl=en&amp;amp;as_sdt=0&amp;amp;as_vis=1&amp;amp;oi=scholart&amp;amp;sa=X&amp;amp;ved=0CBsQgQMwAGoVChMI1s3smvTjxwIVgZMeCh1FLQ6r&lt;/a&gt;) articles. If you&amp;rsquo;re interested in trying out fasting but don&amp;rsquo;t want to commit to a longer fast, I recommend Eat Stop Eat by Brad Pilon.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Weekly Newsletter</title>
-      <link>http://localhost:1314/post/2015-08-30-nl08302015/</link>
+      <link>https://stephenmalina.com/post/2015-08-30-nl08302015/</link>
       <pubDate>Sun, 30 Aug 2015 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1314/post/2015-08-30-nl08302015/</guid>
+      <guid>https://stephenmalina.com/post/2015-08-30-nl08302015/</guid>
       <description>&lt;h2 id=&#34;ambition-and-achievement&#34;&gt;&#xA;Ambition and Achievement&#xA;&lt;a href=&#34;#ambition-and-achievement&#34; class=&#34;heading-anchor&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://pathsensitive.blogspot.com/2015/08/sources-of-power.html?m=1&#34;&gt;Sources of Power&lt;/a&gt;&lt;br&gt;&#xA;Argues that college applicants should seek out &amp;ldquo;sources of power&amp;rdquo; which improve their chances of acceptance by orders of magnitude. This article fits with my observations about the college process.&lt;/p&gt;&#xA;&lt;h2 id=&#34;alternative-businesses&#34;&gt;&#xA;Alternative Businesses&#xA;&lt;a href=&#34;#alternative-businesses&#34; class=&#34;heading-anchor&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://priceonomics.com/the-cheese-board-collective/&#34;&gt;The Cheese Board Collective&lt;/a&gt;&lt;br&gt;&#xA;Profiles a cooperative cheese shop where all employees are owners. I&amp;rsquo;ve expressed my enthusiasm for business model experimentation and co-ops in particular before so I&amp;rsquo;ll refrain from doing so again now.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Weekly Newsletter</title>
-      <link>http://localhost:1314/post/2015-08-09-nl08092015/</link>
+      <link>https://stephenmalina.com/post/2015-08-09-nl08092015/</link>
       <pubDate>Sun, 09 Aug 2015 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1314/post/2015-08-09-nl08092015/</guid>
+      <guid>https://stephenmalina.com/post/2015-08-09-nl08092015/</guid>
       <description>&lt;h2 id=&#34;future-of-food&#34;&gt;&#xA;Future of Food&#xA;&lt;a href=&#34;#future-of-food&#34; class=&#34;heading-anchor&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://motherboard.vice.com/read/introducing-the-smartphone-controlled-hydroponic-greenhouse?trk_source=recommended&#34;&gt;The $200 Hydroponic Greenhouse You Control With a Smartphone&lt;/a&gt;&lt;br&gt;&#xA;Reports on a new product that promises to automate the process of hydroponic gardening such that individuals will be able to grow vegetables in their home with minimal effort and maximal control. This type of product, while different from Soylent, illustrates another viable direction for the future of food that focuses more on the decentralization and automation of food production. I’m just as excited about this direction as I am about the Soylent direction. I see no reason why the two directions need be mutually exclusive.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Weekly Newsletter</title>
-      <link>http://localhost:1314/post/2015-08-02-nl08022015/</link>
+      <link>https://stephenmalina.com/post/2015-08-02-nl08022015/</link>
       <pubDate>Sun, 02 Aug 2015 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1314/post/2015-08-02-nl08022015/</guid>
+      <guid>https://stephenmalina.com/post/2015-08-02-nl08022015/</guid>
       <description>&lt;h2 id=&#34;plant-genetics&#34;&gt;&#xA;Plant Genetics&#xA;&lt;a href=&#34;#plant-genetics&#34; class=&#34;heading-anchor&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://www.bloomberg.com/news/features/2015-07-29/how-driscoll-s-is-hacking-the-strawberry-of-the-future&#34;&gt;How Driscoll’s Is Hacking the Strawberry of the Future&lt;/a&gt;&lt;br&gt;&#xA;Profiles Phil Stewart, Driscoll&amp;rsquo;s chief strawberry geneticist. I enjoyed learning about the challenge of breeding an optimal set of characteristics into Driscoll&amp;rsquo;s strawberries.&lt;/p&gt;&#xA;&lt;h2 id=&#34;education&#34;&gt;&#xA;Education&#xA;&lt;a href=&#34;#education&#34; class=&#34;heading-anchor&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://www.theatlantic.com/business/archive/2015/07/a-college-without-classes/400115/?single_page=true&#34;&gt;A College Without Classes&lt;/a&gt;&lt;br&gt;&#xA;Explores the recent phenomenon of online, competence-based university programs, which, rather than holding lectures, test their students periodically on competency in course topics. I view competence-based metrics for education as an important alternative to traditional grades. I suspect more pre-professional programs will begin to adopt competence-based metrics for applied subjects. &lt;a href=&#34;http://www.knewton.com&#34;&gt;Knewton&lt;/a&gt;, an educational technology company, uses competence-based metrics to measure high school and middle school students&amp;rsquo; understanding of material and has seemingly had success so far.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Weekly Newsletter</title>
-      <link>http://localhost:1314/post/2015-07-26-nl07262015/</link>
+      <link>https://stephenmalina.com/post/2015-07-26-nl07262015/</link>
       <pubDate>Sun, 26 Jul 2015 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1314/post/2015-07-26-nl07262015/</guid>
+      <guid>https://stephenmalina.com/post/2015-07-26-nl07262015/</guid>
       <description>&lt;h2 id=&#34;linguistics&#34;&gt;&#xA;Linguistics&#xA;&lt;a href=&#34;#linguistics&#34; class=&#34;heading-anchor&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://www.theatlantic.com/technology/archive/2015/07/toki-pona-smallest-language/398363/&#34;&gt;How to Say (Almost) Everything in a Hundred-Word Language&lt;/a&gt;&lt;br&gt;&#xA;Explores Toki Pona, the world&amp;rsquo;s smallest language. Describes the linguistic idiosyncrasies that arise from the severely limited vocabulary of the language.&lt;/p&gt;&#xA;&lt;h2 id=&#34;natures-algorithms&#34;&gt;&#xA;Nature&amp;rsquo;s Algorithms&#xA;&lt;a href=&#34;#natures-algorithms&#34; class=&#34;heading-anchor&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://www.quantamagazine.org/20150625-decoding-the-remarkable-algorithms-of-ants/&#34;&gt;Decoding the Remarkable Algorithms of Ants&lt;/a&gt;&lt;br&gt;&#xA;Interviews a scientist studying the swarm behavior of ants in an attempt to translate ant colony behavior into computer algorithms.&lt;/p&gt;&#xA;&lt;h2 id=&#34;education&#34;&gt;&#xA;Education&#xA;&lt;a href=&#34;#education&#34; class=&#34;heading-anchor&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://mobile.nytimes.com/2015/07/14/business/economy/a-new-look-at-apprenticeships-as-a-path-to-the-middle-class.html&#34;&gt;A New Look at Apprenticeships as a Path to the Middle Class&lt;/a&gt;&lt;br&gt;&#xA;Profiles the Apprenticeship School, an apprenticeship program that serves a Navy shipyard. Covers the broader potential for apprenticeships to&#xA;satisfy the &amp;ldquo;hunger among young people for good, well-paying jobs that don’t require an expensive four-year degree.&amp;rdquo;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Weekly Newsletter</title>
-      <link>http://localhost:1314/post/2015-07-19-nl07192015/</link>
+      <link>https://stephenmalina.com/post/2015-07-19-nl07192015/</link>
       <pubDate>Sun, 19 Jul 2015 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1314/post/2015-07-19-nl07192015/</guid>
+      <guid>https://stephenmalina.com/post/2015-07-19-nl07192015/</guid>
       <description>&lt;h2 id=&#34;human-potential&#34;&gt;&#xA;Human Potential&#xA;&lt;a href=&#34;#human-potential&#34; class=&#34;heading-anchor&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://www.damninteresting.com/the-science-of-mental-fitness/&#34;&gt;The Science of Mental Fitness&lt;/a&gt;&lt;br&gt;&#xA;Aggregates recent research findings regarding the effect of visualization on skill learning and physical development.&lt;/p&gt;&#xA;&lt;h2 id=&#34;biotech&#34;&gt;&#xA;Biotech&#xA;&lt;a href=&#34;#biotech&#34; class=&#34;heading-anchor&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://arstechnica.com/science/2015/07/your-body-the-battery-powering-gadgets-from-human-biofuel/&#34;&gt;Your body, the battery: Powering gadgets from human &amp;ldquo;biofuel&amp;rdquo;&lt;/a&gt;&lt;br&gt;&#xA;Discusses the various ways in which the human body could be used to power electronics.&lt;/p&gt;&#xA;&lt;h2 id=&#34;letters&#34;&gt;&#xA;Letters&#xA;&lt;a href=&#34;#letters&#34; class=&#34;heading-anchor&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://www.lettersofnote.com/2012/08/why-explore-space.html&#34;&gt;Why Explore Space?&lt;/a&gt;&lt;br&gt;&#xA;In this letter, Dr. Ernst Stuhlinger, the past director of science at a NASA facility, responded to a Zambia-based nun&amp;rsquo;s letter questioning the allocation of billions of dollars towards the space program with this letter. I included this article because I enjoyed both the content and the idea behind this website (&lt;a href=&#34;www.lettersofnote.com&#34;&gt;Letters of Note&lt;/a&gt;). This letter does a good job of laying out the justification behind ambitious and risky scientific endeavors.&lt;/p&gt;</description>
     </item>
     <item>
       <title>The Myth of the Arc of Justice by Will Baird</title>
-      <link>http://localhost:1314/post/2015-07-12-themythofthearchofjustice/</link>
+      <link>https://stephenmalina.com/post/2015-07-12-themythofthearchofjustice/</link>
       <pubDate>Sun, 12 Jul 2015 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1314/post/2015-07-12-themythofthearchofjustice/</guid>
+      <guid>https://stephenmalina.com/post/2015-07-12-themythofthearchofjustice/</guid>
       <description>&lt;p class=&#34;c4&#34;&gt;&lt;span class=&#34;c0&#34;&gt;&lt;/span&gt;&lt;/p&gt;&lt;p class=&#34;c3&#34;&gt;&lt;span class=&#34;c0&#34;&gt;The past few weeks have seen major shifts in two important areas of American society: race and sexual orientation. Following the Charleston shooting, an increasing number of leaders such as South Carolina Governor Nikki Haley have called for the removal of the Confederate flag from state grounds due to its symbolic association with racism and support for slavery. And on June 26, the Supreme Court ruled in favor of a constitutional right for same-sex marriage. Both the recognition of the Confederate flag as a racist symbol and the recognition of gays&amp;rsquo; right to marry &amp;nbsp;have been hailed as victories for social liberals, which they undoubtedly are. Yet they have also both been used to propagate the unfortunate myth of &amp;ldquo;historical progress,&amp;rdquo; and to leverage that myth for political purposes. With regard to the flag, one&lt;/span&gt;&lt;span class=&#34;c0&#34;&gt;&lt;a class=&#34;c1&#34; href=&#34;http://www.google.com/url?q=http%3A%2F%2Fwww.washingtonpost.com%2Fblogs%2Fpost-partisan%2Fwp%2F2015%2F06%2F22%2Fthe-insiders-flying-the-confederate-flag-is-not-okay%2F&amp;amp;sa=D&amp;amp;sntz=1&amp;amp;usg=AFQjCNE90UcqFGyW1MMDYPN_to3qHNj4CQ&#34;&gt;&amp;nbsp;&lt;/a&gt;&lt;/span&gt;&lt;span class=&#34;c0 c2&#34;&gt;&lt;a class=&#34;c1&#34; href=&#34;http://www.google.com/url?q=http%3A%2F%2Fwww.washingtonpost.com%2Fblogs%2Fpost-partisan%2Fwp%2F2015%2F06%2F22%2Fthe-insiders-flying-the-confederate-flag-is-not-okay%2F&amp;amp;sa=D&amp;amp;sntz=1&amp;amp;usg=AFQjCNE90UcqFGyW1MMDYPN_to3qHNj4CQ&#34;&gt;Washington Post&lt;/a&gt;&lt;/span&gt;&lt;span class=&#34;c0&#34;&gt;&amp;nbsp;piece asserted, &amp;ldquo;there was a time when people with relatives or even ancestors had some plausible claim that displaying the flag was some kind of acknowledgement of their heritage&amp;hellip; that generation has long since passed.&amp;rdquo; In &lt;/span&gt;&lt;span class=&#34;c0&#34;&gt;&lt;a class=&#34;c1&#34; href=&#34;http://www.google.com/url?q=http%3A%2F%2Fwww.usnews.com%2Fopinion%2Farticles%2F2015%2F06%2F23%2Fgetting-rid-of-the-confederate-flag-is-the-easy-part-hard-work-remains&amp;amp;sa=D&amp;amp;sntz=1&amp;amp;usg=AFQjCNEoGatQqoTKgUochQEl54MnFVaOtQ&#34;&gt;&amp;nbsp;&lt;/a&gt;&lt;/span&gt;&lt;span class=&#34;c0 c2&#34;&gt;&lt;a class=&#34;c1&#34; href=&#34;http://www.google.com/url?q=http%3A%2F%2Fwww.usnews.com%2Fopinion%2Farticles%2F2015%2F06%2F23%2Fgetting-rid-of-the-confederate-flag-is-the-easy-part-hard-work-remains&amp;amp;sa=D&amp;amp;sntz=1&amp;amp;usg=AFQjCNEoGatQqoTKgUochQEl54MnFVaOtQ&#34;&gt;US News &amp;amp; World Report&lt;/a&gt;&lt;/span&gt;&lt;span class=&#34;c0&#34;&gt;, one journalist&lt;/span&gt;&lt;span class=&#34;c0&#34;&gt;&amp;nbsp;wrote in outrage that &amp;ldquo;[w]hat is incomprehensible is how long [the Confederate flag has flown over the state capitol] with no effective pressure on South Carolina and its leaders.&amp;rdquo; In each of these articles, the author makes a moral distinction between past and present, with a morally ignorant past giving way to a morally enlightened present. &lt;/span&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Weekly Newsletter</title>
-      <link>http://localhost:1314/post/2015-07-12-nl07122015/</link>
+      <link>https://stephenmalina.com/post/2015-07-12-nl07122015/</link>
       <pubDate>Sun, 12 Jul 2015 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1314/post/2015-07-12-nl07122015/</guid>
+      <guid>https://stephenmalina.com/post/2015-07-12-nl07122015/</guid>
       <description>&lt;h2 id=&#34;evolutionary-biology-and-health&#34;&gt;&#xA;Evolutionary Biology and Health&#xA;&lt;a href=&#34;#evolutionary-biology-and-health&#34; class=&#34;heading-anchor&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://www.smithsonianmag.com/science-nature/stop-mosquito-bites-silence-your-skins-bacteria-180955772/?no-ist&#34;&gt;To Stop Mosquito Bites, Silence Your Skin&amp;rsquo;s Bacteria&lt;/a&gt;&lt;br&gt;&#xA;Discusses a technique which could prevent mosquitoes bites by silencing the communication between bacteria on human skin. Mosquitoes detect this communication on human skin and bite people after detecting it.&lt;/p&gt;&#xA;&lt;h2 id=&#34;cognitive-science&#34;&gt;&#xA;Cognitive Science&#xA;&lt;a href=&#34;#cognitive-science&#34; class=&#34;heading-anchor&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://www.contributoria.com/issue/2014-05/5319c4add63a707e780000cd&#34;&gt;What&amp;rsquo;s the evidence on using rational arguments to change people&amp;rsquo;s minds?&lt;/a&gt;&lt;br&gt;&#xA;Argues that reason is more powerful than recent cognitive science research might lead us to believe. I have confirmation bias towards this argument so I&amp;rsquo;m withholding judgement until I hear others&amp;rsquo; opinions on it.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Weekly Newsletter</title>
-      <link>http://localhost:1314/post/2015-06-14-nl06142015/</link>
+      <link>https://stephenmalina.com/post/2015-06-14-nl06142015/</link>
       <pubDate>Sun, 14 Jun 2015 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1314/post/2015-06-14-nl06142015/</guid>
+      <guid>https://stephenmalina.com/post/2015-06-14-nl06142015/</guid>
       <description>&lt;p&gt;I apologize for the short newsletter this week. Graduation has limited the amount of time I&amp;rsquo;ve been able to spend on it, and I &amp;rsquo;d rather shorten it than include lower quality articles.&lt;/p&gt;&#xA;&lt;h2 id=&#34;biology-and-physiology&#34;&gt;&#xA;Biology and Physiology&#xA;&lt;a href=&#34;#biology-and-physiology&#34; class=&#34;heading-anchor&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://www.npr.org/sections/goatsandsoda/2015/06/08/412314701/lost-posture-why-indigenous-cultures-dont-have-back-pain&#34;&gt;Lost Posture: Why Some Indigenous Cultures May Not Have Back Pain&lt;/a&gt;&lt;br&gt;&#xA;Discusses a hypothesis for widespread back pain and profiles Esther Gokhale, a woman who has studied indigenous cultures in an attempt to gain insight into why they don&amp;rsquo;t suffer from back pain.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Weekly Newsletter</title>
-      <link>http://localhost:1314/post/2015-06-07-nl06072015/</link>
+      <link>https://stephenmalina.com/post/2015-06-07-nl06072015/</link>
       <pubDate>Sun, 07 Jun 2015 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1314/post/2015-06-07-nl06072015/</guid>
+      <guid>https://stephenmalina.com/post/2015-06-07-nl06072015/</guid>
       <description>&lt;h1 id=&#34;neuroscience&#34;&gt;&#xA;Neuroscience&#xA;&lt;a href=&#34;#neuroscience&#34; class=&#34;heading-anchor&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h1&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://neurosciencenews.com/lymphatic-system-brain-neurobiology-2080/&#34;&gt;Researchers Find Missing Link Between Brain and Immune System&lt;/a&gt;&lt;br&gt;&#xA;Discusses a recently discovered vessel that connects the brain and the lymphatic system. Although this article&amp;rsquo;s not great, the discovery itself is a huge deal.&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://thepsychologist.bps.org.uk/volume-28/june-2015/better-not-look-down&#34;&gt;Better not look down&amp;hellip;&lt;/a&gt;&lt;br&gt;&#xA;A neurosurgeon reflects on his career and the mistakes he made. An introspective piece.&lt;/p&gt;&#xA;&lt;h1 id=&#34;droughts-and-water-shortage&#34;&gt;&#xA;Droughts and Water Shortage&#xA;&lt;a href=&#34;#droughts-and-water-shortage&#34; class=&#34;heading-anchor&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h1&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://nautil.us/issue/25/water/to-save-california-read-dune&#34;&gt;To Save California, Read &amp;ldquo;Dune&amp;rdquo;&lt;/a&gt;&lt;br&gt;&#xA;Argues that Frank Herbert&amp;rsquo;s ideas from Dune are becoming a reality in California. Dune&amp;rsquo;s my favorite book, although not due to the ecological aspects, so this article was a no brainer for me. It highlights the intersection of sci-fi, technology, and ecology well.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Weekly Newsletter</title>
-      <link>http://localhost:1314/post/2015-05-31-2015-nl05312015/</link>
+      <link>https://stephenmalina.com/post/2015-05-31-2015-nl05312015/</link>
       <pubDate>Sun, 31 May 2015 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1314/post/2015-05-31-2015-nl05312015/</guid>
+      <guid>https://stephenmalina.com/post/2015-05-31-2015-nl05312015/</guid>
       <description>&lt;h1 id=&#34;learning-and-education&#34;&gt;&#xA;Learning and Education&#xA;&lt;a href=&#34;#learning-and-education&#34; class=&#34;heading-anchor&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h1&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://nautil.us/issue/17/big-bangs/how-i-rewired-my-brain-to-become-fluent-in-math-rd&#34;&gt;How I Rewired My Brain to Become Fluent in Math&lt;/a&gt;&lt;br&gt;&#xA;An engineering professor recounts how she went from being a language person without a college degree to an engineer with a doctorate. The author provides a unique perspective on the process of learning technical subjects and supplements her own experience with knowledge taken from her subsequent study of learning processes.&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://www.bbc.com/future/story/20150528-how-to-learn-30-languages&#34;&gt;How to learn 30 languages&lt;/a&gt;&lt;br&gt;&#xA;Explores the world of hyperpolyglots, individuals who typically speak between 10 and 20 languages fluently. This article and the prior article go well together. They explore different genres of learning but both come to the same basic conclusion about adult neuroplasticity. I do wish this article had further explored the effect of common language on cross-cultural relationships. I suspect languages play an underestimated role in prejudice and aggressive nationalism.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Weekly Newsletter</title>
-      <link>http://localhost:1314/post/2015-05-24-nl05242015/</link>
+      <link>https://stephenmalina.com/post/2015-05-24-nl05242015/</link>
       <pubDate>Sun, 24 May 2015 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1314/post/2015-05-24-nl05242015/</guid>
+      <guid>https://stephenmalina.com/post/2015-05-24-nl05242015/</guid>
       <description>&lt;h2 id=&#34;psychology-and-brain-science&#34;&gt;&#xA;Psychology and Brain Science&#xA;&lt;a href=&#34;#psychology-and-brain-science&#34; class=&#34;heading-anchor&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://www.theguardian.com/society/2015/apr/26/lsd-amanda-feilding-depression-anxiety-science&#34;&gt;Is LSD about to return to polite society?&lt;/a&gt;&lt;br&gt;&#xA;Profiles the matriarch of the Beckley Foundation, an organization which aims to popularize scientific research focused on psychedelic therapies for addiction. Does a good job of presenting both sides of the issue.&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://aeon.co/magazine/psychology/do-you-want-a-meaningful-life-or-a-happy-one/&#34;&gt;The meanings of life&lt;/a&gt;&lt;br&gt;&#xA;Famous psychologist and author of &lt;a href=&#34;http://amzn.to/1SxUIa8&#34;&gt;Willpower&lt;/a&gt;, Roy Baumeister, discusses the relationship between feelings of meaningfulness and happiness. Baumeister uses these topics as a jumping off point for a discussion of what factors contribute to individuals&amp;rsquo; feelings of meaning.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Weekly Newsletter</title>
-      <link>http://localhost:1314/post/2015-05-17-nl05172015/</link>
+      <link>https://stephenmalina.com/post/2015-05-17-nl05172015/</link>
       <pubDate>Sun, 17 May 2015 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1314/post/2015-05-17-nl05172015/</guid>
+      <guid>https://stephenmalina.com/post/2015-05-17-nl05172015/</guid>
       <description>&lt;h1 id=&#34;public-health&#34;&gt;&#xA;Public Health&#xA;&lt;a href=&#34;#public-health&#34; class=&#34;heading-anchor&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h1&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://www.bbc.com/news/health-32749629&#34;&gt;Why an iron fish can make you stronger&lt;/a&gt;&lt;br&gt;&#xA;Presents a simple but ingenious way to combat anaemia in Cambodia by giving villagers iron fish to put in their cooking pots.&lt;/p&gt;&#xA;&lt;h1 id=&#34;osama-bin-laden-raid-questions&#34;&gt;&#xA;Osama Bin Laden Raid Questions&#xA;&lt;a href=&#34;#osama-bin-laden-raid-questions&#34; class=&#34;heading-anchor&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h1&gt;&#xA;&lt;p&gt;I&amp;rsquo;m trying to cover this issue in depth since I think it sits at the intersection of a few key issues: balancing transparency and national security concerns, the efficacy of torture, and the treatment of journalists in the United States. After reading Glenn Greenwald&amp;rsquo;s &lt;a href=&#34;http://www.amazon.com/gp/product/B00E0CZX0G/ref=as_li_tl?ie=UTF8&amp;amp;camp=1789&amp;amp;creative=390957&amp;amp;creativeASIN=B00E0CZX0G&amp;amp;linkCode=as2&amp;amp;tag=stepmali-20&amp;amp;linkId=ZRRLKQCHJIWKHRNR&#34;&gt;No Place to Hide&lt;/a&gt;, which discusses his experience as the journalist entrusted by Edward Snowden to report on his case and keeping his documents safe, I&amp;rsquo;m much more sympathetic to Hersh&amp;rsquo;s version of events. Furthermore, as discussed in the fourth article I&amp;rsquo;ve included about this, the media&amp;rsquo;s treatment of Hersh follows a troublingly similar pattern that Greenwald discusses at length in his book. All this being said, the author of the second article, the former Islamabad ambassador to Washington, raises serious concerns regarding Hersh&amp;rsquo;s version of the story. And, as seen in the third article, Hersh doesn&amp;rsquo;t respond to criticism or questions about his work gracefully. In light of this, you&amp;rsquo;ll have to come to your own conclusions about what elements of the White House&amp;rsquo;s and Hersh&amp;rsquo;s stories are valid.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Weekly Newsletter</title>
-      <link>http://localhost:1314/post/2015-05-10-nl05102015/</link>
+      <link>https://stephenmalina.com/post/2015-05-10-nl05102015/</link>
       <pubDate>Sun, 10 May 2015 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1314/post/2015-05-10-nl05102015/</guid>
+      <guid>https://stephenmalina.com/post/2015-05-10-nl05102015/</guid>
       <description>&lt;h1 id=&#34;police-brutality&#34;&gt;&#xA;Police Brutality&#xA;&lt;a href=&#34;#police-brutality&#34; class=&#34;heading-anchor&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h1&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://www.buzzfeed.com/dreamworks/why-cops-like-me-stay-quiet-about-police-brutality&#34;&gt;Why Cops Like Me Are Quiet&lt;/a&gt;&lt;br&gt;&#xA;A former NYPD officer discusses police brutality from an officer&amp;rsquo;s perspective.&lt;/p&gt;&#xA;&lt;h1 id=&#34;neuroscience&#34;&gt;&#xA;Neuroscience&#xA;&lt;a href=&#34;#neuroscience&#34; class=&#34;heading-anchor&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h1&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://moreintelligentlife.com/content/features/wanting-versus-liking?page=full#_&#34;&gt;The Science of Craving&lt;/a&gt;&lt;br&gt;&#xA;Profiles Dr. Kent Berridge&amp;rsquo;s research into the science of craving. Presents an interesting perspective on the difference between desire and pleasure and discusses meditation, a favorite topic of mine.&lt;/p&gt;&#xA;&lt;h1 id=&#34;medicine&#34;&gt;&#xA;Medicine&#xA;&lt;a href=&#34;#medicine&#34; class=&#34;heading-anchor&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h1&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://www.newyorker.com/magazine/2015/05/11/overkill-atul-gawande/&#34;&gt;Overkill&lt;/a&gt;&lt;br&gt;&#xA;Argues that the American health system encourages careless overtreatment of illness. I&amp;rsquo;m sympathetic to this view but wish the author had delved more into alternative payment models since it seems these models contribute to the problem. The author briefly discusses the incentive structures of Medicare and Obamacare but doesn&amp;rsquo;t dive into the fundamental ideas underlying health insurance. While doing so would&amp;rsquo;ve made the article even longer, it would&amp;rsquo;ve added much-needed context.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Weekly Newsletter</title>
-      <link>http://localhost:1314/post/2015-05-03-nl05032015/</link>
+      <link>https://stephenmalina.com/post/2015-05-03-nl05032015/</link>
       <pubDate>Sun, 03 May 2015 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1314/post/2015-05-03-nl05032015/</guid>
+      <guid>https://stephenmalina.com/post/2015-05-03-nl05032015/</guid>
       <description>&lt;p&gt;&lt;strong&gt;Warning&lt;/strong&gt;: These next few paragraphs are about the origins and goals of the newsletter. If you don&amp;rsquo;t care about these things skip to &lt;a href=&#34;#newsletter&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;p&gt;As I mentioned last week, I&amp;rsquo;ve decided to mark this week as the 6 month anniversary of this newsletter. To honor this, I&amp;rsquo;m going to quickly describe why I circulate this newsletter and what criteria I use to determine which articles I include in it. The circulation of the newsletter began on a whim. Sometime this past Summer, I realized that I read a lot of articles and didn&amp;rsquo;t remember many of them, and that I spent a lot of time telling my friends about &amp;ldquo;an article I read,&amp;rdquo; to which they usually respond with (I&amp;rsquo;m paraphrasing): &amp;ldquo;Yeah, sure. Please just shut up. I wish you weren&amp;rsquo;t so weird&amp;rdquo;. This dual realization led me to try formalizing my forcible information sharing process by sending a weekly rundown of my favorite articles that I initially titled &amp;ldquo;Ste-ekly&amp;rdquo;. I thought that circulating this newsletter might get rid of my impulse for compulsive info-dumping. Unfortunately for those of you who interact with me on a daily basis, this expectation has proven false over the past six months. Regardless, such are the circumstances and vague notions that have led to me thinking things I read are important enough that you should read them too.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Weekly Newsletter</title>
-      <link>http://localhost:1314/post/2015-04-26-nl04262015/</link>
+      <link>https://stephenmalina.com/post/2015-04-26-nl04262015/</link>
       <pubDate>Sun, 26 Apr 2015 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1314/post/2015-04-26-nl04262015/</guid>
+      <guid>https://stephenmalina.com/post/2015-04-26-nl04262015/</guid>
       <description>&lt;p&gt;Note: Next week will be the arbitrarily but mostly correctly determined 6th month anniversary of my newsletter. If you have any ideas for interesting things I could do for this, I&amp;rsquo;d love to hear them. So far, I&amp;rsquo;ve considered a &amp;ldquo;Best Of&amp;rdquo; week or piece written by me reflecting on the newsletter and explaining in detail why I put so much time into this.&lt;/p&gt;&#xA;&lt;h1 id=&#34;languages&#34;&gt;&#xA;Languages&#xA;&lt;a href=&#34;#languages&#34; class=&#34;heading-anchor&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h1&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://www.newyorker.com/magazine/2012/12/24/utopian-for-beginners&#34;&gt;Utopian for Beginners&lt;/a&gt;&lt;br&gt;&#xA;Tells the story of one man&amp;rsquo;s created language and its journey into the world. Also discusses the history of language creation, which fascinated early philosophers such as Descartes and Leibniz.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Weekly Newsletter</title>
-      <link>http://localhost:1314/post/2015-04-19-nl04192015/</link>
+      <link>https://stephenmalina.com/post/2015-04-19-nl04192015/</link>
       <pubDate>Sun, 19 Apr 2015 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1314/post/2015-04-19-nl04192015/</guid>
+      <guid>https://stephenmalina.com/post/2015-04-19-nl04192015/</guid>
       <description>&lt;h1 id=&#34;politics&#34;&gt;&#xA;Politics&#xA;&lt;a href=&#34;#politics&#34; class=&#34;heading-anchor&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h1&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://fivethirtyeight.com/features/clinton-begins-the-2016-campaign-and-its-a-toss-up/&#34;&gt;Clinton Begins the 2016 Campaign, And It&amp;rsquo;s a Toss-Up&lt;/a&gt;&lt;br&gt;&#xA;Nate Silver, renowned election results predictor and sports statistician, speculates on the likelihood of a Hilary Clinton victory in 2016, taking into account different scenarios and opposing candidates. I really enjoy Nate Silver&amp;rsquo;s logical, data-driven approach to prediction.&lt;/p&gt;&#xA;&lt;h1 id=&#34;dolphins&#34;&gt;&#xA;Dolphins&#xA;&lt;a href=&#34;#dolphins&#34; class=&#34;heading-anchor&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h1&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://ngm.nationalgeographic.com/2015/05/dolphin-intelligence/foer-text&#34;&gt;Dolphin Intelligence&lt;/a&gt;&lt;br&gt;&#xA;The author of &lt;a href=&#34;http://www.amazon.com/gp/product/0143120530/ref=as_li_tl?ie=UTF8&amp;amp;camp=1789&amp;amp;creative=390957&amp;amp;creativeASIN=0143120530&amp;amp;linkCode=as2&amp;amp;tag=stepmali-20&amp;amp;linkId=JEUR7UGYB6ED7VWT&#34;&gt;Moonwalking with Einstein&lt;/a&gt;, Joshua Foer, explores the fascinating world of dolphin intelligence. Foer takes a cautiously optimistic approach to the field, speaking with multiple scientists about the prospects and obstacles of communicating with dolphins.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Weekly Newsletter</title>
-      <link>http://localhost:1314/post/2015-04-12-nl04122015/</link>
+      <link>https://stephenmalina.com/post/2015-04-12-nl04122015/</link>
       <pubDate>Sun, 12 Apr 2015 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1314/post/2015-04-12-nl04122015/</guid>
+      <guid>https://stephenmalina.com/post/2015-04-12-nl04122015/</guid>
       <description>&lt;h1 id=&#34;mystery&#34;&gt;&#xA;Mystery&#xA;&lt;a href=&#34;#mystery&#34; class=&#34;heading-anchor&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h1&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://www.slate.com/articles/life/culturebox/2012/02/the_mystery_of_the_millionaire_metaphysician_slate_republishes_one_of_the_greatest_magazine_stories_ever_written_.single.html&#34;&gt;The Mystery of the Millionaire Metaphysician&lt;/a&gt;&lt;br&gt;&#xA;A republishing of an old story, this piece recounts a writer&amp;rsquo;s search for the author of a mysterious metaphysics manuscript. I don&amp;rsquo;t want to spoil the story so you&amp;rsquo;ll have to read it to learn more.&lt;/p&gt;&#xA;&lt;h1 id=&#34;psychological-warfare-and-foreign-policy&#34;&gt;&#xA;Psychological Warfare and Foreign Policy&#xA;&lt;a href=&#34;#psychological-warfare-and-foreign-policy&#34; class=&#34;heading-anchor&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h1&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://www.theguardian.com/news/2015/apr/09/kremlin-hall-of-mirrors-military-information-psychology&#34;&gt;Inside the Kremlin&amp;rsquo;s hall of mirrors&lt;/a&gt;&lt;br&gt;&#xA;Investigates the Kremlin&amp;rsquo;s disinformation campaign and questions its reach. I thought this article did a phenomenal job of explaining the theory that led to the Kremlin&amp;rsquo;s employment of these tactics. However, the author&amp;rsquo;s perspective seems to preclude the possibility that these tactics are more widespread &amp;ndash; a possibility that I&amp;rsquo;m open to in light of revelations about Western governments&amp;rsquo; internet spying and treatment of journalists. The author also, in my opinion, assumes an unreasonably high level of competence and coordination on the part of the Kremlin at the end of the article which detracts from his overall argument.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Weekly Newsletter</title>
-      <link>http://localhost:1314/post/2015-04-05-nl04052015/</link>
+      <link>https://stephenmalina.com/post/2015-04-05-nl04052015/</link>
       <pubDate>Sun, 05 Apr 2015 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1314/post/2015-04-05-nl04052015/</guid>
+      <guid>https://stephenmalina.com/post/2015-04-05-nl04052015/</guid>
       <description>&lt;h1 id=&#34;mind-and-brain&#34;&gt;&#xA;Mind and Brain&#xA;&lt;a href=&#34;#mind-and-brain&#34; class=&#34;heading-anchor&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h1&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://www.newyorker.com/magazine/2015/04/06/electrified&#34;&gt;Electrified&lt;/a&gt;&lt;br&gt;&#xA;Investigates the promises and perils of tDCS, the electrical stimulation of the brain proponents claim will help treat depression and other neurological disorders.&lt;/p&gt;&#xA;&lt;h1 id=&#34;evolution&#34;&gt;&#xA;Evolution&#xA;&lt;a href=&#34;#evolution&#34; class=&#34;heading-anchor&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h1&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://orionmagazine.org/article/defending-darwin/?src=longreads&#34;&gt;Defending Darwin&lt;/a&gt;&lt;br&gt;&#xA;A biology professor at the University of Kentucky discusses his experiencing teaching evolution to a group largely composed of Creationists. This article interests me on two levels: 1) I come from an area where evolution is largely unchallenged. In school, I don&amp;rsquo;t ever recall one of my peers arguing with the teacher about evolution, so it&amp;rsquo;s interesting to read about a place where this is not the case. 2) This teacher manages to change students minds (even if it&amp;rsquo;s only a few) on beliefs they hold strongly and have been brought up with.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Weekly Newsletter</title>
-      <link>http://localhost:1314/post/2015-03-29-nl03292015/</link>
+      <link>https://stephenmalina.com/post/2015-03-29-nl03292015/</link>
       <pubDate>Sun, 29 Mar 2015 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1314/post/2015-03-29-nl03292015/</guid>
+      <guid>https://stephenmalina.com/post/2015-03-29-nl03292015/</guid>
       <description>&lt;h1 id=&#34;books&#34;&gt;&#xA;Books&#xA;&lt;a href=&#34;#books&#34; class=&#34;heading-anchor&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h1&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://www.newyorker.com/magazine/2015/03/09/rapt&#34;&gt;Rapt&lt;/a&gt;&lt;br&gt;&#xA;Reviews &lt;a href=&#34;http://www.amazon.com/gp/product/0802123414/ref=as_li_tl?ie=UTF8&amp;amp;camp=1789&amp;amp;creative=390957&amp;amp;creativeASIN=0802123414&amp;amp;linkCode=as2&amp;amp;tag=stepmali-20&amp;amp;linkId=CJ2ENMPESPZRPOIR&#34;&gt;H is for Hawk&lt;/a&gt;, a non-fiction book about grief, hawking, and T.H. White. Discusses grief and the quirkiness of hawks and hawking.&lt;/p&gt;&#xA;&lt;h1 id=&#34;memory&#34;&gt;&#xA;Memory&#xA;&lt;a href=&#34;#memory&#34; class=&#34;heading-anchor&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h1&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://www.theverge.com/2015/3/18/8225321/memory-research-flatworm-cannibalism-james-mcconnell-michael-levin&#34;&gt;Memory in the Flesh&lt;/a&gt;&lt;br&gt;&#xA;Explores research on the radical idea that memory can exist outside the brain in other parts of the body. This article&amp;rsquo;s interesting because it shows how political science can be. I&amp;rsquo;m always drawn to articles which challenge scientific dogma as I think innovation often arises from these challenges.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Weekly Newsletter</title>
-      <link>http://localhost:1314/post/2015-03-22-nl03222015/</link>
+      <link>https://stephenmalina.com/post/2015-03-22-nl03222015/</link>
       <pubDate>Sun, 22 Mar 2015 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1314/post/2015-03-22-nl03222015/</guid>
+      <guid>https://stephenmalina.com/post/2015-03-22-nl03222015/</guid>
       <description>&lt;h1 id=&#34;evolution&#34;&gt;&#xA;Evolution&#xA;&lt;a href=&#34;#evolution&#34; class=&#34;heading-anchor&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h1&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://aeon.co/magazine/philosophy/natures-library-of-platonic-forms/&#34;&gt;Possible Creatures&lt;/a&gt;&lt;br&gt;&#xA;A professor of Evolutionary Biology discusses his work mapping &amp;ldquo;nature&amp;rsquo;s library&amp;rdquo; of proteins. He makes tenuous parallels to Platonism, but the work stands on its own whether you take those into account or not.&lt;/p&gt;&#xA;&lt;h1 id=&#34;mind-and-brain&#34;&gt;&#xA;Mind and Brain&#xA;&lt;a href=&#34;#mind-and-brain&#34; class=&#34;heading-anchor&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h1&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://www.theatlantic.com/features/archive/2015/03/the-science-of-near-death-experiences/386231/&#34;&gt;The Science of Near Death Experiences&lt;/a&gt;&lt;br&gt;&#xA;Explores the debate about the mechanism of near-death experiences between scientific materialists and spiritual believers. I surprisingly fall somewhere in the middle on this and other similar issues. Although my beliefs and background are steeped in science, reading Michael Crichton&amp;rsquo;s book [Travels](&lt;a href=&#34;http://www.amazon.com/gp/product/0804171270/ref=as_li_tl?ie=UTF8&amp;camp=1789&amp;creative=390957&amp;creativeASIN=0804171270&amp;linkCode=as2&amp;tag=stepmali-20&amp;linkId=YBHGEU6SDSEZN7N4&#34;&gt;Travels (Vintage Departures)&lt;/a&gt;&lt;img src=&#34;http://ir-na.amazon-adsystem.com/e/ir?t=stepmali-20&amp;l=as2&amp;o=1&amp;a=0804171270&#34; width=&#34;1&#34; height=&#34;1&#34; border=&#34;0&#34; alt=&#34;&#34; style=&#34;border:none !important; margin:0px !important;&#34; /&gt;) convinced me that there&amp;rsquo;s nothing to be gained by taking a hard stance against these phenomena without having done the proper due diligence. I do, however, take issue with the idea that these phenomena, and consciousness by extension, are inexplicable. Even if these experiences were proven to arise from a non-materialist form of consciousness, I still firmly believe that they could be explained.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Weekly Newsletter</title>
-      <link>http://localhost:1314/post/2015-03-15-nl03152015/</link>
+      <link>https://stephenmalina.com/post/2015-03-15-nl03152015/</link>
       <pubDate>Sun, 15 Mar 2015 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1314/post/2015-03-15-nl03152015/</guid>
+      <guid>https://stephenmalina.com/post/2015-03-15-nl03152015/</guid>
       <description>&lt;h1 id=&#34;genocide&#34;&gt;&#xA;Genocide&#xA;&lt;a href=&#34;#genocide&#34; class=&#34;heading-anchor&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h1&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://blog.longreads.com/2015/03/11/interview-with-a-torturer/&#34;&gt;Interview with a Torturer&lt;/a&gt;&lt;br&gt;&#xA;An author and survivor of the Khmer Rouge genocide in Cambodia attempts to come to terms with his experience. At times, this piece was hard to read at times, but I think that quality adds to its power. This quote really resonated with me:&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;&amp;ldquo;There’s a contemporary notion that we’re all potential torturers. This fatalism tinged with smugness exercises literature, film, and certain intellectuals. After all what’s more exciting than a great criminal? No, we’re not all a fraction of an inch, the depth of a sheet of paper, from committing a great crime. For my part I believe in facts and I look at the world. The victims are in their place. The torturers too.&amp;rdquo;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Weekly Newsletter</title>
-      <link>http://localhost:1314/post/2015-03-08-nl03082015/</link>
+      <link>https://stephenmalina.com/post/2015-03-08-nl03082015/</link>
       <pubDate>Sun, 08 Mar 2015 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1314/post/2015-03-08-nl03082015/</guid>
+      <guid>https://stephenmalina.com/post/2015-03-08-nl03082015/</guid>
       <description>&lt;h1 id=&#34;mental-health&#34;&gt;&#xA;Mental Health&#xA;&lt;a href=&#34;#mental-health&#34; class=&#34;heading-anchor&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h1&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://www.theguardian.com/technology/2013/aug/08/ted-talk-eleanor-longden-schizophrenia&#34;&gt;The voices in my head: Eleanor Longden&amp;rsquo;s &amp;lsquo;psychic civil war&amp;rsquo;&lt;/a&gt;&lt;br&gt;&#xA;The Guardian interviews Elanor Longden, a woman who started hearing voices while in college. Longden discusses her ordeal and subsequent recovery, shedding light on the nature of her disease. One of the commenters on this article wrote a thoughtful comment, which I&amp;rsquo;ve included&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;&amp;ldquo;It makes me wonder that we all have these voices to some degree, but that it&amp;rsquo;s rarer to have them be so articulate, so able to enunciate distinct aspects of our personalities. More commonly, I wonder that most of us experienced our &amp;lsquo;voices&amp;rsquo; as something more akin to shapeless feelings and emotions (worry, depression, anxiety, contentedness, silliness). Maybe many of us can keep from hearing and actually acting on these voices in helpful ways because they are so shapeless and subdued, but that&amp;rsquo;s to our detriment, perhaps.&amp;rdquo;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Weekly Newsletter</title>
-      <link>http://localhost:1314/post/2015-03-01-nl03012015/</link>
+      <link>https://stephenmalina.com/post/2015-03-01-nl03012015/</link>
       <pubDate>Sun, 01 Mar 2015 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1314/post/2015-03-01-nl03012015/</guid>
+      <guid>https://stephenmalina.com/post/2015-03-01-nl03012015/</guid>
       <description>&lt;h1 id=&#34;science-and-technology&#34;&gt;&#xA;Science and Technology&#xA;&lt;a href=&#34;#science-and-technology&#34; class=&#34;heading-anchor&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h1&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://whoo.ps/2015/02/23/futures-of-text&#34;&gt;Futures of Text&lt;/a&gt;&lt;br&gt;&#xA;A survey of all the current innovation in text as a medium. Argues for the superiority of text-based communication and interaction over app-based communication and interaction.&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://www.newscientist.com/article/mg22530103.700-first-human-head-transplant-could-happen-in-two-years.html#.VPMkfFPF9U4&#34;&gt;First human head transplant could happen in two years&lt;/a&gt;&lt;br&gt;&#xA;Discusses the prospects for transplanting a human head onto another body. Neglects to discuss from where the second body would come, but, otherwise does a good job of explaining the idea and the issues surrounding it.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Weekly Newsletter</title>
-      <link>http://localhost:1314/post/2015-02-22-nl02222015/</link>
+      <link>https://stephenmalina.com/post/2015-02-22-nl02222015/</link>
       <pubDate>Sun, 22 Feb 2015 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1314/post/2015-02-22-nl02222015/</guid>
+      <guid>https://stephenmalina.com/post/2015-02-22-nl02222015/</guid>
       <description>&lt;h1 id=&#34;technology&#34;&gt;&#xA;Technology&#xA;&lt;a href=&#34;#technology&#34; class=&#34;heading-anchor&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h1&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://nautil.us/issue/21/information/how-i-taught-my-computer-to-write-its-own-music&#34;&gt;How I Taught my Computer to Write its Own Music&lt;/a&gt;&lt;br&gt;&#xA;Discusses a successful endeavor to create a computer-based entity that writes music. Mindblowing.&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://edge.org/conversation/neil_gershenfeld-digital-reality&#34;&gt;Digital Reality&lt;/a&gt;&lt;br&gt;&#xA;&lt;em&gt;Edge&lt;/em&gt; interviews Neil Gershenfeld, head of MIT&amp;rsquo;s Center for Bits and Atoms. He discusses the future of manufacturing and fabrication and its impact on the world economy. This is a long one, but I really enjoyed it.&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://www.nytimes.com/2015/02/17/science/hand-of-a-superhero.html?ref=science&amp;amp;_r=0&#34;&gt;Hand of a Superhero&lt;/a&gt;&lt;br&gt;&#xA;Profiles E-nable and other groups focused on improving upon the process of creating and distributing prosthetic hands for children.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Weekly Newsletter</title>
-      <link>http://localhost:1314/post/2015-02-15-nl02152015/</link>
+      <link>https://stephenmalina.com/post/2015-02-15-nl02152015/</link>
       <pubDate>Sun, 15 Feb 2015 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1314/post/2015-02-15-nl02152015/</guid>
+      <guid>https://stephenmalina.com/post/2015-02-15-nl02152015/</guid>
       <description>&lt;h1 id=&#34;philosophy&#34;&gt;&#xA;Philosophy&#xA;&lt;a href=&#34;#philosophy&#34; class=&#34;heading-anchor&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h1&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://motherboard.vice.com/read/do-easy-william-s-burroughs-and-gus-van-sant-show-you-how-to-get-things-done&#34;&gt;Do Easy&lt;/a&gt;&lt;br&gt;&#xA;The film and source essay (linked to at the bottom of the page) both&#xA;convey a philosophy rooted in Taoism, but understandable for the modern&#xA;American. It&amp;rsquo;s important to note that William S. Burroughs (the essay&amp;rsquo;s&#xA;author and the author of &lt;a&#xA;href=&#34;http://www.amazon.com/gp/product/0802132952/ref=as_li_tl?ie=UTF8&amp;camp=1789&amp;creative=390957&amp;creativeASIN=0802132952&amp;linkCode=as2&amp;tag=stepmali-20&amp;linkId=AXWFJVDMEXSAC6P5&#34;&gt;Naked&#xA;Lunch&lt;/a&gt;&lt;img&#xA;src=&#34;http://ir-na.amazon-adsystem.com/e/ir?t=stepmali-20&amp;l=as2&amp;o=1&amp;a=0802132952&#34;&#xA;width=&#34;1&#34; height=&#34;1&#34; border=&#34;0&#34; alt=&#34;&#34; style=&#34;border:none !important;&#xA;margin:0px !important;&#34; /&gt;) struggled with a debilitating heroine&#xA;addiction for much of his life.  Looking at this essay in light of that,&#xA;I found that many of the ideas took on a dual meaning.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Weekly Newsletter</title>
-      <link>http://localhost:1314/post/2015-02-08-nl02082015/</link>
+      <link>https://stephenmalina.com/post/2015-02-08-nl02082015/</link>
       <pubDate>Sun, 08 Feb 2015 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1314/post/2015-02-08-nl02082015/</guid>
+      <guid>https://stephenmalina.com/post/2015-02-08-nl02082015/</guid>
       <description>&lt;h1 id=&#34;mind-and-brain&#34;&gt;&#xA;Mind and Brain&#xA;&lt;a href=&#34;#mind-and-brain&#34; class=&#34;heading-anchor&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h1&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://www.newyorker.com/magazine/2015/02/09/trip-treatment&#34;&gt;The Trip Treatment&lt;/a&gt;&lt;br&gt;&#xA;Reviews new research on psychedelics and their gradual integration&#xA;into mainstream psychiatry. Recounts the effects of&#xA;psychedelic treatment on patients suffering from addiction or&#xA;nearing the end of their lives.&lt;/p&gt;&#xA;&lt;h1 id=&#34;biographical&#34;&gt;&#xA;Biographical&#xA;&lt;a href=&#34;#biographical&#34; class=&#34;heading-anchor&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h1&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://nautil.us/issue/21/information/the-man-who-tried-to-redeem-the-world-with-logic&#34;&gt;Meet Walter Pitts, The Man Who Tried to Redeem the World With Logic&lt;/a&gt;&lt;br&gt;&#xA;Profiles Walter Pitts, a mathematician who worked alongside&#xA;the founders of modern information theory but eventually suffered a&#xA;crippling breakdown.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Weekly Newsletter</title>
-      <link>http://localhost:1314/post/2015-02-01-nl02012015/</link>
+      <link>https://stephenmalina.com/post/2015-02-01-nl02012015/</link>
       <pubDate>Sun, 01 Feb 2015 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1314/post/2015-02-01-nl02012015/</guid>
+      <guid>https://stephenmalina.com/post/2015-02-01-nl02012015/</guid>
       <description>&lt;h1 id=&#34;corporations&#34;&gt;&#xA;Corporations&#xA;&lt;a href=&#34;#corporations&#34; class=&#34;heading-anchor&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h1&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://aeon.co/magazine/technology/are-we-ready-for-companies-that-run-themselves/&#34;&gt;Are We Ready For Companies That Run Themselves?&lt;/a&gt;&lt;br&gt;&#xA;Covers the rise of autonomous corporations and discusses its underlying forces and&#xA;technologies. Questions whether these corporations will&#xA;liberate us from scarcity or further enslave us to it.&lt;/p&gt;&#xA;&lt;h1 id=&#34;farming&#34;&gt;&#xA;Farming&#xA;&lt;a href=&#34;#farming&#34; class=&#34;heading-anchor&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h1&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://blog.longreads.com/2015/01/26/an-ex-industrial-fisherman-rethinks-his-job/&#34;&gt;An Ex-Industrial Fisherman Rethinks His Job&lt;/a&gt;&lt;br&gt;&#xA;Reviews Bren Smith, an ocean farmer working to use sustainable farming&#xA;methods on the sea to make a living and produce food and fuel.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Weekly Newsletter</title>
-      <link>http://localhost:1314/post/2015-01-25-nl01252015/</link>
+      <link>https://stephenmalina.com/post/2015-01-25-nl01252015/</link>
       <pubDate>Sun, 25 Jan 2015 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1314/post/2015-01-25-nl01252015/</guid>
+      <guid>https://stephenmalina.com/post/2015-01-25-nl01252015/</guid>
       <description>&lt;h1 id=&#34;human-potential&#34;&gt;&#xA;Human Potential&#xA;&lt;a href=&#34;#human-potential&#34; class=&#34;heading-anchor&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h1&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://www.outsideonline.com/fitness/agility-and-balance/natural-born-heroes/Parkour-Fitness-Program.html&#34;&gt;Natural Born Heroes&lt;/a&gt;&lt;br&gt;&#xA;Sometimes, when I read an article, I think it would be great for the&#xA;newsletter because it calls into question a widely-held belief or&#xA;delves deep into an esoteric topic in a profound way. This isn&amp;rsquo;t one&#xA;of those articles &amp;ndash; this is an article that you read and think&#xA;&amp;ldquo;this is awesome.&amp;rdquo; The article covers a few different groups reviving or&#xA;creating new uses of the human form.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Weekly Newsletter</title>
-      <link>http://localhost:1314/post/2015-01-18-nl01182015/</link>
+      <link>https://stephenmalina.com/post/2015-01-18-nl01182015/</link>
       <pubDate>Sun, 18 Jan 2015 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1314/post/2015-01-18-nl01182015/</guid>
+      <guid>https://stephenmalina.com/post/2015-01-18-nl01182015/</guid>
       <description>&lt;h1 id=&#34;education&#34;&gt;&#xA;Education&#xA;&lt;a href=&#34;#education&#34; class=&#34;heading-anchor&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h1&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://www.forbes.com/sites/modeledbehavior/2015/01/11/charter-success/&#34;&gt;The Unappreciated Success of Charter Schools&lt;/a&gt;&lt;br&gt;&#xA;Convincingly argues for charter schools&amp;rsquo; effectiveness at educating&#xA;underpriviliged students.&lt;/p&gt;&#xA;&lt;h1 id=&#34;mind-and-brain&#34;&gt;&#xA;Mind and Brain&#xA;&lt;a href=&#34;#mind-and-brain&#34; class=&#34;heading-anchor&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h1&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://nautil.us/issue/16/nothingness/postcards-from-the-edge-of-consciousness&#34;&gt;Postcards from the Edge of Consciousness&lt;/a&gt;&lt;br&gt;&#xA;Describes the experience of sensory deprivation and the biological&#xA;mechanisms it activates.&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://www.theatlantic.com/health/archive/2015/01/muscle-strength-is-in-the-mind/384361/&#34;&gt;Muscle Strength is in the Mind&lt;/a&gt;&lt;br&gt;&#xA;Summarizes a recent study with results indicating that imagining&#xA;muscular contractions affects the strength of the muscles involved. I&amp;rsquo;ve&#xA;skimmed through the original study paper, and the methodology seems&#xA;sound.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Weekly Newsletter</title>
-      <link>http://localhost:1314/post/2015-01-11-nl01112015/</link>
+      <link>https://stephenmalina.com/post/2015-01-11-nl01112015/</link>
       <pubDate>Sun, 11 Jan 2015 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1314/post/2015-01-11-nl01112015/</guid>
+      <guid>https://stephenmalina.com/post/2015-01-11-nl01112015/</guid>
       <description>&lt;h1 id=&#34;foreign-policy&#34;&gt;&#xA;Foreign Policy&#xA;&lt;a href=&#34;#foreign-policy&#34; class=&#34;heading-anchor&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h1&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://www.bbc.com/news/world-europe-30765824&#34;&gt;Paris attacks: Millions rally for unity in France&lt;/a&gt;&lt;br&gt;&#xA;Covers massive French rallies meant to demonstrate unity after the&#xA;attacks on &lt;em&gt;Charlie Hebdo&lt;/em&gt;.&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://foreignpolicy.com/2015/01/07/dont-blame-the-victims/&#34;&gt;Je Suis Charlie (Until Je Get Scared)&lt;/a&gt;&lt;br&gt;&#xA;Asserts that many Westerners hold inconsistent views on free&#xA;speech. Illustrates this with examples of newspapers blurring out the&#xA;&lt;em&gt;Charlie Hebdo&lt;/em&gt; comics and journalists subtly blaming &lt;em&gt;Hebdo&lt;/em&gt; authors for&#xA;publishing &amp;ldquo;inflammatory&amp;rdquo; content.&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://foreignpolicy.com/2014/12/23/is-saudi-arabia-trying-to-cripple-american-fracking-oil-iran/?wp_login_redirect=0&#34;&gt;Is Saudi Arabia trying to cripple American fracking?&lt;/a&gt;&lt;br&gt;&#xA;Details why Saudi Arabia is depressing oil prices. Debunks the view&#xA;that Saudi oil policy aims at crippling the shale revolution. Argues&#xA;that the policy instead targets the Russian and&#xA;Iranian economies.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Weekly Newsletter</title>
-      <link>http://localhost:1314/post/2015-01-04-nl01042015/</link>
+      <link>https://stephenmalina.com/post/2015-01-04-nl01042015/</link>
       <pubDate>Sun, 04 Jan 2015 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1314/post/2015-01-04-nl01042015/</guid>
+      <guid>https://stephenmalina.com/post/2015-01-04-nl01042015/</guid>
       <description>&lt;h1 id=&#34;power-of-the-mind&#34;&gt;&#xA;Power of the Mind&#xA;&lt;a href=&#34;#power-of-the-mind&#34; class=&#34;heading-anchor&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h1&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://www.nytimes.com/interactive/2011/02/20/magazine/mind-secrets.html&#34;&gt;Secrets of a Mind Gamer&lt;/a&gt;&lt;br&gt;&#xA;Narrates how a journalist won the U.S. Memory Championship.&#xA;Summarizes the techniques used by memory athletes &amp;ndash; individuals who competitively&#xA;memorize card sequences, digit strings, and poems. I&amp;rsquo;ve&#xA;been discussing memory with a few newsletter readers, so I thought I&amp;rsquo;d&#xA;include this piece. If you enjoy this piece, I highly recommend the author&amp;rsquo;s book on this topic,&#xA;&lt;a&#xA;href=&#34;http://www.amazon.com/gp/product/0143120530/ref=as_li_tl?ie=UTF8&amp;camp=1789&amp;creative=390957&amp;creativeASIN=0143120530&amp;linkCode=as2&amp;tag=stepmali-20&amp;linkId=SN6QSZD5EZNEGUE3&#34;&gt;Moonwalking&#xA;with Einstein: The Art and Science of Remembering Everything&lt;/a&gt;&lt;img&#xA;src=&#34;http://ir-na.amazon-adsystem.com/e/ir?t=stepmali-20&amp;l=as2&amp;o=1&amp;a=0143120530&#34;&#xA;width=&#34;1&#34; height=&#34;1&#34; border=&#34;0&#34; alt=&#34;&#34; style=&#34;border:none !important;&#xA;margin:0px !important;&#34; /&gt;.&#xA;It&amp;rsquo;s definitely one of my favorite non-fiction books.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Weekly Newsletter</title>
-      <link>http://localhost:1314/post/2014-12-28-nl12282014/</link>
+      <link>https://stephenmalina.com/post/2014-12-28-nl12282014/</link>
       <pubDate>Sun, 28 Dec 2014 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1314/post/2014-12-28-nl12282014/</guid>
+      <guid>https://stephenmalina.com/post/2014-12-28-nl12282014/</guid>
       <description>&lt;h1 id=&#34;stoicism&#34;&gt;&#xA;Stoicism&#xA;&lt;a href=&#34;#stoicism&#34; class=&#34;heading-anchor&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h1&gt;&#xA;&lt;p&gt;Stoicism has been at the forefront of my thoughts this&#xA;break. I&amp;rsquo;m most of the way through Seneca&amp;rsquo;s&#xA;&lt;a&#xA;href=&#34;http://www.amazon.com/gp/product/B005NC0MGW/ref=as_li_tl?ie=UTF8&amp;camp=1789&amp;creative=390957&amp;creativeASIN=B005NC0MGW&amp;linkCode=as2&amp;tag=stepmali-20&amp;linkId=IGHNRBFOQW6NNUA6&#34;&gt;Letters&#xA;from a Stoic: Epistulae Morales AD Lucilium&lt;/a&gt;&lt;img&#xA;src=&#34;http://ir-na.amazon-adsystem.com/e/ir?t=stepmali-20&amp;l=as2&amp;o=1&amp;a=B005NC0MGW&#34;&#xA;width=&#34;1&#34; height=&#34;1&#34; border=&#34;0&#34; alt=&#34;&#34; style=&#34;border:none !important;&#xA;margin:0px !important;&#34; /&gt;, a primary source for Stoic&#xA;philosophy&#xA;and recently finished Ryan Holiday&amp;rsquo;s&#xA;&lt;a&#xA;href=&#34;http://www.amazon.com/gp/product/B00G3L1B8K/ref=as_li_tl?ie=UTF8&amp;camp=1789&amp;creative=390957&amp;creativeASIN=B00G3L1B8K&amp;linkCode=as2&amp;tag=stepmali-20&amp;linkId=BZH2FGJUDGAOKXFW&#34;&gt;The&#xA;Obstacle Is the Way&lt;/a&gt;&lt;img&#xA;src=&#34;http://ir-na.amazon-adsystem.com/e/ir?t=stepmali-20&amp;l=as2&amp;o=1&amp;a=B00G3L1B8K&#34;&#xA;width=&#34;1&#34; height=&#34;1&#34; border=&#34;0&#34; alt=&#34;&#34; style=&#34;border:none !important;&#xA;margin:0px !important;&#34;/&gt;, which presents a simplified&#xA;version of Stoicism that caters to modern audiences.&lt;/p&gt;&#xA;&lt;p&gt;The first article about Stoicism in this newsletter, &lt;a href=&#34;http://aeon.co/magazine/philosophy/why-stoicism-is-one-of-the-best-mind-hacks-ever/&#34;&gt;Indifference is a&#xA;power&lt;/a&gt;,&#xA;reveals Stoicism&amp;rsquo;s tenets and discusses its application both&#xA;by its founders during Roman times and in modern cognitive behavioral&#xA;therapy (the creator of Cognitive Behavioral Therapy struggled as a&#xA;psychoanalyst until he remembered the teachings of ancient Stoicism,&#xA;&lt;a href=&#34;http://www.prospectmagazine.co.uk/features/albertellis&#34;&gt;citation&lt;/a&gt;.)&#xA;This article surpasses prior articles I&amp;rsquo;ve included on Stoicism by&#xA;providing a unique combination of fascinating anecdotes about practicing&#xA;Stoics and practical techniques for applying Stoic ideals to your life.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Weekly Newsletter</title>
-      <link>http://localhost:1314/post/2014-12-21-nl12212014/</link>
+      <link>https://stephenmalina.com/post/2014-12-21-nl12212014/</link>
       <pubDate>Sun, 21 Dec 2014 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1314/post/2014-12-21-nl12212014/</guid>
+      <guid>https://stephenmalina.com/post/2014-12-21-nl12212014/</guid>
       <description>&lt;h1 id=&#34;psychology-and-neuroscience&#34;&gt;&#xA;Psychology and Neuroscience&#xA;&lt;a href=&#34;#psychology-and-neuroscience&#34; class=&#34;heading-anchor&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h1&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://mobile.nytimes.com/2014/12/16/science/a-meditation-on-the-art-of-not-trying.html?_r=0&#34;&gt;A Meditation on the Art of Not Trying&lt;/a&gt;&lt;br&gt;&#xA;Introduces &lt;em&gt;wu wei&lt;/em&gt;, the art of effortless grace. Taoists use&#xA;&lt;em&gt;wu wei&lt;/em&gt; to express the Tao (translates to &amp;ldquo;The Way&amp;rdquo;), while Confucians&#xA;use it to express the grace that results from intense study and practice.&#xA;Moreover, &lt;em&gt;wu wei&lt;/em&gt; also resembles a state of mind which modern psychologists label&#xA;&amp;ldquo;flow&amp;rdquo;. In addition to defining &lt;em&gt;wu wei&lt;/em&gt;, the article offers a&#xA;compelling hypothesis for why alcohol frequently accompanies business deal dinners,&#xA;a phenomenon which I had never thought to explain. My amateur interest&#xA;in Eastern Philosophy added a dimension of engagingness to this article.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Weekly Newsletter</title>
-      <link>http://localhost:1314/post/2014-12-14-nl12072014/</link>
+      <link>https://stephenmalina.com/post/2014-12-14-nl12072014/</link>
       <pubDate>Sun, 14 Dec 2014 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1314/post/2014-12-14-nl12072014/</guid>
+      <guid>https://stephenmalina.com/post/2014-12-14-nl12072014/</guid>
       <description>&lt;h1 id=&#34;on-writing&#34;&gt;&#xA;On Writing&#xA;&lt;a href=&#34;#on-writing&#34; class=&#34;heading-anchor&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h1&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://paw.princeton.edu/issues/2014/11/12/pages/3295/index.xml&#34;&gt;Writing with the Master&lt;/a&gt;&lt;br&gt;&#xA;Profiles John McPhee, a staff writer for the New Yorker and professor at&#xA;Princeton. Uses accounts from McPhee&amp;rsquo;s students to illustrate his&#xA;erudition.&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://www.newyorker.com/magazine/2010/02/08/the-patch&#34;&gt;The Patch by John McPhee&lt;/a&gt;&lt;br&gt;&#xA;As a companion to the profile of John McPhee, I&amp;rsquo;ve included this piece&#xA;of his. In an attempt to understand better the reverence with which his&#xA;students speak of him, I read three of his past New Yorker articles. &amp;ldquo;The&#xA;Patch&amp;rdquo; struck me as the most appropriate. I hope you like it.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Weekly Newsletter (12-07-2014)</title>
-      <link>http://localhost:1314/post/2014-12-07-nl12072014/</link>
+      <link>https://stephenmalina.com/post/2014-12-07-nl12072014/</link>
       <pubDate>Sun, 07 Dec 2014 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1314/post/2014-12-07-nl12072014/</guid>
+      <guid>https://stephenmalina.com/post/2014-12-07-nl12072014/</guid>
       <description>&lt;p&gt;This week, I&amp;rsquo;m experimenting with something new.&#xA;I&amp;rsquo;ve annotated certain articles I read and shared links&#xA;to them, in addition to their original versions.&#xA;Please let me know what you think of this. I don&amp;rsquo;t want to&#xA;share the annotations if you aren&amp;rsquo;t interested in seeing them. On the&#xA;other hand, if you like the annotated articles enough, I may start&#xA;only sending annotated versions of certain articles. Finally, if you are&#xA;someone who contributes articles (or wish to) and you want to annotate your&#xA;articles too, I can help you get up and annotating within 10 minutes.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Weekly Newsletter (11-30-2014)</title>
-      <link>http://localhost:1314/post/2014-11-30-nl11302014/</link>
+      <link>https://stephenmalina.com/post/2014-11-30-nl11302014/</link>
       <pubDate>Sun, 30 Nov 2014 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1314/post/2014-11-30-nl11302014/</guid>
-      <description>&lt;p&gt;This week, I chose to focus exclusively on Ferguson, and only include&#xA;Other Contributions outside of articles about Ferguson. I did this&#xA;because I felt I could not give sufficient attention to Ferguson without&#xA;including more than 2-3 articles about the topic.&lt;/p&gt;&#xA;&lt;p&gt;On an unrelated note, I&amp;rsquo;ve been documenting my &lt;a href=&#34;http://localhost:1314/posts/winter-break-reading&#34;&gt;Winter Break&#xA;Reading&lt;/a&gt;.&#xA;While this is mostly for myself, I&amp;rsquo;ve reviewed two of the books I&amp;rsquo;ve&#xA;read and intend to document my thoughts on the others subsequently.&lt;/p&gt;</description>
+      <guid>https://stephenmalina.com/post/2014-11-30-nl11302014/</guid>
+      <description>&lt;p&gt;This week, I chose to focus exclusively on Ferguson, and only include&#xA;Other Contributions outside of articles about Ferguson. I did this&#xA;because I felt I could not give sufficient attention to Ferguson without&#xA;including more than 2-3 articles about the topic.&lt;/p&gt;&#xA;&lt;p&gt;On an unrelated note, I&amp;rsquo;ve been documenting my &lt;a href=&#34;https://stephenmalina.com/posts/winter-break-reading&#34;&gt;Winter Break&#xA;Reading&lt;/a&gt;.&#xA;While this is mostly for myself, I&amp;rsquo;ve reviewed two of the books I&amp;rsquo;ve&#xA;read and intend to document my thoughts on the others subsequently.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Book Review - Regenesis by George Church</title>
-      <link>http://localhost:1314/post/2014-11-26-regenesis-book-review/</link>
+      <link>https://stephenmalina.com/post/2014-11-26-regenesis-book-review/</link>
       <pubDate>Wed, 26 Nov 2014 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1314/post/2014-11-26-regenesis-book-review/</guid>
+      <guid>https://stephenmalina.com/post/2014-11-26-regenesis-book-review/</guid>
       <description>&lt;p&gt;Synthetic biology is a burgeoning discipline that stems from a long lineage of genetic meddling. Synthetic biology&amp;rsquo;s ancestral legacy began when man first selected which seeds to plant based on the traits of the plants that birthed them. In &lt;a href=&#34;http://www.amazon.com/Regenesis-Synthetic-Biology-Reinvent-Ourselves/dp/0465075703/ref=sr_1_1?ie=UTF8&amp;amp;qid=1416946667&amp;amp;sr=8-1&amp;amp;keywords=regenesis&#34;&gt;Regenesis&lt;/a&gt; by George Church, Church takes the reader through this lineage, canvassing the past thousands of years and then focusing in on the past 30.&lt;/p&gt;&#xA;&lt;p&gt;Church does a good job of balancing technical explanations with interesting anecdotes in the book. Some of the explanations of genetic delivery and manipulation techniques pushed the boundary of what a reader with no biology background could comprehend without consulting outside sources, but never crossed that boundary. Fortunately, Church also displays surprising narrative ability during various discussions of evolution and early genetic meddling by farmers,&lt;/p&gt;</description>
     </item>
     <item>
       <title>Winter Break Reading Plans</title>
-      <link>http://localhost:1314/post/2014-11-25-winter-break-reading/</link>
+      <link>https://stephenmalina.com/post/2014-11-25-winter-break-reading/</link>
       <pubDate>Tue, 25 Nov 2014 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1314/post/2014-11-25-winter-break-reading/</guid>
+      <guid>https://stephenmalina.com/post/2014-11-25-winter-break-reading/</guid>
       <description>&lt;p&gt;To keep myself accountable, I&amp;rsquo;ve decided to post the books I plan to read over Winter Break (Nov. 25th, 2014 to Jan. 3rd, 2015) with a rough estimation of the time it will take to read them. My goal is to post short reviews for most or all of these books as I go through them. I expect reviewing these books will allow me to better reflect and remember my thoughts on them and the key messages that they impart.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Weekly Newsletter (11-23-2014)</title>
-      <link>http://localhost:1314/post/2014-11-23-nl11232014/</link>
+      <link>https://stephenmalina.com/post/2014-11-23-nl11232014/</link>
       <pubDate>Sun, 23 Nov 2014 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1314/post/2014-11-23-nl11232014/</guid>
+      <guid>https://stephenmalina.com/post/2014-11-23-nl11232014/</guid>
       <description>&lt;h2 id=&#34;philosophy--history&#34;&gt;&#xA;Philosophy / History&#xA;&lt;a href=&#34;#philosophy--history&#34; class=&#34;heading-anchor&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://krazemon.github.io/posts/response-to-nl11162014/&#34;&gt;Response to &amp;ldquo;Did Zen create the Kamikaze?&amp;rdquo;&lt;/a&gt;&lt;br&gt;&#xA;A regular reader of the newsletter, Will Baird, responds to one of the articles I included in last week&amp;rsquo;s newsletter. If I could pick one article in this newsletter for you to read, it would be this one. Will worked hard on this response, bringing an expert&amp;rsquo;s mind to his critique and pulling knowledge from a wellspring of related sources and scholarly work. That being said, it is Will&amp;rsquo;s ability to think critically and rigorously that ultimately makes this article worthwhile.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Book Review - Existence by David Brin</title>
-      <link>http://localhost:1314/post/2014-11-18-existence-david-brin-review/</link>
+      <link>https://stephenmalina.com/post/2014-11-18-existence-david-brin-review/</link>
       <pubDate>Tue, 18 Nov 2014 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1314/post/2014-11-18-existence-david-brin-review/</guid>
+      <guid>https://stephenmalina.com/post/2014-11-18-existence-david-brin-review/</guid>
       <description>&lt;p&gt;Mind-blowing, challenging, and disturbing at times, David Brin&amp;rsquo;s view of the future is more comprehensive and more diverse than any other writer&amp;rsquo;s. The thing I love about this book is that it doesn&amp;rsquo;t shy away from discussing hard truths, like the myriad failure-modes humanity can enter. However, it accompanies this discussion with a constant sense that, if it&amp;rsquo;s possible, humanity will find a way.&lt;/p&gt;&#xA;&lt;p&gt;&lt;i&gt;&lt;a href=&#34;http://www.davidbrin.com/existence.html&#34;&gt;Existence&lt;/a&gt;&lt;/i&gt; is a sci-fi novel for the Internet Age. This shows through in the way the novel plays with the idea of multi-tasking. First, Brin attacks the attention deficit we all possess head-on by showing how augmented reality and constant stimulation have been taken to their logical conclusions in the world he has crafted. On a higher level, chapters tend to be short and jumpy, often leaving the reader frustrated, mirroring our frenetic culture. In the end though, Brin manages to make it work, weaving a quilt of stories that slowly but surely come together together into a coherent worlds-spanning narrative.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Response to &#34;Did Zen philosophy create the Kamikaze?&#34;</title>
-      <link>http://localhost:1314/post/2014-11-17-response-to-nl11162014/</link>
+      <link>https://stephenmalina.com/post/2014-11-17-response-to-nl11162014/</link>
       <pubDate>Mon, 17 Nov 2014 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1314/post/2014-11-17-response-to-nl11162014/</guid>
+      <guid>https://stephenmalina.com/post/2014-11-17-response-to-nl11162014/</guid>
       <description>&lt;p&gt;One of my readers, Will Baird, read the &amp;ldquo;Did Zen philosophy create the Kamikaze?&amp;rdquo; article in this past week&amp;rsquo;s&#xA;newsletter, and, being a History buff, had a strong reaction to the article. Thus, he asked that&#xA;I make his well though-out and well informed response available for my readers, as I have done below.&lt;/p&gt;&#xA;&lt;h3 id=&#34;history-as-clickbait&#34;&gt;&#xA;History as Clickbait&#xA;&lt;a href=&#34;#history-as-clickbait&#34; class=&#34;heading-anchor&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h3&gt;&#xA;&lt;p&gt;      In his article “Into nothingness” Christopher Harding asks, “Did Zen ideas create the kamikaze?” Challenging what he describes as “clichés of unthinking ultranationalism,” Harding describes several ways the men chosen for kamikaze missions voiced their displeasure, and asserts that rather than accept their superiors’ “vacuous slogans,” these pilots sought higher intellectual guidance&amp;ndash; but that these Zen thinkers also sent them to their deaths. I found this piece to be terrible history. In fact, given its provocative subtitle, posing a question to challenge the “cliché” explanation of kamikaze, and its ultimate incoherence, I would label the piece “history as clickbait.” I won’t go as far as to question Harding’s own motives in writing the piece, but I do think it is positioned less with good history in mind than it is focused on generating page views.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Weekly Newsletter (11-16-2014)</title>
-      <link>http://localhost:1314/post/2014-11-16-nl11162014/</link>
+      <link>https://stephenmalina.com/post/2014-11-16-nl11162014/</link>
       <pubDate>Sun, 16 Nov 2014 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1314/post/2014-11-16-nl11162014/</guid>
+      <guid>https://stephenmalina.com/post/2014-11-16-nl11162014/</guid>
       <description>&lt;h1 id=&#34;philosophy&#34;&gt;&#xA;Philosophy&#xA;&lt;a href=&#34;#philosophy&#34; class=&#34;heading-anchor&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h1&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://aeon.co/magazine/society/did-zen-philosophy-create-the-kamikaze/&#34;&gt;Did Zen philosophy create the Kamikaze?&lt;/a&gt;&lt;br&gt;&#xA;Pontificates on the relationship between WWII-era Zen philosophers and Japanese Jingoism.&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://www.washingtonpost.com/opinions/george-f-will-bettina-stangneth-reveals-adolf-eichmanns-warped-idealism/2014/11/14/33de5bba-6b81-11e4-a31c-77759fc1eacc_story.html&#34;&gt;A murderer&amp;rsquo;s warped idealism&lt;/a&gt;&lt;br&gt;&#xA;Contrasts previous portrayals of Adolf Eichmann as &amp;ldquo;terrifyingly normal&amp;rdquo; and &amp;ldquo;banal&amp;rdquo; with stories&#xA;of his devotion to &amp;ldquo;the Final Solution.&amp;rdquo;&lt;/p&gt;&#xA;&lt;h1 id=&#34;our-miraculous-biosphere&#34;&gt;&#xA;Our Miraculous Biosphere&#xA;&lt;a href=&#34;#our-miraculous-biosphere&#34; class=&#34;heading-anchor&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h1&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://nautil.us/issue/8/home/the-termite-and-the-architect&#34;&gt;The Termite and the Architect&lt;/a&gt;&lt;br&gt;&#xA;Begins by talking about an architect&amp;rsquo;s attempt to mimic the way termites&amp;rsquo; mounds manage air flow,&#xA;and then uses this example as an example of biomimicry. Due to this article, I&amp;rsquo;ve&#xA;latched onto the question of what would happen if we could harness the full power of swarms in&#xA;our architecture and even our economy?&lt;/p&gt;</description>
     </item>
     <item>
       <title>Weekly Newsletter (11-09-2014)</title>
-      <link>http://localhost:1314/post/2014-11-09-nl11092014/</link>
+      <link>https://stephenmalina.com/post/2014-11-09-nl11092014/</link>
       <pubDate>Sun, 09 Nov 2014 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1314/post/2014-11-09-nl11092014/</guid>
+      <guid>https://stephenmalina.com/post/2014-11-09-nl11092014/</guid>
       <description>&lt;p&gt;Questions or Comments? Contact me at [stephenmalina@gmail.com](mailto: &lt;a href=&#34;mailto:stephenmalina@gmail.com&#34;&gt;stephenmalina@gmail.com&lt;/a&gt;) or on &lt;a href=&#34;http://www.twitter.com/krazemon&#34;&gt;Twitter&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;h1 id=&#34;philosophy&#34;&gt;&#xA;Philosophy&#xA;&lt;a href=&#34;#philosophy&#34; class=&#34;heading-anchor&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h1&gt;&#xA;&lt;p&gt;&lt;strong&gt;&lt;a href=&#34;http://www.lehigh.edu/~dmd1/holly.html&#34;&gt;Marathon Monks of Mt. Hiei&lt;/a&gt;&lt;/strong&gt;&lt;br&gt;&#xA;&lt;strong&gt;Disclaimer&lt;/strong&gt;: There is New-Agey-ness within this article. For a more accurate depiction of the Marathon Monks, I recommend this &lt;a href=&#34;https://www.youtube.com/watch?v=emE-dxCyRz4&#34;&gt;documentary&lt;/a&gt; or this &lt;a href=&#34;http://www.amazon.com/The-Marathon-Monks-Mount-Hiei/dp/1626549958&#34;&gt;book&lt;/a&gt; (I intend to consume both over winter break)&lt;/p&gt;&#xA;&lt;p&gt;Despite the above disclaimer, I included this because I mentioned the Marathon Monks to a friend yesterday. Upon doing so, I decided that their story is worthwhile to share.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Weekly Newsletter (11-02-2014)</title>
-      <link>http://localhost:1314/post/2014-11-02-nl11022014/</link>
+      <link>https://stephenmalina.com/post/2014-11-02-nl11022014/</link>
       <pubDate>Sun, 02 Nov 2014 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1314/post/2014-11-02-nl11022014/</guid>
+      <guid>https://stephenmalina.com/post/2014-11-02-nl11022014/</guid>
       <description>&lt;p&gt;This is a weekly newsletter I publish each week that contains content I enjoyed and hope that you&#xA;will enjoy. If you have questions or comments, you can find me at [stephenmalina@gmail.com](mailto: &lt;a href=&#34;mailto:stephenmalina@gmail.com&#34;&gt;stephenmalina@gmail.com&lt;/a&gt;) or on &lt;a href=&#34;http://www.twitter.com/krazemon&#34;&gt;Twitter&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;h1 id=&#34;technology-and-human-augmentation&#34;&gt;&#xA;Technology and Human Augmentation&#xA;&lt;a href=&#34;#technology-and-human-augmentation&#34; class=&#34;heading-anchor&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h1&gt;&#xA;&lt;p&gt;&lt;strong&gt;&lt;a href=&#34;https://medium.com/backchannel/a-spreadsheet-way-of-knowledge-8de60af7146e&#34;&gt;A Spreadsheet Way of Knowledge&lt;/a&gt;&lt;/strong&gt;&lt;br&gt;&#xA;A long, in-depth piece on the history of spreadsheet modeling. The two points that stick with me&#xA;from this piece are the dismissive attitude people initially had towards the spreadsheet and the&#xA;obsession with modeling people displayed (and continue to display). I am&#xA;fascinated by the latter point because I often find myself falling into a similar way of thinking in&#xA;regards to various metrics I track.&#xA;The way I typically snap myself out of model or metrics obsession is by reminding myself that &lt;a href=&#34;https://en.wikipedia.org/wiki/Map%E2%80%93territory_relation#.22The_map_is_not_the_territory.22&#34;&gt;&amp;ldquo;the map is not the territory&amp;rdquo;&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
     <item>
       <title></title>
-      <link>http://localhost:1314/post/2023-08-05-protein-language-models-part-4/</link>
+      <link>https://stephenmalina.com/post/2023-08-05-protein-language-models-part-4/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1314/post/2023-08-05-protein-language-models-part-4/</guid>
-      <description>&lt;h2 id=&#34;scaling&#34;&gt;&#xA;Scaling&#xA;&lt;a href=&#34;#scaling&#34; class=&#34;heading-anchor&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;p&gt;Some of the earliest evidence for PLM scaling behaving similar to LLM scaling came from ESM-1b. The following plot shows model performance as a function of (log10) number of parameters. As seen there, they also trained LSTM models at two different sizes as baselines.&lt;/p&gt;&#xA;&#xA;&#xA;    &lt;figure &gt;&#xA;  &#xA;    &lt;label for=&#34;marginfig-1&#34; class=&#34;margin-toggle marginnote-ind&#34;&gt;⊕&lt;/label&gt;&#xA;    &lt;input type=&#34;checkbox&#34; id=&#34;marginfig-1&#34; class=&#34;margin-toggle&#34;/&gt;&#xA;    &lt;span class=&#34;marginnote&#34;&gt;&#xA;&#xA;&#xA;ESM-1b perplexity vs. log10(# of parameters) by model type on a held-out subset of UniRef50.&#xA;&#xA;&#xA;&#xA;&lt;/span&gt;&#xA;&#xA;&#xA;&#xA;  &#xA;  &lt;img src=&#34;http://localhost:1314/images/esm1b-custom-scaling-1.png&#34; alt=&#34;Image&#34;&gt;&#xA;  &#xA;&#xA;&#xA;&#xA;&#xA;&lt;/figure&gt;&#xA;&#xA;&#xA;&lt;p&gt;&lt;a href=&#34;https://paperswithcode.com/paper/rita-a-study-on-scaling-up-generative-protein&#34;&gt;RITA&lt;/a&gt; provided even stronger evidence for PLMs following &lt;a href=&#34;https://arxiv.org/abs/2001.08361&#34;&gt;scaling laws&lt;/a&gt;. The RITA paper trained auto-regressive models of different sizes and used their performance to derive power laws for scaling performance. It used this power law to pick 4&lt;/p&gt;</description>
+      <guid>https://stephenmalina.com/post/2023-08-05-protein-language-models-part-4/</guid>
+      <description>&lt;h2 id=&#34;scaling&#34;&gt;&#xA;Scaling&#xA;&lt;a href=&#34;#scaling&#34; class=&#34;heading-anchor&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;p&gt;Some of the earliest evidence for PLM scaling behaving similar to LLM scaling came from ESM-1b. The following plot shows model performance as a function of (log10) number of parameters. As seen there, they also trained LSTM models at two different sizes as baselines.&lt;/p&gt;&#xA;&#xA;&#xA;    &lt;figure &gt;&#xA;  &#xA;    &lt;label for=&#34;marginfig-1&#34; class=&#34;margin-toggle marginnote-ind&#34;&gt;⊕&lt;/label&gt;&#xA;    &lt;input type=&#34;checkbox&#34; id=&#34;marginfig-1&#34; class=&#34;margin-toggle&#34;/&gt;&#xA;    &lt;span class=&#34;marginnote&#34;&gt;&#xA;&#xA;&#xA;ESM-1b perplexity vs. log10(# of parameters) by model type on a held-out subset of UniRef50.&#xA;&#xA;&#xA;&#xA;&lt;/span&gt;&#xA;&#xA;&#xA;&#xA;  &#xA;  &lt;img src=&#34;https://stephenmalina.com/images/esm1b-custom-scaling-1.png&#34; alt=&#34;Image&#34;&gt;&#xA;  &#xA;&#xA;&#xA;&#xA;&#xA;&lt;/figure&gt;&#xA;&#xA;&#xA;&lt;p&gt;&lt;a href=&#34;https://paperswithcode.com/paper/rita-a-study-on-scaling-up-generative-protein&#34;&gt;RITA&lt;/a&gt; provided even stronger evidence for PLMs following &lt;a href=&#34;https://arxiv.org/abs/2001.08361&#34;&gt;scaling laws&lt;/a&gt;. The RITA paper trained auto-regressive models of different sizes and used their performance to derive power laws for scaling performance. It used this power law to pick 4&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

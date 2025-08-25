@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Book-Review on Stephen Malina</title>
-    <link>http://localhost:1314/tags/book-review/</link>
+    <link>https://stephenmalina.com/tags/book-review/</link>
     <description>Recent content in Book-Review on Stephen Malina</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 24 Apr 2022 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1314/tags/book-review/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://stephenmalina.com/tags/book-review/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Book Review - Elmer Gates and the Art of Mind-using</title>
-      <link>http://localhost:1314/post/2022-04-24-book-review-egamu/</link>
+      <link>https://stephenmalina.com/post/2022-04-24-book-review-egamu/</link>
       <pubDate>Sun, 24 Apr 2022 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1314/post/2022-04-24-book-review-egamu/</guid>
+      <guid>https://stephenmalina.com/post/2022-04-24-book-review-egamu/</guid>
       <description>&lt;h2 id=&#34;introduction&#34;&gt;&#xA;Introduction&#xA;&lt;a href=&#34;#introduction&#34; class=&#34;heading-anchor&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;p&gt;Generally when someone tells you they&amp;rsquo;ve invented an &amp;ldquo;art of mind-using&amp;rdquo; that involves lots of made-up words and comes packaged with a spiritual philosophy, you should tell them &amp;ldquo;no thanks&amp;rdquo; and walk away. But, what if that same would-be crackpot was also an incredibly successful inventor whose contemporaries considered a genius? Moreover, what if that would-be crackpot also ran careful, rigorous experiments to validate their theories? And so we have Elmer Gates.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Book Review - A World Without Email</title>
-      <link>http://localhost:1314/post/2021-04-01-world-without-email-review/</link>
+      <link>https://stephenmalina.com/post/2021-04-01-world-without-email-review/</link>
       <pubDate>Thu, 01 Apr 2021 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1314/post/2021-04-01-world-without-email-review/</guid>
+      <guid>https://stephenmalina.com/post/2021-04-01-world-without-email-review/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;www.amazon.com/world-without-email-reimagining-communication/dp/0525536558?c=90c759ee-a68d-48d7-ac21-7da8138e05d2&#34;&gt;A World Without Email&lt;/a&gt; (AWWE) is Cal Newport&amp;rsquo;s new book arguing for an overhaul in our workplace communication and project management style. This topic is a natural follow up to Newport&amp;rsquo;s previous two books &amp;ndash; Deep Work and Digital Minimalism. These books focused on the individual benefits of hard focused effort and deliberate technology reduction respectively. This book applies a similar lens to the modern frenetic knowledge economy workplace. According to Newport, priortizing responsiveness and heavily relying on general purpose communication tools in the workplace is making us miserable and unproductive. Newport instead argues that we should design workflows and processes that maximize knowledge worker productivity by enabling single-tasking and moving communications out of all-purpose, optimized for rapid response tools.&lt;/p&gt;</description>
     </item>
   </channel>

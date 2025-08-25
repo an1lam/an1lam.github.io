@@ -2,38 +2,38 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Biology on Stephen Malina</title>
-    <link>http://localhost:1314/tags/biology/</link>
+    <link>https://stephenmalina.com/tags/biology/</link>
     <description>Recent content in Biology on Stephen Malina</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 04 Nov 2023 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1314/tags/biology/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://stephenmalina.com/tags/biology/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Biologizing the stack</title>
-      <link>http://localhost:1314/post/2023-11-04-biologizing-the-stack/</link>
+      <link>https://stephenmalina.com/post/2023-11-04-biologizing-the-stack/</link>
       <pubDate>Sat, 04 Nov 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1314/post/2023-11-04-biologizing-the-stack/</guid>
+      <guid>https://stephenmalina.com/post/2023-11-04-biologizing-the-stack/</guid>
       <description>&lt;p&gt;&lt;em&gt;I&amp;rsquo;m experimenting with writing some shorter, less polished posts. These come with the disclaimer that I&amp;rsquo;m optimizing for getting thoughts out there while they&amp;rsquo;re still crystallizing rather than achieving maximum rigor. For this post in particular, I&amp;rsquo;m not arguing that this direction is definitely worth pursuing so much as exploring a frame/idea to see where it gets me.&lt;/em&gt;&lt;/p&gt;&#xA;&lt;p&gt;A while ago, a friend asked me why I like the idea of working with cells better than cell-free systems and I gave some hand-wavy answer about cells being cool. Some of Elliot Hershberg&amp;rsquo;s &lt;a href=&#34;https://centuryofbio.substack.com/p/atoms-are-local/comments&#34;&gt;not so recent&lt;/a&gt; &lt;a href=&#34;https://www.notboring.co/p/medicines-endgame&#34;&gt;and more recent posts&lt;/a&gt; got me thinking about this question again and I think I&amp;rsquo;ve figured out a more satisfying answer that also captures the theme in some of the ideas in both &lt;a href=&#34;https://stephenmalina.com/post/2021-11-crazy-synthetic-bio-ideas/&#34;&gt;my&lt;/a&gt; and Arye&amp;rsquo;s old &lt;a href=&#34;https://arye.substack.com/p/set-biotech-free-&#34;&gt;post&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Continuous glucose monitors (CGM) and beyond: A dialogue</title>
-      <link>http://localhost:1314/post/2023-08-13-cgm-and-beyond/</link>
+      <link>https://stephenmalina.com/post/2023-08-13-cgm-and-beyond/</link>
       <pubDate>Sun, 13 Aug 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1314/post/2023-08-13-cgm-and-beyond/</guid>
+      <guid>https://stephenmalina.com/post/2023-08-13-cgm-and-beyond/</guid>
       <description>&lt;p&gt;What are continuous glucose monitors good for? More broadly, what are continuous measures of physiology (&lt;strong&gt;CxM&lt;/strong&gt;) good for?&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Similar to &lt;a href=&#34;https://centuryofbio.com/&#34;&gt;Elliot&lt;/a&gt; and I&amp;rsquo;s &lt;a href=&#34;http://localhost:1313/post/2023-01-11-viriditas-dialogue/&#34;&gt;dialogue&lt;/a&gt;, this post has an unconventional format. It&amp;rsquo;s both a synthesis of &lt;a href=&#34;https://twitter.com/willyintheworld&#34;&gt;Willy&lt;/a&gt;&amp;rsquo;s, &lt;a href=&#34;https://twitter.com/eryney_ok&#34;&gt;Eryney&amp;rsquo;s&lt;/a&gt;, and my opinions on continuous monitoring combined with a debate in places where we disagree. To try and make it clear which views are coming from each person, we&amp;rsquo;ve annotated sections that come from a subset of us rather than all of us with e.g. &amp;ldquo;Stephen&amp;rsquo;s views&amp;rdquo; or &amp;ldquo;Willy&amp;rsquo;s dissent&amp;rdquo;.&lt;/strong&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>What are the bottlenecks to safe, repeatable edits in humans? Part 1</title>
-      <link>http://localhost:1314/post/2023-06-07-editing-part-i/</link>
+      <link>https://stephenmalina.com/post/2023-06-07-editing-part-i/</link>
       <pubDate>Wed, 07 Jun 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1314/post/2023-06-07-editing-part-i/</guid>
+      <guid>https://stephenmalina.com/post/2023-06-07-editing-part-i/</guid>
       <description>&lt;h2 id=&#34;summary&#34;&gt;&#xA;Summary&#xA;&lt;a href=&#34;#summary&#34; class=&#34;heading-anchor&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;p&gt;Gene editing has made a lot of progress over the past few decades. CRISPR-Cas9 sparked the recent fervor and won some of its early pioneers a &lt;a href=&#34;https://www.synthego.com/blog/gene-editing-nobel-prize#:~:text=Jennifer%20Doudna%20and%20Emmanuelle%20Charpentier%20have%20been%20awarded%20the%20ultimate,most%20powerful%20gene%2Dediting%20tool.&#34;&gt;Nobel Prize&lt;/a&gt;, and more recently Prime Editing and Cytosine/Adenine Base Editors (CBEs/ABEs) have further expanded the range of editing targets and types of edits that are possible while increasing efficiency and reducing the rate of off-target effects.&lt;/p&gt;&#xA;&lt;p&gt;From the perspective of safe, ubiquitous editing in humans using these systems, a few major challenges for editing remain towards translating novel target discovery into clinical application:&lt;/p&gt;</description>
     </item>
     <item>
       <title>Dialogue on Viriditas</title>
-      <link>http://localhost:1314/post/2023-01-11-viriditas-dialogue/</link>
+      <link>https://stephenmalina.com/post/2023-01-11-viriditas-dialogue/</link>
       <pubDate>Wed, 11 Jan 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1314/post/2023-01-11-viriditas-dialogue/</guid>
+      <guid>https://stephenmalina.com/post/2023-01-11-viriditas-dialogue/</guid>
       <description>&lt;!-- Output copied to clipboard! --&gt;&#xA;&lt;h1 id=&#34;introduction&#34;&gt;&#xA;Introduction&#xA;&lt;a href=&#34;#introduction&#34; class=&#34;heading-anchor&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h1&gt;&#xA;&lt;p&gt;A few months ago, Elliot Hershberg, one of my favorite Substack writers, wrote a&lt;a href=&#34;https://centuryofbio.substack.com/p/viriditas&#34;&gt; post&lt;/a&gt; laying out his personal mission. I really enjoyed his post and, as is customary in blogging, the best way I could think of to compliment it was to share some (hopefully constructively) critical thoughts on it.&lt;/p&gt;&#xA;&lt;p&gt;After sending my post to Elliot, he proposed the great idea of us having a discussion of this over email, which we could then potentially publish. The Follow-up section here contains a lightly edited form of this back-and-forth. This back-and-forth helped me clarify my views and moved me more in the direction of Elliot’s views than I started out. As a result of this and other discussions/observations I’ve made since then, I feel a lot more uncertain than the views and tone expressed in the original post sound.&lt;/p&gt;</description>
     </item>
   </channel>

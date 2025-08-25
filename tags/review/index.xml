@@ -2,45 +2,45 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Review on Stephen Malina</title>
-    <link>http://localhost:1314/tags/review/</link>
+    <link>https://stephenmalina.com/tags/review/</link>
     <description>Recent content in Review on Stephen Malina</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 07 Jun 2022 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1314/tags/review/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://stephenmalina.com/tags/review/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Movie Review - Top Gun: Maverick</title>
-      <link>http://localhost:1314/post/2022-06-07-top-gun-maverick-review/</link>
+      <link>https://stephenmalina.com/post/2022-06-07-top-gun-maverick-review/</link>
       <pubDate>Tue, 07 Jun 2022 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1314/post/2022-06-07-top-gun-maverick-review/</guid>
+      <guid>https://stephenmalina.com/post/2022-06-07-top-gun-maverick-review/</guid>
       <description>&lt;p&gt;Since I&amp;rsquo;ve been going around telling everyone how Top Gun: Maverick (TG:M) is one of the best action movies of our generation, I&amp;rsquo;d figured I&amp;rsquo;d try and write down some of my thoughts while they&amp;rsquo;re still fresh.&lt;/p&gt;&#xA;&lt;p&gt;The core reason I love TG:M is that it&amp;rsquo;s an unapologetic paean to excellence, Captain Pete &amp;ldquo;Maverick&amp;rdquo; Mitchell (Maverick) embodies excellence as a fighter pilot and teacher, pushing both himself and his students to exceed their perceived limits and their planes&amp;rsquo;. The rest of this post focuses on TG:M&amp;rsquo;s portrayal of excellence and the lessons it imparts.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Paper Review - Network Mendelian Randomization</title>
-      <link>http://localhost:1314/post/2019-11-16-network-mendelian-randomization/</link>
+      <link>https://stephenmalina.com/post/2019-11-16-network-mendelian-randomization/</link>
       <pubDate>Sat, 16 Nov 2019 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1314/post/2019-11-16-network-mendelian-randomization/</guid>
+      <guid>https://stephenmalina.com/post/2019-11-16-network-mendelian-randomization/</guid>
       <description>&lt;p&gt;In which I record my thoughts on &lt;a href=&#34;https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4469795/&#34;&gt;Network Mendelian Randomization&lt;/a&gt; by Burgess et al.&lt;/p&gt;&#xA;&lt;h2 id=&#34;what-is-this-paper-about&#34;&gt;&#xA;What is this paper about?&#xA;&lt;a href=&#34;#what-is-this-paper-about&#34; class=&#34;heading-anchor&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;p&gt;This paper describes a method for doing Mendelian Randomization (MR) in the presence of a potential mediating variable. In the typical MR setting, we have an instrumental variable which &amp;ldquo;instruments&amp;rdquo; an exposure that we believe causally influences the outcome we care about. True mediators &amp;ldquo;mediate&amp;rdquo; the causal influence of exposures on outcomes. In other words, if we&amp;rsquo;re trying to understand the causal influence of some factor on another factor, it&amp;rsquo;s possible there&amp;rsquo;s a factor (mediator) that the exposure influences that then influences the outcome.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Paper Review - DeepSEA</title>
-      <link>http://localhost:1314/post/2019-08-08-deepsea/</link>
+      <link>https://stephenmalina.com/post/2019-08-08-deepsea/</link>
       <pubDate>Thu, 08 Aug 2019 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1314/post/2019-08-08-deepsea/</guid>
+      <guid>https://stephenmalina.com/post/2019-08-08-deepsea/</guid>
       <description>&lt;p&gt;In which I record my thoughts on &lt;a href=&#34;https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4768299/pdf/nihms757739.pdf&#34;&gt;DeepSEA&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;h2 id=&#34;terminology&#34;&gt;&#xA;Terminology&#xA;&lt;a href=&#34;#terminology&#34; class=&#34;heading-anchor&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;ChIP-seq (Chromatin Immunoprecipitation Sequencing):&lt;/li&gt;&#xA;&lt;li&gt;Expression Quantitative Trait Locis (eQTLs)&lt;/li&gt;&#xA;&lt;li&gt;Cofactor Binding Sequences&lt;/li&gt;&#xA;&lt;li&gt;Histone Marks: modifications to histone proteins in the nucleosome that impact the shape of chromatin.&lt;/li&gt;&#xA;&lt;li&gt;gkm-SVMs: The gkm-SVM is the previous SOTA model for predicting transcription factor binding based on ChIP-seq data.&lt;/li&gt;&#xA;&lt;li&gt;Allele: variants of a gene at the same position on a chromosome.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;what-is-this-paper-about&#34;&gt;&#xA;What is this paper about?&#xA;&lt;a href=&#34;#what-is-this-paper-about&#34; class=&#34;heading-anchor&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;p&gt;This paper trains a CNN to predict the presence of 919 &amp;ldquo;chromatin features&amp;rdquo;&amp;ndash;different TF binding sites, DHSs, and histone marks&amp;ndash;from 1000bp DNA sequences. It then tests this model by using a functional significance score based on its output to train a logistic regression classifier to predict whether SNPs will be present in a few different catalog of SNPs known to impact different biological functions, e.g. a GWAS catalog of disease-related SNPs.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Paper Review - Basset</title>
-      <link>http://localhost:1314/post/2019-08-05-basset/</link>
+      <link>https://stephenmalina.com/post/2019-08-05-basset/</link>
       <pubDate>Mon, 05 Aug 2019 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1314/post/2019-08-05-basset/</guid>
+      <guid>https://stephenmalina.com/post/2019-08-05-basset/</guid>
       <description>&lt;p&gt;In which I record my thoughts on &lt;a href=&#34;https://genome.cshlp.org/content/26/7/990.full&#34;&gt;Basset&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;h2 id=&#34;bio-background&#34;&gt;&#xA;Bio Background&#xA;&lt;a href=&#34;#bio-background&#34; class=&#34;heading-anchor&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;p&gt;The genome consists of (broadly) two types of genes, coding genes and noncoding genes. Coding genes get translated into proteins (as laid down by the Central Dogma) and are what most of us learned about in bio class. Non-coding genes&amp;hellip; don&amp;rsquo;t. As I understand it, noncoding genes can do a bunch of different things, but part of their function is to regulate coding gene activity through a number of mechanisms.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Paper Review - DeepBind</title>
-      <link>http://localhost:1314/post/2019-07-26-deepbind/</link>
+      <link>https://stephenmalina.com/post/2019-07-26-deepbind/</link>
       <pubDate>Fri, 26 Jul 2019 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1314/post/2019-07-26-deepbind/</guid>
+      <guid>https://stephenmalina.com/post/2019-07-26-deepbind/</guid>
       <description>&lt;p&gt;In which I record my thoughts on &lt;a href=&#34;https://www.nature.com/articles/nbt.3300.pdf&#34;&gt;DeepBind&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;h2 id=&#34;what-is-this-paper-about&#34;&gt;&#xA;What is this paper about?&#xA;&lt;a href=&#34;#what-is-this-paper-about&#34; class=&#34;heading-anchor&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;p&gt;The authors of this paper designed a conv net model to predict how well different proteins will bind to sequences of DNA or RNA. They train one model per protein for many different sequences and show that these models can predict binding affinities for sequences well enough to produce insights regarding the impact of single nucleotide mutations. They then discuss different datasets and areas in which they tested their model and how it performed (often SOTA [as of 2015]).&lt;/p&gt;</description>
     </item>
   </channel>

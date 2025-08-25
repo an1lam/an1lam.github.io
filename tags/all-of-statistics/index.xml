@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>All of Statistics on Stephen Malina</title>
-    <link>http://localhost:1314/tags/all-of-statistics/</link>
+    <link>https://stephenmalina.com/tags/all-of-statistics/</link>
     <description>Recent content in All of Statistics on Stephen Malina</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 12 Dec 2019 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1314/tags/all-of-statistics/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://stephenmalina.com/tags/all-of-statistics/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>All of Statistics - Chapter 3</title>
-      <link>http://localhost:1314/learning/2019-12-12-all-of-statistics-ch3-notes/</link>
+      <link>https://stephenmalina.com/learning/2019-12-12-all-of-statistics-ch3-notes/</link>
       <pubDate>Thu, 12 Dec 2019 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1314/learning/2019-12-12-all-of-statistics-ch3-notes/</guid>
+      <guid>https://stephenmalina.com/learning/2019-12-12-all-of-statistics-ch3-notes/</guid>
       <description>&lt;h1 id=&#34;selected-exercises&#34;&gt;&#xA;Selected Exercises&#xA;&lt;a href=&#34;#selected-exercises&#34; class=&#34;heading-anchor&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h1&gt;&#xA;&lt;p&gt;&lt;strong&gt;1.&lt;/strong&gt; Suppose we play a game where we start with $ c $ dollars. On each play of the game you either double or halve your money, with equal probability. What is your expected fortune after $ n $ trials?&lt;/p&gt;&#xA;&lt;p&gt;I&amp;rsquo;m pretty sure we can use a trick that I&amp;rsquo;ve seen a lot in machine learning to solve this using plain old expectations. If I&amp;rsquo;m right, we let $ X \sim \text{Binomial}(n, \frac{1}{2}) $ and can create a new random variable, $ Z $, where&lt;/p&gt;</description>
     </item>
   </channel>
